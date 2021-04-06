@@ -9,6 +9,17 @@ class LectureHomePage extends StatefulWidget {
 class _LectureHomePageState extends State<LectureHomePage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      bottomNavigationBar: BottomAppBar(
+        child: Container(
+          height: 72,
+          child: Row(
+            children: [
+              
+            ],
+          ),
+        ),
+      ),
+    );
   }
 }
