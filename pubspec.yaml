@@ -19,6 +19,7 @@ dependencies:
   provider: any
   get: ^4.1.3
   riverpod: ^0.14.0
+  line_icons: 2.0.1
 
 dev_dependencies:
   flutter_test:
