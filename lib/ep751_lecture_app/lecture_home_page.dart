@@ -50,6 +50,16 @@ class _LectureHomePageState extends State<LectureHomePage> {
           ),
         ),
       ),
+      body: Stack(
+        children: [
+          Positioned(child: Container(
+            decoration: BoxDecoration(
+              gradient: LinearGradient()
+            ),
+
+          )),
+        ],
+      ),
     );
   }
 }
