@@ -12,7 +12,7 @@ class _LectureHomePageState extends State<LectureHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.blue[50]!,
+
       bottomNavigationBar: ClipRRect(
         borderRadius: BorderRadius.only(
             topLeft: Radius.circular(24),
@@ -54,7 +54,10 @@ class _LectureHomePageState extends State<LectureHomePage> {
         children: [
           Positioned(child: Container(
             decoration: BoxDecoration(
-              gradient: LinearGradient()
+              gradient: LinearGradient(colors: [
+                Colors.blue[50]!,
+                Colors.blue[100]!,
+              ])
             ),
 
           )),
