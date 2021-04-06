@@ -54,11 +54,14 @@ class _LectureHomePageState extends State<LectureHomePage> {
         children: [
           Positioned(child: Container(
             decoration: BoxDecoration(
-              gradient: LinearGradient(colors: [
+              gradient: LinearGradient(
+                  begin: Alignment.topCenter,
+                  end: Alignment.bottomCenter,
+                  colors: [
+                    Colors.white,
                 Colors.blue[50]!,
                 Colors.blue[100]!,
-                Colors.blue[200]!,
-                Colors.blue[300]!,
+
 
               ])
             ),
