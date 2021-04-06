@@ -57,6 +57,9 @@ class _LectureHomePageState extends State<LectureHomePage> {
               gradient: LinearGradient(colors: [
                 Colors.blue[50]!,
                 Colors.blue[100]!,
+                Colors.blue[200]!,
+                Colors.blue[300]!,
+
               ])
             ),
 
