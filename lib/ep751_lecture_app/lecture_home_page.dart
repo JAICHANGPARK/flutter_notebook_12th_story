@@ -18,7 +18,9 @@ class _LectureHomePageState extends State<LectureHomePage> {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              IconButton(onPressed: (){
+              IconButton(
+                iconSize: 28,
+                onPressed: (){
                 setState(() {
                   bottomTab = 0;
                 });
