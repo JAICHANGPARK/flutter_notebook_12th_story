@@ -17,9 +17,9 @@ class _LectureHomePageState extends State<LectureHomePage> {
           child: Row(
             children: [
               IconButton(onPressed: (){}, icon: Icon(LineIcons.clock)),
-              IconButton(onPressed: (){}, icon: Icon(LineIcons.clock)),
-              IconButton(onPressed: (){}, icon: Icon(LineIcons.clock)),
-              IconButton(onPressed: (){}, icon: Icon(LineIcons.clock)),
+              IconButton(onPressed: (){}, icon: Icon(LineIcons.comment)),
+              IconButton(onPressed: (){}, icon: Icon(LineIcons.stream)),
+              IconButton(onPressed: (){}, icon: Icon(LineIcons.cog)),
             ],
           ),
         ),
