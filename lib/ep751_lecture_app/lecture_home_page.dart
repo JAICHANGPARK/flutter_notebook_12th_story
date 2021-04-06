@@ -18,38 +18,7 @@ class _LectureHomePageState extends State<LectureHomePage> {
             topLeft: Radius.circular(24),
           topRight: Radius.circular(24),
         ),
-        child: Container(
-          decoration: BoxDecoration(
-            color: Colors.white,
-            borderRadius: BorderRadius.only(
-              topLeft: Radius.circular(24),
-              topRight: Radius.circular(24),
-            ),
-          ),
-          height: 72,
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [
-              IconButton(
-                iconSize: 28,
-                onPressed: (){
-                setState(() {
-                  bottomTab = 0;
-                });
-              }, icon: Icon(LineIcons.clock),
-              color: bottomTab == 0 ? Colors.blue : Colors.grey,),
-              IconButton(  color: bottomTab == 1 ? Colors.blue : Colors.grey,iconSize: 28,onPressed: (){setState(() {
-                bottomTab = 1;
-              });}, icon: Icon(LineIcons.comment)),
-              IconButton( color: bottomTab == 2 ? Colors.blue : Colors.grey, iconSize: 28,onPressed: (){setState(() {
-                bottomTab = 2;
-              });}, icon: Icon(LineIcons.stream)),
-              IconButton(  color: bottomTab == 3 ? Colors.blue : Colors.grey,iconSize: 28,onPressed: (){setState(() {
-                bottomTab = 3;
-              });}, icon: Icon(LineIcons.cog)),
-            ],
-          ),
-        ),
+        child:
       ),
       body: Stack(
         children: [
@@ -73,6 +42,40 @@ class _LectureHomePageState extends State<LectureHomePage> {
             ),
 
           )),
+          Positioned(child: Container(
+            decoration: BoxDecoration(
+              color: Colors.white,
+              borderRadius: BorderRadius.only(
+                topLeft: Radius.circular(24),
+                topRight: Radius.circular(24),
+              ),
+            ),
+            height: 72,
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                IconButton(
+                  iconSize: 28,
+                  onPressed: (){
+                    setState(() {
+                      bottomTab = 0;
+                    });
+                  }, icon: Icon(LineIcons.clock),
+                  color: bottomTab == 0 ? Colors.blue : Colors.grey,),
+                IconButton(  color: bottomTab == 1 ? Colors.blue : Colors.grey,iconSize: 28,onPressed: (){setState(() {
+                  bottomTab = 1;
+                });}, icon: Icon(LineIcons.comment)),
+                IconButton( color: bottomTab == 2 ? Colors.blue : Colors.grey, iconSize: 28,onPressed: (){setState(() {
+                  bottomTab = 2;
+                });}, icon: Icon(LineIcons.stream)),
+                IconButton(  color: bottomTab == 3 ? Colors.blue : Colors.grey,iconSize: 28,onPressed: (){setState(() {
+                  bottomTab = 3;
+                });}, icon: Icon(LineIcons.cog)),
+              ],
+            ),
+          ),
+          bottom: 0,
+          left: 0, right: 0,)
         ],
       ),
     );
