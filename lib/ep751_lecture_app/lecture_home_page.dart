@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:line_icons/line_icons.dart';
 
 
 class LectureHomePage extends StatefulWidget {
@@ -15,7 +16,7 @@ class _LectureHomePageState extends State<LectureHomePage> {
           height: 72,
           child: Row(
             children: [
-              
+              IconButton(onPressed: (){}, icon: Icon(LineIcons.clock)),
             ],
           ),
         ),
