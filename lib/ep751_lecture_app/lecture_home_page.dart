@@ -12,14 +12,6 @@ class _LectureHomePageState extends State<LectureHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      bottomNavigationBar: ClipRRect(
-
-        borderRadius: BorderRadius.only(
-            topLeft: Radius.circular(24),
-          topRight: Radius.circular(24),
-        ),
-        child:
-      ),
       body: Stack(
         children: [
           Positioned(
