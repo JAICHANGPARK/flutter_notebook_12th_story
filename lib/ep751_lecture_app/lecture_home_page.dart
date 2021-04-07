@@ -136,6 +136,12 @@ class _LectureHomePageState extends State<LectureHomePage> {
                       color: Colors.white,
                       shape: StadiumBorder()
                     ),
+                    padding: EdgeInsets.symmetric(horizontal: 8),
+                    child: TextField(
+                      decoration: InputDecoration(
+                        icon: Icon(Icons.search)
+                      ),
+                    ),
                   )),
                   Expanded(flex: 2, child: Placeholder()),
                   Expanded(flex: 10, child: Placeholder()),
