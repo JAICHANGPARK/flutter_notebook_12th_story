@@ -97,6 +97,7 @@ class _LectureHomePageState extends State<LectureHomePage> {
                         children: [
                           Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
+                            mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               Text("April, 21"),
                               Text("Hi, Kathie"),
