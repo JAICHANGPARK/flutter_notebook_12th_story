@@ -114,7 +114,6 @@ class _LectureHomePageState extends State<LectureHomePage> {
                               ],
                             ),
                             Stack(children: [
-
                               CircleAvatar(
                                 radius: 28,
                                 backgroundImage: NetworkImage("https://avatars.githubusercontent.com/u/19484515?v=4"),
@@ -130,27 +129,26 @@ class _LectureHomePageState extends State<LectureHomePage> {
                           ],
                         ),
                       )),
-                  Expanded(flex: 2, child: Container(
-                    margin: EdgeInsets.symmetric(vertical: 8, horizontal: 8),
-                    decoration: ShapeDecoration(
-                      color: Colors.white,
-                      shape: StadiumBorder()
-                    ),
-                    padding: EdgeInsets.symmetric(horizontal: 8),
-                    child: Center(
-                      child: TextField(
-                        decoration: InputDecoration(
-                          icon: Icon(Icons.search),
-                          hintText: "Search group by name",
-                          border: InputBorder.none,
-                          hintStyle: TextStyle(
-                            fontSize: 16,
-                            color: Colors.grey,
-                          )
+                  Expanded(
+                      flex: 2,
+                      child: Container(
+                        margin: EdgeInsets.symmetric(vertical: 8, horizontal: 8),
+                        decoration: ShapeDecoration(color: Colors.white, shape: StadiumBorder()),
+                        padding: EdgeInsets.symmetric(horizontal: 8),
+                        child: Center(
+                          child: TextField(
+                            decoration: InputDecoration(
+                                icon: Icon(Icons.search),
+                                hintText: "Search group by name",
+                                border: InputBorder.none,
+                                hintStyle: TextStyle(
+                                  fontSize: 16,
+                                  color: Colors.grey,
+                                  fontWeight: FontWeight.bold,
+                                )),
+                          ),
                         ),
-                      ),
-                    ),
-                  )),
+                      )),
                   Expanded(flex: 2, child: Placeholder()),
                   Expanded(flex: 10, child: Placeholder()),
                 ],
