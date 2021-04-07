@@ -91,7 +91,17 @@ class _LectureHomePageState extends State<LectureHomePage> {
               bottom: 84,
               child: Column(
                 children: [
-                  
+                  Expanded(
+                      flex:2,
+                      child: Placeholder()),
+                  Expanded(
+                      flex: 2,
+                      child: Placeholder()),
+                  Expanded(
+                      flex: 2,
+                      child: Placeholder()),
+                  Expanded(
+                      child: Placeholder()),
                 ],
               ))
         ],
