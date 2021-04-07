@@ -114,11 +114,17 @@ class _LectureHomePageState extends State<LectureHomePage> {
                               ],
                             ),
                             Stack(children: [
-                              Positioned(child: CircleAvatar()),
+
                               CircleAvatar(
                                 radius: 28,
                                 backgroundImage: NetworkImage("https://avatars.githubusercontent.com/u/19484515?v=4"),
                               ),
+                              Positioned(
+                                  right: 0,
+                                  top: 0,
+                                  child: CircleAvatar(
+                                    radius: 8,
+                                  )),
                             ])
                           ],
                         ),
