@@ -131,6 +131,7 @@ class _LectureHomePageState extends State<LectureHomePage> {
                         ),
                       )),
                   Expanded(flex: 2, child: Container(
+                    margin: EdgeInsets.symmetric(vertical: 8, horizontal: 8),
                     decoration: ShapeDecoration(
                       color: Colors.white,
                       shape: StadiumBorder()
