@@ -137,11 +137,13 @@ class _LectureHomePageState extends State<LectureHomePage> {
                       shape: StadiumBorder()
                     ),
                     padding: EdgeInsets.symmetric(horizontal: 8),
-                    child: TextField(
-                      decoration: InputDecoration(
-                        icon: Icon(Icons.search),
-                        hintText: "Search group by name",
-                        border: InputBorder.none
+                    child: Center(
+                      child: TextField(
+                        decoration: InputDecoration(
+                          icon: Icon(Icons.search),
+                          hintText: "Search group by name",
+                          border: InputBorder.none
+                        ),
                       ),
                     ),
                   )),
