@@ -89,10 +89,10 @@ class _LectureHomePageState extends State<LectureHomePage> {
               top: 64,
               right: 0,
               bottom: 84,
-              child: Placeholder(
-          //       child: Column(children: [
-          //
-          // ],),
+              child: Column(
+                children: [
+                  
+                ],
               ))
         ],
       ),
