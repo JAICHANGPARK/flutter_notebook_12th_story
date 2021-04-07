@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:line_icons/line_icons.dart';
 
@@ -99,7 +100,14 @@ class _LectureHomePageState extends State<LectureHomePage> {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
-                              Text("April, 21"),
+                              Text(
+                                "April, 21",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.grey,
+                                  fontSize: 16
+                                ),
+                              ),
                               Text("Hi, Kathie"),
                             ],
                           ),
