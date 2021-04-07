@@ -101,6 +101,7 @@ class _LectureHomePageState extends State<LectureHomePage> {
                       flex: 2,
                       child: Placeholder()),
                   Expanded(
+                    flex: 10,
                       child: Placeholder()),
                 ],
               ))
