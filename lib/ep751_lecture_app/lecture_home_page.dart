@@ -93,7 +93,16 @@ class _LectureHomePageState extends State<LectureHomePage> {
                 children: [
                   Expanded(
                       flex:2,
-                      child: Placeholder()),
+                      child: Row(
+                        children: [
+                          Column(
+                            children: [
+                              Text("April, 21"),
+                              Text("Hi, Kathie"),
+                            ],
+                          )
+                        ],
+                      )),
                   Expanded(
                       flex: 2,
                       child: Placeholder()),
