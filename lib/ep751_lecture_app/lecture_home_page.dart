@@ -134,7 +134,7 @@ class _LectureHomePageState extends State<LectureHomePage> {
                       child: Container(
                         margin: EdgeInsets.symmetric(vertical: 8, horizontal: 8),
                         decoration: ShapeDecoration(color: Colors.white, shape: StadiumBorder()),
-                        padding: EdgeInsets.symmetric(horizontal: 8),
+                        padding: EdgeInsets.symmetric(horizontal: 12),
                         child: Center(
                           child: TextField(
                             decoration: InputDecoration(
@@ -144,7 +144,7 @@ class _LectureHomePageState extends State<LectureHomePage> {
                                 hintStyle: TextStyle(
                                   fontSize: 16,
                                   color: Colors.grey,
-                                  fontWeight: FontWeight.bold,
+                                  fontWeight: FontWeight.normal,
                                 )),
                           ),
                         ),
