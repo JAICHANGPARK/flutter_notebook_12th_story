@@ -84,9 +84,16 @@ class _LectureHomePageState extends State<LectureHomePage> {
             left: 0,
             right: 0,
           ),
-          Positioned(child: Column(children: [
-            
-          ],))
+          Positioned(
+              left: 0,
+              top: 0,
+              right: 0,
+              bottom: 84,
+              child: Placeholder(
+                child: Column(children: [
+
+          ],),
+              ))
         ],
       ),
     );
