@@ -130,7 +130,12 @@ class _LectureHomePageState extends State<LectureHomePage> {
                           ],
                         ),
                       )),
-                  Expanded(flex: 2, child: Placeholder()),
+                  Expanded(flex: 2, child: Container(
+                    decoration: ShapeDecoration(
+                      color: Colors.white,
+                      shape: StadiumBorder()
+                    ),
+                  )),
                   Expanded(flex: 2, child: Placeholder()),
                   Expanded(flex: 10, child: Placeholder()),
                 ],
