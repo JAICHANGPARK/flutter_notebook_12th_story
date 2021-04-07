@@ -92,7 +92,7 @@ class _LectureHomePageState extends State<LectureHomePage> {
               child: Column(
                 children: [
                   Expanded(
-                      flex:2,
+                      flex: 2,
                       child: Row(
                         children: [
                           Column(
@@ -102,20 +102,17 @@ class _LectureHomePageState extends State<LectureHomePage> {
                               Text("Hi, Kathie"),
                             ],
                           ),
-                          CircleAvatar(
-                            backgroundImage: NetworkImage("https://avatars.githubusercontent.com/u/19484515?v=4"),
-                          )
+                          Stack(children: [
+                            CircleAvatar(
+                              radius: 28,
+                              backgroundImage: NetworkImage("https://avatars.githubusercontent.com/u/19484515?v=4"),
+                            ),
+                          ])
                         ],
                       )),
-                  Expanded(
-                      flex: 2,
-                      child: Placeholder()),
-                  Expanded(
-                      flex: 2,
-                      child: Placeholder()),
-                  Expanded(
-                    flex: 10,
-                      child: Placeholder()),
+                  Expanded(flex: 2, child: Placeholder()),
+                  Expanded(flex: 2, child: Placeholder()),
+                  Expanded(flex: 10, child: Placeholder()),
                 ],
               ))
         ],
