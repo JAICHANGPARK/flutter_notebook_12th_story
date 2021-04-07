@@ -94,29 +94,34 @@ class _LectureHomePageState extends State<LectureHomePage> {
                 children: [
                   Expanded(
                       flex: 2,
-                      child: Row(
-                        children: [
-                          Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              Text(
-                                "April, 21",
-                                style: TextStyle(fontWeight: FontWeight.bold, color: Colors.grey, fontSize: 16),
-                              ),
-                              Text(
-                                "Hi, Dreamwalker",
-                                style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
-                              ),
-                            ],
-                          ),
-                          Stack(children: [
-                            CircleAvatar(
-                              radius: 28,
-                              backgroundImage: NetworkImage("https://avatars.githubusercontent.com/u/19484515?v=4"),
+                      child: Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 16),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Text(
+                                  "April, 21",
+                                  style: TextStyle(fontWeight: FontWeight.bold, color: Colors.grey, fontSize: 16),
+                                ),
+                                Text(
+                                  "Hi, Dreamwalker",
+                                  style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
+                                ),
+                              ],
                             ),
-                          ])
-                        ],
+                            Stack(children: [
+                              Positioned(child: CircleAvatar()),
+                              CircleAvatar(
+                                radius: 28,
+                                backgroundImage: NetworkImage("https://avatars.githubusercontent.com/u/19484515?v=4"),
+                              ),
+                            ])
+                          ],
+                        ),
                       )),
                   Expanded(flex: 2, child: Placeholder()),
                   Expanded(flex: 2, child: Placeholder()),
