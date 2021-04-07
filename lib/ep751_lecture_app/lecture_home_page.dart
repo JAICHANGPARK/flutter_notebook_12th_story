@@ -102,13 +102,12 @@ class _LectureHomePageState extends State<LectureHomePage> {
                             children: [
                               Text(
                                 "April, 21",
-                                style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.grey,
-                                  fontSize: 16
-                                ),
+                                style: TextStyle(fontWeight: FontWeight.bold, color: Colors.grey, fontSize: 16),
                               ),
-                              Text("Hi, Kathie"),
+                              Text(
+                                "Hi, Dreamwalker",
+                                style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
+                              ),
                             ],
                           ),
                           Stack(children: [
