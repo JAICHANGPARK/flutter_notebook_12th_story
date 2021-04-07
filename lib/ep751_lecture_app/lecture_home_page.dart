@@ -123,6 +123,7 @@ class _LectureHomePageState extends State<LectureHomePage> {
                                   right: 0,
                                   top: 0,
                                   child: CircleAvatar(
+                                    backgroundColor: Colors.pink,
                                     radius: 8,
                                   )),
                             ])
