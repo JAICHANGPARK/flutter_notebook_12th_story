@@ -96,10 +96,14 @@ class _LectureHomePageState extends State<LectureHomePage> {
                       child: Row(
                         children: [
                           Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text("April, 21"),
                               Text("Hi, Kathie"),
                             ],
+                          ),
+                          CircleAvatar(
+                            backgroundImage: NetworkImage("https://avatars.githubusercontent.com/u/19484515?v=4"),
                           )
                         ],
                       )),
