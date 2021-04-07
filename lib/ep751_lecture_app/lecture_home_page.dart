@@ -142,7 +142,11 @@ class _LectureHomePageState extends State<LectureHomePage> {
                         decoration: InputDecoration(
                           icon: Icon(Icons.search),
                           hintText: "Search group by name",
-                          border: InputBorder.none
+                          border: InputBorder.none,
+                          hintStyle: TextStyle(
+                            fontSize: 16,
+                            color: Colors.grey,
+                          )
                         ),
                       ),
                     ),
