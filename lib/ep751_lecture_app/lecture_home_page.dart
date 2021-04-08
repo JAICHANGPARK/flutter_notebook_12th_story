@@ -89,7 +89,7 @@ class _LectureHomePageState extends State<LectureHomePage> {
               left: 0,
               top: 64,
               right: 0,
-              bottom: 84,
+              bottom: 64,
               child: Column(
                 children: [
                   Expanded(
