@@ -153,85 +153,89 @@ class _LectureHomePageState extends State<LectureHomePage> {
                       flex: 2,
                       child: Padding(
                         padding: const EdgeInsets.all(8.0),
-                        child: Wrap(
-                          direction: Axis.vertical,
-                          alignment: WrapAlignment.spaceEvenly,
-                          crossAxisAlignment: WrapCrossAlignment.center,
-                          children: [
-                            Container(
-                              margin: EdgeInsets.symmetric(horizontal: 9, vertical: 16),
-                              padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
-                              decoration: BoxDecoration(color: Colors.blue),
-                              child: Center(
-                                child: Text(
-                                  'Upcoming',
-                                  style: TextStyle(
-                                    color: Colors.white,
+                        child: Container(
+                          height: double.infinity,
+                          width: double.infinity,
+                          child: Wrap(
+                            direction: Axis.vertical,
+                            alignment: WrapAlignment.spaceEvenly,
+                            crossAxisAlignment: WrapCrossAlignment.center,
+                            children: [
+                              Container(
+                                margin: EdgeInsets.symmetric(horizontal: 9, vertical: 16),
+                                padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                                decoration: BoxDecoration(color: Colors.blue),
+                                child: Center(
+                                  child: Text(
+                                    'Upcoming',
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                    ),
                                   ),
                                 ),
                               ),
-                            ),
-                            Container(
-                              margin: EdgeInsets.symmetric(horizontal: 9, vertical: 16),
-                              decoration: BoxDecoration(color: Colors.blue),
-                              child: Center(
-                                child: Text(
-                                  'Group',
-                                  style: TextStyle(
-                                    color: Colors.white,
+                              Container(
+                                margin: EdgeInsets.symmetric(horizontal: 9, vertical: 16),
+                                decoration: BoxDecoration(color: Colors.blue),
+                                child: Center(
+                                  child: Text(
+                                    'Group',
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                    ),
                                   ),
                                 ),
                               ),
-                            ),
-                            Container(
-                              margin: EdgeInsets.symmetric(horizontal: 9, vertical: 16),
-                              decoration: BoxDecoration(color: Colors.blue),
-                              child: Center(
-                                child: Text(
-                                  'Today',
-                                  style: TextStyle(
-                                    color: Colors.white,
+                              Container(
+                                margin: EdgeInsets.symmetric(horizontal: 9, vertical: 16),
+                                decoration: BoxDecoration(color: Colors.blue),
+                                child: Center(
+                                  child: Text(
+                                    'Today',
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                    ),
                                   ),
                                 ),
                               ),
-                            ),
-                            Container(
-                              margin: EdgeInsets.symmetric(horizontal: 9, vertical: 16),
-                              decoration: BoxDecoration(color: Colors.blue),
-                              child: Center(
-                                child: Text(
-                                  'Anytime',
-                                  style: TextStyle(
-                                    color: Colors.white,
+                              Container(
+                                margin: EdgeInsets.symmetric(horizontal: 9, vertical: 16),
+                                decoration: BoxDecoration(color: Colors.blue),
+                                child: Center(
+                                  child: Text(
+                                    'Anytime',
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                    ),
                                   ),
                                 ),
                               ),
-                            ),
-                            Container(
-                              margin: EdgeInsets.symmetric(horizontal: 9, vertical: 16),
-                              decoration: BoxDecoration(color: Colors.blue),
-                              child: Center(
-                                child: Text(
-                                  'Personal',
-                                  style: TextStyle(
-                                    color: Colors.white,
+                              Container(
+                                margin: EdgeInsets.symmetric(horizontal: 9, vertical: 16),
+                                decoration: BoxDecoration(color: Colors.blue),
+                                child: Center(
+                                  child: Text(
+                                    'Personal',
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                    ),
                                   ),
                                 ),
                               ),
-                            ),
-                            Container(
-                              margin: EdgeInsets.symmetric(horizontal: 9, vertical: 16),
-                              decoration: BoxDecoration(color: Colors.blue),
-                              child: Center(
-                                child: Text(
-                                  '10 + days',
-                                  style: TextStyle(
-                                    color: Colors.white,
+                              Container(
+                                margin: EdgeInsets.symmetric(horizontal: 9, vertical: 16),
+                                decoration: BoxDecoration(color: Colors.blue),
+                                child: Center(
+                                  child: Text(
+                                    '10 + days',
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                    ),
                                   ),
                                 ),
-                              ),
-                            )
-                          ],
+                              )
+                            ],
+                          ),
                         ),
                       )),
                   Expanded(flex: 10, child: Placeholder()),
