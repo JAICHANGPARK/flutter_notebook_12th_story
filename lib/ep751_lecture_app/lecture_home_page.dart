@@ -244,13 +244,16 @@ class _LectureHomePageState extends State<LectureHomePage> {
                   Expanded(flex: 10, child: ListView.builder(
                       padding: EdgeInsets.zero,
                       itemBuilder: (context, index){
-                    return SizedBox(
-                      height: 240,
-                      child: Card(
-                        child: Column(
-                          children: [
+                    return Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: SizedBox(
+                        height: 240,
+                        child: Card(
+                          child: Column(
+                            children: [
 
-                          ],
+                            ],
+                          ),
                         ),
                       ),
                     );
