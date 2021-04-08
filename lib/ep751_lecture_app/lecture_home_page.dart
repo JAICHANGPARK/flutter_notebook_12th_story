@@ -220,20 +220,20 @@ class _LectureHomePageState extends State<LectureHomePage> {
                                 child: Text(
                                   'Personal',
                                   style: TextStyle(
-                                    color: Colors.white,
+                                    color: Colors.grey,
                                   ),
                                 ),
                               ),
                             ),
                             Container(
-                              decoration: BoxDecoration(color: Colors.blue,
+                              decoration: BoxDecoration(color: Colors.white,
                                   borderRadius: BorderRadius.circular(8)),
                               child: Padding(
                                 padding: const EdgeInsets.symmetric(horizontal: 11, vertical: 6),
                                 child: Text(
                                   '10 + days',
                                   style: TextStyle(
-                                    color: Colors.white,
+                                    color: Colors.grey,
                                   ),
                                 ),
                               ),
