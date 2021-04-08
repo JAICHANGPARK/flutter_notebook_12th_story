@@ -173,50 +173,65 @@ class _LectureHomePageState extends State<LectureHomePage> {
                             Container(
                               decoration: BoxDecoration(color: Colors.blue,
                                   borderRadius: BorderRadius.circular(8)),
-                              child: Text(
-                                'Group',
-                                style: TextStyle(
-                                  color: Colors.white,
+                              child: Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: Text(
+                                  'Group',
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                  ),
                                 ),
                               ),
                             ),
                             Container(
                               decoration: BoxDecoration(color: Colors.blue,
                                   borderRadius: BorderRadius.circular(8)),
-                              child: Text(
-                                'Today',
-                                style: TextStyle(
-                                  color: Colors.white,
+                              child: Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: Text(
+                                  'Today',
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                  ),
                                 ),
                               ),
                             ),
                             Container(
                               decoration: BoxDecoration(color: Colors.blue,
                                   borderRadius: BorderRadius.circular(8)),
-                              child: Text(
-                                'Anytime',
-                                style: TextStyle(
-                                  color: Colors.white,
+                              child: Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: Text(
+                                  'Anytime',
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                  ),
                                 ),
                               ),
                             ),
                             Container(
                               decoration: BoxDecoration(color: Colors.blue,
                                   borderRadius: BorderRadius.circular(8)),
-                              child: Text(
-                                'Personal',
-                                style: TextStyle(
-                                  color: Colors.white,
+                              child: Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: Text(
+                                  'Personal',
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                  ),
                                 ),
                               ),
                             ),
                             Container(
                               decoration: BoxDecoration(color: Colors.blue,
                                   borderRadius: BorderRadius.circular(8)),
-                              child: Text(
-                                '10 + days',
-                                style: TextStyle(
-                                  color: Colors.white,
+                              child: Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: Text(
+                                  '10 + days',
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                  ),
                                 ),
                               ),
                             )
