@@ -151,7 +151,9 @@ class _LectureHomePageState extends State<LectureHomePage> {
                       )),
                   Expanded(flex: 2, child: Wrap(
                     children: [
-                      
+                      Container(
+                        child: Center(child: Text('Upcoming'),),
+                      )
                     ],
                   )),
                   Expanded(flex: 10, child: Placeholder()),
