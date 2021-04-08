@@ -154,13 +154,20 @@ class _LectureHomePageState extends State<LectureHomePage> {
                       child: Padding(
                         padding: const EdgeInsets.all(8.0),
                         child: Wrap(
+                          spacing: 16,
+                          runSpacing: 16,
                           children: [
                             Container(
-                              decoration: BoxDecoration(color: Colors.blue),
-                              child: Text(
-                                'Upcoming',
-                                style: TextStyle(
-                                  color: Colors.white,
+                              decoration: BoxDecoration(color: Colors.,
+                              
+                              ),
+                              child: Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: Text(
+                                  'Upcoming',
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                  ),
                                 ),
                               ),
                             ),
