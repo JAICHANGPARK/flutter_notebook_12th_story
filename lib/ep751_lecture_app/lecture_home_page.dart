@@ -149,13 +149,35 @@ class _LectureHomePageState extends State<LectureHomePage> {
                           ),
                         ),
                       )),
-                  Expanded(flex: 2, child: Wrap(
-                    children: [
-                      Container(
-                        child: Center(child: Text('Upcoming'),),
-                      )
-                    ],
-                  )),
+                  Expanded(
+                      flex: 2,
+                      child: Wrap(
+                        direction: Axis.horizontal,
+                        children: [
+                          Container(
+                            decoration: BoxDecoration(color: Colors.blue),
+                            child: Center(
+                              child: Text(
+                                'Upcoming',
+                                style: TextStyle(
+                                  color: Colors.white,
+                                ),
+                              ),
+                            ),
+                          ),
+                          Container(
+                            decoration: BoxDecoration(color: Colors.blue),
+                            child: Center(
+                              child: Text(
+                                'Upcoming',
+                                style: TextStyle(
+                                  color: Colors.white,
+                                ),
+                              ),
+                            ),
+                          )
+                        ],
+                      )),
                   Expanded(flex: 10, child: Placeholder()),
                 ],
               ))
