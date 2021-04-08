@@ -174,7 +174,6 @@ class _LectureHomePageState extends State<LectureHomePage> {
                               ),
                             ),
                             Container(
-                              margin: EdgeInsets.symmetric(horizontal: 9, vertical: 16),
                               decoration: BoxDecoration(color: Colors.blue),
                               child: Text(
                                 'Today',
@@ -184,7 +183,6 @@ class _LectureHomePageState extends State<LectureHomePage> {
                               ),
                             ),
                             Container(
-                              margin: EdgeInsets.symmetric(horizontal: 9, vertical: 16),
                               decoration: BoxDecoration(color: Colors.blue),
                               child: Text(
                                 'Anytime',
@@ -194,7 +192,6 @@ class _LectureHomePageState extends State<LectureHomePage> {
                               ),
                             ),
                             Container(
-                              margin: EdgeInsets.symmetric(horizontal: 9, vertical: 16),
                               decoration: BoxDecoration(color: Colors.blue),
                               child: Text(
                                 'Personal',
@@ -204,7 +201,6 @@ class _LectureHomePageState extends State<LectureHomePage> {
                               ),
                             ),
                             Container(
-                              margin: EdgeInsets.symmetric(horizontal: 9, vertical: 16),
                               decoration: BoxDecoration(color: Colors.blue),
                               child: Text(
                                 '10 + days',
