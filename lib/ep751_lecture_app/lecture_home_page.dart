@@ -161,8 +161,7 @@ class _LectureHomePageState extends State<LectureHomePage> {
                           alignment: WrapAlignment.start,
                           children: [
                             Container(
-                              decoration: BoxDecoration(color: Colors.blue,
-                              borderRadius: BorderRadius.circular(8)),
+                              decoration: BoxDecoration(color: Colors.blue, borderRadius: BorderRadius.circular(8)),
                               child: Padding(
                                 padding: const EdgeInsets.symmetric(horizontal: 11, vertical: 6),
                                 child: Text(
@@ -174,8 +173,7 @@ class _LectureHomePageState extends State<LectureHomePage> {
                               ),
                             ),
                             Container(
-                              decoration: BoxDecoration(color: Colors.blue,
-                                  borderRadius: BorderRadius.circular(8)),
+                              decoration: BoxDecoration(color: Colors.blue, borderRadius: BorderRadius.circular(8)),
                               child: Padding(
                                 padding: const EdgeInsets.symmetric(horizontal: 11, vertical: 6),
                                 child: Text(
@@ -187,8 +185,7 @@ class _LectureHomePageState extends State<LectureHomePage> {
                               ),
                             ),
                             Container(
-                              decoration: BoxDecoration(color: Colors.blue,
-                                  borderRadius: BorderRadius.circular(8)),
+                              decoration: BoxDecoration(color: Colors.blue, borderRadius: BorderRadius.circular(8)),
                               child: Padding(
                                 padding: const EdgeInsets.symmetric(horizontal: 11, vertical: 6),
                                 child: Text(
@@ -200,8 +197,7 @@ class _LectureHomePageState extends State<LectureHomePage> {
                               ),
                             ),
                             Container(
-                              decoration: BoxDecoration(color: Colors.white,
-                                  borderRadius: BorderRadius.circular(8)),
+                              decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(8)),
                               child: Padding(
                                 padding: const EdgeInsets.symmetric(horizontal: 11, vertical: 6),
                                 child: Text(
@@ -213,8 +209,7 @@ class _LectureHomePageState extends State<LectureHomePage> {
                               ),
                             ),
                             Container(
-                              decoration: BoxDecoration(color: Colors.white,
-                                  borderRadius: BorderRadius.circular(8)),
+                              decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(8)),
                               child: Padding(
                                 padding: const EdgeInsets.symmetric(horizontal: 11, vertical: 6),
                                 child: Text(
@@ -226,8 +221,7 @@ class _LectureHomePageState extends State<LectureHomePage> {
                               ),
                             ),
                             Container(
-                              decoration: BoxDecoration(color: Colors.white,
-                                  borderRadius: BorderRadius.circular(8)),
+                              decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(8)),
                               child: Padding(
                                 padding: const EdgeInsets.symmetric(horizontal: 11, vertical: 6),
                                 child: Text(
@@ -241,26 +235,24 @@ class _LectureHomePageState extends State<LectureHomePage> {
                           ],
                         ),
                       )),
-                  Expanded(flex: 10, child: ListView.builder(
-                      padding: EdgeInsets.zero,
-                      itemBuilder: (context, index){
-                    return Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: SizedBox(
-                        height: 240,
-                        child: Card(
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(16)
-                          ),
-                          child: Column(
-                            children: [
-
-                            ],
-                          ),
-                        ),
-                      ),
-                    );
-                  })),
+                  Expanded(
+                      flex: 10,
+                      child: ListView.builder(
+                          padding: EdgeInsets.zero,
+                          itemBuilder: (context, index) {
+                            return Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: SizedBox(
+                                height: 240,
+                                child: Card(
+                                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
+                                  child: Column(
+                                    children: [],
+                                  ),
+                                ),
+                              ),
+                            );
+                          })),
                 ],
               ))
         ],
