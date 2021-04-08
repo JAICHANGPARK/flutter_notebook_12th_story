@@ -249,6 +249,9 @@ class _LectureHomePageState extends State<LectureHomePage> {
                       child: SizedBox(
                         height: 240,
                         child: Card(
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(16)
+                          ),
                           child: Column(
                             children: [
 
