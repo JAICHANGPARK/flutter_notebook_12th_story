@@ -239,6 +239,7 @@ class _LectureHomePageState extends State<LectureHomePage> {
                       flex: 10,
                       child: ListView.builder(
                           padding: EdgeInsets.zero,
+                          itemCount: 8,
                           itemBuilder: (context, index) {
                             return Padding(
                               padding: const EdgeInsets.all(8.0),
