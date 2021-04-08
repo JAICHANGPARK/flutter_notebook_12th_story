@@ -155,7 +155,7 @@ class _LectureHomePageState extends State<LectureHomePage> {
                         padding: const EdgeInsets.symmetric(horizontal: 0),
                         child: Wrap(
                           crossAxisAlignment: WrapCrossAlignment.center,
-                          spacing: 12,
+                          spacing: 24,
                           runSpacing: 8,
                           runAlignment: WrapAlignment.center,
                           alignment: WrapAlignment.start,
@@ -200,20 +200,20 @@ class _LectureHomePageState extends State<LectureHomePage> {
                               ),
                             ),
                             Container(
-                              decoration: BoxDecoration(color: Colors.blue,
+                              decoration: BoxDecoration(color: Colors.white,
                                   borderRadius: BorderRadius.circular(8)),
                               child: Padding(
                                 padding: const EdgeInsets.symmetric(horizontal: 11, vertical: 6),
                                 child: Text(
                                   'Anytime',
                                   style: TextStyle(
-                                    color: Colors.white,
+                                    color: Colors.grey,
                                   ),
                                 ),
                               ),
                             ),
                             Container(
-                              decoration: BoxDecoration(color: Colors.blue,
+                              decoration: BoxDecoration(color: Colors.white,
                                   borderRadius: BorderRadius.circular(8)),
                               child: Padding(
                                 padding: const EdgeInsets.symmetric(horizontal: 11, vertical: 6),
