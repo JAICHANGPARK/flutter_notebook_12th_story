@@ -157,68 +157,56 @@ class _LectureHomePageState extends State<LectureHomePage> {
                           height: double.infinity,
                           width: double.infinity,
                           child: Wrap(
-                            direction: Axis.horizontal,
-                            alignment: WrapAlignment.spaceEvenly,
-                            crossAxisAlignment: WrapCrossAlignment.center,
+                            direction: Axis.vertical,
                             children: [
                               Container(
                                 margin: EdgeInsets.symmetric(horizontal: 9, vertical: 16),
                                 padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                                 decoration: BoxDecoration(color: Colors.blue),
-                                child: Center(
-                                  child: Text(
-                                    'Upcoming',
-                                    style: TextStyle(
-                                      color: Colors.white,
-                                    ),
+                                child: Text(
+                                  'Upcoming',
+                                  style: TextStyle(
+                                    color: Colors.white,
                                   ),
                                 ),
                               ),
                               Container(
                                 margin: EdgeInsets.symmetric(horizontal: 9, vertical: 16),
                                 decoration: BoxDecoration(color: Colors.blue),
-                                child: Center(
-                                  child: Text(
-                                    'Group',
-                                    style: TextStyle(
-                                      color: Colors.white,
-                                    ),
+                                child: Text(
+                                  'Group',
+                                  style: TextStyle(
+                                    color: Colors.white,
                                   ),
                                 ),
                               ),
                               Container(
                                 margin: EdgeInsets.symmetric(horizontal: 9, vertical: 16),
                                 decoration: BoxDecoration(color: Colors.blue),
-                                child: Center(
-                                  child: Text(
-                                    'Today',
-                                    style: TextStyle(
-                                      color: Colors.white,
-                                    ),
+                                child: Text(
+                                  'Today',
+                                  style: TextStyle(
+                                    color: Colors.white,
                                   ),
                                 ),
                               ),
                               Container(
                                 margin: EdgeInsets.symmetric(horizontal: 9, vertical: 16),
                                 decoration: BoxDecoration(color: Colors.blue),
-                                child: Center(
-                                  child: Text(
-                                    'Anytime',
-                                    style: TextStyle(
-                                      color: Colors.white,
-                                    ),
+                                child: Text(
+                                  'Anytime',
+                                  style: TextStyle(
+                                    color: Colors.white,
                                   ),
                                 ),
                               ),
                               Container(
                                 margin: EdgeInsets.symmetric(horizontal: 9, vertical: 16),
                                 decoration: BoxDecoration(color: Colors.blue),
-                                child: Center(
-                                  child: Text(
-                                    'Personal',
-                                    style: TextStyle(
-                                      color: Colors.white,
-                                    ),
+                                child: Text(
+                                  'Personal',
+                                  style: TextStyle(
+                                    color: Colors.white,
                                   ),
                                 ),
                               ),
