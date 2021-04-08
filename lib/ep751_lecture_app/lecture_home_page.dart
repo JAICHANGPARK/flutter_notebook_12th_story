@@ -156,6 +156,7 @@ class _LectureHomePageState extends State<LectureHomePage> {
                         child: Wrap(
                           direction: Axis.vertical,
                           alignment: WrapAlignment.spaceEvenly,
+                          crossAxisAlignment: WrapCrossAlignment.center,
                           children: [
                             Container(
                               margin: EdgeInsets.symmetric(horizontal: 9, vertical: 16),
