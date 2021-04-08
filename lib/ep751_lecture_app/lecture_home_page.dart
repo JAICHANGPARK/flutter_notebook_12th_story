@@ -157,7 +157,7 @@ class _LectureHomePageState extends State<LectureHomePage> {
                           height: double.infinity,
                           width: double.infinity,
                           child: Wrap(
-                            direction: Axis.vertical,
+                            direction: Axis.horizontal,
                             alignment: WrapAlignment.spaceEvenly,
                             crossAxisAlignment: WrapCrossAlignment.center,
                             children: [
