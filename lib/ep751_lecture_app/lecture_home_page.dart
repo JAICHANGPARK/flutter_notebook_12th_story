@@ -154,9 +154,11 @@ class _LectureHomePageState extends State<LectureHomePage> {
                       child: Padding(
                         padding: const EdgeInsets.all(4.0),
                         child: Wrap(
-                          crossAxisAlignment: WrapCrossAlignment.start,
-                          spacing: 16,
+                          crossAxisAlignment: WrapCrossAlignment.center,
+                          spacing: 8,
                           runSpacing: 16,
+                          runAlignment: WrapAlignment.center,
+                          alignment: WrapAlignment.start,
                           children: [
                             Container(
                               decoration: BoxDecoration(color: Colors.blue,
