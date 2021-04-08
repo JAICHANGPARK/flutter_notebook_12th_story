@@ -158,9 +158,8 @@ class _LectureHomePageState extends State<LectureHomePage> {
                           runSpacing: 16,
                           children: [
                             Container(
-                              decoration: BoxDecoration(color: Colors.,
-                              
-                              ),
+                              decoration: BoxDecoration(color: Colors.blue,
+                              borderRadius: BorderRadius.circular(8)),
                               child: Padding(
                                 padding: const EdgeInsets.all(8.0),
                                 child: Text(
@@ -172,7 +171,8 @@ class _LectureHomePageState extends State<LectureHomePage> {
                               ),
                             ),
                             Container(
-                              decoration: BoxDecoration(color: Colors.blue),
+                              decoration: BoxDecoration(color: Colors.blue,
+                                  borderRadius: BorderRadius.circular(8)),
                               child: Text(
                                 'Group',
                                 style: TextStyle(
@@ -181,7 +181,8 @@ class _LectureHomePageState extends State<LectureHomePage> {
                               ),
                             ),
                             Container(
-                              decoration: BoxDecoration(color: Colors.blue),
+                              decoration: BoxDecoration(color: Colors.blue,
+                                  borderRadius: BorderRadius.circular(8)),
                               child: Text(
                                 'Today',
                                 style: TextStyle(
@@ -190,7 +191,8 @@ class _LectureHomePageState extends State<LectureHomePage> {
                               ),
                             ),
                             Container(
-                              decoration: BoxDecoration(color: Colors.blue),
+                              decoration: BoxDecoration(color: Colors.blue,
+                                  borderRadius: BorderRadius.circular(8)),
                               child: Text(
                                 'Anytime',
                                 style: TextStyle(
@@ -199,7 +201,8 @@ class _LectureHomePageState extends State<LectureHomePage> {
                               ),
                             ),
                             Container(
-                              decoration: BoxDecoration(color: Colors.blue),
+                              decoration: BoxDecoration(color: Colors.blue,
+                                  borderRadius: BorderRadius.circular(8)),
                               child: Text(
                                 'Personal',
                                 style: TextStyle(
@@ -208,7 +211,8 @@ class _LectureHomePageState extends State<LectureHomePage> {
                               ),
                             ),
                             Container(
-                              decoration: BoxDecoration(color: Colors.blue),
+                              decoration: BoxDecoration(color: Colors.blue,
+                                  borderRadius: BorderRadius.circular(8)),
                               child: Text(
                                 '10 + days',
                                 style: TextStyle(
