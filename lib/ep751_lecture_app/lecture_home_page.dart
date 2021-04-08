@@ -158,6 +158,8 @@ class _LectureHomePageState extends State<LectureHomePage> {
                           alignment: WrapAlignment.spaceEvenly,
                           children: [
                             Container(
+                              margin: EdgeInsets.symmetric(horizontal: 9, vertical: 16),
+                              padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                               decoration: BoxDecoration(color: Colors.blue),
                               child: Center(
                                 child: Text(
