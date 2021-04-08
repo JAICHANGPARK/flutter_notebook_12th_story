@@ -152,8 +152,9 @@ class _LectureHomePageState extends State<LectureHomePage> {
                   Expanded(
                       flex: 2,
                       child: Padding(
-                        padding: const EdgeInsets.all(8.0),
+                        padding: const EdgeInsets.all(4.0),
                         child: Wrap(
+                          crossAxisAlignment: WrapCrossAlignment.start,
                           spacing: 16,
                           runSpacing: 16,
                           children: [
@@ -161,7 +162,7 @@ class _LectureHomePageState extends State<LectureHomePage> {
                               decoration: BoxDecoration(color: Colors.blue,
                               borderRadius: BorderRadius.circular(8)),
                               child: Padding(
-                                padding: const EdgeInsets.all(8.0),
+                                padding: const EdgeInsets.symmetric(horizontal: 11, vertical: 6),
                                 child: Text(
                                   'Upcoming',
                                   style: TextStyle(
@@ -174,7 +175,7 @@ class _LectureHomePageState extends State<LectureHomePage> {
                               decoration: BoxDecoration(color: Colors.blue,
                                   borderRadius: BorderRadius.circular(8)),
                               child: Padding(
-                                padding: const EdgeInsets.all(8.0),
+                                padding: const EdgeInsets.symmetric(horizontal: 11, vertical: 6),
                                 child: Text(
                                   'Group',
                                   style: TextStyle(
@@ -187,7 +188,7 @@ class _LectureHomePageState extends State<LectureHomePage> {
                               decoration: BoxDecoration(color: Colors.blue,
                                   borderRadius: BorderRadius.circular(8)),
                               child: Padding(
-                                padding: const EdgeInsets.all(8.0),
+                                padding: const EdgeInsets.symmetric(horizontal: 11, vertical: 6),
                                 child: Text(
                                   'Today',
                                   style: TextStyle(
@@ -200,7 +201,7 @@ class _LectureHomePageState extends State<LectureHomePage> {
                               decoration: BoxDecoration(color: Colors.blue,
                                   borderRadius: BorderRadius.circular(8)),
                               child: Padding(
-                                padding: const EdgeInsets.all(8.0),
+                                padding: const EdgeInsets.symmetric(horizontal: 11, vertical: 6),
                                 child: Text(
                                   'Anytime',
                                   style: TextStyle(
@@ -213,7 +214,7 @@ class _LectureHomePageState extends State<LectureHomePage> {
                               decoration: BoxDecoration(color: Colors.blue,
                                   borderRadius: BorderRadius.circular(8)),
                               child: Padding(
-                                padding: const EdgeInsets.all(8.0),
+                                padding: const EdgeInsets.symmetric(horizontal: 11, vertical: 6),
                                 child: Text(
                                   'Personal',
                                   style: TextStyle(
@@ -226,7 +227,7 @@ class _LectureHomePageState extends State<LectureHomePage> {
                               decoration: BoxDecoration(color: Colors.blue,
                                   borderRadius: BorderRadius.circular(8)),
                               child: Padding(
-                                padding: const EdgeInsets.all(8.0),
+                                padding: const EdgeInsets.symmetric(horizontal: 11, vertical: 6),
                                 child: Text(
                                   '10 + days',
                                   style: TextStyle(
