@@ -250,7 +250,11 @@ class _LectureHomePageState extends State<LectureHomePage> {
                                   child: Column(
                                     children: [
                                       Expanded(
-                                        child: Placeholder(),
+                                        child: Row(
+                                          children: [
+                                            
+                                          ],
+                                        ),
                                       ),
                                       Expanded(
                                         child: Placeholder(),
