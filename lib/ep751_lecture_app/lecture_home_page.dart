@@ -368,7 +368,16 @@ class _LectureHomePageState extends State<LectureHomePage> {
                                             children: [
                                               Expanded(child: Stack(
                                                 children: [
-                                                  
+                                                  Positioned(child: CircleAvatar()),
+                                                  Positioned(
+                                                      left: 24,
+                                                      child: CircleAvatar()),
+                                                  Positioned(
+                                                      left: 48,
+                                                      child: CircleAvatar()),
+                                                  Positioned(
+                                                      left: 72,
+                                                      child: CircleAvatar()),
                                                 ],
                                               )),
                                               Expanded(child: Placeholder()),
