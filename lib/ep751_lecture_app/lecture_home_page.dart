@@ -362,7 +362,11 @@ class _LectureHomePageState extends State<LectureHomePage> {
                                       ),
                                       Expanded(
                                         flex: 2,
-                                        child: Placeholder(),
+                                        child: Row(
+                                          children: [
+                                            
+                                          ],
+                                        ),
                                       )
                                     ],
                                   ),
