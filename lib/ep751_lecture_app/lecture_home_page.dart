@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:line_icons/line_icons.dart';
 
 class LectureHomePage extends StatefulWidget {
@@ -252,8 +253,8 @@ class _LectureHomePageState extends State<LectureHomePage> {
                                       Expanded(
                                         child: Row(
                                           children: [
-                                            Text("18:30", style: TextStyle(
-                                              
+                                            Text("18:30", style: GoogleFonts.montserrat(
+                                                  fontSize: 36
                                             ),),
                                             Column(
                                               children: [
