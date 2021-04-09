@@ -256,42 +256,35 @@ class _LectureHomePageState extends State<LectureHomePage> {
                                           padding: const EdgeInsets.all(16.0),
                                           child: Row(
                                             children: [
-                                              Text("18:30", style: GoogleFonts.montserrat(
-                                                    fontSize: 36
-                                              ),),
+                                              Text(
+                                                "18:30",
+                                                style: GoogleFonts.montserrat(fontSize: 36),
+                                              ),
                                               Padding(
-                                                padding: const EdgeInsets.symmetric(horizontal: 48,
-                                                vertical: 4),
+                                                padding: const EdgeInsets.symmetric(horizontal: 48, vertical: 4),
                                                 child: Column(
                                                   crossAxisAlignment: CrossAxisAlignment.start,
                                                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                                   children: [
                                                     Text("Monday"),
-                                                    Text("Today", style: TextStyle(
-                                                      fontSize: 16,
-                                                      color: Colors.grey,
-                                                    ),),
+                                                    Text(
+                                                      "Today",
+                                                      style: TextStyle(
+                                                        fontSize: 16,
+                                                        color: Colors.grey,
+                                                      ),
+                                                    ),
                                                   ],
                                                 ),
                                               ),
                                               Spacer(),
-                                              Text.rich(TextSpan(
-                                                children: [
-                                                  TextSpan(
+                                              Text.rich(TextSpan(children: [
+                                                TextSpan(
                                                     text: "2",
-                                                    style: TextStyle(
-                                                      fontSize: 24,
-                                                      fontWeight: FontWeight.bold
-                                                    )
-                                                  ),
-                                                  TextSpan(
-                                                    text: "/12", style: TextStyle(
-                                                    fontSize: 16,
-                                                    color: Colors.grey
-                                                  )
-                                                  )
-                                                ]
-                                              ))
+                                                    style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold)),
+                                                TextSpan(
+                                                    text: "/12", style: TextStyle(fontSize: 16, color: Colors.grey))
+                                              ]))
                                             ],
                                           ),
                                         ),
@@ -304,42 +297,42 @@ class _LectureHomePageState extends State<LectureHomePage> {
                                             children: [
                                               Container(
                                                 decoration: BoxDecoration(
-                                                  color: Colors.blue,
-                                                  borderRadius: BorderRadius.circular(4)
-                                                ),
+                                                    color: Colors.blue, borderRadius: BorderRadius.circular(4)),
                                                 child: Padding(
                                                   padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 4),
-                                                  child: Text("Upcoming", style: TextStyle(
-                                                    color: Colors.white
-                                                  ),),
+                                                  child: Text(
+                                                    "Upcoming",
+                                                    style: TextStyle(color: Colors.white),
+                                                  ),
                                                 ),
                                               ),
-                                              SizedBox(width: 8,),
-                                              Container(
-                                                decoration: BoxDecoration(
-                                                    color: Colors.blue,
-                                                    borderRadius: BorderRadius.circular(4)
-                                                ),
-                                                child: Padding(
-                                                  padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 4),
-                                                  child: Text("Group", style: TextStyle(
-                                                      color: Colors.white
-                                                  ),),
-                                                ),
-
+                                              SizedBox(
+                                                width: 8,
                                               ),
                                               Container(
                                                 decoration: BoxDecoration(
-                                                    color: Colors.blue,
-                                                    borderRadius: BorderRadius.circular(4)
-                                                ),
+                                                    color: Colors.blue, borderRadius: BorderRadius.circular(4)),
                                                 child: Padding(
                                                   padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 4),
-                                                  child: Text("Today", style: TextStyle(
-                                                      color: Colors.white
-                                                  ),),
+                                                  child: Text(
+                                                    "Group",
+                                                    style: TextStyle(color: Colors.white),
+                                                  ),
                                                 ),
-
+                                              ),
+                                              SizedBox(
+                                                width: 8,
+                                              ),
+                                              Container(
+                                                decoration: BoxDecoration(
+                                                    color: Colors.blue, borderRadius: BorderRadius.circular(4)),
+                                                child: Padding(
+                                                  padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 4),
+                                                  child: Text(
+                                                    "Today",
+                                                    style: TextStyle(color: Colors.white),
+                                                  ),
+                                                ),
                                               )
                                             ],
                                           ),
@@ -366,14 +359,3 @@ class _LectureHomePageState extends State<LectureHomePage> {
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
