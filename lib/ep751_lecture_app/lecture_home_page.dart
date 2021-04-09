@@ -251,6 +251,15 @@ class _LectureHomePageState extends State<LectureHomePage> {
                                     children: [
                                       Expanded(
                                         child: Placeholder(),
+                                      ),
+                                      Expanded(
+                                        child: Placeholder(),
+                                      ),
+                                      Expanded(
+                                        child: Placeholder(),
+                                      ),
+                                      Expanded(
+                                        child: Placeholder(),
                                       )
                                     ],
                                   ),
