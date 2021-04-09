@@ -249,6 +249,7 @@ class _LectureHomePageState extends State<LectureHomePage> {
                                 child: Card(
                                   shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
                                   child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
                                     children: [
                                       Expanded(
                                         flex: 3,
