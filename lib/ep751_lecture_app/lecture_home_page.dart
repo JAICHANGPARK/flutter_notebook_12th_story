@@ -341,7 +341,7 @@ class _LectureHomePageState extends State<LectureHomePage> {
                                       Expanded(
                                         flex: 2,
                                         child: Column(
-
+                                          crossAxisAlignment: CrossAxisAlignment.start,
                                           children: [
                                             Text("Our Brain And Empathy"),
                                             Text("OP group"),
