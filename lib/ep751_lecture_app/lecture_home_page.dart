@@ -248,7 +248,11 @@ class _LectureHomePageState extends State<LectureHomePage> {
                                 child: Card(
                                   shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
                                   child: Column(
-                                    children: [],
+                                    children: [
+                                      Expanded(
+                                        child: Placeholder(),
+                                      )
+                                    ],
                                   ),
                                 ),
                               ),
@@ -261,3 +265,14 @@ class _LectureHomePageState extends State<LectureHomePage> {
     );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
