@@ -251,7 +251,7 @@ class _LectureHomePageState extends State<LectureHomePage> {
                                   child: Column(
                                     children: [
                                       Expanded(
-                                        
+                                        flex: 2,
                                         child: Padding(
                                           padding: const EdgeInsets.all(16.0),
                                           child: Row(
