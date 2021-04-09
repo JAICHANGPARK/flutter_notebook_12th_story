@@ -380,7 +380,11 @@ class _LectureHomePageState extends State<LectureHomePage> {
                                                       child: CircleAvatar()),
                                                 ],
                                               )),
-                                              Expanded(child: Placeholder()),
+                                              Expanded(child: Text(
+                                                "18:30 - 20:00",style: GoogleFonts.montserrat(
+                                                
+                                              ),
+                                              )),
                                             ],
                                           ),
                                         ),
