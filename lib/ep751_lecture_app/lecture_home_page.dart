@@ -277,12 +277,15 @@ class _LectureHomePageState extends State<LectureHomePage> {
                                                   TextSpan(
                                                     text: "2",
                                                     style: TextStyle(
-                                                      fontSize: 16,
-
+                                                      fontSize: 24,
+                                                      fontWeight: FontWeight.bold
                                                     )
                                                   ),
                                                   TextSpan(
-                                                    text: "/12"
+                                                    text: "/12", style: TextStyle(
+                                                    fontSize: 16,
+                                                    color: Colors.grey
+                                                  )
                                                   )
                                                 ]
                                               ))
