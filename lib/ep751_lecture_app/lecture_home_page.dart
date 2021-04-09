@@ -297,7 +297,18 @@ class _LectureHomePageState extends State<LectureHomePage> {
                                         ),
                                       ),
                                       Expanded(
-                                        child: Placeholder(),
+                                        child: Row(
+                                          children: [
+                                            Container(
+                                              decoration: BoxDecoration(
+                                                color: Colors.blue,
+                                                borderRadius: BorderRadius.circular(4)
+                                              ),
+                                              child: Text("Upcoming"),
+
+                                            )
+                                          ],
+                                        ),
                                       ),
                                       Expanded(
                                         child: Placeholder(),
