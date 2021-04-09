@@ -366,7 +366,11 @@ class _LectureHomePageState extends State<LectureHomePage> {
                                           padding: const EdgeInsets.fromLTRB(16, 8, 16, 8),
                                           child: Row(
                                             children: [
-                                              Expanded(child: Placeholder()),
+                                              Expanded(child: Stack(
+                                                children: [
+                                                  
+                                                ],
+                                              )),
                                               Expanded(child: Placeholder()),
                                             ],
                                           ),
