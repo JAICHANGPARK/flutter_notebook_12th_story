@@ -267,7 +267,10 @@ class _LectureHomePageState extends State<LectureHomePage> {
                                                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                                   children: [
                                                     Text("Monday"),
-                                                    Text("Today"),
+                                                    Text("Today", style: TextStyle(
+                                                      fontSize: 16,
+                                                      color: Colors.grey,
+                                                    ),),
                                                   ],
                                                 ),
                                               ),
