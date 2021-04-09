@@ -256,12 +256,17 @@ class _LectureHomePageState extends State<LectureHomePage> {
                                             Text("18:30", style: GoogleFonts.montserrat(
                                                   fontSize: 36
                                             ),),
-                                            Column(
-                                              crossAxisAlignment: CrossAxisAlignment.start,
-                                              children: [
-                                                Text("Monday"),
-                                                Text("Today"),
-                                              ],
+                                            Padding(
+                                              padding: const EdgeInsets.symmetric(horizontal: 16,
+                                              vertical: 4),
+                                              child: Column(
+                                                crossAxisAlignment: CrossAxisAlignment.start,
+                                                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                                children: [
+                                                  Text("Monday"),
+                                                  Text("Today"),
+                                                ],
+                                              ),
                                             ),
                                             Text.rich(TextSpan(
                                               children: [
