@@ -251,7 +251,7 @@ class _LectureHomePageState extends State<LectureHomePage> {
                                   child: Column(
                                     children: [
                                       Expanded(
-                                        flex: 2,
+                                        flex: 3,
                                         child: Padding(
                                           padding: const EdgeInsets.all(16.0),
                                           child: Row(
@@ -297,28 +297,34 @@ class _LectureHomePageState extends State<LectureHomePage> {
                                         ),
                                       ),
                                       Expanded(
-                                        child: Row(
-                                          children: [
-                                            Container(
-                                              decoration: BoxDecoration(
-                                                color: Colors.blue,
-                                                borderRadius: BorderRadius.circular(4)
-                                              ),
-                                              child: Padding(
-                                                padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 4),
-                                                child: Text("Upcoming", style: TextStyle(
-                                                  color: Colors.white
-                                                ),),
-                                              ),
+                                        flex: 1,
+                                        child: Padding(
+                                          padding: const EdgeInsets.symmetric(horizontal: 16),
+                                          child: Row(
+                                            children: [
+                                              Container(
+                                                decoration: BoxDecoration(
+                                                  color: Colors.blue,
+                                                  borderRadius: BorderRadius.circular(4)
+                                                ),
+                                                child: Padding(
+                                                  padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 4),
+                                                  child: Text("Upcoming", style: TextStyle(
+                                                    color: Colors.white
+                                                  ),),
+                                                ),
 
-                                            )
-                                          ],
+                                              )
+                                            ],
+                                          ),
                                         ),
                                       ),
                                       Expanded(
+                                        flex: 2,
                                         child: Placeholder(),
                                       ),
                                       Expanded(
+                                        flex: 2,
                                         child: Placeholder(),
                                       )
                                     ],
