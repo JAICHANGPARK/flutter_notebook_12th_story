@@ -313,6 +313,32 @@ class _LectureHomePageState extends State<LectureHomePage> {
                                                     color: Colors.white
                                                   ),),
                                                 ),
+                                              ),
+                                              SizedBox(width: 8,),
+                                              Container(
+                                                decoration: BoxDecoration(
+                                                    color: Colors.blue,
+                                                    borderRadius: BorderRadius.circular(4)
+                                                ),
+                                                child: Padding(
+                                                  padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 4),
+                                                  child: Text("Group", style: TextStyle(
+                                                      color: Colors.white
+                                                  ),),
+                                                ),
+
+                                              ),
+                                              Container(
+                                                decoration: BoxDecoration(
+                                                    color: Colors.blue,
+                                                    borderRadius: BorderRadius.circular(4)
+                                                ),
+                                                child: Padding(
+                                                  padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 4),
+                                                  child: Text("Today", style: TextStyle(
+                                                      color: Colors.white
+                                                  ),),
+                                                ),
 
                                               )
                                             ],
