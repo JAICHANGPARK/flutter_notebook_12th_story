@@ -344,8 +344,16 @@ class _LectureHomePageState extends State<LectureHomePage> {
                                         child: Column(
                                           crossAxisAlignment: CrossAxisAlignment.start,
                                           children: [
-                                            Text("Our Brain And Empathy"),
-                                            Text("OP group"),
+                                            Text(
+                                              "Our Brain And Empathy",
+                                              style: GoogleFonts.montserrat(fontSize: 16, fontWeight: FontWeight.bold),
+                                            ),
+                                            Text(
+                                              "OP group",
+                                              style: TextStyle(
+                                                color: Colors.grey,
+                                              ),
+                                            ),
                                           ],
                                         ),
                                       ),
