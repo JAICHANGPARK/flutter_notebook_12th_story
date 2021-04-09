@@ -271,10 +271,15 @@ class _LectureHomePageState extends State<LectureHomePage> {
                                                   ],
                                                 ),
                                               ),
+                                              Spacer(),
                                               Text.rich(TextSpan(
                                                 children: [
                                                   TextSpan(
-                                                    text: "2"
+                                                    text: "2",
+                                                    style: TextStyle(
+                                                      fontSize: 16,
+
+                                                    )
                                                   ),
                                                   TextSpan(
                                                     text: "/12"
