@@ -304,7 +304,12 @@ class _LectureHomePageState extends State<LectureHomePage> {
                                                 color: Colors.blue,
                                                 borderRadius: BorderRadius.circular(4)
                                               ),
-                                              child: Text("Upcoming"),
+                                              child: Padding(
+                                                padding: const EdgeInsets.all(8.0),
+                                                child: Text("Upcoming", style: TextStyle(
+                                                  color: Colors.white
+                                                ),),
+                                              ),
 
                                             )
                                           ],
