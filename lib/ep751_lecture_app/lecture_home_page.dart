@@ -251,34 +251,38 @@ class _LectureHomePageState extends State<LectureHomePage> {
                                   child: Column(
                                     children: [
                                       Expanded(
-                                        child: Row(
-                                          children: [
-                                            Text("18:30", style: GoogleFonts.montserrat(
-                                                  fontSize: 36
-                                            ),),
-                                            Padding(
-                                              padding: const EdgeInsets.symmetric(horizontal: 16,
-                                              vertical: 4),
-                                              child: Column(
-                                                crossAxisAlignment: CrossAxisAlignment.start,
-                                                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                                                children: [
-                                                  Text("Monday"),
-                                                  Text("Today"),
-                                                ],
-                                              ),
-                                            ),
-                                            Text.rich(TextSpan(
-                                              children: [
-                                                TextSpan(
-                                                  text: "2"
+                                        
+                                        child: Padding(
+                                          padding: const EdgeInsets.all(16.0),
+                                          child: Row(
+                                            children: [
+                                              Text("18:30", style: GoogleFonts.montserrat(
+                                                    fontSize: 36
+                                              ),),
+                                              Padding(
+                                                padding: const EdgeInsets.symmetric(horizontal: 16,
+                                                vertical: 4),
+                                                child: Column(
+                                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                                  children: [
+                                                    Text("Monday"),
+                                                    Text("Today"),
+                                                  ],
                                                 ),
-                                                TextSpan(
-                                                  text: "/12"
-                                                )
-                                              ]
-                                            ))
-                                          ],
+                                              ),
+                                              Text.rich(TextSpan(
+                                                children: [
+                                                  TextSpan(
+                                                    text: "2"
+                                                  ),
+                                                  TextSpan(
+                                                    text: "/12"
+                                                  )
+                                                ]
+                                              ))
+                                            ],
+                                          ),
                                         ),
                                       ),
                                       Expanded(
