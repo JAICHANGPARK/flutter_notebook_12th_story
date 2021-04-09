@@ -340,7 +340,13 @@ class _LectureHomePageState extends State<LectureHomePage> {
                                       ),
                                       Expanded(
                                         flex: 2,
-                                        child: Placeholder(),
+                                        child: Column(
+                                          
+                                          children: [
+                                            Text("Our Brain And Empathy"),
+                                            Text("OP group"),
+                                          ],
+                                        ),
                                       ),
                                       Expanded(
                                         flex: 2,
