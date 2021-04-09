@@ -341,20 +341,23 @@ class _LectureHomePageState extends State<LectureHomePage> {
                                       ),
                                       Expanded(
                                         flex: 2,
-                                        child: Column(
-                                          crossAxisAlignment: CrossAxisAlignment.start,
-                                          children: [
-                                            Text(
-                                              "Our Brain And Empathy",
-                                              style: GoogleFonts.montserrat(fontSize: 16, fontWeight: FontWeight.bold),
-                                            ),
-                                            Text(
-                                              "OP group",
-                                              style: TextStyle(
-                                                color: Colors.grey,
+                                        child: Padding(
+                                          padding: const EdgeInsets.only(left: 16, top: 8),
+                                          child: Column(
+                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                            children: [
+                                              Text(
+                                                "Our Brain And Empathy",
+                                                style: GoogleFonts.montserrat(fontSize: 16, fontWeight: FontWeight.bold),
                                               ),
-                                            ),
-                                          ],
+                                              Text(
+                                                "OP group",
+                                                style: TextStyle(
+                                                  color: Colors.grey,
+                                                ),
+                                              ),
+                                            ],
+                                          ),
                                         ),
                                       ),
                                       Expanded(
