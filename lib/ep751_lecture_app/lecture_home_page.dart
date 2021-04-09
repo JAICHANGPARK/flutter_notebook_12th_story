@@ -255,9 +255,20 @@ class _LectureHomePageState extends State<LectureHomePage> {
                                             Text("18:30"),
                                             Column(
                                               children: [
-                                                
+                                                Text("Monday"),
+                                                Text("Today"),
                                               ],
-                                            )
+                                            ),
+                                            Text.rich(TextSpan(
+                                              children: [
+                                                TextSpan(
+                                                  text: "2"
+                                                ),
+                                                TextSpan(
+                                                  text: "/12"
+                                                )
+                                              ]
+                                            ))
                                           ],
                                         ),
                                       ),
