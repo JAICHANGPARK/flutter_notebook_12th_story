@@ -362,10 +362,14 @@ class _LectureHomePageState extends State<LectureHomePage> {
                                       ),
                                       Expanded(
                                         flex: 2,
-                                        child: Row(
-                                          children: [
-                                            
-                                          ],
+                                        child: Padding(
+                                          padding: const EdgeInsets.fromLTRB(16, 4, 16, 4)
+                                          child: Row(
+                                            children: [
+                                              Expanded(child: Placeholder()),
+                                              Expanded(child: Placeholder()),
+                                            ],
+                                          ),
                                         ),
                                       )
                                     ],
