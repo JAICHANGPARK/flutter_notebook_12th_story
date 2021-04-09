@@ -252,7 +252,9 @@ class _LectureHomePageState extends State<LectureHomePage> {
                                       Expanded(
                                         child: Row(
                                           children: [
-                                            Text("18:30"),
+                                            Text("18:30", style: TextStyle(
+                                              
+                                            ),),
                                             Column(
                                               children: [
                                                 Text("Monday"),
