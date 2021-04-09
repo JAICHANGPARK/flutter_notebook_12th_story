@@ -257,6 +257,7 @@ class _LectureHomePageState extends State<LectureHomePage> {
                                                   fontSize: 36
                                             ),),
                                             Column(
+                                              crossAxisAlignment: CrossAxisAlignment.start,
                                               children: [
                                                 Text("Monday"),
                                                 Text("Today"),
