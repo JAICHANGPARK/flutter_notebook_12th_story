@@ -260,7 +260,7 @@ class _LectureHomePageState extends State<LectureHomePage> {
                                                     fontSize: 36
                                               ),),
                                               Padding(
-                                                padding: const EdgeInsets.symmetric(horizontal: 16,
+                                                padding: const EdgeInsets.symmetric(horizontal: 48,
                                                 vertical: 4),
                                                 child: Column(
                                                   crossAxisAlignment: CrossAxisAlignment.start,
