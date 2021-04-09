@@ -381,7 +381,7 @@ class _LectureHomePageState extends State<LectureHomePage> {
                                                 ],
                                               )),
                                               Expanded(child: Align(
-                                                alignment: Alignment.end,
+                                                alignment: Alignment.centerRight,
                                                 child: Text(
                                                   "18:30 - 20:00",style: GoogleFonts.montserrat(
                                                   color: Colors.grey
