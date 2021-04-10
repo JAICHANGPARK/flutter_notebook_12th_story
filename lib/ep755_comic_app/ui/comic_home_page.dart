@@ -52,7 +52,10 @@ class _ComicHomePageState extends State<ComicHomePage> {
                                     IconButton(onPressed: (){}, icon: Icon(Icons.more_horiz)),
                                   ],
                                 ),
-                                Expanded(child: ListView.builder(itemBuilder: (context, index){
+                                Expanded(child: ListView.builder(
+                                    itemCount: 4,
+                                    scrollDirection: Axis.horizontal,
+                                    itemBuilder: (context, index){
                                   return Column();
                                 }))
                               ],
