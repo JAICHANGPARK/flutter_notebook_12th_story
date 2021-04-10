@@ -117,16 +117,18 @@ class _ComicHomePageState extends State<ComicHomePage> {
                                 ])),
                             child: Column(
                               children: [
+                                SizedBox(height: 8,),
                                 Expanded(
                                   child: Center(
                                     child: Container(
                                       height: 4,
                                       width: 24,
-                                      decoration: BoxDecoration(color: Colors.grey, borderRadius: BorderRadius.circular(4)),
+                                      decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(4)),
                                     ),
                                   ),
                                   flex: 1,
                                 ),
+                                SizedBox(height: 8,),
                                 Expanded(flex: 2, child: Placeholder()),
                                 Expanded(flex: 8, child: Placeholder()),
                               ],
