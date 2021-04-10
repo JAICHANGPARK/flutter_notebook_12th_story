@@ -162,13 +162,17 @@ class _ComicHomePageState extends State<ComicHomePage> {
                                     child: Container(
                                       margin: EdgeInsets.symmetric(vertical: 12, horizontal: 12),
                                       decoration: ShapeDecoration(color: Colors.white, shape: StadiumBorder()),
+                                      padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8 ),
                                       child: Row(
                                         children: [
                                           CircleAvatar(),
-                                          Column(
-                                            crossAxisAlignment: CrossAxisAlignment.start,
-                                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                                            children: [Text("Flutter Comics"), Text("Chapter 000")],
+                                          Padding(
+                                            padding: const EdgeInsets.all(8.0),
+                                            child: Column(
+                                              crossAxisAlignment: CrossAxisAlignment.start,
+                                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                              children: [Text("Flutter Comics"), Text("Chapter 000")],
+                                            ),
                                           ),
                                           Spacer(),
                                           IconButton(onPressed: () {}, icon: Icon(Icons.keyboard_arrow_right_outlined))
