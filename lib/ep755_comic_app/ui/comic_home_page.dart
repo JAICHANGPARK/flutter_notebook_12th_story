@@ -20,6 +20,10 @@ class _ComicHomePageState extends State<ComicHomePage> {
                 bottom: 0,
                 child: PhysicalModel(
                   color: Colors.black.withOpacity(0.5),
+                  borderRadius: BorderRadius.only(
+                      topRight: Radius.circular(24),
+                      topLeft: Radius.circular(24)
+                  ),
                   elevation: 2,
                   child: Container(
                     height: 340,
