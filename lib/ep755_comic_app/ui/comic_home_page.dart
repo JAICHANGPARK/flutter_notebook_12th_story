@@ -96,9 +96,11 @@ class _ComicHomePageState extends State<ComicHomePage> {
                           ),
                           flex: 4,
                         ),
+                        SizedBox(height: 8,),
                         Expanded(
                           child: Container(
                             decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(16),
                               gradient: LinearGradient(
                                   begin: Alignment.topLeft,
                                   end: Alignment.bottomRight,
