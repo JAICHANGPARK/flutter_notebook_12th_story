@@ -129,7 +129,22 @@ class _ComicHomePageState extends State<ComicHomePage> {
                                   flex: 1,
                                 ),
                                 SizedBox(height: 8,),
-                                Expanded(flex: 2, child: Placeholder()),
+                                Expanded(flex: 2, child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    Text(
+                                      "Continue Reading",
+                                      style: TextStyle(fontSize: 16),
+                                    ),
+                                    IconButton(
+                                      onPressed: () {
+                                        Get.to(ComicTopAuthorPage());
+                                      },
+                                      icon: Icon(Icons.more_horiz),
+                                      color: Colors.grey,
+                                    ),
+                                  ],
+                                ),),
                                 Expanded(flex: 8, child: Placeholder()),
                               ],
                             ),
