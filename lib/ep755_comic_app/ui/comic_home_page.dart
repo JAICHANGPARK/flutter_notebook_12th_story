@@ -19,12 +19,16 @@ class _ComicHomePageState extends State<ComicHomePage> {
                 right: 0,
                 bottom: 0,
                 child: PhysicalModel(
-                  color: Colors.black.withOpacity(0.4),
+                  color: Colors.black.withOpacity(0.5),
                   elevation: 2,
                   child: Container(
                     height: 340,
                     decoration: BoxDecoration(
-                      color: Colors.white
+                      color: Colors.white,
+                      borderRadius: BorderRadius.only(
+                        topRight: Radius.circular(24),
+                        topLeft: Radius.circular(24)
+                      )
                     ),
                     
                   ),
