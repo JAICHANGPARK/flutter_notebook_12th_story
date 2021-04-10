@@ -42,7 +42,7 @@ class _ComicHomePageState extends State<ComicHomePage> {
                         ),
                         Expanded(
                           child: Padding(
-                            padding: const EdgeInsets.all(8.0),
+                            padding: const EdgeInsets.symmetric(horizontal: 8),
                             child: Column(
                               children: [
                                 Row(
@@ -56,21 +56,29 @@ class _ComicHomePageState extends State<ComicHomePage> {
                                     itemCount: 4,
                                     scrollDirection: Axis.horizontal,
                                     itemBuilder: (context, index){
-                                  return Column(
-                                    children: [
-                                      PhysicalModel(
-                                        color: Colors.black.withOpacity(0.6),
+                                  return Padding(
+                                    padding: const EdgeInsets.only(right: 16),
+                                    child: Column(
+                                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                      children: [
+                                        PhysicalModel(
+                                          color: Colors.black.withOpacity(0.6),
+                                          borderRadius: BorderRadius.circular(36),
+                                          shape: BoxShape.circle,
+                                          elevation: 7,
 
-                                        child: Container(
-                                          height: 48,
-                                          width: 48,
-                                          decoration:BoxDecoration(
-                                            color: Colors.white,
-                                            shape: BoxShape.circle,
+                                          child: Container(
+                                            height: 64,
+                                            width: 64,
+                                            decoration:BoxDecoration(
+                                              color: Colors.white,
+                                              shape: BoxShape.circle,
+                                            ),
                                           ),
                                         ),
-                                      )
-                                    ],
+                                        Text("Dreamwalker")
+                                      ],
+                                    ),
                                   );
                                 }))
                               ],
