@@ -55,7 +55,6 @@ class _ComicHomePageState extends State<ComicHomePage> {
                                     ),),
                                     IconButton(onPressed: (){
                                       Get.to(ComicTopAuthorPage());
-
                                     }, icon: Icon(Icons.more_horiz),
                                     color: Colors.grey,),
                                   ],
@@ -80,6 +79,10 @@ class _ComicHomePageState extends State<ComicHomePage> {
                                             decoration:BoxDecoration(
                                               color: Colors.white,
                                               shape: BoxShape.circle,
+                                              border: Border.all(color: Colors.white,width: 3),
+                                              image: DecorationImage(
+                                                image: NetworkImage("https://thispersondoesnotexist.com/image"),
+                                              )
                                             ),
                                           ),
                                         ),
@@ -94,7 +97,20 @@ class _ComicHomePageState extends State<ComicHomePage> {
                           flex: 4,
                         ),
                         Expanded(
-                          child: Placeholder(),
+                          child: Container(
+                            decoration: BoxDecoration(
+                              gradient: LinearGradient(
+                                  begin: Alignment.topLeft,
+                                  end: Alignment.bottomRight,
+                                  colors: [
+                                Colors.orangeAccent,
+                                Colors.orange,
+                                Colors.redAccent,
+                                Colors.red,
+
+                              ])
+                            ),
+                          ),
                           flex: 5,
                         ),
                       ],
