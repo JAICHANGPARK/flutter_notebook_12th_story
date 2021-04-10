@@ -150,7 +150,7 @@ class _ComicHomePageState extends State<ComicHomePage> {
                                   ),
                                 ),),
                                 Expanded(flex: 6, child: Container(
-                                  margin: EdgeInsets.symmetric(vertical: 8, horizontal: 16),
+                                  margin: EdgeInsets.symmetric(vertical: 12, horizontal: 12),
                                   decoration: ShapeDecoration(
                                     color: Colors.white,
                                     shape: StadiumBorder()
