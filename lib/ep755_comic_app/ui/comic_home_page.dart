@@ -166,8 +166,11 @@ class _ComicHomePageState extends State<ComicHomePage> {
                                         children: [
                                           CircleAvatar(),
                                           Column(
+                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                             children: [Text("Flutter Comics"), Text("Chapter 000")],
                                           ),
+                                          Spacer(),
                                           IconButton(onPressed: () {}, icon: Icon(Icons.keyboard_arrow_right_outlined))
                                         ],
                                       ),
