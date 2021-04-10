@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class ComicTopAuthorPage extends StatefulWidget {
-  ComicTopAuthorPage({Key key}) : super(key: key);
+  ComicTopAuthorPage({Key? key}) : super(key: key);
 
   @override
   _ComicTopAuthorPageState createState() => _ComicTopAuthorPageState();
