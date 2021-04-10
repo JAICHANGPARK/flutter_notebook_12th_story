@@ -19,12 +19,12 @@ class _ComicHomePageState extends State<ComicHomePage> {
                 right: 0,
                 bottom: 0,
                 child: PhysicalModel(
+                  elevation: 2,
                   color: Colors.black.withOpacity(0.5),
                   borderRadius: BorderRadius.only(
                       topRight: Radius.circular(24),
                       topLeft: Radius.circular(24)
                   ),
-                  elevation: 2,
                   child: Container(
                     height: 340,
                     decoration: BoxDecoration(
@@ -34,7 +34,14 @@ class _ComicHomePageState extends State<ComicHomePage> {
                         topLeft: Radius.circular(24)
                       )
                     ),
-                    
+                    child: Column(
+                      children: [
+                        Expanded(child: Placeholder()),
+                        Expanded(child: Placeholder()),
+                        Expanded(child: Placeholder()),
+
+                      ],
+                    ),
                   ),
                 ))
           ],
