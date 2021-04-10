@@ -56,7 +56,22 @@ class _ComicHomePageState extends State<ComicHomePage> {
                                     itemCount: 4,
                                     scrollDirection: Axis.horizontal,
                                     itemBuilder: (context, index){
-                                  return Column();
+                                  return Column(
+                                    children: [
+                                      PhysicalModel(
+                                        color: Colors.black.withOpacity(0.6),
+
+                                        child: Container(
+                                          height: 48,
+                                          width: 48,
+                                          decoration:BoxDecoration(
+                                            color: Colors.white,
+                                            shape: BoxShape.circle,
+                                          ),
+                                        ),
+                                      )
+                                    ],
+                                  );
                                 }))
                               ],
                             ),
