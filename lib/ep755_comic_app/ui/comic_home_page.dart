@@ -43,8 +43,9 @@ class _ComicHomePageState extends State<ComicHomePage> {
                           flex: 1,
                         ),
                         Expanded(
+                          flex: 5,
                           child: Padding(
-                            padding: const EdgeInsets.symmetric(horizontal: 8),
+                            padding: const EdgeInsets.symmetric(horizontal: 16),
                             child: Column(
                               children: [
                                 Row(
@@ -69,9 +70,9 @@ class _ComicHomePageState extends State<ComicHomePage> {
                                         scrollDirection: Axis.horizontal,
                                         itemBuilder: (context, index) {
                                           return Padding(
-                                            padding: const EdgeInsets.only(right: 16),
+                                            padding: const EdgeInsets.only(right: 18),
                                             child: Column(
-                                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                               children: [
                                                 PhysicalModel(
                                                   color: Colors.black.withOpacity(0.6),
@@ -91,7 +92,13 @@ class _ComicHomePageState extends State<ComicHomePage> {
                                                         )),
                                                   ),
                                                 ),
-                                                Text("Dreamwalker")
+                                                Text(
+                                                  "Dreamwalker",
+                                                  style: TextStyle(
+                                                    fontSize: 13,
+                                                    color: Colors.grey,
+                                                  ),
+                                                )
                                               ],
                                             ),
                                           );
@@ -99,7 +106,7 @@ class _ComicHomePageState extends State<ComicHomePage> {
                               ],
                             ),
                           ),
-                          flex: 4,
+
                         ),
                         SizedBox(
                           height: 8,
@@ -162,7 +169,7 @@ class _ComicHomePageState extends State<ComicHomePage> {
                                     child: Container(
                                       margin: EdgeInsets.symmetric(vertical: 12, horizontal: 12),
                                       decoration: ShapeDecoration(color: Colors.white, shape: StadiumBorder()),
-                                      padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8 ),
+                                      padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                                       child: Row(
                                         children: [
                                           CircleAvatar(),
