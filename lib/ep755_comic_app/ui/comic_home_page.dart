@@ -10,6 +10,8 @@ class ComicHomePage extends StatefulWidget {
 class _ComicHomePageState extends State<ComicHomePage> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      
+    );
   }
 }
