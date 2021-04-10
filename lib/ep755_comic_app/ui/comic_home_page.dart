@@ -36,9 +36,15 @@ class _ComicHomePageState extends State<ComicHomePage> {
                     ),
                     child: Column(
                       children: [
-                        Expanded(child: Placeholder()),
-                        Expanded(child: Placeholder()),
-                        Expanded(child: Placeholder()),
+                        Expanded(child: Center(
+                          child: Container(height: 4,
+                          width: 24,
+                          decoration: BoxDecoration(
+                            color: Colors.grey
+                          ),),
+                        ), flex: 1,),
+                        Expanded(child: Placeholder(), flex: 4,),
+                        Expanded(child: Placeholder(), flex: 5,),
 
                       ],
                     ),
