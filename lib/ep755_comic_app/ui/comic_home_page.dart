@@ -48,8 +48,11 @@ class _ComicHomePageState extends State<ComicHomePage> {
                                 Row(
                                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                   children: [
-                                    Text("Top Author"),
-                                    IconButton(onPressed: (){}, icon: Icon(Icons.more_horiz)),
+                                    Text("Top Author", style: TextStyle(
+                                      fontSize: 16
+                                    ),),
+                                    IconButton(onPressed: (){}, icon: Icon(Icons.more_horiz),
+                                    color: Colors.grey,),
                                   ],
                                 ),
                                 Expanded(child: ListView.builder(
