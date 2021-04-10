@@ -1,5 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_12th_story/ep755_comic_app/ui/comic_top_author_page.dart';
+import 'package:get/get.dart';
 
 class ComicHomePage extends StatefulWidget {
   ComicHomePage({Key? key}) : super(key: key);
@@ -51,7 +53,10 @@ class _ComicHomePageState extends State<ComicHomePage> {
                                     Text("Top Author", style: TextStyle(
                                       fontSize: 16
                                     ),),
-                                    IconButton(onPressed: (){}, icon: Icon(Icons.more_horiz),
+                                    IconButton(onPressed: (){
+                                      Get.to(ComicTopAuthorPage());
+
+                                    }, icon: Icon(Icons.more_horiz),
                                     color: Colors.grey,),
                                   ],
                                 ),
