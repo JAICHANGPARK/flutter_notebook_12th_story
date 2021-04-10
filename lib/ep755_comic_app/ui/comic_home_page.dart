@@ -131,10 +131,11 @@ class _ComicHomePageState extends State<ComicHomePage> {
                                 SizedBox(height: 8,),
                                 Expanded(flex: 2, child: Row(
                                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
                                   children: [
                                     Text(
                                       "Continue Reading",
-                                      style: TextStyle(fontSize: 16),
+                                      style: TextStyle(fontSize: 14, color: Colors.white),
                                     ),
                                     IconButton(
                                       onPressed: () {
