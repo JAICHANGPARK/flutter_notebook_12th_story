@@ -109,8 +109,15 @@ class _ComicHomePageState extends State<ComicHomePage> {
                                 Colors.orange,
                                 Colors.redAccent,
                                 Colors.red,
-
                               ])
+                            ),
+                            child: Column(
+                              children: [
+                                Expanded(child: Placeholder()),
+                                Expanded(
+                                    flex: 2,child: Placeholder()),
+                                Expanded(flex: 8,child: Placeholder()),
+                              ],
                             ),
                           ),
                           flex: 5,
