@@ -40,7 +40,8 @@ class _ComicHomePageState extends State<ComicHomePage> {
                           child: Container(height: 4,
                           width: 24,
                           decoration: BoxDecoration(
-                            color: Colors.grey
+                            color: Colors.grey,
+                            borderRadius: BorderRadius.circular(4)
                           ),),
                         ), flex: 1,),
                         Expanded(child: Placeholder(), flex: 4,),
