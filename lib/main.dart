@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_notebook_12th_story/ep751_lecture_app/lecture_app.dart';
+
+import 'ep755_comic_app/comic_app.dart';
 
 void main() {
-  runApp(LectureApp());
+  runApp(ComicApp());
 }
