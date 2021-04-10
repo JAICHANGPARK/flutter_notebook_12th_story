@@ -117,45 +117,61 @@ class _ComicHomePageState extends State<ComicHomePage> {
                                 ])),
                             child: Column(
                               children: [
-                                SizedBox(height: 8,),
+                                SizedBox(
+                                  height: 8,
+                                ),
                                 Expanded(
                                   child: Center(
                                     child: Container(
                                       height: 4,
                                       width: 24,
-                                      decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(4)),
+                                      decoration:
+                                          BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(4)),
                                     ),
                                   ),
                                   flex: 1,
                                 ),
-                                SizedBox(height: 8,),
-                                Expanded(flex: 2, child: Padding(
-                                  padding: const EdgeInsets.symmetric(horizontal: 16),
-                                  child: Row(
-                                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                    crossAxisAlignment: CrossAxisAlignment.center,
-                                    children: [
-                                      Text(
-                                        "Continue Reading",
-                                        style: TextStyle(fontSize: 14, color: Colors.white),
-                                      ),
-                                      IconButton(
-                                        onPressed: () {
-                                          Get.to(ComicTopAuthorPage());
-                                        },
-                                        icon: Icon(Icons.more_horiz),
-                                        color: Colors.grey,
-                                      ),
-                                    ],
+                                SizedBox(
+                                  height: 8,
+                                ),
+                                Expanded(
+                                  flex: 2,
+                                  child: Padding(
+                                    padding: const EdgeInsets.symmetric(horizontal: 16),
+                                    child: Row(
+                                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                      crossAxisAlignment: CrossAxisAlignment.center,
+                                      children: [
+                                        Text(
+                                          "Continue Reading",
+                                          style: TextStyle(fontSize: 14, color: Colors.white),
+                                        ),
+                                        IconButton(
+                                          onPressed: () {
+                                            Get.to(ComicTopAuthorPage());
+                                          },
+                                          icon: Icon(Icons.more_horiz),
+                                          color: Colors.grey,
+                                        ),
+                                      ],
+                                    ),
                                   ),
-                                ),),
-                                Expanded(flex: 6, child: Container(
-                                  margin: EdgeInsets.symmetric(vertical: 12, horizontal: 12),
-                                  decoration: ShapeDecoration(
-                                    color: Colors.white,
-                                    shape: StadiumBorder()
-                                  ),
-                                )),
+                                ),
+                                Expanded(
+                                    flex: 6,
+                                    child: Container(
+                                      margin: EdgeInsets.symmetric(vertical: 12, horizontal: 12),
+                                      decoration: ShapeDecoration(color: Colors.white, shape: StadiumBorder()),
+                                      child: Row(
+                                        children: [
+                                          CircleAvatar(),
+                                          Column(
+                                            children: [Text("Flutter Comics"), Text("Chapter 000")],
+                                          ),
+                                          IconButton(onPressed: () {}, icon: Icon(Icons.keyboard_arrow_right_outlined))
+                                        ],
+                                      ),
+                                    )),
                               ],
                             ),
                           ),
