@@ -50,73 +50,85 @@ class _ComicHomePageState extends State<ComicHomePage> {
                                 Row(
                                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                   children: [
-                                    Text("Top Author", style: TextStyle(
-                                      fontSize: 16
-                                    ),),
-                                    IconButton(onPressed: (){
-                                      Get.to(ComicTopAuthorPage());
-                                    }, icon: Icon(Icons.more_horiz),
-                                    color: Colors.grey,),
+                                    Text(
+                                      "Top Author",
+                                      style: TextStyle(fontSize: 16),
+                                    ),
+                                    IconButton(
+                                      onPressed: () {
+                                        Get.to(ComicTopAuthorPage());
+                                      },
+                                      icon: Icon(Icons.more_horiz),
+                                      color: Colors.grey,
+                                    ),
                                   ],
                                 ),
-                                Expanded(child: ListView.builder(
-                                    itemCount: 4,
-                                    scrollDirection: Axis.horizontal,
-                                    itemBuilder: (context, index){
-                                  return Padding(
-                                    padding: const EdgeInsets.only(right: 16),
-                                    child: Column(
-                                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                      children: [
-                                        PhysicalModel(
-                                          color: Colors.black.withOpacity(0.6),
-                                          borderRadius: BorderRadius.circular(48),
-                                          shape: BoxShape.circle,
-                                          elevation: 7,
-                                          child: Container(
-                                            height: 64,
-                                            width: 64,
-                                            decoration:BoxDecoration(
-                                              color: Colors.white,
-                                              shape: BoxShape.circle,
-                                              border: Border.all(color: Colors.white,width: 3),
-                                              image: DecorationImage(
-                                                image: NetworkImage("https://thispersondoesnotexist.com/image"),
-                                              )
+                                Expanded(
+                                    child: ListView.builder(
+                                        itemCount: 4,
+                                        scrollDirection: Axis.horizontal,
+                                        itemBuilder: (context, index) {
+                                          return Padding(
+                                            padding: const EdgeInsets.only(right: 16),
+                                            child: Column(
+                                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                              children: [
+                                                PhysicalModel(
+                                                  color: Colors.black.withOpacity(0.6),
+                                                  borderRadius: BorderRadius.circular(48),
+                                                  shape: BoxShape.circle,
+                                                  elevation: 7,
+                                                  child: Container(
+                                                    height: 64,
+                                                    width: 64,
+                                                    decoration: BoxDecoration(
+                                                        color: Colors.white,
+                                                        shape: BoxShape.circle,
+                                                        border: Border.all(color: Colors.white, width: 3),
+                                                        image: DecorationImage(
+                                                          image:
+                                                              NetworkImage("https://thispersondoesnotexist.com/image"),
+                                                        )),
+                                                  ),
+                                                ),
+                                                Text("Dreamwalker")
+                                              ],
                                             ),
-                                          ),
-                                        ),
-                                        Text("Dreamwalker")
-                                      ],
-                                    ),
-                                  );
-                                }))
+                                          );
+                                        }))
                               ],
                             ),
                           ),
                           flex: 4,
                         ),
-                        SizedBox(height: 8,),
+                        SizedBox(
+                          height: 8,
+                        ),
                         Expanded(
                           child: Container(
                             decoration: BoxDecoration(
-                                borderRadius: BorderRadius.only(topRight: Radius.circular(24), topLeft: Radius.circular(24)),
-                              gradient: LinearGradient(
-                                  begin: Alignment.topLeft,
-                                  end: Alignment.bottomRight,
-                                  colors: [
-                                Colors.orangeAccent,
-                                Colors.orange,
-                                Colors.redAccent,
-                                Colors.red,
-                              ])
-                            ),
+                                borderRadius:
+                                    BorderRadius.only(topRight: Radius.circular(24), topLeft: Radius.circular(24)),
+                                gradient: LinearGradient(begin: Alignment.topLeft, end: Alignment.bottomRight, colors: [
+                                  Colors.orangeAccent,
+                                  Colors.orange,
+                                  Colors.redAccent,
+                                  Colors.red,
+                                ])),
                             child: Column(
                               children: [
-                                Expanded(child: Placeholder()),
                                 Expanded(
-                                    flex: 2,child: Placeholder()),
-                                Expanded(flex: 8,child: Placeholder()),
+                                  child: Center(
+                                    child: Container(
+                                      height: 4,
+                                      width: 24,
+                                      decoration: BoxDecoration(color: Colors.grey, borderRadius: BorderRadius.circular(4)),
+                                    ),
+                                  ),
+                                  flex: 1,
+                                ),
+                                Expanded(flex: 2, child: Placeholder()),
+                                Expanded(flex: 8, child: Placeholder()),
                               ],
                             ),
                           ),
