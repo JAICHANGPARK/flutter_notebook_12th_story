@@ -21,32 +21,41 @@ class _ComicHomePageState extends State<ComicHomePage> {
                 child: PhysicalModel(
                   elevation: 2,
                   color: Colors.black.withOpacity(0.5),
-                  borderRadius: BorderRadius.only(
-                      topRight: Radius.circular(24),
-                      topLeft: Radius.circular(24)
-                  ),
+                  borderRadius: BorderRadius.only(topRight: Radius.circular(24), topLeft: Radius.circular(24)),
                   child: Container(
                     height: 340,
                     decoration: BoxDecoration(
-                      color: Colors.white,
-                      borderRadius: BorderRadius.only(
-                        topRight: Radius.circular(24),
-                        topLeft: Radius.circular(24)
-                      )
-                    ),
+                        color: Colors.white,
+                        borderRadius: BorderRadius.only(topRight: Radius.circular(24), topLeft: Radius.circular(24))),
                     child: Column(
                       children: [
-                        Expanded(child: Center(
-                          child: Container(height: 4,
-                          width: 24,
-                          decoration: BoxDecoration(
-                            color: Colors.grey,
-                            borderRadius: BorderRadius.circular(4)
-                          ),),
-                        ), flex: 1,),
-                        Expanded(child: Placeholder(), flex: 4,),
-                        Expanded(child: Placeholder(), flex: 5,),
-
+                        Expanded(
+                          child: Center(
+                            child: Container(
+                              height: 4,
+                              width: 24,
+                              decoration: BoxDecoration(color: Colors.grey, borderRadius: BorderRadius.circular(4)),
+                            ),
+                          ),
+                          flex: 1,
+                        ),
+                        Expanded(
+                          child: Column(
+                            children: [
+                              Row(
+                                children: [
+                                  Text("Top Author"),
+                                  IconButton(onPressed: (){}, icon: Icon(Icons.more_horiz)),
+                                ],
+                              )
+                            ],
+                          ),
+                          flex: 4,
+                        ),
+                        Expanded(
+                          child: Placeholder(),
+                          flex: 5,
+                        ),
                       ],
                     ),
                   ),
