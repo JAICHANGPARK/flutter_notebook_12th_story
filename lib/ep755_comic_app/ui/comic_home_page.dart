@@ -201,7 +201,7 @@ class _ComicHomePageState extends State<ComicHomePage> {
               child: Container(
                 height: 358,
                 decoration: BoxDecoration(
-                 
+
                 ),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -260,6 +260,14 @@ class _ComicHomePageState extends State<ComicHomePage> {
                                       ),
                                     ),
                                   ],
+                                ),
+                              ),
+                              Spacer(),
+                              Container(
+                                height: 54,
+                                width: 54,
+                                decoration: BoxDecoration(
+                                  border: Border.all(color: Colors.grey,)
                                 ),
                               )
                             ],
