@@ -141,12 +141,26 @@ class _ComicHomePageState extends State<ComicHomePage> {
                     Expanded(flex: 6, child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Row(
-                          children: [
-                            Text("Trending Comic"),
-                            IconButton(onPressed: (){}, icon: Icon(Icons.more_horiz))
-                          ],
-                        )
+                        Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 16),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Text("Trending Comic"),
+                              IconButton(onPressed: (){}, icon: Icon(Icons.more_horiz))
+                            ],
+                          ),
+                        ),
+                        Expanded(child: ListView.builder(
+                            itemCount: 8,
+                            scrollDirection: Axis.horizontal,
+                            itemBuilder: (context, index){
+                          return Column(
+                            children: [
+
+                            ],
+                          );
+                        }))
                       ],
                     )),
                   ],
