@@ -126,17 +126,29 @@ class _ComicHomePageState extends State<ComicHomePage> {
                           padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                           child: Container(
                             decoration: BoxDecoration(color: Colors.grey[200], borderRadius: BorderRadius.circular(36)),
-                            padding: EdgeInsets.symmetric(horizontal: 16),
+                            padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                             child: TextField(
                               controller: _textEditingController,
                               decoration: InputDecoration(
                                 icon: Icon(Icons.search),
                                 border: InputBorder.none,
+                                hintText: "Search Comic",
+                                suffixIcon: Icon(Icons.tune)
                               ),
                             ),
                           ),
                         )),
-                    Expanded(flex: 6, child: Placeholder()),
+                    Expanded(flex: 6, child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Row(
+                          children: [
+                            Text("Trending Comic"),
+                            IconButton(onPressed: (){}, icon: Icon(Icons.more_horiz))
+                          ],
+                        )
+                      ],
+                    )),
                   ],
                 ),
               ),
