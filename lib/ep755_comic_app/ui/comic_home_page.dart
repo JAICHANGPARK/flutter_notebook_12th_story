@@ -13,6 +13,13 @@ class ComicHomePage extends StatefulWidget {
 }
 
 class _ComicHomePageState extends State<ComicHomePage> {
+  TextEditingController _textEditingController = TextEditingController();
+  @override
+  void dispose() {
+    // TODO: implement dispose
+    _textEditingController.dispose();
+    super.dispose();
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
