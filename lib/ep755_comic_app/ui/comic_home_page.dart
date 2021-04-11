@@ -119,9 +119,15 @@ class _ComicHomePageState extends State<ComicHomePage> {
                             ],
                           ),
                         )),
-                    Expanded(flex: 2, child: Container(
-                      decoration: BoxDecoration(
-                        color: Colors.grey[400]
+                    Expanded(flex: 2, child: Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                      child: Container(
+
+                        decoration: BoxDecoration(
+                          color: Colors.grey[200],
+                          borderRadius: BorderRadius.circular(36)
+                        ),
+                        
                       ),
                     )),
                     Expanded(flex: 6, child: Placeholder()),
