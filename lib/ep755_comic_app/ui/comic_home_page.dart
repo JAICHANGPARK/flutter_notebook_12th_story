@@ -152,7 +152,7 @@ class _ComicHomePageState extends State<ComicHomePage> {
                           ),
                         ),
                         Expanded(child: Padding(
-                          padding: const EdgeInsets.only(left: 16, top: 8),
+                          padding: const EdgeInsets.only(left: 16, top: 4),
                           child: ListView.builder(
                               itemCount: 8,
                               scrollDirection: Axis.horizontal,
