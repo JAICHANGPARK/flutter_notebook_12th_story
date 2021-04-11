@@ -129,6 +129,9 @@ class _ComicHomePageState extends State<ComicHomePage> {
                         ),
                         child: TextField(
                           controller: _textEditingController,
+                          decoration: InputDecoration(
+                            icon: Icon(Icons.search)
+                          ),
                         ),
                       ),
                     )),
