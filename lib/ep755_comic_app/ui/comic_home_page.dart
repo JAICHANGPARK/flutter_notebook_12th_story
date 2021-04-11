@@ -200,9 +200,14 @@ class _ComicHomePageState extends State<ComicHomePage> {
               right: 0,
               top: 16,
               child: Container(
-                height: 340,
+                height: 358,
                 decoration: BoxDecoration(
-                  color: Colors.pink
+                  color: Colors.pink,
+                ),
+                child: Column(
+                  children: [
+                    
+                  ],
                 ),
               ),
             )
@@ -212,3 +217,18 @@ class _ComicHomePageState extends State<ComicHomePage> {
     );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
