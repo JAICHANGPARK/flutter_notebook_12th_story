@@ -106,7 +106,6 @@ class _ComicHomePageState extends State<ComicHomePage> {
                               ],
                             ),
                           ),
-
                         ),
                         SizedBox(
                           height: 8,
