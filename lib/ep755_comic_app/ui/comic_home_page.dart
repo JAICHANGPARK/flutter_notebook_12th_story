@@ -206,17 +206,44 @@ class _ComicHomePageState extends State<ComicHomePage> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Expanded(flex: 2, child: Row(
-                      children: [
-                        Container(
-                          height: 52,
-                          width: 52,
-                          decoration: BoxDecoration(
-                            color: Colors.grey,
-                            border: Border.all(color: Colors.white, width: 2)
+                    Expanded(flex: 2, child: Padding(
+                      padding: const EdgeInsets.symmetric(16),
+                      child: Row(
+                        children: [
+                          SizedBox(
+                            height: 58,
+                            width: 58,
+                            child: Stack(
+                              children: [
+                                Positioned(
+                                    right: 0,
+                                    top: 0,
+                                    child: CircleAvatar(
+                                      radius: 8,
+                                    )
+                                ),
+                                Positioned(
+                                  left: 0,
+                                  right: 0,
+                                  top: 0,
+                                  bottom: 0,
+                                  child: Container(
+                                    height: 52,
+                                    width: 52,
+                                    decoration: BoxDecoration(
+                                      color: Colors.grey,
+                                      border: Border.all(color: Colors.white, width: 2),
+                                      shape: BoxShape.circle
+                                    ),
+                                  ),
+                                ),
+
+                              ],
+                            ),
                           ),
-                        )
-                      ],
+
+                        ],
+                      ),
                     )),
                     Expanded(flex: 2, child: Placeholder()),
                     Expanded(flex: 6, child: Placeholder()),
