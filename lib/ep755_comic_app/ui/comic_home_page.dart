@@ -120,10 +120,11 @@ class _ComicHomePageState extends State<ComicHomePage> {
                             ],
                           ),
                         )),
+                    SizedBox(height: 8,),
                     Expanded(
                         flex: 2,
                         child: Padding(
-                          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 2),
                           child: Container(
                             decoration: BoxDecoration(color: Colors.grey[200], borderRadius: BorderRadius.circular(36)),
                             padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
@@ -138,7 +139,7 @@ class _ComicHomePageState extends State<ComicHomePage> {
                             ),
                           ),
                         )),
-                    Expanded(flex: 6, child: Column(
+                    Expanded(flex: 8, child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Padding(
@@ -166,9 +167,10 @@ class _ComicHomePageState extends State<ComicHomePage> {
                                     width: 120,
                                     decoration: BoxDecoration(
                                       color: Colors.blue,
+                                      borderRadius: BorderRadius.circular(8),
                                       image: DecorationImage(
                                         image: NetworkImage("https://cdn.pixabay.com/photo/2021/02/20/03/01/animals-6032121_960_720.jpg"),
-                                        fit: BoxFit.cover
+                                        fit: BoxFit.cover,
                                       )
                                     ),
                                   )),
