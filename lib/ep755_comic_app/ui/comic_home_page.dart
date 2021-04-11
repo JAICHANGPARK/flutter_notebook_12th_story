@@ -151,22 +151,31 @@ class _ComicHomePageState extends State<ComicHomePage> {
                             ],
                           ),
                         ),
-                        Expanded(child: ListView.builder(
-                            itemCount: 8,
-                            scrollDirection: Axis.horizontal,
-                            itemBuilder: (context, index){
-                          return Column(
-                            children: [
-                              Expanded(child: Container(
-                                decoration: BoxDecoration(
-                                  color: Colors.blue
-                                ),
-                              )),
-                              Text("Flutter Book"),
-                              Text("by Dream")
-                            ],
-                          );
-                        }))
+                        Expanded(child: Padding(
+                          padding: const EdgeInsets.only(left: 16, top: 8),
+                          child: ListView.builder(
+                              itemCount: 8,
+                              scrollDirection: Axis.horizontal,
+                              itemBuilder: (context, index){
+                            return Padding(
+                              padding: const EdgeInsets.only(right: 16),
+                              child: Column(
+                                children: [
+                                  Expanded(child: Container(
+                                    decoration: BoxDecoration(
+                                      color: Colors.blue
+                                    ),
+                                  )),
+                                  Text("Flutter Book", style: TextStyle(
+                                    fontSize: 13,
+                                    color: Colors.grey
+                                  ),),
+                                  Text("by Dream")
+                                ],
+                              ),
+                            );
+                          }),
+                        ))
                       ],
                     )),
                   ],
