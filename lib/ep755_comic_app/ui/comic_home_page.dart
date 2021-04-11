@@ -215,13 +215,7 @@ class _ComicHomePageState extends State<ComicHomePage> {
                             width: 58,
                             child: Stack(
                               children: [
-                                Positioned(
-                                    right: 0,
-                                    top: 0,
-                                    child: CircleAvatar(
-                                      radius: 8,
-                                    )
-                                ),
+
                                 Positioned(
                                   left: 0,
                                   right: 0,
@@ -237,7 +231,13 @@ class _ComicHomePageState extends State<ComicHomePage> {
                                     ),
                                   ),
                                 ),
-
+                                Positioned(
+                                    right: 0,
+                                    top: 0,
+                                    child: CircleAvatar(
+                                      radius: 8,
+                                    )
+                                ),
                               ],
                             ),
                           ),
