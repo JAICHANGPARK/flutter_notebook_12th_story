@@ -119,7 +119,11 @@ class _ComicHomePageState extends State<ComicHomePage> {
                             ],
                           ),
                         )),
-                    Expanded(flex: 2, child: Placeholder()),
+                    Expanded(flex: 2, child: Container(
+                      decoration: BoxDecoration(
+                        color: Colors.grey[400]
+                      ),
+                    )),
                     Expanded(flex: 6, child: Placeholder()),
                   ],
                 ),
@@ -130,6 +134,10 @@ class _ComicHomePageState extends State<ComicHomePage> {
       ),
     );
   }
+
+
+
+
   Widget buildBottomWidget(){
     return PhysicalModel(
       elevation: 2,
