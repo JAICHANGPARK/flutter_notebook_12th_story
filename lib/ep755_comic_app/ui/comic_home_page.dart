@@ -198,7 +198,7 @@ class _ComicHomePageState extends State<ComicHomePage> {
             Positioned(
               left: 0,
               right: 0,
-              top: 16,
+              top: 0,
               child: Container(
                 height: 358,
                 decoration: BoxDecoration(
@@ -212,7 +212,9 @@ class _ComicHomePageState extends State<ComicHomePage> {
                         child: Placeholder()),
                     Expanded(
                         flex : 2,child: Placeholder()),
-                    Expanded(child: Placeholder()),
+                    Expanded(
+                        flex : 6,
+                        child: Placeholder()),
                   ],
                 ),
               ),
