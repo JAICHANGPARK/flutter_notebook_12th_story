@@ -157,7 +157,9 @@ class _ComicHomePageState extends State<ComicHomePage> {
                             itemBuilder: (context, index){
                           return Column(
                             children: [
-
+                              Expanded(child: Container()),
+                              Text("Flutter Book"),
+                              Text("by Dream")
                             ],
                           );
                         }))
