@@ -127,7 +127,9 @@ class _ComicHomePageState extends State<ComicHomePage> {
                           color: Colors.grey[200],
                           borderRadius: BorderRadius.circular(36)
                         ),
-                        
+                        child: TextField(
+                          controller: _textEditingController,
+                        ),
                       ),
                     )),
                     Expanded(flex: 6, child: Placeholder()),
