@@ -14,23 +14,21 @@ class ComicHomePage extends StatefulWidget {
 
 class _ComicHomePageState extends State<ComicHomePage> {
   TextEditingController _textEditingController = TextEditingController();
+
   @override
   void dispose() {
     // TODO: implement dispose
     _textEditingController.dispose();
     super.dispose();
   }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
         child: Stack(
           children: [
-            Positioned(
-                left: 0,
-                right: 0,
-                bottom: 0,
-                child: buildBottomWidget()),
+            Positioned(left: 0, right: 0, bottom: 0, child: buildBottomWidget()),
             Positioned(
               left: 0,
               right: 0,
@@ -58,7 +56,7 @@ class _ComicHomePageState extends State<ComicHomePage> {
                                       top: 0,
                                       bottom: 0,
                                       child: InkWell(
-                                        onTap: (){
+                                        onTap: () {
                                           Get.to(ComicProfilePage());
                                         },
                                         child: Container(
@@ -113,29 +111,31 @@ class _ComicHomePageState extends State<ComicHomePage> {
                                   shape: BoxShape.circle,
                                 ),
                                 child: IconButton(
-                                  icon: Icon( Icons.apps,), onPressed: () {  },
+                                  icon: Icon(
+                                    Icons.apps,
+                                  ),
+                                  onPressed: () {},
                                 ),
                               )
                             ],
                           ),
                         )),
-                    Expanded(flex: 2, child: Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-                      child: Container(
-
-                        decoration: BoxDecoration(
-                          color: Colors.grey[200],
-                          borderRadius: BorderRadius.circular(36)
-                        ),
-                        padding: EdgeInsets.symmetric(horizontal: 16),
-                        child: TextField(
-                          controller: _textEditingController,
-                          decoration: InputDecoration(
-                            icon: Icon(Icons.search)
+                    Expanded(
+                        flex: 2,
+                        child: Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                          child: Container(
+                            decoration: BoxDecoration(color: Colors.grey[200], borderRadius: BorderRadius.circular(36)),
+                            padding: EdgeInsets.symmetric(horizontal: 16),
+                            child: TextField(
+                              controller: _textEditingController,
+                              decoration: InputDecoration(
+                                icon: Icon(Icons.search),
+                                border: InputBorder.none,
+                              ),
+                            ),
                           ),
-                        ),
-                      ),
-                    )),
+                        )),
                     Expanded(flex: 6, child: Placeholder()),
                   ],
                 ),
@@ -147,10 +147,7 @@ class _ComicHomePageState extends State<ComicHomePage> {
     );
   }
 
-
-
-
-  Widget buildBottomWidget(){
+  Widget buildBottomWidget() {
     return PhysicalModel(
       elevation: 2,
       color: Colors.black.withOpacity(0.5),
@@ -217,8 +214,7 @@ class _ComicHomePageState extends State<ComicHomePage> {
                                             shape: BoxShape.circle,
                                             border: Border.all(color: Colors.white, width: 3),
                                             image: DecorationImage(
-                                              image:
-                                              NetworkImage("https://thispersondoesnotexist.com/image"),
+                                              image: NetworkImage("https://thispersondoesnotexist.com/image"),
                                             )),
                                       ),
                                     ),
@@ -243,8 +239,7 @@ class _ComicHomePageState extends State<ComicHomePage> {
             Expanded(
               child: Container(
                 decoration: BoxDecoration(
-                    borderRadius:
-                    BorderRadius.only(topRight: Radius.circular(24), topLeft: Radius.circular(24)),
+                    borderRadius: BorderRadius.only(topRight: Radius.circular(24), topLeft: Radius.circular(24)),
                     gradient: LinearGradient(begin: Alignment.topLeft, end: Alignment.bottomRight, colors: [
                       Colors.orangeAccent,
                       Colors.orange,
@@ -261,8 +256,7 @@ class _ComicHomePageState extends State<ComicHomePage> {
                         child: Container(
                           height: 4,
                           width: 24,
-                          decoration:
-                          BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(4)),
+                          decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(4)),
                         ),
                       ),
                       flex: 1,
@@ -324,6 +318,5 @@ class _ComicHomePageState extends State<ComicHomePage> {
         ),
       ),
     );
-
   }
 }
