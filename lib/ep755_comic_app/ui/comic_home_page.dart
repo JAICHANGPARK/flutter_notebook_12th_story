@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_notebook_12th_story/ep755_comic_app/ui/comic_top_author_page.dart';
 import 'package:get/get.dart';
 
+import 'comic_profile_page.dart';
+
 class ComicHomePage extends StatefulWidget {
   ComicHomePage({Key? key}) : super(key: key);
 
@@ -220,13 +222,18 @@ class _ComicHomePageState extends State<ComicHomePage> {
                                       right: 0,
                                       top: 0,
                                       bottom: 0,
-                                      child: Container(
-                                        height: 52,
-                                        width: 52,
-                                        decoration: BoxDecoration(
-                                            color: Colors.grey,
-                                            border: Border.all(color: Colors.white, width: 2),
-                                            shape: BoxShape.circle),
+                                      child: InkWell(
+                                        onTap: (){
+                                          Get.to(ComicProfilePage());
+                                        },
+                                        child: Container(
+                                          height: 52,
+                                          width: 52,
+                                          decoration: BoxDecoration(
+                                              color: Colors.grey,
+                                              border: Border.all(color: Colors.white, width: 2),
+                                              shape: BoxShape.circle),
+                                        ),
                                       ),
                                     ),
                                     Positioned(
