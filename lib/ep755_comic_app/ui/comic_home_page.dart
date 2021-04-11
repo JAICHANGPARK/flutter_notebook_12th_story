@@ -206,51 +206,65 @@ class _ComicHomePageState extends State<ComicHomePage> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Expanded(flex: 2, child: Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 16),
-                      child: Row(
-                        children: [
-                          SizedBox(
-                            height: 52,
-                            width: 52,
-                            child: Stack(
-                              children: [
-
-                                Positioned(
-                                  left: 0,
-                                  right: 0,
-                                  top: 0,
-                                  bottom: 0,
-                                  child: Container(
-                                    height: 52,
-                                    width: 52,
-                                    decoration: BoxDecoration(
-                                      color: Colors.grey,
-                                      border: Border.all(color: Colors.white, width: 2),
-                                      shape: BoxShape.circle
-                                    ),
-                                  ),
-                                ),
-                                Positioned(
-                                    right: 0,
-                                    top: 0,
-                                    child: CircleAvatar(
-                                      radius: 10,
-                                    )
-                                ),
-                              ],
-                            ),
-                          ),
-                          Column(
+                    Expanded(
+                        flex: 2,
+                        child: Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 16),
+                          child: Row(
                             children: [
-                              Text("Good Afternoon"),
-                              Text("Mira Suxi"),
+                              SizedBox(
+                                height: 52,
+                                width: 52,
+                                child: Stack(
+                                  children: [
+                                    Positioned(
+                                      left: 0,
+                                      right: 0,
+                                      top: 0,
+                                      bottom: 0,
+                                      child: Container(
+                                        height: 52,
+                                        width: 52,
+                                        decoration: BoxDecoration(
+                                            color: Colors.grey,
+                                            border: Border.all(color: Colors.white, width: 2),
+                                            shape: BoxShape.circle),
+                                      ),
+                                    ),
+                                    Positioned(
+                                        right: 0,
+                                        top: 0,
+                                        child: CircleAvatar(
+                                          radius: 10,
+                                        )),
+                                  ],
+                                ),
+                              ),
+                              Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                                  children: [
+                                    Text(
+                                      "Good Afternoon",
+                                      style: TextStyle(
+                                        color: Colors.grey,
+                                      ),
+                                    ),
+                                    Text(
+                                      "Mira Suxi",
+                                      style: TextStyle(
+                                        fontSize: 18,
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              )
                             ],
-                          )
-
-                        ],
-                      ),
-                    )),
+                          ),
+                        )),
                     Expanded(flex: 2, child: Placeholder()),
                     Expanded(flex: 6, child: Placeholder()),
                   ],
@@ -263,18 +277,3 @@ class _ComicHomePageState extends State<ComicHomePage> {
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
