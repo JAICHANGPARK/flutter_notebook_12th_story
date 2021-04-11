@@ -160,16 +160,21 @@ class _ComicHomePageState extends State<ComicHomePage> {
                             return Padding(
                               padding: const EdgeInsets.only(right: 16),
                               child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   Expanded(child: Container(
+                                    width: 120,
                                     decoration: BoxDecoration(
                                       color: Colors.blue
                                     ),
                                   )),
-                                  Text("Flutter Book", style: TextStyle(
-                                    fontSize: 13,
-                                    color: Colors.grey
-                                  ),),
+                                  Padding(
+                                    padding: const EdgeInsets.symmetric(vertical: 4),
+                                    child: Text("Flutter Book", style: TextStyle(
+                                      fontSize: 13,
+                                      color: Colors.grey
+                                    ),),
+                                  ),
                                   Text("by Dream", style: TextStyle(
                                       fontSize: 12,
                                       color: Colors.grey[600]!
