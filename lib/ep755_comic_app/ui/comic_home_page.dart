@@ -205,8 +205,9 @@ class _ComicHomePageState extends State<ComicHomePage> {
                   color: Colors.pink,
                 ),
                 child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    
+
                   ],
                 ),
               ),
