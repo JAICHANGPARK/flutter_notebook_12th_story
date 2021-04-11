@@ -170,7 +170,10 @@ class _ComicHomePageState extends State<ComicHomePage> {
                                     fontSize: 13,
                                     color: Colors.grey
                                   ),),
-                                  Text("by Dream")
+                                  Text("by Dream", style: TextStyle(
+                                      fontSize: 12,
+                                      color: Colors.grey[600]!
+                                  ),)
                                 ],
                               ),
                             );
