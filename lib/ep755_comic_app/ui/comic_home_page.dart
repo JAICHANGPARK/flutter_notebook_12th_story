@@ -207,12 +207,12 @@ class _ComicHomePageState extends State<ComicHomePage> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Expanded(flex: 2, child: Padding(
-                      padding: const EdgeInsets.symmetric(16),
+                      padding: const EdgeInsets.symmetric(horizontal: 16),
                       child: Row(
                         children: [
                           SizedBox(
-                            height: 58,
-                            width: 58,
+                            height: 52,
+                            width: 52,
                             child: Stack(
                               children: [
 
@@ -235,12 +235,18 @@ class _ComicHomePageState extends State<ComicHomePage> {
                                     right: 0,
                                     top: 0,
                                     child: CircleAvatar(
-                                      radius: 8,
+                                      radius: 10,
                                     )
                                 ),
                               ],
                             ),
                           ),
+                          Column(
+                            children: [
+                              Text("Good Afternoon"),
+                              Text("Mira Suxi"),
+                            ],
+                          )
 
                         ],
                       ),
