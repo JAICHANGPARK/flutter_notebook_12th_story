@@ -165,7 +165,11 @@ class _ComicHomePageState extends State<ComicHomePage> {
                                   Expanded(child: Container(
                                     width: 120,
                                     decoration: BoxDecoration(
-                                      color: Colors.blue
+                                      color: Colors.blue,
+                                      image: DecorationImage(
+                                        image: NetworkImage("https://cdn.pixabay.com/photo/2021/02/20/03/01/animals-6032121_960_720.jpg"),
+                                        fit: BoxFit.cover
+                                      )
                                     ),
                                   )),
                                   Padding(
