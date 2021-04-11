@@ -193,7 +193,19 @@ class _ComicHomePageState extends State<ComicHomePage> {
                       ],
                     ),
                   ),
-                ))
+                )),
+
+            Positioned(
+              left: 0,
+              right: 0,
+              top: 16,
+              child: Container(
+                height: 340,
+                decoration: BoxDecoration(
+                  color: Colors.pink
+                ),
+              ),
+            )
           ],
         ),
       ),
