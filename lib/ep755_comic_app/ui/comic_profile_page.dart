@@ -30,9 +30,18 @@ class _ComicProfilePageState extends State<ComicProfilePage> {
                   }, icon: Icon(Icons.more_horiz))
                 ],
               ),
-              Expanded(child: Placeholder()),
-              Expanded(child: Placeholder()),
-              Expanded(child: Placeholder()),
+              Expanded(
+                  flex: 3,
+                  child: Placeholder()),
+              Divider(
+                thickness: 2,
+              ),
+              Expanded(
+                  flex: 2,
+                  child: Placeholder()),
+              Expanded(
+                  flex: 10,
+                  child: Placeholder()),
             ],
           ),
         ),
