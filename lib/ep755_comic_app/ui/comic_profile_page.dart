@@ -154,7 +154,25 @@ class _ComicProfilePageState extends State<ComicProfilePage> {
                       )),
                 ],
               )),
-              Expanded(flex: 10, child: Placeholder()),
+              Expanded(flex: 10, child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Text("Comic"),
+                      IconButton(onPressed: (){}, icon: Icon(Icons.more_horiz)),
+                    ],
+                  ),
+                  Expanded(child: GridView.count(crossAxisCount: 2,
+                  children: [
+                    
+                  ],
+                  ),
+
+                  )
+                ],
+              )),
             ],
           ),
         ),
