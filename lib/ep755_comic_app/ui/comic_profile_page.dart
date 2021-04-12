@@ -30,7 +30,9 @@ class _ComicProfilePageState extends State<ComicProfilePage> {
                   IconButton(onPressed: () {}, icon: Icon(Icons.more_horiz))
                 ],
               ),
-              SizedBox(height: 16,),
+              SizedBox(
+                height: 16,
+              ),
               Expanded(
                   flex: 3,
                   child: Column(
@@ -90,7 +92,9 @@ class _ComicProfilePageState extends State<ComicProfilePage> {
                           )),
                     ],
                   )),
-              SizedBox(height: 16,),
+              SizedBox(
+                height: 16,
+              ),
               Divider(
                 thickness: 2,
               ),
@@ -184,26 +188,26 @@ class _ComicProfilePageState extends State<ComicProfilePage> {
                                 (index) => Container(
                                       child: Column(
                                         children: [
-                                          Expanded(flex: 8, child: Container(
-                                            decoration: BoxDecoration(
-                                              color: Colors.blue,
-                                              borderRadius: BorderRadius.circular(16),
-                                              image: DecorationImage(
-                                                image: NetworkImage(
-                                                    "https://cdn.pixabay.com/photo/2021/02/20/03/01/animals-6032121_960_720.jpg"
-                                                ),
-                                                fit: BoxFit.cover
-                                              )
-                                            ),
-                                          )),
-                                          SizedBox(height: 8,),
                                           Expanded(
-                                            child: Text("Flutter Live Coding PodCast",
-                                            style: TextStyle(
-                                              fontSize: 16,
-                                              fontWeight: FontWeight.bold,
-                                              color: Colors.grey
-                                            ),),
+                                              flex: 8,
+                                              child: Container(
+                                                decoration: BoxDecoration(
+                                                    color: Colors.blue,
+                                                    borderRadius: BorderRadius.circular(16),
+                                                    image: DecorationImage(
+                                                        image: NetworkImage(
+                                                            "https://cdn.pixabay.com/photo/2021/02/20/03/01/animals-6032121_960_720.jpg"),
+                                                        fit: BoxFit.cover)),
+                                              )),
+                                          SizedBox(
+                                            height: 8,
+                                          ),
+                                          Expanded(
+                                            child: Text(
+                                              "Flutter Live Coding PodCast",
+                                              style: TextStyle(
+                                                  fontSize: 16, fontWeight: FontWeight.bold, color: Colors.grey),
+                                            ),
                                             flex: 2,
                                           ),
                                         ],
