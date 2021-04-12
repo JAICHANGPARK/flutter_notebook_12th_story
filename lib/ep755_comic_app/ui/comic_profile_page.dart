@@ -160,14 +160,24 @@ class _ComicProfilePageState extends State<ComicProfilePage> {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Text("Comic"),
+                      Text("Comic", style: TextStyle(
+                        fontSize: 16,
+                        fontWeight: FontWeight.bold
+                      ),),
                       IconButton(onPressed: (){}, icon: Icon(Icons.more_horiz)),
                     ],
                   ),
                   Expanded(child: GridView.count(crossAxisCount: 2,
-                  children: [
-                    
-                  ],
+                  children: List.generate(5, (index) =>
+                      Container(
+                        color: Colors.red,
+                        child: Column(
+                          children: [
+
+                          ],
+                        ),
+                      )
+                  ).toList()
                   ),
 
                   )
