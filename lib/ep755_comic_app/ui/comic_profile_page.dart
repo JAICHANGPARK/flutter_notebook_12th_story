@@ -51,7 +51,8 @@ class _ComicProfilePageState extends State<ComicProfilePage> {
                                   Text("Dreamwalker"),
                                   Row(
                                     children: [
-                                      Icon(Icons.star, color: Colors.yellow,)
+                                      Icon(Icons.star, color: Colors.yellow,),
+                                      Text("4.4/5")
                                     ],
                                   )
                                 ],
