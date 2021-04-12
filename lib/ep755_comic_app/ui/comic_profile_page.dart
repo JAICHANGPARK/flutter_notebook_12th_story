@@ -168,11 +168,19 @@ class _ComicProfilePageState extends State<ComicProfilePage> {
                     ],
                   ),
                   Expanded(child: GridView.count(crossAxisCount: 2,
+                  crossAxisSpacing: 8,
+                  mainAxisSpacing: 8,
+                  childAspectRatio: 0.8,
                   children: List.generate(5, (index) =>
                       Container(
                         color: Colors.red,
                         child: Column(
                           children: [
+                            Expanded(
+                                flex: 8,
+                                child: Placeholder()),
+                            Expanded(child: Placeholder(),
+                            flex: 2,),
 
                           ],
                         ),
