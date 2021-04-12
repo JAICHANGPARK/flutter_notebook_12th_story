@@ -46,18 +46,30 @@ class _ComicProfilePageState extends State<ComicProfilePage> {
                                     shape: BoxShape.circle,
                                     border: Border.all(color: Colors.white, width: 2)),
                               ),
-                              Column(
-                                children: [
-                                  Text("Dreamwalker", style: TextStyle(
-                                    fontSize: 18
-                                  ),),
-                                  Row(
-                                    children: [
-                                      Icon(Icons.star, color: Colors.yellow,),
-                                      Text("4.4/5")
-                                    ],
-                                  )
-                                ],
+                              Padding(
+                                padding: const EdgeInsets.all(16.0),
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text(
+                                      "Dreamwalker",
+                                      style: TextStyle(fontSize: 18),
+                                    ),
+                                    Row(
+                                      children: [
+                                        Icon(
+                                          Icons.star,
+                                          color: Colors.yellow,
+                                          size: 16,
+                                        ),
+                                        SizedBox(
+                                          width: 8,
+                                        ),
+                                        Text("4.4/5")
+                                      ],
+                                    )
+                                  ],
+                                ),
                               )
                             ],
                           )),
