@@ -99,13 +99,25 @@ class _ComicProfilePageState extends State<ComicProfilePage> {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text('10'),
+                          Text('10',style: TextStyle(
+                            fontSize: 16,
+                            fontWeight: FontWeight.bold
+                          ),),
                           Text("Book")
                         ],
                       )),
                   Expanded(
-                      flex: 2,
-                      child: Placeholder()),
+                      flex:2,
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text('10',style: TextStyle(
+                              fontSize: 16,
+                              fontWeight: FontWeight.bold
+                          ),),
+                          Text("Book")
+                        ],
+                      )),
                   Expanded(
                       flex: 3,
                       child: Placeholder()),
