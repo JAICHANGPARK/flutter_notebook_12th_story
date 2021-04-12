@@ -30,6 +30,7 @@ class _ComicProfilePageState extends State<ComicProfilePage> {
                   IconButton(onPressed: () {}, icon: Icon(Icons.more_horiz))
                 ],
               ),
+              SizedBox(height: 16,),
               Expanded(
                   flex: 3,
                   child: Column(
@@ -89,6 +90,7 @@ class _ComicProfilePageState extends State<ComicProfilePage> {
                           )),
                     ],
                   )),
+              SizedBox(height: 16,),
               Divider(
                 thickness: 2,
               ),
