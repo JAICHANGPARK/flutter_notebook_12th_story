@@ -29,16 +29,26 @@ class _ComicProfilePageState extends State<ComicProfilePage> {
                   IconButton(onPressed: () {}, icon: Icon(Icons.more_horiz))
                 ],
               ),
-              Expanded(flex: 3, child: Column(
-                children: [
-                  Expanded(
-                      flex: 3,
-                      child: Placeholder()),
-                  Expanded(
-                     flex: 2,
-                      child: Placeholder()),
-                ],
-              )),
+              Expanded(
+                  flex: 3,
+                  child: Column(
+                    children: [
+                      Expanded(
+                          flex: 3,
+                          child: Row(
+                            children: [
+                              Container(
+                                height: 64,
+                                width: 64,
+                                decoration: BoxDecoration(
+                                  color: Colors.grey,
+                                ),
+                              )
+                            ],
+                          )),
+                      Expanded(flex: 2, child: Placeholder()),
+                    ],
+                  )),
               Divider(
                 thickness: 2,
               ),
