@@ -13,24 +13,28 @@ class _ComicProfilePageState extends State<ComicProfilePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-        child: Column(
-          children: [
-            Row(
-              children: [
-                IconButton(onPressed: (){
-                  Get.back();
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 16),
+          child: Column(
+            children: [
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  IconButton(onPressed: (){
+                    Get.back();
 
-                }, icon: Icon(Icons.arrow_back)),
-                Text("Detail Author"),
-                IconButton(onPressed: (){
+                  }, icon: Icon(Icons.arrow_back)),
+                  Text("Detail Author"),
+                  IconButton(onPressed: (){
 
-                }, icon: Icon(Icons.more_horiz))
-              ],
-            ),
-            Expanded(child: Placeholder()),
-            Expanded(child: Placeholder()),
-            Expanded(child: Placeholder()),
-          ],
+                  }, icon: Icon(Icons.more_horiz))
+                ],
+              ),
+              Expanded(child: Placeholder()),
+              Expanded(child: Placeholder()),
+              Expanded(child: Placeholder()),
+            ],
+          ),
         ),
       ),
     );
