@@ -79,7 +79,7 @@ class _ComicHomePageState extends State<ComicHomePage> {
                                 ),
                               ),
                               Padding(
-                                padding: const EdgeInsets.fromLTRB(12, 8,0 ,8),
+                                padding: const EdgeInsets.fromLTRB(12, 8, 0, 8),
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -120,7 +120,9 @@ class _ComicHomePageState extends State<ComicHomePage> {
                             ],
                           ),
                         )),
-                    SizedBox(height: 8,),
+                    SizedBox(
+                      height: 8,
+                    ),
                     Expanded(
                         flex: 2,
                         child: Padding(
@@ -131,67 +133,70 @@ class _ComicHomePageState extends State<ComicHomePage> {
                             child: TextField(
                               controller: _textEditingController,
                               decoration: InputDecoration(
-                                icon: Icon(Icons.search),
-                                border: InputBorder.none,
-                                hintText: "Search Comic",
-                                suffixIcon: Icon(Icons.tune)
-                              ),
+                                  icon: Icon(Icons.search),
+                                  border: InputBorder.none,
+                                  hintText: "Search Comic",
+                                  suffixIcon: Icon(Icons.tune)),
                             ),
                           ),
                         )),
-                    Expanded(flex: 8, child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Padding(
-                          padding: const EdgeInsets.symmetric(horizontal: 16),
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: [
-                              Text("Trending Comic"),
-                              IconButton(onPressed: (){}, icon: Icon(Icons.more_horiz))
-                            ],
-                          ),
-                        ),
-                        Expanded(child: Padding(
-                          padding: const EdgeInsets.only(left: 16, top: 4),
-                          child: ListView.builder(
-                              itemCount: 8,
-                              scrollDirection: Axis.horizontal,
-                              itemBuilder: (context, index){
-                            return Padding(
-                              padding: const EdgeInsets.only(right: 16),
-                              child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
+                    Expanded(
+                        flex: 8,
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Padding(
+                              padding: const EdgeInsets.symmetric(horizontal: 16),
+                              child: Row(
+                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                 children: [
-                                  Expanded(child: Container(
-                                    width: 120,
-                                    decoration: BoxDecoration(
-                                      color: Colors.blue,
-                                      borderRadius: BorderRadius.circular(8),
-                                      image: DecorationImage(
-                                        image: NetworkImage("https://cdn.pixabay.com/photo/2021/02/20/03/01/animals-6032121_960_720.jpg"),
-                                        fit: BoxFit.cover,
-                                      )
-                                    ),
-                                  )),
-                                  Padding(
-                                    padding: const EdgeInsets.symmetric(vertical: 4),
-                                    child: Text("Flutter Book", style: TextStyle(
-                                      fontSize: 13,
-                                      color: Colors.grey
-                                    ),),
-                                  ),
-                                  Text("by Dream", style: TextStyle(
-                                      fontSize: 12,
-                                      color: Colors.grey[600]!
-                                  ),)
+                                  Text("Trending Comic"),
+                                  IconButton(onPressed: () {}, icon: Icon(Icons.more_horiz))
                                 ],
                               ),
-                            );
-                          }),
-                        ))
-                      ],
-                    )),
+                            ),
+                            Expanded(
+                                child: Padding(
+                              padding: const EdgeInsets.only(left: 16, top: 4),
+                              child: ListView.builder(
+                                  itemCount: 8,
+                                  scrollDirection: Axis.horizontal,
+                                  itemBuilder: (context, index) {
+                                    return Padding(
+                                      padding: const EdgeInsets.only(right: 16),
+                                      child: Column(
+                                        crossAxisAlignment: CrossAxisAlignment.start,
+                                        children: [
+                                          Expanded(
+                                              child: Container(
+                                            width: 120,
+                                            decoration: BoxDecoration(
+                                                color: Colors.blue,
+                                                borderRadius: BorderRadius.circular(8),
+                                                image: DecorationImage(
+                                                  image: NetworkImage(
+                                                      "https://cdn.pixabay.com/photo/2021/02/20/03/01/animals-6032121_960_720.jpg"),
+                                                  fit: BoxFit.cover,
+                                                )),
+                                          )),
+                                          Padding(
+                                            padding: const EdgeInsets.symmetric(vertical: 4),
+                                            child: Text(
+                                              "Flutter Book",
+                                              style: TextStyle(fontSize: 13, color: Colors.grey),
+                                            ),
+                                          ),
+                                          Text(
+                                            "by Dream",
+                                            style: TextStyle(fontSize: 12, color: Colors.grey[600]!),
+                                          )
+                                        ],
+                                      ),
+                                    );
+                                  }),
+                            ))
+                          ],
+                        )),
                   ],
                 ),
               ),
