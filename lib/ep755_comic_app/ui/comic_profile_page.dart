@@ -67,10 +67,10 @@ class _ComicProfilePageState extends State<ComicProfilePage> {
                                         SizedBox(
                                           width: 8,
                                         ),
-                                        Text("4.4/5", style: TextStyle(
-                                          fontSize: 15,
-                                          color: Colors.grey
-                                        ),)
+                                        Text(
+                                          "4.4/5",
+                                          style: TextStyle(fontSize: 15, color: Colors.grey),
+                                        )
                                       ],
                                     )
                                   ],
@@ -78,119 +78,122 @@ class _ComicProfilePageState extends State<ComicProfilePage> {
                               )
                             ],
                           )),
-                      Expanded(flex: 2, child: Padding(
-                        padding: const EdgeInsets.all(8.0),
-                        child: Text(
-                          "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-                          style: TextStyle(
-                            fontSize: 12
-                          ),
-                        ),
-                      )),
+                      Expanded(
+                          flex: 2,
+                          child: Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Text(
+                              "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                              style: TextStyle(fontSize: 12),
+                            ),
+                          )),
                     ],
                   )),
               Divider(
                 thickness: 2,
               ),
-              Expanded(flex: 2, child: Row(
-                children: [
-                  Expanded(
-                      flex:2,
-                      child: Padding(
-                        padding: const EdgeInsets.all(8.0),
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                          children: [
-                            Text('10',style: TextStyle(
-                              fontSize: 20,
-                              fontWeight: FontWeight.bold
-                            ),),
-                            Text("Book",style: TextStyle(
-                                fontSize: 12
-                            ),)
-                          ],
-                        ),
-                      )),
-                  Expanded(
-                      flex:2,
-                      child: Padding(
-                        padding: const EdgeInsets.all(8.0),
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                          children: [
-                            Text('239',style: TextStyle(
-                                fontSize: 20,
-                                fontWeight: FontWeight.bold
-                            ),),
-                            Text("Followers",style: TextStyle(
-                              fontSize: 12
-                            ),)
-                          ],
-                        ),
-                      )),
-                  SizedBox(width: 24,),
-                  Expanded(
-                      flex: 5,
-                      child: Container(
-                          margin: EdgeInsets.symmetric(horizontal: 12, vertical: 20),
-                        decoration: ShapeDecoration(
-                          gradient: LinearGradient(
-                            colors: [
-                              Colors.deepOrange,
-                              Colors.red,
-                            ]
-                          ),
-                          shape: StadiumBorder()
-                        ),
-                        child: Center(
-                          child: Text('Follow', style: TextStyle(
-                            fontSize: 18,
-                            fontWeight: FontWeight.bold,
-                            color: Colors.white
-                          ),),
-                        ),
-                      )),
-                ],
-              )),
-              Expanded(flex: 10, child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              Expanded(
+                  flex: 2,
+                  child: Row(
                     children: [
-                      Text("Comic", style: TextStyle(
-                        fontSize: 16,
-                        fontWeight: FontWeight.bold
-                      ),),
-                      IconButton(onPressed: (){}, icon: Icon(Icons.more_horiz)),
+                      Expanded(
+                          flex: 2,
+                          child: Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                              children: [
+                                Text(
+                                  '10',
+                                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                                ),
+                                Text(
+                                  "Book",
+                                  style: TextStyle(fontSize: 12),
+                                )
+                              ],
+                            ),
+                          )),
+                      Expanded(
+                          flex: 2,
+                          child: Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                              children: [
+                                Text(
+                                  '239',
+                                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                                ),
+                                Text(
+                                  "Followers",
+                                  style: TextStyle(fontSize: 12),
+                                )
+                              ],
+                            ),
+                          )),
+                      SizedBox(
+                        width: 24,
+                      ),
+                      Expanded(
+                          flex: 5,
+                          child: Container(
+                            margin: EdgeInsets.symmetric(horizontal: 12, vertical: 20),
+                            decoration: ShapeDecoration(
+                                gradient: LinearGradient(colors: [
+                                  Colors.deepOrange,
+                                  Colors.red,
+                                ]),
+                                shape: StadiumBorder()),
+                            child: Center(
+                              child: Text(
+                                'Follow',
+                                style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold, color: Colors.white),
+                              ),
+                            ),
+                          )),
                     ],
-                  ),
-                  Expanded(child: GridView.count(crossAxisCount: 2,
-                  crossAxisSpacing: 8,
-                  mainAxisSpacing: 8,
-                  childAspectRatio: 0.8,
-                  children: List.generate(5, (index) =>
-                      Container(
-                        color: Colors.red,
-                        child: Column(
-                          children: [
-                            Expanded(
-                                flex: 8,
-                                child: Placeholder()),
-                            Expanded(child: Placeholder(),
-                            flex: 2,),
-
-                          ],
-                        ),
+                  )),
+              Expanded(
+                  flex: 10,
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Text(
+                            "Comic",
+                            style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                          ),
+                          IconButton(onPressed: () {}, icon: Icon(Icons.more_horiz)),
+                        ],
+                      ),
+                      Expanded(
+                        child: GridView.count(
+                            crossAxisCount: 2,
+                            crossAxisSpacing: 8,
+                            mainAxisSpacing: 8,
+                            childAspectRatio: 0.8,
+                            children: List.generate(
+                                5,
+                                (index) => Container(
+                                      color: Colors.red,
+                                      child: Column(
+                                        children: [
+                                          Expanded(flex: 8, child: Placeholder()),
+                                          Expanded(
+                                            child: Placeholder(),
+                                            flex: 2,
+                                          ),
+                                        ],
+                                      ),
+                                    )).toList()),
                       )
-                  ).toList()
-                  ),
-
-                  )
-                ],
-              )),
+                    ],
+                  )),
             ],
           ),
         ),
