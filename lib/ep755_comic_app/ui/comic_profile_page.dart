@@ -20,28 +20,21 @@ class _ComicProfilePageState extends State<ComicProfilePage> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  IconButton(onPressed: (){
-                    Get.back();
-
-                  }, icon: Icon(Icons.arrow_back)),
+                  IconButton(
+                      onPressed: () {
+                        Get.back();
+                      },
+                      icon: Icon(Icons.arrow_back)),
                   Text("Detail Author"),
-                  IconButton(onPressed: (){
-
-                  }, icon: Icon(Icons.more_horiz))
+                  IconButton(onPressed: () {}, icon: Icon(Icons.more_horiz))
                 ],
               ),
-              Expanded(
-                  flex: 3,
-                  child: Placeholder()),
+              Expanded(flex: 3, child: Placeholder()),
               Divider(
                 thickness: 2,
               ),
-              Expanded(
-                  flex: 2,
-                  child: Placeholder()),
-              Expanded(
-                  flex: 10,
-                  child: Placeholder()),
+              Expanded(flex: 2, child: Placeholder()),
+              Expanded(flex: 10, child: Placeholder()),
             ],
           ),
         ),
