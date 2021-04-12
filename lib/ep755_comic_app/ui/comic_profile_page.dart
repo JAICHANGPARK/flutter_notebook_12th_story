@@ -192,7 +192,7 @@ class _ComicProfilePageState extends State<ComicProfilePage> {
                                           Expanded(
                                             child: Text("Flutter Live Coding PodCast",
                                             style: TextStyle(
-                                              fontSize: 18,
+                                              fontSize: 16,
                                               fontWeight: FontWeight.bold,
                                               color: Colors.grey
                                             ),),
