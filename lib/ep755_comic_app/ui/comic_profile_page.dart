@@ -100,9 +100,10 @@ class _ComicProfilePageState extends State<ComicProfilePage> {
                         padding: const EdgeInsets.all(8.0),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                           children: [
                             Text('10',style: TextStyle(
-                              fontSize: 16,
+                              fontSize: 20,
                               fontWeight: FontWeight.bold
                             ),),
                             Text("Book",style: TextStyle(
@@ -117,9 +118,10 @@ class _ComicProfilePageState extends State<ComicProfilePage> {
                         padding: const EdgeInsets.all(8.0),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                           children: [
                             Text('239',style: TextStyle(
-                                fontSize: 16,
+                                fontSize: 20,
                                 fontWeight: FontWeight.bold
                             ),),
                             Text("Followers",style: TextStyle(
