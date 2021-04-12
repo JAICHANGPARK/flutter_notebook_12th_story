@@ -94,10 +94,20 @@ class _ComicProfilePageState extends State<ComicProfilePage> {
               ),
               Expanded(flex: 2, child: Row(
                 children: [
-                  Expanded(child: Placeholder()),
-                  Expanded(child: Placeholder()),
                   Expanded(
-                      flex: 4,
+                      flex:2,
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text('10'),
+                          Text("Book")
+                        ],
+                      )),
+                  Expanded(
+                      flex: 2,
+                      child: Placeholder()),
+                  Expanded(
+                      flex: 3,
                       child: Placeholder()),
                 ],
               )),
