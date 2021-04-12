@@ -65,7 +65,10 @@ class _ComicProfilePageState extends State<ComicProfilePage> {
                                         SizedBox(
                                           width: 8,
                                         ),
-                                        Text("4.4/5")
+                                        Text("4.4/5", style: TextStyle(
+                                          fontSize: 15,
+                                          color: Colors.grey
+                                        ),)
                                       ],
                                     )
                                   ],
