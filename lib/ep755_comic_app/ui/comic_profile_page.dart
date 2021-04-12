@@ -20,7 +20,11 @@ class _ComicProfilePageState extends State<ComicProfilePage> {
                 IconButton(onPressed: (){
                   Get.back();
 
-                }, icon: Icon(Icons.arrow_back))
+                }, icon: Icon(Icons.arrow_back)),
+                Text("Detail Author"),
+                IconButton(onPressed: (){
+
+                }, icon: Icon(Icons.more_horiz))
               ],
             ),
             Expanded(child: Placeholder()),
