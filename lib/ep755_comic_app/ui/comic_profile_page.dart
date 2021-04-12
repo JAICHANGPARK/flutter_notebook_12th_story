@@ -78,10 +78,13 @@ class _ComicProfilePageState extends State<ComicProfilePage> {
                               )
                             ],
                           )),
-                      Expanded(flex: 2, child: Text(
-                        "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-                        style: TextStyle(
-                          fontSize: 12
+                      Expanded(flex: 2, child: Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Text(
+                          "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                          style: TextStyle(
+                            fontSize: 12
+                          ),
                         ),
                       )),
                     ],
@@ -89,7 +92,15 @@ class _ComicProfilePageState extends State<ComicProfilePage> {
               Divider(
                 thickness: 2,
               ),
-              Expanded(flex: 2, child: Placeholder()),
+              Expanded(flex: 2, child: Row(
+                children: [
+                  Expanded(child: Placeholder()),
+                  Expanded(child: Placeholder()),
+                  Expanded(
+                      flex: 4,
+                      child: Placeholder()),
+                ],
+              )),
               Expanded(flex: 10, child: Placeholder()),
             ],
           ),
