@@ -176,14 +176,20 @@ class _ComicProfilePageState extends State<ComicProfilePage> {
                             crossAxisCount: 2,
                             crossAxisSpacing: 8,
                             mainAxisSpacing: 8,
-                            childAspectRatio: 0.8,
+                            childAspectRatio: 0.7,
                             children: List.generate(
                                 5,
                                 (index) => Container(
                                       color: Colors.red,
                                       child: Column(
                                         children: [
-                                          Expanded(flex: 8, child: Placeholder()),
+                                          Expanded(flex: 8, child: Container(
+                                            decoration: BoxDecoration(
+                                              color: Colors.blue,
+                                              borderRadius: BorderRadius.circular(16)
+                                            ),
+                                          )),
+                                          SizedBox(height: 8,),
                                           Expanded(
                                             child: Placeholder(),
                                             flex: 2,
