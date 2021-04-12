@@ -31,7 +31,12 @@ class _ComicProfilePageState extends State<ComicProfilePage> {
               ),
               Expanded(flex: 3, child: Column(
                 children: [
-                  Expanded(child: Placeholder()),
+                  Expanded(
+                      flex: 3,
+                      child: Placeholder()),
+                  Expanded(
+                     flex: 2,
+                      child: Placeholder()),
                 ],
               )),
               Divider(
