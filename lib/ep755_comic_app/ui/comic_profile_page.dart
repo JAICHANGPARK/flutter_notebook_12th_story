@@ -191,7 +191,7 @@ class _ComicProfilePageState extends State<ComicProfilePage> {
                                           )),
                                           SizedBox(height: 8,),
                                           Expanded(
-                                            child: Placeholder(),
+                                            child: Text("Flutter Live Coding PodCast"),
                                             flex: 2,
                                           ),
                                         ],
