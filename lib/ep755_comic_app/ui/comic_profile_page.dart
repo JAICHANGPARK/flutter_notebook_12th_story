@@ -180,7 +180,6 @@ class _ComicProfilePageState extends State<ComicProfilePage> {
                             children: List.generate(
                                 5,
                                 (index) => Container(
-                                      color: Colors.red,
                                       child: Column(
                                         children: [
                                           Expanded(flex: 8, child: Container(
@@ -191,7 +190,12 @@ class _ComicProfilePageState extends State<ComicProfilePage> {
                                           )),
                                           SizedBox(height: 8,),
                                           Expanded(
-                                            child: Text("Flutter Live Coding PodCast"),
+                                            child: Text("Flutter Live Coding PodCast",
+                                            style: TextStyle(
+                                              fontSize: 18,
+                                              fontWeight: FontWeight.bold,
+                                              color: Colors.grey
+                                            ),),
                                             flex: 2,
                                           ),
                                         ],
