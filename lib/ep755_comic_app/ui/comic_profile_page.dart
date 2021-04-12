@@ -34,14 +34,15 @@ class _ComicProfilePageState extends State<ComicProfilePage> {
                   child: Column(
                     children: [
                       Expanded(
-                          flex: 3,
+                          flex: 4,
                           child: Row(
                             children: [
                               Container(
-                                height: 64,
-                                width: 64,
+                                height: 72,
+                                width: 72,
                                 decoration: BoxDecoration(
                                   color: Colors.grey,
+                                  
                                 ),
                               )
                             ],
