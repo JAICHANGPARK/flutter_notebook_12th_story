@@ -185,7 +185,13 @@ class _ComicProfilePageState extends State<ComicProfilePage> {
                                           Expanded(flex: 8, child: Container(
                                             decoration: BoxDecoration(
                                               color: Colors.blue,
-                                              borderRadius: BorderRadius.circular(16)
+                                              borderRadius: BorderRadius.circular(16),
+                                              image: DecorationImage(
+                                                image: NetworkImage(
+                                                    "https://cdn.pixabay.com/photo/2021/02/20/03/01/animals-6032121_960_720.jpg"
+                                                ),
+                                                fit: BoxFit.cover
+                                              )
                                             ),
                                           )),
                                           SizedBox(height: 8,),
