@@ -130,9 +130,21 @@ class _ComicProfilePageState extends State<ComicProfilePage> {
                           ],
                         ),
                       )),
+                  SizedBox(width: 24,),
                   Expanded(
-                      flex: 3,
-                      child: Placeholder()),
+                      flex: 5,
+                      child: Container(
+
+                        decoration: ShapeDecoration(
+                          gradient: LinearGradient(
+                            colors: [
+                              Colors.deepOrange,
+                              Colors.red,
+                            ]
+                          ),
+                          shape: StadiumBorder()
+                        ),
+                      )),
                 ],
               )),
               Expanded(flex: 10, child: Placeholder()),
