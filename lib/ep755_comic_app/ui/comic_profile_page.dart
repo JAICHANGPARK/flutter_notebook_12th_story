@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -42,7 +43,8 @@ class _ComicProfilePageState extends State<ComicProfilePage> {
                                 width: 72,
                                 decoration: BoxDecoration(
                                   color: Colors.grey,
-                                  
+                                  shape: BoxShape.circle,
+                                  border: Border.all(color: Colors.white, width: 2)
                                 ),
                               )
                             ],
