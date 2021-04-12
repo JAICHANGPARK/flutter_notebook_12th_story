@@ -145,7 +145,11 @@ class _ComicProfilePageState extends State<ComicProfilePage> {
                           shape: StadiumBorder()
                         ),
                         child: Center(
-                          child: Text('Follow'),
+                          child: Text('Follow', style: TextStyle(
+                            fontSize: 18,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.white
+                          ),),
                         ),
                       )),
                 ],
