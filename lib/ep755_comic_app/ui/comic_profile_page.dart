@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class ComicProfilePage extends StatefulWidget {
   ComicProfilePage({Key? key}) : super(key: key);
@@ -10,6 +11,24 @@ class ComicProfilePage extends StatefulWidget {
 class _ComicProfilePageState extends State<ComicProfilePage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: SafeArea(
+        child: Column(
+          children: [
+            Row(
+              children: [
+                IconButton(onPressed: (){
+                  Get.back();
+
+                }, icon: Icon(Icons.arrow_back))
+              ],
+            ),
+            Expanded(child: Placeholder()),
+            Expanded(child: Placeholder()),
+            Expanded(child: Placeholder()),
+          ],
+        ),
+      ),
+    );
   }
 }
