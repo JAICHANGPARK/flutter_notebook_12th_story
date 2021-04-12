@@ -134,7 +134,7 @@ class _ComicProfilePageState extends State<ComicProfilePage> {
                   Expanded(
                       flex: 5,
                       child: Container(
-
+                          margin: EdgeInsets.symmetric(horizontal: 12, vertical: 20),
                         decoration: ShapeDecoration(
                           gradient: LinearGradient(
                             colors: [
@@ -143,6 +143,9 @@ class _ComicProfilePageState extends State<ComicProfilePage> {
                             ]
                           ),
                           shape: StadiumBorder()
+                        ),
+                        child: Center(
+                          child: Text('Follow'),
                         ),
                       )),
                 ],
