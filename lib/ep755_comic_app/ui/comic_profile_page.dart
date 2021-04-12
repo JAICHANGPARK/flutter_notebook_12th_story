@@ -33,6 +33,7 @@ class _ComicProfilePageState extends State<ComicProfilePage> {
               Expanded(
                   flex: 3,
                   child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Expanded(
                           flex: 4,
@@ -50,6 +51,7 @@ class _ComicProfilePageState extends State<ComicProfilePage> {
                                 padding: const EdgeInsets.all(16.0),
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
+                                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                   children: [
                                     Text(
                                       "Dreamwalker",
