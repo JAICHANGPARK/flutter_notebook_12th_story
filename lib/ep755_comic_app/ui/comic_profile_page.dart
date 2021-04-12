@@ -42,10 +42,19 @@ class _ComicProfilePageState extends State<ComicProfilePage> {
                                 height: 72,
                                 width: 72,
                                 decoration: BoxDecoration(
-                                  color: Colors.grey,
-                                  shape: BoxShape.circle,
-                                  border: Border.all(color: Colors.white, width: 2)
-                                ),
+                                    color: Colors.grey,
+                                    shape: BoxShape.circle,
+                                    border: Border.all(color: Colors.white, width: 2)),
+                              ),
+                              Column(
+                                children: [
+                                  Text("Dreamwalker"),
+                                  Row(
+                                    children: [
+                                      Icon(Icons.star, color: Colors.yellow,)
+                                    ],
+                                  )
+                                ],
                               )
                             ],
                           )),
