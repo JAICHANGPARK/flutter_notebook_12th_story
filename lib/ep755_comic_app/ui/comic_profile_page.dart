@@ -96,31 +96,37 @@ class _ComicProfilePageState extends State<ComicProfilePage> {
                 children: [
                   Expanded(
                       flex:2,
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text('10',style: TextStyle(
-                            fontSize: 16,
-                            fontWeight: FontWeight.bold
-                          ),),
-                          Text("Book",style: TextStyle(
-                              fontSize: 12
-                          ),)
-                        ],
+                      child: Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text('10',style: TextStyle(
+                              fontSize: 16,
+                              fontWeight: FontWeight.bold
+                            ),),
+                            Text("Book",style: TextStyle(
+                                fontSize: 12
+                            ),)
+                          ],
+                        ),
                       )),
                   Expanded(
                       flex:2,
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text('239',style: TextStyle(
-                              fontSize: 16,
-                              fontWeight: FontWeight.bold
-                          ),),
-                          Text("Followers",style: TextStyle(
-                            fontSize: 12
-                          ),)
-                        ],
+                      child: Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text('239',style: TextStyle(
+                                fontSize: 16,
+                                fontWeight: FontWeight.bold
+                            ),),
+                            Text("Followers",style: TextStyle(
+                              fontSize: 12
+                            ),)
+                          ],
+                        ),
                       )),
                   Expanded(
                       flex: 3,
