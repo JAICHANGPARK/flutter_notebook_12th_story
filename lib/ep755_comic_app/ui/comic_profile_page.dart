@@ -103,7 +103,9 @@ class _ComicProfilePageState extends State<ComicProfilePage> {
                             fontSize: 16,
                             fontWeight: FontWeight.bold
                           ),),
-                          Text("Book")
+                          Text("Book",style: TextStyle(
+                              fontSize: 12
+                          ),)
                         ],
                       )),
                   Expanded(
@@ -111,11 +113,13 @@ class _ComicProfilePageState extends State<ComicProfilePage> {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text('10',style: TextStyle(
+                          Text('239',style: TextStyle(
                               fontSize: 16,
                               fontWeight: FontWeight.bold
                           ),),
-                          Text("Book")
+                          Text("Followers",style: TextStyle(
+                            fontSize: 12
+                          ),)
                         ],
                       )),
                   Expanded(
