@@ -78,7 +78,12 @@ class _ComicProfilePageState extends State<ComicProfilePage> {
                               )
                             ],
                           )),
-                      Expanded(flex: 2, child: Placeholder()),
+                      Expanded(flex: 2, child: Text(
+                        "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                        style: TextStyle(
+                          fontSize: 12
+                        ),
+                      )),
                     ],
                   )),
               Divider(
