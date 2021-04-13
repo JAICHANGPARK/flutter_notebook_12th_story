@@ -7,6 +7,7 @@ class ComicTrendingPage extends StatefulWidget {
 }
 
 class _ComicTrendingPageState extends State<ComicTrendingPage> {
+  List<String> dropItems = ["All Comic", "Action", "School", "Medical", "Sports"];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -103,7 +104,7 @@ class _ComicTrendingPageState extends State<ComicTrendingPage> {
                   child: Container(
                     decoration: BoxDecoration(color: Colors.grey[200], borderRadius: BorderRadius.circular(36)),
                     padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-                    child: Container()
+                    child: DropdownButton(items: [],)
                   ),
                 )),
             Expanded(
@@ -111,7 +112,7 @@ class _ComicTrendingPageState extends State<ComicTrendingPage> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                   
+
                     Expanded(
                         child: Padding(
                           padding: const EdgeInsets.only(left: 16, top: 4),
