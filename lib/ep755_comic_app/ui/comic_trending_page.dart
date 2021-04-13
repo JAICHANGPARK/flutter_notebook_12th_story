@@ -107,7 +107,7 @@ class _ComicTrendingPageState extends State<ComicTrendingPage> {
                   ),
                 )),
             Expanded(
-                flex: 8,
+                flex: 20,
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
