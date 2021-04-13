@@ -141,6 +141,10 @@ class _ComicTrendingPageState extends State<ComicTrendingPage> {
                               child: SizedBox(
                                 height: 160,
                                 child: Card(
+                                  elevation: 8,
+                                  shape: RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(16)
+                                  ),
                                   child: Row(
                                     children: [
                                       
