@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_notebook_12th_story/ep755_comic_app/ui/comic_top_author_page.dart';
+import 'package:flutter_notebook_12th_story/ep755_comic_app/ui/comic_trending_page.dart';
 import 'package:get/get.dart';
 
 import 'comic_profile_page.dart';
@@ -152,7 +153,7 @@ class _ComicHomePageState extends State<ComicHomePage> {
                                 children: [
                                   Text("Trending Comic"),
                                   IconButton(onPressed: () {
-                                    Get.go
+                                    Get.to(ComicTrendingPage());
 
                                   }, icon: Icon(Icons.more_horiz))
                                 ],
