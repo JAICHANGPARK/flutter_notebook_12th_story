@@ -151,7 +151,10 @@ class _ComicHomePageState extends State<ComicHomePage> {
                                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                 children: [
                                   Text("Trending Comic"),
-                                  IconButton(onPressed: () {}, icon: Icon(Icons.more_horiz))
+                                  IconButton(onPressed: () {
+                                    Get.go
+
+                                  }, icon: Icon(Icons.more_horiz))
                                 ],
                               ),
                             ),
