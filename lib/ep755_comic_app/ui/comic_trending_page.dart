@@ -151,7 +151,12 @@ class _ComicTrendingPageState extends State<ComicTrendingPage> {
                                     padding: const EdgeInsets.all(16.0),
                                     child: Row(
                                       children: [
-                                        Expanded(child: Placeholder(), flex: 2,),
+                                        Expanded(child: Container(
+                                          decoration: BoxDecoration(
+                                            borderRadius: BorderRadius.circular(8),
+                                            color: Colors.brown
+                                          ),
+                                        ), flex: 2,),
                                         Expanded(child: Placeholder(), flex: 9,),
                                       ],
                                     ),
