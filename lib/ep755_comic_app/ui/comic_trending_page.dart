@@ -146,11 +146,15 @@ class _ComicTrendingPageState extends State<ComicTrendingPage> {
                                   shape: RoundedRectangleBorder(
                                     borderRadius: BorderRadius.circular(16)
                                   ),
-                                  child: Row(
-                                    children: [
-                                      Expanded(child: Placeholder()),
-                                      Expanded(child: Placeholder()),
-                                    ],
+
+                                  child: Padding(
+                                    padding: const EdgeInsets.all(16.0),
+                                    child: Row(
+                                      children: [
+                                        Expanded(child: Placeholder(), flex: 2,),
+                                        Expanded(child: Placeholder(), flex: 9,),
+                                      ],
+                                    ),
                                   ),
                                 ),
                               ),
