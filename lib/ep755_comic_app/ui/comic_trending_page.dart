@@ -103,14 +103,7 @@ class _ComicTrendingPageState extends State<ComicTrendingPage> {
                   child: Container(
                     decoration: BoxDecoration(color: Colors.grey[200], borderRadius: BorderRadius.circular(36)),
                     padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-                    child: TextField(
-                      controller: _textEditingController,
-                      decoration: InputDecoration(
-                          icon: Icon(Icons.search),
-                          border: InputBorder.none,
-                          hintText: "Search Comic",
-                          suffixIcon: Icon(Icons.tune)),
-                    ),
+                    child: Container()
                   ),
                 )),
             Expanded(
@@ -125,7 +118,6 @@ class _ComicTrendingPageState extends State<ComicTrendingPage> {
                         children: [
                           Text("Trending Comic"),
                           IconButton(onPressed: () {
-                            Get.to(ComicTrendingPage());
 
                           }, icon: Icon(Icons.more_horiz))
                         ],
