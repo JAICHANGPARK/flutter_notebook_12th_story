@@ -157,27 +157,31 @@ class _ComicTrendingPageState extends State<ComicTrendingPage> {
                                             color: Colors.brown
                                           ),
                                         ), flex: 3,),
-                                        Expanded(child: Column(
-                                          children: [
-                                            Row(
-                                              children: [
-                                                Column(
-                                                  children: [
-                                                    Text("Flutter Live Coding"),
-                                                    Text("By DreamWalker"),
-                                                  ],
-                                                ),
-                                                Spacer(),
-                                                CircleAvatar(
-                                                  backgroundColor: Colors.grey[400],
-                                                  foregroundColor: Colors.black,
-                                                  child: Icon(Icons.cloud_download),
-                                                )
+                                        Expanded(child: Padding(
+                                          padding: const EdgeInsets.only(left: 16),
+                                          child: Column(
+                                            children: [
+                                              Row(
+                                                children: [
+                                                  Column(
+                                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                                    children: [
+                                                      Text("Flutter Live Coding"),
+                                                      Text("By DreamWalker"),
+                                                    ],
+                                                  ),
+                                                  Spacer(),
+                                                  CircleAvatar(
+                                                    backgroundColor: Colors.grey[400],
+                                                    foregroundColor: Colors.black,
+                                                    child: Icon(Icons.cloud_download),
+                                                  )
 
-                                              ],
-                                            ),
+                                                ],
+                                              ),
 
-                                          ],
+                                            ],
+                                          ),
                                         ), flex: 10,),
                                       ],
                                     ),
