@@ -125,6 +125,7 @@ class _ComicTrendingPageState extends State<ComicTrendingPage> {
                             .toList(),
                       )),
                 )),
+            SizedBox(height: 8,),
             Expanded(
                 flex: 20,
                 child: Column(
@@ -147,7 +148,8 @@ class _ComicTrendingPageState extends State<ComicTrendingPage> {
                                   ),
                                   child: Row(
                                     children: [
-                                      
+                                      Expanded(child: Placeholder()),
+                                      Expanded(child: Placeholder()),
                                     ],
                                   ),
                                 ),
