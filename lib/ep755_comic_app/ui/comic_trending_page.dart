@@ -137,7 +137,7 @@ class _ComicTrendingPageState extends State<ComicTrendingPage> {
                           itemCount: 8,
                           itemBuilder: (context, index) {
                             return Padding(
-                              padding: const EdgeInsets.only(right: 16),
+                              padding: const EdgeInsets.only(right: 16, bottom: 16),
                               child: SizedBox(
                                 height: 160,
                                 child: Card(
