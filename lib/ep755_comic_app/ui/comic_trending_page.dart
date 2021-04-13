@@ -50,7 +50,6 @@ class _ComicTrendingPageState extends State<ComicTrendingPage> {
                                   radius: 10,
                                   backgroundColor: Colors.teal,
                                   foregroundColor: Colors.white,
-
                                   child: Text("2"),
                                 )),
                           ],
@@ -110,7 +109,7 @@ class _ComicTrendingPageState extends State<ComicTrendingPage> {
                       padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                       child: DropdownButton<String>(
                         value: selectedItem,
-                        onChanged: (v){
+                        onChanged: (v) {
                           setState(() {
                             selectedItem = v!;
                           });
@@ -125,7 +124,9 @@ class _ComicTrendingPageState extends State<ComicTrendingPage> {
                             .toList(),
                       )),
                 )),
-            SizedBox(height: 8,),
+            SizedBox(
+              height: 8,
+            ),
             Expanded(
                 flex: 20,
                 child: Column(
@@ -143,46 +144,62 @@ class _ComicTrendingPageState extends State<ComicTrendingPage> {
                                 height: 160,
                                 child: Card(
                                   elevation: 8,
-                                  shape: RoundedRectangleBorder(
-                                    borderRadius: BorderRadius.circular(16)
-                                  ),
-
+                                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
                                   child: Padding(
                                     padding: const EdgeInsets.all(16.0),
                                     child: Row(
                                       children: [
-                                        Expanded(child: Container(
-                                          decoration: BoxDecoration(
-                                            borderRadius: BorderRadius.circular(8),
-                                            color: Colors.brown
+                                        Expanded(
+                                          child: Container(
+                                            decoration: BoxDecoration(
+                                                borderRadius: BorderRadius.circular(8), color: Colors.brown),
                                           ),
-                                        ), flex: 3,),
-                                        Expanded(child: Padding(
-                                          padding: const EdgeInsets.only(left: 16),
-                                          child: Column(
-                                            children: [
-                                              Row(
-                                                children: [
-                                                  Column(
-                                                    crossAxisAlignment: CrossAxisAlignment.start,
-                                                    children: [
-                                                      Text("Flutter Live Coding"),
-                                                      Text("By DreamWalker"),
-                                                    ],
-                                                  ),
+                                          flex: 3,
+                                        ),
+                                        Expanded(
+                                          child: Padding(
+                                            padding: const EdgeInsets.only(left: 16),
+                                            child: Column(
+                                              children: [
+                                                Row(
+                                                  children: [
+                                                    Column(
+                                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                                      children: [
+                                                        Text(
+                                                          "Flutter Live Coding",
+                                                          style: TextStyle(
+                                                              fontSize: 18,
+                                                              fontWeight: FontWeight.bold,
+                                                              color: Colors.grey),
+                                                        ),
+                                                        SizedBox(
+                                                          height: 8,
+                                                        ),
+                                                        Text(
+                                                          "By DreamWalker",
+                                                          style: TextStyle(fontSize: 13),
+                                                        ),
+                                                      ],
+                                                    ),
+                                                    Spacer(),
+                                                    CircleAvatar(
+                                                      backgroundColor: Colors.grey[400],
+                                                      foregroundColor: Colors.black,
+                                                      child: Icon(Icons.cloud_download),
+                                                    )
+                                                  ],
+                                                ),
+                                                Row(children: [
+                                                  Text("Next Chapter 7"),
                                                   Spacer(),
-                                                  CircleAvatar(
-                                                    backgroundColor: Colors.grey[400],
-                                                    foregroundColor: Colors.black,
-                                                    child: Icon(Icons.cloud_download),
-                                                  )
-
-                                                ],
-                                              ),
-
-                                            ],
+                                                  Text("1.1m View")
+                                                ],)
+                                              ],
+                                            ),
                                           ),
-                                        ), flex: 10,),
+                                          flex: 10,
+                                        ),
                                       ],
                                     ),
                                   ),
