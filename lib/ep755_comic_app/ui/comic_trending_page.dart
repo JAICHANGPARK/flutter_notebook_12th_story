@@ -128,36 +128,14 @@ class _ComicTrendingPageState extends State<ComicTrendingPage> {
                           padding: const EdgeInsets.only(left: 16, top: 4),
                           child: ListView.builder(
                               itemCount: 8,
-                              scrollDirection: Axis.horizontal,
+
                               itemBuilder: (context, index) {
                                 return Padding(
                                   padding: const EdgeInsets.only(right: 16),
                                   child: Column(
                                     crossAxisAlignment: CrossAxisAlignment.start,
                                     children: [
-                                      Expanded(
-                                          child: Container(
-                                            width: 120,
-                                            decoration: BoxDecoration(
-                                                color: Colors.blue,
-                                                borderRadius: BorderRadius.circular(8),
-                                                image: DecorationImage(
-                                                  image: NetworkImage(
-                                                      "https://cdn.pixabay.com/photo/2021/02/20/03/01/animals-6032121_960_720.jpg"),
-                                                  fit: BoxFit.cover,
-                                                )),
-                                          )),
-                                      Padding(
-                                        padding: const EdgeInsets.symmetric(vertical: 4),
-                                        child: Text(
-                                          "Flutter Book",
-                                          style: TextStyle(fontSize: 13, color: Colors.grey),
-                                        ),
-                                      ),
-                                      Text(
-                                        "by Dream",
-                                        style: TextStyle(fontSize: 12, color: Colors.grey[600]!),
-                                      )
+
                                     ],
                                   ),
                                 );
