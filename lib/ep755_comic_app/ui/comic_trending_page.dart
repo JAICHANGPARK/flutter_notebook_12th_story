@@ -48,6 +48,8 @@ class _ComicTrendingPageState extends State<ComicTrendingPage> {
                                 top: 0,
                                 child: CircleAvatar(
                                   radius: 10,
+                                  backgroundColor: Colors.tealAccent,
+                                  foregroundColor: Colors.white,
                                 )),
                           ],
                         ),
