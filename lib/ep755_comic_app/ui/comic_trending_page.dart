@@ -168,7 +168,10 @@ class _ComicTrendingPageState extends State<ComicTrendingPage> {
                                                   ],
                                                 ),
                                                 Spacer(),
-                                                CircleAvatar()
+                                                CircleAvatar(
+                                                  backgroundColor: Colors.grey[400],
+                                                  child: Icon(Icons.cloud_download),
+                                                )
 
                                               ],
                                             ),
