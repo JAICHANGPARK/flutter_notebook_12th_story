@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class ComicTrendingPage extends StatefulWidget {
   @override
   _ComicTrendingPageState createState() => _ComicTrendingPageState();
@@ -8,6 +7,8 @@ class ComicTrendingPage extends StatefulWidget {
 
 class _ComicTrendingPageState extends State<ComicTrendingPage> {
   List<String> dropItems = ["All Comic", "Action", "School", "Medical", "Sports"];
+  String selectedItem = "All Comic";
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -31,8 +32,7 @@ class _ComicTrendingPageState extends State<ComicTrendingPage> {
                               top: 0,
                               bottom: 0,
                               child: InkWell(
-                                onTap: () {
-                                },
+                                onTap: () {},
                                 child: Container(
                                   height: 52,
                                   width: 52,
@@ -102,40 +102,40 @@ class _ComicTrendingPageState extends State<ComicTrendingPage> {
                 child: Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 2),
                   child: Container(
-                    decoration: BoxDecoration(color: Colors.grey[200], borderRadius: BorderRadius.circular(36)),
-                    padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-                    child: DropdownButton(
-                      value: ,
-                      items: dropItems.map((e) =>
-                    DropdownMenuItem(child: Text("$e"),
-                    value: e,)
-                    ).toList(),)
-                  ),
+                      decoration: BoxDecoration(color: Colors.grey[200], borderRadius: BorderRadius.circular(36)),
+                      padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                      child: DropdownButton(
+                        value: selectedItem,
+                        isExpanded: true,
+                        items: dropItems
+                            .map((e) => DropdownMenuItem(
+                                  child: Text("$e"),
+                                  value: e,
+                                  onTap: () {},
+                                ))
+                            .toList(),
+                      )),
                 )),
             Expanded(
                 flex: 20,
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-
                     Expanded(
                         child: Padding(
-                          padding: const EdgeInsets.only(left: 16, top: 4),
-                          child: ListView.builder(
-                              itemCount: 8,
-
-                              itemBuilder: (context, index) {
-                                return Padding(
-                                  padding: const EdgeInsets.only(right: 16),
-                                  child: Column(
-                                    crossAxisAlignment: CrossAxisAlignment.start,
-                                    children: [
-
-                                    ],
-                                  ),
-                                );
-                              }),
-                        ))
+                      padding: const EdgeInsets.only(left: 16, top: 4),
+                      child: ListView.builder(
+                          itemCount: 8,
+                          itemBuilder: (context, index) {
+                            return Padding(
+                              padding: const EdgeInsets.only(right: 16),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [],
+                              ),
+                            );
+                          }),
+                    ))
                   ],
                 )),
           ],
