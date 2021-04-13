@@ -104,11 +104,16 @@ class _ComicTrendingPageState extends State<ComicTrendingPage> {
                   child: Container(
                       decoration: BoxDecoration(color: Colors.grey[200], borderRadius: BorderRadius.circular(36)),
                       padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-                      child: DropdownButton(
+                      child: DropdownButton<String>(
                         value: selectedItem,
+                        onChanged: (v){
+                          setState(() {
+                            selectedItem = v!;
+                          });
+                        },
                         isExpanded: true,
                         items: dropItems
-                            .map((e) => DropdownMenuItem(
+                            .map((e) => DropdownMenuItem<String>(
                                   child: Text("$e"),
                                   value: e,
                                   onTap: () {},
