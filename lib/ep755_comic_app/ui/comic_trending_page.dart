@@ -111,18 +111,7 @@ class _ComicTrendingPageState extends State<ComicTrendingPage> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 16),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          Text("Trending Comic"),
-                          IconButton(onPressed: () {
-
-                          }, icon: Icon(Icons.more_horiz))
-                        ],
-                      ),
-                    ),
+                   
                     Expanded(
                         child: Padding(
                           padding: const EdgeInsets.only(left: 16, top: 4),
