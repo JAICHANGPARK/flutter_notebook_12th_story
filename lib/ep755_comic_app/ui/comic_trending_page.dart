@@ -156,8 +156,25 @@ class _ComicTrendingPageState extends State<ComicTrendingPage> {
                                             borderRadius: BorderRadius.circular(8),
                                             color: Colors.brown
                                           ),
-                                        ), flex: 2,),
-                                        Expanded(child: Placeholder(), flex: 9,),
+                                        ), flex: 3,),
+                                        Expanded(child: Column(
+                                          children: [
+                                            Row(
+                                              children: [
+                                                Column(
+                                                  children: [
+                                                    Text("Flutter Live Coding"),
+                                                    Text("By DreamWalker"),
+                                                  ],
+                                                ),
+                                                Spacer(),
+                                                CircleAvatar()
+
+                                              ],
+                                            ),
+
+                                          ],
+                                        ), flex: 10,),
                                       ],
                                     ),
                                   ),
