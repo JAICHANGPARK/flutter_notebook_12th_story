@@ -19,43 +19,46 @@ class _MessengerChatAppState extends State<MessengerChatPage> {
           children: [
             Expanded(
                 flex: 3,
-                child: Row(
-                  children: [
-                    Container(
-                      height: 42,
-                      width: 42,
-                      decoration: BoxDecoration(
-                        color: Colors.blue,
-                        borderRadius: BorderRadius.circular(8)
-                      ),
-                      child: Center(
-                        child: Icon(
-                          Icons.keyboard_arrow_left_outlined,
-                          size: 32,
-                          color: Colors.white,
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Row(
+                    children: [
+                      Container(
+                        height: 42,
+                        width: 42,
+                        decoration: BoxDecoration(
+                          color: Colors.blue,
+                          borderRadius: BorderRadius.circular(8)
+                        ),
+                        child: Center(
+                          child: Icon(
+                            Icons.keyboard_arrow_left_outlined,
+                            size: 32,
+                            color: Colors.white,
+                          ),
                         ),
                       ),
-                    ),
-                    Expanded(child: Column(children: [
+                      Expanded(child: Column(children: [
 
-                    ],)),
-                    Container(
-                      height: 42,
-                      width: 42,
-                    )
-                  ],
+                      ],)),
+                      Container(
+                        height: 42,
+                        width: 42,
+                      )
+                    ],
+                  ),
                 )),
             Divider(
               color: Colors.grey,
               thickness: 1.5,
             ),
             Expanded(
-                flex: 20,
+                flex: 25,
                 child: SingleChildScrollView(
                   child: Column(
                     children: [
                       SizedBox(
-                        height: MediaQuery.of(context).size.height / 1.55,
+                        height: MediaQuery.of(context).size.height / 1.5,
                         child: ListView(),
                       ),
                       Divider(
