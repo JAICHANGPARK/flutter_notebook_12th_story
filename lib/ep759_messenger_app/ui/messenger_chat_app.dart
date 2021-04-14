@@ -16,9 +16,16 @@ class _MessengerChatAppState extends State<MessengerChatPage> {
           crossAxisAlignment: CrossAxisAlignment.start,
 
           children: [
-              Expanded(child: Placeholder()),
-            Expanded(child: Placeholder()),
-            Expanded(child: Placeholder()),
+              Expanded(
+                  flex: 3,
+                  child: Placeholder()),
+            Divider(color: Colors.grey, thickness: 1.5,),
+            Expanded(
+                flex: 20,
+                child: Placeholder()),
+            Expanded(
+                flex: 3,
+                child: Placeholder()),
           ],
         ),
       ),
