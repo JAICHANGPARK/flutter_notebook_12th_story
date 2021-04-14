@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 
 class MessengerChatPage extends StatefulWidget {
-  MessengerChatApp({Key key}) : super(key: key);
+  MessengerChatPage({Key? key}) : super(key: key);
 
   @override
   _MessengerChatAppState createState() => _MessengerChatAppState();
 }
 
-class _MessengerChatAppState extends State<MessengerChatApp> {
+class _MessengerChatAppState extends State<MessengerChatPage> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold();
   }
 }
