@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import 'ep755_comic_app/comic_app.dart';
+import 'ep759_messenger_app/messenger_app.dart';
 
 void main() {
-  runApp(ComicApp());
+  runApp(MessengerApp());
 }
