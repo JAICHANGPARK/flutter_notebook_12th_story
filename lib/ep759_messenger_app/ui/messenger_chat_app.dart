@@ -25,13 +25,16 @@ class _MessengerChatAppState extends State<MessengerChatPage> {
             Divider(color: Colors.grey, thickness: 1.5,),
             Expanded(
                 flex: 2,
-                child: Row(
-                  children: [
-                    IconButton(onPressed: (){}, icon: Icon(Icons.attach_file_outlined)),
-                    Expanded(child: TextField()),
-                    IconButton(onPressed: (){}, icon: Icon(Icons.sticky_note_2)),
-                    IconButton(onPressed: (){}, icon: Icon(Icons.mic_none_outlined))
-                  ],
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Row(
+                    children: [
+                      IconButton(onPressed: (){}, icon: Icon(Icons.attach_file_outlined)),
+                      Expanded(child: TextField()),
+                      IconButton(onPressed: (){}, icon: Icon(Icons.sticky_note_2)),
+                      IconButton(onPressed: (){}, icon: Icon(Icons.mic_none_outlined))
+                    ],
+                  ),
                 )),
           ],
         ),
