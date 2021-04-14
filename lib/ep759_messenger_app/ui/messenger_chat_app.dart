@@ -31,7 +31,7 @@ class _MessengerChatAppState extends State<MessengerChatPage> {
                       ),
                       Divider(color: Colors.grey, thickness: 1.5,),
                       SizedBox(
-                        height: 72,
+                        height: 64,
                         child: Padding(
                           padding: const EdgeInsets.all(8.0),
                           child: Row(
@@ -42,6 +42,9 @@ class _MessengerChatAppState extends State<MessengerChatPage> {
                                 decoration: InputDecoration(
                                     hintText: "Write a message"
                                 ),
+                                onSubmitted: (result){
+                                  _textEditingController.clear();
+                                },
                               )),
                               IconButton(onPressed: (){}, icon: Icon(Icons.sticky_note_2)),
                               IconButton(onPressed: (){}, icon: Icon(Icons.mic_none_outlined))
