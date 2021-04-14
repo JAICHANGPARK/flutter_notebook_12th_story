@@ -8,7 +8,8 @@ class MessengerChatPage extends StatefulWidget {
 }
 
 class _MessengerChatAppState extends State<MessengerChatPage> {
-  TextEditingController _textEditingController =TextEditingController();
+  TextEditingController _textEditingController = TextEditingController();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -16,78 +17,49 @@ class _MessengerChatAppState extends State<MessengerChatPage> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-              Expanded(
-                  flex: 3,
-                  child: Placeholder()),
-            Divider(color: Colors.grey, thickness: 1.5,),
+            Expanded(flex: 3, child: Placeholder()),
+            Divider(
+              color: Colors.grey,
+              thickness: 1.5,
+            ),
             Expanded(
                 flex: 20,
-                child: SingleChildScrollView(
-                  child: Column(
-                    children: [
-                      SizedBox(
-                        height: MediaQuery.of(context).size.height / 1.55,
-                        child: Placeholder(),
-                      ),
-                      Divider(color: Colors.grey, thickness: 1.5,),
-                      SizedBox(
-                        height: 64,
-                        child: Padding(
-                          padding: const EdgeInsets.all(8.0),
-                          child: Row(
-                            children: [
-                              IconButton(onPressed: (){}, icon: Icon(Icons.attach_file_outlined)),
-                              Expanded(child: TextField(
-                                controller: _textEditingController,
-                                decoration: InputDecoration(
-                                    hintText: "Write a message"
-                                ),
-                                onSubmitted: (result){
-                                  _textEditingController.clear();
-                                },
-                              )),
-                              IconButton(onPressed: (){}, icon: Icon(Icons.sticky_note_2)),
-                              IconButton(onPressed: (){}, icon: Icon(Icons.mic_none_outlined))
-                            ],
-                          ),
+                child: Column(
+                  children: [
+                    SizedBox(
+                      height: MediaQuery.of(context).size.height / 1.55,
+                      child: Placeholder(),
+                    ),
+                    Divider(
+                      color: Colors.grey,
+                      thickness: 1.5,
+                    ),
+                    SizedBox(
+                      height: 64,
+                      child: Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Row(
+                          children: [
+                            IconButton(onPressed: () {}, icon: Icon(Icons.attach_file_outlined)),
+                            Expanded(
+                                child: TextField(
+                              controller: _textEditingController,
+                              decoration: InputDecoration(hintText: "Write a message"),
+                              onSubmitted: (result) {
+                                _textEditingController.clear();
+                              },
+                            )),
+                            IconButton(onPressed: () {}, icon: Icon(Icons.sticky_note_2)),
+                            IconButton(onPressed: () {}, icon: Icon(Icons.mic_none_outlined))
+                          ],
                         ),
                       ),
-                    ],
-                  ),
+                    ),
+                  ],
                 )),
-
           ],
         ),
       ),
-
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
