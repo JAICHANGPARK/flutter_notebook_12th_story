@@ -22,14 +22,16 @@ class _MessengerChatAppState extends State<MessengerChatPage> {
                 child: Row(
                   children: [
                     Container(
-                      height: 48,
-                      width: 48,
+                      height: 42,
+                      width: 42,
                       decoration: BoxDecoration(
                         color: Colors.blue,
+                        borderRadius: BorderRadius.circular(8)
                       ),
                       child: Center(
                         child: Icon(
-                          Icons.arrow_back_ios,
+                          Icons.keyboard_arrow_left_outlined,
+                          size: 32,
                           color: Colors.white,
                         ),
                       ),
