@@ -31,7 +31,7 @@ class _MessengerChatAppState extends State<MessengerChatPage> {
                       ),
                       Divider(color: Colors.grey, thickness: 1.5,),
                       SizedBox(
-                        height: 84,
+                        height: 72,
                         child: Padding(
                           padding: const EdgeInsets.all(8.0),
                           child: Row(
