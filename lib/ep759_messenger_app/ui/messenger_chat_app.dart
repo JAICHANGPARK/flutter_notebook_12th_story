@@ -8,6 +8,7 @@ class MessengerChatPage extends StatefulWidget {
 }
 
 class _MessengerChatAppState extends State<MessengerChatPage> {
+  TextEditingController _textEditingController =TextEditingController();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
