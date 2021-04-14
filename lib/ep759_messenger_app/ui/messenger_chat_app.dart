@@ -25,25 +25,30 @@ class _MessengerChatAppState extends State<MessengerChatPage> {
                 child: SingleChildScrollView(
                   child: Column(
                     children: [
+                      SizedBox(
+                        height: MediaQuery.of(context).size.height / 1.55,
+                        child: Placeholder(),
+                      ),
                       Divider(color: Colors.grey, thickness: 1.5,),
-                      Expanded(
-                          flex: 2,
-                          child: Padding(
-                            padding: const EdgeInsets.all(8.0),
-                            child: Row(
-                              children: [
-                                IconButton(onPressed: (){}, icon: Icon(Icons.attach_file_outlined)),
-                                Expanded(child: TextField(
-                                  controller: _textEditingController,
-                                  decoration: InputDecoration(
-                                      hintText: "Write a message"
-                                  ),
-                                )),
-                                IconButton(onPressed: (){}, icon: Icon(Icons.sticky_note_2)),
-                                IconButton(onPressed: (){}, icon: Icon(Icons.mic_none_outlined))
-                              ],
-                            ),
-                          )),
+                      SizedBox(
+                        height: 84,
+                        child: Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Row(
+                            children: [
+                              IconButton(onPressed: (){}, icon: Icon(Icons.attach_file_outlined)),
+                              Expanded(child: TextField(
+                                controller: _textEditingController,
+                                decoration: InputDecoration(
+                                    hintText: "Write a message"
+                                ),
+                              )),
+                              IconButton(onPressed: (){}, icon: Icon(Icons.sticky_note_2)),
+                              IconButton(onPressed: (){}, icon: Icon(Icons.mic_none_outlined))
+                            ],
+                          ),
+                        ),
+                      ),
                     ],
                   ),
                 )),
