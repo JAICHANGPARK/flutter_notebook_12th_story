@@ -14,7 +14,6 @@ class _MessengerChatAppState extends State<MessengerChatPage> {
       body: SafeArea(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
-
           children: [
               Expanded(
                   flex: 3,
@@ -23,9 +22,14 @@ class _MessengerChatAppState extends State<MessengerChatPage> {
             Expanded(
                 flex: 20,
                 child: Placeholder()),
+            Divider(color: Colors.grey, thickness: 1.5,),
             Expanded(
                 flex: 3,
-                child: Placeholder()),
+                child: Row(
+                  children: [
+                    
+                  ],
+                )),
           ],
         ),
       ),
