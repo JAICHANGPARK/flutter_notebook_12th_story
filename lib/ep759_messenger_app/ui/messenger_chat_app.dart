@@ -27,7 +27,9 @@ class _MessengerChatAppState extends State<MessengerChatPage> {
                 flex: 3,
                 child: Row(
                   children: [
-                    IconButton(onPressed: (){}, icon: Icon(Icons.attach_file_outlined))
+                    IconButton(onPressed: (){}, icon: Icon(Icons.attach_file_outlined)),
+                    IconButton(onPressed: (){}, icon: Icon(Icons.sticky_note_2)),
+                    IconButton(onPressed: (){}, icon: Icon(Icons.mic_none_outlined))
                   ],
                 )),
           ],
