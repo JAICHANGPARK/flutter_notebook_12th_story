@@ -115,9 +115,7 @@ class _ComicTrendingPageState extends State<ComicTrendingPage> {
                           });
                         },
                         isExpanded: true,
-                        underline: Container(
-
-                        ),
+                        underline: Container(),
                         items: dropItems
                             .map((e) => DropdownMenuItem<String>(
                                   child: Text("$e"),
@@ -194,11 +192,9 @@ class _ComicTrendingPageState extends State<ComicTrendingPage> {
                                                   ],
                                                 ),
                                                 Spacer(),
-                                                Row(children: [
-                                                  Text("Next Chapter 7"),
-                                                  Spacer(),
-                                                  Text("1.1m View")
-                                                ],)
+                                                Row(
+                                                  children: [Text("Next Chapter 7"), Spacer(), Text("1.1m View")],
+                                                )
                                               ],
                                             ),
                                           ),
