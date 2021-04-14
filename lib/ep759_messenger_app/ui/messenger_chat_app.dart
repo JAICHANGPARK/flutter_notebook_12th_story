@@ -13,8 +13,12 @@ class _MessengerChatAppState extends State<MessengerChatPage> {
     return Scaffold(
       body: SafeArea(
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+
           children: [
-            
+              Expanded(child: Placeholder()),
+            Expanded(child: Placeholder()),
+            Expanded(child: Placeholder()),
           ],
         ),
       ),
