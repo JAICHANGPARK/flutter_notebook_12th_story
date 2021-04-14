@@ -10,6 +10,43 @@ class MessengerChatPage extends StatefulWidget {
 class _MessengerChatAppState extends State<MessengerChatPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: SafeArea(
+        child: Column(
+          children: [
+            
+          ],
+        ),
+      ),
+
+    );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
