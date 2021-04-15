@@ -20,7 +20,7 @@ class _MessengerChatAppState extends State<MessengerChatPage> {
             Expanded(
                 flex: 3,
                 child: Padding(
-                  padding: const EdgeInsets.all(8.0),
+                  padding: const EdgeInsets.symmetric(horizontal: 16),
                   child: Row(
                     children: [
                       Container(
