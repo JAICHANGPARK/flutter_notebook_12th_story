@@ -102,7 +102,7 @@ class _MessengerChatAppState extends State<MessengerChatPage> {
                                     child: Column(
                                       children: [
                                         Container(
-                                          decoration: BoxDecoration(border: Border.all(color: Colors.grey),
+                                          decoration: BoxDecoration(border: Border.all(color: Colors.grey[300]!),
                                           borderRadius: BorderRadius.only(
                                             topRight: Radius.circular(8),
                                               bottomRight: Radius.circular(8),
