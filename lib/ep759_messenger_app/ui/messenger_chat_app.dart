@@ -53,8 +53,8 @@ class _MessengerChatAppState extends State<MessengerChatPage> {
                       ),
                           )),
                       Container(
-                        height: 42,
-                        width: 42,
+                        height: 48,
+                        width: 48,
                         decoration: BoxDecoration(
                           border: Border.all(color: Colors.grey,),
                           shape: BoxShape.circle,
