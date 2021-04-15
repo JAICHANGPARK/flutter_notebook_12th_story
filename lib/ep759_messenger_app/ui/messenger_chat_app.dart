@@ -26,10 +26,7 @@ class _MessengerChatAppState extends State<MessengerChatPage> {
                       Container(
                         height: 42,
                         width: 42,
-                        decoration: BoxDecoration(
-                          color: Colors.blue,
-                          borderRadius: BorderRadius.circular(8)
-                        ),
+                        decoration: BoxDecoration(color: Colors.blue, borderRadius: BorderRadius.circular(8)),
                         child: Center(
                           child: Icon(
                             Icons.keyboard_arrow_left_outlined,
@@ -38,9 +35,10 @@ class _MessengerChatAppState extends State<MessengerChatPage> {
                           ),
                         ),
                       ),
-                      Expanded(child: Column(children: [
-
-                      ],)),
+                      Expanded(
+                          child: Column(
+                        children: [],
+                      )),
                       Container(
                         height: 42,
                         width: 42,
