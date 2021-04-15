@@ -139,8 +139,11 @@ class _MessengerChatAppState extends State<MessengerChatPage> {
                                                           ),
                                                           Text(
                                                               "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitat"),
-                                                          Image.network(
-                                                            "https://cdn.dribbble.com/users/900341/screenshots/15474874/media/b6afef9541a56d5d95b13a8ee0b57f00.jpg",
+                                                          Padding(
+                                                            padding: const EdgeInsets.symmetric(vertical: 4),
+                                                            child: Image.network(
+                                                              "https://cdn.dribbble.com/users/900341/screenshots/15474874/media/b6afef9541a56d5d95b13a8ee0b57f00.jpg",
+                                                            ),
                                                           )
                                                         ],
                                                       ),
