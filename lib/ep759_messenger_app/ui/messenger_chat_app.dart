@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class MessengerChatPage extends StatefulWidget {
@@ -89,50 +90,63 @@ class _MessengerChatAppState extends State<MessengerChatPage> {
                               child: Row(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  CircleAvatar(radius: 32,
+                                  CircleAvatar(
+                                    radius: 32,
                                   ),
-                                  Expanded(child: Padding(
+                                  Expanded(
+                                      child: Padding(
                                     padding: const EdgeInsets.all(8.0),
-                                    child: Column(children: [
-                                      Container(
-                                        decoration: BoxDecoration(
-                                          border: Border.all(color: Colors.grey)
-                                        ),
-                                        padding: const EdgeInsets.all(8),
-                                        child: Column(
-                                          children: [
-                                            Text("https://dribbble.com/shots/15474874-Messenger-Mobile-Version/attachments/7248290?mode=media",
-                                            overflow: TextOverflow.ellipsis,
-                                              style: TextStyle(
-                                                color: Colors.grey,
-                                                fontSize: 16,
-                                                decoration: TextDecoration.underline
+                                    child: Column(
+                                      children: [
+                                        Container(
+                                          decoration: BoxDecoration(border: Border.all(color: Colors.grey)),
+                                          padding: const EdgeInsets.all(8),
+                                          child: Column(
+                                            children: [
+                                              Text(
+                                                "https://dribbble.com/shots/15474874-Messenger-Mobile-Version/attachments/7248290?mode=media",
+                                                overflow: TextOverflow.ellipsis,
+                                                style: TextStyle(
+                                                    color: Colors.grey,
+                                                    fontSize: 16,
+                                                    decoration: TextDecoration.underline),
                                               ),
-                                            ),
-                                            Row(
-                                              children: [
-                                                Container(width: 4,
-                                                height: 24,
-                                                decoration: BoxDecoration(
-                                                  color: Colors.blue
-                                                ),),
-                                                Expanded(
-                                                  child: Column(
-                                                    crossAxisAlignment: CrossAxisAlignment.start,
-                                                    children: [
-                                                      Text("Dribbble"),
-                                                    Text("Banking UI kit for Figma"),
-                                                      Text("Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitat"),
-                                                      
-                                                  ],),
-                                                )
-                                              ],
-                                            )
-                                          ],
-                                        ),
-                                      )
-
-                                    ],),
+                                              Row(
+                                                children: [
+                                                  Container(
+                                                    width: 4,
+                                                    decoration: BoxDecoration(color: Colors.blue),
+                                                  ),
+                                                  Expanded(
+                                                    child: Column(
+                                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                                      children: [
+                                                        Text(
+                                                          "Dribbble",
+                                                          style: TextStyle(
+                                                            color: Colors.blue,
+                                                          ),
+                                                        ),
+                                                        Text(
+                                                          "Banking UI kit for Figma",
+                                                          style: TextStyle(
+                                                              fontWeight: FontWeight.bold, color: Colors.black),
+                                                        ),
+                                                        Text(
+                                                            "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitat"),
+                                                        Image.network(
+                                                          "https://cdn.dribbble.com/users/900341/screenshots/15474874/media/b6afef9541a56d5d95b13a8ee0b57f00.jpg",
+                                                        )
+                                                      ],
+                                                    ),
+                                                  )
+                                                ],
+                                              )
+                                            ],
+                                          ),
+                                        )
+                                      ],
+                                    ),
                                   ))
                                 ],
                               ),
