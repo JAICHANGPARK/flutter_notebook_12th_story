@@ -94,10 +94,17 @@ class _MessengerChatAppState extends State<MessengerChatPage> {
                                     padding: const EdgeInsets.all(8.0),
                                     child: Column(children: [
                                       Container(
+                                        decoration: BoxDecoration(
+                                          border: Border.all(color: Colors.grey)
+                                        ),
                                         child: Column(
                                           children: [
                                             Text("https://dribbble.com/shots/15474874-Messenger-Mobile-Version/attachments/7248290?mode=media",
-                                            overflow: TextOverflow.ellipsis,)
+                                            overflow: TextOverflow.ellipsis,
+                                              style: TextStyle(
+                                                decoration: TextDecoration.underline
+                                              ),
+                                            )
                                           ],
                                         ),
                                       )
