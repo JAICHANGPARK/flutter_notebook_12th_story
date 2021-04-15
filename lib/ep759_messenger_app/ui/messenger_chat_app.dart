@@ -37,10 +37,10 @@ class _MessengerChatAppState extends State<MessengerChatPage> {
                       ),
                       Expanded(
                           child: Padding(
-                            padding: const EdgeInsets.all(8.0),
-                            child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
+                        padding: const EdgeInsets.all(8.0),
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
                             Text(
                               "Design Team",
                               style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
@@ -49,21 +49,23 @@ class _MessengerChatAppState extends State<MessengerChatPage> {
                               padding: const EdgeInsets.all(4.0),
                               child: Text("8 members, 5 online"),
                             ),
-                        ],
-                      ),
-                          )),
+                          ],
+                        ),
+                      )),
                       Container(
                         height: 48,
                         width: 48,
                         decoration: BoxDecoration(
-                          border: Border.all(color: Colors.grey,),
+                          border: Border.all(
+                            color: Colors.grey,
+                          ),
                           shape: BoxShape.circle,
                         ),
                         child: Center(
-                          child: Text("UI",style: TextStyle(
-                            fontSize: 18,
-                            fontWeight: FontWeight.bold
-                          ),),
+                          child: Text(
+                            "UI",
+                            style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                          ),
                         ),
                       )
                     ],
@@ -96,7 +98,7 @@ class _MessengerChatAppState extends State<MessengerChatPage> {
                               Expanded(
                                   child: TextField(
                                 controller: _textEditingController,
-                                decoration: InputDecoration(hintText: "Write a message"),
+                                decoration: InputDecoration(hintText: "Write a message", border: InputBorder.none),
                                 onSubmitted: (result) {
                                   _textEditingController.clear();
                                 },
