@@ -90,17 +90,20 @@ class _MessengerChatAppState extends State<MessengerChatPage> {
                                 children: [
                                   CircleAvatar(radius: 32,
                                   ),
-                                  Expanded(child: Column(children: [
-                                    Container(
-                                      child: Column(
-                                        children: [
-                                          Text("https://dribbble.com/shots/15474874-Messenger-Mobile-Version/attachments/7248290?mode=media",
-                                          overflow: TextOverflow.ellipsis,)
-                                        ],
-                                      ),
-                                    )
+                                  Expanded(child: Padding(
+                                    padding: const EdgeInsets.all(8.0),
+                                    child: Column(children: [
+                                      Container(
+                                        child: Column(
+                                          children: [
+                                            Text("https://dribbble.com/shots/15474874-Messenger-Mobile-Version/attachments/7248290?mode=media",
+                                            overflow: TextOverflow.ellipsis,)
+                                          ],
+                                        ),
+                                      )
 
-                                  ],))
+                                    ],),
+                                  ))
                                 ],
                               ),
                             )
