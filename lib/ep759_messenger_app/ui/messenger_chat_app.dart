@@ -170,7 +170,14 @@ class _MessengerChatAppState extends State<MessengerChatPage> {
                                         ),
                                         Align(
                                           alignment: Alignment.centerRight,
-                                            child: Text("9:45"))
+                                            child: Padding(
+                                              padding: const EdgeInsets.symmetric(vertical: 4),
+                                              child: Text("9:45", style: TextStyle(
+                                                fontSize: 14,
+                                                color: Colors.grey,
+                                                fontWeight: FontWeight.bold
+                                              ),),
+                                            ))
                                       ],
                                     ),
                                   ))
