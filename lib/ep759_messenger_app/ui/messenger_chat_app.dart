@@ -85,7 +85,7 @@ class _MessengerChatAppState extends State<MessengerChatPage> {
                         child: ListView(
                           children: [
                             Padding(
-                              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                              padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
                               child: Row(
                                 children: [
                                   CircleAvatar(radius: 32,
@@ -97,6 +97,7 @@ class _MessengerChatAppState extends State<MessengerChatPage> {
                                         decoration: BoxDecoration(
                                           border: Border.all(color: Colors.grey)
                                         ),
+                                        padding: const EdgeInsets.all(8),
                                         child: Column(
                                           children: [
                                             Text("https://dribbble.com/shots/15474874-Messenger-Mobile-Version/attachments/7248290?mode=media",
