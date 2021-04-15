@@ -56,7 +56,7 @@ class _MessengerChatAppState extends State<MessengerChatPage> {
                   child: Column(
                     children: [
                       SizedBox(
-                        height: MediaQuery.of(context).size.height / 1.5,
+                        height: MediaQuery.of(context).size.height / 1.45,
                         child: ListView(),
                       ),
                       Divider(
@@ -64,7 +64,7 @@ class _MessengerChatAppState extends State<MessengerChatPage> {
                         thickness: 1.5,
                       ),
                       SizedBox(
-                        height: 64,
+                        height: 58,
                         child: Padding(
                           padding: const EdgeInsets.all(8.0),
                           child: Row(
