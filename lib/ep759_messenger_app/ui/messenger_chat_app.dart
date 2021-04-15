@@ -87,6 +87,7 @@ class _MessengerChatAppState extends State<MessengerChatPage> {
                             Padding(
                               padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
                               child: Row(
+                                crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   CircleAvatar(radius: 32,
                                   ),
