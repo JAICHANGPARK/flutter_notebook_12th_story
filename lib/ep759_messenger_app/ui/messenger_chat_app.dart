@@ -84,11 +84,14 @@ class _MessengerChatAppState extends State<MessengerChatPage> {
                         height: MediaQuery.of(context).size.height / 1.45,
                         child: ListView(
                           children: [
-                            Row(
-                              children: [
-                                CircleAvatar(radius: 32,
-                                )
-                              ],
+                            Padding(
+                              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                              child: Row(
+                                children: [
+                                  CircleAvatar(radius: 32,
+                                  )
+                                ],
+                              ),
                             )
                           ],
                         ),
