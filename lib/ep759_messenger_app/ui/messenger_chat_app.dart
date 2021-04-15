@@ -37,7 +37,10 @@ class _MessengerChatAppState extends State<MessengerChatPage> {
                       ),
                       Expanded(
                           child: Column(
-                        children: [],
+                        children: [
+                          Text("Design Team"),
+                          Text("8 members, 5 online"),
+                        ],
                       )),
                       Container(
                         height: 42,
