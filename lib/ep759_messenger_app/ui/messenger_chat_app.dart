@@ -129,10 +129,13 @@ class _MessengerChatAppState extends State<MessengerChatPage> {
                                                               color: Colors.blue,
                                                             ),
                                                           ),
-                                                          Text(
-                                                            "Banking UI kit for Figma",
-                                                            style: TextStyle(
-                                                                fontWeight: FontWeight.bold, color: Colors.black),
+                                                          Padding(
+                                                            padding: const EdgeInsets.symmetric(vertical: 4),
+                                                            child: Text(
+                                                              "Banking UI kit for Figma",
+                                                              style: TextStyle(
+                                                                  fontWeight: FontWeight.bold, color: Colors.black),
+                                                            ),
                                                           ),
                                                           Text(
                                                               "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitat"),
