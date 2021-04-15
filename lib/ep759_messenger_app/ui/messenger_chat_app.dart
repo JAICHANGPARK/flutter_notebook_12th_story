@@ -90,8 +90,11 @@ class _MessengerChatAppState extends State<MessengerChatPage> {
                               child: Row(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  CircleAvatar(
-                                    radius: 32,
+                                  Padding(
+                                    padding: const EdgeInsets.symmetric(vertical: 8),
+                                    child: CircleAvatar(
+                                      radius: 30,
+                                    ),
                                   ),
                                   Expanded(
                                       child: Padding(
@@ -99,7 +102,14 @@ class _MessengerChatAppState extends State<MessengerChatPage> {
                                     child: Column(
                                       children: [
                                         Container(
-                                          decoration: BoxDecoration(border: Border.all(color: Colors.grey)),
+                                          decoration: BoxDecoration(border: Border.all(color: Colors.grey),
+                                          borderRadius: BorderRadius.only(
+                                            topRight: Radius.circular(8),
+                                              bottomRight: Radius.circular(8),
+                                              bottomLeft: Radius.circular(8)
+
+                                          )
+                                          ),
                                           padding: const EdgeInsets.all(8),
                                           child: Column(
                                             children: [
