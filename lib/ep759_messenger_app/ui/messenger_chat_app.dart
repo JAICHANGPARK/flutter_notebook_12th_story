@@ -111,40 +111,47 @@ class _MessengerChatAppState extends State<MessengerChatPage> {
                                                     fontSize: 16,
                                                     decoration: TextDecoration.underline),
                                               ),
-                                              Row(
-                                                children: [
-                                                  Container(
-                                                    width: 4,
-                                                    decoration: BoxDecoration(color: Colors.blue),
-                                                  ),
-                                                  Expanded(
-                                                    child: Column(
-                                                      crossAxisAlignment: CrossAxisAlignment.start,
-                                                      children: [
-                                                        Text(
-                                                          "Dribbble",
-                                                          style: TextStyle(
-                                                            color: Colors.blue,
-                                                          ),
-                                                        ),
-                                                        Text(
-                                                          "Banking UI kit for Figma",
-                                                          style: TextStyle(
-                                                              fontWeight: FontWeight.bold, color: Colors.black),
-                                                        ),
-                                                        Text(
-                                                            "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitat"),
-                                                        Image.network(
-                                                          "https://cdn.dribbble.com/users/900341/screenshots/15474874/media/b6afef9541a56d5d95b13a8ee0b57f00.jpg",
-                                                        )
-                                                      ],
+                                              Padding(
+                                                padding: const EdgeInsets.all(8.0),
+                                                child: Row(
+                                                  children: [
+                                                    Container(
+                                                      width: 4,
+                                                      decoration: BoxDecoration(color: Colors.blue),
                                                     ),
-                                                  )
-                                                ],
-                                              )
+                                                    Expanded(
+                                                      child: Column(
+                                                        crossAxisAlignment: CrossAxisAlignment.start,
+                                                        children: [
+                                                          Text(
+                                                            "Dribbble",
+                                                            style: TextStyle(
+                                                              color: Colors.blue,
+                                                            ),
+                                                          ),
+                                                          Text(
+                                                            "Banking UI kit for Figma",
+                                                            style: TextStyle(
+                                                                fontWeight: FontWeight.bold, color: Colors.black),
+                                                          ),
+                                                          Text(
+                                                              "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitat"),
+                                                          Image.network(
+                                                            "https://cdn.dribbble.com/users/900341/screenshots/15474874/media/b6afef9541a56d5d95b13a8ee0b57f00.jpg",
+                                                          )
+                                                        ],
+                                                      ),
+                                                    )
+                                                  ],
+                                                ),
+                                              ),
+
                                             ],
                                           ),
-                                        )
+                                        ),
+                                        Align(
+                                          alignment: Alignment.centerRight,
+                                            child: Text("9:45"))
                                       ],
                                     ),
                                   ))
