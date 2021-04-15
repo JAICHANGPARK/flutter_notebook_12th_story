@@ -37,13 +37,16 @@ class _MessengerChatAppState extends State<MessengerChatPage> {
                       ),
                       Expanded(
                           child: Column(
-mainAxisAlignment: MainAxisAlignment.center,
+                        mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          Text("Design Team", style: TextStyle(
-                            fontSize: 16,
-                            fontWeight: FontWeight.bold
-                          ),),
-                          Text("8 members, 5 online"),
+                          Text(
+                            "Design Team",
+                            style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Text("8 members, 5 online"),
+                          ),
                         ],
                       )),
                       Container(
