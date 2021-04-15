@@ -103,8 +103,21 @@ class _MessengerChatAppState extends State<MessengerChatPage> {
                                             Text("https://dribbble.com/shots/15474874-Messenger-Mobile-Version/attachments/7248290?mode=media",
                                             overflow: TextOverflow.ellipsis,
                                               style: TextStyle(
+                                                color: Colors.grey,
+                                                fontSize: 16,
                                                 decoration: TextDecoration.underline
                                               ),
+                                            ),
+                                            Row(
+                                              children: [
+                                                Flexible(child: Container(width: 3, height: double.infinity,
+                                                decoration: BoxDecoration(
+                                                  color: Colors.blue
+                                                ),),),
+                                                Column(children: [
+                                                  
+                                                ],)
+                                              ],
                                             )
                                           ],
                                         ),
