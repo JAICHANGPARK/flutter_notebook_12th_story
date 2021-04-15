@@ -89,7 +89,17 @@ class _MessengerChatAppState extends State<MessengerChatPage> {
                               child: Row(
                                 children: [
                                   CircleAvatar(radius: 32,
-                                  )
+                                  ),
+                                  Expanded(child: Column(children: [
+                                    Container(
+                                      child: Column(
+                                        children: [
+                                          
+                                        ],
+                                      ),
+                                    )
+
+                                  ],))
                                 ],
                               ),
                             )
