@@ -114,10 +114,16 @@ class _MessengerChatAppState extends State<MessengerChatPage> {
                                                 decoration: BoxDecoration(
                                                   color: Colors.blue
                                                 ),),
-                                                Column(children: [
-                                                    Text("Dribbble"),
-                                                  Text("Banking UI kit for Figma")
-                                                ],)
+                                                Expanded(
+                                                  child: Column(
+                                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                                    children: [
+                                                      Text("Dribbble"),
+                                                    Text("Banking UI kit for Figma"),
+                                                      Text("Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitat"),
+                                                      
+                                                  ],),
+                                                )
                                               ],
                                             )
                                           ],
