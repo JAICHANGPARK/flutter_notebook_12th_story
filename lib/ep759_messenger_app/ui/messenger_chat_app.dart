@@ -82,7 +82,16 @@ class _MessengerChatAppState extends State<MessengerChatPage> {
                     children: [
                       SizedBox(
                         height: MediaQuery.of(context).size.height / 1.45,
-                        child: ListView(),
+                        child: ListView(
+                          children: [
+                            Row(
+                              children: [
+                                CircleAvatar(radius: 32,
+                                )
+                              ],
+                            )
+                          ],
+                        ),
                       ),
                       Divider(
                         color: Colors.grey,
