@@ -111,7 +111,8 @@ class _MessengerChatAppState extends State<MessengerChatPage> {
                                             ),
                                             Row(
                                               children: [
-                                                Container(width: 3,
+                                                Container(width: 4,
+                                                height: 24,
                                                 decoration: BoxDecoration(
                                                   color: Colors.blue
                                                 ),),
