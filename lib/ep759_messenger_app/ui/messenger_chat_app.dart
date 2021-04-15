@@ -110,12 +110,13 @@ class _MessengerChatAppState extends State<MessengerChatPage> {
                                             ),
                                             Row(
                                               children: [
-                                                Flexible(child: Container(width: 3, height: double.infinity,
+                                                Container(width: 3,
                                                 decoration: BoxDecoration(
                                                   color: Colors.blue
-                                                ),),),
+                                                ),),
                                                 Column(children: [
-                                                  
+                                                    Text("Dribbble"),
+                                                  Text("Banking UI kit for Figma")
                                                 ],)
                                               ],
                                             )
