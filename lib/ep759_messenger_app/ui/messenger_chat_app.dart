@@ -86,7 +86,7 @@ class _MessengerChatAppState extends State<MessengerChatPage> {
                         child: ListView(
                           children: [
                             buildSendWithImageWidget(),
-                            buildSendTextOnlyWidget(),
+                            buildSendTextOnlyWidget(text: "this is my new shot for dribbble 😎"),
                           ],
                         ),
                       ),
