@@ -223,7 +223,7 @@ class _MessengerChatAppState extends State<MessengerChatPage> {
     );
   }
 
-  Widget buildSendTextOnlyWidget(String text){
+  Widget buildSendTextOnlyWidget({required String text}){
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
       child: Row(
