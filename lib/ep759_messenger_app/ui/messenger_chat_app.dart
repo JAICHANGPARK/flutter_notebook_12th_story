@@ -85,8 +85,8 @@ class _MessengerChatAppState extends State<MessengerChatPage> {
                         height: MediaQuery.of(context).size.height / 1.45,
                         child: ListView(
                           children: [
-                            buildSendWithImageWidget(),
-                            buildSendTextOnlyWidget(text: "this is my new shot for dribbble 😎"),
+                            buildReceiveWithImageWidget(),
+                            buildReceiveTextOnlyWidget(text: "this is my new shot for dribbble 😎"),
                           ],
                         ),
                       ),
@@ -124,7 +124,7 @@ class _MessengerChatAppState extends State<MessengerChatPage> {
     );
   }
 
-  Widget buildSendWithImageWidget() {
+  Widget buildReceiveWithImageWidget() {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
       child: Row(
@@ -223,7 +223,7 @@ class _MessengerChatAppState extends State<MessengerChatPage> {
     );
   }
 
-  Widget buildSendTextOnlyWidget({required String text}){
+  Widget buildReceiveTextOnlyWidget({required String text}) {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
       child: Row(
@@ -233,43 +233,40 @@ class _MessengerChatAppState extends State<MessengerChatPage> {
             padding: const EdgeInsets.symmetric(vertical: 8),
             child: CircleAvatar(
               radius: 30,
-              backgroundImage:
-              NetworkImage("https://avatars.githubusercontent.com/u/19484515?v=4"),
+              backgroundImage: NetworkImage("https://avatars.githubusercontent.com/u/19484515?v=4"),
             ),
           ),
           Expanded(
               child: Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Column(
-                  children: [
-                    Container(
-                        width: double.infinity,
-                        decoration: BoxDecoration(
-                            border: Border.all(color: Colors.grey[300]!),
-                            borderRadius: BorderRadius.only(
-                                topRight: Radius.circular(8),
-                                bottomRight: Radius.circular(8),
-                                bottomLeft: Radius.circular(8))),
-                        padding: const EdgeInsets.all(12),
-                        child: Text(
-                          // "this is my new shot for dribbble 😎",
-                          text,
-                          style: TextStyle(
-                              fontSize: 15, color: Colors.grey, fontWeight: FontWeight.w700),
-                        )),
-                    Align(
-                        alignment: Alignment.centerRight,
-                        child: Padding(
-                          padding: const EdgeInsets.symmetric(vertical: 4),
-                          child: Text(
-                            "9:45",
-                            style: TextStyle(
-                                fontSize: 14, color: Colors.grey, fontWeight: FontWeight.bold),
-                          ),
-                        ))
-                  ],
-                ),
-              ))
+            padding: const EdgeInsets.all(8.0),
+            child: Column(
+              children: [
+                Container(
+                    width: double.infinity,
+                    decoration: BoxDecoration(
+                        border: Border.all(color: Colors.grey[300]!),
+                        borderRadius: BorderRadius.only(
+                            topRight: Radius.circular(8),
+                            bottomRight: Radius.circular(8),
+                            bottomLeft: Radius.circular(8))),
+                    padding: const EdgeInsets.all(12),
+                    child: Text(
+                      // "this is my new shot for dribbble 😎",
+                      text,
+                      style: TextStyle(fontSize: 15, color: Colors.grey, fontWeight: FontWeight.w700),
+                    )),
+                Align(
+                    alignment: Alignment.centerRight,
+                    child: Padding(
+                      padding: const EdgeInsets.symmetric(vertical: 4),
+                      child: Text(
+                        "9:45",
+                        style: TextStyle(fontSize: 14, color: Colors.grey, fontWeight: FontWeight.bold),
+                      ),
+                    ))
+              ],
+            ),
+          ))
         ],
       ),
     );
