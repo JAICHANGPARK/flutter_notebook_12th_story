@@ -211,8 +211,8 @@ class _MessengerChatAppState extends State<MessengerChatPage> {
                                                       topRight: Radius.circular(8),
                                                       bottomRight: Radius.circular(8),
                                                       bottomLeft: Radius.circular(8))),
-                                              padding: const EdgeInsets.all(8),
-                                              child: Text("this is my new shot for dribbble ")
+                                              padding: const EdgeInsets.all(12),
+                                              child: Text("this is my new shot for dribbble 😎")
                                             ),
                                             Align(
                                                 alignment: Alignment.centerRight,
