@@ -187,7 +187,7 @@ class _MessengerChatAppState extends State<MessengerChatPage> {
                               ),
                             ),
                             Padding(
-                              padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+                              padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
                               child: Row(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
@@ -212,7 +212,11 @@ class _MessengerChatAppState extends State<MessengerChatPage> {
                                                       bottomRight: Radius.circular(8),
                                                       bottomLeft: Radius.circular(8))),
                                               padding: const EdgeInsets.all(12),
-                                              child: Text("this is my new shot for dribbble 😎")
+                                              child: Text("this is my new shot for dribbble 😎",
+                                              style: TextStyle(
+                                                fontSize: 16,
+                                                fontWeight: FontWeight.bold
+                                              ),)
                                             ),
                                             Align(
                                                 alignment: Alignment.centerRight,
