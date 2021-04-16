@@ -96,19 +96,21 @@ class _MessengerChatAppState extends State<MessengerChatPage> {
                                   Padding(
                                     padding: const EdgeInsets.all(8.0),
                                     child: Column(
-                                      
+                                      crossAxisAlignment: CrossAxisAlignment.end,
                                       children: [
                                         Container(
                                             decoration: BoxDecoration(
+                                                color: Colors.lightBlueAccent,
                                                 border: Border.all(color: Colors.grey[300]!),
                                                 borderRadius: BorderRadius.only(
-                                                    topRight: Radius.circular(8),
+                                                    topLeft: Radius.circular(8),
                                                     bottomRight: Radius.circular(8),
                                                     bottomLeft: Radius.circular(8))),
                                             padding: const EdgeInsets.all(12),
                                             child: Text(
                                               "awesome!",
-                                              style: TextStyle(fontSize: 15, color: Colors.grey, fontWeight: FontWeight.w700),
+                                              style: TextStyle(
+                                                  fontSize: 15, color: Colors.white, fontWeight: FontWeight.w700),
                                             )),
                                         Align(
                                             alignment: Alignment.centerRight,
@@ -116,7 +118,8 @@ class _MessengerChatAppState extends State<MessengerChatPage> {
                                               padding: const EdgeInsets.symmetric(vertical: 4),
                                               child: Text(
                                                 "9:45",
-                                                style: TextStyle(fontSize: 14, color: Colors.grey, fontWeight: FontWeight.bold),
+                                                style: TextStyle(
+                                                    fontSize: 14, color: Colors.grey, fontWeight: FontWeight.bold),
                                               ),
                                             ))
                                       ],
@@ -126,7 +129,8 @@ class _MessengerChatAppState extends State<MessengerChatPage> {
                                     padding: const EdgeInsets.symmetric(vertical: 8),
                                     child: CircleAvatar(
                                       radius: 30,
-                                      backgroundImage: NetworkImage("https://avatars.githubusercontent.com/u/19484515?v=4"),
+                                      backgroundImage:
+                                          NetworkImage("https://avatars.githubusercontent.com/u/19484515?v=4"),
                                     ),
                                   ),
                                 ],
