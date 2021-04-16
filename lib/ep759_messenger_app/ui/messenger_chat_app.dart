@@ -223,7 +223,7 @@ class _MessengerChatAppState extends State<MessengerChatPage> {
     );
   }
 
-  Widget buildSendTextOnlyWidget(){
+  Widget buildSendTextOnlyWidget(String text){
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
       child: Row(
@@ -252,7 +252,8 @@ class _MessengerChatAppState extends State<MessengerChatPage> {
                                 bottomLeft: Radius.circular(8))),
                         padding: const EdgeInsets.all(12),
                         child: Text(
-                          "this is my new shot for dribbble 😎",
+                          // "this is my new shot for dribbble 😎",
+                          text,
                           style: TextStyle(
                               fontSize: 15, color: Colors.grey, fontWeight: FontWeight.w700),
                         )),
