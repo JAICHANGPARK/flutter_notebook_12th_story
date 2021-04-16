@@ -85,7 +85,7 @@ class _MessengerChatAppState extends State<MessengerChatPage> {
                         height: MediaQuery.of(context).size.height / 1.45,
                         child: ListView(
                           children: [
-
+                            buildSendWithImageWidget(),
                             Padding(
                               padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
                               child: Row(
@@ -95,42 +95,42 @@ class _MessengerChatAppState extends State<MessengerChatPage> {
                                     padding: const EdgeInsets.symmetric(vertical: 8),
                                     child: CircleAvatar(
                                       radius: 30,
-                                      backgroundImage: NetworkImage("https://avatars.githubusercontent.com/u/19484515?v=4"),
+                                      backgroundImage:
+                                          NetworkImage("https://avatars.githubusercontent.com/u/19484515?v=4"),
                                     ),
                                   ),
                                   Expanded(
                                       child: Padding(
-                                        padding: const EdgeInsets.all(8.0),
-                                        child: Column(
-                                          children: [
-                                            Container(
-                                              width: double.infinity,
-                                              decoration: BoxDecoration(
-                                                  border: Border.all(color: Colors.grey[300]!),
-                                                  borderRadius: BorderRadius.only(
-                                                      topRight: Radius.circular(8),
-                                                      bottomRight: Radius.circular(8),
-                                                      bottomLeft: Radius.circular(8))),
-                                              padding: const EdgeInsets.all(12),
-                                              child: Text("this is my new shot for dribbble 😎",
+                                    padding: const EdgeInsets.all(8.0),
+                                    child: Column(
+                                      children: [
+                                        Container(
+                                            width: double.infinity,
+                                            decoration: BoxDecoration(
+                                                border: Border.all(color: Colors.grey[300]!),
+                                                borderRadius: BorderRadius.only(
+                                                    topRight: Radius.circular(8),
+                                                    bottomRight: Radius.circular(8),
+                                                    bottomLeft: Radius.circular(8))),
+                                            padding: const EdgeInsets.all(12),
+                                            child: Text(
+                                              "this is my new shot for dribbble 😎",
                                               style: TextStyle(
-                                                fontSize: 16,
-                                                fontWeight: FontWeight.bold
-                                              ),)
-                                            ),
-                                            Align(
-                                                alignment: Alignment.centerRight,
-                                                child: Padding(
-                                                  padding: const EdgeInsets.symmetric(vertical: 4),
-                                                  child: Text(
-                                                    "9:45",
-                                                    style: TextStyle(
-                                                        fontSize: 14, color: Colors.grey, fontWeight: FontWeight.bold),
-                                                  ),
-                                                ))
-                                          ],
-                                        ),
-                                      ))
+                                                  fontSize: 15, color: Colors.grey, fontWeight: FontWeight.w700),
+                                            )),
+                                        Align(
+                                            alignment: Alignment.centerRight,
+                                            child: Padding(
+                                              padding: const EdgeInsets.symmetric(vertical: 4),
+                                              child: Text(
+                                                "9:45",
+                                                style: TextStyle(
+                                                    fontSize: 14, color: Colors.grey, fontWeight: FontWeight.bold),
+                                              ),
+                                            ))
+                                      ],
+                                    ),
+                                  ))
                                 ],
                               ),
                             )
@@ -170,8 +170,9 @@ class _MessengerChatAppState extends State<MessengerChatPage> {
       ),
     );
   }
-  Widget buildSendWithImageWidget(){
-    return     Padding(
+
+  Widget buildSendWithImageWidget() {
+    return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -185,90 +186,85 @@ class _MessengerChatAppState extends State<MessengerChatPage> {
           ),
           Expanded(
               child: Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Column(
-                  children: [
-                    Container(
-                      decoration: BoxDecoration(
-                          border: Border.all(color: Colors.grey[300]!),
-                          borderRadius: BorderRadius.only(
-                              topRight: Radius.circular(8),
-                              bottomRight: Radius.circular(8),
-                              bottomLeft: Radius.circular(8))),
-                      padding: const EdgeInsets.all(8),
-                      child: Column(
-                        children: [
-                          Text(
-                            "https://dribbble.com/shots/15474874-Messenger-Mobile-Version/attachments/7248290?mode=media",
-                            overflow: TextOverflow.ellipsis,
-                            style: TextStyle(
-                                color: Colors.grey,
-                                fontSize: 16,
-                                decoration: TextDecoration.underline),
-                          ),
-                          Padding(
-                            padding: const EdgeInsets.all(8.0),
-                            child: Row(
-                              children: [
-                                Container(
-                                  width: 4,
-                                  height: 300,
-                                  decoration: BoxDecoration(color: Colors.lightBlueAccent,
-                                      borderRadius: BorderRadius.circular(4)),
-                                ),
-                                SizedBox(
-                                  width: 16,
-                                ),
-                                Expanded(
-                                  child: Column(
-                                    crossAxisAlignment: CrossAxisAlignment.start,
-                                    children: [
-                                      Text(
-                                        "Dribbble",
-                                        style: TextStyle(
-                                          color: Colors.blue,
-                                        ),
-                                      ),
-                                      Padding(
-                                        padding: const EdgeInsets.symmetric(vertical: 4),
-                                        child: Text(
-                                          "Banking UI kit for Figma",
-                                          style: TextStyle(
-                                              fontWeight: FontWeight.bold, color: Colors.black),
-                                        ),
-                                      ),
-                                      Text(
-                                        "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitat",
-                                        style: TextStyle(color: Colors.grey[400]),
-                                      ),
-                                      Padding(
-                                        padding: const EdgeInsets.symmetric(vertical: 4),
-                                        child: Image.network(
-                                          "https://cdn.dribbble.com/users/900341/screenshots/15474874/media/b6afef9541a56d5d95b13a8ee0b57f00.jpg",
-                                        ),
-                                      )
-                                    ],
-                                  ),
-                                )
-                              ],
-                            ),
-                          ),
-                        ],
+            padding: const EdgeInsets.all(8.0),
+            child: Column(
+              children: [
+                Container(
+                  decoration: BoxDecoration(
+                      border: Border.all(color: Colors.grey[300]!),
+                      borderRadius: BorderRadius.only(
+                          topRight: Radius.circular(8),
+                          bottomRight: Radius.circular(8),
+                          bottomLeft: Radius.circular(8))),
+                  padding: const EdgeInsets.all(8),
+                  child: Column(
+                    children: [
+                      Text(
+                        "https://dribbble.com/shots/15474874-Messenger-Mobile-Version/attachments/7248290?mode=media",
+                        overflow: TextOverflow.ellipsis,
+                        style: TextStyle(color: Colors.grey, fontSize: 16, decoration: TextDecoration.underline),
                       ),
-                    ),
-                    Align(
-                        alignment: Alignment.centerRight,
-                        child: Padding(
-                          padding: const EdgeInsets.symmetric(vertical: 4),
-                          child: Text(
-                            "9:45",
-                            style: TextStyle(
-                                fontSize: 14, color: Colors.grey, fontWeight: FontWeight.bold),
-                          ),
-                        ))
-                  ],
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Row(
+                          children: [
+                            Container(
+                              width: 4,
+                              height: 300,
+                              decoration:
+                                  BoxDecoration(color: Colors.lightBlueAccent, borderRadius: BorderRadius.circular(4)),
+                            ),
+                            SizedBox(
+                              width: 16,
+                            ),
+                            Expanded(
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text(
+                                    "Dribbble",
+                                    style: TextStyle(
+                                      color: Colors.blue,
+                                    ),
+                                  ),
+                                  Padding(
+                                    padding: const EdgeInsets.symmetric(vertical: 4),
+                                    child: Text(
+                                      "Banking UI kit for Figma",
+                                      style: TextStyle(fontWeight: FontWeight.bold, color: Colors.black),
+                                    ),
+                                  ),
+                                  Text(
+                                    "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitat",
+                                    style: TextStyle(color: Colors.grey[400]),
+                                  ),
+                                  Padding(
+                                    padding: const EdgeInsets.symmetric(vertical: 4),
+                                    child: Image.network(
+                                      "https://cdn.dribbble.com/users/900341/screenshots/15474874/media/b6afef9541a56d5d95b13a8ee0b57f00.jpg",
+                                    ),
+                                  )
+                                ],
+                              ),
+                            )
+                          ],
+                        ),
+                      ),
+                    ],
+                  ),
                 ),
-              ))
+                Align(
+                    alignment: Alignment.centerRight,
+                    child: Padding(
+                      padding: const EdgeInsets.symmetric(vertical: 4),
+                      child: Text(
+                        "9:45",
+                        style: TextStyle(fontSize: 14, color: Colors.grey, fontWeight: FontWeight.bold),
+                      ),
+                    ))
+              ],
+            ),
+          ))
         ],
       ),
     );
