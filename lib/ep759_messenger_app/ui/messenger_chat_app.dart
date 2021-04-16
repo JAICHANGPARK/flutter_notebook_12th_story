@@ -94,6 +94,7 @@ class _MessengerChatAppState extends State<MessengerChatPage> {
                                     padding: const EdgeInsets.symmetric(vertical: 8),
                                     child: CircleAvatar(
                                       radius: 30,
+                                      backgroundImage: NetworkImage("https://avatars.githubusercontent.com/u/19484515?v=4"),
                                     ),
                                   ),
                                   Expanded(
