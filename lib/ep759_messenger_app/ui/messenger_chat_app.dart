@@ -127,10 +127,10 @@ class _MessengerChatAppState extends State<MessengerChatPage> {
                                                   children: [
                                                     Container(
                                                       width: 4,
-                                                      height: 320,
+                                                      height: 300,
                                                       decoration: BoxDecoration(color: Colors.blue),
                                                     ),
-                                                    SizedBox(width: 4,),
+                                                    SizedBox(width: 16,),
                                                     Expanded(
                                                       child: Column(
                                                         crossAxisAlignment: CrossAxisAlignment.start,
