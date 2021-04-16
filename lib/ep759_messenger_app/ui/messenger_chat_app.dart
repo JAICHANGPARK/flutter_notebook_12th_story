@@ -119,11 +119,15 @@ class _MessengerChatAppState extends State<MessengerChatPage> {
                                               child: Row(
                                                 children: [
                                                   Text(
-                                                    "9:45",
+                                                    "9:47",
                                                     style: TextStyle(
                                                         fontSize: 14, color: Colors.grey, fontWeight: FontWeight.bold),
                                                   ),
-                                                  Icon(Icons.check, size: 16, color: Colors.green,)
+                                                  Icon(
+                                                    Icons.check,
+                                                    size: 18,
+                                                    color: Colors.green,
+                                                  )
                                                 ],
                                               ),
                                             ))
