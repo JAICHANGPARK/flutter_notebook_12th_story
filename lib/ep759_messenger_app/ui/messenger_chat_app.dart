@@ -102,14 +102,12 @@ class _MessengerChatAppState extends State<MessengerChatPage> {
                                     child: Column(
                                       children: [
                                         Container(
-                                          decoration: BoxDecoration(border: Border.all(color: Colors.grey[300]!),
-                                          borderRadius: BorderRadius.only(
-                                            topRight: Radius.circular(8),
-                                              bottomRight: Radius.circular(8),
-                                              bottomLeft: Radius.circular(8)
-
-                                          )
-                                          ),
+                                          decoration: BoxDecoration(
+                                              border: Border.all(color: Colors.grey[300]!),
+                                              borderRadius: BorderRadius.only(
+                                                  topRight: Radius.circular(8),
+                                                  bottomRight: Radius.circular(8),
+                                                  bottomLeft: Radius.circular(8))),
                                           padding: const EdgeInsets.all(8),
                                           child: Column(
                                             children: [
@@ -128,9 +126,12 @@ class _MessengerChatAppState extends State<MessengerChatPage> {
                                                     Container(
                                                       width: 4,
                                                       height: 300,
-                                                      decoration: BoxDecoration(color: Colors.blue),
+                                                      decoration: BoxDecoration(color: Colors.lightBlueAccent,
+                                                      borderRadius: BorderRadius.circular(4)),
                                                     ),
-                                                    SizedBox(width: 16,),
+                                                    SizedBox(
+                                                      width: 16,
+                                                    ),
                                                     Expanded(
                                                       child: Column(
                                                         crossAxisAlignment: CrossAxisAlignment.start,
@@ -150,10 +151,9 @@ class _MessengerChatAppState extends State<MessengerChatPage> {
                                                             ),
                                                           ),
                                                           Text(
-                                                              "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitat",
-                                                          style: TextStyle(
-                                                            color: Colors.grey[400]
-                                                          ),),
+                                                            "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitat",
+                                                            style: TextStyle(color: Colors.grey[400]),
+                                                          ),
                                                           Padding(
                                                             padding: const EdgeInsets.symmetric(vertical: 4),
                                                             child: Image.network(
@@ -166,19 +166,18 @@ class _MessengerChatAppState extends State<MessengerChatPage> {
                                                   ],
                                                 ),
                                               ),
-
                                             ],
                                           ),
                                         ),
                                         Align(
-                                          alignment: Alignment.centerRight,
+                                            alignment: Alignment.centerRight,
                                             child: Padding(
                                               padding: const EdgeInsets.symmetric(vertical: 4),
-                                              child: Text("9:45", style: TextStyle(
-                                                fontSize: 14,
-                                                color: Colors.grey,
-                                                fontWeight: FontWeight.bold
-                                              ),),
+                                              child: Text(
+                                                "9:45",
+                                                style: TextStyle(
+                                                    fontSize: 14, color: Colors.grey, fontWeight: FontWeight.bold),
+                                              ),
                                             ))
                                       ],
                                     ),
