@@ -27,7 +27,8 @@ class _FinanceMainPageState extends State<FinanceMainPage> {
                       padding: EdgeInsets.zero,),
                     Text(
                       "Services",
-                      style: GoogleFonts.montserrat(fontWeight: FontWeight.bold),
+                      style: GoogleFonts.montserrat(fontWeight: FontWeight.bold,
+                      fontSize: 18),
                     ),
                     Container(
                       height: 40,
