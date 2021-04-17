@@ -83,6 +83,14 @@ class _FinanceMainPageState extends State<FinanceMainPage> {
           ),
         ]),
       ),
+      bottomNavigationBar: BottomNavigationBar(items: [
+        BottomNavigationBarItem(icon: Icon(LineIcons.home),),
+        BottomNavigationBarItem(icon: Icon(LineIcons.home),),
+        BottomNavigationBarItem(icon: Icon(LineIcons.home),),
+
+      ],
+
+      ),
     );
   }
 }
