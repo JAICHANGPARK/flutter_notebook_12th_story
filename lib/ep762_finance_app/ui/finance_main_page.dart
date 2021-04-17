@@ -17,6 +17,7 @@ class _FinanceMainPageState extends State<FinanceMainPage> {
           Expanded(
               flex: 1,
               child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   IconButton(onPressed: () {}, icon: Icon(LineIcons.bars)),
                   Text(
