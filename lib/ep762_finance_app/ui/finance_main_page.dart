@@ -16,20 +16,23 @@ class _FinanceMainPageState extends State<FinanceMainPage> {
         child: Column(children: [
           Expanded(
               flex: 1,
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  IconButton(onPressed: () {}, icon: Icon(LineIcons.bars)),
-                  Text(
-                    "Services",
-                    style: GoogleFonts.montserrat(fontWeight: FontWeight.bold),
-                  ),
-                  Container(
-                    height: 40,
-                    width: 40,
-                    decoration: BoxDecoration(color: Colors.grey[200], borderRadius: BorderRadius.circular(8)),
-                  )
-                ],
+              child: Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 16),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    IconButton(onPressed: () {}, icon: Icon(LineIcons.bars) ,padding: EdgeInsets.zero,),
+                    Text(
+                      "Services",
+                      style: GoogleFonts.montserrat(fontWeight: FontWeight.bold),
+                    ),
+                    Container(
+                      height: 40,
+                      width: 40,
+                      decoration: BoxDecoration(color: Colors.grey[200], borderRadius: BorderRadius.circular(8)),
+                    )
+                  ],
+                ),
               )),
           Expanded(
             flex: 10,
