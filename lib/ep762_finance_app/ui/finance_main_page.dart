@@ -11,8 +11,15 @@ class _FinanceMainPageState extends State<FinanceMainPage> {
     return Scaffold(
       body: SafeArea(
         child: Column(children: [
-          Expanded(child: Placeholder()),
           Expanded(
+              flex: 1,
+              child: Row(
+                children: [
+                  IconButton(onPressed: (){}, icon: Icon(Icons.menu))
+                ],
+              )),
+          Expanded(
+            flex: 10,
             child: SingleChildScrollView(
               child: Column(
                 children: [],
