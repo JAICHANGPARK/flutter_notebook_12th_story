@@ -20,10 +20,11 @@ class _FinanceMainPageState extends State<FinanceMainPage> {
                   IconButton(onPressed: (){}, icon: Icon(LineIcons.bars)),
                   Text("Service"),
                   Container(
-                    height: 48,
-                    width: 48,
+                    height: 40,
+                    width: 40,
                     decoration: BoxDecoration(
-                      color: Colors.grey[200]
+                      color: Colors.grey[200],
+                      borderRadius: BorderRadius.circular(8)
                     ),
                   )
                 ],
