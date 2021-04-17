@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:line_icons/line_icons.dart';
@@ -21,34 +20,35 @@ class _FinanceMainPageState extends State<FinanceMainPage> {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    IconButton(onPressed: () {}, icon: Icon(LineIcons.bars),
+                    IconButton(
+                      onPressed: () {},
+                      icon: Icon(LineIcons.bars),
                       alignment: Alignment.centerLeft,
-                      padding: EdgeInsets.zero,),
+                      padding: EdgeInsets.zero,
+                    ),
                     Text(
                       "Services",
-                      style: GoogleFonts.montserrat(fontWeight: FontWeight.bold,
-                      fontSize: 18),
+                      style: GoogleFonts.montserrat(fontWeight: FontWeight.bold, fontSize: 18),
                     ),
                     Container(
-                      height: 40,
-                      width: 40,
-                      decoration: BoxDecoration(color: Colors.grey[200], borderRadius: BorderRadius.circular(8),),
-
-                      child: Stack(
-                        children: [
-                          Center(child: Icon(Icons.notifications_none)),
-                          Positioned(
-                              right: 8,
-                              top: 8,
-
-
-                              child: CircleAvatar(
-
-                                radius: 4,
-                              ))
-                        ],
-                      )
-                    )
+                        height: 40,
+                        width: 40,
+                        decoration: BoxDecoration(
+                          color: Colors.grey[200],
+                          borderRadius: BorderRadius.circular(8),
+                        ),
+                        child: Stack(
+                          children: [
+                            Center(child: Icon(Icons.notifications_none)),
+                            Positioned(
+                                right: 8,
+                                top: 8,
+                                child: CircleAvatar(
+                                  backgroundColor: Colors.red,
+                                  radius: 4,
+                                ))
+                          ],
+                        ))
                   ],
                 ),
               )),
