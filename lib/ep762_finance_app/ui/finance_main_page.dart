@@ -11,14 +11,14 @@ class _FinanceMainPageState extends State<FinanceMainPage> {
     return Scaffold(
       body: SafeArea(
         child: Column(
-          children: SingleChildScrollView(
+          children: [SingleChildScrollView(
             child: Column(
               children: [
 
 
               ],
             ),
-          ),
+          ),]
         ),
       ),
 
