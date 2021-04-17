@@ -84,12 +84,13 @@ class _FinanceMainPageState extends State<FinanceMainPage> {
         ]),
       ),
       bottomNavigationBar: BottomNavigationBar(
+        elevation: 10,
         showSelectedLabels: false,
         showUnselectedLabels: false,
         items: [
-        BottomNavigationBarItem(icon: Icon(LineIcons.home),),
-        BottomNavigationBarItem(icon: Icon(LineIcons.home),),
-        BottomNavigationBarItem(icon: Icon(LineIcons.home),),
+        BottomNavigationBarItem(icon: Icon(LineIcons.home),label: ""),
+        BottomNavigationBarItem(icon: Icon(LineIcons.home),label: ""),
+        BottomNavigationBarItem(icon: Icon(LineIcons.home),label: ""),
 
       ],
 
