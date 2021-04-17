@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:line_icons/line_icon.dart';
 import 'package:line_icons/line_icons.dart';
 
@@ -17,15 +18,15 @@ class _FinanceMainPageState extends State<FinanceMainPage> {
               flex: 1,
               child: Row(
                 children: [
-                  IconButton(onPressed: (){}, icon: Icon(LineIcons.bars)),
-                  Text("Service"),
+                  IconButton(onPressed: () {}, icon: Icon(LineIcons.bars)),
+                  Text(
+                    "Services",
+                    style: GoogleFonts.montserrat(fontWeight: FontWeight.bold),
+                  ),
                   Container(
                     height: 40,
                     width: 40,
-                    decoration: BoxDecoration(
-                      color: Colors.grey[200],
-                      borderRadius: BorderRadius.circular(8)
-                    ),
+                    decoration: BoxDecoration(color: Colors.grey[200], borderRadius: BorderRadius.circular(8)),
                   )
                 ],
               )),
