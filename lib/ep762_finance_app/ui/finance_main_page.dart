@@ -1,8 +1,6 @@
-import 'package:badges/badges.dart';
-import 'package:flutter/cupertino.dart';
+
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:line_icons/line_icon.dart';
 import 'package:line_icons/line_icons.dart';
 
 class FinanceMainPage extends StatefulWidget {
@@ -38,7 +36,16 @@ class _FinanceMainPageState extends State<FinanceMainPage> {
 
                       child: Stack(
                         children: [
-                          Icon(Icons.notifications_none)
+                          Center(child: Icon(Icons.notifications_none)),
+                          Positioned(
+                              right: 8,
+                              top: 8,
+
+
+                              child: CircleAvatar(
+
+                                radius: 4,
+                              ))
                         ],
                       )
                     )
