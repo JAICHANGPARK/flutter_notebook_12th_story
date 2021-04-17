@@ -10,18 +10,17 @@ class _FinanceMainPageState extends State<FinanceMainPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-        child: Column(
-          children: [SingleChildScrollView(
-            child: Column(
-              children: [
-
-
-              ],
+        child: Column(children: [
+          Expanded(child: Placeholder()),
+          Expanded(
+            child: SingleChildScrollView(
+              child: Column(
+                children: [],
+              ),
             ),
-          ),]
-        ),
+          ),
+        ]),
       ),
-
     );
   }
 }
