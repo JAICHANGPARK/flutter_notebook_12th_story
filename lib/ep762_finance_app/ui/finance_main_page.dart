@@ -8,6 +8,8 @@ class FinanceMainPage extends StatefulWidget {
 }
 
 class _FinanceMainPageState extends State<FinanceMainPage> {
+  int _tabIndex = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -87,8 +89,14 @@ class _FinanceMainPageState extends State<FinanceMainPage> {
         elevation: 10,
         showSelectedLabels: false,
         showUnselectedLabels: false,
-        onTap: (index) {},
         type: BottomNavigationBarType.fixed,
+        currentIndex:_tabIndex ,
+        onTap: (index) {
+          setState(() {
+            _tabIndex = index;
+          });
+        },
+
         items: [
           BottomNavigationBarItem(icon: Icon(LineIcons.home), label: ""),
           BottomNavigationBarItem(icon: Icon(LineIcons.barChart), label: ""),
