@@ -91,6 +91,8 @@ class _FinanceMainPageState extends State<FinanceMainPage> {
         showUnselectedLabels: false,
         type: BottomNavigationBarType.fixed,
         currentIndex:_tabIndex ,
+        selectedItemColor: Colors.red,
+
         onTap: (index) {
           setState(() {
             _tabIndex = index;
