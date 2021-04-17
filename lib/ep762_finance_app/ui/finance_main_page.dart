@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:line_icons/line_icon.dart';
+import 'package:line_icons/line_icons.dart';
 
 class FinanceMainPage extends StatefulWidget {
   @override
@@ -15,7 +17,15 @@ class _FinanceMainPageState extends State<FinanceMainPage> {
               flex: 1,
               child: Row(
                 children: [
-                  IconButton(onPressed: (){}, icon: Icon(Icons.menu))
+                  IconButton(onPressed: (){}, icon: Icon(LineIcons.bars)),
+                  Text("Service"),
+                  Container(
+                    height: 48,
+                    width: 48,
+                    decoration: BoxDecoration(
+                      color: Colors.grey[200]
+                    ),
+                  )
                 ],
               )),
           Expanded(
