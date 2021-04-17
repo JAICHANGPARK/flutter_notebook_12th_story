@@ -87,10 +87,15 @@ class _FinanceMainPageState extends State<FinanceMainPage> {
         elevation: 10,
         showSelectedLabels: false,
         showUnselectedLabels: false,
+        onTap: (index){
+
+        },
+        type: BottomNavigationBarType.fixed,
         items: [
         BottomNavigationBarItem(icon: Icon(LineIcons.home),label: ""),
+        BottomNavigationBarItem(icon: Icon(LineIcons.barChart),label: ""),
         BottomNavigationBarItem(icon: Icon(LineIcons.home),label: ""),
-        BottomNavigationBarItem(icon: Icon(LineIcons.home),label: ""),
+          BottomNavigationBarItem(icon: Icon(LineIcons.home),label: ""),
 
       ],
 
