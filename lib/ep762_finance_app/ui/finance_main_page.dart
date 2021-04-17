@@ -1,3 +1,4 @@
+import 'package:badges/badges.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -33,7 +34,13 @@ class _FinanceMainPageState extends State<FinanceMainPage> {
                     Container(
                       height: 40,
                       width: 40,
-                      decoration: BoxDecoration(color: Colors.grey[200], borderRadius: BorderRadius.circular(8)),
+                      decoration: BoxDecoration(color: Colors.grey[200], borderRadius: BorderRadius.circular(8),),
+
+                      child: Stack(
+                        children: [
+                          Icon(Icons.notifications_none)
+                        ],
+                      )
                     )
                   ],
                 ),
