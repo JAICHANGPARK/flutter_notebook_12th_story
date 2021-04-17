@@ -74,7 +74,7 @@ class _FinanceMainPageState extends State<FinanceMainPage> {
                     child: Placeholder(),
                   ),
                   SizedBox(
-                    height: MediaQuery.of(context).size.height /2,
+                    height: MediaQuery.of(context).size.height / 2,
                     child: Placeholder(),
                   ),
                 ],
@@ -87,18 +87,14 @@ class _FinanceMainPageState extends State<FinanceMainPage> {
         elevation: 10,
         showSelectedLabels: false,
         showUnselectedLabels: false,
-        onTap: (index){
-
-        },
+        onTap: (index) {},
         type: BottomNavigationBarType.fixed,
         items: [
-        BottomNavigationBarItem(icon: Icon(LineIcons.home),label: ""),
-        BottomNavigationBarItem(icon: Icon(LineIcons.barChart),label: ""),
-        BottomNavigationBarItem(icon: Icon(LineIcons.creditCard),label: ""),
-          BottomNavigationBarItem(icon: Icon(LineIcons.user),label: ""),
-
-      ],
-
+          BottomNavigationBarItem(icon: Icon(LineIcons.home), label: ""),
+          BottomNavigationBarItem(icon: Icon(LineIcons.barChart), label: ""),
+          BottomNavigationBarItem(icon: Icon(LineIcons.creditCard), label: ""),
+          BottomNavigationBarItem(icon: Icon(LineIcons.user), label: ""),
+        ],
       ),
     );
   }
