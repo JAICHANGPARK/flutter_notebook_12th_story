@@ -56,7 +56,16 @@ class _FinanceMainPageState extends State<FinanceMainPage> {
             flex: 10,
             child: SingleChildScrollView(
               child: Column(
-                children: [],
+                children: [
+                  SizedBox(
+                    height: MediaQuery.of(context).size.height / 3.8,
+                    child: Placeholder(),
+                  ),
+                  SizedBox(
+                    height: 64,
+                    child: Placeholder(),
+                  )
+                ],
               ),
             ),
           ),
