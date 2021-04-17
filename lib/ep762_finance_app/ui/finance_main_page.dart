@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:line_icons/line_icon.dart';
@@ -21,7 +22,9 @@ class _FinanceMainPageState extends State<FinanceMainPage> {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    IconButton(onPressed: () {}, icon: Icon(LineIcons.bars) ,padding: EdgeInsets.zero,),
+                    IconButton(onPressed: () {}, icon: Icon(LineIcons.bars),
+                      alignment: Alignment.centerLeft,
+                      padding: EdgeInsets.zero,),
                     Text(
                       "Services",
                       style: GoogleFonts.montserrat(fontWeight: FontWeight.bold),
