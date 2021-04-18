@@ -1,3 +1,4 @@
+import 'package:bezier_chart/bezier_chart.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:line_icons/line_icons.dart';
@@ -153,6 +154,15 @@ class _FinanceMainPageState extends State<FinanceMainPage> {
                             Positioned(
                               child: Container(
                                 color: Colors.red,
+                                child: BezierChart(
+                                  bezierChartScale: BezierChartScale.CUSTOM, series: [
+                                    BezierLine(
+                                      data: [
+                                        
+                                      ]
+                                    )
+                                ],
+                                ),
                               ),
                               left: 16,
                               right: 16,
