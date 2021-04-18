@@ -9,6 +9,7 @@ class FinanceMainPage extends StatefulWidget {
 
 class _FinanceMainPageState extends State<FinanceMainPage> {
   int _tabIndex = 0;
+  int _chartTabIndex = 0;
 
   @override
   Widget build(BuildContext context) {
@@ -20,7 +21,6 @@ class _FinanceMainPageState extends State<FinanceMainPage> {
               child: Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 16),
                 child: Row(
-
                   children: [
                     IconButton(
                       onPressed: () {},
@@ -34,10 +34,11 @@ class _FinanceMainPageState extends State<FinanceMainPage> {
                       children: [
                         Text(
                           "Welcome",
-                          style: GoogleFonts.montserrat(fontWeight: FontWeight.bold, fontSize: 18,
-                          color: Colors.grey),
+                          style: GoogleFonts.montserrat(fontWeight: FontWeight.bold, fontSize: 18, color: Colors.grey),
                         ),
-                        SizedBox(width: 8,),
+                        SizedBox(
+                          width: 8,
+                        ),
                         Text(
                           "Dream",
                           style: GoogleFonts.montserrat(fontWeight: FontWeight.bold, fontSize: 18),
@@ -77,10 +78,7 @@ class _FinanceMainPageState extends State<FinanceMainPage> {
                     child: Padding(
                       padding: const EdgeInsets.all(16.0),
                       child: Container(
-                        decoration: BoxDecoration(
-                          color: Colors.teal,
-                          borderRadius: BorderRadius.circular(8)
-                        ),
+                        decoration: BoxDecoration(color: Colors.teal, borderRadius: BorderRadius.circular(8)),
                         child: Stack(
                           children: [
                             Positioned(
@@ -88,36 +86,52 @@ class _FinanceMainPageState extends State<FinanceMainPage> {
                                 top: 16,
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Text("Savings",style: TextStyle(
-                                  color: Colors.white,
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 22
-                                ),),
-                                Text("\$5200.00", style: TextStyle(
-                                  fontSize: 16,
-                                  color: Colors.grey[400]!
-                                ),),
-
-                              ],
-                            )),
+                                  children: [
+                                    Text(
+                                      "Savings",
+                                      style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 22),
+                                    ),
+                                    Text(
+                                      "\$5200.00",
+                                      style: TextStyle(fontSize: 16, color: Colors.grey[400]!),
+                                    ),
+                                  ],
+                                )),
                             Positioned(
                                 top: 16,
                                 right: 16,
-                                child: Row(children: [
-                                Container(
-                                  padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-                                  decoration: BoxDecoration(
-                                    color: Colors.white.withOpacity(0.4),
-                                    borderRadius: BorderRadius.circular(16)
-                                  ),
-                                  child: Center(
-                                    child: Text("Chart", style: TextStyle(
-                                      color: Colors.white,
-                                    ),),
-                                  ),
-                                )
-                            ],))
+                                child: Row(
+                                  children: [
+                                    Container(
+                                      padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                                      decoration: BoxDecoration(
+                                          color: Colors.white.withOpacity(0.4),
+                                          borderRadius: BorderRadius.circular(16)),
+                                      child: Center(
+                                        child: Text(
+                                          "Chart",
+                                          style: TextStyle(
+                                            color: Colors.white,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                    Container(
+                                      padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                                      decoration: BoxDecoration(
+                                          color: Colors.white.withOpacity(0.4),
+                                          borderRadius: BorderRadius.circular(16)),
+                                      child: Center(
+                                        child: Text(
+                                          "Table",
+                                          style: TextStyle(
+                                            color: Colors.white,
+                                          ),
+                                        ),
+                                      ),
+                                    )
+                                  ],
+                                ))
                           ],
                         ),
                       ),
@@ -150,15 +164,13 @@ class _FinanceMainPageState extends State<FinanceMainPage> {
         showSelectedLabels: false,
         showUnselectedLabels: false,
         type: BottomNavigationBarType.fixed,
-        currentIndex:_tabIndex ,
+        currentIndex: _tabIndex,
         selectedItemColor: Colors.red,
-
         onTap: (index) {
           setState(() {
             _tabIndex = index;
           });
         },
-
         items: [
           BottomNavigationBarItem(icon: Icon(LineIcons.home), label: ""),
           BottomNavigationBarItem(icon: Icon(LineIcons.barChart), label: ""),
