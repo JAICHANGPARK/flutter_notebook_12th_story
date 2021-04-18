@@ -28,9 +28,17 @@ class _FinanceMainPageState extends State<FinanceMainPage> {
                       alignment: Alignment.centerLeft,
                       padding: EdgeInsets.zero,
                     ),
-                    Text(
-                      "Services",
-                      style: GoogleFonts.montserrat(fontWeight: FontWeight.bold, fontSize: 18),
+                    Row(
+                      children: [
+                        Text(
+                          "Welcome",
+                          style: GoogleFonts.montserrat(fontWeight: FontWeight.bold, fontSize: 18),
+                        ),
+                        Text(
+                          "Dream",
+                          style: GoogleFonts.montserrat(fontWeight: FontWeight.bold, fontSize: 18),
+                        ),
+                      ],
                     ),
                     Container(
                         height: 40,
