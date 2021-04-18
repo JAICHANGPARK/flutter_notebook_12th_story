@@ -29,6 +29,8 @@ class _FinanceMainPageState extends State<FinanceMainPage> {
                       padding: EdgeInsets.zero,
                     ),
                     Row(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      mainAxisAlignment: MainAxisAlignment.start,
                       children: [
                         Text(
                           "Welcome",
