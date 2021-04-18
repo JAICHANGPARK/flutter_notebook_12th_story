@@ -102,30 +102,44 @@ class _FinanceMainPageState extends State<FinanceMainPage> {
                                 right: 16,
                                 child: Row(
                                   children: [
-                                    Container(
-                                      padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-                                      decoration: BoxDecoration(
-                                          color: Colors.white.withOpacity(0.4),
-                                          borderRadius: BorderRadius.circular(16)),
-                                      child: Center(
-                                        child: Text(
-                                          "Chart",
-                                          style: TextStyle(
-                                            color: Colors.white,
+                                    GestureDetector(
+                                      onTap: (){
+                                        setState(() {
+                                          _chartTabIndex = 0;
+                                        });
+                                      },
+                                      child: Container(
+                                        padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                                        decoration: _chartTabIndex == 0 ? BoxDecoration(
+                                            color: Colors.white.withOpacity(0.4),
+                                            borderRadius: BorderRadius.circular(16) ) : null,
+                                        child: Center(
+                                          child: Text(
+                                            "Chart",
+                                            style: TextStyle(
+                                              color: Colors.white,
+                                            ),
                                           ),
                                         ),
                                       ),
                                     ),
-                                    Container(
-                                      padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-                                      decoration: BoxDecoration(
-                                          color: Colors.white.withOpacity(0.4),
-                                          borderRadius: BorderRadius.circular(16)),
-                                      child: Center(
-                                        child: Text(
-                                          "Table",
-                                          style: TextStyle(
-                                            color: Colors.white,
+                                    GestureDetector(
+                                      onTap: (){
+                                        setState(() {
+                                          _chartTabIndex = 1;
+                                        });
+                                      },
+                                      child: Container(
+                                        padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                                        decoration: _chartTabIndex == 1 ? BoxDecoration(
+                                            color: Colors.white.withOpacity(0.4),
+                                            borderRadius: BorderRadius.circular(16) ) : null,
+                                        child: Center(
+                                          child: Text(
+                                            "Table",
+                                            style: TextStyle(
+                                              color: Colors.white,
+                                            ),
                                           ),
                                         ),
                                       ),
