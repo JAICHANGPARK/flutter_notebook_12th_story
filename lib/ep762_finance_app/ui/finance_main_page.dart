@@ -74,7 +74,7 @@ class _FinanceMainPageState extends State<FinanceMainPage> {
               child: Column(
                 children: [
                   SizedBox(
-                    height: MediaQuery.of(context).size.height / 3.6,
+                    height: MediaQuery.of(context).size.height / 3.3,
                     child: Padding(
                       padding: const EdgeInsets.all(16.0),
                       child: Container(
@@ -103,16 +103,18 @@ class _FinanceMainPageState extends State<FinanceMainPage> {
                                 child: Row(
                                   children: [
                                     GestureDetector(
-                                      onTap: (){
+                                      onTap: () {
                                         setState(() {
                                           _chartTabIndex = 0;
                                         });
                                       },
                                       child: Container(
                                         padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-                                        decoration: _chartTabIndex == 0 ? BoxDecoration(
-                                            color: Colors.white.withOpacity(0.4),
-                                            borderRadius: BorderRadius.circular(16) ) : null,
+                                        decoration: _chartTabIndex == 0
+                                            ? BoxDecoration(
+                                                color: Colors.white.withOpacity(0.4),
+                                                borderRadius: BorderRadius.circular(16))
+                                            : null,
                                         child: Center(
                                           child: Text(
                                             "Chart",
@@ -124,16 +126,18 @@ class _FinanceMainPageState extends State<FinanceMainPage> {
                                       ),
                                     ),
                                     GestureDetector(
-                                      onTap: (){
+                                      onTap: () {
                                         setState(() {
                                           _chartTabIndex = 1;
                                         });
                                       },
                                       child: Container(
                                         padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-                                        decoration: _chartTabIndex == 1 ? BoxDecoration(
-                                            color: Colors.white.withOpacity(0.4),
-                                            borderRadius: BorderRadius.circular(16) ) : null,
+                                        decoration: _chartTabIndex == 1
+                                            ? BoxDecoration(
+                                                color: Colors.white.withOpacity(0.4),
+                                                borderRadius: BorderRadius.circular(16))
+                                            : null,
                                         child: Center(
                                           child: Text(
                                             "Table",
@@ -146,11 +150,15 @@ class _FinanceMainPageState extends State<FinanceMainPage> {
                                     )
                                   ],
                                 )),
-                            Positioned(child: Container(color: Colors.red,),
-
-                            left: 16, right: 16,
-                            top: 64,
-                            bottom: 16,)
+                            Positioned(
+                              child: Container(
+                                color: Colors.red,
+                              ),
+                              left: 16,
+                              right: 16,
+                              top: 72,
+                              bottom: 8,
+                            )
                           ],
                         ),
                       ),
