@@ -94,7 +94,10 @@ class _FinanceMainPageState extends State<FinanceMainPage> {
                                   fontWeight: FontWeight.bold,
                                   fontSize: 22
                                 ),),
-                                Text("\$5200.00")
+                                Text("\$5200.00", style: TextStyle(
+                                  fontSize: 16,
+                                  color: Colors.grey[200]!
+                                ),)
 
                               ],
                             ))
