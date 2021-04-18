@@ -61,7 +61,11 @@ class _FinanceMainPageState extends State<FinanceMainPage> {
                 children: [
                   SizedBox(
                     height: MediaQuery.of(context).size.height / 3.8,
-                    child: Placeholder(),
+                    child: Container(
+                      decoration: BoxDecoration(
+                        color: Colors.teal
+                      ),
+                    ),
                   ),
                   SizedBox(
                     height: 58,
