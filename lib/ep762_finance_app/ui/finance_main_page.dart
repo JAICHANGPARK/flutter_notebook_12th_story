@@ -11,7 +11,20 @@ class FinanceMainPage extends StatefulWidget {
 class _FinanceMainPageState extends State<FinanceMainPage> {
   int _tabIndex = 0;
   int _chartTabIndex = 0;
--
+  final fromDate = DateTime(2021, 04, 01);
+  final toDate = DateTime.now();
+
+  final date1 = DateTime.now().subtract(Duration(days: 3));
+  List<DataPoint<DateTime>> vList = [];
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    for(int i = 0; i < 8; i++){
+      vList.add(DataPoint<DateTime>(value: i.toDouble(),
+          xAxis: DateTime.now().subtract(Duration(days: i))));
+    }
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -156,22 +169,14 @@ class _FinanceMainPageState extends State<FinanceMainPage> {
                                 height: double.infinity,
                                 width: double.infinity,
                                 child: BezierChart(
-                                  // bezierChartScale: BezierChartScale.CUSTOM,
+                                  fromDate: fromDate,
+                                  toDate: toDate,
+                                  selectedDate: toDate,
+                                  // bezierChartS
+                                  // cale: BezierChartScale.CUSTOM,
                                   //   xAxisCustomValues: const [0, 5, 10, 15, 20, 25, 30, 35],
-
                                   series: [
-                                    BezierLine(data: [
-                                      DataPoint<double>(value: 10, xAxis: 0),
-                                      DataPoint<double>(value: 130, xAxis: 5),
-                                      DataPoint<double>(value: 50, xAxis: 10),
-                                      DataPoint<double>(value: 150, xAxis: 15),
-                                      DataPoint<double>(value: 75, xAxis: 20),
-                                      DataPoint<double>(value: 0, xAxis: 25),
-                                      DataPoint<double>(value: 5, xAxis: 30),
-                                      DataPoint<double>(value: 45, xAxis: 35),
-                                      DataPoint<double>(value: 5, xAxis: 40),
-                                      DataPoint<double>(value: 45, xAxis: 45),
-                                    ]),
+                                    BezierLine(data: vList),
                                   ],
                                   config: BezierChartConfig(snap: false, backgroundColor: Colors.teal),
                                   bezierChartScale: BezierChartScale.MONTHLY,
