@@ -34,8 +34,10 @@ class _FinanceMainPageState extends State<FinanceMainPage> {
                       children: [
                         Text(
                           "Welcome",
-                          style: GoogleFonts.montserrat(fontWeight: FontWeight.bold, fontSize: 18),
+                          style: GoogleFonts.montserrat(fontWeight: FontWeight.bold, fontSize: 18,
+                          color: Colors.grey),
                         ),
+                        SizedBox(width: 8,),
                         Text(
                           "Dream",
                           style: GoogleFonts.montserrat(fontWeight: FontWeight.bold, fontSize: 18),
@@ -78,6 +80,20 @@ class _FinanceMainPageState extends State<FinanceMainPage> {
                         decoration: BoxDecoration(
                           color: Colors.teal,
                           borderRadius: BorderRadius.circular(8)
+                        ),
+                        child: Stack(
+                          children: [
+                            Positioned(
+                                left: 8,
+                                top: 8,
+                                child: Column(
+                              children: [
+                                Text("Savings"),
+                                Text("\$5200.00")
+
+                              ],
+                            ))
+                          ],
                         ),
                       ),
                     ),
