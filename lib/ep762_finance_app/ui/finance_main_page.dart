@@ -63,7 +63,8 @@ class _FinanceMainPageState extends State<FinanceMainPage> {
                     height: MediaQuery.of(context).size.height / 3.8,
                     child: Container(
                       decoration: BoxDecoration(
-                        color: Colors.teal
+                        color: Colors.teal,
+                        borderRadius: BorderRadius.circular(16)
                       ),
                     ),
                   ),
