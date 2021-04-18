@@ -145,7 +145,12 @@ class _FinanceMainPageState extends State<FinanceMainPage> {
                                       ),
                                     )
                                   ],
-                                ))
+                                )),
+                            Positioned(child: Container(color: Colors.red,),
+
+                            left: 16, right: 16,
+                            top: 64,
+                            bottom: 16,)
                           ],
                         ),
                       ),
