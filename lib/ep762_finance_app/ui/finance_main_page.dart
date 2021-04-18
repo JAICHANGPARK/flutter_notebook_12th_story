@@ -23,7 +23,12 @@ class _FinanceMainPageState extends State<FinanceMainPage> {
     for(int i = 0; i < 8; i++){
       vList.add(DataPoint<DateTime>(value: i.toDouble() * 10,
           xAxis: DateTime.now().subtract(Duration(days: i))));
+
     }
+    setState(() {
+
+    });
+
   }
   @override
   Widget build(BuildContext context) {
