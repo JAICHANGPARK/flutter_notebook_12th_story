@@ -61,10 +61,13 @@ class _FinanceMainPageState extends State<FinanceMainPage> {
                 children: [
                   SizedBox(
                     height: MediaQuery.of(context).size.height / 3.8,
-                    child: Container(
-                      decoration: BoxDecoration(
-                        color: Colors.teal,
-                        borderRadius: BorderRadius.circular(16)
+                    child: Padding(
+                      padding: const EdgeInsets.all(16.0),
+                      child: Container(
+                        decoration: BoxDecoration(
+                          color: Colors.teal,
+                          borderRadius: BorderRadius.circular(8)
+                        ),
                       ),
                     ),
                   ),
