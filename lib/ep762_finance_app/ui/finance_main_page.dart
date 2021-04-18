@@ -167,8 +167,12 @@ class _FinanceMainPageState extends State<FinanceMainPage> {
                                         DataPoint<double>(value: 5, xAxis: 30),
                                         DataPoint<double>(value: 45, xAxis: 35),
                                       ]
-                                    )
+                                    ),
                                 ],
+                                  config: BezierChartConfig(
+                                    snap: false,
+                                    backgroundColor: Colors.teal
+                                  ),
                                 ),
                               ),
                               left: 16,
