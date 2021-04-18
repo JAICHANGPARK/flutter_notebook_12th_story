@@ -158,7 +158,14 @@ class _FinanceMainPageState extends State<FinanceMainPage> {
                                   bezierChartScale: BezierChartScale.CUSTOM, series: [
                                     BezierLine(
                                       data: [
-                                        
+                                        DataPoint<double>(value: 10, xAxis: 0),
+                                        DataPoint<double>(value: 130, xAxis: 5),
+                                        DataPoint<double>(value: 50, xAxis: 10),
+                                        DataPoint<double>(value: 150, xAxis: 15),
+                                        DataPoint<double>(value: 75, xAxis: 20),
+                                        DataPoint<double>(value: 0, xAxis: 25),
+                                        DataPoint<double>(value: 5, xAxis: 30),
+                                        DataPoint<double>(value: 45, xAxis: 35),
                                       ]
                                     )
                                 ],
