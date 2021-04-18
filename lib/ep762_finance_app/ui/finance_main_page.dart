@@ -73,7 +73,7 @@ class _FinanceMainPageState extends State<FinanceMainPage> {
               child: Column(
                 children: [
                   SizedBox(
-                    height: MediaQuery.of(context).size.height / 3.8,
+                    height: MediaQuery.of(context).size.height / 3.6,
                     child: Padding(
                       padding: const EdgeInsets.all(16.0),
                       child: Container(
@@ -96,7 +96,7 @@ class _FinanceMainPageState extends State<FinanceMainPage> {
                                 ),),
                                 Text("\$5200.00", style: TextStyle(
                                   fontSize: 16,
-                                  color: Colors.grey[200]!
+                                  color: Colors.grey[400]!
                                 ),)
 
                               ],
