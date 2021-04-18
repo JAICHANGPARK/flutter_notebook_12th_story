@@ -21,7 +21,7 @@ class _FinanceMainPageState extends State<FinanceMainPage> {
     // TODO: implement initState
     super.initState();
     for(int i = 0; i < 8; i++){
-      vList.add(DataPoint<DateTime>(value: i.toDouble(),
+      vList.add(DataPoint<DateTime>(value: i.toDouble() * 10,
           xAxis: DateTime.now().subtract(Duration(days: i))));
     }
   }
@@ -179,7 +179,7 @@ class _FinanceMainPageState extends State<FinanceMainPage> {
                                     BezierLine(data: vList),
                                   ],
                                   config: BezierChartConfig(snap: false, backgroundColor: Colors.teal),
-                                  bezierChartScale: BezierChartScale.MONTHLY,
+                                  bezierChartScale: BezierChartScale.WEEKLY,
                                 ),
                               ),
                               left: 16,
