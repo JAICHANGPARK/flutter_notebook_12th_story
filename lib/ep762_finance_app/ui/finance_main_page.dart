@@ -97,10 +97,16 @@ class _FinanceMainPageState extends State<FinanceMainPage> {
                                 Text("\$5200.00", style: TextStyle(
                                   fontSize: 16,
                                   color: Colors.grey[400]!
-                                ),)
+                                ),),
 
                               ],
-                            ))
+                            )),
+                            Positioned(
+                                top: 16,
+                                right: 16,
+                                child: Row(children: [
+
+                            ],))
                           ],
                         ),
                       ),
