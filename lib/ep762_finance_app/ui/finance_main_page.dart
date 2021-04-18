@@ -20,7 +20,7 @@ class _FinanceMainPageState extends State<FinanceMainPage> {
               child: Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 16),
                 child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+
                   children: [
                     IconButton(
                       onPressed: () {},
@@ -42,6 +42,7 @@ class _FinanceMainPageState extends State<FinanceMainPage> {
                         ),
                       ],
                     ),
+                    Spacer(),
                     Container(
                         height: 40,
                         width: 40,
