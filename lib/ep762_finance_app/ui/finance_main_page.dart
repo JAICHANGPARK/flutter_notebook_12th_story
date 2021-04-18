@@ -84,11 +84,16 @@ class _FinanceMainPageState extends State<FinanceMainPage> {
                         child: Stack(
                           children: [
                             Positioned(
-                                left: 8,
-                                top: 8,
+                                left: 16,
+                                top: 16,
                                 child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Text("Savings"),
+                                Text("Savings",style: TextStyle(
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 22
+                                ),),
                                 Text("\$5200.00")
 
                               ],
