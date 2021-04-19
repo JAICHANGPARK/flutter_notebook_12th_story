@@ -276,6 +276,16 @@ class _FinanceMainPageState extends State<FinanceMainPage> {
                               width: 64,
                               child: Stack(
                                 children: [
+                                  Positioned(
+                                      
+                                      child: Container(
+                                    height: 8,
+                                    width: 8,
+                                    decoration: BoxDecoration(
+                                      color: Colors.green,
+                                      shape: BoxShape.circle
+                                    ),
+                                  )),
                                   CircleAvatar(),
                                 ],
                               ),
