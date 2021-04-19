@@ -247,18 +247,21 @@ class _FinanceMainPageState extends State<FinanceMainPage> {
                   ),
                   SizedBox(
                     height: 84,
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      children: [
-                        Text("Total balance", style: GoogleFonts.montserrat(
-                          fontSize: 18, fontWeight: FontWeight.w600,
-                          color: Colors.grey
-                        ),),
-                        Text("\$5,733.00", style: GoogleFonts.montserrat(
-                            fontSize: 32, fontWeight: FontWeight.normal
-                        ),)
-                      ],
+                    child: Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        children: [
+                          Text("Total balance", style: GoogleFonts.montserrat(
+                            fontSize: 18, fontWeight: FontWeight.w600,
+                            color: Colors.grey
+                          ),),
+                          Text("\$5,733.00", style: GoogleFonts.montserrat(
+                              fontSize: 28, fontWeight: FontWeight.normal
+                          ),)
+                        ],
+                      ),
                     ),
                   ),
                   SizedBox(
