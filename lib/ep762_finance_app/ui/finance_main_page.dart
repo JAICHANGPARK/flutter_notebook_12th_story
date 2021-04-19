@@ -216,6 +216,9 @@ class _FinanceMainPageState extends State<FinanceMainPage> {
                               borderRadius: BorderRadius.circular(8),
                               color: Colors.blueGrey[100],
                             ),
+                            child: Center(
+                              child: Icon(Icons.bar_chart),
+                            ),
                           ),
                           SmoothPageIndicator(
                               effect: ScrollingDotsEffect(
