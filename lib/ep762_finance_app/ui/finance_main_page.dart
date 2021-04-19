@@ -247,7 +247,7 @@ class _FinanceMainPageState extends State<FinanceMainPage> {
                     child: Column(
                       children: [
                         Text("Total balance", style: GoogleFonts.montserrat(
-                          fontSize: 18, fontWeight: FontWeight.w700,
+                          fontSize: 18, fontWeight: FontWeight.w600,
                           color: Colors.grey
                         ),),
                         Text("\$5,733.00", style: GoogleFonts.montserrat(
