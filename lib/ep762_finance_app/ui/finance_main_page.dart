@@ -206,7 +206,16 @@ class _FinanceMainPageState extends State<FinanceMainPage> {
                           height: 40,
                           width: 40,
                           decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(8)
+                            borderRadius: BorderRadius.circular(8),
+                            color: Colors.blueGrey[100],
+                          ),
+                        ),
+                        Container(
+                          height: 40,
+                          width: 40,
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(8),
+                            color: Colors.blueGrey[100],
                           ),
                         )
                       ],
