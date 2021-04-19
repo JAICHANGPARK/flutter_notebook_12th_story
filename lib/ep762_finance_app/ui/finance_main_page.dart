@@ -17,6 +17,8 @@ class _FinanceMainPageState extends State<FinanceMainPage> {
   final fromDate = DateTime(2021, 04, 01);
   final toDate = DateTime.now();
 
+  late PageController _pageController;
+
   final date1 = DateTime.now().subtract(Duration(days: 3));
   List<DataPoint<DateTime>> vList = [];
 
@@ -24,6 +26,7 @@ class _FinanceMainPageState extends State<FinanceMainPage> {
   void initState() {
     // TODO: implement initState
     super.initState();
+    _pageController = PageController();
     for (int i = 0; i < 8; i++) {
       vList.add(DataPoint<DateTime>(
           value: Random().nextInt(10).toDouble() * 10, xAxis: DateTime.now().subtract(Duration(days: i))));
@@ -211,7 +214,7 @@ class _FinanceMainPageState extends State<FinanceMainPage> {
                             color: Colors.blueGrey[100],
                           ),
                         ),
-                        SmoothPageIndicator(controller: controller, count: count),
+                        SmoothPageIndicator(controller: _pageController, count: 3),
                         Container(
                           height: 40,
                           width: 40,
