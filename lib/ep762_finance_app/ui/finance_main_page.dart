@@ -217,7 +217,11 @@ class _FinanceMainPageState extends State<FinanceMainPage> {
                               color: Colors.blueGrey[100],
                             ),
                           ),
-                          SmoothPageIndicator(controller: _pageController, count: 3),
+                          SmoothPageIndicator(
+                              effect: ScrollingDotsEffect(
+                                fixedCenter: true
+                              ),
+                              controller: _pageController, count: 3),
                           Container(
                             height: 40,
                             width: 40,
