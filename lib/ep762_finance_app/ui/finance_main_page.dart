@@ -38,7 +38,9 @@ class _FinanceMainPageState extends State<FinanceMainPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-        child: Column(children: [
+        child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
           Expanded(
               flex: 1,
               child: Padding(
@@ -245,6 +247,8 @@ class _FinanceMainPageState extends State<FinanceMainPage> {
                   SizedBox(
                     height: 84,
                     child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
                         Text("Total balance", style: GoogleFonts.montserrat(
                           fontSize: 18, fontWeight: FontWeight.w600,
