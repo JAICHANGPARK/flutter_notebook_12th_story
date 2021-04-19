@@ -251,7 +251,7 @@ class _FinanceMainPageState extends State<FinanceMainPage> {
                           color: Colors.grey
                         ),),
                         Text("\$5,733.00", style: GoogleFonts.montserrat(
-                            fontSize: 24, fontWeight: FontWeight.bold
+                            fontSize: 32, fontWeight: FontWeight.normal
                         ),)
                       ],
                     ),
