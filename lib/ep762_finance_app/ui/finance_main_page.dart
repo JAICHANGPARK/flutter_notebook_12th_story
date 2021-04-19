@@ -202,7 +202,11 @@ class _FinanceMainPageState extends State<FinanceMainPage> {
                   ),
                   SizedBox(
                     height: 58,
-                    child: Placeholder(),
+                    child: Row(
+                      children: [
+                        
+                      ],
+                    ),
                   ),
                   SizedBox(
                     height: 84,
