@@ -280,6 +280,7 @@ class _FinanceMainPageState extends State<FinanceMainPage> {
                             "TransActions",
                             style: GoogleFonts.montserrat(
                               fontSize: 16,
+                              fontWeight: FontWeight.bold
                             ),
                           ),
                           Row(
