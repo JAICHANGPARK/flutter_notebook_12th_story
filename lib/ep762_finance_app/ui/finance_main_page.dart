@@ -18,20 +18,18 @@ class _FinanceMainPageState extends State<FinanceMainPage> {
 
   final date1 = DateTime.now().subtract(Duration(days: 3));
   List<DataPoint<DateTime>> vList = [];
+
   @override
   void initState() {
     // TODO: implement initState
     super.initState();
-    for(int i = 0; i < 8; i++){
-      vList.add(DataPoint<DateTime>(value: Random().nextInt(10).toDouble() * 10,
-          xAxis: DateTime.now().subtract(Duration(days: i))));
-
+    for (int i = 0; i < 8; i++) {
+      vList.add(DataPoint<DateTime>(
+          value: Random().nextInt(10).toDouble() * 10, xAxis: DateTime.now().subtract(Duration(days: i))));
     }
-    setState(() {
-
-    });
-
+    setState(() {});
   }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -185,8 +183,8 @@ class _FinanceMainPageState extends State<FinanceMainPage> {
                                   series: [
                                     BezierLine(data: vList),
                                   ],
-                                  config: BezierChartConfig(snap: false, backgroundColor: Colors.teal,
-                                  showDataPoints: false),
+                                  config: BezierChartConfig(
+                                      snap: false, backgroundColor: Colors.teal, showDataPoints: false),
                                   bezierChartScale: BezierChartScale.WEEKLY,
                                 ),
                               ),
@@ -204,7 +202,13 @@ class _FinanceMainPageState extends State<FinanceMainPage> {
                     height: 58,
                     child: Row(
                       children: [
-                        
+                        Container(
+                          height: 40,
+                          width: 40,
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(8)
+                          ),
+                        )
                       ],
                     ),
                   ),
