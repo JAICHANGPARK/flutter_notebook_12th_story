@@ -185,7 +185,8 @@ class _FinanceMainPageState extends State<FinanceMainPage> {
                                   series: [
                                     BezierLine(data: vList),
                                   ],
-                                  config: BezierChartConfig(snap: false, backgroundColor: Colors.teal),
+                                  config: BezierChartConfig(snap: false, backgroundColor: Colors.teal,
+                                  showDataPoints: false),
                                   bezierChartScale: BezierChartScale.WEEKLY,
                                 ),
                               ),
