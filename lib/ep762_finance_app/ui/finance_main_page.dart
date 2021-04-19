@@ -269,39 +269,43 @@ class _FinanceMainPageState extends State<FinanceMainPage> {
                   ),
                   SizedBox(
                     height: 100,
-                    child: Column(
-                      children: [
-                        Text(
-                          "TransActions",
-                          style: GoogleFonts.montserrat(
-                            fontSize: 16,
+                    child: Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            "TransActions",
+                            style: GoogleFonts.montserrat(
+                              fontSize: 16,
+                            ),
                           ),
-                        ),
-                        Row(
-                          children: [
-                            SizedBox(
-                              height: 64,
-                              width: 64,
-                              child: Stack(
-                                children: [
-                                  Positioned(left: 0, top: 0, right: 0, bottom: 0, child: CircleAvatar()),
-                                  Positioned(
-                                      right: 10,
-                                      bottom: 0,
-                                      child: Container(
-                                        height: 12,
-                                        width: 12,
-                                        decoration: BoxDecoration(
-                                            color: Colors.green,
-                                            shape: BoxShape.circle,
-                                            border: Border.all(color: Colors.white)),
-                                      )),
-                                ],
-                              ),
-                            )
-                          ],
-                        )
-                      ],
+                          Row(
+                            children: [
+                              SizedBox(
+                                height: 64,
+                                width: 64,
+                                child: Stack(
+                                  children: [
+                                    Positioned(left: 0, top: 0, right: 0, bottom: 0, child: CircleAvatar()),
+                                    Positioned(
+                                        right: 10,
+                                        bottom: 0,
+                                        child: Container(
+                                          height: 12,
+                                          width: 12,
+                                          decoration: BoxDecoration(
+                                              color: Colors.green,
+                                              shape: BoxShape.circle,
+                                              border: Border.all(color: Colors.white)),
+                                        )),
+                                  ],
+                                ),
+                              )
+                            ],
+                          )
+                        ],
+                      ),
                     ),
                   ),
                   SizedBox(
