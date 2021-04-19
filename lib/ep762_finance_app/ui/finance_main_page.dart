@@ -217,12 +217,13 @@ class _FinanceMainPageState extends State<FinanceMainPage> {
                               color: Colors.blueGrey[100],
                             ),
                             child: Center(
-                              child: Icon(Icons.bar_chart),
+                              child: Icon(Icons.bar_chart,  color: Colors.grey,),
                             ),
                           ),
                           SmoothPageIndicator(
                               effect: ScrollingDotsEffect(
-                                fixedCenter: true
+                                dotColor: Colors.grey,
+                                activeDotColor: Colors.teal
                               ),
                               controller: _pageController, count: 3),
                           Container(
@@ -231,6 +232,10 @@ class _FinanceMainPageState extends State<FinanceMainPage> {
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(8),
                               color: Colors.blueGrey[100],
+                            ),
+                            child: Center(
+                              child: Icon(Icons.picture_in_picture_outlined,
+                              color: Colors.grey,),
                             ),
                           )
                         ],
