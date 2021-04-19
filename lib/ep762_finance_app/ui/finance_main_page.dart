@@ -205,6 +205,7 @@ class _FinanceMainPageState extends State<FinanceMainPage> {
                   SizedBox(
                     height: 58,
                     child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Container(
                           height: 40,
