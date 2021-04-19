@@ -38,9 +38,7 @@ class _FinanceMainPageState extends State<FinanceMainPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-        child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
+        child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
           Expanded(
               flex: 1,
               child: Padding(
@@ -220,15 +218,16 @@ class _FinanceMainPageState extends State<FinanceMainPage> {
                               color: Colors.blueGrey[100],
                             ),
                             child: Center(
-                              child: Icon(Icons.bar_chart,  color: Colors.grey,),
+                              child: Icon(
+                                Icons.bar_chart,
+                                color: Colors.grey,
+                              ),
                             ),
                           ),
                           SmoothPageIndicator(
-                              effect: ScrollingDotsEffect(
-                                dotColor: Colors.grey,
-                                activeDotColor: Colors.teal
-                              ),
-                              controller: _pageController, count: 3),
+                              effect: ScrollingDotsEffect(dotColor: Colors.grey, activeDotColor: Colors.teal),
+                              controller: _pageController,
+                              count: 3),
                           Container(
                             height: 40,
                             width: 40,
@@ -237,8 +236,10 @@ class _FinanceMainPageState extends State<FinanceMainPage> {
                               color: Colors.blueGrey[100],
                             ),
                             child: Center(
-                              child: Icon(Icons.picture_in_picture_outlined,
-                              color: Colors.grey,),
+                              child: Icon(
+                                Icons.picture_in_picture_outlined,
+                                color: Colors.grey,
+                              ),
                             ),
                           )
                         ],
@@ -253,13 +254,15 @@ class _FinanceMainPageState extends State<FinanceMainPage> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: [
-                          Text("Total balance", style: GoogleFonts.montserrat(
-                            fontSize: 18, fontWeight: FontWeight.w600,
-                            color: Colors.grey
-                          ),),
-                          Text("\$5,733.00", style: GoogleFonts.montserrat(
-                              fontSize: 28, fontWeight: FontWeight.normal
-                          ),)
+                          Text(
+                            "Total balance",
+                            style:
+                                GoogleFonts.montserrat(fontSize: 18, fontWeight: FontWeight.w600, color: Colors.grey),
+                          ),
+                          Text(
+                            "\$5,733.00",
+                            style: GoogleFonts.montserrat(fontSize: 28, fontWeight: FontWeight.normal),
+                          )
                         ],
                       ),
                     ),
@@ -268,7 +271,12 @@ class _FinanceMainPageState extends State<FinanceMainPage> {
                     height: 100,
                     child: Column(
                       children: [
-                        Text("TransActions"),
+                        Text(
+                          "TransActions",
+                          style: GoogleFonts.montserrat(
+                            fontSize: 16,
+                          ),
+                        ),
                         Row(
                           children: [
                             SizedBox(
@@ -276,13 +284,7 @@ class _FinanceMainPageState extends State<FinanceMainPage> {
                               width: 64,
                               child: Stack(
                                 children: [
-
-                                  Positioned(
-                                    left: 0,
-                                      top: 0,
-                                      right: 0,
-                                      bottom: 0,
-                                      child: CircleAvatar()),
+                                  Positioned(left: 0, top: 0, right: 0, bottom: 0, child: CircleAvatar()),
                                   Positioned(
                                       right: 10,
                                       bottom: 0,
@@ -292,8 +294,7 @@ class _FinanceMainPageState extends State<FinanceMainPage> {
                                         decoration: BoxDecoration(
                                             color: Colors.green,
                                             shape: BoxShape.circle,
-                                          border: Border.all(color: Colors.white)
-                                        ),
+                                            border: Border.all(color: Colors.white)),
                                       )),
                                 ],
                               ),
