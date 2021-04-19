@@ -266,7 +266,24 @@ class _FinanceMainPageState extends State<FinanceMainPage> {
                   ),
                   SizedBox(
                     height: 100,
-                    child: Placeholder(),
+                    child: Column(
+                      children: [
+                        Text("TransActions"),
+                        Row(
+                          children: [
+                            SizedBox(
+                              height: 64,
+                              width: 64,
+                              child: Stack(
+                                children: [
+                                  CircleAvatar(),
+                                ],
+                              ),
+                            )
+                          ],
+                        )
+                      ],
+                    ),
                   ),
                   SizedBox(
                     height: MediaQuery.of(context).size.height / 2,
