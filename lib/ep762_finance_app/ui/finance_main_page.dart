@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:bezier_chart/bezier_chart.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -21,7 +23,7 @@ class _FinanceMainPageState extends State<FinanceMainPage> {
     // TODO: implement initState
     super.initState();
     for(int i = 0; i < 8; i++){
-      vList.add(DataPoint<DateTime>(value: i.toDouble() * 10,
+      vList.add(DataPoint<DateTime>(value: Random().nextInt(i).toDouble() * 10,
           xAxis: DateTime.now().subtract(Duration(days: i))));
 
     }
