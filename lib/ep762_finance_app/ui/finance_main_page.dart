@@ -244,7 +244,17 @@ class _FinanceMainPageState extends State<FinanceMainPage> {
                   ),
                   SizedBox(
                     height: 84,
-                    child: Placeholder(),
+                    child: Column(
+                      children: [
+                        Text("Total balance", style: GoogleFonts.montserrat(
+                          fontSize: 18, fontWeight: FontWeight.w700,
+                          color: Colors.grey
+                        ),),
+                        Text("\$5,733.00", style: GoogleFonts.montserrat(
+                            fontSize: 24, fontWeight: FontWeight.bold
+                        ),)
+                      ],
+                    ),
                   ),
                   SizedBox(
                     height: 100,
