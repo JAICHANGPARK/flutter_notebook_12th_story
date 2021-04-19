@@ -277,7 +277,8 @@ class _FinanceMainPageState extends State<FinanceMainPage> {
                               child: Stack(
                                 children: [
                                   Positioned(
-                                      
+                                      right: 16,
+                                      bottom: 0,
                                       child: Container(
                                     height: 8,
                                     width: 8,
@@ -286,7 +287,12 @@ class _FinanceMainPageState extends State<FinanceMainPage> {
                                       shape: BoxShape.circle
                                     ),
                                   )),
-                                  CircleAvatar(),
+                                  Positioned(
+                                    left: 0,
+                                      top: 0,
+                                      right: 0,
+                                      bottom: 0,
+                                      child: CircleAvatar()),
                                 ],
                               ),
                             )
