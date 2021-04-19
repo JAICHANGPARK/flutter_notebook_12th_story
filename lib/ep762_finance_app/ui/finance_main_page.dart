@@ -97,6 +97,7 @@ class _FinanceMainPageState extends State<FinanceMainPage> {
             flex: 10,
             child: SingleChildScrollView(
               child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   SizedBox(
                     height: MediaQuery.of(context).size.height / 3.3,
