@@ -4,6 +4,7 @@ import 'package:bezier_chart/bezier_chart.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:line_icons/line_icons.dart';
+import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 class FinanceMainPage extends StatefulWidget {
   @override
@@ -210,6 +211,7 @@ class _FinanceMainPageState extends State<FinanceMainPage> {
                             color: Colors.blueGrey[100],
                           ),
                         ),
+                        SmoothPageIndicator(controller: controller, count: count),
                         Container(
                           height: 40,
                           width: 40,
