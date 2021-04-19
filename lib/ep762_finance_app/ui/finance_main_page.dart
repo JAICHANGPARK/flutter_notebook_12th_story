@@ -283,6 +283,7 @@ class _FinanceMainPageState extends State<FinanceMainPage> {
                             ),
                           ),
                           Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
                               SizedBox(
                                 height: 58,
@@ -369,7 +370,7 @@ class _FinanceMainPageState extends State<FinanceMainPage> {
                                 width: 58,
                                 child: Stack(
                                   children: [
-                                    Positioned(left: 0, top: 0, right: 0, bottom: 0, child: CircleAvatar()),
+                                    
                                     Positioned(
                                         right: 10,
                                         bottom: 0,
