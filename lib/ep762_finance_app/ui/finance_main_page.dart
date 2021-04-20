@@ -414,8 +414,33 @@ class _FinanceMainPageState extends State<FinanceMainPage> {
                   SizedBox(
                     height: MediaQuery.of(context).size.height / 2,
                     child: ListView.builder(
-                      itemBuilder: (context, idnex){
-                        
+                      itemBuilder: (context, index){
+                        return Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 16 ,vertical: 8),
+                          child: Container(
+                            decoration: BoxDecoration(
+                            ),
+                            child: Row(
+                              children: [
+                                Container(height: 58,width: 58,
+                                  decoration: BoxDecoration(color: Colors.grey[200],
+                                      borderRadius: BorderRadius.circular(8)
+                                  ),
+                                  child: Icon(Icons.send),),
+                                Padding(
+                                  padding: const EdgeInsets.all(8.0),
+                                  child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: [
+                                      Text("McDonalds"),
+                                      Text("May 10.40PM")
+                                    ],
+                                  ),
+                                )
+                              ],
+                            ),
+                          ),
+                        );
                       },
 
                     ),
