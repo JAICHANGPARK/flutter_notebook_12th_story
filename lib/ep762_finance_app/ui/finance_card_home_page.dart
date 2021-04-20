@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:line_icons/line_icons.dart';
 
-
 class FinanceCardPage extends StatefulWidget {
   @override
   _FinanceCardPageState createState() => _FinanceCardPageState();
@@ -34,9 +33,11 @@ class _FinanceCardPageState extends State<FinanceCardPage> {
                         children: [
                           Text(
                             "Services",
-                            style: GoogleFonts.montserrat(fontWeight: FontWeight.bold, fontSize: 18, color: Colors.grey),
+                            style: GoogleFonts.montserrat(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 18,
+                            ),
                           ),
-
                         ],
                       ),
                       // Spacer(),
