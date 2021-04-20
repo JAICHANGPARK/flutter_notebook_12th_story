@@ -432,8 +432,13 @@ class _FinanceMainPageState extends State<FinanceMainPage> {
                                   child: Column(
                                     crossAxisAlignment: CrossAxisAlignment.start,
                                     children: [
-                                      Text("McDonalds"),
-                                      Text("May 10.40PM")
+                                      Text("McDonalds", style: TextStyle(
+                                        fontSize: 16
+                                      ),),
+                                      Text("May 10.40PM", style: TextStyle(
+                                        fontSize: 12,
+                                        color: Colors.grey
+                                      ),)
                                     ],
                                   ),
                                 )
