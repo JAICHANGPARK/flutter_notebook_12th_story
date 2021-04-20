@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:line_icons/line_icons.dart';
 
@@ -14,7 +15,16 @@ class _FinanceCardPageState extends State<FinanceCardPage> {
 
   Color _appMainColor =Color(0xff75a29f);
   Color _appAccentColor =Color(0xffb2392e);
-  
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    setState(() {
+      _tabIndex = 2;
+    });
+
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -88,7 +98,7 @@ class _FinanceCardPageState extends State<FinanceCardPage> {
           setState(() {
             _tabIndex = index;
           });
-          if(index == 2) Get.to(FinanceCardPage());
+          if(index == 0) Get.back();
         },
 
         items: [
