@@ -426,15 +426,16 @@ class _FinanceMainPageState extends State<FinanceMainPage> {
                                   decoration: BoxDecoration(color: Colors.grey[200],
                                       borderRadius: BorderRadius.circular(8)
                                   ),
-                                  child: Icon(Icons.send),),
+                                  child: Icon(Icons.send, color: _appAccentColor,),),
                                 Padding(
-                                  padding: const EdgeInsets.all(8.0),
+                                  padding: const EdgeInsets.symmetric(horizontal: 16),
                                   child: Column(
                                     crossAxisAlignment: CrossAxisAlignment.start,
                                     children: [
                                       Text("McDonalds", style: TextStyle(
                                         fontSize: 16
                                       ),),
+                                      SizedBox(height: 8,),
                                       Text("May 10.40PM", style: TextStyle(
                                         fontSize: 12,
                                         color: Colors.grey
