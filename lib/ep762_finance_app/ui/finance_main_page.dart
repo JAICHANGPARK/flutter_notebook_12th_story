@@ -398,6 +398,14 @@ class _FinanceMainPageState extends State<FinanceMainPage> {
                       ),
                     ),
                   ),
+                  Row(
+                    children: [
+                      Text(
+                        "TransActions",
+                        style: GoogleFonts.montserrat(fontSize: 16, fontWeight: FontWeight.bold),
+                      ),
+                    ],
+                  ),
                   SizedBox(
                     height: MediaQuery.of(context).size.height / 2,
                     child: ListView(
