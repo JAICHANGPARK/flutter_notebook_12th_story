@@ -391,7 +391,12 @@ class _FinanceMainPageState extends State<FinanceMainPage> {
                   ),
                   SizedBox(
                     height: MediaQuery.of(context).size.height / 2,
-                    child: Placeholder(),
+                    child: ListView(
+                      children: [
+                        //117 162 159
+                        // 75 a2 9f
+                      ],
+                    ),
                   ),
                 ],
               ),
