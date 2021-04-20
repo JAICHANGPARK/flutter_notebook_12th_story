@@ -2,9 +2,12 @@ import 'dart:math';
 
 import 'package:bezier_chart/bezier_chart.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:line_icons/line_icons.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
+
+import 'finance_card_home_page.dart';
 
 class FinanceMainPage extends StatefulWidget {
   @override
@@ -473,7 +476,9 @@ class _FinanceMainPageState extends State<FinanceMainPage> {
           setState(() {
             _tabIndex = index;
           });
+          if(index == 2) Get.to(FinanceCardPage());
         },
+
         items: [
           BottomNavigationBarItem(icon: Icon(LineIcons.home), label: ""),
           BottomNavigationBarItem(icon: Icon(LineIcons.barChart), label: ""),
