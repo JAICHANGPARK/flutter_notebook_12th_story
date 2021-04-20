@@ -8,6 +8,13 @@ class FinanceCardPage extends StatefulWidget {
 }
 
 class _FinanceCardPageState extends State<FinanceCardPage> {
+
+  int _tabIndex = 0;
+  int _chartTabIndex = 0;
+
+  Color _appMainColor =Color(0xff75a29f);
+  Color _appAccentColor =Color(0xffb2392e);
+  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -63,8 +70,33 @@ class _FinanceCardPageState extends State<FinanceCardPage> {
                     ],
                   ),
                 )),
+            Expanded(
+              child: Placeholder(),
+              flex: 10,
+            )
           ],
         ),
+      ),
+      bottomNavigationBar: BottomNavigationBar(
+        elevation: 10,
+        showSelectedLabels: false,
+        showUnselectedLabels: false,
+        type: BottomNavigationBarType.fixed,
+        currentIndex: _tabIndex,
+        selectedItemColor: _appAccentColor,
+        onTap: (index) {
+          setState(() {
+            _tabIndex = index;
+          });
+          if(index == 2) Get.to(FinanceCardPage());
+        },
+
+        items: [
+          BottomNavigationBarItem(icon: Icon(LineIcons.home), label: ""),
+          BottomNavigationBarItem(icon: Icon(LineIcons.barChart), label: ""),
+          BottomNavigationBarItem(icon: Icon(LineIcons.creditCard), label: ""),
+          BottomNavigationBarItem(icon: Icon(LineIcons.user), label: ""),
+        ],
       ),
     );
   }
