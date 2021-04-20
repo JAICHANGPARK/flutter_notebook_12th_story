@@ -426,7 +426,7 @@ class _FinanceMainPageState extends State<FinanceMainPage> {
                                   decoration: BoxDecoration(color: Colors.grey[200],
                                       borderRadius: BorderRadius.circular(8)
                                   ),
-                                  child: Icon(Icons.send, color: _appAccentColor,),),
+                                  child: Icon(Icons.send, color: _appMainColor,),),
                                 Padding(
                                   padding: const EdgeInsets.symmetric(horizontal: 16),
                                   child: Column(
@@ -439,10 +439,15 @@ class _FinanceMainPageState extends State<FinanceMainPage> {
                                       Text("May 10.40PM", style: TextStyle(
                                         fontSize: 12,
                                         color: Colors.grey
-                                      ),)
+                                      ),),
                                     ],
                                   ),
-                                )
+                                ),
+                                Spacer(),
+                                Text("- \$9.99",style: TextStyle(
+                                  fontSize: 20,
+                                  fontWeight: FontWeight.bold
+                                ),)
                               ],
                             ),
                           ),
