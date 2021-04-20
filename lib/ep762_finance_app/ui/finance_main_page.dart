@@ -398,18 +398,36 @@ class _FinanceMainPageState extends State<FinanceMainPage> {
                       ),
                     ),
                   ),
-                  Row(
-                    children: [
-                      Text(
-                        "TransActions",
-                        style: GoogleFonts.montserrat(fontSize: 16, fontWeight: FontWeight.bold),
-                      ),
-                    ],
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text(
+                          "TransActions history",
+                          style: GoogleFonts.montserrat(fontSize: 16, fontWeight: FontWeight.bold),
+                        ),
+                        IconButton(onPressed: (){}, icon: Icon(Icons.arrow_forward_ios_outlined))
+                      ],
+                    ),
                   ),
                   SizedBox(
                     height: MediaQuery.of(context).size.height / 2,
                     child: ListView(
                       children: [
+                        Container(
+                          height: 64,
+
+                          decoration: BoxDecoration(
+                            color: Colors.grey[100],
+
+                          ),
+                          child: Row(
+                            children: [
+                              
+                            ],
+                          ),
+                        )
 
                       ],
                     ),
