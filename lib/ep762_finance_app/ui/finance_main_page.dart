@@ -419,12 +419,14 @@ class _FinanceMainPageState extends State<FinanceMainPage> {
                           height: 64,
 
                           decoration: BoxDecoration(
-                            color: Colors.grey[100],
+
 
                           ),
                           child: Row(
                             children: [
-                              
+                              Container(height: 64,width: 64,
+                              decoration: BoxDecoration(color: Colors.grey[200]),
+                              child: Icon(Icons.send),)
                             ],
                           ),
                         )
