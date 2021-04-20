@@ -17,6 +17,16 @@ class FinanceMainPage extends StatefulWidget {
 class _FinanceMainPageState extends State<FinanceMainPage> {
   int _tabIndex = 0;
   int _chartTabIndex = 0;
+
+  Color _appMainColor =Color(0xff75a29f);
+  Color _appAccentColor =Color(0xffb2392e);
+
+  //117 162 159
+  // 75 a2 9f
+
+  // 178 57 46
+  // b2 39 2e
+
   final fromDate = DateTime(2021, 04, 01);
   final toDate = DateTime.now();
 
@@ -36,14 +46,7 @@ class _FinanceMainPageState extends State<FinanceMainPage> {
     }
     setState(() {});
   }
-  Color _appMainColor =Color(0xff75a29f);
-  Color _appAccentColor =Color(0xffb2392e);
 
-  //117 162 159
-  // 75 a2 9f
-
-  // 178 57 46
-  // b2 39 2e
   @override
   Widget build(BuildContext context) {
     return Scaffold(
