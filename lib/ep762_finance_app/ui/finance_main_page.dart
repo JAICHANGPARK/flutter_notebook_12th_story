@@ -232,7 +232,7 @@ class _FinanceMainPageState extends State<FinanceMainPage> {
                             ),
                           ),
                           SmoothPageIndicator(
-                              effect: ScrollingDotsEffect(dotColor: Colors.grey, activeDotColor: Colors.teal),
+                              effect: ScrollingDotsEffect(dotColor: Colors.grey, activeDotColor:_appMainColor),
                               controller: _pageController,
                               count: 3),
                           Container(
@@ -317,7 +317,9 @@ class _FinanceMainPageState extends State<FinanceMainPage> {
                                 width: 58,
                                 child: Stack(
                                   children: [
-                                    Positioned(left: 0, top: 0, right: 0, bottom: 0, child: CircleAvatar()),
+                                    Positioned(left: 0, top: 0, right: 0, bottom: 0, child: CircleAvatar(
+                                      backgroundImage: NetworkImage("https://thispersondoesnotexist.com/image"),
+                                    )),
                                     Positioned(
                                         right: 10,
                                         bottom: 0,
@@ -416,7 +418,7 @@ class _FinanceMainPageState extends State<FinanceMainPage> {
         showUnselectedLabels: false,
         type: BottomNavigationBarType.fixed,
         currentIndex: _tabIndex,
-        selectedItemColor: Colors.red,
+        selectedItemColor: _appAccentColor,
         onTap: (index) {
           setState(() {
             _tabIndex = index;
