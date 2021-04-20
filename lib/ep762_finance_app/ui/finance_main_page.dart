@@ -267,7 +267,9 @@ class _FinanceMainPageState extends State<FinanceMainPage> {
                       ),
                     ),
                   ),
-                  SizedBox(height: 16,),
+                  SizedBox(
+                    height: 16,
+                  ),
                   SizedBox(
                     height: 100,
                     child: Padding(
@@ -278,10 +280,7 @@ class _FinanceMainPageState extends State<FinanceMainPage> {
                         children: [
                           Text(
                             "TransActions",
-                            style: GoogleFonts.montserrat(
-                              fontSize: 16,
-                              fontWeight: FontWeight.bold
-                            ),
+                            style: GoogleFonts.montserrat(fontSize: 16, fontWeight: FontWeight.bold),
                           ),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -371,12 +370,16 @@ class _FinanceMainPageState extends State<FinanceMainPage> {
                                 width: 58,
                                 child: Stack(
                                   children: [
-                                    Positioned(left: 0, top: 0, right: 0, bottom: 0, child: CircleAvatar(
-                                      backgroundColor: Colors.grey[200],
-                                      foregroundColor: Colors.grey,
-                                      child: Icon(Icons.more_horiz),
-                                    )),
-
+                                    Positioned(
+                                        left: 0,
+                                        top: 0,
+                                        right: 0,
+                                        bottom: 0,
+                                        child: CircleAvatar(
+                                          backgroundColor: Colors.grey[200],
+                                          foregroundColor: Colors.grey,
+                                          child: Icon(Icons.more_horiz),
+                                        )),
                                   ],
                                 ),
                               )
