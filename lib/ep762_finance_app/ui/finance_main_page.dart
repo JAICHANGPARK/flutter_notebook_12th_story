@@ -109,7 +109,7 @@ class _FinanceMainPageState extends State<FinanceMainPage> {
                     child: Padding(
                       padding: const EdgeInsets.all(16.0),
                       child: Container(
-                        decoration: BoxDecoration(color: Colors.teal, borderRadius: BorderRadius.circular(8)),
+                        decoration: BoxDecoration(color: _appMainColor, borderRadius: BorderRadius.circular(8)),
                         child: Stack(
                           children: [
                             Positioned(
@@ -196,7 +196,7 @@ class _FinanceMainPageState extends State<FinanceMainPage> {
                                     BezierLine(data: vList),
                                   ],
                                   config: BezierChartConfig(
-                                      snap: false, backgroundColor: Colors.teal, showDataPoints: false),
+                                      snap: false, backgroundColor: _appMainColor, showDataPoints: false),
                                   bezierChartScale: BezierChartScale.WEEKLY,
                                 ),
                               ),
