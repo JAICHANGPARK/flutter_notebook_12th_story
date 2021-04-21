@@ -97,10 +97,11 @@ class _EarbudsControlPageState extends State<EarbudsControlPage> with SingleTick
                             color: Colors.white.withOpacity(0.2),
                             borderRadius: BorderRadius.circular(8)
                           ),
+                          padding: EdgeInsets.symmetric(horizontal: 8),
                           child: Row(
                             children: [
                               Text("Automatic In-Ear Detection"),
-                              
+
                             ],
                           ),
                         ),
