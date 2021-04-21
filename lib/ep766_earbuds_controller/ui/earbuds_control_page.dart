@@ -55,7 +55,7 @@ class _EarbudsControlPageState extends State<EarbudsControlPage> with SingleTick
                 child: TabBar(controller: _tabController,
                     isScrollable: false,
                     indicatorColor: Colors.black,
-
+                    indicatorSize: TabBarIndicatorSize.label,
 
                     tabs: [
                   Tab(
