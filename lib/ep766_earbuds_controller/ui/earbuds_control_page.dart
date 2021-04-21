@@ -6,10 +6,8 @@ class EarbudsControlPage extends StatefulWidget {
 }
 
 class _EarbudsControlPageState extends State<EarbudsControlPage> {
-
   PageController _pageController = PageController();
-
-  
+  TabController _tabController = TabController(length: 3, vsync: this);
 
   @override
   Widget build(BuildContext context) {
@@ -30,14 +28,12 @@ class _EarbudsControlPageState extends State<EarbudsControlPage> {
                   height: 42,
                   width: 72,
                   decoration: BoxDecoration(
-                    color: Colors.white.withOpacity(0.15),
-                    borderRadius: BorderRadius.circular(24),
-                    image: DecorationImage(
-                      image: NetworkImage("https://www.freepnglogos.com/uploads/airpods-png/airpods-apple-news-articles-stories-trends-for-today-14.png"),
-
-                    )
-                  ),
-
+                      color: Colors.white.withOpacity(0.15),
+                      borderRadius: BorderRadius.circular(24),
+                      image: DecorationImage(
+                        image: NetworkImage(
+                            "https://www.freepnglogos.com/uploads/airpods-png/airpods-apple-news-articles-stories-trends-for-today-14.png"),
+                      )),
                 ),
                 IconButton(
                   onPressed: () {},
@@ -46,9 +42,12 @@ class _EarbudsControlPageState extends State<EarbudsControlPage> {
                 )
               ],
             ),
-            TabBar(tabs: [
-              
-            ]),
+            TabBar(
+                tabs: [
+                  Tab(text: "Status",),
+                  Tab(text: "Sound",),
+                  Tab(text: "System",)
+                ]),
             Expanded(
               child: SingleChildScrollView(
                 child: Column(
