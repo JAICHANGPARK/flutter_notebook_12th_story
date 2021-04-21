@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class EarbudsControlPage extends StatefulWidget {
   @override
@@ -57,6 +58,8 @@ class _EarbudsControlPageState extends State<EarbudsControlPage> with SingleTick
                     isScrollable: false,
                     indicatorColor: Colors.black,
                     indicatorSize: TabBarIndicatorSize.label,
+                    labelColor: Colors.white,
+                    labelStyle: GoogleFonts.montserrat(),
                     tabs: [
                       Tab(
                         text: "Status",
