@@ -49,21 +49,27 @@ class _EarbudsControlPageState extends State<EarbudsControlPage> with SingleTick
                 )
               ],
             ),
-            TabBar(controller: _tabController,
-                isScrollable: false,
-                indicatorColor: Colors.black,
-                
-                tabs: [
-              Tab(
-                text: "Status",
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 8),
+              child: Center(
+                child: TabBar(controller: _tabController,
+                    isScrollable: false,
+                    indicatorColor: Colors.black,
+
+
+                    tabs: [
+                  Tab(
+                    text: "Status",
+                  ),
+                  Tab(
+                    text: "Sound",
+                  ),
+                  Tab(
+                    text: "System",
+                  )
+                ]),
               ),
-              Tab(
-                text: "Sound",
-              ),
-              Tab(
-                text: "System",
-              )
-            ]),
+            ),
             Expanded(
                 child: TabBarView(
               controller: _tabController,
