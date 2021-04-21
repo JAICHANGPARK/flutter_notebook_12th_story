@@ -25,7 +25,12 @@ class _EarbudsControlPageState extends State<EarbudsControlPage> {
                   height: 42,
                   width: 72,
                   decoration: BoxDecoration(
-                    color: Colors.white.withOpacity(0.15)
+                    color: Colors.white.withOpacity(0.15),
+                    borderRadius: BorderRadius.circular(24),
+                    image: DecorationImage(
+                      image: NetworkImage("https://www.freepnglogos.com/uploads/airpods-png/airpods-apple-news-articles-stories-trends-for-today-14.png"),
+                      
+                    )
                   ),
 
                 ),
