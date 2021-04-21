@@ -59,7 +59,6 @@ class _EarbudsControlPageState extends State<EarbudsControlPage> with SingleTick
                     indicatorColor: Colors.black,
                     indicatorSize: TabBarIndicatorSize.label,
                     labelColor: Colors.white,
-                    labelStyle: GoogleFonts.montserrat(),
                     tabs: [
                       Tab(
                         text: "Status",
