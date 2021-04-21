@@ -5,9 +5,16 @@ class EarbudsControlPage extends StatefulWidget {
   _EarbudsControlPageState createState() => _EarbudsControlPageState();
 }
 
-class _EarbudsControlPageState extends State<EarbudsControlPage> {
+class _EarbudsControlPageState extends State<EarbudsControlPage>
+    with SingleTickerProviderStateMixin {
   PageController _pageController = PageController();
-  TabController _tabController = TabController(length: 3, vsync: this);
+  late TabController _tabController;
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    _tabController = TabController(length: 3, vsync: this);
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -42,12 +49,17 @@ class _EarbudsControlPageState extends State<EarbudsControlPage> {
                 )
               ],
             ),
-            TabBar(
-                tabs: [
-                  Tab(text: "Status",),
-                  Tab(text: "Sound",),
-                  Tab(text: "System",)
-                ]),
+            TabBar(tabs: [
+              Tab(
+                text: "Status",
+              ),
+              Tab(
+                text: "Sound",
+              ),
+              Tab(
+                text: "System",
+              )
+            ]),
             Expanded(
               child: SingleChildScrollView(
                 child: Column(
