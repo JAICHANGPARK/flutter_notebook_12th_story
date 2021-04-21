@@ -1,15 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:xlive_switch/xlive_switch.dart';
 
 class EarbudsControlPage extends StatefulWidget {
   @override
   _EarbudsControlPageState createState() => _EarbudsControlPageState();
 }
 
-class _EarbudsControlPageState extends State<EarbudsControlPage> with SingleTickerProviderStateMixin {
+class _EarbudsControlPageState extends State<EarbudsControlPage>
+    with SingleTickerProviderStateMixin {
+
+  bool _value = true;
   PageController _pageController = PageController();
   late TabController _tabController;
-  bool _value = true;
 
   @override
   void initState() {
@@ -111,6 +114,11 @@ class _EarbudsControlPageState extends State<EarbudsControlPage> with SingleTick
                                   color: Colors.white,
                                   fontWeight: FontWeight.bold,
                                 ),
+                              ),
+                              Spacer(),
+                              XlivSwitch(
+                                value: _value,
+                                onChanged: _changeValue,
                               ),
                             ],
                           ),
