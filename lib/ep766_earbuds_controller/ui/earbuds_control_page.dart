@@ -61,17 +61,26 @@ class _EarbudsControlPageState extends State<EarbudsControlPage> with SingleTick
               )
             ]),
             Expanded(
-              child: TabBarView(
-                controller: _tabController,
-                children: [
-                  SingleChildScrollView(
-                    child: Column(
-                      children: [],
-                    ),
+                child: TabBarView(
+              controller: _tabController,
+              children: [
+                SingleChildScrollView(
+                  child: Column(
+                    children: [],
                   ),
-                ],
-              )
-            ),
+                ),
+                SingleChildScrollView(
+                  child: Column(
+                    children: [],
+                  ),
+                ),
+                SingleChildScrollView(
+                  child: Column(
+                    children: [],
+                  ),
+                ),
+              ],
+            )),
           ],
         ),
       ),
