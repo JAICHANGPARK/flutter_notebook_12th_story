@@ -6,6 +6,7 @@ class EarbudsControlPage extends StatefulWidget {
 }
 
 class _EarbudsControlPageState extends State<EarbudsControlPage> {
+  PageController _pageController = PageController();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -29,7 +30,7 @@ class _EarbudsControlPageState extends State<EarbudsControlPage> {
                     borderRadius: BorderRadius.circular(24),
                     image: DecorationImage(
                       image: NetworkImage("https://www.freepnglogos.com/uploads/airpods-png/airpods-apple-news-articles-stories-trends-for-today-14.png"),
-                      
+
                     )
                   ),
 
