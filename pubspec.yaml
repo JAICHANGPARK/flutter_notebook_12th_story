@@ -23,6 +23,7 @@ dependencies:
   bezier_chart: ^1.0.17+1
   intl: any
   smooth_page_indicator: any
+  xlive_switch: ^1.0.5
 
 dev_dependencies:
   flutter_test:
