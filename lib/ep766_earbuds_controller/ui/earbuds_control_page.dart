@@ -6,7 +6,11 @@ class EarbudsControlPage extends StatefulWidget {
 }
 
 class _EarbudsControlPageState extends State<EarbudsControlPage> {
+
   PageController _pageController = PageController();
+
+  
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -42,6 +46,9 @@ class _EarbudsControlPageState extends State<EarbudsControlPage> {
                 )
               ],
             ),
+            TabBar(tabs: [
+              
+            ]),
             Expanded(
               child: SingleChildScrollView(
                 child: Column(
