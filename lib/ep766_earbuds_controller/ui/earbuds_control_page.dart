@@ -89,10 +89,13 @@ class _EarbudsControlPageState extends State<EarbudsControlPage> with SingleTick
                 SingleChildScrollView(
                   child: Column(
                     children: [
-                      Container(
-                        height: 48,
-                        decoration: BoxDecoration(
-                          color: Colors.white.withOpacity(0.2),
+                      Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                        child: Container(
+                          height: 48,
+                          decoration: BoxDecoration(
+                            color: Colors.white.withOpacity(0.2),
+                          ),
                         ),
                       )
                     ],
