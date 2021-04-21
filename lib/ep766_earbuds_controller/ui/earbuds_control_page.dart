@@ -22,8 +22,11 @@ class _EarbudsControlPageState extends State<EarbudsControlPage> {
                   color: Colors.white,
                 ),
                 Container(
-                  height: 38,
-                  width: 64,
+                  height: 42,
+                  width: 72,
+                  decoration: BoxDecoration(
+                    color: Colors.white.withOpacity(0.15)
+                  ),
 
                 ),
                 IconButton(
