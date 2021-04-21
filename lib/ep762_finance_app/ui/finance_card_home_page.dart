@@ -12,9 +12,9 @@ class _FinanceCardPageState extends State<FinanceCardPage> {
 
   int _tabIndex = 0;
   int _chartTabIndex = 0;
-
   Color _appMainColor =Color(0xff75a29f);
   Color _appAccentColor =Color(0xffb2392e);
+
   @override
   void initState() {
     // TODO: implement initState
