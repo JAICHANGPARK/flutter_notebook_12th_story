@@ -9,12 +9,19 @@ class EarbudsControlPage extends StatefulWidget {
 class _EarbudsControlPageState extends State<EarbudsControlPage> with SingleTickerProviderStateMixin {
   PageController _pageController = PageController();
   late TabController _tabController;
+  bool _value = true;
 
   @override
   void initState() {
     // TODO: implement initState
     super.initState();
     _tabController = TabController(length: 3, vsync: this);
+  }
+
+  void _changeValue(bool value){
+    setState(() {
+      _value = value;
+    });
   }
 
   @override
