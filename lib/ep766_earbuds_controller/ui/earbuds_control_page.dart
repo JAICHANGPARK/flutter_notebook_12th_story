@@ -274,27 +274,38 @@ class _EarbudsControlPageState extends State<EarbudsControlPage> with SingleTick
                         ),
                       ),
                       
-                      Container(
-                        decoration: BoxDecoration(
-                          color: Colors.white.withOpacity(0.15),
-                          borderRadius: BorderRadius.circular(16),
+                      Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 16),
+                        child: Container(
+                          decoration: BoxDecoration(
+                            color: Colors.white.withOpacity(0.15),
+                            borderRadius: BorderRadius.circular(16),
 
-                        ),
-                        child: Column(
-                          children: [
-                            Row(
-                              children: [
-                                Text("Notification & Voice Guide", style: TextStyle(
-                                  color: Colors.white,
-                                ),),
-                                
-                              ],
-                            ),
-                            Divider(
-                              color: Colors.grey
-                              ,
-                            )
-                          ],
+                          ),
+                          child: Column(
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    Text("Notification & Voice Guide", style: TextStyle(
+                                      color: Colors.white,
+                                    ),),
+                                    XlivSwitch(
+                                      value: _value,
+                                      onChanged: _changeValue,
+                                    ),
+                                  ],
+                                ),
+                              ),
+                              Divider(
+                                height: 0,
+                                color: Colors.grey
+                                ,
+                              )
+                            ],
+                          ),
                         ),
                       )
                     ],
