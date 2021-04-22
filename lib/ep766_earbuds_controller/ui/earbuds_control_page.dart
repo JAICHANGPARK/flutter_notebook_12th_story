@@ -125,42 +125,68 @@ class _EarbudsControlPageState extends State<EarbudsControlPage> with SingleTick
                       ),
                       Padding(
                         padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 8),
-                        child: Text("Automatically transfer the audio route from connected devices to earbuds when"
-                            "it is placed in your ear",style: TextStyle(
-                          color: Colors.grey
-                        ),),
+                        child: Text(
+                          "Automatically transfer the audio route from connected devices to earbuds when"
+                          "it is placed in your ear",
+                          style: TextStyle(color: Colors.grey),
+                        ),
                       ),
                       Padding(
                         padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Text("Touch Sensor Function", style: TextStyle(
-                              color: Colors.white,
-                              fontWeight: FontWeight.bold,
-                              fontSize: 20
-                            ),),
-                            SizedBox(height: 12,),
+                            Text(
+                              "Touch Sensor Function",
+                              style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 20),
+                            ),
+                            SizedBox(
+                              height: 12,
+                            ),
                             SizedBox(
                               height: 200,
                               child: Container(
                                 child: Row(
                                   children: [
-                                    Expanded(child: Container(decoration: BoxDecoration(
-                                      color: Colors.white.withOpacity(0.15),
-                                      borderRadius: BorderRadius.circular(16)
-                                    ),)),
-                                    SizedBox(width: 12,),
-                                    Expanded(child: Container(decoration: BoxDecoration(
-                                        color: Colors.white.withOpacity(0.15),
-                                        borderRadius: BorderRadius.circular(16)
-                                    ),)),
+                                    Expanded(
+                                        child: Container(
+                                      decoration: BoxDecoration(
+                                          color: Colors.white.withOpacity(0.15),
+                                          borderRadius: BorderRadius.circular(16)),
+                                          child: Stack(
+                                            children: [
+                                              Positioned(child: CircleAvatar(
+                                                radius: 12,
+                                                child: Text("L",),
+                                                foregroundColor: Colors.white,
+                                                backgroundColor: Colors.black,
+                                              ),
+                                              left: 8,
+                                                top: 8,
+                                              )
+                                            ],
+                                          ),
+                                    ),
 
+
+                                    ),
+                                    SizedBox(
+                                      width: 12,
+                                    ),
+                                    Expanded(
+                                        child: Container(
+                                      decoration: BoxDecoration(
+                                          color: Colors.white.withOpacity(0.15),
+                                          borderRadius: BorderRadius.circular(16)),
+                                          child: Stack(
+                                            children: [
+
+                                            ],
+                                          ),
+                                    )),
                                   ],
                                 ),
-
                               ),
-
                             )
                           ],
                         ),
