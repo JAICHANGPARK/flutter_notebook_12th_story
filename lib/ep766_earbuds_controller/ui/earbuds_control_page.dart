@@ -241,7 +241,11 @@ class _EarbudsControlPageState extends State<EarbudsControlPage> with SingleTick
                             )
                           ],
                         ),
-                      )
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+                        child: Column(),
+                      ),
                     ],
                   ),
                 ),
