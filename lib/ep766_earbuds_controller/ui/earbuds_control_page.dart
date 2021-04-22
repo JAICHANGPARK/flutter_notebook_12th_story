@@ -164,16 +164,16 @@ class _EarbudsControlPageState extends State<EarbudsControlPage> with SingleTick
                                                 foregroundColor: Colors.white,
                                                 backgroundColor: Colors.white.withOpacity(0.4),
                                               ),
-                                              left: 8,
-                                              top: 8,
+                                              left: 12,
+                                              top: 12,
                                             ),
                                             Positioned(
                                               child:IconButton(
                                                 icon: Icon(Icons.info_outline), onPressed: () {  },
-
+                                                  color: Colors.white,
                                               ),
-                                              right: 8,
-                                              top: 8,
+                                              top: 0,
+                                              right: 0,
                                             )
                                           ],
                                         ),
