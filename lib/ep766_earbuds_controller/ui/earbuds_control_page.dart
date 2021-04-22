@@ -140,8 +140,9 @@ class _EarbudsControlPageState extends State<EarbudsControlPage> with SingleTick
                               fontWeight: FontWeight.bold,
                               fontSize: 20
                             ),),
+                            SizedBox(height: 8,),
                             SizedBox(
-                              height: 160,
+                              height: 200,
                               child: Container(
                                 color: Colors.grey,
                               ),
