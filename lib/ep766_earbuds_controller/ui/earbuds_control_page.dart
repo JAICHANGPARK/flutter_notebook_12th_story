@@ -138,7 +138,7 @@ class _EarbudsControlPageState extends State<EarbudsControlPage> with SingleTick
                           children: [
                             Text(
                               "Touch Sensor Function",
-                              style: TextStyle(color: Colors.white, fontWeight:  FontWeight.w600, fontSize: 20),
+                              style: TextStyle(color: Colors.white, fontWeight: FontWeight.w600, fontSize: 20),
                             ),
                             SizedBox(
                               height: 12,
@@ -168,21 +168,21 @@ class _EarbudsControlPageState extends State<EarbudsControlPage> with SingleTick
                                               top: 12,
                                             ),
                                             Positioned(
-                                              child:IconButton(
-                                                icon: Icon(Icons.info_outline), onPressed: () {  },
+                                              child: IconButton(
+                                                icon: Icon(Icons.info_outline),
+                                                onPressed: () {},
                                                 color: Colors.white.withOpacity(0.7),
                                               ),
                                               top: 0,
                                               right: 0,
                                             ),
-                                            Positioned(child: Center(child: Text("Activate Assistant",
-
-                                            style: TextStyle(
-                                              fontSize: 16,
-                                              color: Colors.white
-                                            ),
-                                            )),
-                                            bottom: 12,
+                                            Positioned(
+                                              child: Center(
+                                                  child: Text(
+                                                "Activate Assistant",
+                                                style: TextStyle(fontSize: 16, color: Colors.white),
+                                              )),
+                                              bottom: 12,
                                               left: 0,
                                               right: 0,
                                             )
@@ -213,20 +213,20 @@ class _EarbudsControlPageState extends State<EarbudsControlPage> with SingleTick
                                               top: 12,
                                             ),
                                             Positioned(
-                                              child:IconButton(
-                                                icon: Icon(Icons.info_outline), onPressed: () {  },
+                                              child: IconButton(
+                                                icon: Icon(Icons.info_outline),
+                                                onPressed: () {},
                                                 color: Colors.white.withOpacity(0.7),
                                               ),
                                               top: 0,
                                               right: 0,
                                             ),
-                                            Positioned(child: Center(child: Text("Play Next Song",
-
-                                              style: TextStyle(
-                                                  fontSize: 16,
-                                                  color: Colors.white
-                                              ),
-                                            )),
+                                            Positioned(
+                                              child: Center(
+                                                  child: Text(
+                                                "Play Next Song",
+                                                style: TextStyle(fontSize: 16, color: Colors.white),
+                                              )),
                                               bottom: 12,
                                               left: 0,
                                               right: 0,
@@ -247,14 +247,23 @@ class _EarbudsControlPageState extends State<EarbudsControlPage> with SingleTick
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Text("Default Environment Sound",
-                              style: TextStyle(color: Colors.white, fontWeight: FontWeight.w600, fontSize: 20),),
+                            Text(
+                              "Default Environment Sound",
+                              style: TextStyle(color: Colors.white, fontWeight: FontWeight.w600, fontSize: 20),
+                            ),
+                            SizedBox(
+                              height: 12,
+                            ),
                             SizedBox(
                               height: 48,
                               child: Container(
                                 color: Colors.red,
                                 child: Row(
                                   children: [
+                                    Expanded(child: Placeholder()),
+                                    Expanded(child: Placeholder()),
+                                    Expanded(child: Placeholder()),
+                                    Expanded(child: Placeholder())
 
                                   ],
                                 ),
