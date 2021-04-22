@@ -247,7 +247,7 @@ class _EarbudsControlPageState extends State<EarbudsControlPage> with SingleTick
                         child: Column(
                           children: [
                             Text("Default Environment Sound",
-                              style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 20),),
+                              style: TextStyle(color: Colors.white, fontWeight: FontWeight.w600, fontSize: 20),),
                             SizedBox(
                               height: 48,
                               child: Container(
