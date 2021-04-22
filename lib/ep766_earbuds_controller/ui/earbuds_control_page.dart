@@ -156,10 +156,10 @@ class _EarbudsControlPageState extends State<EarbudsControlPage> with SingleTick
                                           child: Stack(
                                             children: [
                                               Positioned(child: CircleAvatar(
-                                                radius: 12,
+                                                radius: 10,
                                                 child: Text("L",),
                                                 foregroundColor: Colors.white,
-                                                backgroundColor: Colors.black,
+                                                backgroundColor: Colors.white.withOpacity(0.4),
                                               ),
                                               left: 8,
                                                 top: 8,
