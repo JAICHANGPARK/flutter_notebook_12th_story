@@ -275,17 +275,16 @@ class _EarbudsControlPageState extends State<EarbudsControlPage> with SingleTick
                       ),
                       
                       Padding(
-                        padding: const EdgeInsets.symmetric(horizontal: 16),
+                        padding: const EdgeInsets.symmetric(horizontal: 12),
                         child: Container(
                           decoration: BoxDecoration(
                             color: Colors.white.withOpacity(0.15),
                             borderRadius: BorderRadius.circular(16),
-
                           ),
                           child: Column(
                             children: [
                               Padding(
-                                padding: const EdgeInsets.all(8.0),
+                                padding: const EdgeInsets.symmetric(horizontal: 12, vertical:12),
                                 child: Row(
                                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                   children: [
@@ -301,9 +300,22 @@ class _EarbudsControlPageState extends State<EarbudsControlPage> with SingleTick
                               ),
                               Divider(
                                 height: 0,
-                                color: Colors.grey
-                                ,
-                              )
+                                color: Colors.grey,
+                              ),
+                              Padding(
+                                padding: const EdgeInsets.symmetric(horizontal: 12, vertical:12),
+                                child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    Text("Language", style: TextStyle(
+                                      color: Colors.white,
+                                    ),),
+                                    Text("English (United States)", style: TextStyle(
+                                      color: Colors.grey,
+                                    ),),
+                                  ],
+                                ),
+                              ),
                             ],
                           ),
                         ),
