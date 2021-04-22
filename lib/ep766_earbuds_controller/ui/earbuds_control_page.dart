@@ -131,6 +131,7 @@ class _EarbudsControlPageState extends State<EarbudsControlPage> with SingleTick
                         ),),
                       ),
                       Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text("Touch Sensor Function", style: TextStyle(
                             color: Colors.white,
