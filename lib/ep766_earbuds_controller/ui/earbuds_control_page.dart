@@ -290,6 +290,7 @@ class _EarbudsControlPageState extends State<EarbudsControlPage> with SingleTick
                                   children: [
                                     Text("Notification & Voice Guide", style: TextStyle(
                                       color: Colors.white,
+                                        fontSize: 16
                                     ),),
                                     XlivSwitch(
                                       value: _value,
@@ -309,9 +310,11 @@ class _EarbudsControlPageState extends State<EarbudsControlPage> with SingleTick
                                   children: [
                                     Text("Language", style: TextStyle(
                                       color: Colors.white,
+                                      fontSize: 16
                                     ),),
                                     Text("English (United States)", style: TextStyle(
                                       color: Colors.grey,
+                                        fontSize: 16
                                     ),),
                                   ],
                                 ),
