@@ -194,14 +194,47 @@ class _EarbudsControlPageState extends State<EarbudsControlPage> with SingleTick
                                       width: 12,
                                     ),
                                     Expanded(
-                                        child: Container(
-                                      decoration: BoxDecoration(
-                                          color: Colors.white.withOpacity(0.15),
-                                          borderRadius: BorderRadius.circular(16)),
-                                      child: Stack(
-                                        children: [],
+                                      child: Container(
+                                        decoration: BoxDecoration(
+                                            color: Colors.white.withOpacity(0.15),
+                                            borderRadius: BorderRadius.circular(16)),
+                                        child: Stack(
+                                          children: [
+                                            Positioned(
+                                              child: CircleAvatar(
+                                                radius: 10,
+                                                child: Text(
+                                                  "R",
+                                                ),
+                                                foregroundColor: Colors.white,
+                                                backgroundColor: Colors.red,
+                                              ),
+                                              left: 12,
+                                              top: 12,
+                                            ),
+                                            Positioned(
+                                              child:IconButton(
+                                                icon: Icon(Icons.info_outline), onPressed: () {  },
+                                                color: Colors.white.withOpacity(0.7),
+                                              ),
+                                              top: 0,
+                                              right: 0,
+                                            ),
+                                            Positioned(child: Center(child: Text("Play Next Song",
+
+                                              style: TextStyle(
+                                                  fontSize: 16,
+                                                  color: Colors.white
+                                              ),
+                                            )),
+                                              bottom: 12,
+                                              left: 0,
+                                              right: 0,
+                                            )
+                                          ],
+                                        ),
                                       ),
-                                    )),
+                                    ),
                                   ],
                                 ),
                               ),
