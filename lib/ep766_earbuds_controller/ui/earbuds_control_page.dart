@@ -246,7 +246,8 @@ class _EarbudsControlPageState extends State<EarbudsControlPage> with SingleTick
                         padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
                         child: Column(
                           children: [
-                            Text("Default Environment Sound"),
+                            Text("Default Environment Sound",
+                              style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 20),),
                             SizedBox(
                               height: 48,
                               child: Container(
