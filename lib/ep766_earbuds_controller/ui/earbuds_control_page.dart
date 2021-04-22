@@ -268,10 +268,35 @@ class _EarbudsControlPageState extends State<EarbudsControlPage> with SingleTick
                                   ],
                                 ),
                               ),
-                            )
+                            ),
+                            
                           ],
                         ),
                       ),
+                      
+                      Container(
+                        decoration: BoxDecoration(
+                          color: Colors.white.withOpacity(0.15),
+                          borderRadius: BorderRadius.circular(16),
+
+                        ),
+                        child: Column(
+                          children: [
+                            Row(
+                              children: [
+                                Text("Notification & Voice Guide", style: TextStyle(
+                                  color: Colors.white,
+                                ),),
+                                
+                              ],
+                            ),
+                            Divider(
+                              color: Colors.grey
+                              ,
+                            )
+                          ],
+                        ),
+                      )
                     ],
                   ),
                 ),
