@@ -121,7 +121,8 @@ class _EarbudsControlPageState extends State<EarbudsControlPage> with SingleTick
                             ],
                           ),
                         ),
-                      )
+                      ),
+                      Text("")
                     ],
                   ),
                 ),
