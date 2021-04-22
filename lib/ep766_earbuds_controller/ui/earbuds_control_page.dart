@@ -20,6 +20,7 @@ class _EarbudsControlPageState extends State<EarbudsControlPage> with SingleTick
   }
 
   void _changeValue(bool value) {
+    print(">>> $value");
     setState(() {
       _value = value;
     });
@@ -123,7 +124,7 @@ class _EarbudsControlPageState extends State<EarbudsControlPage> with SingleTick
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.symmetric(horizontal: 16),
+                        padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 8),
                         child: Text("Automatically transfer the audio route from connected devices to earbuds when"
                             "it is placed in your ear",style: TextStyle(
                           color: Colors.grey
