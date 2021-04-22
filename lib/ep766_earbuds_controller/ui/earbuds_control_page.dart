@@ -145,6 +145,17 @@ class _EarbudsControlPageState extends State<EarbudsControlPage> with SingleTick
                               height: 200,
                               child: Container(
                                 color: Colors.grey,
+                                child: Row(
+                                  children: [
+                                    Expanded(child: Container(decoration: BoxDecoration(
+                                      color: Colors.white.withOpacity(0.15)
+                                    ),)),
+                                    SizedBox(width: 8,),
+                                    Expanded(child: Placeholder()),
+
+                                  ],
+                                ),
+
                               ),
 
                             )
