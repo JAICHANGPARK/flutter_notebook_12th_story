@@ -129,6 +129,22 @@ class _EarbudsControlPageState extends State<EarbudsControlPage> with SingleTick
                             "it is placed in your ear",style: TextStyle(
                           color: Colors.grey
                         ),),
+                      ),
+                      Column(
+                        children: [
+                          Text("Touch Sensor Function", style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 20
+                          ),),
+                          SizedBox(
+                            height: 160,
+                            child: Container(
+                              color: Colors.grey,
+                            ),
+
+                          )
+                        ],
                       )
                     ],
                   ),
