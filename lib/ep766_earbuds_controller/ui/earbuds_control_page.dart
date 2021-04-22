@@ -131,7 +131,7 @@ class _EarbudsControlPageState extends State<EarbudsControlPage> with SingleTick
                         ),),
                       ),
                       Padding(
-                        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
@@ -140,7 +140,7 @@ class _EarbudsControlPageState extends State<EarbudsControlPage> with SingleTick
                               fontWeight: FontWeight.bold,
                               fontSize: 20
                             ),),
-                            SizedBox(height: 8,),
+                            SizedBox(height: 12,),
                             SizedBox(
                               height: 200,
                               child: Container(
@@ -150,7 +150,7 @@ class _EarbudsControlPageState extends State<EarbudsControlPage> with SingleTick
                                       color: Colors.white.withOpacity(0.15),
                                       borderRadius: BorderRadius.circular(16)
                                     ),)),
-                                    SizedBox(width: 8,),
+                                    SizedBox(width: 12,),
                                     Expanded(child: Container(decoration: BoxDecoration(
                                         color: Colors.white.withOpacity(0.15),
                                         borderRadius: BorderRadius.circular(16)
