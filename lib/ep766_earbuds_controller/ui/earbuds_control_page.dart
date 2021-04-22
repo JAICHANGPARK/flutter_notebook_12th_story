@@ -122,10 +122,13 @@ class _EarbudsControlPageState extends State<EarbudsControlPage> with SingleTick
                           ),
                         ),
                       ),
-                      Text("Automatically transfer the audio route from connected devices to earbuds when"
-                          "it is placed in your ear",style: TextStyle(
-                        color: Colors.grey
-                      ),)
+                      Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 16),
+                        child: Text("Automatically transfer the audio route from connected devices to earbuds when"
+                            "it is placed in your ear",style: TextStyle(
+                          color: Colors.grey
+                        ),),
+                      )
                     ],
                   ),
                 ),
