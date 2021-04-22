@@ -148,10 +148,12 @@ class _EarbudsControlPageState extends State<EarbudsControlPage> with SingleTick
                                   children: [
                                     Expanded(child: Container(decoration: BoxDecoration(
                                       color: Colors.white.withOpacity(0.15),
+                                      borderRadius: BorderRadius.circular(16)
                                     ),)),
                                     SizedBox(width: 8,),
                                     Expanded(child: Container(decoration: BoxDecoration(
-                                        color: Colors.white.withOpacity(0.15)
+                                        color: Colors.white.withOpacity(0.15),
+                                        borderRadius: BorderRadius.circular(16)
                                     ),)),
 
                                   ],
