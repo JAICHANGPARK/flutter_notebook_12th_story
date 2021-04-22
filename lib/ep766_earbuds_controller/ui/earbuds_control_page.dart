@@ -174,6 +174,11 @@ class _EarbudsControlPageState extends State<EarbudsControlPage> with SingleTick
                                               ),
                                               top: 0,
                                               right: 0,
+                                            ),
+                                            Positioned(child: Center(child: Text("Activate Assistant")),
+                                            bottom: 12,
+                                              left: 0,
+                                              right: 0,
                                             )
                                           ],
                                         ),
