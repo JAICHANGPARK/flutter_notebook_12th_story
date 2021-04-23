@@ -296,7 +296,7 @@ class _EarbudsControlPageState extends State<EarbudsControlPage> with SingleTick
                                             borderRadius: BorderRadius.circular(8)),
                                         child: Center(
                                             child: Icon(
-                                          Icons.directions_walk,
+                                              Icons.bed,
                                           color: Colors.white,
                                         )),
                                       ),
