@@ -296,7 +296,7 @@ class _EarbudsControlPageState extends State<EarbudsControlPage> with SingleTick
                                       padding: const EdgeInsets.only(right: 8),
                                       child: Container(
                                         decoration: BoxDecoration(
-                                            color: Colors.white.withOpacity(0.2),
+                                           border: Border.all(color: Colors.white.withOpacity(0.2)),
                                             borderRadius: BorderRadius.circular(8)
                                         ),
 
