@@ -257,16 +257,18 @@ class _EarbudsControlPageState extends State<EarbudsControlPage> with SingleTick
                             SizedBox(
                               height: 48,
                               child: Container(
-                                color: Colors.red,
                                 child: Row(
                                   children: [
-                                    Expanded(child: Container(
-                                      decoration: BoxDecoration(
-                                        color: Colors.white.withOpacity(0.2),
-                                        borderRadius: BorderRadius.circular(8)
-                                      ),
+                                    Expanded(child: Padding(
+                                      padding: const EdgeInsets.symmetric(horizontal: 4),
+                                      child: Container(
+                                        decoration: BoxDecoration(
+                                          color: Colors.white.withOpacity(0.2),
+                                          borderRadius: BorderRadius.circular(8)
+                                        ),
 
-                                      child: Center(child: Icon(Icons.directions_walk, color: Colors.white,)),
+                                        child: Center(child: Icon(Icons.directions_walk, color: Colors.white,)),
+                                      ),
                                     )),
                                     Expanded(child: Placeholder()),
                                     Expanded(child: Placeholder()),
