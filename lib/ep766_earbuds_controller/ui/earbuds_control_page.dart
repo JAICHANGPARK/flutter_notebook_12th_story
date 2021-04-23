@@ -259,48 +259,60 @@ class _EarbudsControlPageState extends State<EarbudsControlPage> with SingleTick
                               child: Container(
                                 child: Row(
                                   children: [
-                                    Expanded(child: Padding(
-                                      padding: const EdgeInsets.only(right: 8),
-                                      child: Container(
-                                        decoration: BoxDecoration(
-                                          color: Colors.white.withOpacity(0.2),
-                                          borderRadius: BorderRadius.circular(8)
-                                        ),
-
-                                        child: Center(child: Icon(Icons.directions_walk, color: Colors.white,)),
-                                      ),
-                                    )),
-                                    Expanded(child: Padding(
+                                    Expanded(
+                                        child: Padding(
                                       padding: const EdgeInsets.only(right: 8),
                                       child: Container(
                                         decoration: BoxDecoration(
                                             color: Colors.white.withOpacity(0.2),
-                                            borderRadius: BorderRadius.circular(8)
-                                        ),
-
-                                        child: Center(child: Icon(Icons.directions_walk, color: Colors.white,)),
+                                            borderRadius: BorderRadius.circular(8)),
+                                        child: Center(
+                                            child: Icon(
+                                          Icons.directions_walk,
+                                          color: Colors.white,
+                                        )),
                                       ),
                                     )),
-                                    Expanded(child: Padding(
+                                    Expanded(
+                                        child: Padding(
                                       padding: const EdgeInsets.only(right: 8),
                                       child: Container(
                                         decoration: BoxDecoration(
                                             color: Colors.white.withOpacity(0.2),
-                                            borderRadius: BorderRadius.circular(8)
-                                        ),
-
-                                        child: Center(child: Icon(Icons.directions_walk, color: Colors.white,)),
+                                            borderRadius: BorderRadius.circular(8)),
+                                        child: Center(
+                                            child: Icon(
+                                          Icons.directions_car_rounded,
+                                          color: Colors.white,
+                                        )),
                                       ),
                                     )),
-                                    Expanded(child: Padding(
+                                    Expanded(
+                                        child: Padding(
                                       padding: const EdgeInsets.only(right: 8),
                                       child: Container(
                                         decoration: BoxDecoration(
-                                           border: Border.all(color: Colors.white.withOpacity(0.2)),
-                                            borderRadius: BorderRadius.circular(8)
-                                        ),
-
-                                        child: Center(child: Icon(Icons.directions_walk, color: Colors.white,)),
+                                            color: Colors.white.withOpacity(0.2),
+                                            borderRadius: BorderRadius.circular(8)),
+                                        child: Center(
+                                            child: Icon(
+                                          Icons.directions_walk,
+                                          color: Colors.white,
+                                        )),
+                                      ),
+                                    )),
+                                    Expanded(
+                                        child: Padding(
+                                      padding: const EdgeInsets.only(right: 8),
+                                      child: Container(
+                                        decoration: BoxDecoration(
+                                            border: Border.all(color: Colors.white.withOpacity(0.2)),
+                                            borderRadius: BorderRadius.circular(8)),
+                                        child: Center(
+                                            child: Icon(
+                                          Icons.add,
+                                          color: Colors.white,
+                                        )),
                                       ),
                                     )),
                                   ],
