@@ -14,7 +14,7 @@ class _EarbudMainPageState extends State<EarbudMainPage> {
       body: SafeArea(
         child: Column(
           children: [
-            
+
           ],
         ),
       ),
