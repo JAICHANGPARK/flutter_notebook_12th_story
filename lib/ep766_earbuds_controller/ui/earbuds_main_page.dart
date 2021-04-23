@@ -14,7 +14,54 @@ class _EarbudMainPageState extends State<EarbudMainPage> {
       body: SafeArea(
         child: Column(
           children: [
-
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                IconButton(
+                  onPressed: () {},
+                  icon: Icon(Icons.power_settings_new),
+                  color: Colors.white,
+                ),
+                Container(
+                  height: 42,
+                  width: 72,
+                  decoration: BoxDecoration(
+                      color: Colors.white.withOpacity(0.15),
+                      borderRadius: BorderRadius.circular(24),
+                      image: DecorationImage(
+                        image: NetworkImage(
+                            "https://www.freepnglogos.com/uploads/airpods-png/airpods-apple-news-articles-stories-trends-for-today-14.png"),
+                      )),
+                ),
+                IconButton(
+                  onPressed: () {},
+                  icon: Icon(Icons.more_horiz),
+                  color: Colors.white,
+                )
+              ],
+            ),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 36, vertical: 8),
+              child: Center(
+                child: TabBar(
+                    controller: _tabController,
+                    isScrollable: false,
+                    indicatorColor: Colors.black,
+                    indicatorSize: TabBarIndicatorSize.label,
+                    labelColor: Colors.white,
+                    tabs: [
+                      Tab(
+                        text: "Status",
+                      ),
+                      Tab(
+                        text: "Sound",
+                      ),
+                      Tab(
+                        text: "System",
+                      )
+                    ]),
+              ),
+            ),
           ],
         ),
       ),
