@@ -7,6 +7,13 @@ class EarbudMainPage extends StatefulWidget {
 }
 
 class _EarbudMainPageState extends State<EarbudMainPage> {
+  late TabController _tabController;
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    _tabController = TabController(length: 3, vsync: this);
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
