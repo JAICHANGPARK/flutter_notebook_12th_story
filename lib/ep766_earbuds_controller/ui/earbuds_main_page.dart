@@ -102,6 +102,64 @@ class _EarbudMainPageState extends State<EarbudMainPage> with SingleTickerProvid
                                 ],
                               ),
                             ),
+                          ),
+                          Container(
+                            decoration: BoxDecoration(
+                                color: Colors.white.withOpacity(0.1),
+                                borderRadius: BorderRadius.circular(8)),
+                            child: Center(
+                              child: Row(
+                                children: [
+                                  CircleAvatar(
+                                    radius: 8,
+                                    child: Text(
+                                      "L",
+                                      style: TextStyle(
+                                          fontSize: 12
+                                      ),
+                                    ),
+                                    foregroundColor: Colors.white,
+                                    backgroundColor: Colors.white.withOpacity(0.4),
+                                  ),
+                                  SizedBox(
+                                    width: 4,
+                                  ),
+                                  Text(
+                                    "72%",
+                                    style: TextStyle(color: Colors.white, fontSize: 13),
+                                  )
+                                ],
+                              ),
+                            ),
+                          ),
+                          Container(
+                            decoration: BoxDecoration(
+                                color: Colors.white.withOpacity(0.1),
+                                borderRadius: BorderRadius.circular(8)),
+                            child: Center(
+                              child: Row(
+                                children: [
+                                  CircleAvatar(
+                                    radius: 8,
+                                    child: Text(
+                                      "L",
+                                      style: TextStyle(
+                                          fontSize: 12
+                                      ),
+                                    ),
+                                    foregroundColor: Colors.white,
+                                    backgroundColor: Colors.white.withOpacity(0.4),
+                                  ),
+                                  SizedBox(
+                                    width: 4,
+                                  ),
+                                  Text(
+                                    "72%",
+                                    style: TextStyle(color: Colors.white, fontSize: 13),
+                                  )
+                                ],
+                              ),
+                            ),
                           )
                         ],
                       )),
