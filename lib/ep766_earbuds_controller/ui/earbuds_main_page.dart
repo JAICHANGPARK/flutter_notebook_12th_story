@@ -71,15 +71,36 @@ class _EarbudMainPageState extends State<EarbudMainPage> with SingleTickerProvid
                   color: Colors.red,
                   child: Column(
                     children: [
+                      Expanded(flex: 8, child: Placeholder()),
                       Expanded(
-                          flex: 8,
-                          child: Placeholder()),
-                      Expanded(child: Row(
+                          child: Row(
                         children: [
-                          
+                          Container(
+                            decoration: BoxDecoration(
+                                color: Colors.white.withOpacity(0.1), borderRadius: BorderRadius.circular(16)),
+                            child: Row(
+                              children: [
+                                CircleAvatar(
+                                  radius: 8,
+                                  child: Text(
+                                    "L",
+                                  ),
+                                  foregroundColor: Colors.white,
+                                  backgroundColor: Colors.white.withOpacity(0.4),
+                                ),
+                                SizedBox(width: 4,),
+                                Text(
+                                  "72%",
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 13
+                                  ),
+                                )
+                              ],
+                            ),
+                          )
                         ],
                       )),
-
                     ],
                   ),
                 ),
