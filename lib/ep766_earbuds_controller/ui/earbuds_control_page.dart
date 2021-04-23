@@ -138,7 +138,7 @@ class _EarbudsControlPageState extends State<EarbudsControlPage> with SingleTick
                           children: [
                             Text(
                               "Touch Sensor Function",
-                              style: TextStyle(color: Colors.white, fontWeight: FontWeight.w600, fontSize: 20),
+                              style: TextStyle(color: Colors.white, fontWeight: FontWeight.w600, fontSize: 18),
                             ),
                             SizedBox(
                               height: 12,
@@ -249,7 +249,7 @@ class _EarbudsControlPageState extends State<EarbudsControlPage> with SingleTick
                           children: [
                             Text(
                               "Default Environment Sound",
-                              style: TextStyle(color: Colors.white, fontWeight: FontWeight.w600, fontSize: 20),
+                              style: TextStyle(color: Colors.white, fontWeight: FontWeight.w600, fontSize: 18),
                             ),
                             SizedBox(
                               height: 12,
