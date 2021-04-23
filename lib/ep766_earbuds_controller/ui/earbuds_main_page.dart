@@ -183,6 +183,13 @@ class _EarbudMainPageState extends State<EarbudMainPage> with SingleTickerProvid
                     ]),
               ),
             ),
+            Expanded(child: SingleChildScrollView(
+              child: Column(
+                children: [
+
+                ],
+              ),
+            ))
           ],
         ),
       ),
