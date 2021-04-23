@@ -264,16 +264,13 @@ class _EarbudsControlPageState extends State<EarbudsControlPage> with SingleTick
                                     Expanded(child: Placeholder()),
                                     Expanded(child: Placeholder()),
                                     Expanded(child: Placeholder())
-
                                   ],
                                 ),
                               ),
                             ),
-                            
                           ],
                         ),
                       ),
-                      
                       Padding(
                         padding: const EdgeInsets.symmetric(horizontal: 12),
                         child: Container(
@@ -284,14 +281,14 @@ class _EarbudsControlPageState extends State<EarbudsControlPage> with SingleTick
                           child: Column(
                             children: [
                               Padding(
-                                padding: const EdgeInsets.symmetric(horizontal: 12, vertical:12),
+                                padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 12),
                                 child: Row(
                                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                   children: [
-                                    Text("Notification & Voice Guide", style: TextStyle(
-                                      color: Colors.white,
-                                        fontSize: 16
-                                    ),),
+                                    Text(
+                                      "Notification & Voice Guide",
+                                      style: TextStyle(color: Colors.white, fontSize: 16),
+                                    ),
                                     XlivSwitch(
                                       value: _value,
                                       onChanged: _changeValue,
@@ -304,18 +301,18 @@ class _EarbudsControlPageState extends State<EarbudsControlPage> with SingleTick
                                 color: Colors.grey,
                               ),
                               Padding(
-                                padding: const EdgeInsets.symmetric(horizontal: 12, vertical:12),
+                                padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 12),
                                 child: Row(
                                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                   children: [
-                                    Text("Language", style: TextStyle(
-                                      color: Colors.white,
-                                      fontSize: 16
-                                    ),),
-                                    Text("English (United States)", style: TextStyle(
-                                      color: Colors.grey,
-                                        fontSize: 16
-                                    ),),
+                                    Text(
+                                      "Language",
+                                      style: TextStyle(color: Colors.white, fontSize: 16),
+                                    ),
+                                    Text(
+                                      "English (United States)",
+                                      style: TextStyle(color: Colors.grey, fontSize: 16),
+                                    ),
                                   ],
                                 ),
                               ),
