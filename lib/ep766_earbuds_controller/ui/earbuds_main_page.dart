@@ -71,7 +71,8 @@ class _EarbudMainPageState extends State<EarbudMainPage> with SingleTickerProvid
                   color: Colors.red,
                   child: Column(
                     children: [
-                      
+                      Expanded(child: Placeholder()),
+                      Expanded(child: Placeholder()),
                     ],
                   ),
                 ),
