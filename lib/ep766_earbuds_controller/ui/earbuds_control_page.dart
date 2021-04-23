@@ -260,7 +260,7 @@ class _EarbudsControlPageState extends State<EarbudsControlPage> with SingleTick
                                 child: Row(
                                   children: [
                                     Expanded(child: Padding(
-                                      padding: const EdgeInsets.symmetric(horizontal: 4),
+                                      padding: const EdgeInsets.only(right: 8),
                                       child: Container(
                                         decoration: BoxDecoration(
                                           color: Colors.white.withOpacity(0.2),
@@ -270,7 +270,17 @@ class _EarbudsControlPageState extends State<EarbudsControlPage> with SingleTick
                                         child: Center(child: Icon(Icons.directions_walk, color: Colors.white,)),
                                       ),
                                     )),
-                                    Expanded(child: Placeholder()),
+                                    Expanded(child: Padding(
+                                      padding: const EdgeInsets.only(right: 8),
+                                      child: Container(
+                                        decoration: BoxDecoration(
+                                            color: Colors.white.withOpacity(0.2),
+                                            borderRadius: BorderRadius.circular(8)
+                                        ),
+
+                                        child: Center(child: Icon(Icons.directions_walk, color: Colors.white,)),
+                                      ),
+                                    )),
                                     Expanded(child: Placeholder()),
                                     Expanded(child: Placeholder())
                                   ],
