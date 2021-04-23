@@ -101,27 +101,30 @@ class _EarbudMainPageState extends State<EarbudMainPage> with SingleTickerProvid
                               ),
                             ),
                           ),
-                          Container(
-                            decoration: BoxDecoration(
-                                color: Colors.white.withOpacity(0.1), borderRadius: BorderRadius.circular(8)),
-                            child: Center(
-                              child: Row(
-                                children: [
-                                  Text(
-                                    "CASE",
-                                    style: TextStyle(
-                                      fontSize: 12,
-                                      color: Colors.grey,
+                          Padding(
+                            padding: const EdgeInsets.symmetric(horizontal: 16),
+                            child: Container(
+                              decoration: BoxDecoration(
+                                  color: Colors.white.withOpacity(0.1), borderRadius: BorderRadius.circular(8)),
+                              child: Center(
+                                child: Row(
+                                  children: [
+                                    Text(
+                                      "CASE",
+                                      style: TextStyle(
+                                        fontSize: 12,
+                                        color: Colors.grey,
+                                      ),
                                     ),
-                                  ),
-                                  SizedBox(
-                                    width: 4,
-                                  ),
-                                  Text(
-                                    "72%",
-                                    style: TextStyle(color: Colors.white, fontSize: 13),
-                                  )
-                                ],
+                                    SizedBox(
+                                      width: 4,
+                                    ),
+                                    Text(
+                                      "72%",
+                                      style: TextStyle(color: Colors.white, fontSize: 13),
+                                    )
+                                  ],
+                                ),
                               ),
                             ),
                           ),
@@ -134,17 +137,17 @@ class _EarbudMainPageState extends State<EarbudMainPage> with SingleTickerProvid
                                   CircleAvatar(
                                     radius: 8,
                                     child: Text(
-                                      "L",
+                                      "R",
                                       style: TextStyle(fontSize: 12),
                                     ),
                                     foregroundColor: Colors.white,
-                                    backgroundColor: Colors.white.withOpacity(0.4),
+                                    backgroundColor: Colors.red,
                                   ),
                                   SizedBox(
                                     width: 4,
                                   ),
                                   Text(
-                                    "72%",
+                                    "80%",
                                     style: TextStyle(color: Colors.white, fontSize: 13),
                                   )
                                 ],
