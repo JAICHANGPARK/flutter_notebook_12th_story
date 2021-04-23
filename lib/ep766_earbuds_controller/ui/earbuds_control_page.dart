@@ -281,8 +281,28 @@ class _EarbudsControlPageState extends State<EarbudsControlPage> with SingleTick
                                         child: Center(child: Icon(Icons.directions_walk, color: Colors.white,)),
                                       ),
                                     )),
-                                    Expanded(child: Placeholder()),
-                                    Expanded(child: Placeholder())
+                                    Expanded(child: Padding(
+                                      padding: const EdgeInsets.only(right: 8),
+                                      child: Container(
+                                        decoration: BoxDecoration(
+                                            color: Colors.white.withOpacity(0.2),
+                                            borderRadius: BorderRadius.circular(8)
+                                        ),
+
+                                        child: Center(child: Icon(Icons.directions_walk, color: Colors.white,)),
+                                      ),
+                                    )),
+                                    Expanded(child: Padding(
+                                      padding: const EdgeInsets.only(right: 8),
+                                      child: Container(
+                                        decoration: BoxDecoration(
+                                            color: Colors.white.withOpacity(0.2),
+                                            borderRadius: BorderRadius.circular(8)
+                                        ),
+
+                                        child: Center(child: Icon(Icons.directions_walk, color: Colors.white,)),
+                                      ),
+                                    )),
                                   ],
                                 ),
                               ),
