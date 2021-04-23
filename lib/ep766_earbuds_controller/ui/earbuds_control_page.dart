@@ -306,7 +306,7 @@ class _EarbudsControlPageState extends State<EarbudsControlPage> with SingleTick
                                       padding: const EdgeInsets.only(right: 0),
                                       child: InkWell(
                                         onTap: (){
-                                          
+
                                         },
                                         child: Container(
                                           decoration: BoxDecoration(
