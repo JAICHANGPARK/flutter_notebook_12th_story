@@ -38,6 +38,7 @@ class _EarbudMainPageState extends State<EarbudMainPage> with SingleTickerProvid
                    Row(
                      children: [
                        CircleAvatar(radius: 3,backgroundColor: Colors.green,),
+                       SizedBox(width: 4,),
                        Text("Connected to Dream's iPhone", style: TextStyle(
                          fontSize: 12,
                          color: Colors.grey
