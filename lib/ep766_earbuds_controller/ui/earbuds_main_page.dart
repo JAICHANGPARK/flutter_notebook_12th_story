@@ -73,11 +73,11 @@ class _EarbudMainPageState extends State<EarbudMainPage> with SingleTickerProvid
                       Expanded(flex: 8, child: Placeholder()),
                       Expanded(
                           child: Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Container(
                             decoration: BoxDecoration(
-                                color: Colors.white.withOpacity(0.1),
-                                borderRadius: BorderRadius.circular(8)),
+                                color: Colors.white.withOpacity(0.1), borderRadius: BorderRadius.circular(8)),
                             child: Center(
                               child: Row(
                                 children: [
@@ -85,9 +85,7 @@ class _EarbudMainPageState extends State<EarbudMainPage> with SingleTickerProvid
                                     radius: 8,
                                     child: Text(
                                       "L",
-                                      style: TextStyle(
-                                        fontSize: 12
-                                      ),
+                                      style: TextStyle(fontSize: 12),
                                     ),
                                     foregroundColor: Colors.white,
                                     backgroundColor: Colors.white.withOpacity(0.4),
@@ -105,21 +103,16 @@ class _EarbudMainPageState extends State<EarbudMainPage> with SingleTickerProvid
                           ),
                           Container(
                             decoration: BoxDecoration(
-                                color: Colors.white.withOpacity(0.1),
-                                borderRadius: BorderRadius.circular(8)),
+                                color: Colors.white.withOpacity(0.1), borderRadius: BorderRadius.circular(8)),
                             child: Center(
                               child: Row(
                                 children: [
-                                  CircleAvatar(
-                                    radius: 8,
-                                    child: Text(
-                                      "L",
-                                      style: TextStyle(
-                                          fontSize: 12
-                                      ),
+                                  Text(
+                                    "CASE",
+                                    style: TextStyle(
+                                      fontSize: 12,
+                                      color: Colors.grey,
                                     ),
-                                    foregroundColor: Colors.white,
-                                    backgroundColor: Colors.white.withOpacity(0.4),
                                   ),
                                   SizedBox(
                                     width: 4,
@@ -134,8 +127,7 @@ class _EarbudMainPageState extends State<EarbudMainPage> with SingleTickerProvid
                           ),
                           Container(
                             decoration: BoxDecoration(
-                                color: Colors.white.withOpacity(0.1),
-                                borderRadius: BorderRadius.circular(8)),
+                                color: Colors.white.withOpacity(0.1), borderRadius: BorderRadius.circular(8)),
                             child: Center(
                               child: Row(
                                 children: [
@@ -143,9 +135,7 @@ class _EarbudMainPageState extends State<EarbudMainPage> with SingleTickerProvid
                                     radius: 8,
                                     child: Text(
                                       "L",
-                                      style: TextStyle(
-                                          fontSize: 12
-                                      ),
+                                      style: TextStyle(fontSize: 12),
                                     ),
                                     foregroundColor: Colors.white,
                                     backgroundColor: Colors.white.withOpacity(0.4),
