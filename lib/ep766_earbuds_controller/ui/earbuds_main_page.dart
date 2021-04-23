@@ -9,6 +9,15 @@ class EarbudMainPage extends StatefulWidget {
 class _EarbudMainPageState extends State<EarbudMainPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      backgroundColor: Colors.black,
+      body: SafeArea(
+        child: Column(
+          children: [
+            
+          ],
+        ),
+      ),
+    );
   }
 }
