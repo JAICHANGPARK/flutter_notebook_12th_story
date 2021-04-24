@@ -25,6 +25,8 @@ dependencies:
   smooth_page_indicator: any
   xlive_switch: ^1.0.5
 
+#  Any have awesome tootle switch?
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
