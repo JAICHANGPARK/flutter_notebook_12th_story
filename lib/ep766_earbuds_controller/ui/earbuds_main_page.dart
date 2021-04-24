@@ -198,8 +198,13 @@ class _EarbudMainPageState extends State<EarbudMainPage> with SingleTickerProvid
                     child: Column(
                       children: [
                         Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
-                            Text("Ambient Sound Control"),
+                            Text("Ambient Sound Control",style: TextStyle(
+                              color: Colors.white,
+                              fontWeight: FontWeight.w600,
+                              fontSize: 16
+                            ),),
                             XlivSwitch(value: _ascValue, onChanged: (v){
                               setState(() {
                                 _ascValue= v;
