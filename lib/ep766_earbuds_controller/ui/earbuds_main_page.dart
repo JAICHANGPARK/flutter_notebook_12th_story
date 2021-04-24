@@ -224,16 +224,28 @@ class _EarbudMainPageState extends State<EarbudMainPage> with SingleTickerProvid
                           ),
                           Divider(color: Colors.grey,
                           height: 4,),
-                          Row(
-                            children: [
-                              Text("Noise Canceling",style: TextStyle(
-                                  color: Colors.white,
-                                  fontWeight: FontWeight.w600,
-                                  fontSize: 16
-                              ),),
-                              Icon(Icons.keyboard_arrow_down_outlined, color: Colors.grey,)
-                            ],
-                          )
+                          Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Row(
+                              children: [
+                                Text("Noise Canceling",style: TextStyle(
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.w600,
+                                    fontSize: 16
+                                ),),
+                                Icon(Icons.keyboard_arrow_down_outlined, color: Colors.grey,)
+                              ],
+                            ),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Container(
+                              height: 48,
+                              decoration: BoxDecoration(
+                                color: Colors.black,
+                              ),
+                            ),
+                          ),
                         ],
                       ),
                     ),
