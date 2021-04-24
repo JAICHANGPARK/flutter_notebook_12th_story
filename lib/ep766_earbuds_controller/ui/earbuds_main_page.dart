@@ -9,6 +9,7 @@ class EarbudMainPage extends StatefulWidget {
 class _EarbudMainPageState extends State<EarbudMainPage> with SingleTickerProviderStateMixin {
   late TabController _tabController;
   bool _ascValue = false;
+
   @override
   void initState() {
     // TODO: implement initState
@@ -71,17 +72,18 @@ class _EarbudMainPageState extends State<EarbudMainPage> with SingleTickerProvid
                 child: Container(
                   child: Column(
                     children: [
-                      Expanded(flex: 8, child: Container(
-                        decoration: BoxDecoration(
-                          image: DecorationImage(
-                            image: NetworkImage("https://www.sony.com/image/c1e5ae984af56da2c4e805ade887eb00?fmt=png-alpha&wid=900&hei=800"),
-                            fit: BoxFit.cover
-                          )
-                        ),
-                      )),
+                      Expanded(
+                          flex: 8,
+                          child: Container(
+                            decoration: BoxDecoration(
+                                image: DecorationImage(
+                                    image: NetworkImage(
+                                        "https://www.sony.com/image/c1e5ae984af56da2c4e805ade887eb00?fmt=png-alpha&wid=900&hei=800"),
+                                    fit: BoxFit.cover)),
+                          )),
                       Expanded(
                           child: Row(
-                            mainAxisAlignment: MainAxisAlignment.center,
+                        mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Container(
                             decoration: BoxDecoration(
@@ -191,17 +193,15 @@ class _EarbudMainPageState extends State<EarbudMainPage> with SingleTickerProvid
                     ]),
               ),
             ),
-            Expanded(child: SingleChildScrollView(
+            Expanded(
+                child: SingleChildScrollView(
               child: Column(
                 children: [
                   Padding(
                     padding: const EdgeInsets.all(16.0),
                     child: Container(
-                      decoration: BoxDecoration(
-                        color: Colors.white.withOpacity(0.15),
-                        borderRadius: BorderRadius.circular(8)
-                      ),
-
+                      decoration:
+                          BoxDecoration(color: Colors.white.withOpacity(0.15), borderRadius: BorderRadius.circular(8)),
                       child: Column(
                         children: [
                           Padding(
@@ -209,38 +209,43 @@ class _EarbudMainPageState extends State<EarbudMainPage> with SingleTickerProvid
                             child: Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
-                                Text("Ambient Sound Control",style: TextStyle(
-                                  color: Colors.white,
-                                  fontWeight: FontWeight.w600,
-                                  fontSize: 16
-                                ),),
-                                XlivSwitch(value: _ascValue, onChanged: (v){
-                                  setState(() {
-                                    _ascValue= v;
-                                  });
-                                })
+                                Text(
+                                  "Ambient Sound Control",
+                                  style: TextStyle(color: Colors.white, fontWeight: FontWeight.w600, fontSize: 16),
+                                ),
+                                XlivSwitch(
+                                    value: _ascValue,
+                                    onChanged: (v) {
+                                      setState(() {
+                                        _ascValue = v;
+                                      });
+                                    })
                               ],
                             ),
                           ),
-                          Divider(color: Colors.grey,
-                          height: 4,),
+                          Divider(
+                            color: Colors.grey,
+                            height: 4,
+                          ),
                           Padding(
                             padding: const EdgeInsets.all(8.0),
                             child: Row(
                               children: [
-                                Text("Noise Canceling",style: TextStyle(
-                                    color: Colors.white,
-                                    fontWeight: FontWeight.w600,
-                                    fontSize: 16
-                                ),),
-                                Icon(Icons.keyboard_arrow_down_outlined, color: Colors.grey,)
+                                Text(
+                                  "Noise Canceling",
+                                  style: TextStyle(color: Colors.white, fontWeight: FontWeight.w600, fontSize: 16),
+                                ),
+                                Icon(
+                                  Icons.keyboard_arrow_down_outlined,
+                                  color: Colors.grey,
+                                )
                               ],
                             ),
                           ),
                           Padding(
                             padding: const EdgeInsets.all(8.0),
                             child: Container(
-                              height: 48,
+                              height: 42,
                               decoration: BoxDecoration(
                                 color: Colors.black,
                                 borderRadius: BorderRadius.circular(8),
@@ -250,49 +255,69 @@ class _EarbudMainPageState extends State<EarbudMainPage> with SingleTickerProvid
                                   Expanded(
                                       flex: 4,
                                       child: Container(
-                                        
-                                        decoration: BoxDecoration(
-                                          color: Colors.white,
-                                          borderRadius: BorderRadius.circular(8)
-                                        ),
+                                        decoration:
+                                            BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(8)),
                                         child: Center(
-                                          child: Text("Level 2", style: TextStyle(
-                                            fontSize: 16,
-                                            fontWeight: FontWeight.bold
-                                          ),),
+                                          child: Text(
+                                            "Level 2",
+                                            style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                                          ),
                                         ),
                                       )),
                                   Expanded(
                                       flex: 2,
                                       child: Center(
-                                        child: Text("3", style: TextStyle(
-                                          color: Colors.grey, fontWeight: FontWeight.bold,
-                                            fontSize: 16
-                                        ),),
+                                        child: Text(
+                                          "3",
+                                          style:
+                                              TextStyle(color: Colors.grey, fontWeight: FontWeight.bold, fontSize: 16),
+                                        ),
                                       )),
                                   Expanded(
                                       flex: 2,
                                       child: Center(
-                                        child: Text("4", style: TextStyle(
-                                            color: Colors.grey, fontWeight: FontWeight.bold,
-                                          fontSize: 16
-                                        ),),
+                                        child: Text(
+                                          "4",
+                                          style:
+                                              TextStyle(color: Colors.grey, fontWeight: FontWeight.bold, fontSize: 16),
+                                        ),
                                       )),
                                   Expanded(
-                                      flex: 2,
-                                      child: Container(
-                                        margin: EdgeInsets.all(8),
-                                        decoration: BoxDecoration(
+                                    flex: 2,
+                                    child: Container(
+                                      margin: EdgeInsets.all(8),
+                                      decoration: BoxDecoration(
                                           borderRadius: BorderRadius.circular(4),
                                           border: Border.all(color: Colors.grey.withOpacity(0.2)),
-                                          color: Colors.white.withOpacity(0.2)
+                                          color: Colors.white.withOpacity(0.2)),
+                                      child: Center(
+                                        child: Text(
+                                          "AUTO",
+                                          style: TextStyle(
+                                            color: Colors.grey,
+                                          ),
                                         ),
-                                      )),
+                                      ),
+                                    ),
+                                  ),
                                 ],
                               ),
                             ),
                           ),
+
                         ],
+                      ),
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.all(16.0),
+                    child: SizedBox(
+                      height: 240,
+                      child: Container(
+                        decoration: BoxDecoration(
+                          color: Colors.white
+                        ),
+                        child: Row(),
                       ),
                     ),
                   )
