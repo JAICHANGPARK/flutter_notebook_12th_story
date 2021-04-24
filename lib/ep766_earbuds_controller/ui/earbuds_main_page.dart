@@ -264,13 +264,24 @@ class _EarbudMainPageState extends State<EarbudMainPage> with SingleTickerProvid
                                       )),
                                   Expanded(
                                       flex: 2,
-                                      child: Placeholder()),
+                                      child: Center(
+                                        child: Text("3", style: TextStyle(
+                                          color: Colors.grey
+                                        ),),
+                                      )),
                                   Expanded(
                                       flex: 2,
-                                      child: Placeholder()),
+                                      child: Center(
+                                        child: Text("3", style: TextStyle(
+                                            color: Colors.grey
+                                        ),),
+                                      )),
                                   Expanded(
                                       flex: 2,
-                                      child: Placeholder()),
+                                      child: Container(
+                                        margin: EdgeInsets.all(4),
+                                        decoration: BoxDecoration(),
+                                      )),
                                 ],
                               ),
                             ),
