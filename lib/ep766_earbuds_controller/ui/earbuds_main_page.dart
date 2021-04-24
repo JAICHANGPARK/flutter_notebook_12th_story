@@ -194,26 +194,33 @@ class _EarbudMainPageState extends State<EarbudMainPage> with SingleTickerProvid
             Expanded(child: SingleChildScrollView(
               child: Column(
                 children: [
-                  Container(
-                    child: Column(
-                      children: [
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: [
-                            Text("Ambient Sound Control",style: TextStyle(
-                              color: Colors.white,
-                              fontWeight: FontWeight.w600,
-                              fontSize: 16
-                            ),),
-                            XlivSwitch(value: _ascValue, onChanged: (v){
-                              setState(() {
-                                _ascValue= v;
-                              });
-                            })
-                          ],
-                        ),
-                        Divider()
-                      ],
+                  Padding(
+                    padding: const EdgeInsets.all(16.0),
+                    child: Container(
+                      decoration: BoxDecoration(
+                        color: Colors.white.withOpacity(0.15),
+                        borderRadius: BorderRadius.circular(8)
+                      ),
+                      child: Column(
+                        children: [
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Text("Ambient Sound Control",style: TextStyle(
+                                color: Colors.white,
+                                fontWeight: FontWeight.w600,
+                                fontSize: 16
+                              ),),
+                              XlivSwitch(value: _ascValue, onChanged: (v){
+                                setState(() {
+                                  _ascValue= v;
+                                });
+                              })
+                            ],
+                          ),
+                          Divider()
+                        ],
+                      ),
                     ),
                   )
                 ],
