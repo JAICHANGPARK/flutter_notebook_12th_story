@@ -317,7 +317,7 @@ class _EarbudMainPageState extends State<EarbudMainPage> with SingleTickerProvid
                         child: Row(
                           children: [
                             Expanded(child: Placeholder()),
-                            
+                            SizedBox(width: 16,),
                             Expanded(
                                 child: Container(
                               decoration: BoxDecoration(
