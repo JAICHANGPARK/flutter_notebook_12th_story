@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:xlive_switch/xlive_switch.dart';
 
 class EarbudMainPage extends StatefulWidget {
   @override
@@ -7,7 +8,7 @@ class EarbudMainPage extends StatefulWidget {
 
 class _EarbudMainPageState extends State<EarbudMainPage> with SingleTickerProviderStateMixin {
   late TabController _tabController;
-
+  bool _ascValue = false;
   @override
   void initState() {
     // TODO: implement initState
@@ -193,7 +194,19 @@ class _EarbudMainPageState extends State<EarbudMainPage> with SingleTickerProvid
             Expanded(child: SingleChildScrollView(
               child: Column(
                 children: [
-                  Placeholder()
+                  Container(
+                    child: Column(
+                      children: [
+                        Row(
+                          children: [
+                            Text("Ambient Sound Control"),
+                            XlivSwitch(value: value, onChanged: onChanged)
+                          ],
+                        ),
+                        Divider()
+                      ],
+                    ),
+                  )
                 ],
               ),
             ))
