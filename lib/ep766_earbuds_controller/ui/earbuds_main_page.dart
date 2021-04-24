@@ -248,15 +248,18 @@ class _EarbudMainPageState extends State<EarbudMainPage> with SingleTickerProvid
                               child: Row(
                                 children: [
                                   Expanded(
-                                      flex: 3,
+                                      flex: 4,
                                       child: Container(
                                         
                                         decoration: BoxDecoration(
                                           color: Colors.white,
-                                          borderRadius: BorderRadius.circular(4)
+                                          borderRadius: BorderRadius.circular(8)
                                         ),
                                         child: Center(
-                                          child: Text("Level 2"),,
+                                          child: Text("Level 2", style: TextStyle(
+                                            fontSize: 16,
+                                            fontWeight: FontWeight.bold
+                                          ),),
                                         ),
                                       )),
                                   Expanded(
