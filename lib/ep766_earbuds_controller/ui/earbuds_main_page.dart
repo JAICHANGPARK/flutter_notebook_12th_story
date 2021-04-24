@@ -304,7 +304,6 @@ class _EarbudMainPageState extends State<EarbudMainPage> with SingleTickerProvid
                               ),
                             ),
                           ),
-
                         ],
                       ),
                     ),
@@ -314,12 +313,16 @@ class _EarbudMainPageState extends State<EarbudMainPage> with SingleTickerProvid
                     child: SizedBox(
                       height: 200,
                       child: Container(
-                        decoration: BoxDecoration(
-                          color: Colors.white
-                        ),
+                        decoration: BoxDecoration(),
                         child: Row(
-                          children: [Expanded(child: Placeholder()),
+                          children: [
                             Expanded(child: Placeholder()),
+                            
+                            Expanded(
+                                child: Container(
+                              decoration: BoxDecoration(
+                                  color: Colors.white.withOpacity(0.2), borderRadius: BorderRadius.circular(16)),
+                            )),
                           ],
                         ),
                       ),
