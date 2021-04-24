@@ -266,14 +266,16 @@ class _EarbudMainPageState extends State<EarbudMainPage> with SingleTickerProvid
                                       flex: 2,
                                       child: Center(
                                         child: Text("3", style: TextStyle(
-                                          color: Colors.grey
+                                          color: Colors.grey, fontWeight: FontWeight.bold,
+                                            fontSize: 16
                                         ),),
                                       )),
                                   Expanded(
                                       flex: 2,
                                       child: Center(
-                                        child: Text("3", style: TextStyle(
-                                            color: Colors.grey
+                                        child: Text("4", style: TextStyle(
+                                            color: Colors.grey, fontWeight: FontWeight.bold,
+                                          fontSize: 16
                                         ),),
                                       )),
                                   Expanded(
