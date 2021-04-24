@@ -243,6 +243,23 @@ class _EarbudMainPageState extends State<EarbudMainPage> with SingleTickerProvid
                               height: 48,
                               decoration: BoxDecoration(
                                 color: Colors.black,
+                                borderRadius: BorderRadius.circular(8),
+                              ),
+                              child: Row(
+                                children: [
+                                  Expanded(
+                                      flex: 3,
+                                      child: Placeholder()),
+                                  Expanded(
+                                      flex: 2,
+                                      child: Placeholder()),
+                                  Expanded(
+                                      flex: 2,
+                                      child: Placeholder()),
+                                  Expanded(
+                                      flex: 2,
+                                      child: Placeholder()),
+                                ],
                               ),
                             ),
                           ),
