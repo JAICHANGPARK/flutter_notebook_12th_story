@@ -309,14 +309,18 @@ class _EarbudMainPageState extends State<EarbudMainPage> with SingleTickerProvid
                     ),
                   ),
                   Padding(
-                    padding: const EdgeInsets.all(16.0),
+                    padding: const EdgeInsets.fromLTRB(16,0,16,0),
                     child: SizedBox(
                       height: 200,
                       child: Container(
                         decoration: BoxDecoration(),
                         child: Row(
                           children: [
-                            Expanded(child: Placeholder()),
+                            Expanded(
+                                child: Container(
+                                  decoration: BoxDecoration(
+                                      color: Colors.white.withOpacity(0.2), borderRadius: BorderRadius.circular(16)),
+                                )),
                             SizedBox(width: 16,),
                             Expanded(
                                 child: Container(
