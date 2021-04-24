@@ -201,24 +201,28 @@ class _EarbudMainPageState extends State<EarbudMainPage> with SingleTickerProvid
                         color: Colors.white.withOpacity(0.15),
                         borderRadius: BorderRadius.circular(8)
                       ),
+
                       child: Column(
                         children: [
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: [
-                              Text("Ambient Sound Control",style: TextStyle(
-                                color: Colors.white,
-                                fontWeight: FontWeight.w600,
-                                fontSize: 16
-                              ),),
-                              XlivSwitch(value: _ascValue, onChanged: (v){
-                                setState(() {
-                                  _ascValue= v;
-                                });
-                              })
-                            ],
+                          Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Text("Ambient Sound Control",style: TextStyle(
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.w600,
+                                  fontSize: 16
+                                ),),
+                                XlivSwitch(value: _ascValue, onChanged: (v){
+                                  setState(() {
+                                    _ascValue= v;
+                                  });
+                                })
+                              ],
+                            ),
                           ),
-                          Divider()
+                          Divider(color: Colors.grey,)
                         ],
                       ),
                     ),
