@@ -312,12 +312,16 @@ class _EarbudMainPageState extends State<EarbudMainPage> with SingleTickerProvid
                   Padding(
                     padding: const EdgeInsets.all(16.0),
                     child: SizedBox(
-                      height: 240,
+                      height: 200,
                       child: Container(
                         decoration: BoxDecoration(
                           color: Colors.white
                         ),
-                        child: Row(),
+                        child: Row(
+                          children: [Expanded(child: Placeholder()),
+                            Expanded(child: Placeholder()),
+                          ],
+                        ),
                       ),
                     ),
                   )
