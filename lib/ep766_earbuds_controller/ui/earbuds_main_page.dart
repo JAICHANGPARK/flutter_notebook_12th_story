@@ -73,7 +73,7 @@ class _EarbudMainPageState extends State<EarbudMainPage> with SingleTickerProvid
                       Expanded(flex: 8, child: Container(
                         decoration: BoxDecoration(
                           image: DecorationImage(
-                            image: NetworkImage("https://assets.shop.masoko.com/catalog/product/cache/image/700x700/e9c3970ab036de70892d86c6d221abfe/x/b/xb700-2.png"),
+                            image: NetworkImage("https://www.sony.com/image/c1e5ae984af56da2c4e805ade887eb00?fmt=png-alpha&wid=900&hei=800"),
                             fit: BoxFit.cover
                           )
                         ),
