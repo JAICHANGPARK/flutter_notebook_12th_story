@@ -350,18 +350,19 @@ class _EarbudMainPageState extends State<EarbudMainPage> with SingleTickerProvid
                                             ),
                                             ),
                                             Padding(
-                                              padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 6),
+                                              padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 4),
                                               child: Column(
                                                 crossAxisAlignment: CrossAxisAlignment.start,
                                                 children: [
                                                   Text("MUSIC", style: TextStyle(
-                                                    color: Colors.white.withOpacity(0.4)
+                                                    color: Colors.white.withOpacity(0.4),
+                                                      fontSize: 12
                                                   ),),
                                                   Padding(
                                                     padding: const EdgeInsets.symmetric(vertical: 4),
                                                     child: Text("Greetings!", style: TextStyle(
                                                       color: Colors.white,
-                                                      fontSize: 18
+                                                      fontSize: 16
                                                     ),),
                                                   ),
                                                   Text("Michael Seye")
