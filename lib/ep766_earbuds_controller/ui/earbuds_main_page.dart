@@ -406,16 +406,19 @@ class _EarbudMainPageState extends State<EarbudMainPage> with SingleTickerProvid
                                               ),
                                             ),
                                             Positioned(
-                                              left: 32,
-                                              top: 0,
-                                              bottom: 0,
-                                              right: 0,
-                                              child: Row(
-                                                mainAxisAlignment: MainAxisAlignment.spaceAround,
-                                                children: List.generate(5, (index) => Container(width: 2,
-                                                color: Colors.white.withOpacity(0.1),)),
-                                              )
-                                            ),
+                                                left: 32,
+                                                top: 0,
+                                                bottom: 0,
+                                                right: 0,
+                                                child: Row(
+                                                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                                                  children: List.generate(
+                                                      5,
+                                                      (index) => Container(
+                                                            width: 2,
+                                                            color: Colors.white.withOpacity(0.1),
+                                                          )),
+                                                )),
                                             Positioned(
                                                 left: 32,
                                                 top: 0,
@@ -423,14 +426,16 @@ class _EarbudMainPageState extends State<EarbudMainPage> with SingleTickerProvid
                                                 right: 0,
                                                 child: Row(
                                                   mainAxisAlignment: MainAxisAlignment.spaceAround,
-                                                  children: List.generate(5, (index) => Container(width: 16,
-                                                    height: 4,
-                                                  decoration: BoxDecoration( color: Colors.white,
-                                                    borderRadius: BorderRadius.circular(2)
-                                                  ),
-                                                   )),
-                                                )
-                                            )
+                                                  children: List.generate(
+                                                      5,
+                                                      (index) => Container(
+                                                            width: 16,
+                                                            height: 4,
+                                                            decoration: BoxDecoration(
+                                                                color: Colors.white,
+                                                                borderRadius: BorderRadius.circular(2)),
+                                                          )),
+                                                ))
                                           ],
                                         ),
                                       ),
