@@ -328,7 +328,7 @@ class _EarbudMainPageState extends State<EarbudMainPage> with SingleTickerProvid
                             ),
                             Expanded(
                                 child: Container(
-                                  padding: EdgeInsets.all(8),
+                                  padding: EdgeInsets.symmetric(vertical: 12, horizontal: 12),
                               decoration: BoxDecoration(
                                   color: Colors.white.withOpacity(0.2), borderRadius: BorderRadius.circular(16)),
                                   child: Column(
@@ -387,8 +387,8 @@ class _EarbudMainPageState extends State<EarbudMainPage> with SingleTickerProvid
                                         children: [
                                           IconButton(onPressed: (){}, icon: Icon(Icons.skip_previous),
                                           color: Colors.grey,),
-                                          IconButton(onPressed: (){}, icon: Icon(Icons.skip_previous),  color: Colors.grey,),
-                                          IconButton(onPressed: (){}, icon: Icon(Icons.skip_previous),  color: Colors.grey,)
+                                          IconButton(onPressed: (){}, icon: Icon(Icons.play_arrow),  color: Colors.grey,),
+                                          IconButton(onPressed: (){}, icon: Icon(Icons.skip_next),  color: Colors.grey,)
                                         ],
                                       )
                                     ],
