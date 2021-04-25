@@ -328,6 +328,21 @@ class _EarbudMainPageState extends State<EarbudMainPage> with SingleTickerProvid
                                 child: Container(
                               decoration: BoxDecoration(
                                   color: Colors.white.withOpacity(0.2), borderRadius: BorderRadius.circular(16)),
+                                  child: Column(
+                                    children: [
+                                      Text("Now Playing"),
+                                      Row(
+                                        children: [
+                                          Container(height: 68,
+                                          width: 68,
+                                          decoration: BoxDecoration(
+                                            color: Colors.white,
+                                          ),
+                                          )
+                                        ],
+                                      )
+                                    ],
+                                  ),
                             )),
                           ],
                         ),
