@@ -345,10 +345,11 @@ class _EarbudMainPageState extends State<EarbudMainPage> with SingleTickerProvid
                                             width: 58,
                                             decoration: BoxDecoration(
                                               color: Colors.white,
+                                              borderRadius: BorderRadius.circular(7)
                                             ),
                                             ),
                                             Padding(
-                                              padding: const EdgeInsets.all(8.0),
+                                              padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 6),
                                               child: Column(
                                                 crossAxisAlignment: CrossAxisAlignment.start,
                                                 children: [
@@ -356,7 +357,7 @@ class _EarbudMainPageState extends State<EarbudMainPage> with SingleTickerProvid
                                                     color: Colors.white.withOpacity(0.4)
                                                   ),),
                                                   Padding(
-                                                    padding: const EdgeInsets.symmetric(vertical: 8),
+                                                    padding: const EdgeInsets.symmetric(vertical: 4),
                                                     child: Text("Greetings!", style: TextStyle(
                                                       color: Colors.white,
                                                       fontSize: 18
