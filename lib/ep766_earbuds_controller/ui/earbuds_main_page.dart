@@ -350,7 +350,8 @@ class _EarbudMainPageState extends State<EarbudMainPage> with SingleTickerProvid
                                         )
                                       ],
                                     ),
-                                  )
+                                  ),
+                                  Expanded(child: Container(color: Colors.blueGrey,))
                                 ],
                               ),
                             )),
