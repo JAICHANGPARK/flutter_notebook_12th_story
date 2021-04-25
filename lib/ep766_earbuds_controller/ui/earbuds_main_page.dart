@@ -331,7 +331,7 @@ class _EarbudMainPageState extends State<EarbudMainPage> with SingleTickerProvid
                                     style: TextStyle(fontSize: 16, color: Colors.white),
                                   ),
                                   SizedBox(
-                                    height: 8,
+                                    height: 12,
                                   ),
                                   Container(
                                     padding: EdgeInsets.all(4),
