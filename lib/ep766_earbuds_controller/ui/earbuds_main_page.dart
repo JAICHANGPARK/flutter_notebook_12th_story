@@ -338,6 +338,13 @@ class _EarbudMainPageState extends State<EarbudMainPage> with SingleTickerProvid
                                           decoration: BoxDecoration(
                                             color: Colors.white,
                                           ),
+                                          ),
+                                          Column(
+                                            children: [
+                                              Text("MUSIC"),
+                                              Text("Greetings!"),
+                                              Text("Michael Seye")
+                                            ],
                                           )
                                         ],
                                       )
