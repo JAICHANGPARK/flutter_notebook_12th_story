@@ -313,7 +313,7 @@ class _EarbudMainPageState extends State<EarbudMainPage> with SingleTickerProvid
                   Padding(
                     padding: const EdgeInsets.fromLTRB(16, 0, 16, 0),
                     child: SizedBox(
-                      height: 200,
+                      height: 232,
                       child: Container(
                         decoration: BoxDecoration(),
                         child: Row(
@@ -382,7 +382,14 @@ class _EarbudMainPageState extends State<EarbudMainPage> with SingleTickerProvid
                                         setState(() {
                                           _volume = value;
                                         });
-                                      }, value: _volume,)
+                                      }, value: _volume,),
+                                      Row(
+                                        children: [
+                                          IconButton(onPressed: (){}, icon: Icon(Icons.skip_previous)),
+                                          IconButton(onPressed: (){}, icon: Icon(Icons.skip_previous)),
+                                          IconButton(onPressed: (){}, icon: Icon(Icons.skip_previous))
+                                        ],
+                                      )
                                     ],
                                   ),
                             )),
