@@ -355,7 +355,6 @@ class _EarbudMainPageState extends State<EarbudMainPage> with SingleTickerProvid
                                     child: Padding(
                                       padding: const EdgeInsets.symmetric(vertical: 8),
                                       child: Container(
-                                        color: Colors.blueGrey,
                                         child: Stack(
                                           children: [
                                             Positioned(
@@ -363,27 +362,48 @@ class _EarbudMainPageState extends State<EarbudMainPage> with SingleTickerProvid
                                                 top: 0,
                                                 bottom: 0,
                                                 child: Column(
-                                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                              children: [Text("+10",
-                                              style: TextStyle(
-                                                color: Colors.white,
-                                              ),), Text("0",
-                                                style: TextStyle(
-                                                  color: Colors.white,
-                                                ),), Text("-10",
-                                                style: TextStyle(
-                                                  color: Colors.white,
-                                                ),)],
-                                            )),
+                                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                                  children: [
+                                                    Text(
+                                                      "+10",
+                                                      style: TextStyle(
+                                                        color: Colors.white,
+                                                      ),
+                                                    ),
+                                                    Text(
+                                                      "0",
+                                                      style: TextStyle(
+                                                        color: Colors.white,
+                                                      ),
+                                                    ),
+                                                    Text(
+                                                      "-10",
+                                                      style: TextStyle(
+                                                        color: Colors.white,
+                                                      ),
+                                                    )
+                                                  ],
+                                                )),
                                             Positioned(
-                                              left: 24,
+                                              left: 28,
                                               top: 0,
                                               bottom: 0,
                                               child: Container(
-                                                width: 4,
-                                                color: Colors.grey,
+                                                width: 2,
+                                                color: Colors.white.withOpacity(0.2),
                                               ),
-
+                                            ),
+                                            Positioned(
+                                              left: 32,
+                                              top: 0,
+                                              bottom: 0,
+                                              right: 0,
+                                              child: Center(
+                                                child: Container(
+                                                  height: 2,
+                                                  color: Colors.white.withOpacity(0.2),
+                                                ),
+                                              ),
                                             )
                                           ],
                                         ),
