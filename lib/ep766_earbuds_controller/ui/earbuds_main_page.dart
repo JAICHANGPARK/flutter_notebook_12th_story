@@ -354,7 +354,7 @@ class _EarbudMainPageState extends State<EarbudMainPage> with SingleTickerProvid
                                                   color: Colors.white.withOpacity(0.4)
                                                 ),),
                                                 Padding(
-                                                  padding: const EdgeInsets.all(8.0),
+                                                  padding: const EdgeInsets.symmetric(vertical: 8),
                                                   child: Text("Greetings!", style: TextStyle(
                                                     color: Colors.white,
                                                     fontSize: 18
