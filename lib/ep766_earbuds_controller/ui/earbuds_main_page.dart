@@ -326,6 +326,7 @@ class _EarbudMainPageState extends State<EarbudMainPage> with SingleTickerProvid
                             ),
                             Expanded(
                                 child: Container(
+                                  padding: EdgeInsets.all(8),
                               decoration: BoxDecoration(
                                   color: Colors.white.withOpacity(0.2), borderRadius: BorderRadius.circular(16)),
                                   child: Column(
@@ -335,22 +336,31 @@ class _EarbudMainPageState extends State<EarbudMainPage> with SingleTickerProvid
                                         fontSize: 16,
                                         color: Colors.white
                                       ),),
-                                      Row(
-                                        children: [
-                                          Container(height: 68,
-                                          width: 68,
-                                          decoration: BoxDecoration(
-                                            color: Colors.white,
-                                          ),
-                                          ),
-                                          Column(
-                                            children: [
-                                              Text("MUSIC"),
-                                              Text("Greetings!"),
-                                              Text("Michael Seye")
-                                            ],
-                                          )
-                                        ],
+                                      Padding(
+                                        padding: const EdgeInsets.symmetric(vertical: 8),
+                                        child: Row(
+                                          children: [
+                                            Container(height: 68,
+                                            width: 68,
+                                            decoration: BoxDecoration(
+                                              color: Colors.white,
+                                            ),
+                                            ),
+                                            Column(
+                                              crossAxisAlignment: CrossAxisAlignment.start,
+                                              children: [
+                                                Text("MUSIC", style: TextStyle(
+                                                  color: Colors.white.withOpacity(0.4)
+                                                ),),
+                                                Text("Greetings!", style: TextStyle(
+                                                  color: Colors.white,
+                                                  fontSize: 16
+                                                ),),
+                                                Text("Michael Seye")
+                                              ],
+                                            )
+                                          ],
+                                        ),
                                       )
                                     ],
                                   ),
