@@ -425,8 +425,10 @@ class _EarbudMainPageState extends State<EarbudMainPage> with SingleTickerProvid
                                                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                                                   children: List.generate(5, (index) => Container(width: 16,
                                                     height: 4,
-
-                                                    color: Colors.white)),
+                                                  decoration: BoxDecoration( color: Colors.white,
+                                                    borderRadius: BorderRadius.circular(2)
+                                                  ),
+                                                   )),
                                                 )
                                             )
                                           ],
