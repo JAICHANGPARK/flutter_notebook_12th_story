@@ -385,9 +385,10 @@ class _EarbudMainPageState extends State<EarbudMainPage> with SingleTickerProvid
                                       }, value: _volume,),
                                       Row(
                                         children: [
-                                          IconButton(onPressed: (){}, icon: Icon(Icons.skip_previous)),
-                                          IconButton(onPressed: (){}, icon: Icon(Icons.skip_previous)),
-                                          IconButton(onPressed: (){}, icon: Icon(Icons.skip_previous))
+                                          IconButton(onPressed: (){}, icon: Icon(Icons.skip_previous),
+                                          color: Colors.grey,),
+                                          IconButton(onPressed: (){}, icon: Icon(Icons.skip_previous),  color: Colors.grey,),
+                                          IconButton(onPressed: (){}, icon: Icon(Icons.skip_previous),  color: Colors.grey,)
                                         ],
                                       )
                                     ],
