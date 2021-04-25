@@ -365,7 +365,10 @@ class _EarbudMainPageState extends State<EarbudMainPage> with SingleTickerProvid
                                                       fontSize: 16
                                                     ),),
                                                   ),
-                                                  Text("Michael Seye")
+                                                  Text("Michael Seye", style: TextStyle(
+                                                      color: Colors.white.withOpacity(0.4),
+                                                      fontSize: 12
+                                                  ),)
                                                 ],
                                               ),
                                             )
