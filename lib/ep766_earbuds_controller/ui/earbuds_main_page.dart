@@ -10,6 +10,7 @@ class EarbudMainPage extends StatefulWidget {
 class _EarbudMainPageState extends State<EarbudMainPage> with SingleTickerProviderStateMixin {
   late TabController _tabController;
   bool _ascValue = false;
+  double _volume = 0.0;
 
   @override
   void initState() {
@@ -369,7 +370,19 @@ class _EarbudMainPageState extends State<EarbudMainPage> with SingleTickerProvid
                                             )
                                           ],
                                         ),
-                                      )
+                                      ),
+                                      Slider(
+                                        activeColor: Colors.white,
+                                        inactiveColor: Colors.grey,
+
+                                        min: 0,
+                                        max: 100,
+                                        onChanged: (double value) {
+
+                                        setState(() {
+                                          _volume = value;
+                                        });
+                                      }, value: _volume,)
                                     ],
                                   ),
                             )),
