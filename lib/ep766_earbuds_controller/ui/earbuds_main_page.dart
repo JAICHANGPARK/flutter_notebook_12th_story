@@ -341,27 +341,30 @@ class _EarbudMainPageState extends State<EarbudMainPage> with SingleTickerProvid
                                         padding: const EdgeInsets.symmetric(vertical: 8),
                                         child: Row(
                                           children: [
-                                            Container(height: 68,
-                                            width: 68,
+                                            Container(height: 58,
+                                            width: 58,
                                             decoration: BoxDecoration(
                                               color: Colors.white,
                                             ),
                                             ),
-                                            Column(
-                                              crossAxisAlignment: CrossAxisAlignment.start,
-                                              children: [
-                                                Text("MUSIC", style: TextStyle(
-                                                  color: Colors.white.withOpacity(0.4)
-                                                ),),
-                                                Padding(
-                                                  padding: const EdgeInsets.symmetric(vertical: 8),
-                                                  child: Text("Greetings!", style: TextStyle(
-                                                    color: Colors.white,
-                                                    fontSize: 18
+                                            Padding(
+                                              padding: const EdgeInsets.all(8.0),
+                                              child: Column(
+                                                crossAxisAlignment: CrossAxisAlignment.start,
+                                                children: [
+                                                  Text("MUSIC", style: TextStyle(
+                                                    color: Colors.white.withOpacity(0.4)
                                                   ),),
-                                                ),
-                                                Text("Michael Seye")
-                                              ],
+                                                  Padding(
+                                                    padding: const EdgeInsets.symmetric(vertical: 8),
+                                                    child: Text("Greetings!", style: TextStyle(
+                                                      color: Colors.white,
+                                                      fontSize: 18
+                                                    ),),
+                                                  ),
+                                                  Text("Michael Seye")
+                                                ],
+                                              ),
                                             )
                                           ],
                                         ),
