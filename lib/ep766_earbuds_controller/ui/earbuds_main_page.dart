@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:xlive_switch/xlive_switch.dart';
 
@@ -333,7 +334,7 @@ class _EarbudMainPageState extends State<EarbudMainPage> with SingleTickerProvid
                                     crossAxisAlignment: CrossAxisAlignment.start,
                                     children: [
                                       Text("Now Playing", style: TextStyle(
-                                        fontSize: 16,
+                                        fontSize: 18,
                                         color: Colors.white
                                       ),),
                                       Padding(
@@ -352,10 +353,13 @@ class _EarbudMainPageState extends State<EarbudMainPage> with SingleTickerProvid
                                                 Text("MUSIC", style: TextStyle(
                                                   color: Colors.white.withOpacity(0.4)
                                                 ),),
-                                                Text("Greetings!", style: TextStyle(
-                                                  color: Colors.white,
-                                                  fontSize: 16
-                                                ),),
+                                                Padding(
+                                                  padding: const EdgeInsets.all(8.0),
+                                                  child: Text("Greetings!", style: TextStyle(
+                                                    color: Colors.white,
+                                                    fontSize: 18
+                                                  ),),
+                                                ),
                                                 Text("Michael Seye")
                                               ],
                                             )
