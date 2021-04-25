@@ -415,6 +415,19 @@ class _EarbudMainPageState extends State<EarbudMainPage> with SingleTickerProvid
                                                 children: List.generate(5, (index) => Container(width: 2,
                                                 color: Colors.white.withOpacity(0.1),)),
                                               )
+                                            ),
+                                            Positioned(
+                                                left: 32,
+                                                top: 0,
+                                                bottom: 0,
+                                                right: 0,
+                                                child: Row(
+                                                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                                                  children: List.generate(5, (index) => Container(width: 16,
+                                                    height: 4,
+
+                                                    color: Colors.white)),
+                                                )
                                             )
                                           ],
                                         ),
