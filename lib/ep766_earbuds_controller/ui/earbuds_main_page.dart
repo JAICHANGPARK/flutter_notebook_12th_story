@@ -351,7 +351,45 @@ class _EarbudMainPageState extends State<EarbudMainPage> with SingleTickerProvid
                                       ],
                                     ),
                                   ),
-                                  Expanded(child: Container(color: Colors.blueGrey,))
+                                  Expanded(
+                                    child: Padding(
+                                      padding: const EdgeInsets.symmetric(vertical: 8),
+                                      child: Container(
+                                        color: Colors.blueGrey,
+                                        child: Stack(
+                                          children: [
+                                            Positioned(
+                                                left: 0,
+                                                top: 0,
+                                                bottom: 0,
+                                                child: Column(
+                                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                              children: [Text("+10",
+                                              style: TextStyle(
+                                                color: Colors.white,
+                                              ),), Text("0",
+                                                style: TextStyle(
+                                                  color: Colors.white,
+                                                ),), Text("-10",
+                                                style: TextStyle(
+                                                  color: Colors.white,
+                                                ),)],
+                                            )),
+                                            Positioned(
+                                              left: 24,
+                                              top: 0,
+                                              bottom: 0,
+                                              child: Container(
+                                                width: 4,
+                                                color: Colors.grey,
+                                              ),
+
+                                            )
+                                          ],
+                                        ),
+                                      ),
+                                    ),
+                                  )
                                 ],
                               ),
                             )),
