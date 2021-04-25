@@ -321,7 +321,22 @@ class _EarbudMainPageState extends State<EarbudMainPage> with SingleTickerProvid
                             Expanded(
                                 child: Container(
                               decoration: BoxDecoration(
-                                  color: Colors.white.withOpacity(0.2), borderRadius: BorderRadius.circular(16)),
+                                  color: Colors.white.withOpacity(0.2),
+                                  borderRadius: BorderRadius.circular(16)),
+                                  child: Column(
+                                    children: [
+                                      Text("Equalizer"),
+                                      Container(
+                                        child: Row(
+                                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                          children: [
+                                            Text("CLEAR BASS"),
+                                            Text("+6")
+                                          ],
+                                        ),
+                                      )
+                                    ],
+                                  ),
                             )),
                             SizedBox(
                               width: 16,
@@ -378,7 +393,6 @@ class _EarbudMainPageState extends State<EarbudMainPage> with SingleTickerProvid
                                       Slider(
                                         activeColor: Colors.white,
                                         inactiveColor: Colors.grey,
-
                                         min: 0,
                                         max: 100,
                                         onChanged: (double value) {
