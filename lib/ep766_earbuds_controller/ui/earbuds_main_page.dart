@@ -320,106 +320,124 @@ class _EarbudMainPageState extends State<EarbudMainPage> with SingleTickerProvid
                           children: [
                             Expanded(
                                 child: Container(
+                              padding: EdgeInsets.all(8),
                               decoration: BoxDecoration(
-                                  color: Colors.white.withOpacity(0.2),
-                                  borderRadius: BorderRadius.circular(16)),
-                                  child: Column(
-                                    crossAxisAlignment: CrossAxisAlignment.start,
-                                    children: [
-                                      Text("Equalizer",style: TextStyle(
-                                        fontSize: 16,
-                                        color: Colors.white
-                                      ),),
-                                      Container(
-                                        padding: EdgeInsets.all(8),
-                                        decoration: BoxDecoration(
-                                          border: Border.all(color: Colors.grey),
-                                          borderRadius: BorderRadius.circular(8)
-                                        ),
-                                        child: Row(
-                                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                          children: [
-                                            Text("CLEAR BASS"),
-                                            Text("+6")
-                                          ],
-                                        ),
-                                      )
-                                    ],
+                                  color: Colors.white.withOpacity(0.2), borderRadius: BorderRadius.circular(16)),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text(
+                                    "Equalizer",
+                                    style: TextStyle(fontSize: 16, color: Colors.white),
                                   ),
+                                  SizedBox(
+                                    height: 8,
+                                  ),
+                                  Container(
+                                    padding: EdgeInsets.all(4),
+                                    decoration: BoxDecoration(
+                                        border: Border.all(color: Colors.grey), borderRadius: BorderRadius.circular(8)),
+                                    child: Row(
+                                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                      children: [
+                                        Text(
+                                          "CLEAR BASS",
+                                          style: TextStyle(color: Colors.grey),
+                                        ),
+                                        Text(
+                                          "+6",
+                                          style: TextStyle(color: Colors.grey),
+                                        )
+                                      ],
+                                    ),
+                                  )
+                                ],
+                              ),
                             )),
                             SizedBox(
                               width: 16,
                             ),
                             Expanded(
                                 child: Container(
-                                  padding: EdgeInsets.symmetric(vertical: 12, horizontal: 12),
+                              padding: EdgeInsets.symmetric(vertical: 12, horizontal: 12),
                               decoration: BoxDecoration(
                                   color: Colors.white.withOpacity(0.2), borderRadius: BorderRadius.circular(16)),
-                                  child: Column(
-                                    crossAxisAlignment: CrossAxisAlignment.start,
-                                    children: [
-                                      Text("Now Playing", style: TextStyle(
-                                        fontSize: 18,
-                                        color: Colors.white
-                                      ),),
-                                      Padding(
-                                        padding: const EdgeInsets.symmetric(vertical: 8),
-                                        child: Row(
-                                          children: [
-                                            Container(height: 58,
-                                            width: 58,
-                                            decoration: BoxDecoration(
-                                              color: Colors.white,
-                                              borderRadius: BorderRadius.circular(7)
-                                            ),
-                                            ),
-                                            Padding(
-                                              padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 4),
-                                              child: Column(
-                                                crossAxisAlignment: CrossAxisAlignment.start,
-                                                children: [
-                                                  Text("MUSIC", style: TextStyle(
-                                                    color: Colors.white.withOpacity(0.4),
-                                                      fontSize: 12
-                                                  ),),
-                                                  Padding(
-                                                    padding: const EdgeInsets.symmetric(vertical: 4),
-                                                    child: Text("Greetings!", style: TextStyle(
-                                                      color: Colors.white,
-                                                      fontSize: 16
-                                                    ),),
-                                                  ),
-                                                  Text("Michael Seye", style: TextStyle(
-                                                      color: Colors.white.withOpacity(0.4),
-                                                      fontSize: 12
-                                                  ),)
-                                                ],
-                                              ),
-                                            )
-                                          ],
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text(
+                                    "Now Playing",
+                                    style: TextStyle(fontSize: 18, color: Colors.white),
+                                  ),
+                                  Padding(
+                                    padding: const EdgeInsets.symmetric(vertical: 8),
+                                    child: Row(
+                                      children: [
+                                        Container(
+                                          height: 58,
+                                          width: 58,
+                                          decoration: BoxDecoration(
+                                              color: Colors.white, borderRadius: BorderRadius.circular(7)),
                                         ),
+                                        Padding(
+                                          padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 4),
+                                          child: Column(
+                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                            children: [
+                                              Text(
+                                                "MUSIC",
+                                                style: TextStyle(color: Colors.white.withOpacity(0.4), fontSize: 12),
+                                              ),
+                                              Padding(
+                                                padding: const EdgeInsets.symmetric(vertical: 4),
+                                                child: Text(
+                                                  "Greetings!",
+                                                  style: TextStyle(color: Colors.white, fontSize: 16),
+                                                ),
+                                              ),
+                                              Text(
+                                                "Michael Seye",
+                                                style: TextStyle(color: Colors.white.withOpacity(0.4), fontSize: 12),
+                                              )
+                                            ],
+                                          ),
+                                        )
+                                      ],
+                                    ),
+                                  ),
+                                  Slider(
+                                    activeColor: Colors.white,
+                                    inactiveColor: Colors.grey,
+                                    min: 0,
+                                    max: 100,
+                                    onChanged: (double value) {
+                                      setState(() {
+                                        _volume = value;
+                                      });
+                                    },
+                                    value: _volume,
+                                  ),
+                                  Row(
+                                    children: [
+                                      IconButton(
+                                        onPressed: () {},
+                                        icon: Icon(Icons.skip_previous),
+                                        color: Colors.grey,
                                       ),
-                                      Slider(
-                                        activeColor: Colors.white,
-                                        inactiveColor: Colors.grey,
-                                        min: 0,
-                                        max: 100,
-                                        onChanged: (double value) {
-
-                                        setState(() {
-                                          _volume = value;
-                                        });
-                                      }, value: _volume,),
-                                      Row(
-                                        children: [
-                                          IconButton(onPressed: (){}, icon: Icon(Icons.skip_previous),
-                                          color: Colors.grey,),
-                                          IconButton(onPressed: (){}, icon: Icon(Icons.play_arrow),  color: Colors.grey,),
-                                          IconButton(onPressed: (){}, icon: Icon(Icons.skip_next),  color: Colors.grey,)
-                                        ],
+                                      IconButton(
+                                        onPressed: () {},
+                                        icon: Icon(Icons.play_arrow),
+                                        color: Colors.grey,
+                                      ),
+                                      IconButton(
+                                        onPressed: () {},
+                                        icon: Icon(Icons.skip_next),
+                                        color: Colors.grey,
                                       )
                                     ],
-                                  ),
+                                  )
+                                ],
+                              ),
                             )),
                           ],
                         ),
