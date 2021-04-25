@@ -326,7 +326,10 @@ class _EarbudMainPageState extends State<EarbudMainPage> with SingleTickerProvid
                                   child: Column(
                                     crossAxisAlignment: CrossAxisAlignment.start,
                                     children: [
-                                      Text("Equalizer"),
+                                      Text("Equalizer",style: TextStyle(
+                                        fontSize: 16,
+                                        color: Colors.white
+                                      ),),
                                       Container(
                                         padding: EdgeInsets.all(8),
                                         decoration: BoxDecoration(
