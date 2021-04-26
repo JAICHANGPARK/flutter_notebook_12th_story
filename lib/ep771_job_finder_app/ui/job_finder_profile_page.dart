@@ -33,17 +33,24 @@ class _JobFinderProfilePageState extends State<JobFinderProfilePage> {
                   ],
                 ),
               ),
-              Column(
-                children: [
-                  Container(
-                    height: 72,
-                    width: 72,
-                    decoration: BoxDecoration(
-                      color: Colors.red,
-                      borderRadius: BorderRadius.circular(8)
+              SizedBox(
+                
+                width: double.infinity,
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                    Container(
+                      height: 72,
+                      width: 72,
+                      decoration: BoxDecoration(
+                        color: Colors.red,
+                        borderRadius: BorderRadius.circular(8)
+                      ),
                     ),
-                  )
-                ],
+                    Text("Dream Walker"),
+                    Text("Android/Flutter Developer")
+                  ],
+                ),
               )
             ],
           ),
