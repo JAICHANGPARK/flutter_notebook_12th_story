@@ -67,7 +67,20 @@ class _JobFinderProfilePageState extends State<JobFinderProfilePage> {
                     color: Colors.blueGrey[50],
                     borderRadius: BorderRadius.circular(24)
                   ),
-                ),),
+                  child: Row(
+                    children: [
+                      Expanded(child: Center(
+                        child: Text("Details", style: TextStyle(
+                          color: Colors.blueGrey[400],
+                          fontSize: 16
+                        ),),
+                      )),
+                      Expanded(child: Placeholder()),
+                      Expanded(child: Placeholder())
+                    ],
+                  ),
+                ),)
+                ,
               )
             ],
           ),
