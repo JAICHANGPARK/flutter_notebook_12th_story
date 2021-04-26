@@ -41,16 +41,13 @@ class _JobFinderProfilePageState extends State<JobFinderProfilePage> {
                     Container(
                       height: 82,
                       width: 82,
-                      decoration: BoxDecoration(color: Colors.red, borderRadius: BorderRadius.circular(8)),
+                      decoration: BoxDecoration(color: Colors.purple, borderRadius: BorderRadius.circular(8)),
                     ),
                     Padding(
                       padding: const EdgeInsets.symmetric(vertical: 12),
                       child: Text(
                         "Dream Walker",
-                        style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          fontSize: 16
-                        ),
+                        style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
                       ),
                     ),
                     Text(
