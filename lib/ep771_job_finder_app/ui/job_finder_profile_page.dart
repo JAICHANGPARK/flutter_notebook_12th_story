@@ -60,27 +60,38 @@ class _JobFinderProfilePageState extends State<JobFinderProfilePage> {
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 16),
-                child: SizedBox(height: 48,
-                child: Container(
-                  decoration: BoxDecoration(
-                    color: Colors.blueGrey[50],
-                    borderRadius: BorderRadius.circular(24)
+                padding: const EdgeInsets.symmetric(vertical: 24, horizontal: 16),
+                child: SizedBox(
+                  height: 48,
+                  child: Container(
+                    decoration: BoxDecoration(color: Colors.blueGrey[50], borderRadius: BorderRadius.circular(24)),
+                    child: Row(
+                      children: [
+                        Expanded(
+                            child: Center(
+                          child: Text(
+                            "Details",
+                            style: TextStyle(color: Colors.blueGrey[400], fontSize: 16),
+                          ),
+                        )),
+                        Expanded(
+                            child: Center(
+                          child: Text(
+                            "Skills",
+                            style: TextStyle(color: Colors.blueGrey[400], fontSize: 16),
+                          ),
+                        )),
+                        Expanded(
+                            child: Center(
+                          child: Text(
+                            "Activities",
+                            style: TextStyle(color: Colors.blueGrey[400], fontSize: 16),
+                          ),
+                        )),
+                      ],
+                    ),
                   ),
-                  child: Row(
-                    children: [
-                      Expanded(child: Center(
-                        child: Text("Details", style: TextStyle(
-                          color: Colors.blueGrey[400],
-                          fontSize: 16
-                        ),),
-                      )),
-                      Expanded(child: Placeholder()),
-                      Expanded(child: Placeholder())
-                    ],
-                  ),
-                ),)
-                ,
+                ),
               )
             ],
           ),
