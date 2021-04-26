@@ -32,6 +32,18 @@ class _JobFinderProfilePageState extends State<JobFinderProfilePage> {
                     IconButton(onPressed: () {}, icon: Icon(LineIcons.cog)),
                   ],
                 ),
+              ),
+              Column(
+                children: [
+                  Container(
+                    height: 72,
+                    width: 72,
+                    decoration: BoxDecoration(
+                      color: Colors.red,
+                      borderRadius: BorderRadius.circular(8)
+                    ),
+                  )
+                ],
               )
             ],
           ),
