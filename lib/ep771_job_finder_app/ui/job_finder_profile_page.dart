@@ -34,24 +34,31 @@ class _JobFinderProfilePageState extends State<JobFinderProfilePage> {
                 ),
               ),
               SizedBox(
-
                 width: double.infinity,
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     Container(
-                      height: 72,
-                      width: 72,
-                      decoration: BoxDecoration(
-                        color: Colors.red,
-                        borderRadius: BorderRadius.circular(8)
-                      ),
+                      height: 82,
+                      width: 82,
+                      decoration: BoxDecoration(color: Colors.red, borderRadius: BorderRadius.circular(8)),
                     ),
                     Padding(
-                      padding: const EdgeInsets.symmetric(vertical: 16),
-                      child: Text("Dream Walker"),
+                      padding: const EdgeInsets.symmetric(vertical: 12),
+                      child: Text(
+                        "Dream Walker",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 16
+                        ),
+                      ),
                     ),
-                    Text("Android/Flutter Developer")
+                    Text(
+                      "Android/Flutter Developer",
+                      style: TextStyle(
+                        color: Colors.blueGrey,
+                      ),
+                    )
                   ],
                 ),
               )
