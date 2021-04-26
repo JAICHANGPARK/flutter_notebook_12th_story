@@ -1,6 +1,6 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:line_icons/line_icons.dart';
-
 
 class JobFinderProfilePage extends StatefulWidget {
   @override
@@ -21,17 +21,21 @@ class _JobFinderProfilePageState extends State<JobFinderProfilePage> {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    IconButton(onPressed: (){}, icon: Icon(LineIcons.arrowLeft)),
-                    Text("PROFILE"),
-                    IconButton(onPressed: (){}, icon: Icon(LineIcons.cog)),
+                    IconButton(onPressed: () {}, icon: Icon(LineIcons.arrowLeft)),
+                    Text(
+                      "PROFILE",
+                      style: TextStyle(
+                        fontSize: 18,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                    IconButton(onPressed: () {}, icon: Icon(LineIcons.cog)),
                   ],
                 ),
               )
-
             ],
           ),
-        )
-        ,
+        ),
       ),
     );
   }
