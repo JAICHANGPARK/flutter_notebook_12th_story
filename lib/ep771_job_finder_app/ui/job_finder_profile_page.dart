@@ -65,6 +65,7 @@ class _JobFinderProfilePageState extends State<JobFinderProfilePage> {
                 child: Container(
                   decoration: BoxDecoration(
                     color: Colors.blueGrey[50],
+                    borderRadius: BorderRadius.circular(24)
                   ),
                 ),),
               )
