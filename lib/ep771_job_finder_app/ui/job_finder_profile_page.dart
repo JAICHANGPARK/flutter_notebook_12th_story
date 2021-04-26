@@ -34,7 +34,7 @@ class _JobFinderProfilePageState extends State<JobFinderProfilePage> {
                 ),
               ),
               SizedBox(
-                
+
                 width: double.infinity,
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.center,
@@ -47,7 +47,10 @@ class _JobFinderProfilePageState extends State<JobFinderProfilePage> {
                         borderRadius: BorderRadius.circular(8)
                       ),
                     ),
-                    Text("Dream Walker"),
+                    Padding(
+                      padding: const EdgeInsets.symmetric(vertical: 16),
+                      child: Text("Dream Walker"),
+                    ),
                     Text("Android/Flutter Developer")
                   ],
                 ),
