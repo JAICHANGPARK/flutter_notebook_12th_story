@@ -58,7 +58,14 @@ class _JobFinderProfilePageState extends State<JobFinderProfilePage> {
                     )
                   ],
                 ),
-              )
+              ),
+              SizedBox(height: 48,
+              child: Container(
+
+                decoration: BoxDecoration(
+                  color: Colors.blueGrey[50],
+                ),
+              ),)
             ],
           ),
         ),
