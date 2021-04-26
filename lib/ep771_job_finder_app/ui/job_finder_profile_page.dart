@@ -59,13 +59,15 @@ class _JobFinderProfilePageState extends State<JobFinderProfilePage> {
                   ],
                 ),
               ),
-              SizedBox(height: 48,
-              child: Container(
-
-                decoration: BoxDecoration(
-                  color: Colors.blueGrey[50],
-                ),
-              ),)
+              Padding(
+                padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 16),
+                child: SizedBox(height: 48,
+                child: Container(
+                  decoration: BoxDecoration(
+                    color: Colors.blueGrey[50],
+                  ),
+                ),),
+              )
             ],
           ),
         ),
