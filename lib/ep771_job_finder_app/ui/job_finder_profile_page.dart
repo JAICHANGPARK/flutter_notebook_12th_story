@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:line_icons/line_icons.dart';
+import 'package:percent_indicator/percent_indicator.dart';
 
 class JobFinderProfilePage extends StatefulWidget {
   @override
@@ -163,12 +164,25 @@ class _JobFinderProfilePageState extends State<JobFinderProfilePage> {
               ),
               SizedBox(
                 height: 160,
-                child: Row(
-                  children: [
-                    Expanded(child: Placeholder()),
-                    Expanded(child: Placeholder()),
-                    Expanded(child: Placeholder())
-                  ],
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 2),
+                  child: Row(
+                    children: [
+                      Expanded(child: Column(
+                        children: [
+                          CircularPercentIndicator(
+                            radius: 84.0,
+                            lineWidth: 8.0,
+                            percent: 0.8,
+                            center: new Text("4.9",),
+                            progressColor: Colors.red,
+                          )
+                        ],
+                      )),
+                      Expanded(child: Placeholder()),
+                      Expanded(child: Placeholder())
+                    ],
+                  ),
                 ),
               ),
               SizedBox(
