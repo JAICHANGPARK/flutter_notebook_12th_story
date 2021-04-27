@@ -73,32 +73,32 @@ class _JobFinderProfilePageState extends State<JobFinderProfilePage> {
                         Expanded(
                             child: _toggleIndex == 0
                                 ? Container(
-                              margin: EdgeInsets.all(8),
-                              padding: EdgeInsets.symmetric(horizontal: 16, vertical: 4),
-                              decoration: BoxDecoration(
-                                color: Colors.white,
-                                borderRadius: BorderRadius.circular(16),
-                              ),
-                              child: Center(
-                                child: Text(
-                                  "Details",
-                                  style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
-                                ),
-                              ),
-                            )
+                                    margin: EdgeInsets.all(8),
+                                    padding: EdgeInsets.symmetric(horizontal: 16, vertical: 4),
+                                    decoration: BoxDecoration(
+                                      color: Colors.white,
+                                      borderRadius: BorderRadius.circular(16),
+                                    ),
+                                    child: Center(
+                                      child: Text(
+                                        "Details",
+                                        style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                                      ),
+                                    ),
+                                  )
                                 : InkWell(
-                              onTap: () {
-                                setState(() {
-                                  _toggleIndex = 0;
-                                });
-                              },
-                              child: Center(
-                                child: Text(
-                                  "Details",
-                                  style: TextStyle(color: Colors.blueGrey[400], fontSize: 16),
-                                ),
-                              ),
-                            )),
+                                    onTap: () {
+                                      setState(() {
+                                        _toggleIndex = 0;
+                                      });
+                                    },
+                                    child: Center(
+                                      child: Text(
+                                        "Details",
+                                        style: TextStyle(color: Colors.blueGrey[400], fontSize: 16),
+                                      ),
+                                    ),
+                                  )),
                         Expanded(
                             child: _toggleIndex == 1
                                 ? Container(
@@ -131,57 +131,68 @@ class _JobFinderProfilePageState extends State<JobFinderProfilePage> {
                         Expanded(
                             child: _toggleIndex == 2
                                 ? Container(
-                              margin: EdgeInsets.all(8),
-                              padding: EdgeInsets.symmetric(horizontal: 16, vertical: 4),
-                              decoration: BoxDecoration(
-                                color: Colors.white,
-                                borderRadius: BorderRadius.circular(16),
-                              ),
-                              child: Center(
-                                child: Text(
-                                  "Activities",
-                                  style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
-                                ),
-                              ),
-                            )
+                                    margin: EdgeInsets.all(8),
+                                    padding: EdgeInsets.symmetric(horizontal: 16, vertical: 4),
+                                    decoration: BoxDecoration(
+                                      color: Colors.white,
+                                      borderRadius: BorderRadius.circular(16),
+                                    ),
+                                    child: Center(
+                                      child: Text(
+                                        "Activities",
+                                        style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                                      ),
+                                    ),
+                                  )
                                 : InkWell(
-                              onTap: () {
-                                setState(() {
-                                  _toggleIndex = 2;
-                                });
-                              },
-                              child: Center(
-                                child: Text(
-                                  "Activities",
-                                  style: TextStyle(color: Colors.blueGrey[400], fontSize: 16),
-                                ),
-                              ),
-                            )),
+                                    onTap: () {
+                                      setState(() {
+                                        _toggleIndex = 2;
+                                      });
+                                    },
+                                    child: Center(
+                                      child: Text(
+                                        "Activities",
+                                        style: TextStyle(color: Colors.blueGrey[400], fontSize: 16),
+                                      ),
+                                    ),
+                                  )),
                       ],
                     ),
                   ),
                 ),
               ),
               SizedBox(
-                height: 160,
+                height: 142,
                 child: Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 2),
                   child: Row(
                     children: [
-                      Expanded(child: Column(
+                      Expanded(
+                          child: Column(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: [
                           CircularPercentIndicator(
                             radius: 72.0,
                             lineWidth: 8.0,
                             percent: 0.8,
-                            center: Text("4.9",style: TextStyle(
-                              fontSize: 16,
-                              fontWeight: FontWeight.bold
-                            ),),
+                            center: Text(
+                              "4.9",
+                              style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                            ),
                             progressColor: Colors.pink,
                           ),
-                          Text("Ux Design"),
-                          Text("100 Review")
+                          Text(
+                            "Ux Design",
+                            style: TextStyle(
+                              color: Colors.blueGrey,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                          Text(
+                            "100 Review",
+                            style: TextStyle(color: Colors.grey),
+                          )
                         ],
                       )),
                       Expanded(child: Placeholder()),
