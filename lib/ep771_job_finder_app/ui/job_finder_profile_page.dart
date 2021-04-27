@@ -128,7 +128,7 @@ class _JobFinderProfilePageState extends State<JobFinderProfilePage> {
                                     ),
                                   )),
                         Expanded(
-                            child: _toggleIndex == 1
+                            child: _toggleIndex == 2
                                 ? Container(
                               margin: EdgeInsets.all(8),
                               padding: EdgeInsets.symmetric(horizontal: 16, vertical: 4),
@@ -138,7 +138,7 @@ class _JobFinderProfilePageState extends State<JobFinderProfilePage> {
                               ),
                               child: Center(
                                 child: Text(
-                                  "Skills",
+                                  "Activities",
                                   style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
                                 ),
                               ),
@@ -146,12 +146,12 @@ class _JobFinderProfilePageState extends State<JobFinderProfilePage> {
                                 : InkWell(
                               onTap: () {
                                 setState(() {
-                                  _toggleIndex = 1;
+                                  _toggleIndex = 2;
                                 });
                               },
                               child: Center(
                                 child: Text(
-                                  "Skills",
+                                  "Activities",
                                   style: TextStyle(color: Colors.blueGrey[400], fontSize: 16),
                                 ),
                               ),
