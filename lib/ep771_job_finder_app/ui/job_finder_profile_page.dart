@@ -279,16 +279,20 @@ class _JobFinderProfilePageState extends State<JobFinderProfilePage> {
               ),
               SizedBox(
                 height: 160,
-                child: Column(
-                  children: [
-                    Text("Review"),
-                    Expanded(child: Container(
-                      decoration: BoxDecoration(
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 16),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text("Review"),
+                      Expanded(child: Container(
+                        decoration: BoxDecoration(
 color: Colors.white,
-                        border: Border.all(color: Colors.grey[300]!),
-                      ),
-                    ))
-                  ],
+                          border: Border.all(color: Colors.grey[300]!),
+                        ),
+                      ))
+                    ],
+                  ),
                 ),
               ),
             ],
