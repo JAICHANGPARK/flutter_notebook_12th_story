@@ -70,12 +70,34 @@ class _JobFinderProfilePageState extends State<JobFinderProfilePage> {
                     child: Row(
                       children: [
                         Expanded(
-                            child: Center(
-                          child: Text(
-                            "Details",
-                            style: TextStyle(color: Colors.blueGrey[400], fontSize: 16),
-                          ),
-                        )),
+                            child: _toggleIndex == 0
+                                ? Container(
+                              margin: EdgeInsets.all(8),
+                              padding: EdgeInsets.symmetric(horizontal: 16, vertical: 4),
+                              decoration: BoxDecoration(
+                                color: Colors.white,
+                                borderRadius: BorderRadius.circular(16),
+                              ),
+                              child: Center(
+                                child: Text(
+                                  "Details",
+                                  style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                                ),
+                              ),
+                            )
+                                : InkWell(
+                              onTap: () {
+                                setState(() {
+                                  _toggleIndex = 0;
+                                });
+                              },
+                              child: Center(
+                                child: Text(
+                                  "Details",
+                                  style: TextStyle(color: Colors.blueGrey[400], fontSize: 16),
+                                ),
+                              ),
+                            )),
                         Expanded(
                             child: _toggleIndex == 1
                                 ? Container(
@@ -106,12 +128,34 @@ class _JobFinderProfilePageState extends State<JobFinderProfilePage> {
                                     ),
                                   )),
                         Expanded(
-                            child: Center(
-                          child: Text(
-                            "Activities",
-                            style: TextStyle(color: Colors.blueGrey[400], fontSize: 16),
-                          ),
-                        )),
+                            child: _toggleIndex == 1
+                                ? Container(
+                              margin: EdgeInsets.all(8),
+                              padding: EdgeInsets.symmetric(horizontal: 16, vertical: 4),
+                              decoration: BoxDecoration(
+                                color: Colors.white,
+                                borderRadius: BorderRadius.circular(16),
+                              ),
+                              child: Center(
+                                child: Text(
+                                  "Skills",
+                                  style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                                ),
+                              ),
+                            )
+                                : InkWell(
+                              onTap: () {
+                                setState(() {
+                                  _toggleIndex = 1;
+                                });
+                              },
+                              child: Center(
+                                child: Text(
+                                  "Skills",
+                                  style: TextStyle(color: Colors.blueGrey[400], fontSize: 16),
+                                ),
+                              ),
+                            )),
                       ],
                     ),
                   ),
