@@ -284,14 +284,20 @@ class _JobFinderProfilePageState extends State<JobFinderProfilePage> {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text("Review", style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                      ),),
-                      SizedBox(height: 16,),
-                      Expanded(child: Container(
+                      Text(
+                        "Review",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      SizedBox(
+                        height: 16,
+                      ),
+                      Expanded(
+                          child: Container(
                         decoration: BoxDecoration(
-color: Colors.white,
-                          border: Border.all(color: Colors.grey[300]!),
+                          color: Colors.white,
+                          border: Border.all(color: Colors.grey[200]!),
                         ),
                       ))
                     ],
