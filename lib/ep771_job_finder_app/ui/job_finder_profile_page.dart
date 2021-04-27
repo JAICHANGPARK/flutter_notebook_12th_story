@@ -10,7 +10,7 @@ class JobFinderProfilePage extends StatefulWidget {
 class _JobFinderProfilePageState extends State<JobFinderProfilePage> {
 
   int _toggleIndex = 0;
-  
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -78,7 +78,22 @@ class _JobFinderProfilePageState extends State<JobFinderProfilePage> {
                           ),
                         )),
                         Expanded(
-                            child: Center(
+                            child:
+                            _toggleIndex  == 1 ?Container(
+                              padding: EdgeInsets.symmetric(horizontal: 16, vertical: 4),
+                              decoration: BoxDecoration(
+                                color: Colors.white,
+                                borderRadius: BorderRadius.circular(16),
+
+                              ),
+                              child:  Center(
+                                child: Text(
+                                  "Skills",
+                                  style: TextStyle(color: Colors.blueGrey[400], fontSize: 16),
+                                ),
+                              ),
+                            ):
+                            Center(
                           child: Text(
                             "Skills",
                             style: TextStyle(color: Colors.blueGrey[400], fontSize: 16),
