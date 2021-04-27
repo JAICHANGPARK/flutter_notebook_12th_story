@@ -8,6 +8,9 @@ class JobFinderProfilePage extends StatefulWidget {
 }
 
 class _JobFinderProfilePageState extends State<JobFinderProfilePage> {
+
+  int _toggleIndex = 0;
+  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
