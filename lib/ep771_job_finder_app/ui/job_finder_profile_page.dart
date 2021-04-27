@@ -79,6 +79,7 @@ class _JobFinderProfilePageState extends State<JobFinderProfilePage> {
                         Expanded(
                             child: _toggleIndex == 1
                                 ? Container(
+                                    margin: EdgeInsets.all(8),
                                     padding: EdgeInsets.symmetric(horizontal: 16, vertical: 4),
                                     decoration: BoxDecoration(
                                       color: Colors.white,
@@ -87,23 +88,23 @@ class _JobFinderProfilePageState extends State<JobFinderProfilePage> {
                                     child: Center(
                                       child: Text(
                                         "Skills",
-                                        style: TextStyle(color: Colors.blueGrey[400], fontSize: 16),
+                                        style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
                                       ),
                                     ),
                                   )
                                 : InkWell(
-                              onTap: (){
-                                setState(() {
-                                  _toggleIndex = 1;
-                                });
-                              },
-                                  child: Center(
+                                    onTap: () {
+                                      setState(() {
+                                        _toggleIndex = 1;
+                                      });
+                                    },
+                                    child: Center(
                                       child: Text(
                                         "Skills",
                                         style: TextStyle(color: Colors.blueGrey[400], fontSize: 16),
                                       ),
                                     ),
-                                )),
+                                  )),
                         Expanded(
                             child: Center(
                           child: Text(
