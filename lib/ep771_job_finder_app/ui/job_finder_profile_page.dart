@@ -261,7 +261,7 @@ class _JobFinderProfilePageState extends State<JobFinderProfilePage> {
                     width: 130,
                     decoration: BoxDecoration(
                         color: Colors.white,
-                        border: Border.all(color: Colors.grey[400]!),
+                        border: Border.all(color: Colors.grey[300]!),
                         borderRadius: BorderRadius.circular(8)),
                     child: Center(
                       child: Text(
@@ -279,7 +279,16 @@ class _JobFinderProfilePageState extends State<JobFinderProfilePage> {
               ),
               SizedBox(
                 height: 160,
-                child: Placeholder(),
+                child: Column(
+                  children: [
+                    Text("Review"),
+                    Expanded(child: Container(
+                      decoration: BoxDecoration(
+
+                      ),
+                    ))
+                  ],
+                ),
               ),
             ],
           ),
