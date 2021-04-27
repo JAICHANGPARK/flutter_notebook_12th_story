@@ -163,7 +163,13 @@ class _JobFinderProfilePageState extends State<JobFinderProfilePage> {
               ),
               SizedBox(
                 height: 160,
-                child: Placeholder(),
+                child: Row(
+                  children: [
+                    Expanded(child: Placeholder()),
+                    Expanded(child: Placeholder()),
+                    Expanded(child: Placeholder())
+                  ],
+                ),
               ),
               SizedBox(
                 height: 52,
