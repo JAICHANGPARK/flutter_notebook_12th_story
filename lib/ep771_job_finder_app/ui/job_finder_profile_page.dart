@@ -284,7 +284,8 @@ class _JobFinderProfilePageState extends State<JobFinderProfilePage> {
                     Text("Review"),
                     Expanded(child: Container(
                       decoration: BoxDecoration(
-
+color: Colors.white,
+                        border: Border.all(color: Colors.grey[300]!),
                       ),
                     ))
                   ],
