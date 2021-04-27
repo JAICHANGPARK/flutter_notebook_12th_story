@@ -174,9 +174,14 @@ class _JobFinderProfilePageState extends State<JobFinderProfilePage> {
                             radius: 72.0,
                             lineWidth: 8.0,
                             percent: 0.8,
-                            center: Text("4.9",),
-                            progressColor: Colors.red,
-                          )
+                            center: Text("4.9",style: TextStyle(
+                              fontSize: 16,
+                              fontWeight: FontWeight.bold
+                            ),),
+                            progressColor: Colors.pink,
+                          ),
+                          Text("Ux Design"),
+                          Text("100 Review")
                         ],
                       )),
                       Expanded(child: Placeholder()),
