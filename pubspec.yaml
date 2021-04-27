@@ -24,6 +24,7 @@ dependencies:
   intl: any
   smooth_page_indicator: any
   xlive_switch: ^1.0.5
+  percent_indicator:  ^3.0.1
 
 #  Any have awesome tootle switch?
 
