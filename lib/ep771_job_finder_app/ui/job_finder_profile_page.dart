@@ -8,7 +8,6 @@ class JobFinderProfilePage extends StatefulWidget {
 }
 
 class _JobFinderProfilePageState extends State<JobFinderProfilePage> {
-
   int _toggleIndex = 0;
 
   @override
@@ -78,27 +77,33 @@ class _JobFinderProfilePageState extends State<JobFinderProfilePage> {
                           ),
                         )),
                         Expanded(
-                            child:
-                            _toggleIndex  == 1 ?Container(
-                              padding: EdgeInsets.symmetric(horizontal: 16, vertical: 4),
-                              decoration: BoxDecoration(
-                                color: Colors.white,
-                                borderRadius: BorderRadius.circular(16),
-
-                              ),
-                              child:  Center(
-                                child: Text(
-                                  "Skills",
-                                  style: TextStyle(color: Colors.blueGrey[400], fontSize: 16),
-                                ),
-                              ),
-                            ):
-                            Center(
-                          child: Text(
-                            "Skills",
-                            style: TextStyle(color: Colors.blueGrey[400], fontSize: 16),
-                          ),
-                        )),
+                            child: _toggleIndex == 1
+                                ? Container(
+                                    padding: EdgeInsets.symmetric(horizontal: 16, vertical: 4),
+                                    decoration: BoxDecoration(
+                                      color: Colors.white,
+                                      borderRadius: BorderRadius.circular(16),
+                                    ),
+                                    child: Center(
+                                      child: Text(
+                                        "Skills",
+                                        style: TextStyle(color: Colors.blueGrey[400], fontSize: 16),
+                                      ),
+                                    ),
+                                  )
+                                : InkWell(
+                              onTap: (){
+                                setState(() {
+                                  _toggleIndex = 1;
+                                });
+                              },
+                                  child: Center(
+                                      child: Text(
+                                        "Skills",
+                                        style: TextStyle(color: Colors.blueGrey[400], fontSize: 16),
+                                      ),
+                                    ),
+                                )),
                         Expanded(
                             child: Center(
                           child: Text(
@@ -119,7 +124,9 @@ class _JobFinderProfilePageState extends State<JobFinderProfilePage> {
                 height: 52,
                 child: Placeholder(),
               ),
-              SizedBox(height: 24,),
+              SizedBox(
+                height: 24,
+              ),
               SizedBox(
                 height: 160,
                 child: Placeholder(),
