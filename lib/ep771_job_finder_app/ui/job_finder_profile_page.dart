@@ -171,10 +171,10 @@ class _JobFinderProfilePageState extends State<JobFinderProfilePage> {
                       Expanded(child: Column(
                         children: [
                           CircularPercentIndicator(
-                            radius: 84.0,
+                            radius: 72.0,
                             lineWidth: 8.0,
                             percent: 0.8,
-                            center: new Text("4.9",),
+                            center: Text("4.9",),
                             progressColor: Colors.red,
                           )
                         ],
