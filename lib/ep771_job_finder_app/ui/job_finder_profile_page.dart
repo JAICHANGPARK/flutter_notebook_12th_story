@@ -175,7 +175,7 @@ class _JobFinderProfilePageState extends State<JobFinderProfilePage> {
                           CircularPercentIndicator(
                             radius: 72.0,
                             lineWidth: 8.0,
-                            percent: 0.8,
+                            percent: 0.85,
                             center: Text(
                               "4.9",
                               style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
@@ -195,8 +195,60 @@ class _JobFinderProfilePageState extends State<JobFinderProfilePage> {
                           )
                         ],
                       )),
-                      Expanded(child: Placeholder()),
-                      Expanded(child: Placeholder())
+                      Expanded(
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            children: [
+                              CircularPercentIndicator(
+                                radius: 72.0,
+                                lineWidth: 8.0,
+                                percent: 0.8,
+                                center: Text(
+                                  "4.8",
+                                  style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                                ),
+                                progressColor: Colors.orange,
+                              ),
+                              Text(
+                                "Research",
+                                style: TextStyle(
+                                  color: Colors.blueGrey,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                              Text(
+                                "50 Review",
+                                style: TextStyle(color: Colors.grey),
+                              )
+                            ],
+                          )),
+                      Expanded(
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            children: [
+                              CircularPercentIndicator(
+                                radius: 72.0,
+                                lineWidth: 8.0,
+                                percent: 0.7,
+                                center: Text(
+                                  "4.0",
+                                  style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                                ),
+                                progressColor: Colors.teal,
+                              ),
+                              Text(
+                                "Ux Design",
+                                style: TextStyle(
+                                  color: Colors.blueGrey,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                              Text(
+                                "100 Review",
+                                style: TextStyle(color: Colors.grey),
+                              )
+                            ],
+                          )),
                     ],
                   ),
                 ),
