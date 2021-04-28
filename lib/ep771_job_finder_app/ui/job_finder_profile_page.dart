@@ -420,6 +420,8 @@ class _JobFinderProfilePageState extends State<JobFinderProfilePage> {
                           child: Padding(
                             padding: const EdgeInsets.all(8.0),
                             child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              mainAxisAlignment: MainAxisAlignment.spaceAround,
                               children: [
                                 Row(
                                   children: [
