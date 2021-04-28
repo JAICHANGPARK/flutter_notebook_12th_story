@@ -349,9 +349,12 @@ class _JobFinderProfilePageState extends State<JobFinderProfilePage> {
                               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                               children: List.generate(5, (index) => Row(children: [
                                 Text("${5- index}"),
-                                Icon( Icons.star,
-                                  color: Colors.orange,
-                                  size: 14,),
+                                Padding(
+                                  padding: const EdgeInsets.symmetric(horizontal: 8),
+                                  child: Icon( Icons.star,
+                                    color: Colors.orange,
+                                    size: 14,),
+                                ),
                                 Expanded(
                                   child: Container(height: 8,
                                     decoration: BoxDecoration(
