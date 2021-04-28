@@ -389,7 +389,8 @@ class _JobFinderProfilePageState extends State<JobFinderProfilePage> {
                                 )),
                           ],
                         ),
-                      ))
+                      )),
+                      
                     ],
                   ),
                 ),
