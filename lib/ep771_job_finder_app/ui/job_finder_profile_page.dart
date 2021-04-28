@@ -417,7 +417,7 @@ class _JobFinderProfilePageState extends State<JobFinderProfilePage> {
                         ),
                         Expanded(
                           child: Placeholder(),
-                          flex: 8,
+                          flex: 9,
                         ),
                       ],
                     ),
