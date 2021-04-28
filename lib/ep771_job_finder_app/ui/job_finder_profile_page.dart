@@ -315,7 +315,8 @@ class _JobFinderProfilePageState extends State<JobFinderProfilePage> {
                                         ),
                                         Row(
                                           children: List.generate(5, (index) => Icon(Icons.star, color:
-                                            Colors.orange,)),
+                                            Colors.orange,
+                                          size: 16,)),
                                         )
                                       ],
                                     )),
