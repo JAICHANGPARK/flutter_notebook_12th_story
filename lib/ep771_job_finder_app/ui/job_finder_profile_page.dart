@@ -393,7 +393,6 @@ class _JobFinderProfilePageState extends State<JobFinderProfilePage> {
                   ),
                 ),
               ),
-
               SizedBox(
                 height: 100,
                 child: Padding(
@@ -403,10 +402,25 @@ class _JobFinderProfilePageState extends State<JobFinderProfilePage> {
                       border: Border.all(color: Colors.grey[200]!),
                       color: Colors.white,
                     ),
+                    child: Row(
+                      children: [
+                        Expanded(
+                          child: Container(
+                            decoration: BoxDecoration(
+                              color: Colors.grey,
+                            ),
+                          ),
+                          flex: 3,
+                        ),
+                        Expanded(
+                          child: Placeholder(),
+                          flex: 10,
+                        ),
+                      ],
+                    ),
                   ),
                 ),
               ),
-
             ],
           ),
         ),
