@@ -410,13 +410,26 @@ class _JobFinderProfilePageState extends State<JobFinderProfilePage> {
                             child: Container(
                               decoration: BoxDecoration(
                                 color: Colors.grey,
+                                borderRadius: BorderRadius.circular(4),
                               ),
                             ),
                           ),
                           flex: 2,
                         ),
                         Expanded(
-                          child: Placeholder(),
+                          child: Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Column(
+                              children: [
+                                Row(
+                                  children: [
+                                    Text("Dream Walker | 5"),
+                                    Icon(Icons.star, size: 14, color: Colors.orange,)
+                                  ],
+                                )
+                              ],
+                            ),
+                          ),
                           flex: 9,
                         ),
                       ],
