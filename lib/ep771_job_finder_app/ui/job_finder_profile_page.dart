@@ -318,10 +318,10 @@ class _JobFinderProfilePageState extends State<JobFinderProfilePage> {
                                             fontWeight: FontWeight.bold,
                                           ),
                                         ),
-                                        Text("/ 5", style: TextStyle(
-                                          color: Colors.grey,
-                                          fontSize: 16
-                                        ),)
+                                        Text(
+                                          "/ 5",
+                                          style: TextStyle(color: Colors.grey, fontSize: 16),
+                                        )
                                       ],
                                     ),
                                     Padding(
@@ -337,7 +337,12 @@ class _JobFinderProfilePageState extends State<JobFinderProfilePage> {
                                                 )),
                                       ),
                                     ),
-                                    Text("256 Review")
+                                    Text(
+                                      "256 Review",
+                                      style: TextStyle(
+                                        color: Colors.grey,
+                                      ),
+                                    )
                                   ],
                                 )),
                             Expanded(flex: 6, child: Placeholder()),
