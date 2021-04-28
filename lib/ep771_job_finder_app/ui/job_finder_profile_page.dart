@@ -309,13 +309,13 @@ class _JobFinderProfilePageState extends State<JobFinderProfilePage> {
                                       crossAxisAlignment: CrossAxisAlignment.center,
                                       mainAxisAlignment: MainAxisAlignment.center,
                                       children: [
-                                        Row(
+                                        Row(mainAxisAlignment: MainAxisAlignment.center,
                                           children: [
                                             Text("4.5"),
                                             Text("/ 5")
                                           ],
                                         ),
-                                        Row(
+                                        Row(mainAxisAlignment: MainAxisAlignment.center,
                                           children: List.generate(5, (index) => Icon(Icons.star, color:
                                             Colors.orange,
                                           size: 16,)),
