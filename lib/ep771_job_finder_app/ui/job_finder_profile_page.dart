@@ -423,8 +423,15 @@ class _JobFinderProfilePageState extends State<JobFinderProfilePage> {
                               children: [
                                 Row(
                                   children: [
-                                    Text("Dream Walker | 5"),
-                                    Icon(Icons.star, size: 14, color: Colors.orange,)
+                                    Text(
+                                      "Dream Walker  |  5 ",
+                                      style: TextStyle(color: Colors.blueGrey, fontWeight: FontWeight.bold),
+                                    ),
+                                    Icon(
+                                      Icons.star,
+                                      size: 14,
+                                      color: Colors.orange,
+                                    )
                                   ],
                                 )
                               ],
