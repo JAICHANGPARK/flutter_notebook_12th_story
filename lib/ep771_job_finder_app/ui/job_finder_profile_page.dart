@@ -405,16 +405,19 @@ class _JobFinderProfilePageState extends State<JobFinderProfilePage> {
                     child: Row(
                       children: [
                         Expanded(
-                          child: Container(
-                            decoration: BoxDecoration(
-                              color: Colors.grey,
+                          child: Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Container(
+                              decoration: BoxDecoration(
+                                color: Colors.grey,
+                              ),
                             ),
                           ),
-                          flex: 3,
+                          flex: 2,
                         ),
                         Expanded(
                           child: Placeholder(),
-                          flex: 10,
+                          flex: 8,
                         ),
                       ],
                     ),
