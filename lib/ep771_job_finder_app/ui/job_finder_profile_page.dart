@@ -371,9 +371,14 @@ class _JobFinderProfilePageState extends State<JobFinderProfilePage> {
                                                       color: Colors.grey[200],
                                                       borderRadius: BorderRadius.circular(8),
                                                     ),
-                                                    child: Container(
-                                                      decoration: BoxDecoration(
-                                                        color: Colors.orange,
+                                                    child: Padding(
+                                                      padding: EdgeInsets.only(right: index * 20.0),
+                                                      child: Container(
+
+                                                        decoration: BoxDecoration(
+                                                          color: Colors.orange,
+                                                          borderRadius: BorderRadius.circular(8),
+                                                        ),
                                                       ),
                                                     ),
                                                   ),
