@@ -374,7 +374,6 @@ class _JobFinderProfilePageState extends State<JobFinderProfilePage> {
                                                     child: Padding(
                                                       padding: EdgeInsets.only(right: index * 20.0),
                                                       child: Container(
-
                                                         decoration: BoxDecoration(
                                                           color: Colors.orange,
                                                           borderRadius: BorderRadius.circular(8),
@@ -390,22 +389,24 @@ class _JobFinderProfilePageState extends State<JobFinderProfilePage> {
                           ],
                         ),
                       )),
-
                     ],
                   ),
                 ),
               ),
+
               SizedBox(
-                height: 24,
-              ),
-              SizedBox(
-                height: 64,
-                child: Container(
-                  decoration: BoxDecoration(
-                    border: Border.all(color: Colors.grey[200]!),
+                height: 100,
+                child: Padding(
+                  padding: const EdgeInsets.all(16.0),
+                  child: Container(
+                    decoration: BoxDecoration(
+                      border: Border.all(color: Colors.grey[200]!),
+                      color: Colors.white,
+                    ),
                   ),
                 ),
               ),
+
             ],
           ),
         ),
