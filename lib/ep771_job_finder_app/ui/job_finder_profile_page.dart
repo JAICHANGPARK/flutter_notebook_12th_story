@@ -356,10 +356,13 @@ class _JobFinderProfilePageState extends State<JobFinderProfilePage> {
                                     size: 14,),
                                 ),
                                 Expanded(
-                                  child: Container(height: 8,
-                                    decoration: BoxDecoration(
-                                      color: Colors.grey,
-                                      borderRadius: BorderRadius.circular(8)
+                                  child: Padding(
+                                    padding: const EdgeInsets.only(right: 8),
+                                    child: Container(height: 8,
+                                      decoration: BoxDecoration(
+                                        color: Colors.grey[200],
+                                        borderRadius: BorderRadius.circular(8)
+                                      ),
                                     ),
                                   ),
                                 )
