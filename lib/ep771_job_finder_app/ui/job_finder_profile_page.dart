@@ -303,8 +303,20 @@ class _JobFinderProfilePageState extends State<JobFinderProfilePage> {
                         ),
                             child: Row(
                               children: [
-                                Expanded(child: Placeholder()),
-                                Expanded(child: Placeholder()),
+                                Expanded(
+                                    flex: 3,
+                                    child: Column(
+                                      children: [
+                                        Row(
+                                          children: [
+                                            
+                                          ],
+                                        )
+                                      ],
+                                    )),
+                                Expanded(
+                                    flex: 6,
+                                    child: Placeholder()),
                               ],
                             ),
                       ))
