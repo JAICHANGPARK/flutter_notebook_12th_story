@@ -433,7 +433,8 @@ class _JobFinderProfilePageState extends State<JobFinderProfilePage> {
                                       color: Colors.orange,
                                     )
                                   ],
-                                )
+                                ),
+                                Text("I love Flutter :)")
                               ],
                             ),
                           ),
