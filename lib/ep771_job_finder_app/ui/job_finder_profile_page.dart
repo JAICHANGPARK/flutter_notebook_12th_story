@@ -299,7 +299,14 @@ class _JobFinderProfilePageState extends State<JobFinderProfilePage> {
                           color: Colors.white,
                           borderRadius: BorderRadius.circular(12),
                           border: Border.all(color: Colors.grey[200]!),
+
                         ),
+                            child: Row(
+                              children: [
+                                Expanded(child: Placeholder()),
+                                Expanded(child: Placeholder()),
+                              ],
+                            ),
                       ))
                     ],
                   ),
