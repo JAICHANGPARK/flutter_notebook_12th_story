@@ -309,8 +309,13 @@ class _JobFinderProfilePageState extends State<JobFinderProfilePage> {
                                       children: [
                                         Row(
                                           children: [
-                                            
+                                            Text("4.5"),
+                                            Text("/ 5")
                                           ],
+                                        ),
+                                        Row(
+                                          children: List.generate(5, (index) => Icon(Icons.star, color:
+                                            Colors.orange,)),
                                         )
                                       ],
                                     )),
