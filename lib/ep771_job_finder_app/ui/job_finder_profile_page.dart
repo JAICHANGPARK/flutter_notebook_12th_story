@@ -345,7 +345,12 @@ class _JobFinderProfilePageState extends State<JobFinderProfilePage> {
                                     )
                                   ],
                                 )),
-                            Expanded(flex: 6, child: Placeholder()),
+                            Expanded(flex: 6, child: Column(
+                              children: List.generate(5, (index) => Row(children: [
+                                Text("${5- index}"),
+                                Text("")
+                              ],)),
+                            )),
                           ],
                         ),
                       ))
