@@ -390,8 +390,19 @@ class _JobFinderProfilePageState extends State<JobFinderProfilePage> {
                           ],
                         ),
                       )),
-                      
+
                     ],
+                  ),
+                ),
+              ),
+              SizedBox(
+                height: 24,
+              ),
+              SizedBox(
+                height: 64,
+                child: Container(
+                  decoration: BoxDecoration(
+                    border: Border.all(color: Colors.grey[200]!),
                   ),
                 ),
               ),
