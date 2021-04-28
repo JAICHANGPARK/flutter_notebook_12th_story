@@ -299,35 +299,47 @@ class _JobFinderProfilePageState extends State<JobFinderProfilePage> {
                           color: Colors.white,
                           borderRadius: BorderRadius.circular(12),
                           border: Border.all(color: Colors.grey[200]!),
-
                         ),
-                            child: Row(
-                              children: [
-                                Expanded(
-                                    flex: 3,
-                                    child: Column(
-                                      crossAxisAlignment: CrossAxisAlignment.center,
+                        child: Row(
+                          children: [
+                            Expanded(
+                                flex: 3,
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: [
+                                    Row(
                                       mainAxisAlignment: MainAxisAlignment.center,
                                       children: [
-                                        Row(mainAxisAlignment: MainAxisAlignment.center,
-                                          children: [
-                                            Text("4.5"),
-                                            Text("/ 5")
-                                          ],
+                                        Text(
+                                          "4.5",
+                                          style: TextStyle(
+                                            fontSize: 24,
+                                            fontWeight: FontWeight.bold,
+                                          ),
                                         ),
-                                        Row(mainAxisAlignment: MainAxisAlignment.center,
-                                          children: List.generate(5, (index) => Icon(Icons.star, color:
-                                            Colors.orange,
-                                          size: 16,)),
-                                        ),
-                                        Text("256 Review")
+                                        Text("/ 5", style: TextStyle(
+                                          color: Colors.grey,
+                                          fontSize: 16
+                                        ),)
                                       ],
-                                    )),
-                                Expanded(
-                                    flex: 6,
-                                    child: Placeholder()),
-                              ],
-                            ),
+                                    ),
+                                    Row(
+                                      mainAxisAlignment: MainAxisAlignment.center,
+                                      children: List.generate(
+                                          5,
+                                          (index) => Icon(
+                                                Icons.star,
+                                                color: Colors.orange,
+                                                size: 16,
+                                              )),
+                                    ),
+                                    Text("256 Review")
+                                  ],
+                                )),
+                            Expanded(flex: 6, child: Placeholder()),
+                          ],
+                        ),
                       ))
                     ],
                   ),
