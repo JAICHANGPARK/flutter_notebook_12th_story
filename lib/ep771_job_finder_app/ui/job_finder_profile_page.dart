@@ -306,6 +306,8 @@ class _JobFinderProfilePageState extends State<JobFinderProfilePage> {
                                 Expanded(
                                     flex: 3,
                                     child: Column(
+                                      crossAxisAlignment: CrossAxisAlignment.center,
+                                      mainAxisAlignment: MainAxisAlignment.center,
                                       children: [
                                         Row(
                                           children: [
@@ -317,7 +319,8 @@ class _JobFinderProfilePageState extends State<JobFinderProfilePage> {
                                           children: List.generate(5, (index) => Icon(Icons.star, color:
                                             Colors.orange,
                                           size: 16,)),
-                                        )
+                                        ),
+                                        Text("256 Review")
                                       ],
                                     )),
                                 Expanded(
