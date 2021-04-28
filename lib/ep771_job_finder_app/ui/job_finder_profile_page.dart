@@ -324,15 +324,18 @@ class _JobFinderProfilePageState extends State<JobFinderProfilePage> {
                                         ),)
                                       ],
                                     ),
-                                    Row(
-                                      mainAxisAlignment: MainAxisAlignment.center,
-                                      children: List.generate(
-                                          5,
-                                          (index) => Icon(
-                                                Icons.star,
-                                                color: Colors.orange,
-                                                size: 16,
-                                              )),
+                                    Padding(
+                                      padding: const EdgeInsets.symmetric(vertical: 8),
+                                      child: Row(
+                                        mainAxisAlignment: MainAxisAlignment.center,
+                                        children: List.generate(
+                                            5,
+                                            (index) => Icon(
+                                                  Icons.star,
+                                                  color: Colors.orange,
+                                                  size: 14,
+                                                )),
+                                      ),
                                     ),
                                     Text("256 Review")
                                   ],
