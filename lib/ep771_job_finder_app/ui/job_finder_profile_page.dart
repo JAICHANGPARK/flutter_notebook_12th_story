@@ -345,29 +345,43 @@ class _JobFinderProfilePageState extends State<JobFinderProfilePage> {
                                     )
                                   ],
                                 )),
-                            Expanded(flex: 6, child: Column(
-                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                              children: List.generate(5, (index) => Row(children: [
-                                Text("${5- index}"),
-                                Padding(
-                                  padding: const EdgeInsets.symmetric(horizontal: 8),
-                                  child: Icon( Icons.star,
-                                    color: Colors.orange,
-                                    size: 14,),
-                                ),
-                                Expanded(
-                                  child: Padding(
-                                    padding: const EdgeInsets.only(right: 8),
-                                    child: Container(height: 8,
-                                      decoration: BoxDecoration(
-                                        color: Colors.grey[200],
-                                        borderRadius: BorderRadius.circular(8)
-                                      ),
-                                    ),
-                                  ),
-                                )
-                              ],)),
-                            )),
+                            Expanded(
+                                flex: 6,
+                                child: Column(
+                                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                  children: List.generate(
+                                      5,
+                                      (index) => Row(
+                                            children: [
+                                              Text("${5 - index}"),
+                                              Padding(
+                                                padding: const EdgeInsets.symmetric(horizontal: 8),
+                                                child: Icon(
+                                                  Icons.star,
+                                                  color: Colors.orange,
+                                                  size: 14,
+                                                ),
+                                              ),
+                                              Expanded(
+                                                child: Padding(
+                                                  padding: const EdgeInsets.only(right: 8),
+                                                  child: Container(
+                                                    height: 8,
+                                                    decoration: BoxDecoration(
+                                                      color: Colors.grey[200],
+                                                      borderRadius: BorderRadius.circular(8),
+                                                    ),
+                                                    child: Container(
+                                                      decoration: BoxDecoration(
+                                                        color: Colors.orange,
+                                                      ),
+                                                    ),
+                                                  ),
+                                                ),
+                                              )
+                                            ],
+                                          )),
+                                )),
                           ],
                         ),
                       ))
