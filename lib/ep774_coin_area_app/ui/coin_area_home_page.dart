@@ -37,7 +37,13 @@ class _CoinAreaHomeAppState extends State<CoinAreaHomePage> {
                     ],
                   ),
                 )),
-            Expanded(flex: 20, child: Placeholder()),
+            Expanded(flex: 20, child: SingleChildScrollView(
+              child: Column(
+                children: [
+                  
+                ],
+              ),
+            )),
           ],
         ),
       ),
