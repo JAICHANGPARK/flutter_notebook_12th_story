@@ -40,7 +40,12 @@ class _CoinAreaHomeAppState extends State<CoinAreaHomePage> {
             Expanded(flex: 20, child: SingleChildScrollView(
               child: Column(
                 children: [
-                  
+                  Container(
+                    height: 120,
+                    child: Placeholder(),
+                  ),
+                  Container(),
+                  Container(),
                 ],
               ),
             )),
