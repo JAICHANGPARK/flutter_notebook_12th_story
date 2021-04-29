@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class  extends StatelessWidget {
+class CoinAreaApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container();
