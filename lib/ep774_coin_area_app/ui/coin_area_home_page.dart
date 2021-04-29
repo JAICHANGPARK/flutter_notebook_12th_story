@@ -41,6 +41,7 @@ class _CoinAreaHomeAppState extends State<CoinAreaHomePage> {
                 flex: 20,
                 child: SingleChildScrollView(
                   child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Container(
                         height: 84,
