@@ -37,33 +37,35 @@ class _CoinAreaHomeAppState extends State<CoinAreaHomePage> {
                     ],
                   ),
                 )),
-            Expanded(flex: 20, child: SingleChildScrollView(
-              child: Column(
-                children: [
-                  Container(
-                    height: 84,
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-
-                      children: [
-                        Text("Your active deposit:", style: TextStyle(
-                          color: Colors.white
-                        ),),
-                        Text("\$ 17,300.00")
-                      ],
-                    ),
+            Expanded(
+                flex: 20,
+                child: SingleChildScrollView(
+                  child: Column(
+                    children: [
+                      Container(
+                        height: 84,
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              "Your active deposit:",
+                              style: TextStyle(color: Colors.white),
+                            ),
+                            Text("\$ 17,300.00")
+                          ],
+                        ),
+                      ),
+                      Container(
+                        height: 340,
+                        child: Placeholder(),
+                      ),
+                      Container(
+                        height: 360,
+                        child: Placeholder(),
+                      ),
+                    ],
                   ),
-                  Container(
-                    height: 340,
-                    child: Placeholder(),
-                  ),
-                  Container(
-                    height: 360,
-                    child: Placeholder(),
-                  ),
-                ],
-              ),
-            )),
+                )),
           ],
         ),
       ),
