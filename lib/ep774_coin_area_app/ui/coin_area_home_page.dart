@@ -45,7 +45,7 @@ class _CoinAreaHomeAppState extends State<CoinAreaHomePage> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Container(
-                        height: 84,
+                        height: 78,
                         child: Padding(
                           padding: const EdgeInsets.symmetric(horizontal: 16),
                           child: Column(
