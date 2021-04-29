@@ -16,7 +16,10 @@ class _CoinAreaHomeAppState extends State<CoinAreaHomePage> {
                 flex: 2,
                 child: Row(
                   children: [
-                    
+                    Icon(Icons.menu),
+                    Text("COIN"),
+                    Text("AREA"),
+                    CircleAvatar(),
                   ],
                 )),
             Expanded(
