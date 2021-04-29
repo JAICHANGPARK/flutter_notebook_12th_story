@@ -14,7 +14,11 @@ class _CoinAreaHomeAppState extends State<CoinAreaHomePage> {
           children: [
             Expanded(
                 flex: 2,
-                child: Placeholder()),
+                child: Row(
+                  children: [
+                    
+                  ],
+                )),
             Expanded(
                 flex: 20,
                 child: Placeholder()),
