@@ -9,6 +9,7 @@ class _CoinAreaHomeAppState extends State<CoinAreaHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color(0xff202529),
       body: SafeArea(
         child: Column(
           children: [
@@ -20,8 +21,12 @@ class _CoinAreaHomeAppState extends State<CoinAreaHomePage> {
                     children: [
                       Icon(Icons.menu),
                       Spacer(),
-                      Text("COIN"),
-                      Text("AREA"),
+                      Text("COIN",style: TextStyle(
+                        color: Colors.white,
+                      ),),
+                      Text("AREA", style: TextStyle(
+                        color: Colors.greenAccent
+                      ),),
                       Spacer(),
                       CircleAvatar(),
                     ],
