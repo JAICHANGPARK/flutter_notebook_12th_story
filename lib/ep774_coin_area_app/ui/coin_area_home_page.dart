@@ -57,6 +57,7 @@ class _CoinAreaHomeAppState extends State<CoinAreaHomePage> {
                               "\$ 17,300.00",
                               style: TextStyle(
                                 color: Colors.white,
+
                               ),
                             )
                           ],
