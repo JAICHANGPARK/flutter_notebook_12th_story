@@ -17,8 +17,10 @@ class _CoinAreaHomeAppState extends State<CoinAreaHomePage> {
                 child: Row(
                   children: [
                     Icon(Icons.menu),
+                    Spacer(),
                     Text("COIN"),
                     Text("AREA"),
+                    Spacer(),
                     CircleAvatar(),
                   ],
                 )),
