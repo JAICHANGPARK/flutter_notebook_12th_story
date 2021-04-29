@@ -52,13 +52,16 @@ class _CoinAreaHomeAppState extends State<CoinAreaHomePage> {
                               "Your active deposit:",
                               style: TextStyle(
                                 color: Colors.white,
+                                fontSize: 24,
+                                fontWeight: FontWeight.bold,
                               ),
                             ),
                             Text(
                               "\$ 17,300.00",
                               style: TextStyle(
                                 color: Colors.white,
-
+                                fontSize: 24,
+                                fontWeight: FontWeight.bold,
                               ),
                             )
                           ],
