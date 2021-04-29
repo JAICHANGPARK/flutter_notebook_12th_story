@@ -14,15 +14,18 @@ class _CoinAreaHomeAppState extends State<CoinAreaHomePage> {
           children: [
             Expanded(
                 flex: 2,
-                child: Row(
-                  children: [
-                    Icon(Icons.menu),
-                    Spacer(),
-                    Text("COIN"),
-                    Text("AREA"),
-                    Spacer(),
-                    CircleAvatar(),
-                  ],
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 16),
+                  child: Row(
+                    children: [
+                      Icon(Icons.menu),
+                      Spacer(),
+                      Text("COIN"),
+                      Text("AREA"),
+                      Spacer(),
+                      CircleAvatar(),
+                    ],
+                  ),
                 )),
             Expanded(
                 flex: 20,
