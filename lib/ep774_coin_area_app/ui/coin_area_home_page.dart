@@ -19,22 +19,29 @@ class _CoinAreaHomeAppState extends State<CoinAreaHomePage> {
                   padding: const EdgeInsets.symmetric(horizontal: 16),
                   child: Row(
                     children: [
-                      Icon(Icons.menu),
+                      Icon(
+                        Icons.menu,
+                        size: TextStyle(
+                          color: Colors.greenAccent,
+                        ),
+                      ),
                       Spacer(),
-                      Text("COIN",style: TextStyle(
-                        color: Colors.white,
-                      ),),
-                      Text("AREA", style: TextStyle(
-                        color: Colors.greenAccent
-                      ),),
+                      Text(
+                        "COIN",
+                        style: TextStyle(
+                          color: Colors.white,
+                        ),
+                      ),
+                      Text(
+                        "AREA",
+                        style: TextStyle(color: Colors.greenAccent),
+                      ),
                       Spacer(),
                       CircleAvatar(),
                     ],
                   ),
                 )),
-            Expanded(
-                flex: 20,
-                child: Placeholder()),
+            Expanded(flex: 20, child: Placeholder()),
           ],
         ),
       ),
