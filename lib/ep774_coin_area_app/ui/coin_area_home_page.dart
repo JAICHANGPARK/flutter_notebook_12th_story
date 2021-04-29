@@ -41,11 +41,11 @@ class _CoinAreaHomeAppState extends State<CoinAreaHomePage> {
               child: Column(
                 children: [
                   Container(
-                    height: 120,
+                    height: 84,
                     child: Placeholder(),
                   ),
                   Container(
-                    height: 360,
+                    height: 340,
                     child: Placeholder(),
                   ),
                   Container(
