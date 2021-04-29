@@ -12,8 +12,12 @@ class _CoinAreaHomeAppState extends State<CoinAreaHomePage> {
       body: SafeArea(
         child: Column(
           children: [
-            Expanded(child: Placeholder()),
-            Expanded(child: Placeholder()),
+            Expanded(
+                flex: 2,
+                child: Placeholder()),
+            Expanded(
+                flex: 20,
+                child: Placeholder()),
           ],
         ),
       ),
