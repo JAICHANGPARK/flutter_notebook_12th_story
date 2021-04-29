@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class CoinAreaHomePage extends StatefulWidget {
   @override
@@ -45,28 +46,31 @@ class _CoinAreaHomeAppState extends State<CoinAreaHomePage> {
                     children: [
                       Container(
                         height: 84,
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text(
-                              "Your active deposit:",
-                              style: TextStyle(
-                                color: Colors.white,
-                                fontSize: 14,
+                        child: Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 16),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                "Your active deposit:",
+                                style: GoogleFonts.montserrat(
+                                  color: Colors.white,
+                                  fontSize: 14,
+                                ),
                               ),
-                            ),
-                            SizedBox(
-                              height: 8,
-                            ),
-                            Text(
-                              "\$ 17,300.00",
-                              style: TextStyle(
-                                color: Colors.white,
-                                fontSize: 24,
-                                fontWeight: FontWeight.bold,
+                              SizedBox(
+                                height: 8,
                               ),
-                            )
-                          ],
+                              Text(
+                                "\$ 17,300.00",
+                                style: GoogleFonts.montserrat(
+                                  color: Colors.white,
+                                  fontSize: 28,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              )
+                            ],
+                          ),
                         ),
                       ),
                       Container(
