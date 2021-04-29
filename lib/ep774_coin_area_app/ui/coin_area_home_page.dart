@@ -42,7 +42,12 @@ class _CoinAreaHomeAppState extends State<CoinAreaHomePage> {
                 children: [
                   Container(
                     height: 84,
-                    child: Placeholder(),
+                    child: Column(
+                      children: [
+                        Text("Your active deposit:"),
+                        Text("\$ 17,300.00")
+                      ],
+                    ),
                   ),
                   Container(
                     height: 340,
