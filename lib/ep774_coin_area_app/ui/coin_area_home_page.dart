@@ -21,20 +21,16 @@ class _CoinAreaHomeAppState extends State<CoinAreaHomePage> {
                     children: [
                       Icon(
                         Icons.menu,
-                        size: TextStyle(
-                          color: Colors.greenAccent,
-                        ),
+                        color: Colors.greenAccent,
                       ),
                       Spacer(),
                       Text(
                         "COIN",
-                        style: TextStyle(
-                          color: Colors.white,
-                        ),
+                        style: TextStyle(color: Colors.white, fontSize: 18),
                       ),
                       Text(
                         "AREA",
-                        style: TextStyle(color: Colors.greenAccent),
+                        style: TextStyle(color: Colors.greenAccent, fontSize: 18),
                       ),
                       Spacer(),
                       CircleAvatar(),
