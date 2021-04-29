@@ -8,6 +8,8 @@ class CoinAreaHomePage extends StatefulWidget {
 class _CoinAreaHomeAppState extends State<CoinAreaHomePage> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+
+    );
   }
 }
