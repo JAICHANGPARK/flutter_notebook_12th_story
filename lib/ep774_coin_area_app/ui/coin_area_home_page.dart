@@ -93,18 +93,29 @@ class _CoinAreaHomeAppState extends State<CoinAreaHomePage> {
                                     Expanded(
                                         child: Column(
                                       children: [
-                                        Expanded(child: Card(
-                                         elevation: 0,
+                                        Expanded(
+                                            child: Card(
+                                          elevation: 0,
                                           margin: EdgeInsets.zero,
                                           color: Colors.white.withOpacity(0.2),
                                           child: Column(
                                             children: [
                                               Row(
                                                 children: [
-                                                  CircleAvatar(radius: 12,),
-                                                  Text("Bitcoin")
+                                                  CircleAvatar(
+                                                    radius: 12,
+                                                  ),
+                                                  Text(
+                                                    "Bitcoin",
+                                                    style: TextStyle(
+                                                      color: Colors.grey,
+                                                    ),
+                                                  )
                                                 ],
-                                              )
+                                              ),
+                                              Text("1.45903210 BTC", style: TextStyle(
+                                                color: Colors.white
+                                              ),)
                                             ],
                                           ),
                                         )),
