@@ -358,6 +358,19 @@ class _CoinAreaHomeAppState extends State<CoinAreaHomePage> {
                                                         onPressed: () {},
                                                         minWidth: double.infinity,
                                                         color: Colors.greenAccent,
+                                                        child: Text("DEPOSIT", style: TextStyle(
+                                                          color: Colors.white,
+
+                                                        ),),
+                                                      ),
+                                                      MaterialButton(
+                                                        onPressed: () {},
+                                                        minWidth: double.infinity,
+                                                        color: Colors.blueGrey,
+                                                        child: Text("WITHDRAW", style: TextStyle(
+                                                          color: Colors.white,
+
+                                                        ),),
                                                       )
                                                     ],
                                                   ),
