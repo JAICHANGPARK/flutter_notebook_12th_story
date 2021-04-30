@@ -249,7 +249,7 @@ class _CoinAreaHomeAppState extends State<CoinAreaHomePage> {
                                             )),
                                       ],
                                     )),
-                                    SizedBox(width: 8,),
+                                    SizedBox(width: 16,),
                                     Expanded(
                                         child: Column(
                                       children: [
