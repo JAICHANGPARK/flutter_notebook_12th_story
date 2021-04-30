@@ -84,6 +84,7 @@ class _CoinAreaHomeAppState extends State<CoinAreaHomePage> {
                                 "Balances",
                                 style: TextStyle(
                                   color: Colors.white,
+                                  fontWeight: FontWeight.bold,
                                 ),
                               ),
                               Expanded(
