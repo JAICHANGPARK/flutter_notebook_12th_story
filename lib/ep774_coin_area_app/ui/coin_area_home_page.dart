@@ -84,7 +84,11 @@ class _CoinAreaHomeAppState extends State<CoinAreaHomePage> {
                                 Expanded(child: Placeholder())
                               ],
                             )),
-                            Expanded(child: Placeholder()),
+                            Expanded(child: Column(
+                              children: [
+                                
+                              ],
+                            )),
                           ],
                         ),
                       ),
