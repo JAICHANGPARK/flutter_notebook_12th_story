@@ -93,7 +93,18 @@ class _CoinAreaHomeAppState extends State<CoinAreaHomePage> {
                                     Expanded(
                                         child: Column(
                                       children: [
-                                        Expanded(child: Placeholder()),
+                                        Expanded(child: Card(
+                                          child: Column(
+                                            children: [
+                                              Row(
+                                                children: [
+                                                  CircleAvatar(radius: 12,),
+                                                  Text("Bitcoin")
+                                                ],
+                                              )
+                                            ],
+                                          ),
+                                        )),
                                         Expanded(child: Placeholder()),
                                         Expanded(child: Placeholder())
                                       ],
