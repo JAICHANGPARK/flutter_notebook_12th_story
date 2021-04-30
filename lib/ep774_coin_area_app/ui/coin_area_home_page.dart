@@ -98,7 +98,7 @@ class _CoinAreaHomeAppState extends State<CoinAreaHomePage> {
                                             child: Card(
                                           elevation: 0,
                                           margin: EdgeInsets.zero,
-                                          color: Colors.white.withOpacity(0.2),
+                                          color: Colors.white.withOpacity(0.4),
                                           child: Column(
                                             crossAxisAlignment: CrossAxisAlignment.start,
                                             children: [
