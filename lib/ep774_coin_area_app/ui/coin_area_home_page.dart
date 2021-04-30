@@ -75,37 +75,40 @@ class _CoinAreaHomeAppState extends State<CoinAreaHomePage> {
                       ),
                       Container(
                         height: 340,
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text(
-                              "Balances",
-                              style: TextStyle(
-                                color: Colors.white,
+                        child: Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 16),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                "Balances",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                ),
                               ),
-                            ),
-                            Expanded(
-                              child: Row(
-                                children: [
-                                  Expanded(
-                                      child: Column(
-                                    children: [
-                                      Expanded(child: Placeholder()),
-                                      Expanded(child: Placeholder()),
-                                      Expanded(child: Placeholder())
-                                    ],
-                                  )),
-                                  Expanded(
-                                      child: Column(
-                                    children: [
-                                      Expanded(flex: 1, child: Placeholder()),
-                                      Expanded(flex: 2, child: Placeholder()),
-                                    ],
-                                  )),
-                                ],
+                              Expanded(
+                                child: Row(
+                                  children: [
+                                    Expanded(
+                                        child: Column(
+                                      children: [
+                                        Expanded(child: Placeholder()),
+                                        Expanded(child: Placeholder()),
+                                        Expanded(child: Placeholder())
+                                      ],
+                                    )),
+                                    Expanded(
+                                        child: Column(
+                                      children: [
+                                        Expanded(flex: 1, child: Placeholder()),
+                                        Expanded(flex: 2, child: Placeholder()),
+                                      ],
+                                    )),
+                                  ],
+                                ),
                               ),
-                            ),
-                          ],
+                            ],
+                          ),
                         ),
                       ),
                       Container(
