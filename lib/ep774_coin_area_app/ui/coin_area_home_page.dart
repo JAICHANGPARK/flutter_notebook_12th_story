@@ -212,6 +212,63 @@ class _CoinAreaHomeAppState extends State<CoinAreaHomePage> {
                                                         children: [
                                                           CircleAvatar(
                                                             radius: 12,
+                                                            backgroundColor: Colors.red,
+                                                          ),
+                                                          SizedBox(
+                                                            width: 8,
+                                                          ),
+                                                          Text(
+                                                            "Profect Money",
+                                                            style: TextStyle(
+                                                              color: Colors.grey,
+                                                            ),
+                                                          )
+                                                        ],
+                                                      ),
+                                                      Padding(
+                                                        padding: const EdgeInsets.symmetric(vertical: 8),
+                                                        child: Text(
+                                                          "1.45903210 BTC",
+                                                          style: TextStyle(
+                                                              color: Colors.white,
+                                                              fontSize: 16,
+                                                              fontWeight: FontWeight.bold),
+                                                        ),
+                                                      ),
+                                                      Text(
+                                                        "\$ 97",
+                                                        style: TextStyle(
+                                                          color: Colors.grey,
+                                                          fontSize: 14,
+                                                        ),
+                                                      ),
+                                                    ],
+                                                  ),
+                                                ),
+                                              ),
+                                            )),
+                                      ],
+                                    )),
+                                    SizedBox(width: 8,),
+                                    Expanded(
+                                        child: Column(
+                                      children: [
+                                        Expanded(
+                                            child: Padding(
+                                              padding: const EdgeInsets.symmetric(vertical: 8),
+                                              child: Card(
+                                                elevation: 0,
+                                                margin: EdgeInsets.zero,
+                                                color: Colors.white.withOpacity(0.1),
+                                                child: Padding(
+                                                  padding: const EdgeInsets.all(8.0),
+                                                  child: Column(
+                                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                                    children: [
+                                                      Row(
+                                                        children: [
+                                                          CircleAvatar(
+                                                            radius: 12,
                                                             backgroundColor: Colors.orange,
                                                           ),
                                                           SizedBox(
@@ -247,12 +304,6 @@ class _CoinAreaHomeAppState extends State<CoinAreaHomePage> {
                                                 ),
                                               ),
                                             )),
-                                      ],
-                                    )),
-                                    Expanded(
-                                        child: Column(
-                                      children: [
-                                        Expanded(flex: 1, child: Placeholder()),
                                         Expanded(flex: 2, child: Placeholder()),
                                       ],
                                     )),
