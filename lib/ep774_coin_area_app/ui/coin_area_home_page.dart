@@ -147,164 +147,6 @@ class _CoinAreaHomeAppState extends State<CoinAreaHomePage> {
                                         )),
                                         Expanded(
                                             child: Padding(
-                                              padding: const EdgeInsets.symmetric(vertical: 8),
-                                              child: Card(
-                                                elevation: 0,
-                                                margin: EdgeInsets.zero,
-                                                color: Colors.white.withOpacity(0.1),
-                                                child: Padding(
-                                                  padding: const EdgeInsets.all(8.0),
-                                                  child: Column(
-                                                    crossAxisAlignment: CrossAxisAlignment.start,
-                                                    children: [
-                                                      Row(
-                                                        children: [
-                                                          CircleAvatar(
-                                                            radius: 12,
-                                                            backgroundColor: Colors.blue,
-                                                          ),
-                                                          SizedBox(
-                                                            width: 8,
-                                                          ),
-                                                          Text(
-                                                            "Litecoin",
-                                                            style: TextStyle(
-                                                              color: Colors.grey,
-                                                            ),
-                                                          )
-                                                        ],
-                                                      ),
-                                                      Padding(
-                                                        padding: const EdgeInsets.symmetric(vertical: 8),
-                                                        child: Text(
-                                                          "1.45903210 LTC",
-                                                          style: TextStyle(
-                                                              color: Colors.white,
-                                                              fontSize: 16,
-                                                              fontWeight: FontWeight.bold),
-                                                        ),
-                                                      ),
-                                                      Text(
-                                                        "\$ 500",
-                                                        style: TextStyle(
-                                                          color: Colors.grey,
-                                                          fontSize: 14,
-                                                        ),
-                                                      ),
-                                                    ],
-                                                  ),
-                                                ),
-                                              ),
-                                            )),
-                                        Expanded(
-                                            child: Padding(
-                                              padding: const EdgeInsets.symmetric(vertical: 8),
-                                              child: Card(
-                                                elevation: 0,
-                                                margin: EdgeInsets.zero,
-                                                color: Colors.white.withOpacity(0.1),
-                                                child: Padding(
-                                                  padding: const EdgeInsets.all(8.0),
-                                                  child: Column(
-                                                    crossAxisAlignment: CrossAxisAlignment.start,
-                                                    children: [
-                                                      Row(
-                                                        children: [
-                                                          CircleAvatar(
-                                                            radius: 12,
-                                                            backgroundColor: Colors.red,
-                                                          ),
-                                                          SizedBox(
-                                                            width: 8,
-                                                          ),
-                                                          Text(
-                                                            "Profect Money",
-                                                            style: TextStyle(
-                                                              color: Colors.grey,
-                                                            ),
-                                                          )
-                                                        ],
-                                                      ),
-                                                      Padding(
-                                                        padding: const EdgeInsets.symmetric(vertical: 8),
-                                                        child: Text(
-                                                          "1.45903210 BTC",
-                                                          style: TextStyle(
-                                                              color: Colors.white,
-                                                              fontSize: 16,
-                                                              fontWeight: FontWeight.bold),
-                                                        ),
-                                                      ),
-                                                      Text(
-                                                        "\$ 97",
-                                                        style: TextStyle(
-                                                          color: Colors.grey,
-                                                          fontSize: 14,
-                                                        ),
-                                                      ),
-                                                    ],
-                                                  ),
-                                                ),
-                                              ),
-                                            )),
-                                      ],
-                                    )),
-                                    SizedBox(width: 16,),
-                                    Expanded(
-                                        child: Column(
-                                      children: [
-                                        Expanded(
-                                            child: Padding(
-                                              padding: const EdgeInsets.symmetric(vertical: 8),
-                                              child: Card(
-                                                elevation: 0,
-                                                margin: EdgeInsets.zero,
-                                                color: Colors.white.withOpacity(0.1),
-                                                child: Padding(
-                                                  padding: const EdgeInsets.all(8.0),
-                                                  child: Column(
-                                                    crossAxisAlignment: CrossAxisAlignment.start,
-                                                    children: [
-                                                      Row(
-                                                        children: [
-                                                          CircleAvatar(
-                                                            radius: 12,
-                                                            backgroundColor: Colors.teal,
-                                                          ),
-                                                          SizedBox(
-                                                            width: 8,
-                                                          ),
-                                                          Text(
-                                                            "Bitcoin Cash",
-                                                            style: TextStyle(
-                                                              color: Colors.grey,
-                                                            ),
-                                                          )
-                                                        ],
-                                                      ),
-                                                      Padding(
-                                                        padding: const EdgeInsets.symmetric(vertical: 8),
-                                                        child: Text(
-                                                          "5.45903210 BTC",
-                                                          style: TextStyle(
-                                                              color: Colors.white,
-                                                              fontSize: 16,
-                                                              fontWeight: FontWeight.bold),
-                                                        ),
-                                                      ),
-                                                      Text(
-                                                        "\$ 4700",
-                                                        style: TextStyle(
-                                                          color: Colors.grey,
-                                                          fontSize: 14,
-                                                        ),
-                                                      ),
-                                                    ],
-                                                  ),
-                                                ),
-                                              ),
-                                            )),
-                                        Expanded(flex: 2, child: Padding(
                                           padding: const EdgeInsets.symmetric(vertical: 8),
                                           child: Card(
                                             elevation: 0,
@@ -319,13 +161,64 @@ class _CoinAreaHomeAppState extends State<CoinAreaHomePage> {
                                                     children: [
                                                       CircleAvatar(
                                                         radius: 12,
-                                                        backgroundColor: Colors.orange,
+                                                        backgroundColor: Colors.blue,
                                                       ),
                                                       SizedBox(
                                                         width: 8,
                                                       ),
                                                       Text(
-                                                        "Bitcoin",
+                                                        "Litecoin",
+                                                        style: TextStyle(
+                                                          color: Colors.grey,
+                                                        ),
+                                                      )
+                                                    ],
+                                                  ),
+                                                  Padding(
+                                                    padding: const EdgeInsets.symmetric(vertical: 8),
+                                                    child: Text(
+                                                      "1.45903210 LTC",
+                                                      style: TextStyle(
+                                                          color: Colors.white,
+                                                          fontSize: 16,
+                                                          fontWeight: FontWeight.bold),
+                                                    ),
+                                                  ),
+                                                  Text(
+                                                    "\$ 500",
+                                                    style: TextStyle(
+                                                      color: Colors.grey,
+                                                      fontSize: 14,
+                                                    ),
+                                                  ),
+                                                ],
+                                              ),
+                                            ),
+                                          ),
+                                        )),
+                                        Expanded(
+                                            child: Padding(
+                                          padding: const EdgeInsets.symmetric(vertical: 8),
+                                          child: Card(
+                                            elevation: 0,
+                                            margin: EdgeInsets.zero,
+                                            color: Colors.white.withOpacity(0.1),
+                                            child: Padding(
+                                              padding: const EdgeInsets.all(8.0),
+                                              child: Column(
+                                                crossAxisAlignment: CrossAxisAlignment.start,
+                                                children: [
+                                                  Row(
+                                                    children: [
+                                                      CircleAvatar(
+                                                        radius: 12,
+                                                        backgroundColor: Colors.red,
+                                                      ),
+                                                      SizedBox(
+                                                        width: 8,
+                                                      ),
+                                                      Text(
+                                                        "Profect Money",
                                                         style: TextStyle(
                                                           color: Colors.grey,
                                                         ),
@@ -343,7 +236,7 @@ class _CoinAreaHomeAppState extends State<CoinAreaHomePage> {
                                                     ),
                                                   ),
                                                   Text(
-                                                    "\$ 11300",
+                                                    "\$ 97",
                                                     style: TextStyle(
                                                       color: Colors.grey,
                                                       fontSize: 14,
@@ -354,6 +247,122 @@ class _CoinAreaHomeAppState extends State<CoinAreaHomePage> {
                                             ),
                                           ),
                                         )),
+                                      ],
+                                    )),
+                                    SizedBox(
+                                      width: 16,
+                                    ),
+                                    Expanded(
+                                        child: Column(
+                                      children: [
+                                        Expanded(
+                                            child: Padding(
+                                          padding: const EdgeInsets.symmetric(vertical: 8),
+                                          child: Card(
+                                            elevation: 0,
+                                            margin: EdgeInsets.zero,
+                                            color: Colors.white.withOpacity(0.1),
+                                            child: Padding(
+                                              padding: const EdgeInsets.all(8.0),
+                                              child: Column(
+                                                crossAxisAlignment: CrossAxisAlignment.start,
+                                                children: [
+                                                  Row(
+                                                    children: [
+                                                      CircleAvatar(
+                                                        radius: 12,
+                                                        backgroundColor: Colors.teal,
+                                                      ),
+                                                      SizedBox(
+                                                        width: 8,
+                                                      ),
+                                                      Text(
+                                                        "Bitcoin Cash",
+                                                        style: TextStyle(
+                                                          color: Colors.grey,
+                                                        ),
+                                                      )
+                                                    ],
+                                                  ),
+                                                  Padding(
+                                                    padding: const EdgeInsets.symmetric(vertical: 8),
+                                                    child: Text(
+                                                      "5.45903210 BTC",
+                                                      style: TextStyle(
+                                                          color: Colors.white,
+                                                          fontSize: 16,
+                                                          fontWeight: FontWeight.bold),
+                                                    ),
+                                                  ),
+                                                  Text(
+                                                    "\$ 4700",
+                                                    style: TextStyle(
+                                                      color: Colors.grey,
+                                                      fontSize: 14,
+                                                    ),
+                                                  ),
+                                                ],
+                                              ),
+                                            ),
+                                          ),
+                                        )),
+                                        Expanded(
+                                            flex: 2,
+                                            child: Padding(
+                                              padding: const EdgeInsets.symmetric(vertical: 8),
+                                              child: Card(
+                                                elevation: 0,
+                                                margin: EdgeInsets.zero,
+                                                color: Colors.white.withOpacity(0.1),
+                                                child: Padding(
+                                                  padding: const EdgeInsets.all(8.0),
+                                                  child: Column(
+                                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                                    children: [
+                                                      Row(
+                                                        children: [
+                                                          CircleAvatar(
+                                                            radius: 12,
+                                                            backgroundColor: Colors.blueGrey,
+                                                          ),
+                                                          SizedBox(
+                                                            width: 8,
+                                                          ),
+                                                          Text(
+                                                            "Ether",
+                                                            style: TextStyle(
+                                                              color: Colors.grey,
+                                                            ),
+                                                          )
+                                                        ],
+                                                      ),
+                                                      Padding(
+                                                        padding: const EdgeInsets.symmetric(vertical: 8),
+                                                        child: Text(
+                                                          "1.45903210 ETH",
+                                                          style: TextStyle(
+                                                              color: Colors.white,
+                                                              fontSize: 16,
+                                                              fontWeight: FontWeight.bold),
+                                                        ),
+                                                      ),
+                                                      Text(
+                                                        "\$ 803",
+                                                        style: TextStyle(
+                                                          color: Colors.grey,
+                                                          fontSize: 14,
+                                                        ),
+                                                      ),
+                                                      MaterialButton(
+                                                        onPressed: () {},
+                                                        minWidth: double.infinity,
+                                                        color: Colors.greenAccent,
+                                                      )
+                                                    ],
+                                                  ),
+                                                ),
+                                              ),
+                                            )),
                                       ],
                                     )),
                                   ],
