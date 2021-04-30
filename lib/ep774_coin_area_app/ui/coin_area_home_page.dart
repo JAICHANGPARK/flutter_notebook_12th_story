@@ -92,19 +92,18 @@ class _CoinAreaHomeAppState extends State<CoinAreaHomePage> {
                                   children: [
                                     Expanded(
                                         child: Column(
-                                          crossAxisAlignment: CrossAxisAlignment.start,
+                                      crossAxisAlignment: CrossAxisAlignment.start,
                                       children: [
                                         Expanded(
                                             child: Padding(
-                                              padding: const EdgeInsets.symmetric(vertical: 8),
-                                              child: Card(
-                                          elevation: 0,
-                                          margin: EdgeInsets.zero,
-                                          color: Colors.white.withOpacity(0.1),
-
-                                          child: Padding(
-                                            padding: const EdgeInsets.all(8.0),
-                                            child: Column(
+                                          padding: const EdgeInsets.symmetric(vertical: 8),
+                                          child: Card(
+                                            elevation: 0,
+                                            margin: EdgeInsets.zero,
+                                            color: Colors.white.withOpacity(0.1),
+                                            child: Padding(
+                                              padding: const EdgeInsets.all(8.0),
+                                              child: Column(
                                                 crossAxisAlignment: CrossAxisAlignment.start,
                                                 children: [
                                                   Row(
@@ -112,7 +111,9 @@ class _CoinAreaHomeAppState extends State<CoinAreaHomePage> {
                                                       CircleAvatar(
                                                         radius: 12,
                                                       ),
-                                                      SizedBox(width: 8,),
+                                                      SizedBox(
+                                                        width: 8,
+                                                      ),
                                                       Text(
                                                         "Bitcoin",
                                                         style: TextStyle(
@@ -123,18 +124,24 @@ class _CoinAreaHomeAppState extends State<CoinAreaHomePage> {
                                                   ),
                                                   Padding(
                                                     padding: const EdgeInsets.symmetric(vertical: 8),
-                                                    child: Text("1.45903210 BTC", style: TextStyle(
-                                                      color: Colors.white
-                                                    ),),
+                                                    child: Text(
+                                                      "1.45903210 BTC",
+                                                      style: TextStyle(
+                                                          color: Colors.white,
+                                                          fontSize: 16,
+                                                          fontWeight: FontWeight.bold),
+                                                    ),
                                                   ),
-                                                  Text("\$ 11300", style: TextStyle(
-                                                    color: Colors.grey
-                                                  ),),
+                                                  Text(
+                                                    "\$ 11300",
+                                                    style: TextStyle(color: Colors.grey,
+                                                      fontSize: 14,),
+                                                  ),
                                                 ],
+                                              ),
                                             ),
                                           ),
-                                        ),
-                                            )),
+                                        )),
                                         Expanded(child: Placeholder()),
                                         Expanded(child: Placeholder())
                                       ],
