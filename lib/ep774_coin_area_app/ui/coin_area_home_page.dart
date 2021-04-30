@@ -117,7 +117,10 @@ class _CoinAreaHomeAppState extends State<CoinAreaHomePage> {
                                               ),
                                               Text("1.45903210 BTC", style: TextStyle(
                                                 color: Colors.white
-                                              ),)
+                                              ),),
+                                              Text("\$ 11300", style: TextStyle(
+                                                color: Colors.grey
+                                              ),),
                                             ],
                                           ),
                                         )),
