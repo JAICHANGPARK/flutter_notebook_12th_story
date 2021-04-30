@@ -76,6 +76,7 @@ class _CoinAreaHomeAppState extends State<CoinAreaHomePage> {
                       Container(
                         height: 340,
                         child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(
                               "Balances",
