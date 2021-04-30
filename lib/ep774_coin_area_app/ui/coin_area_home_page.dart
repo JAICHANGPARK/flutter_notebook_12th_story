@@ -92,6 +92,7 @@ class _CoinAreaHomeAppState extends State<CoinAreaHomePage> {
                                   children: [
                                     Expanded(
                                         child: Column(
+                                          crossAxisAlignment: CrossAxisAlignment.start,
                                       children: [
                                         Expanded(
                                             child: Card(
@@ -99,6 +100,7 @@ class _CoinAreaHomeAppState extends State<CoinAreaHomePage> {
                                           margin: EdgeInsets.zero,
                                           color: Colors.white.withOpacity(0.2),
                                           child: Column(
+                                            crossAxisAlignment: CrossAxisAlignment.start,
                                             children: [
                                               Row(
                                                 children: [
