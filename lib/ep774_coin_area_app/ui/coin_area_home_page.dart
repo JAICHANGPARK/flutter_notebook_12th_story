@@ -95,35 +95,39 @@ class _CoinAreaHomeAppState extends State<CoinAreaHomePage> {
                                           crossAxisAlignment: CrossAxisAlignment.start,
                                       children: [
                                         Expanded(
-                                            child: Card(
+                                            child: Padding(
+                                              padding: const EdgeInsets.symmetric(vertical: 8),
+                                              child: Card(
                                           elevation: 0,
                                           margin: EdgeInsets.zero,
-                                          color: Colors.white.withOpacity(0.4),
+                                          color: Colors.white.withOpacity(0.1),
+
                                           child: Column(
-                                            crossAxisAlignment: CrossAxisAlignment.start,
-                                            children: [
-                                              Row(
-                                                children: [
-                                                  CircleAvatar(
-                                                    radius: 12,
-                                                  ),
-                                                  Text(
-                                                    "Bitcoin",
-                                                    style: TextStyle(
-                                                      color: Colors.grey,
+                                              crossAxisAlignment: CrossAxisAlignment.start,
+                                              children: [
+                                                Row(
+                                                  children: [
+                                                    CircleAvatar(
+                                                      radius: 12,
                                                     ),
-                                                  )
-                                                ],
-                                              ),
-                                              Text("1.45903210 BTC", style: TextStyle(
-                                                color: Colors.white
-                                              ),),
-                                              Text("\$ 11300", style: TextStyle(
-                                                color: Colors.grey
-                                              ),),
-                                            ],
+                                                    Text(
+                                                      "Bitcoin",
+                                                      style: TextStyle(
+                                                        color: Colors.grey,
+                                                      ),
+                                                    )
+                                                  ],
+                                                ),
+                                                Text("1.45903210 BTC", style: TextStyle(
+                                                  color: Colors.white
+                                                ),),
+                                                Text("\$ 11300", style: TextStyle(
+                                                  color: Colors.grey
+                                                ),),
+                                              ],
                                           ),
-                                        )),
+                                        ),
+                                            )),
                                         Expanded(child: Placeholder()),
                                         Expanded(child: Placeholder())
                                       ],
