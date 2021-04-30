@@ -353,6 +353,7 @@ class _CoinAreaHomeAppState extends State<CoinAreaHomePage> {
                                                           fontSize: 14,
                                                         ),
                                                       ),
+                                                      Spacer(),
                                                       MaterialButton(
                                                         onPressed: () {},
                                                         minWidth: double.infinity,
