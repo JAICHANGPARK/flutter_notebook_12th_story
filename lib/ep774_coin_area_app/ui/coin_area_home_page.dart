@@ -110,6 +110,7 @@ class _CoinAreaHomeAppState extends State<CoinAreaHomePage> {
                                                     children: [
                                                       CircleAvatar(
                                                         radius: 12,
+                                                        backgroundColor: Colors.orange,
                                                       ),
                                                       SizedBox(
                                                         width: 8,
@@ -134,8 +135,10 @@ class _CoinAreaHomeAppState extends State<CoinAreaHomePage> {
                                                   ),
                                                   Text(
                                                     "\$ 11300",
-                                                    style: TextStyle(color: Colors.grey,
-                                                      fontSize: 14,),
+                                                    style: TextStyle(
+                                                      color: Colors.grey,
+                                                      fontSize: 14,
+                                                    ),
                                                   ),
                                                 ],
                                               ),
