@@ -269,13 +269,13 @@ class _CoinAreaHomeAppState extends State<CoinAreaHomePage> {
                                                         children: [
                                                           CircleAvatar(
                                                             radius: 12,
-                                                            backgroundColor: Colors.orange,
+                                                            backgroundColor: Colors.teal,
                                                           ),
                                                           SizedBox(
                                                             width: 8,
                                                           ),
                                                           Text(
-                                                            "Bitcoin",
+                                                            "Bitcoin Cash",
                                                             style: TextStyle(
                                                               color: Colors.grey,
                                                             ),
@@ -285,7 +285,7 @@ class _CoinAreaHomeAppState extends State<CoinAreaHomePage> {
                                                       Padding(
                                                         padding: const EdgeInsets.symmetric(vertical: 8),
                                                         child: Text(
-                                                          "1.45903210 BTC",
+                                                          "5.45903210 BTC",
                                                           style: TextStyle(
                                                               color: Colors.white,
                                                               fontSize: 16,
@@ -293,7 +293,7 @@ class _CoinAreaHomeAppState extends State<CoinAreaHomePage> {
                                                         ),
                                                       ),
                                                       Text(
-                                                        "\$ 11300",
+                                                        "\$ 4700",
                                                         style: TextStyle(
                                                           color: Colors.grey,
                                                           fontSize: 14,
@@ -304,7 +304,56 @@ class _CoinAreaHomeAppState extends State<CoinAreaHomePage> {
                                                 ),
                                               ),
                                             )),
-                                        Expanded(flex: 2, child: Placeholder()),
+                                        Expanded(flex: 2, child: Padding(
+                                          padding: const EdgeInsets.symmetric(vertical: 8),
+                                          child: Card(
+                                            elevation: 0,
+                                            margin: EdgeInsets.zero,
+                                            color: Colors.white.withOpacity(0.1),
+                                            child: Padding(
+                                              padding: const EdgeInsets.all(8.0),
+                                              child: Column(
+                                                crossAxisAlignment: CrossAxisAlignment.start,
+                                                children: [
+                                                  Row(
+                                                    children: [
+                                                      CircleAvatar(
+                                                        radius: 12,
+                                                        backgroundColor: Colors.orange,
+                                                      ),
+                                                      SizedBox(
+                                                        width: 8,
+                                                      ),
+                                                      Text(
+                                                        "Bitcoin",
+                                                        style: TextStyle(
+                                                          color: Colors.grey,
+                                                        ),
+                                                      )
+                                                    ],
+                                                  ),
+                                                  Padding(
+                                                    padding: const EdgeInsets.symmetric(vertical: 8),
+                                                    child: Text(
+                                                      "1.45903210 BTC",
+                                                      style: TextStyle(
+                                                          color: Colors.white,
+                                                          fontSize: 16,
+                                                          fontWeight: FontWeight.bold),
+                                                    ),
+                                                  ),
+                                                  Text(
+                                                    "\$ 11300",
+                                                    style: TextStyle(
+                                                      color: Colors.grey,
+                                                      fontSize: 14,
+                                                    ),
+                                                  ),
+                                                ],
+                                              ),
+                                            ),
+                                          ),
+                                        )),
                                       ],
                                     )),
                                   ],
