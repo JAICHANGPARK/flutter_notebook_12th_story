@@ -77,21 +77,28 @@ class _CoinAreaHomeAppState extends State<CoinAreaHomePage> {
                         height: 340,
                         child: Column(
                           children: [
-                            Text("Balances"),
+                            Text(
+                              "Balances",
+                              style: TextStyle(
+                                color: Colors.white,
+                              ),
+                            ),
                             Expanded(
                               child: Row(
                                 children: [
-                                  Expanded(child: Column(
+                                  Expanded(
+                                      child: Column(
                                     children: [
                                       Expanded(child: Placeholder()),
                                       Expanded(child: Placeholder()),
                                       Expanded(child: Placeholder())
                                     ],
                                   )),
-                                  Expanded(child: Column(
+                                  Expanded(
+                                      child: Column(
                                     children: [
-                                      Expanded(flex : 1, child: Placeholder()),
-                                      Expanded(flex: 2,child: Placeholder()),
+                                      Expanded(flex: 1, child: Placeholder()),
+                                      Expanded(flex: 2, child: Placeholder()),
                                     ],
                                   )),
                                 ],
