@@ -393,6 +393,7 @@ class _CoinAreaHomeAppState extends State<CoinAreaHomePage> {
                       Container(
                         height: 360,
                         child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(
                               "Statistic",
