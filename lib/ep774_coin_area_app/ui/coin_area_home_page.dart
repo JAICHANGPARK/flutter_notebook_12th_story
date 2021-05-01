@@ -396,13 +396,10 @@ class _CoinAreaHomeAppState extends State<CoinAreaHomePage> {
                           children: [
                             Text("Statistic"),
                             Expanded(
-                              child: ListView.builder(itemBuilder: (context, index){
+                              child: ListView.builder(itemBuilder: (context, index) {
                                 return Container(
                                   height: 160,
-                                  decoration: BoxDecoration(
-                                    color: Colors.red
-
-                                  ),
+                                  decoration: BoxDecoration(color: Colors.red),
                                 );
                               }),
                             ),
