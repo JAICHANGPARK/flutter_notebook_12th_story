@@ -84,8 +84,8 @@ class _CoinAreaDepositPageState extends State<CoinAreaDepositPage> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [Text("Next", style: TextStyle(
-                        color: Colors.white,
-                      ),), Icon(Icons.arrow_forward)],
+                        color: Colors.white, fontSize: 16
+                      ),),SizedBox(width: 8,), Icon(Icons.arrow_forward, color: Colors.white,)],
                     ),
                   ),
                 )),
