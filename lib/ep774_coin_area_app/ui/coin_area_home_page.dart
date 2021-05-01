@@ -401,7 +401,7 @@ class _CoinAreaHomeAppState extends State<CoinAreaHomePage> {
                                   height: 160,
                                   decoration: BoxDecoration(
                                     color: Colors.red
-                                        
+
                                   ),
                                 );
                               }),
