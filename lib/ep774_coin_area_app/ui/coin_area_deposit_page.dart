@@ -52,10 +52,13 @@ class _CoinAreaDepositPageState extends State<CoinAreaDepositPage> {
                                   color: Colors.grey,
                                 ),
                               ),
-                              Text("Step 2", style: TextStyle(
-                                color: Colors.grey,
-                                fontWeight: FontWeight.bold,
-                              ),),
+                              Text(
+                                "Step 2",
+                                style: TextStyle(
+                                  color: Colors.grey,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
                             ],
                           )
                         ],
@@ -65,15 +68,20 @@ class _CoinAreaDepositPageState extends State<CoinAreaDepositPage> {
                     ],
                   ),
                 )),
-            Expanded(flex: 20, child: Placeholder()),
-            Expanded(flex: 2, child : MaterialButton(onPressed: () {  },
-                    child:Row(
-                      children: [
-                        Text("Next"),
-                        Icon(Icons.arrow_forward)
-                      ],
+            Expanded(flex: 25, child: Placeholder()),
+            Expanded(
+                flex: 3,
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: MaterialButton(
+                    minWidth: double.infinity,
+                    color: Colors.greenAccent,
+                    onPressed: () {},
+                    child: Row(
+                      children: [Text("Next"), Icon(Icons.arrow_forward)],
                     ),
-            )),
+                  ),
+                )),
           ],
         ),
       ),
