@@ -421,7 +421,6 @@ class _CoinAreaHomeAppState extends State<CoinAreaHomePage> {
                                                 color: Colors.white,
                                                 fontWeight: FontWeight.bold
                                               ),),
-                                              SizedBox(height: 4,),
                                               Row(
                                                 children: [
                                                   CircleAvatar(backgroundColor: Colors.deepOrangeAccent,
