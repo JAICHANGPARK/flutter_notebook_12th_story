@@ -406,13 +406,14 @@ class _CoinAreaHomeAppState extends State<CoinAreaHomePage> {
                               child: ListView.builder(itemBuilder: (context, index) {
                                 return Container(
                                   height: 120,
-                                  decoration: BoxDecoration(color: Colors.red),
+                                  decoration: BoxDecoration(),
                                   margin: EdgeInsets.only(left: 16, right: 16, bottom: 16),
                                   child: Column(
                                     children: [
                                       Expanded(child: Row(
                                         children: [
                                           Expanded(child: Column(
+                                            crossAxisAlignment: CrossAxisAlignment.start,
                                             children: [
                                               Text("CRYPTO COIN"),
                                               Row(
