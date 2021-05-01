@@ -456,7 +456,7 @@ class _CoinAreaHomeAppState extends State<CoinAreaHomePage> {
                                                   color: Colors.white,
                                                   fontWeight: FontWeight.bold
                                               ),),
-                                              Text("1.45903210", style: TextStyle(
+                                              Text("0", style: TextStyle(
                                                 fontSize: 16,  color: Colors.white,
                                               ),),
                                             ],
