@@ -72,7 +72,7 @@ class _CoinAreaDepositPageState extends State<CoinAreaDepositPage> {
             Expanded(
                 flex: 3,
                 child: Padding(
-                  padding: const EdgeInsets.all(8.0),
+                  padding: const EdgeInsets.all(12.0),
                   child: MaterialButton(
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(7)
@@ -81,7 +81,11 @@ class _CoinAreaDepositPageState extends State<CoinAreaDepositPage> {
                     color: Colors.greenAccent,
                     onPressed: () {},
                     child: Row(
-                      children: [Text("Next"), Icon(Icons.arrow_forward)],
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [Text("Next", style: TextStyle(
+                        color: Colors.white,
+                      ),), Icon(Icons.arrow_forward)],
                     ),
                   ),
                 )),
