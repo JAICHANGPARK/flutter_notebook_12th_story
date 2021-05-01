@@ -417,7 +417,7 @@ class _CoinAreaHomeAppState extends State<CoinAreaHomePage> {
                                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                             children: [
                                               Text("CRYPTO COIN", style: TextStyle(
-                                                  fontSize: 13,
+                                                  fontSize: 12,
                                                 color: Colors.white,
                                                 fontWeight: FontWeight.bold
                                               ),),
@@ -438,7 +438,7 @@ class _CoinAreaHomeAppState extends State<CoinAreaHomePage> {
                                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                             children: [
                                               Text("EARNED TOTAL", style: TextStyle(
-                                                  fontSize: 13,
+                                                  fontSize: 12,
                                                   color: Colors.white,
                                                   fontWeight: FontWeight.bold
                                               ),),
@@ -452,7 +452,7 @@ class _CoinAreaHomeAppState extends State<CoinAreaHomePage> {
                                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                             children: [
                                               Text("PENDING WITHDRAW", style: TextStyle(
-                                                  fontSize: 13,
+                                                  fontSize: 12,
                                                   color: Colors.white,
                                                   fontWeight: FontWeight.bold
                                               ),),
