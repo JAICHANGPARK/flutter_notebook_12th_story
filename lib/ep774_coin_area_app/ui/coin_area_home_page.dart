@@ -433,7 +433,20 @@ class _CoinAreaHomeAppState extends State<CoinAreaHomePage> {
                                               ),
                                             ],
                                           )),
-                                          Expanded(child: Placeholder()),
+                                          Expanded(child: Column(
+                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                            children: [
+                                              Text("CRYPTO COIN", style: TextStyle(
+                                                  fontSize: 13,
+                                                  color: Colors.white,
+                                                  fontWeight: FontWeight.bold
+                                              ),),
+                                              Text("BTC", style: TextStyle(
+                                                fontSize: 16,  color: Colors.white,
+                                              ),),
+                                            ],
+                                          )),
                                           Expanded(child: Placeholder())
                                         ],
                                       )),
