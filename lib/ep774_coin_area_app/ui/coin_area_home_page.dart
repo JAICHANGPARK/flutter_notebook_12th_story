@@ -396,7 +396,7 @@ class _CoinAreaHomeAppState extends State<CoinAreaHomePage> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Padding(
-                              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
+                              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 6),
                               child: Text(
                                 "Statistic",
                                 style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
@@ -414,9 +414,10 @@ class _CoinAreaHomeAppState extends State<CoinAreaHomePage> {
                                         children: [
                                           Expanded(child: Column(
                                             crossAxisAlignment: CrossAxisAlignment.start,
+                                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                             children: [
                                               Text("CRYPTO COIN", style: TextStyle(
-                                                  fontSize: 14,
+                                                  fontSize: 13,
                                                 color: Colors.white,
                                                 fontWeight: FontWeight.bold
                                               ),),
@@ -425,6 +426,7 @@ class _CoinAreaHomeAppState extends State<CoinAreaHomePage> {
                                                 children: [
                                                   CircleAvatar(backgroundColor: Colors.deepOrangeAccent,
                                                   radius: 12,),
+                                                  SizedBox(width: 8,),
                                                   Text("BTC", style: TextStyle(
                                                     fontSize: 16,  color: Colors.white,
                                                   ),)
