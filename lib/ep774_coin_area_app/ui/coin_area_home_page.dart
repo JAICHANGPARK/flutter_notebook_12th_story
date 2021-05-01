@@ -408,6 +408,12 @@ class _CoinAreaHomeAppState extends State<CoinAreaHomePage> {
                                   height: 120,
                                   decoration: BoxDecoration(color: Colors.red),
                                   margin: EdgeInsets.only(left: 16, right: 16, bottom: 16),
+                                  child: Column(
+                                    children: [
+                                      Expanded(child: Placeholder()),
+                                      Expanded(child: Placeholder()),
+                                    ],
+                                  ),
                                 );
                               }),
                             ),
