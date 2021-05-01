@@ -465,9 +465,48 @@ class _CoinAreaHomeAppState extends State<CoinAreaHomePage> {
                                       )),
                                       Expanded(child: Row(
                                         children: [
-                                          Expanded(child: Placeholder()),
-                                          Expanded(child: Placeholder()),
-                                          Expanded(child: Placeholder())
+                                          Expanded(child: Column(
+                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                            children: [
+                                              Text("EARNED TOTAL", style: TextStyle(
+                                                  fontSize: 12,
+                                                  color: Colors.white,
+                                                  fontWeight: FontWeight.bold
+                                              ),),
+                                              Text("1.45903210", style: TextStyle(
+                                                fontSize: 16,  color: Colors.white,
+                                              ),),
+                                            ],
+                                          )),
+                                          Expanded(child: Column(
+                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                            children: [
+                                              Text("EARNED TOTAL", style: TextStyle(
+                                                  fontSize: 12,
+                                                  color: Colors.white,
+                                                  fontWeight: FontWeight.bold
+                                              ),),
+                                              Text("1.45903210", style: TextStyle(
+                                                fontSize: 16,  color: Colors.white,
+                                              ),),
+                                            ],
+                                          )),
+                                          Expanded(child: Column(
+                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                            children: [
+                                              Text("EARNED TOTAL", style: TextStyle(
+                                                  fontSize: 12,
+                                                  color: Colors.white,
+                                                  fontWeight: FontWeight.bold
+                                              ),),
+                                              Text("1.45903210", style: TextStyle(
+                                                fontSize: 16,  color: Colors.white,
+                                              ),),
+                                            ],
+                                          )),
                                         ],
                                       )),
                                     ],
