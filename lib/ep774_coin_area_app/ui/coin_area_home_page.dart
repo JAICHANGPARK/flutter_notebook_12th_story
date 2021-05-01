@@ -395,7 +395,9 @@ class _CoinAreaHomeAppState extends State<CoinAreaHomePage> {
                         child: Column(
                           children: [
                             Text("Statistic"),
-                            ListView.builder(itemBuilder: (context, index)),
+                            ListView.builder(itemBuilder: (context, index){
+                              return Container();
+                            }),
                           ],
                         ),
                       ),
