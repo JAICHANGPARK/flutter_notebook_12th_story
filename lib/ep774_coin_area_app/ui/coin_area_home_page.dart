@@ -469,12 +469,12 @@ class _CoinAreaHomeAppState extends State<CoinAreaHomePage> {
                                             crossAxisAlignment: CrossAxisAlignment.start,
                                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                             children: [
-                                              Text("EARNED TOTAL", style: TextStyle(
+                                              Text("WITHDRAW TOTAL", style: TextStyle(
                                                   fontSize: 12,
                                                   color: Colors.white,
                                                   fontWeight: FontWeight.bold
                                               ),),
-                                              Text("1.45903210", style: TextStyle(
+                                              Text("0.45903210", style: TextStyle(
                                                 fontSize: 16,  color: Colors.white,
                                               ),),
                                             ],
@@ -483,12 +483,12 @@ class _CoinAreaHomeAppState extends State<CoinAreaHomePage> {
                                             crossAxisAlignment: CrossAxisAlignment.start,
                                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                             children: [
-                                              Text("EARNED TOTAL", style: TextStyle(
+                                              Text("LAST DEPOSIT", style: TextStyle(
                                                   fontSize: 12,
                                                   color: Colors.white,
                                                   fontWeight: FontWeight.bold
                                               ),),
-                                              Text("1.45903210", style: TextStyle(
+                                              Text("0.25913214", style: TextStyle(
                                                 fontSize: 16,  color: Colors.white,
                                               ),),
                                             ],
@@ -497,12 +497,12 @@ class _CoinAreaHomeAppState extends State<CoinAreaHomePage> {
                                             crossAxisAlignment: CrossAxisAlignment.start,
                                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                             children: [
-                                              Text("EARNED TOTAL", style: TextStyle(
+                                              Text("LAST WITHDRAWAL", style: TextStyle(
                                                   fontSize: 12,
                                                   color: Colors.white,
                                                   fontWeight: FontWeight.bold
                                               ),),
-                                              Text("1.45903210", style: TextStyle(
+                                              Text("0.75903233", style: TextStyle(
                                                 fontSize: 16,  color: Colors.white,
                                               ),),
                                             ],
