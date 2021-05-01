@@ -412,12 +412,30 @@ class _CoinAreaHomeAppState extends State<CoinAreaHomePage> {
                                     children: [
                                       Expanded(child: Row(
                                         children: [
+                                          Expanded(child: Column(
+                                            children: [
+                                              Text("CRYPTO COIN"),
+                                              Row(
+                                                children: [
+                                                  CircleAvatar(backgroundColor: Colors.deepOrangeAccent,),
+                                                  Text("BTC", style: TextStyle(
+                                                    fontSize: 16
+                                                  ),)
+                                                ],
+                                              ),
+                                            ],
+                                          )),
+                                          Expanded(child: Placeholder()),
+                                          Expanded(child: Placeholder())
+                                        ],
+                                      )),
+                                      Expanded(child: Row(
+                                        children: [
                                           Expanded(child: Placeholder()),
                                           Expanded(child: Placeholder()),
                                           Expanded(child: Placeholder())
                                         ],
                                       )),
-                                      Expanded(child: Placeholder()),
                                     ],
                                   ),
                                 );
