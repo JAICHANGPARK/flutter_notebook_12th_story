@@ -7,6 +7,10 @@ class CoinAreaApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
+      theme: ThemeData.light().copyWith(
+        backgroundColor: Color(0xff202529),
+        scaffoldBackgroundColor: Color(0xff202529),
+      ),
       home: CoinAreaHomePage(),
     );
   }
