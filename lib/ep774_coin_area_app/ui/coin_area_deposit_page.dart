@@ -66,6 +66,14 @@ class _CoinAreaDepositPageState extends State<CoinAreaDepositPage> {
                   ),
                 )),
             Expanded(flex: 20, child: Placeholder()),
+            Expanded(flex: 2, child : MaterialButton(onPressed: () {  },
+                    child:Row(
+                      children: [
+                        Text("Next"),
+                        Icon(Icons.arrow_forward)
+                      ],
+                    ),
+            )),
           ],
         ),
       ),
