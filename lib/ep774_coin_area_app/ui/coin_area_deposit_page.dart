@@ -74,18 +74,26 @@ class _CoinAreaDepositPageState extends State<CoinAreaDepositPage> {
                 child: Padding(
                   padding: const EdgeInsets.all(12.0),
                   child: MaterialButton(
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(7)
-                    ),
+                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(7)),
                     minWidth: double.infinity,
                     color: Colors.greenAccent,
                     onPressed: () {},
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [Text("Next", style: TextStyle(
-                        color: Colors.white, fontSize: 16
-                      ),),SizedBox(width: 8,), Icon(Icons.arrow_forward, color: Colors.white,)],
+                      children: [
+                        Text(
+                          "Next",
+                          style: TextStyle(color: Colors.white, fontSize: 16),
+                        ),
+                        SizedBox(
+                          width: 8,
+                        ),
+                        Icon(
+                          Icons.arrow_forward,
+                          color: Colors.white,
+                        )
+                      ],
                     ),
                   ),
                 )),
