@@ -52,7 +52,10 @@ class _CoinAreaDepositPageState extends State<CoinAreaDepositPage> {
                                   color: Colors.grey,
                                 ),
                               ),
-                              Text("Step 2"),
+                              Text("Step 2", style: TextStyle(
+                                color: Colors.grey,
+                                fontWeight: FontWeight.bold,
+                              ),),
                             ],
                           )
                         ],
