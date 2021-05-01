@@ -12,7 +12,7 @@ class _CoinAreaHomeAppState extends State<CoinAreaHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xff202529),
+
       body: SafeArea(
         child: Column(
           children: [
