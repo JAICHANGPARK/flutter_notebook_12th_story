@@ -74,6 +74,9 @@ class _CoinAreaDepositPageState extends State<CoinAreaDepositPage> {
                 child: Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: MaterialButton(
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(7)
+                    ),
                     minWidth: double.infinity,
                     color: Colors.greenAccent,
                     onPressed: () {},
