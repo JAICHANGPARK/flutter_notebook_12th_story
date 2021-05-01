@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_12th_story/ep774_coin_area_app/ui/coin_area_deposit_page.dart';
+import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class CoinAreaHomePage extends StatefulWidget {
@@ -355,7 +357,9 @@ class _CoinAreaHomeAppState extends State<CoinAreaHomePage> {
                                                       ),
                                                       Spacer(),
                                                       MaterialButton(
-                                                        onPressed: () {},
+                                                        onPressed: () {
+                                                          Get.to(CoinAreaDepositPage());
+                                                        },
                                                         minWidth: double.infinity,
                                                         color: Colors.greenAccent,
                                                         child: Text(
@@ -410,101 +414,137 @@ class _CoinAreaHomeAppState extends State<CoinAreaHomePage> {
                                   margin: EdgeInsets.only(left: 16, right: 16, bottom: 20),
                                   child: Column(
                                     children: [
-                                      Expanded(child: Row(
+                                      Expanded(
+                                          child: Row(
                                         children: [
-                                          Expanded(child: Column(
+                                          Expanded(
+                                              child: Column(
                                             crossAxisAlignment: CrossAxisAlignment.start,
                                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                             children: [
-                                              Text("CRYPTO COIN", style: TextStyle(
-                                                  fontSize: 12,
-                                                color: Colors.white,
-                                                fontWeight: FontWeight.bold
-                                              ),),
+                                              Text(
+                                                "CRYPTO COIN",
+                                                style: TextStyle(
+                                                    fontSize: 12, color: Colors.white, fontWeight: FontWeight.bold),
+                                              ),
                                               Row(
                                                 children: [
-                                                  CircleAvatar(backgroundColor: Colors.deepOrangeAccent,
-                                                  radius: 10,),
-                                                  SizedBox(width: 8,),
-                                                  Text("BTC", style: TextStyle(
-                                                    fontSize: 16,  color: Colors.white,
-                                                  ),)
+                                                  CircleAvatar(
+                                                    backgroundColor: Colors.deepOrangeAccent,
+                                                    radius: 10,
+                                                  ),
+                                                  SizedBox(
+                                                    width: 8,
+                                                  ),
+                                                  Text(
+                                                    "BTC",
+                                                    style: TextStyle(
+                                                      fontSize: 16,
+                                                      color: Colors.white,
+                                                    ),
+                                                  )
                                                 ],
                                               ),
                                             ],
                                           )),
-                                          Expanded(child: Column(
+                                          Expanded(
+                                              child: Column(
                                             crossAxisAlignment: CrossAxisAlignment.start,
                                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                             children: [
-                                              Text("EARNED TOTAL", style: TextStyle(
-                                                  fontSize: 12,
+                                              Text(
+                                                "EARNED TOTAL",
+                                                style: TextStyle(
+                                                    fontSize: 12, color: Colors.white, fontWeight: FontWeight.bold),
+                                              ),
+                                              Text(
+                                                "1.45903210",
+                                                style: TextStyle(
+                                                  fontSize: 16,
                                                   color: Colors.white,
-                                                  fontWeight: FontWeight.bold
-                                              ),),
-                                              Text("1.45903210", style: TextStyle(
-                                                fontSize: 16,  color: Colors.white,
-                                              ),),
+                                                ),
+                                              ),
                                             ],
                                           )),
-                                          Expanded(child: Column(
+                                          Expanded(
+                                              child: Column(
                                             crossAxisAlignment: CrossAxisAlignment.start,
                                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                             children: [
-                                              Text("PENDING WITHDRAW", style: TextStyle(
-                                                  fontSize: 12,
+                                              Text(
+                                                "PENDING WITHDRAW",
+                                                style: TextStyle(
+                                                    fontSize: 12, color: Colors.white, fontWeight: FontWeight.bold),
+                                              ),
+                                              Text(
+                                                "0",
+                                                style: TextStyle(
+                                                  fontSize: 16,
                                                   color: Colors.white,
-                                                  fontWeight: FontWeight.bold
-                                              ),),
-                                              Text("0", style: TextStyle(
-                                                fontSize: 16,  color: Colors.white,
-                                              ),),
+                                                ),
+                                              ),
                                             ],
                                           )),
                                         ],
                                       )),
-                                      Expanded(child: Row(
+                                      Expanded(
+                                          child: Row(
                                         children: [
-                                          Expanded(child: Column(
+                                          Expanded(
+                                              child: Column(
                                             crossAxisAlignment: CrossAxisAlignment.start,
                                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                             children: [
-                                              Text("WITHDRAW TOTAL", style: TextStyle(
-                                                  fontSize: 12,
+                                              Text(
+                                                "WITHDRAW TOTAL",
+                                                style: TextStyle(
+                                                    fontSize: 12, color: Colors.white, fontWeight: FontWeight.bold),
+                                              ),
+                                              Text(
+                                                "0.45903210",
+                                                style: TextStyle(
+                                                  fontSize: 16,
                                                   color: Colors.white,
-                                                  fontWeight: FontWeight.bold
-                                              ),),
-                                              Text("0.45903210", style: TextStyle(
-                                                fontSize: 16,  color: Colors.white,
-                                              ),),
+                                                ),
+                                              ),
                                             ],
                                           )),
-                                          Expanded(child: Column(
+                                          Expanded(
+                                              child: Column(
                                             crossAxisAlignment: CrossAxisAlignment.start,
                                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                             children: [
-                                              Text("LAST DEPOSIT", style: TextStyle(
-                                                  fontSize: 12,
+                                              Text(
+                                                "LAST DEPOSIT",
+                                                style: TextStyle(
+                                                    fontSize: 12, color: Colors.white, fontWeight: FontWeight.bold),
+                                              ),
+                                              Text(
+                                                "0.25913214",
+                                                style: TextStyle(
+                                                  fontSize: 16,
                                                   color: Colors.white,
-                                                  fontWeight: FontWeight.bold
-                                              ),),
-                                              Text("0.25913214", style: TextStyle(
-                                                fontSize: 16,  color: Colors.white,
-                                              ),),
+                                                ),
+                                              ),
                                             ],
                                           )),
-                                          Expanded(child: Column(
+                                          Expanded(
+                                              child: Column(
                                             crossAxisAlignment: CrossAxisAlignment.start,
                                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                             children: [
-                                              Text("LAST WITHDRAWAL", style: TextStyle(
-                                                  fontSize: 12,
+                                              Text(
+                                                "LAST WITHDRAWAL",
+                                                style: TextStyle(
+                                                    fontSize: 12, color: Colors.white, fontWeight: FontWeight.bold),
+                                              ),
+                                              Text(
+                                                "0.75903233",
+                                                style: TextStyle(
+                                                  fontSize: 16,
                                                   color: Colors.white,
-                                                  fontWeight: FontWeight.bold
-                                              ),),
-                                              Text("0.75903233", style: TextStyle(
-                                                fontSize: 16,  color: Colors.white,
-                                              ),),
+                                                ),
+                                              ),
                                             ],
                                           )),
                                         ],
