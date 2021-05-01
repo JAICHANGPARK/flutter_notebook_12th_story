@@ -395,9 +395,12 @@ class _CoinAreaHomeAppState extends State<CoinAreaHomePage> {
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Text(
-                              "Statistic",
-                              style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+                            Padding(
+                              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
+                              child: Text(
+                                "Statistic",
+                                style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+                              ),
                             ),
                             Expanded(
                               child: ListView.builder(itemBuilder: (context, index) {
