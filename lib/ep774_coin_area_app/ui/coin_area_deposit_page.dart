@@ -8,6 +8,13 @@ class CoinAreaDepositPage extends StatefulWidget {
 class _CoinAreaDepositPageState extends State<CoinAreaDepositPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: Column(
+        children: [
+          Expanded(child: Placeholder()),
+          Expanded(child: Placeholder()),
+        ],
+      ),
+    );
   }
 }
