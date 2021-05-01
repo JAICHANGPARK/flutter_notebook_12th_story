@@ -394,12 +394,16 @@ class _CoinAreaHomeAppState extends State<CoinAreaHomePage> {
                         height: 360,
                         child: Column(
                           children: [
-                            Text("Statistic"),
+                            Text(
+                              "Statistic",
+                              style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+                            ),
                             Expanded(
                               child: ListView.builder(itemBuilder: (context, index) {
                                 return Container(
-                                  height: 160,
+                                  height: 120,
                                   decoration: BoxDecoration(color: Colors.red),
+                                  margin: EdgeInsets.only(left: 16, right: 16, bottom: 16),
                                 );
                               }),
                             ),
