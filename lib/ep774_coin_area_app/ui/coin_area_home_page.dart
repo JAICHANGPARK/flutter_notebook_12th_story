@@ -407,7 +407,7 @@ class _CoinAreaHomeAppState extends State<CoinAreaHomePage> {
                                 return Container(
                                   height: 120,
                                   decoration: BoxDecoration(),
-                                  margin: EdgeInsets.only(left: 16, right: 16, bottom: 16),
+                                  margin: EdgeInsets.only(left: 16, right: 16, bottom: 20),
                                   child: Column(
                                     children: [
                                       Expanded(child: Row(
