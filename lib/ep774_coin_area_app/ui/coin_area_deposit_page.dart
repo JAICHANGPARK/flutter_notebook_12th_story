@@ -119,7 +119,7 @@ class _CoinAreaDepositPageState extends State<CoinAreaDepositPage> {
                               ),
                             ),
                             Padding(
-                              padding: const EdgeInsets.symmetric(vertical: 8),
+                              padding: const EdgeInsets.symmetric(vertical: 12),
                               child: Text("Top-up Amount:",style: TextStyle(
                                 color: Colors.white,
                               ),),
