@@ -114,7 +114,8 @@ class _CoinAreaDepositPageState extends State<CoinAreaDepositPage> {
                               "Deposit replacement",
                               style: TextStyle(
                                 color: Colors.white,
-                                fontSize: 16
+                                fontWeight: FontWeight.bold,
+                                fontSize: 16,
                               ),
                             ),
                             Padding(
