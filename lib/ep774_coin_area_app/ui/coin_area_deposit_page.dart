@@ -120,9 +120,12 @@ class _CoinAreaDepositPageState extends State<CoinAreaDepositPage> {
                             ),
                             Padding(
                               padding: const EdgeInsets.symmetric(vertical: 12),
-                              child: Text("Top-up Amount:",style: TextStyle(
-                                color: Colors.white,
-                              ),),
+                              child: Text(
+                                "Top-up Amount:",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                ),
+                              ),
                             ),
                             Container(
                               height: 48,
@@ -133,16 +136,19 @@ class _CoinAreaDepositPageState extends State<CoinAreaDepositPage> {
                               padding: EdgeInsets.symmetric(horizontal: 8),
                               child: Row(
                                 children: [
-                                  Text("1.23456789",style: TextStyle(
-                                    color: Colors.white,
-                                    fontSize: 18
-                                  ),),
+                                  Text(
+                                    "1.23456789",
+                                    style: TextStyle(color: Colors.white, fontSize: 18),
+                                  ),
                                   Spacer(),
-                                  Text("BTC",style: TextStyle(
+                                  Text(
+                                    "BTC",
+                                    style: TextStyle(color: Colors.white, fontSize: 18),
+                                  ),
+                                  Icon(
+                                    Icons.arrow_drop_down_outlined,
                                     color: Colors.white,
-                                    fontSize: 18
-                                  ),),
-                                  Icon(Icons.arrow_drop_down_outlined, color: Colors.white,),
+                                  ),
                                 ],
                               ),
                             )
