@@ -164,22 +164,25 @@ class _CoinAreaDepositPageState extends State<CoinAreaDepositPage> {
                           ),
                         ),
                       ),
-                      Column( crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text("If you gave any question, please",style: TextStyle(
-                            color: Colors.white,
-                          ),),
-                          Text.rich(TextSpan(
-                              children: [
-                                TextSpan(text: "go to the ",style: TextStyle(
-                                  color: Colors.white,
-                                ),),
-                                TextSpan(text: "Video instructions",style: TextStyle(
-                                  color: Colors.blue,
-                                ),),
-                              ]
-                          )),
-                        ],
+                      Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 16),
+                        child: Column( crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text("If you gave any question, please",style: TextStyle(
+                              color: Colors.white,
+                            ),),
+                            Text.rich(TextSpan(
+                                children: [
+                                  TextSpan(text: "go to the ",style: TextStyle(
+                                    color: Colors.white,
+                                  ),),
+                                  TextSpan(text: "Video instructions",style: TextStyle(
+                                    color: Colors.blue,
+                                  ),),
+                                ]
+                            )),
+                          ],
+                        ),
                       ),
 
                     ],
