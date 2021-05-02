@@ -105,7 +105,7 @@ class _CoinAreaDepositPageState extends State<CoinAreaDepositPage> {
                           ),
                         ),
                       ),
-                      Column(
+                      Column( crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text("Deposit replacement"),
                           Text("Top-up Amount:"),
