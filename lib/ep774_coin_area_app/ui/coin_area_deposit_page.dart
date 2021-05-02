@@ -169,7 +169,6 @@ class _CoinAreaDepositPageState extends State<CoinAreaDepositPage> {
                             childAspectRatio: 1.4,
                             crossAxisSpacing: 16
                           ), itemBuilder: (context, index){
-                            print(context);
                             return InkWell(
                               onTap: (){
                                 setState(() {
@@ -184,6 +183,48 @@ class _CoinAreaDepositPageState extends State<CoinAreaDepositPage> {
                                       color:
                                       _selectedIndex == index ? Colors.greenAccent: Colors.transparent),
                                   borderRadius: BorderRadius.circular(8)
+                                ),
+                                child:  Padding(
+                                  padding: const EdgeInsets.all(8.0),
+                                  child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: [
+                                      Row(
+                                        children: [
+                                          CircleAvatar(
+                                            radius: 12,
+                                            backgroundColor: Colors.orange,
+                                          ),
+                                          SizedBox(
+                                            width: 8,
+                                          ),
+                                          Text(
+                                            "Bitcoin",
+                                            style: TextStyle(
+                                              color: Colors.grey,
+                                            ),
+                                          )
+                                        ],
+                                      ),
+                                      Padding(
+                                        padding: const EdgeInsets.symmetric(vertical: 8),
+                                        child: Text(
+                                          "1.45903210 BTC",
+                                          style: TextStyle(
+                                              color: Colors.white,
+                                              fontSize: 16,
+                                              fontWeight: FontWeight.bold),
+                                        ),
+                                      ),
+                                      Text(
+                                        "\$ 11300",
+                                        style: TextStyle(
+                                          color: Colors.grey,
+                                          fontSize: 14,
+                                        ),
+                                      ),
+                                    ],
+                                  ),
                                 ),
                               ),
                             );
