@@ -13,6 +13,7 @@ class _CoinAreaDepositPageState extends State<CoinAreaDepositPage> {
     return Scaffold(
       body: SafeArea(
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Expanded(
                 flex: 2,
@@ -107,7 +108,10 @@ class _CoinAreaDepositPageState extends State<CoinAreaDepositPage> {
                       Column(
                         children: [
                           Text("Deposit replacement"),
-                          Text("")
+                          Text("Top-up Amount:"),
+                          Container(
+                            height: 48,
+                          )
                         ],
                       )
                     ],
