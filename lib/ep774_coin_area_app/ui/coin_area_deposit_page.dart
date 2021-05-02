@@ -165,7 +165,12 @@ class _CoinAreaDepositPageState extends State<CoinAreaDepositPage> {
                         ),
                       ),
                       Text("If you gave any question, please"),
-                      Text.rich(),
+                      Text.rich(TextSpan(
+                        children: [
+                          TextSpan(text: "go to the "),
+                          TextSpan(text: "Video instructions"),
+                        ]
+                      )),
                     ],
                   ),
                 )),
