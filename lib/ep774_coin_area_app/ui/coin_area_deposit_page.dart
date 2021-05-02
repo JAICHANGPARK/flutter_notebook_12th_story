@@ -158,17 +158,23 @@ class _CoinAreaDepositPageState extends State<CoinAreaDepositPage> {
                       Padding(
                         padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 16),
                         child: Container(
-                          height: 380,
+                          height: 360,
                           decoration: BoxDecoration(
                             color: Colors.blue,
                           ),
                         ),
                       ),
-                      Text("If you gave any question, please"),
+                      Text("If you gave any question, please",style: TextStyle(
+                        color: Colors.white,
+                      ),),
                       Text.rich(TextSpan(
                         children: [
-                          TextSpan(text: "go to the "),
-                          TextSpan(text: "Video instructions"),
+                          TextSpan(text: "go to the ",style: TextStyle(
+                            color: Colors.white,
+                          ),),
+                          TextSpan(text: "Video instructions",style: TextStyle(
+                            color: Colors.blue,
+                          ),),
                         ]
                       )),
                     ],
