@@ -104,6 +104,12 @@ class _CoinAreaDepositPageState extends State<CoinAreaDepositPage> {
                           ),
                         ),
                       ),
+                      Column(
+                        children: [
+                          Text("Deposit replacement"),
+                          Text("")
+                        ],
+                      )
                     ],
                   ),
                 )),
