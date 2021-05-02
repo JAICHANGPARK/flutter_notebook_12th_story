@@ -128,7 +128,7 @@ class _CoinAreaDepositPageState extends State<CoinAreaDepositPage> {
                               ),
                             ),
                             Container(
-                              height: 48,
+                              height: 42,
                               decoration: BoxDecoration(
                                 color: Colors.white.withOpacity(0.1),
                                 borderRadius: BorderRadius.circular(7),
