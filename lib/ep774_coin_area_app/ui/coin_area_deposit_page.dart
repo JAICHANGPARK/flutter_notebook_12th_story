@@ -160,8 +160,20 @@ class _CoinAreaDepositPageState extends State<CoinAreaDepositPage> {
                         child: Container(
                           height: 340,
                           decoration: BoxDecoration(
-                            color: Colors.blue,
+
                           ),
+                          child: GridView.builder(gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                            crossAxisCount: 2,
+                            mainAxisSpacing: 16,
+                            childAspectRatio: 1.4,
+                            crossAxisSpacing: 16
+                          ), itemBuilder: (context, index){
+                            print(context);
+                            return Card(
+                              margin: EdgeInsets.zero,
+                              elevation: 0,
+                            );
+                          }),
                         ),
                       ),
                       Padding(
