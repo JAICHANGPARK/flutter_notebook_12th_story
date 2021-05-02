@@ -154,7 +154,18 @@ class _CoinAreaDepositPageState extends State<CoinAreaDepositPage> {
                             )
                           ],
                         ),
-                      )
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 16),
+                        child: Container(
+                          height: 380,
+                          decoration: BoxDecoration(
+                            color: Colors.blue,
+                          ),
+                        ),
+                      ),
+                      Text("If you gave any question, please"),
+                      Text.rich(),
                     ],
                   ),
                 )),
