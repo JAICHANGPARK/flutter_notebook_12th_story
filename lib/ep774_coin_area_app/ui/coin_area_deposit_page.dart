@@ -8,6 +8,7 @@ class CoinAreaDepositPage extends StatefulWidget {
 }
 
 class _CoinAreaDepositPageState extends State<CoinAreaDepositPage> {
+  int _selectedIndex = 0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -169,12 +170,21 @@ class _CoinAreaDepositPageState extends State<CoinAreaDepositPage> {
                             crossAxisSpacing: 16
                           ), itemBuilder: (context, index){
                             print(context);
-                            return Container(
-                              margin: EdgeInsets.zero,
-                              decoration: BoxDecoration(
-                                color: Colors.white.withOpacity(0.1),
-                                border: Border.all(),
-                                borderRadius: BorderRadius.circular(8)
+                            return InkWell(
+                              onTap: (){
+                                setState(() {
+                                  _selectedIndex = index;
+                                });
+                              },
+                              child: Container(
+                                margin: EdgeInsets.zero,
+                                decoration: BoxDecoration(
+                                  color: Colors.white.withOpacity(0.1),
+                                  border: Border.all(
+                                      color:
+                                      _selectedIndex == index ? Colors.greenAccent: Colors.transparent),
+                                  borderRadius: BorderRadius.circular(8)
+                                ),
                               ),
                             );
                           }),
