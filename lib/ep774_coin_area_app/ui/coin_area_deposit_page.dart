@@ -130,6 +130,14 @@ class _CoinAreaDepositPageState extends State<CoinAreaDepositPage> {
                                 color: Colors.white.withOpacity(0.1),
                                 borderRadius: BorderRadius.circular(7),
                               ),
+                              child: Row(
+                                children: [
+                                  Text("1.23456789"),
+                                  Spacer(),
+                                  Text("BTC"),
+                                  Icon(Icons.arrow_drop_down_outlined, color: Colors.white,),
+                                ],
+                              ),
                             )
                           ],
                         ),
