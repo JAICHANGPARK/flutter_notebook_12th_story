@@ -158,7 +158,7 @@ class _CoinAreaDepositPageState extends State<CoinAreaDepositPage> {
                       Padding(
                         padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 16),
                         child: Container(
-                          height: 360,
+                          height: 340,
                           decoration: BoxDecoration(
                             color: Colors.blue,
                           ),
