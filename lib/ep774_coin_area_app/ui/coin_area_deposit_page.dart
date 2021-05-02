@@ -166,9 +166,12 @@ class _CoinAreaDepositPageState extends State<CoinAreaDepositPage> {
                           child: GridView.builder(gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                             crossAxisCount: 2,
                             mainAxisSpacing: 16,
-                            childAspectRatio: 1.4,
+                            childAspectRatio: 1.7,
                             crossAxisSpacing: 16
-                          ), itemBuilder: (context, index){
+                          ),
+
+                              itemCount: 5,
+                              itemBuilder: (context, index){
                             return InkWell(
                               onTap: (){
                                 setState(() {
@@ -188,6 +191,7 @@ class _CoinAreaDepositPageState extends State<CoinAreaDepositPage> {
                                   padding: const EdgeInsets.all(8.0),
                                   child: Column(
                                     crossAxisAlignment: CrossAxisAlignment.start,
+
                                     children: [
                                       Row(
                                         children: [
