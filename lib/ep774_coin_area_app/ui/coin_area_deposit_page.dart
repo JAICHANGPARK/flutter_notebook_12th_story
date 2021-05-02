@@ -69,38 +69,40 @@ class _CoinAreaDepositPageState extends State<CoinAreaDepositPage> {
                     ],
                   ),
                 )),
-            Expanded(flex: 25, child: Column(
-              children: [
-                Container(
-                  height: 78,
-                  child: Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 16),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(
-                          "Your active deposit:",
-                          style: GoogleFonts.montserrat(
-                            color: Colors.white,
-                            fontSize: 14,
+            Expanded(flex: 25, child: SingleChildScrollView(
+              child: Column(
+                children: [
+                  Container(
+                    height: 78,
+                    child: Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 16),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            "Your active deposit:",
+                            style: GoogleFonts.montserrat(
+                              color: Colors.white,
+                              fontSize: 14,
+                            ),
                           ),
-                        ),
-                        SizedBox(
-                          height: 8,
-                        ),
-                        Text(
-                          "\$ 17,300.00",
-                          style: GoogleFonts.montserrat(
-                            color: Colors.white,
-                            fontSize: 28,
-                            fontWeight: FontWeight.bold,
+                          SizedBox(
+                            height: 8,
                           ),
-                        )
-                      ],
+                          Text(
+                            "\$ 17,300.00",
+                            style: GoogleFonts.montserrat(
+                              color: Colors.white,
+                              fontSize: 28,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          )
+                        ],
+                      ),
                     ),
                   ),
-                ),
-              ],
+                ],
+              ),
             )),
             Expanded(
                 flex: 3,
