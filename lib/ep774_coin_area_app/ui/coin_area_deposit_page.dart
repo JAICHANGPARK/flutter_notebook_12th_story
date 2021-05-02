@@ -184,7 +184,7 @@ class _CoinAreaDepositPageState extends State<CoinAreaDepositPage> {
                                   color: Colors.white.withOpacity(0.1),
                                   border: Border.all(
                                       color:
-                                      _selectedIndex == index ? Colors.greenAccent: Colors.transparent),
+                                      _selectedIndex == index ? Colors.green: Colors.transparent),
                                   borderRadius: BorderRadius.circular(8)
                                 ),
                                 child:  Padding(
