@@ -138,7 +138,10 @@ class _CoinAreaDepositPageState extends State<CoinAreaDepositPage> {
                                     fontSize: 18
                                   ),),
                                   Spacer(),
-                                  Text("BTC"),
+                                  Text("BTC",style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 18
+                                  ),),
                                   Icon(Icons.arrow_drop_down_outlined, color: Colors.white,),
                                 ],
                               ),
