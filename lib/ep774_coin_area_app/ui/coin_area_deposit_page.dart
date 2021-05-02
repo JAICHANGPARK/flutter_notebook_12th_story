@@ -111,6 +111,11 @@ class _CoinAreaDepositPageState extends State<CoinAreaDepositPage> {
                           Text("Top-up Amount:"),
                           Container(
                             height: 48,
+                            decoration: BoxDecoration(
+                              color: Colors.white.withOpacity(0.1),
+                              borderRadius: BorderRadius.circular(7),
+
+                            ),
                           )
                         ],
                       )
