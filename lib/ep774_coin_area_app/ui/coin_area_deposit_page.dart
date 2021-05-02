@@ -107,9 +107,15 @@ class _CoinAreaDepositPageState extends State<CoinAreaDepositPage> {
                       ),
                       Padding(
                         padding: const EdgeInsets.symmetric(horizontal: 16),
-                        child: Column( crossAxisAlignment: CrossAxisAlignment.start,
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Text("Deposit replacement"),
+                            Text(
+                              "Deposit replacement",
+                              style: TextStyle(
+                                color: Colors.white,
+                              ),
+                            ),
                             Padding(
                               padding: const EdgeInsets.symmetric(vertical: 8),
                               child: Text("Top-up Amount:"),
@@ -119,7 +125,6 @@ class _CoinAreaDepositPageState extends State<CoinAreaDepositPage> {
                               decoration: BoxDecoration(
                                 color: Colors.white.withOpacity(0.1),
                                 borderRadius: BorderRadius.circular(7),
-
                               ),
                             )
                           ],
