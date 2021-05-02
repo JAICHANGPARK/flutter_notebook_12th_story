@@ -169,9 +169,13 @@ class _CoinAreaDepositPageState extends State<CoinAreaDepositPage> {
                             crossAxisSpacing: 16
                           ), itemBuilder: (context, index){
                             print(context);
-                            return Card(
+                            return Container(
                               margin: EdgeInsets.zero,
-                              elevation: 0,
+                              decoration: BoxDecoration(
+                                color: Colors.white.withOpacity(0.1),
+                                border: Border.all(),
+                                borderRadius: BorderRadius.circular(8)
+                              ),
                             );
                           }),
                         ),
