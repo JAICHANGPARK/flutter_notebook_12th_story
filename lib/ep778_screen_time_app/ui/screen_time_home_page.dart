@@ -11,13 +11,14 @@ class _ScreenTimeHomePageState extends State<ScreenTimeHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       bottomNavigationBar: BottomNavigationBar(
+        type: BottomNavigationBarType.fixed,
         backgroundColor: Colors.grey, items: [
           BottomNavigationBarItem(icon: Icon(Icons.bar_chart_outlined), label: "Activity"),
         BottomNavigationBarItem(icon: Icon(Icons.favorite_border), label: "Family"),
         BottomNavigationBarItem(icon: Icon(Icons.account_circle_outlined), label: "Friends"),
-        BottomNavigationBarItem(icon: Icon(Icons.bar_chart_outlined), label: "Activity"),
-        BottomNavigationBarItem(icon: Icon(Icons.bar_chart_outlined), label: "Activity"),
-      ],
+        BottomNavigationBarItem(icon: Icon(Icons.bar_chart_outlined), label: "Coach"),
+        BottomNavigationBarItem(icon: Icon(Icons.setting), label: "Settings"),
+      ]s
         
       ),
     );
