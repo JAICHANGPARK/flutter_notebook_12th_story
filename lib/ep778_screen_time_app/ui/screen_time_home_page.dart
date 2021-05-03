@@ -42,10 +42,14 @@ class _ScreenTimeHomePageState extends State<ScreenTimeHomePage> {
                     )
                   ],
                 ),
-                SizedBox(
-                  height: MediaQuery.of(context).size.height / 3,
-                  child: Placeholder(),
 
+                Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 24),
+                  child: SizedBox(
+                    height: MediaQuery.of(context).size.height / 3,
+                    child: Placeholder(),
+
+                  ),
                 )
               ],
             ),
