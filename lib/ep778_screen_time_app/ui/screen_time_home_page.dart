@@ -13,6 +13,7 @@ class _ScreenTimeHomePageState extends State<ScreenTimeHomePage> {
           elevation: 5,
           type: BottomNavigationBarType.fixed,
           backgroundColor: Colors.grey[200],
+          selectedItemColor: Colors.teal,
           items: [
             BottomNavigationBarItem(icon: Icon(Icons.bar_chart_outlined), label: "Activity"),
             BottomNavigationBarItem(icon: Icon(Icons.favorite_border), label: "Family"),
