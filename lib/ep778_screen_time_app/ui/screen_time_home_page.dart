@@ -18,7 +18,7 @@ class _ScreenTimeHomePageState extends State<ScreenTimeHomePage> {
         BottomNavigationBarItem(icon: Icon(Icons.account_circle_outlined), label: "Friends"),
         BottomNavigationBarItem(icon: Icon(Icons.bar_chart_outlined), label: "Coach"),
         BottomNavigationBarItem(icon: Icon(Icons.settings_outlined), label: "Settings"),
-      ]s
+      ]
         
       ),
     );
