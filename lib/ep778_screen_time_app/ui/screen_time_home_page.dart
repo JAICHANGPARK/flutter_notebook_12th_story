@@ -12,7 +12,31 @@ class _ScreenTimeHomePageState extends State<ScreenTimeHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-        child: SingleChildScrollView(),
+        child: SingleChildScrollView(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+                Row(
+                  children: [
+                    Column(
+                      children: [
+                        Text("Good afternoon!"),
+                        Text("DECEMBER 13TH"),
+                      ],
+                    ),
+                    Container(
+                      height: 38,
+                      width: 38,
+                      decoration: BoxDecoration(
+                        color: Colors.teal[100],
+                        borderRadius: BorderRadius.circular(8)
+                      ),
+                    )
+                  ],
+                )
+            ],
+          ),
+        ),
       ),
       bottomNavigationBar: BottomNavigationBar(
           onTap: (idx) {
