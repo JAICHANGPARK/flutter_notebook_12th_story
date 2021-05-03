@@ -9,6 +9,6 @@ class ScreenTimeHomePage extends StatefulWidget {
 class _ScreenTimeHomePageState extends State<ScreenTimeHomePage> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold();
   }
 }
