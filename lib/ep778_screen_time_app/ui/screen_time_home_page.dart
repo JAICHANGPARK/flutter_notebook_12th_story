@@ -7,6 +7,7 @@ class ScreenTimeHomePage extends StatefulWidget {
 
 class _ScreenTimeHomePageState extends State<ScreenTimeHomePage> {
   int _bottomIdx = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -14,6 +15,11 @@ class _ScreenTimeHomePageState extends State<ScreenTimeHomePage> {
         child: SingleChildScrollView(),
       ),
       bottomNavigationBar: BottomNavigationBar(
+          onTap: (idx) {
+            setState(() {
+              _bottomIdx = idx;
+            });
+          },
           elevation: 5,
           type: BottomNavigationBarType.fixed,
           backgroundColor: Colors.grey[200],
