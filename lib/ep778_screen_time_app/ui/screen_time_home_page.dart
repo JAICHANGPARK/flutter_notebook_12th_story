@@ -9,6 +9,9 @@ class _ScreenTimeHomePageState extends State<ScreenTimeHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      body: SafeArea(
+        child: SingleChildScrollView(),
+      ),
       bottomNavigationBar: BottomNavigationBar(
           elevation: 5,
           type: BottomNavigationBarType.fixed,
