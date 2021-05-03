@@ -18,25 +18,30 @@ class _ScreenTimeHomePageState extends State<ScreenTimeHomePage> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                  Row(
-                    children: [
-                      Column(
-                        children: [
-                          Text("Good afternoon!"),
-                          Text("DECEMBER 13TH"),
-                        ],
-                      ),
-                      Spacer(),
-                      Container(
-                        height: 38,
-                        width: 38,
-                        decoration: BoxDecoration(
-                          color: Colors.teal[50],
-                          borderRadius: BorderRadius.circular(8)
+                Row(
+                  children: [
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          "Good afternoon!",
+                          style: TextStyle(
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.teal,
+                          ),
                         ),
-                      )
-                    ],
-                  )
+                        Text("DECEMBER 13TH"),
+                      ],
+                    ),
+                    Spacer(),
+                    Container(
+                      height: 38,
+                      width: 38,
+                      decoration: BoxDecoration(color: Colors.teal[50], borderRadius: BorderRadius.circular(8)),
+                    )
+                  ],
+                )
               ],
             ),
           ),
