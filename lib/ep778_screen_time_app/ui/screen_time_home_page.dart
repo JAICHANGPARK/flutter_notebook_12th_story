@@ -20,8 +20,9 @@ class _ScreenTimeHomePageState extends State<ScreenTimeHomePage> {
               _bottomIdx = idx;
             });
           },
+          currentIndex: _bottomIdx,
           elevation: 5,
-          type: BottomNavigationBarType.fixed,
+          type: BottomNavigationBarType.shifting,
           backgroundColor: Colors.grey[200],
           selectedItemColor: Colors.teal,
           unselectedItemColor: Colors.blueGrey,
