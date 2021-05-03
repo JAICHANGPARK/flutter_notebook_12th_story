@@ -13,29 +13,32 @@ class _ScreenTimeHomePageState extends State<ScreenTimeHomePage> {
     return Scaffold(
       body: SafeArea(
         child: SingleChildScrollView(
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-                Row(
-                  children: [
-                    Column(
-                      children: [
-                        Text("Good afternoon!"),
-                        Text("DECEMBER 13TH"),
-                      ],
-                    ),
-                    Spacer(),
-                    Container(
-                      height: 38,
-                      width: 38,
-                      decoration: BoxDecoration(
-                        color: Colors.teal[50],
-                        borderRadius: BorderRadius.circular(8)
+          child: Padding(
+            padding: const EdgeInsets.all(16.0),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                  Row(
+                    children: [
+                      Column(
+                        children: [
+                          Text("Good afternoon!"),
+                          Text("DECEMBER 13TH"),
+                        ],
                       ),
-                    )
-                  ],
-                )
-            ],
+                      Spacer(),
+                      Container(
+                        height: 38,
+                        width: 38,
+                        decoration: BoxDecoration(
+                          color: Colors.teal[50],
+                          borderRadius: BorderRadius.circular(8)
+                        ),
+                      )
+                    ],
+                  )
+              ],
+            ),
           ),
         ),
       ),
