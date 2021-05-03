@@ -24,6 +24,7 @@ class _ScreenTimeHomePageState extends State<ScreenTimeHomePage> {
                         Text("DECEMBER 13TH"),
                       ],
                     ),
+                    Spacer(),
                     Container(
                       height: 38,
                       width: 38,
