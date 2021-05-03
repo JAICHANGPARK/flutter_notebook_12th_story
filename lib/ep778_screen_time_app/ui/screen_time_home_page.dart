@@ -42,21 +42,18 @@ class _ScreenTimeHomePageState extends State<ScreenTimeHomePage> {
                     )
                   ],
                 ),
-
                 Padding(
                   padding: const EdgeInsets.symmetric(vertical: 24),
                   child: SizedBox(
                     height: MediaQuery.of(context).size.height / 2.6,
                     child: Placeholder(),
-
                   ),
                 ),
                 Padding(
-                  padding: const EdgeInsets.symmetric(vertical: 24),
+                  padding: const EdgeInsets.only(top: 8, bottom: 8),
                   child: SizedBox(
                     height: MediaQuery.of(context).size.height / 2.6,
                     child: Placeholder(),
-
                   ),
                 )
               ],
