@@ -41,6 +41,11 @@ class _ScreenTimeHomePageState extends State<ScreenTimeHomePage> {
                       decoration: BoxDecoration(color: Colors.teal[50], borderRadius: BorderRadius.circular(8)),
                     )
                   ],
+                ),
+                SizedBox(
+                  height: MediaQuery.of(context).size.height / 3,
+                  child: Placeholder(),
+
                 )
               ],
             ),
