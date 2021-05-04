@@ -124,12 +124,12 @@ class _ScreenTimeHomePageState extends State<ScreenTimeHomePage> {
                                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                   children: [
                                     Text(
-                                      "In the moment",
+                                      "Screen time",
                                       style: TextStyle(
                                           fontWeight: FontWeight.bold, color: appDarkGreenColor, fontSize: 18),
                                     ),
                                     Text(
-                                      "5h 33m",
+                                      "48m",
                                       style: TextStyle(fontWeight: FontWeight.bold, color: appGreenColor, fontSize: 18),
                                     )
                                   ],
