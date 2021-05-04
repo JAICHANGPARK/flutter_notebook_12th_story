@@ -38,7 +38,11 @@ class _ScreenTimeHomePageState extends State<ScreenTimeHomePage> {
                     Container(
                       height: 38,
                       width: 38,
-                      decoration: BoxDecoration(color: Colors.teal[50], borderRadius: BorderRadius.circular(8)),
+                      decoration: BoxDecoration(color: Colors.teal[50], borderRadius: BorderRadius.circular(8),
+                      ),
+                      child: Center(
+                        child: Icon(Icons.access_time),
+                      ),
                     )
                   ],
                 ),
