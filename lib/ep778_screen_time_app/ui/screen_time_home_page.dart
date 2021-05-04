@@ -113,7 +113,46 @@ class _ScreenTimeHomePageState extends State<ScreenTimeHomePage> {
                   padding: const EdgeInsets.only(top: 8, bottom: 8),
                   child: SizedBox(
                     height: MediaQuery.of(context).size.height / 2.6,
-                    child: Placeholder(),
+                    child: Column(
+                      children: [
+                        Expanded(
+                            flex: 1,
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Row(
+                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    Text(
+                                      "In the moment",
+                                      style: TextStyle(
+                                          fontWeight: FontWeight.bold, color: appDarkGreenColor, fontSize: 18),
+                                    ),
+                                    Text(
+                                      "5h 33m",
+                                      style: TextStyle(fontWeight: FontWeight.bold, color: appGreenColor, fontSize: 18),
+                                    )
+                                  ],
+                                ),
+                                Row(
+                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    Text(
+                                      "Dec 7 - Dec 13",
+                                      style: TextStyle(color: appDarkGreenColor, fontSize: 16),
+                                    ),
+                                    Text(
+                                      "30h 23m",
+                                      style: TextStyle(color: appDarkGreenColor, fontSize: 16),
+                                    )
+                                  ],
+                                ),
+                              ],
+                            )),
+                        SizedBox(height: 16),
+                        Expanded(flex: 6, child: Placeholder()),
+                      ],
+                    ),
                   ),
                 )
               ],
