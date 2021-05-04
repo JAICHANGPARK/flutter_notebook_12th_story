@@ -35,10 +35,13 @@ class _ScreenTimeHomePageState extends State<ScreenTimeHomePage> {
                             color: appDarkGreenColor,
                           ),
                         ),
-                        Text(
-                          "DECEMBER 13TH",
-                          style: TextStyle(
-                            color: appGreenColor,
+                        Padding(
+                          padding: const EdgeInsets.symmetric(vertical: 8),
+                          child: Text(
+                            "DECEMBER 13TH",
+                            style: TextStyle(
+                              color: appGreenColor,
+                            ),
                           ),
                         ),
                       ],
