@@ -140,9 +140,14 @@ class _ScreenTimeHomePageState extends State<ScreenTimeHomePage> {
                              ),
                              rightTitles: SideTitles(
                                showTitles: true,
-                             )
-                           )
+                             ),
+
+                           ),
+                            borderData: FlBorderData(
+                              show: false,
+                            )
                           ),
+
 
                         )),
                       ],
