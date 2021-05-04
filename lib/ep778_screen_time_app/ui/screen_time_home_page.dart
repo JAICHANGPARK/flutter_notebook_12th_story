@@ -137,6 +137,9 @@ class _ScreenTimeHomePageState extends State<ScreenTimeHomePage> {
                              ),
                              leftTitles: SideTitles(
                                showTitles: false,
+                             ),
+                             rightTitles: SideTitles(
+                               showTitles: true,
                              )
                            )
                           ),
