@@ -106,7 +106,21 @@ class _ScreenTimeHomePageState extends State<ScreenTimeHomePage> {
                             )),
                         SizedBox(height: 16),
                         Expanded(flex: 6, child: BarChart(
-                          BarChartData(),
+                          BarChartData(
+                           titlesData:  FlTitlesData(
+                             show: true,
+                             bottomTitles: SideTitles(
+                               showTitles: true,
+                               getTextStyles: (value) => TextStyle(
+                                 color: appGreenColor,
+                               ),
+                               getTitles: (value){
+                                 
+                               }
+                             ),
+                           )
+                          ),
+
                         )),
                       ],
                     ),
