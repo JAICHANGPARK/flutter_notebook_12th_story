@@ -35,7 +35,12 @@ class _ScreenTimeHomePageState extends State<ScreenTimeHomePage> {
                             color: appDarkGreenColor,
                           ),
                         ),
-                        Text("DECEMBER 13TH"),
+                        Text(
+                          "DECEMBER 13TH",
+                          style: TextStyle(
+                            color: appGreenColor,
+                          ),
+                        ),
                       ],
                     ),
                     Spacer(),
