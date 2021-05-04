@@ -92,11 +92,11 @@ class _ScreenTimeHomePageState extends State<ScreenTimeHomePage> {
                                   children: [
                                     Text(
                                       "Dec 7 - Dec 13",
-                                      style: TextStyle(color: appDarkGreenColor, fontSize: 18),
+                                      style: TextStyle(color: appDarkGreenColor, fontSize: 16),
                                     ),
                                     Text(
-                                      "5h 33m",
-                                      style: TextStyle(fontWeight: FontWeight.bold, color: appGreenColor, fontSize: 18),
+                                      "30h 23m",
+                                      style: TextStyle( color: appDarkGreenColor, fontSize: 16),
                                     )
                                   ],
                                 ),
