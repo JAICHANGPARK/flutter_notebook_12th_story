@@ -73,7 +73,13 @@ class _ScreenTimeHomePageState extends State<ScreenTimeHomePage> {
                             flex: 2,
                             child: Column(
                               children: [
-                                
+                                Row(
+                                  children: [
+                                    Text("In the moment"),
+                                    Text("5h 33m")
+                                  ],
+                                ),
+
                               ],
                             )),
                         Expanded(
