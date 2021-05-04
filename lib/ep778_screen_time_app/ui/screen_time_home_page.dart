@@ -75,16 +75,25 @@ class _ScreenTimeHomePageState extends State<ScreenTimeHomePage> {
                               children: [
                                 Row(
                                   children: [
-                                    Text("In the moment"),
-                                    Text("5h 33m")
+                                    Text(
+                                      "In the moment",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        color: appDarkGreenColor,
+                                      ),
+                                    ),
+                                    Text(
+                                      "5h 33m",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        color: appGreenColor,
+                                      ),
+                                    )
                                   ],
                                 ),
-
                               ],
                             )),
-                        Expanded(
-                            flex: 6,
-                            child: Placeholder()),
+                        Expanded(flex: 6, child: Placeholder()),
                       ],
                     ),
                   ),
