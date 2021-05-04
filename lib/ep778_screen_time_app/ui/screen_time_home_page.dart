@@ -10,7 +10,7 @@ class _ScreenTimeHomePageState extends State<ScreenTimeHomePage> {
 
   //13 148 136
   Color appGreenColor = Color(0xff0D9488);
-  Color app
+  Color appDarkGreenColor = Color(0xff134E4A); // 19 78 74
 
   @override
   Widget build(BuildContext context) {
@@ -32,7 +32,7 @@ class _ScreenTimeHomePageState extends State<ScreenTimeHomePage> {
                           style: TextStyle(
                             fontSize: 20,
                             fontWeight: FontWeight.bold,
-                            color: appGreenColor,
+                            color: appDarkGreenColor,
                           ),
                         ),
                         Text("DECEMBER 13TH"),
