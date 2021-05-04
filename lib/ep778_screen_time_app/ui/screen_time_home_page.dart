@@ -67,7 +67,16 @@ class _ScreenTimeHomePageState extends State<ScreenTimeHomePage> {
                   padding: const EdgeInsets.symmetric(vertical: 16),
                   child: SizedBox(
                     height: MediaQuery.of(context).size.height / 2.6,
-                    child: Placeholder(),
+                    child: Column(
+                      children: [
+                        Expanded(
+                            flex: 2,
+                            child: Placeholder()),
+                        Expanded(
+
+                            child: Placeholder()),
+                      ],
+                    ),
                   ),
                 ),
                 Padding(
