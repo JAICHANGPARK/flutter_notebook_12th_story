@@ -105,51 +105,50 @@ class _ScreenTimeHomePageState extends State<ScreenTimeHomePage> {
                               ],
                             )),
                         SizedBox(height: 16),
-                        Expanded(flex: 6, child: BarChart(
-                          BarChartData(
-                           titlesData:  FlTitlesData(
-                             show: true,
-                             bottomTitles: SideTitles(
-                               showTitles: true,
-                               getTextStyles: (value) => TextStyle(
-                                 color: appGreenColor,
-                               ),
-                               getTitles: (value){
-                                 switch(value.toInt()){
-                                   case 0:
-                                     return "M";
-                                   case 1:
-                                     return "T";
-                                   case 2:
-                                     return "W";
-                                   case 3:
-                                     return "T";
-                                   case 4:
-                                     return "F";
-                                   case 5:
-                                     return "S";
-                                   case 6:
-                                     return "S";
-                                   default:
-                                     return '';
-                                 }
-                               }
-                             ),
-                             leftTitles: SideTitles(
-                               showTitles: false,
-                             ),
-                             rightTitles: SideTitles(
-                               showTitles: true,
-                             ),
-
-                           ),
-                            borderData: FlBorderData(
-                              show: false,
-                            )
-                          ),
-
-
-                        )),
+                        Expanded(
+                            flex: 6,
+                            child: BarChart(
+                              BarChartData(
+                                titlesData: FlTitlesData(
+                                  show: true,
+                                  bottomTitles: SideTitles(
+                                      showTitles: true,
+                                      getTextStyles: (value) => TextStyle(
+                                            color: appGreenColor,
+                                          ),
+                                      getTitles: (value) {
+                                        switch (value.toInt()) {
+                                          case 0:
+                                            return "M";
+                                          case 1:
+                                            return "T";
+                                          case 2:
+                                            return "W";
+                                          case 3:
+                                            return "T";
+                                          case 4:
+                                            return "F";
+                                          case 5:
+                                            return "S";
+                                          case 6:
+                                            return "S";
+                                          default:
+                                            return '';
+                                        }
+                                      }),
+                                  leftTitles: SideTitles(
+                                    showTitles: false,
+                                  ),
+                                  rightTitles: SideTitles(
+                                    showTitles: true,
+                                  ),
+                                ),
+                                borderData: FlBorderData(
+                                  show: false,
+                                ),
+                                backgroundColor: Colors.teal[50]
+                              ),
+                            )),
                       ],
                     ),
                   ),
@@ -195,9 +194,11 @@ class _ScreenTimeHomePageState extends State<ScreenTimeHomePage> {
                               ],
                             )),
                         SizedBox(height: 16),
-                        Expanded(flex: 6, child: BarChart(
-                          BarChartData(),
-                        )),
+                        Expanded(
+                            flex: 6,
+                            child: BarChart(
+                              BarChartData(),
+                            )),
                       ],
                     ),
                   ),
