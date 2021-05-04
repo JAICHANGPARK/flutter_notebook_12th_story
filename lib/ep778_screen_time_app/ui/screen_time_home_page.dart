@@ -7,8 +7,10 @@ class ScreenTimeHomePage extends StatefulWidget {
 
 class _ScreenTimeHomePageState extends State<ScreenTimeHomePage> {
   int _bottomIdx = 0;
+
   //13 148 136
   Color appGreenColor = Color(0xff0D9488);
+  Color app
 
   @override
   Widget build(BuildContext context) {
@@ -30,7 +32,7 @@ class _ScreenTimeHomePageState extends State<ScreenTimeHomePage> {
                           style: TextStyle(
                             fontSize: 20,
                             fontWeight: FontWeight.bold,
-                            color: Colors.teal,
+                            color: appGreenColor,
                           ),
                         ),
                         Text("DECEMBER 13TH"),
@@ -40,7 +42,9 @@ class _ScreenTimeHomePageState extends State<ScreenTimeHomePage> {
                     Container(
                       height: 38,
                       width: 38,
-                      decoration: BoxDecoration(color: Colors.teal[50], borderRadius: BorderRadius.circular(8),
+                      decoration: BoxDecoration(
+                        color: Colors.teal[50],
+                        borderRadius: BorderRadius.circular(8),
                       ),
                       child: Center(
                         child: Icon(Icons.access_time),
