@@ -1,3 +1,4 @@
+import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
 
 class ScreenTimeHomePage extends StatefulWidget {
@@ -104,7 +105,9 @@ class _ScreenTimeHomePageState extends State<ScreenTimeHomePage> {
                               ],
                             )),
                         SizedBox(height: 16),
-                        Expanded(flex: 6, child: Placeholder()),
+                        Expanded(flex: 6, child: BarChart(
+                          BarChartData(),
+                        )),
                       ],
                     ),
                   ),
@@ -150,7 +153,9 @@ class _ScreenTimeHomePageState extends State<ScreenTimeHomePage> {
                               ],
                             )),
                         SizedBox(height: 16),
-                        Expanded(flex: 6, child: Placeholder()),
+                        Expanded(flex: 6, child: BarChart(
+                          BarChartData(),
+                        )),
                       ],
                     ),
                   ),
