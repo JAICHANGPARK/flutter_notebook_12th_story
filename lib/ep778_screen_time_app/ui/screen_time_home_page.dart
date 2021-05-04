@@ -7,6 +7,8 @@ class ScreenTimeHomePage extends StatefulWidget {
 
 class _ScreenTimeHomePageState extends State<ScreenTimeHomePage> {
   int _bottomIdx = 0;
+  //13 148 136
+  Color appGreenColor = Color(0xff0D9488);
 
   @override
   Widget build(BuildContext context) {
