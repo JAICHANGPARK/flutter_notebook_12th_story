@@ -71,7 +71,11 @@ class _ScreenTimeHomePageState extends State<ScreenTimeHomePage> {
                       children: [
                         Expanded(
                             flex: 2,
-                            child: Placeholder()),
+                            child: Column(
+                              children: [
+                                
+                              ],
+                            )),
                         Expanded(
                             flex: 6,
                             child: Placeholder()),
