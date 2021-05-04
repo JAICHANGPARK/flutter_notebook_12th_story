@@ -67,7 +67,7 @@ class _ScreenTimeHomePageState extends State<ScreenTimeHomePage> {
                 Padding(
                   padding: const EdgeInsets.symmetric(vertical: 16),
                   child: SizedBox(
-                    height: MediaQuery.of(context).size.height / 2.6,
+                    height: MediaQuery.of(context).size.height /3,
                     child: Column(
                       children: [
                         Expanded(
@@ -106,7 +106,7 @@ class _ScreenTimeHomePageState extends State<ScreenTimeHomePage> {
                             )),
                         SizedBox(height: 16),
                         Expanded(
-                            flex: 6,
+                            flex: 5,
                             child: BarChart(
                               BarChartData(
                                 titlesData: FlTitlesData(
@@ -156,7 +156,7 @@ class _ScreenTimeHomePageState extends State<ScreenTimeHomePage> {
                 Padding(
                   padding: const EdgeInsets.only(top: 8, bottom: 8),
                   child: SizedBox(
-                    height: MediaQuery.of(context).size.height / 2.6,
+                    height: MediaQuery.of(context).size.height / 3,
                     child: Column(
                       children: [
                         Expanded(
@@ -197,7 +197,46 @@ class _ScreenTimeHomePageState extends State<ScreenTimeHomePage> {
                         Expanded(
                             flex: 6,
                             child: BarChart(
-                              BarChartData(),
+                              BarChartData(
+                                  titlesData: FlTitlesData(
+                                    show: true,
+                                    bottomTitles: SideTitles(
+                                        showTitles: true,
+                                        getTextStyles: (value) => TextStyle(
+                                          color: appGreenColor,
+                                        ),
+                                        getTitles: (value) {
+                                          switch (value.toInt()) {
+                                            case 0:
+                                              return "M";
+                                            case 1:
+                                              return "T";
+                                            case 2:
+                                              return "W";
+                                            case 3:
+                                              return "T";
+                                            case 4:
+                                              return "F";
+                                            case 5:
+                                              return "S";
+                                            case 6:
+                                              return "S";
+                                            default:
+                                              return '';
+                                          }
+                                        }),
+                                    leftTitles: SideTitles(
+                                      showTitles: false,
+                                    ),
+                                    rightTitles: SideTitles(
+                                      showTitles: true,
+                                    ),
+                                  ),
+                                  borderData: FlBorderData(
+                                    show: false,
+                                  ),
+                                  backgroundColor: Colors.teal[50]
+                              ),
                             )),
                       ],
                     ),
