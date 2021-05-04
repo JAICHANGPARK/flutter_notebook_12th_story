@@ -55,7 +55,10 @@ class _ScreenTimeHomePageState extends State<ScreenTimeHomePage> {
                         borderRadius: BorderRadius.circular(8),
                       ),
                       child: Center(
-                        child: Icon(Icons.access_time),
+                        child: Icon(
+                          Icons.access_time,
+                          color: appGreenColor,
+                        ),
                       ),
                     )
                   ],
