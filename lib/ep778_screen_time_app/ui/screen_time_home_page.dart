@@ -195,7 +195,7 @@ class _ScreenTimeHomePageState extends State<ScreenTimeHomePage> {
                             )),
                         SizedBox(height: 16),
                         Expanded(
-                            flex: 6,
+                            flex: 5,
                             child: BarChart(
                               BarChartData(
                                   titlesData: FlTitlesData(
