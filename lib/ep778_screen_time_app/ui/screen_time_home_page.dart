@@ -103,7 +103,7 @@ class _ScreenTimeHomePageState extends State<ScreenTimeHomePage> {
                                 ),
                               ],
                             )),
-                        SizedBox(height: 8),
+                        SizedBox(height: 16),
                         Expanded(flex: 6, child: Placeholder()),
                       ],
                     ),
