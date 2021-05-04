@@ -74,12 +74,14 @@ class _ScreenTimeHomePageState extends State<ScreenTimeHomePage> {
                             child: Column(
                               children: [
                                 Row(
+                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                   children: [
                                     Text(
                                       "In the moment",
                                       style: TextStyle(
                                         fontWeight: FontWeight.bold,
                                         color: appDarkGreenColor,
+                                        fontSize: 18
                                       ),
                                     ),
                                     Text(
@@ -87,6 +89,7 @@ class _ScreenTimeHomePageState extends State<ScreenTimeHomePage> {
                                       style: TextStyle(
                                         fontWeight: FontWeight.bold,
                                         color: appGreenColor,
+                                          fontSize: 18
                                       ),
                                     )
                                   ],
