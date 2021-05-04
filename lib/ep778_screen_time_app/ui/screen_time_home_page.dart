@@ -97,12 +97,13 @@ class _ScreenTimeHomePageState extends State<ScreenTimeHomePage> {
                                     ),
                                     Text(
                                       "30h 23m",
-                                      style: TextStyle( color: appDarkGreenColor, fontSize: 16),
+                                      style: TextStyle(color: appDarkGreenColor, fontSize: 16),
                                     )
                                   ],
                                 ),
                               ],
                             )),
+                        SizedBox(height: 8),
                         Expanded(flex: 6, child: Placeholder()),
                       ],
                     ),
