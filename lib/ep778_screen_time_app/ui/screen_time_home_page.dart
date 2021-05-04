@@ -115,7 +115,22 @@ class _ScreenTimeHomePageState extends State<ScreenTimeHomePage> {
                                  color: appGreenColor,
                                ),
                                getTitles: (value){
-                                 
+                                 switch(value.toInt()){
+                                   case 0:
+                                     return "M";
+                                   case 1:
+                                     return "M";
+                                   case 2:
+                                     return "M";
+                                   case 3:
+                                     return "M";
+                                   case 4:
+                                     return "M";
+                                   case 5:
+                                     return "M";
+                                   case 6:
+                                     return "M";
+                                 }
                                }
                              ),
                            )
