@@ -70,8 +70,9 @@ class _ScreenTimeHomePageState extends State<ScreenTimeHomePage> {
                     child: Column(
                       children: [
                         Expanded(
-                            flex: 2,
+                            flex: 1,
                             child: Column(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
                                 Row(
                                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
