@@ -119,20 +119,25 @@ class _ScreenTimeHomePageState extends State<ScreenTimeHomePage> {
                                    case 0:
                                      return "M";
                                    case 1:
-                                     return "M";
+                                     return "T";
                                    case 2:
-                                     return "M";
+                                     return "W";
                                    case 3:
-                                     return "M";
+                                     return "T";
                                    case 4:
-                                     return "M";
+                                     return "F";
                                    case 5:
-                                     return "M";
+                                     return "S";
                                    case 6:
-                                     return "M";
+                                     return "S";
+                                   default:
+                                     return '';
                                  }
                                }
                              ),
+                             leftTitles: SideTitles(
+                               showTitles: false,
+                             )
                            )
                           ),
 
