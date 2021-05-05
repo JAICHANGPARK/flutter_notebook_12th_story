@@ -67,7 +67,7 @@ class _ScreenTimeHomePageState extends State<ScreenTimeHomePage> {
                 Padding(
                   padding: const EdgeInsets.symmetric(vertical: 16),
                   child: SizedBox(
-                    height: MediaQuery.of(context).size.height /3,
+                    height: MediaQuery.of(context).size.height / 3,
                     child: Column(
                       children: [
                         Expanded(
@@ -109,45 +109,44 @@ class _ScreenTimeHomePageState extends State<ScreenTimeHomePage> {
                             flex: 5,
                             child: BarChart(
                               BarChartData(
-                                titlesData: FlTitlesData(
-                                  show: true,
-                                  bottomTitles: SideTitles(
+                                  titlesData: FlTitlesData(
+                                    show: true,
+                                    bottomTitles: SideTitles(
+                                        showTitles: true,
+                                        getTextStyles: (value) => TextStyle(
+                                              color: appGreenColor,
+                                            ),
+                                        getTitles: (value) {
+                                          switch (value.toInt()) {
+                                            case 0:
+                                              return "M";
+                                            case 1:
+                                              return "T";
+                                            case 2:
+                                              return "W";
+                                            case 3:
+                                              return "T";
+                                            case 4:
+                                              return "F";
+                                            case 5:
+                                              return "S";
+                                            case 6:
+                                              return "S";
+                                            default:
+                                              return '';
+                                          }
+                                        }),
+                                    leftTitles: SideTitles(
+                                      showTitles: false,
+                                    ),
+                                    rightTitles: SideTitles(
                                       showTitles: true,
-                                      getTextStyles: (value) => TextStyle(
-                                            color: appGreenColor,
-                                          ),
-                                      getTitles: (value) {
-                                        switch (value.toInt()) {
-                                          case 0:
-                                            return "M";
-                                          case 1:
-                                            return "T";
-                                          case 2:
-                                            return "W";
-                                          case 3:
-                                            return "T";
-                                          case 4:
-                                            return "F";
-                                          case 5:
-                                            return "S";
-                                          case 6:
-                                            return "S";
-                                          default:
-                                            return '';
-                                        }
-                                      }),
-                                  leftTitles: SideTitles(
-                                    showTitles: false,
+                                    ),
                                   ),
-                                  rightTitles: SideTitles(
-                                    showTitles: true,
+                                  borderData: FlBorderData(
+                                    show: false,
                                   ),
-                                ),
-                                borderData: FlBorderData(
-                                  show: false,
-                                ),
-                                backgroundColor: Colors.teal[50]
-                              ),
+                                  backgroundColor: Colors.teal[50]),
                             )),
                       ],
                     ),
@@ -203,8 +202,8 @@ class _ScreenTimeHomePageState extends State<ScreenTimeHomePage> {
                                     bottomTitles: SideTitles(
                                         showTitles: true,
                                         getTextStyles: (value) => TextStyle(
-                                          color: appGreenColor,
-                                        ),
+                                              color: appGreenColor,
+                                            ),
                                         getTitles: (value) {
                                           switch (value.toInt()) {
                                             case 0:
@@ -235,8 +234,7 @@ class _ScreenTimeHomePageState extends State<ScreenTimeHomePage> {
                                   borderData: FlBorderData(
                                     show: false,
                                   ),
-                                  backgroundColor: Colors.teal[50]
-                              ),
+                                  backgroundColor: Colors.teal[50]),
                             )),
                       ],
                     ),
