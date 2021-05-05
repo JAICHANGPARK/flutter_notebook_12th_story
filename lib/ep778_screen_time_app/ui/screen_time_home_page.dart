@@ -251,6 +251,7 @@ class _ScreenTimeHomePageState extends State<ScreenTimeHomePage> {
                                     ),
                                     rightTitles: SideTitles(
                                         showTitles: true,
+                                        margin: 16,
                                         getTextStyles: (value) {
                                           if (value == 3) {
                                             return TextStyle(
@@ -351,11 +352,11 @@ class _ScreenTimeHomePageState extends State<ScreenTimeHomePage> {
                                   alignment: BarChartAlignment.spaceAround,
                                   groupsSpace: 8,
                                   minY: 0,
-                                  maxY: 10,
+                                  maxY: 72,
                                   barGroups: [
                                     BarChartGroupData(x: 0, barsSpace: 8, barRods: [
                                       BarChartRodData(
-                                        y: 8,
+                                        y: 15,
                                         colors: [appGreenColor],
                                         borderRadius: BorderRadius.only(
                                           topLeft: Radius.circular(4),
@@ -367,7 +368,7 @@ class _ScreenTimeHomePageState extends State<ScreenTimeHomePage> {
                                     ]),
                                     BarChartGroupData(x: 1, barRods: [
                                       BarChartRodData(
-                                        y: 4,
+                                        y: 20,
                                         colors: [appGreenColor],
                                         borderRadius: BorderRadius.only(
                                           topLeft: Radius.circular(4),
@@ -379,7 +380,7 @@ class _ScreenTimeHomePageState extends State<ScreenTimeHomePage> {
                                     ]),
                                     BarChartGroupData(x: 2, barRods: [
                                       BarChartRodData(
-                                        y: 3,
+                                        y: 30,
                                         colors: [appGreenColor],
                                         borderRadius: BorderRadius.only(
                                           topLeft: Radius.circular(4),
@@ -391,7 +392,7 @@ class _ScreenTimeHomePageState extends State<ScreenTimeHomePage> {
                                     ]),
                                     BarChartGroupData(x: 3, barRods: [
                                       BarChartRodData(
-                                        y: 5,
+                                        y: 25,
                                         colors: [appGreenColor],
                                         borderRadius: BorderRadius.only(
                                           topLeft: Radius.circular(4),
@@ -403,7 +404,7 @@ class _ScreenTimeHomePageState extends State<ScreenTimeHomePage> {
                                     ]),
                                     BarChartGroupData(x: 4, barRods: [
                                       BarChartRodData(
-                                        y: 4,
+                                        y: 28,
                                         colors: [appGreenColor],
                                         borderRadius: BorderRadius.only(
                                           topLeft: Radius.circular(4),
@@ -415,7 +416,7 @@ class _ScreenTimeHomePageState extends State<ScreenTimeHomePage> {
                                     ]),
                                     BarChartGroupData(x: 5, barRods: [
                                       BarChartRodData(
-                                        y: 3,
+                                        y: 29,
                                         colors: [appGreenColor],
                                         borderRadius: BorderRadius.only(
                                           topLeft: Radius.circular(4),
@@ -427,7 +428,7 @@ class _ScreenTimeHomePageState extends State<ScreenTimeHomePage> {
                                     ]),
                                     BarChartGroupData(x: 6, barRods: [
                                       BarChartRodData(
-                                        y: 8,
+                                        y: 30,
                                         colors: [appDarkGreenColor],
                                         borderRadius: BorderRadius.only(
                                           topLeft: Radius.circular(4),
@@ -469,21 +470,22 @@ class _ScreenTimeHomePageState extends State<ScreenTimeHomePage> {
                                       showTitles: false,
                                     ),
                                     rightTitles: SideTitles(
+                                      margin: 16,
                                         showTitles: true,
                                         getTextStyles: (value) {
-                                          if (value == 3) {
+                                          if (value == 24) {
                                             return TextStyle(
                                               color: appDarkGreenColor,
                                             );
                                           }
-                                          if (value % 4 == 0) {
+                                          if (value % 10 == 0) {
                                             return TextStyle(color: appGreenColor, fontWeight: FontWeight.bold);
                                           } else {
                                             return TextStyle();
                                           }
                                         },
                                         getTitles: (value) {
-                                          if (value == 3) {
+                                          if (value == 24) {
                                             return "avg";
                                           }
                                           if (value % 4 == 0) {
