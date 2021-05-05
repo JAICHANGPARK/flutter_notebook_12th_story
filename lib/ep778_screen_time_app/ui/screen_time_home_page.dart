@@ -121,16 +121,13 @@ class _ScreenTimeHomePageState extends State<ScreenTimeHomePage> {
                                             strokeWidth: 3,
                                           );
                                         }
-                                        if(value % 4 ==0){
+                                        if (value % 4 == 0) {
                                           return FlLine(
                                             color: Colors.grey[300],
                                           );
-                                        }else{
-                                          return FlLine(
-                                            color: Colors.transparent
-                                          );
+                                        } else {
+                                          return FlLine(color: Colors.transparent);
                                         }
-
                                       }),
                                   alignment: BarChartAlignment.spaceAround,
                                   groupsSpace: 8,
@@ -253,18 +250,29 @@ class _ScreenTimeHomePageState extends State<ScreenTimeHomePage> {
                                       showTitles: false,
                                     ),
                                     rightTitles: SideTitles(
-                                      showTitles: true,
-                                      getTitles: (value){
-                                        if(value == 3){
-                                          return "avg";
-                                        }
-                                        if(value % 4 == 0){
-                                          return value.toStringAsFixed(0);
-                                        }else{
-                                          return "";
-                                        }
-                                      }
-                                    ),
+                                        showTitles: true,
+                                        getTextStyles: (value) {
+                                          if (value == 3) {
+                                            return TextStyle(
+                                              color: appDarkGreenColor,
+                                            );
+                                          }
+                                          if (value % 4 == 0) {
+                                            return TextStyle(color: appGreenColor, fontWeight: FontWeight.bold);
+                                          } else {
+                                            return TextStyle();
+                                          }
+                                        },
+                                        getTitles: (value) {
+                                          if (value == 3) {
+                                            return "avg";
+                                          }
+                                          if (value % 4 == 0) {
+                                            return "${value.toStringAsFixed(0)} h";
+                                          } else {
+                                            return "";
+                                          }
+                                        }),
                                   ),
                                   borderData: FlBorderData(
                                     show: false,
@@ -320,13 +328,123 @@ class _ScreenTimeHomePageState extends State<ScreenTimeHomePage> {
                             flex: 5,
                             child: BarChart(
                               BarChartData(
+                                  gridData: FlGridData(
+                                      horizontalInterval: 1.0,
+                                      show: true,
+                                      getDrawingHorizontalLine: (value) {
+                                        print(value);
+                                        if (value == 3) {
+                                          return FlLine(
+                                            color: appGreenColor,
+                                            dashArray: [6, 10],
+                                            strokeWidth: 3,
+                                          );
+                                        }
+                                        if (value % 4 == 0) {
+                                          return FlLine(
+                                            color: Colors.grey[300],
+                                          );
+                                        } else {
+                                          return FlLine(color: Colors.transparent);
+                                        }
+                                      }),
+                                  alignment: BarChartAlignment.spaceAround,
+                                  groupsSpace: 8,
+                                  minY: 0,
+                                  maxY: 10,
+                                  barGroups: [
+                                    BarChartGroupData(x: 0, barsSpace: 8, barRods: [
+                                      BarChartRodData(
+                                        y: 8,
+                                        colors: [appGreenColor],
+                                        borderRadius: BorderRadius.only(
+                                          topLeft: Radius.circular(4),
+                                          topRight: Radius.circular(4),
+                                          bottomLeft: Radius.circular(0),
+                                          bottomRight: Radius.circular(0),
+                                        ),
+                                      ),
+                                    ]),
+                                    BarChartGroupData(x: 1, barRods: [
+                                      BarChartRodData(
+                                        y: 4,
+                                        colors: [appGreenColor],
+                                        borderRadius: BorderRadius.only(
+                                          topLeft: Radius.circular(4),
+                                          topRight: Radius.circular(4),
+                                          bottomLeft: Radius.circular(0),
+                                          bottomRight: Radius.circular(0),
+                                        ),
+                                      ),
+                                    ]),
+                                    BarChartGroupData(x: 2, barRods: [
+                                      BarChartRodData(
+                                        y: 3,
+                                        colors: [appGreenColor],
+                                        borderRadius: BorderRadius.only(
+                                          topLeft: Radius.circular(4),
+                                          topRight: Radius.circular(4),
+                                          bottomLeft: Radius.circular(0),
+                                          bottomRight: Radius.circular(0),
+                                        ),
+                                      ),
+                                    ]),
+                                    BarChartGroupData(x: 3, barRods: [
+                                      BarChartRodData(
+                                        y: 5,
+                                        colors: [appGreenColor],
+                                        borderRadius: BorderRadius.only(
+                                          topLeft: Radius.circular(4),
+                                          topRight: Radius.circular(4),
+                                          bottomLeft: Radius.circular(0),
+                                          bottomRight: Radius.circular(0),
+                                        ),
+                                      ),
+                                    ]),
+                                    BarChartGroupData(x: 4, barRods: [
+                                      BarChartRodData(
+                                        y: 4,
+                                        colors: [appGreenColor],
+                                        borderRadius: BorderRadius.only(
+                                          topLeft: Radius.circular(4),
+                                          topRight: Radius.circular(4),
+                                          bottomLeft: Radius.circular(0),
+                                          bottomRight: Radius.circular(0),
+                                        ),
+                                      ),
+                                    ]),
+                                    BarChartGroupData(x: 5, barRods: [
+                                      BarChartRodData(
+                                        y: 3,
+                                        colors: [appGreenColor],
+                                        borderRadius: BorderRadius.only(
+                                          topLeft: Radius.circular(4),
+                                          topRight: Radius.circular(4),
+                                          bottomLeft: Radius.circular(0),
+                                          bottomRight: Radius.circular(0),
+                                        ),
+                                      ),
+                                    ]),
+                                    BarChartGroupData(x: 6, barRods: [
+                                      BarChartRodData(
+                                        y: 8,
+                                        colors: [appDarkGreenColor],
+                                        borderRadius: BorderRadius.only(
+                                          topLeft: Radius.circular(4),
+                                          topRight: Radius.circular(4),
+                                          bottomLeft: Radius.circular(0),
+                                          bottomRight: Radius.circular(0),
+                                        ),
+                                      ),
+                                    ]),
+                                  ],
                                   titlesData: FlTitlesData(
                                     show: true,
                                     bottomTitles: SideTitles(
                                         showTitles: true,
                                         getTextStyles: (value) => TextStyle(
-                                              color: appGreenColor,
-                                            ),
+                                          color: appGreenColor,
+                                        ),
                                         getTitles: (value) {
                                           switch (value.toInt()) {
                                             case 0:
@@ -351,8 +469,29 @@ class _ScreenTimeHomePageState extends State<ScreenTimeHomePage> {
                                       showTitles: false,
                                     ),
                                     rightTitles: SideTitles(
-                                      showTitles: true,
-                                    ),
+                                        showTitles: true,
+                                        getTextStyles: (value) {
+                                          if (value == 3) {
+                                            return TextStyle(
+                                              color: appDarkGreenColor,
+                                            );
+                                          }
+                                          if (value % 4 == 0) {
+                                            return TextStyle(color: appGreenColor, fontWeight: FontWeight.bold);
+                                          } else {
+                                            return TextStyle();
+                                          }
+                                        },
+                                        getTitles: (value) {
+                                          if (value == 3) {
+                                            return "avg";
+                                          }
+                                          if (value % 4 == 0) {
+                                            return "${value.toStringAsFixed(0)} m";
+                                          } else {
+                                            return "";
+                                          }
+                                        }),
                                   ),
                                   borderData: FlBorderData(
                                     show: false,
