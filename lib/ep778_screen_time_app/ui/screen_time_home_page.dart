@@ -112,7 +112,7 @@ class _ScreenTimeHomePageState extends State<ScreenTimeHomePage> {
                                 alignment: BarChartAlignment.spaceAround,
                                 groupsSpace: 8,
                                 minY: 0,
-                                maxY: 24,
+                                maxY: 10,
                                 barGroups: [
                                   BarChartGroupData(x: 0,
                                   barsSpace: 8,
@@ -120,7 +120,13 @@ class _ScreenTimeHomePageState extends State<ScreenTimeHomePage> {
                                     BarChartRodData(y: 8),
                                   ]),
                                   BarChartGroupData(x: 1, barRods: [
-                                    BarChartRodData(y: 8),
+                                    BarChartRodData(y: 4,borderRadius: BorderRadius.only(
+                                      topLeft: Radius.circular(4),
+                                      topRight: Radius.circular(4),
+                                      bottomLeft: Radius.circular(0),
+                                      bottomRight: Radius.circular(0),
+
+                                    )),
                                   ]),
                                   BarChartGroupData(x: 2, barRods: [
                                     BarChartRodData(y: 8),
