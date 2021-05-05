@@ -110,13 +110,28 @@ class _ScreenTimeHomePageState extends State<ScreenTimeHomePage> {
                             child: BarChart(
                               BarChartData(
                                 barGroups: [
-                                  BarChartGroupData(x: 0,),
-                                  BarChartGroupData(x: 1,),
-                                  BarChartGroupData(x: 2,),
-                                  BarChartGroupData(x: 3,),
-                                  BarChartGroupData(x: 4,),
-                                  BarChartGroupData(x: 5,),
-                                  BarChartGroupData(x: 6,),
+                                  BarChartGroupData(x: 0,
+                                  barRods: [
+                                    BarChartRodData(y: 8),
+                                  ]),
+                                  BarChartGroupData(x: 1, barRods: [
+                                    BarChartRodData(y: 8),
+                                  ]),
+                                  BarChartGroupData(x: 2, barRods: [
+                                    BarChartRodData(y: 8),
+                                  ]),
+                                  BarChartGroupData(x: 3, barRods: [
+                                    BarChartRodData(y: 8),
+                                  ]),
+                                  BarChartGroupData(x: 4, barRods: [
+                                    BarChartRodData(y: 8),
+                                  ]),
+                                  BarChartGroupData(x: 5, barRods: [
+                                    BarChartRodData(y: 8),
+                                  ]),
+                                  BarChartGroupData(x: 6, barRods: [
+                                    BarChartRodData(y: 8),
+                                  ]),
                                 ],
                                   titlesData: FlTitlesData(
                                     show: true,
