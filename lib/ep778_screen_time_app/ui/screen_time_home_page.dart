@@ -254,6 +254,16 @@ class _ScreenTimeHomePageState extends State<ScreenTimeHomePage> {
                                     ),
                                     rightTitles: SideTitles(
                                       showTitles: true,
+                                      getTitles: (value){
+                                        if(value == 3){
+                                          return "avg";
+                                        }
+                                        if(value % 4 == 0){
+                                          return value.toStringAsFixed(0);
+                                        }else{
+                                          return "";
+                                        }
+                                      }
                                     ),
                                   ),
                                   borderData: FlBorderData(
