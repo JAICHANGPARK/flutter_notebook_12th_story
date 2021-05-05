@@ -287,11 +287,11 @@ class _ScreenTimeHomePageState extends State<ScreenTimeHomePage> {
                 Padding(
                   padding: const EdgeInsets.only(top: 8, bottom: 8),
                   child: SizedBox(
-                    height: MediaQuery.of(context).size.height / 3,
+                    height: MediaQuery.of(context).size.height / 3.2,
                     child: Column(
                       children: [
                         Expanded(
-                            flex: 1,
+                            flex: 2,
                             child: Column(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
@@ -326,7 +326,7 @@ class _ScreenTimeHomePageState extends State<ScreenTimeHomePage> {
                             )),
                         SizedBox(height: 16),
                         Expanded(
-                            flex: 5,
+                            flex: 8,
                             child: BarChart(
                               BarChartData(
                                   gridData: FlGridData(
