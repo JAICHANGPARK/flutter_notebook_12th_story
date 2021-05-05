@@ -109,41 +109,52 @@ class _ScreenTimeHomePageState extends State<ScreenTimeHomePage> {
                             flex: 5,
                             child: BarChart(
                               BarChartData(
-                                alignment: BarChartAlignment.spaceAround,
-                                groupsSpace: 8,
-                                minY: 0,
-                                maxY: 10,
-                                barGroups: [
-                                  BarChartGroupData(x: 0,
-                                  barsSpace: 8,
-                                  barRods: [
-                                    BarChartRodData(y: 8),
-                                  ]),
-                                  BarChartGroupData(x: 1, barRods: [
-                                    BarChartRodData(y: 4,borderRadius: BorderRadius.only(
-                                      topLeft: Radius.circular(4),
-                                      topRight: Radius.circular(4),
-                                      bottomLeft: Radius.circular(0),
-                                      bottomRight: Radius.circular(0),
-
-                                    )),
-                                  ]),
-                                  BarChartGroupData(x: 2, barRods: [
-                                    BarChartRodData(y: 8),
-                                  ]),
-                                  BarChartGroupData(x: 3, barRods: [
-                                    BarChartRodData(y: 8),
-                                  ]),
-                                  BarChartGroupData(x: 4, barRods: [
-                                    BarChartRodData(y: 8),
-                                  ]),
-                                  BarChartGroupData(x: 5, barRods: [
-                                    BarChartRodData(y: 8),
-                                  ]),
-                                  BarChartGroupData(x: 6, barRods: [
-                                    BarChartRodData(y: 8),
-                                  ]),
-                                ],
+                                  alignment: BarChartAlignment.spaceAround,
+                                  groupsSpace: 8,
+                                  minY: 0,
+                                  maxY: 10,
+                                  barGroups: [
+                                    BarChartGroupData(x: 0, barsSpace: 8, barRods: [
+                                      BarChartRodData(
+                                        y: 8,
+                                        colors: [
+                                          appGreenColor
+                                        ],
+                                        borderRadius: BorderRadius.only(
+                                          topLeft: Radius.circular(4),
+                                          topRight: Radius.circular(4),
+                                          bottomLeft: Radius.circular(0),
+                                          bottomRight: Radius.circular(0),
+                                        ),
+                                      ),
+                                    ]),
+                                    BarChartGroupData(x: 1, barRods: [
+                                      BarChartRodData(
+                                        y: 4,
+                                        borderRadius: BorderRadius.only(
+                                          topLeft: Radius.circular(4),
+                                          topRight: Radius.circular(4),
+                                          bottomLeft: Radius.circular(0),
+                                          bottomRight: Radius.circular(0),
+                                        ),
+                                      ),
+                                    ]),
+                                    BarChartGroupData(x: 2, barRods: [
+                                      BarChartRodData(y: 8),
+                                    ]),
+                                    BarChartGroupData(x: 3, barRods: [
+                                      BarChartRodData(y: 8),
+                                    ]),
+                                    BarChartGroupData(x: 4, barRods: [
+                                      BarChartRodData(y: 8),
+                                    ]),
+                                    BarChartGroupData(x: 5, barRods: [
+                                      BarChartRodData(y: 8),
+                                    ]),
+                                    BarChartGroupData(x: 6, barRods: [
+                                      BarChartRodData(y: 8),
+                                    ]),
+                                  ],
                                   titlesData: FlTitlesData(
                                     show: true,
                                     bottomTitles: SideTitles(
