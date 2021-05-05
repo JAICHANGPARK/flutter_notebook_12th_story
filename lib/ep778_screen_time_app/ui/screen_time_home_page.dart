@@ -109,9 +109,15 @@ class _ScreenTimeHomePageState extends State<ScreenTimeHomePage> {
                             flex: 5,
                             child: BarChart(
                               BarChartData(
-                                gridData: FlGridData(
-                                  horizontalInterval: 4.0
-                                ),
+                                  gridData: FlGridData(
+                                      horizontalInterval: 4.0,
+                                      show: true,
+                                      getDrawingHorizontalLine: (value) {
+                                        return FlLine(
+                                          color: Colors.grey[300],
+
+                                        );
+                                      }),
                                   alignment: BarChartAlignment.spaceAround,
                                   groupsSpace: 8,
                                   minY: 0,
@@ -143,7 +149,8 @@ class _ScreenTimeHomePageState extends State<ScreenTimeHomePage> {
                                     ]),
                                     BarChartGroupData(x: 2, barRods: [
                                       BarChartRodData(
-                                        y: 3, colors: [appGreenColor],
+                                        y: 3,
+                                        colors: [appGreenColor],
                                         borderRadius: BorderRadius.only(
                                           topLeft: Radius.circular(4),
                                           topRight: Radius.circular(4),
@@ -154,7 +161,8 @@ class _ScreenTimeHomePageState extends State<ScreenTimeHomePage> {
                                     ]),
                                     BarChartGroupData(x: 3, barRods: [
                                       BarChartRodData(
-                                        y: 5, colors: [appGreenColor],
+                                        y: 5,
+                                        colors: [appGreenColor],
                                         borderRadius: BorderRadius.only(
                                           topLeft: Radius.circular(4),
                                           topRight: Radius.circular(4),
@@ -165,7 +173,8 @@ class _ScreenTimeHomePageState extends State<ScreenTimeHomePage> {
                                     ]),
                                     BarChartGroupData(x: 4, barRods: [
                                       BarChartRodData(
-                                        y: 4, colors: [appGreenColor],
+                                        y: 4,
+                                        colors: [appGreenColor],
                                         borderRadius: BorderRadius.only(
                                           topLeft: Radius.circular(4),
                                           topRight: Radius.circular(4),
@@ -176,7 +185,8 @@ class _ScreenTimeHomePageState extends State<ScreenTimeHomePage> {
                                     ]),
                                     BarChartGroupData(x: 5, barRods: [
                                       BarChartRodData(
-                                        y: 3, colors: [appGreenColor],
+                                        y: 3,
+                                        colors: [appGreenColor],
                                         borderRadius: BorderRadius.only(
                                           topLeft: Radius.circular(4),
                                           topRight: Radius.circular(4),
@@ -187,7 +197,8 @@ class _ScreenTimeHomePageState extends State<ScreenTimeHomePage> {
                                     ]),
                                     BarChartGroupData(x: 6, barRods: [
                                       BarChartRodData(
-                                        y: 8, colors: [appDarkGreenColor],
+                                        y: 8,
+                                        colors: [appDarkGreenColor],
                                         borderRadius: BorderRadius.only(
                                           topLeft: Radius.circular(4),
                                           topRight: Radius.circular(4),
