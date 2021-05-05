@@ -110,13 +110,27 @@ class _ScreenTimeHomePageState extends State<ScreenTimeHomePage> {
                             child: BarChart(
                               BarChartData(
                                   gridData: FlGridData(
-                                      horizontalInterval: 4.0,
+                                      horizontalInterval: 1.0,
                                       show: true,
                                       getDrawingHorizontalLine: (value) {
-                                        return FlLine(
-                                          color: Colors.grey[300],
+                                        print(value);
+                                        if (value == 3) {
+                                          return FlLine(
+                                            color: appGreenColor,
+                                            dashArray: [4, 10],
+                                            strokeWidth: 3,
+                                          );
+                                        }
+                                        if(value % 4 ==0){
+                                          return FlLine(
+                                            color: Colors.grey[300],
+                                          );
+                                        }else{
+                                          return FlLine(
+                                            color: Colors.transparent
+                                          );
+                                        }
 
-                                        );
                                       }),
                                   alignment: BarChartAlignment.spaceAround,
                                   groupsSpace: 8,
