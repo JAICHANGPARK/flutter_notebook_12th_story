@@ -109,6 +109,15 @@ class _ScreenTimeHomePageState extends State<ScreenTimeHomePage> {
                             flex: 5,
                             child: BarChart(
                               BarChartData(
+                                barGroups: [
+                                  BarChartGroupData(x: 0,),
+                                  BarChartGroupData(x: 1,),
+                                  BarChartGroupData(x: 2,),
+                                  BarChartGroupData(x: 3,),
+                                  BarChartGroupData(x: 4,),
+                                  BarChartGroupData(x: 5,),
+                                  BarChartGroupData(x: 6,),
+                                ],
                                   titlesData: FlTitlesData(
                                     show: true,
                                     bottomTitles: SideTitles(
