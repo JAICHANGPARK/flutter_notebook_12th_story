@@ -117,9 +117,7 @@ class _ScreenTimeHomePageState extends State<ScreenTimeHomePage> {
                                     BarChartGroupData(x: 0, barsSpace: 8, barRods: [
                                       BarChartRodData(
                                         y: 8,
-                                        colors: [
-                                          appGreenColor
-                                        ],
+                                        colors: [appGreenColor],
                                         borderRadius: BorderRadius.only(
                                           topLeft: Radius.circular(4),
                                           topRight: Radius.circular(4),
@@ -131,6 +129,7 @@ class _ScreenTimeHomePageState extends State<ScreenTimeHomePage> {
                                     BarChartGroupData(x: 1, barRods: [
                                       BarChartRodData(
                                         y: 4,
+                                        colors: [appGreenColor],
                                         borderRadius: BorderRadius.only(
                                           topLeft: Radius.circular(4),
                                           topRight: Radius.circular(4),
