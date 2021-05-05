@@ -111,6 +111,8 @@ class _ScreenTimeHomePageState extends State<ScreenTimeHomePage> {
                               BarChartData(
                                 alignment: BarChartAlignment.spaceAround,
                                 groupsSpace: 8,
+                                minY: 0,
+                                maxY: 24,
                                 barGroups: [
                                   BarChartGroupData(x: 0,
                                   barsSpace: 8,
