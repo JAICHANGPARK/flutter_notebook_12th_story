@@ -334,14 +334,14 @@ class _ScreenTimeHomePageState extends State<ScreenTimeHomePage> {
                                       show: true,
                                       getDrawingHorizontalLine: (value) {
                                         print(value);
-                                        if (value == 3) {
+                                        if (value == 24) {
                                           return FlLine(
                                             color: appGreenColor,
                                             dashArray: [6, 10],
                                             strokeWidth: 3,
                                           );
                                         }
-                                        if (value % 4 == 0) {
+                                        if (value % 20 == 0) {
                                           return FlLine(
                                             color: Colors.grey[300],
                                           );
@@ -488,7 +488,7 @@ class _ScreenTimeHomePageState extends State<ScreenTimeHomePage> {
                                           if (value == 24) {
                                             return "avg";
                                           }
-                                          if (value % 4 == 0) {
+                                          if (value % 20 == 0) {
                                             return "${value.toStringAsFixed(0)} m";
                                           } else {
                                             return "";
