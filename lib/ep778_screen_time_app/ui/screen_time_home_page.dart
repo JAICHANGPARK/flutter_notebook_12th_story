@@ -67,11 +67,11 @@ class _ScreenTimeHomePageState extends State<ScreenTimeHomePage> {
                 Padding(
                   padding: const EdgeInsets.symmetric(vertical: 16),
                   child: SizedBox(
-                    height: MediaQuery.of(context).size.height / 3,
+                    height: MediaQuery.of(context).size.height / 3.2,
                     child: Column(
                       children: [
                         Expanded(
-                            flex: 1,
+                            flex: 2,
                             child: Column(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
@@ -106,7 +106,7 @@ class _ScreenTimeHomePageState extends State<ScreenTimeHomePage> {
                             )),
                         SizedBox(height: 16),
                         Expanded(
-                            flex: 5,
+                            flex: 8,
                             child: BarChart(
                               BarChartData(
                                   gridData: FlGridData(
@@ -471,6 +471,222 @@ class _ScreenTimeHomePageState extends State<ScreenTimeHomePage> {
                                     ),
                                     rightTitles: SideTitles(
                                       margin: 16,
+                                        showTitles: true,
+                                        getTextStyles: (value) {
+                                          if (value == 24) {
+                                            return TextStyle(
+                                              color: appDarkGreenColor,
+                                            );
+                                          }
+                                          if (value % 10 == 0) {
+                                            return TextStyle(color: appGreenColor, fontWeight: FontWeight.bold);
+                                          } else {
+                                            return TextStyle();
+                                          }
+                                        },
+                                        getTitles: (value) {
+                                          if (value == 24) {
+                                            return "avg";
+                                          }
+                                          if (value % 20 == 0) {
+                                            return "${value.toStringAsFixed(0)} m";
+                                          } else {
+                                            return "";
+                                          }
+                                        }),
+                                  ),
+                                  borderData: FlBorderData(
+                                    show: false,
+                                  ),
+                                  backgroundColor: Colors.teal[50]),
+                            )),
+                      ],
+                    ),
+                  ),
+                ),
+                SizedBox(height: 16,),
+                Text("MOMENT GUIDE"),
+                Padding(
+                  padding: const EdgeInsets.only(top: 8, bottom: 8),
+                  child: SizedBox(
+                    height: MediaQuery.of(context).size.height / 3.2,
+                    child: Column(
+                      children: [
+                        Expanded(
+                            flex: 2,
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Row(
+                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    Text(
+                                      "Phone it in today",
+                                      style: TextStyle(
+                                          fontWeight: FontWeight.bold, color: appDarkGreenColor, fontSize: 18),
+                                    ),
+
+                                  ],
+                                ),
+                                Row(
+                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    Text(
+                                      "Call someone today",
+                                      style: TextStyle(color: appDarkGreenColor, fontSize: 16),
+                                    ),
+
+                                  ],
+                                ),
+                              ],
+                            )),
+                        SizedBox(height: 16),
+                        Expanded(
+                            flex: 8,
+                            child: BarChart(
+                              BarChartData(
+                                  gridData: FlGridData(
+                                      horizontalInterval: 1.0,
+                                      show: true,
+                                      getDrawingHorizontalLine: (value) {
+                                        print(value);
+                                        if (value == 24) {
+                                          return FlLine(
+                                            color: appGreenColor,
+                                            dashArray: [6, 10],
+                                            strokeWidth: 3,
+                                          );
+                                        }
+                                        if (value % 20 == 0) {
+                                          return FlLine(
+                                            color: Colors.grey[300],
+                                          );
+                                        } else {
+                                          return FlLine(color: Colors.transparent);
+                                        }
+                                      }),
+                                  alignment: BarChartAlignment.spaceAround,
+                                  groupsSpace: 8,
+                                  minY: 0,
+                                  maxY: 72,
+                                  barGroups: [
+                                    BarChartGroupData(x: 0, barsSpace: 8, barRods: [
+                                      BarChartRodData(
+                                        y: 15,
+                                        colors: [appGreenColor],
+                                        borderRadius: BorderRadius.only(
+                                          topLeft: Radius.circular(4),
+                                          topRight: Radius.circular(4),
+                                          bottomLeft: Radius.circular(0),
+                                          bottomRight: Radius.circular(0),
+                                        ),
+                                      ),
+                                    ]),
+                                    BarChartGroupData(x: 1, barRods: [
+                                      BarChartRodData(
+                                        y: 20,
+                                        colors: [appGreenColor],
+                                        borderRadius: BorderRadius.only(
+                                          topLeft: Radius.circular(4),
+                                          topRight: Radius.circular(4),
+                                          bottomLeft: Radius.circular(0),
+                                          bottomRight: Radius.circular(0),
+                                        ),
+                                      ),
+                                    ]),
+                                    BarChartGroupData(x: 2, barRods: [
+                                      BarChartRodData(
+                                        y: 30,
+                                        colors: [appGreenColor],
+                                        borderRadius: BorderRadius.only(
+                                          topLeft: Radius.circular(4),
+                                          topRight: Radius.circular(4),
+                                          bottomLeft: Radius.circular(0),
+                                          bottomRight: Radius.circular(0),
+                                        ),
+                                      ),
+                                    ]),
+                                    BarChartGroupData(x: 3, barRods: [
+                                      BarChartRodData(
+                                        y: 25,
+                                        colors: [appGreenColor],
+                                        borderRadius: BorderRadius.only(
+                                          topLeft: Radius.circular(4),
+                                          topRight: Radius.circular(4),
+                                          bottomLeft: Radius.circular(0),
+                                          bottomRight: Radius.circular(0),
+                                        ),
+                                      ),
+                                    ]),
+                                    BarChartGroupData(x: 4, barRods: [
+                                      BarChartRodData(
+                                        y: 28,
+                                        colors: [appGreenColor],
+                                        borderRadius: BorderRadius.only(
+                                          topLeft: Radius.circular(4),
+                                          topRight: Radius.circular(4),
+                                          bottomLeft: Radius.circular(0),
+                                          bottomRight: Radius.circular(0),
+                                        ),
+                                      ),
+                                    ]),
+                                    BarChartGroupData(x: 5, barRods: [
+                                      BarChartRodData(
+                                        y: 29,
+                                        colors: [appGreenColor],
+                                        borderRadius: BorderRadius.only(
+                                          topLeft: Radius.circular(4),
+                                          topRight: Radius.circular(4),
+                                          bottomLeft: Radius.circular(0),
+                                          bottomRight: Radius.circular(0),
+                                        ),
+                                      ),
+                                    ]),
+                                    BarChartGroupData(x: 6, barRods: [
+                                      BarChartRodData(
+                                        y: 30,
+                                        colors: [appDarkGreenColor],
+                                        borderRadius: BorderRadius.only(
+                                          topLeft: Radius.circular(4),
+                                          topRight: Radius.circular(4),
+                                          bottomLeft: Radius.circular(0),
+                                          bottomRight: Radius.circular(0),
+                                        ),
+                                      ),
+                                    ]),
+                                  ],
+                                  titlesData: FlTitlesData(
+                                    show: true,
+                                    bottomTitles: SideTitles(
+                                        showTitles: true,
+                                        getTextStyles: (value) => TextStyle(
+                                          color: appGreenColor,
+                                        ),
+                                        getTitles: (value) {
+                                          switch (value.toInt()) {
+                                            case 0:
+                                              return "M";
+                                            case 1:
+                                              return "T";
+                                            case 2:
+                                              return "W";
+                                            case 3:
+                                              return "T";
+                                            case 4:
+                                              return "F";
+                                            case 5:
+                                              return "S";
+                                            case 6:
+                                              return "S";
+                                            default:
+                                              return '';
+                                          }
+                                        }),
+                                    leftTitles: SideTitles(
+                                      showTitles: false,
+                                    ),
+                                    rightTitles: SideTitles(
+                                        margin: 16,
                                         showTitles: true,
                                         getTextStyles: (value) {
                                           if (value == 24) {
