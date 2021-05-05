@@ -117,7 +117,7 @@ class _ScreenTimeHomePageState extends State<ScreenTimeHomePage> {
                                         if (value == 3) {
                                           return FlLine(
                                             color: appGreenColor,
-                                            dashArray: [4, 10],
+                                            dashArray: [6, 10],
                                             strokeWidth: 3,
                                           );
                                         }
