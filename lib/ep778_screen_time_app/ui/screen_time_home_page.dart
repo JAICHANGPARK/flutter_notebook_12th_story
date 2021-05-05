@@ -109,8 +109,11 @@ class _ScreenTimeHomePageState extends State<ScreenTimeHomePage> {
                             flex: 5,
                             child: BarChart(
                               BarChartData(
+                                alignment: BarChartAlignment.spaceAround,
+                                groupsSpace: 8,
                                 barGroups: [
                                   BarChartGroupData(x: 0,
+                                  barsSpace: 8,
                                   barRods: [
                                     BarChartRodData(y: 8),
                                   ]),
