@@ -11,14 +11,16 @@ class _CryptoExchangeHomePageState extends State<CryptoExchangeHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Expanded(child: Placeholder(), flex: 2,),
-          Expanded(child: Placeholder(), flex: 20,),
-          Expanded(child: Placeholder(),flex: 2,),
+      body: SafeArea(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Expanded(child: Placeholder(), flex: 3,),
+            Expanded(child: Placeholder(), flex: 20,),
+            Expanded(child: Placeholder(),flex: 2,),
 
-        ],
+          ],
+        ),
       ),
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
