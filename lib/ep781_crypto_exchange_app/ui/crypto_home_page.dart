@@ -10,6 +10,8 @@ class CryptoExchangeHomePage extends StatefulWidget {
 class _CryptoExchangeHomePageState extends State<CryptoExchangeHomePage> {
   // 71 0 249 blue
   // 119 254 114 green  77 fE 72
+
+  Color _CryptoAppGreenColor = Color(0xff77fe72);
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -22,7 +24,9 @@ class _CryptoExchangeHomePageState extends State<CryptoExchangeHomePage> {
             Expanded(child: Row(
               children: [
                 Expanded(child: Placeholder()),
-                Expanded(child: Placeholder()),
+                Expanded(child: Container(
+                  color: _CryptoAppGreenColor,
+                )),
               ],
             ),flex: 2,),
 
