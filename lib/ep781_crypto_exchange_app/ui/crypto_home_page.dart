@@ -41,12 +41,14 @@ class _CryptoExchangeHomePageState extends State<CryptoExchangeHomePage> {
                               left: 0,
                               top: 0,
                               bottom: 0,
-                              child: CircleAvatar(radius: 28,)),
+                              child: CircleAvatar(radius: 28,
+                              backgroundColor: Colors.black,)),
                           Positioned(
                               right: 0,
                               top: 0,
                               bottom: 0,
-                              child: CircleAvatar(radius: 12,))
+                              child: CircleAvatar(radius: 9,
+                              backgroundColor: _cryptoAppBlueColor,))
                         ],
                       ),
                     )
