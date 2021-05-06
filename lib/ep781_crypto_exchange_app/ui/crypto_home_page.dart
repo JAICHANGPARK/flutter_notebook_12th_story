@@ -19,7 +19,9 @@ class _CryptoExchangeHomePageState extends State<CryptoExchangeHomePage> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Expanded(child: Placeholder(), flex: 3,),
+            Expanded(child: Container(
+              color: Colors.white,
+            ), flex: 3,),
             Expanded(child: Placeholder(), flex: 22,),
             Expanded(child: Row(
               children: [
