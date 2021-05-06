@@ -27,6 +27,7 @@ class _CryptoExchangeHomePageState extends State<CryptoExchangeHomePage> {
             Expanded(
               child: Container(
                 color: Colors.white,
+                padding: EdgeInsets.symmetric(horizontal: 8),
                 child: Row(
                   children: [
                     Container(
