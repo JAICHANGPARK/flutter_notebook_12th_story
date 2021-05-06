@@ -52,6 +52,8 @@ class _CryptoExchangeHomePageState extends State<CryptoExchangeHomePage> {
         ),
       ),
       bottomNavigationBar: BottomNavigationBar(
+        selectedItemColor: Colors.black87,
+        unselectedItemColor: Colors.grey,
         currentIndex: _selectedTab,
         onTap: (idx){
           setState(() {
