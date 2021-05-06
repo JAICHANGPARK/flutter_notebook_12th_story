@@ -8,6 +8,8 @@ class CryptoExchangeHomePage extends StatefulWidget {
 }
 
 class _CryptoExchangeHomePageState extends State<CryptoExchangeHomePage> {
+  // 71 0 249 blue
+  // 119 254 114 green  77 fE 72
   @override
   Widget build(BuildContext context) {
     return Scaffold(
