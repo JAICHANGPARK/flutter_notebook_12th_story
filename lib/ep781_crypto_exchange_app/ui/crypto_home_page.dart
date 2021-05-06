@@ -17,7 +17,12 @@ class _CryptoExchangeHomePageState extends State<CryptoExchangeHomePage> {
           children: [
             Expanded(child: Placeholder(), flex: 3,),
             Expanded(child: Placeholder(), flex: 20,),
-            Expanded(child: Placeholder(),flex: 2,),
+            Expanded(child: Row(
+              children: [
+                Expanded(child: Placeholder()),
+                Expanded(child: Placeholder()),
+              ],
+            ),flex: 2,),
 
           ],
         ),
