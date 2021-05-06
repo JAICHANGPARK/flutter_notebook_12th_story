@@ -49,7 +49,12 @@ class _CryptoExchangeHomePageState extends State<CryptoExchangeHomePage> {
                               backgroundColor: _cryptoAppBlueColor,))
                         ],
                       ),
-                    )
+                    ),
+                    Spacer(),
+                    Text("W"),
+                    Text("B"),
+                    Spacer(),
+                    Icon(Icons.notifications_none_outlined),
                   ],
                 ),
               ),
