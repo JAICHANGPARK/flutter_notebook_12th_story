@@ -37,7 +37,11 @@ class _CryptoExchangeHomePageState extends State<CryptoExchangeHomePage> {
                       ),
                       child: Stack(
                         children: [
-                          Positioned(child: CircleAvatar(radius: 28,))
+                          Positioned(
+                              left: 0,
+                              top: 0,
+                              bottom: 0,
+                              child: CircleAvatar(radius: 28,))
                         ],
                       ),
                     )
