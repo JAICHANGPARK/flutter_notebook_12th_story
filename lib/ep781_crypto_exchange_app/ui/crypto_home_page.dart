@@ -10,6 +10,6 @@ class CryptoExchangeHomePage extends StatefulWidget {
 class _CryptoExchangeHomePageState extends State<CryptoExchangeHomePage> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold();
   }
 }
