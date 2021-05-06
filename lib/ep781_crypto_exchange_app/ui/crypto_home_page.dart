@@ -12,10 +12,11 @@ class _CryptoExchangeHomePageState extends State<CryptoExchangeHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Expanded(child: Placeholder()),
-          Expanded(child: Placeholder()),
-          Expanded(child: Placeholder()),
+          Expanded(child: Placeholder(), flex: 2,),
+          Expanded(child: Placeholder(), flex: 20,),
+          Expanded(child: Placeholder(),flex: 2,),
 
         ],
       ),
