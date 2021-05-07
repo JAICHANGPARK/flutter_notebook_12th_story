@@ -99,13 +99,20 @@ class _CryptoExchangeHomePageState extends State<CryptoExchangeHomePage> {
                       padding: const EdgeInsets.symmetric(horizontal: 16),
                       child: Row(
                         children: [
-                          Text("Balance Flow", style: GoogleFonts.chakraPetch(
-                            fontSize: 20,
-                          ),),
+                          Text(
+                            "Balance Flow",
+                            style: GoogleFonts.chakraPetch(
+                              fontSize: 20,
+                            ),
+                          ),
                           Spacer(),
                           TextButton(
                             onPressed: () {},
-                            child: Text("This Year"),
+                            child: Text(
+                              "This Year",
+                              style: GoogleFonts.chakraPetch(
+                                  fontSize: 14, color: Colors.black, fontWeight: FontWeight.bold),
+                            ),
                             style: ButtonStyle(
                               foregroundColor: MaterialStateProperty.resolveWith((states) => Colors.black),
                             ),
