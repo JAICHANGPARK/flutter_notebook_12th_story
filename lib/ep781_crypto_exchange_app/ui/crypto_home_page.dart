@@ -40,36 +40,50 @@ class _CryptoExchangeHomePageState extends State<CryptoExchangeHomePage> {
                               left: 0,
                               top: 0,
                               bottom: 0,
-                              child: CircleAvatar(radius: 28,
-                              backgroundColor: Colors.black,)),
+                              child: CircleAvatar(
+                                radius: 28,
+                                backgroundColor: Colors.black,
+                              )),
                           Positioned(
                               right: 0,
                               top: 0,
                               bottom: 0,
-                              child: CircleAvatar(radius: 9,
-                              child: Icon(Icons.check, size: 12,),
-                              foregroundColor: _cryptoAppGreenColor,
-                              backgroundColor: _cryptoAppBlueColor,))
+                              child: CircleAvatar(
+                                radius: 9,
+                                child: Icon(
+                                  Icons.check,
+                                  size: 12,
+                                ),
+                                foregroundColor: _cryptoAppGreenColor,
+                                backgroundColor: _cryptoAppBlueColor,
+                              ))
                         ],
                       ),
                     ),
                     Spacer(),
-                    Text("W",style: TextStyle(
-                      color: Colors.black,
-                      fontSize: 24,
-                    ),),
-                    Text("B",style: TextStyle(
-                      color: Colors.grey,
-                      fontSize: 24,
-                    ),),
+                    Text(
+                      "W",
+                      style: GoogleFonts.chakraPetch(
+                        color: Colors.black,
+                        fontSize: 24,
+                      ),
+                    ),
+                    Text(
+                      "B",
+                      style: GoogleFonts.chakraPetch(
+                        color: Colors.grey,
+                        fontSize: 24,
+                      ),
+                    ),
                     Spacer(),
                     CircleAvatar(
                       radius: 8,
                       backgroundColor: Colors.red,
                       foregroundColor: Colors.white,
-                      child: Text("2",style: TextStyle(
-                        fontSize: 12
-                      ),),
+                      child: Text(
+                        "2",
+                        style: GoogleFonts.chakraPetch(fontSize: 12),
+                      ),
                     ),
                     Icon(Icons.notifications_none_outlined),
                   ],
@@ -84,22 +98,30 @@ class _CryptoExchangeHomePageState extends State<CryptoExchangeHomePage> {
             Expanded(
               child: Row(
                 children: [
-                  Expanded(child: Container(
+                  Expanded(
+                      child: Container(
                     color: _cryptoAppBlueColor,
                     child: Center(
-                      child: Text("Buy / Sell",style: GoogleFonts.chakraPetch(
-                          fontWeight: FontWeight.bold
-                      ),),
+                      child: Text(
+                        "Buy / Sell",
+                        style: GoogleFonts.chakraPetch(
+                          fontWeight: FontWeight.bold,
+                          color: _cryptoAppGreenColor,
+                        ),
+                      ),
                     ),
                   )),
                   Expanded(
                       child: Container(
                     color: _cryptoAppGreenColor,
-                        child: Center(
-                          child: Text("Deposit", style: GoogleFonts.chakraPetch(
-                            fontWeight: FontWeight.bold
-                          ),),
+                    child: Center(
+                      child: Text(
+                        "Deposit",
+                        style: GoogleFonts.chakraPetch(
+                          fontWeight: FontWeight.bold,
                         ),
+                      ),
+                    ),
                   )),
                 ],
               ),
@@ -112,7 +134,9 @@ class _CryptoExchangeHomePageState extends State<CryptoExchangeHomePage> {
         selectedItemColor: Colors.black87,
         unselectedItemColor: Colors.grey,
         currentIndex: _selectedTab,
-        onTap: (idx){
+        selectedLabelStyle: GoogleFonts.chakraPetch(),
+        unselectedLabelStyle: GoogleFonts.chakraPetch(),
+        onTap: (idx) {
           setState(() {
             _selectedTab = idx;
           });
