@@ -94,9 +94,37 @@ class _CryptoExchangeHomePageState extends State<CryptoExchangeHomePage> {
             Expanded(
               child: Column(
                 children: [
-                  Expanded(child: Placeholder(), flex: 2,),
-                  Expanded(child: Placeholder(), flex: 12) ,
-                  Expanded(child: Placeholder(), flex: 3,),
+                  Expanded(
+                    child: Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Row(
+                        children: [
+                          Text("Balance Flow"),
+                          Spacer(),
+                          TextButton(
+                            onPressed: () {},
+                            child: Text("This Year"),
+                            style: ButtonStyle(
+                              foregroundColor: MaterialStateProperty.resolveWith((states) => Colors.black),
+                            ),
+                          ),
+                          TextButton(
+                            onPressed: () {},
+                            child: Text("This Month"),
+                            style: ButtonStyle(
+                              foregroundColor: MaterialStateProperty.resolveWith((states) => Colors.grey),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    flex: 2,
+                  ),
+                  Expanded(child: Placeholder(), flex: 12),
+                  Expanded(
+                    child: Placeholder(),
+                    flex: 3,
+                  ),
                 ],
               ),
               flex: 22,
