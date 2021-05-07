@@ -62,7 +62,10 @@ class _CryptoExchangeHomePageState extends State<CryptoExchangeHomePage> {
                     Spacer(),
                     CircleAvatar(
                       radius: 8,
-                    )
+                      backgroundColor: Colors.red,
+                      foregroundColor: Colors.white,
+                      child: Text("2",),
+                    ),
                     Icon(Icons.notifications_none_outlined),
                   ],
                 ),
