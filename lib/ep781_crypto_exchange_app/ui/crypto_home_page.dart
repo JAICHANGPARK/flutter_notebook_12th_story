@@ -17,6 +17,8 @@ class _CryptoExchangeHomePageState extends State<CryptoExchangeHomePage> {
   Color _cryptoAppBlueColor = Color(0xff4700f0);
   Color _cryptoAppBackgroundColor = Color(0xfff4f7fd);
 
+  bool _chartIsYear = false;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -119,9 +121,13 @@ class _CryptoExchangeHomePageState extends State<CryptoExchangeHomePage> {
                           ),
                           TextButton(
                             onPressed: () {},
-                            child: Text("This Month"),
+                            child: Text(
+                              "This Month",
+                              style: GoogleFonts.chakraPetch(
+                                  fontSize: 14, color: Colors.black, fontWeight: FontWeight.bold),
+                            ),
                             style: ButtonStyle(
-                              foregroundColor: MaterialStateProperty.resolveWith((states) => Colors.grey),
+                              foregroundColor: MaterialStateProperty.resolveWith((states) => Colors.black),
                             ),
                           ),
                         ],
