@@ -66,7 +66,9 @@ class _CryptoExchangeHomePageState extends State<CryptoExchangeHomePage> {
                       radius: 8,
                       backgroundColor: Colors.red,
                       foregroundColor: Colors.white,
-                      child: Text("2",),
+                      child: Text("2",style: TextStyle(
+                        fontSize: 12
+                      ),),
                     ),
                     Icon(Icons.notifications_none_outlined),
                   ],
@@ -83,6 +85,9 @@ class _CryptoExchangeHomePageState extends State<CryptoExchangeHomePage> {
                 children: [
                   Expanded(child: Container(
                     color: _cryptoAppBlueColor,
+                    child: Center(
+                      child: Text("Buy / Sell"),
+                    ),
                   )),
                   Expanded(
                       child: Container(
