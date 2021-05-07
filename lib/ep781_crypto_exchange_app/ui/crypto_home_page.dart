@@ -46,6 +46,8 @@ class _CryptoExchangeHomePageState extends State<CryptoExchangeHomePage> {
                               top: 0,
                               bottom: 0,
                               child: CircleAvatar(radius: 9,
+                              child: Icon(Icons.check, size: 12,),
+                              foregroundColor: _cryptoAppGreenColor,
                               backgroundColor: _cryptoAppBlueColor,))
                         ],
                       ),
