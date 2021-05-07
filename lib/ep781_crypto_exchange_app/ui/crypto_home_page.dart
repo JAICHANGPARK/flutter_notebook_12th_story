@@ -148,14 +148,23 @@ class _CryptoExchangeHomePageState extends State<CryptoExchangeHomePage> {
                     flex: 2,
                   ),
                   Expanded(
-                      child: Card(
-                        elevation: 1,
-                        child: Center(),
+                      child: Padding(
+                        padding: const EdgeInsets.fromLTRB(8, 0, 8, 8),
+                        child: Card(
+                          elevation: 0,
+                          child: Center(),
+                        ),
                       ),
                       flex: 12),
                   Expanded(
-                    child: Placeholder(),
-                    flex: 3,
+                    child: Padding(
+                      padding: const EdgeInsets.fromLTRB(8, 0, 8, 8),
+                      child: Card(
+                        elevation: 0,
+                        child: Center(),
+                      ),
+                    ),
+                    flex: 4,
                   ),
                 ],
               ),
