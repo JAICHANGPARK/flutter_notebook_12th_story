@@ -51,7 +51,10 @@ class _CryptoExchangeHomePageState extends State<CryptoExchangeHomePage> {
                       ),
                     ),
                     Spacer(),
-                    Text("W"),
+                    Text("W",style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 24,
+                    ),),
                     Text("B"),
                     Spacer(),
                     Icon(Icons.notifications_none_outlined),
