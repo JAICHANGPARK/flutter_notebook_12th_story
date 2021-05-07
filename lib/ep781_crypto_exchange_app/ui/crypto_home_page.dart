@@ -92,7 +92,13 @@ class _CryptoExchangeHomePageState extends State<CryptoExchangeHomePage> {
               flex: 3,
             ),
             Expanded(
-              child: Placeholder(),
+              child: Column(
+                children: [
+                  Expanded(child: Placeholder(), flex: 2,),
+                  Expanded(child: Placeholder(), flex: 12) ,
+                  Expanded(child: Placeholder(), flex: 3,),
+                ],
+              ),
               flex: 22,
             ),
             Expanded(
