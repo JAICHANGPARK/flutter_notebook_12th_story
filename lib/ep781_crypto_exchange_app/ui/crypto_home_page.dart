@@ -113,12 +113,13 @@ class _CryptoExchangeHomePageState extends State<CryptoExchangeHomePage> {
                               setState(() {
                                 _chartIsYear = true;
                               });
-
                             },
                             child: Text(
                               "This Year",
                               style: GoogleFonts.chakraPetch(
-                                  fontSize: 14, color: Colors.black, fontWeight: FontWeight.bold),
+                                  fontSize: 12,
+                                  color: Colors.black,
+                                  fontWeight: _chartIsYear ? FontWeight.bold : FontWeight.normal),
                             ),
                             style: ButtonStyle(
                               foregroundColor: MaterialStateProperty.resolveWith((states) => Colors.black),
@@ -129,12 +130,13 @@ class _CryptoExchangeHomePageState extends State<CryptoExchangeHomePage> {
                               setState(() {
                                 _chartIsYear = false;
                               });
-
                             },
                             child: Text(
                               "This Month",
                               style: GoogleFonts.chakraPetch(
-                                  fontSize: 14, color: Colors.black, fontWeight: FontWeight.bold),
+                                  fontSize: 12,
+                                  color: Colors.black,
+                                  fontWeight: _chartIsYear ? FontWeight.normal : FontWeight.bold),
                             ),
                             style: ButtonStyle(
                               foregroundColor: MaterialStateProperty.resolveWith((states) => Colors.black),
@@ -145,7 +147,12 @@ class _CryptoExchangeHomePageState extends State<CryptoExchangeHomePage> {
                     ),
                     flex: 2,
                   ),
-                  Expanded(child: Placeholder(), flex: 12),
+                  Expanded(
+                      child: Card(
+                        elevation: 1,
+                        child: Center(),
+                      ),
+                      flex: 12),
                   Expanded(
                     child: Placeholder(),
                     flex: 3,
