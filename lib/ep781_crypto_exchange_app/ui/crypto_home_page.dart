@@ -91,7 +91,7 @@ class _CryptoExchangeHomePageState extends State<CryptoExchangeHomePage> {
                   ],
                 ),
               ),
-              flex: 3,
+              flex: 2,
             ),
             Expanded(
               child: Column(
@@ -168,7 +168,7 @@ class _CryptoExchangeHomePageState extends State<CryptoExchangeHomePage> {
                   ),
                 ],
               ),
-              flex: 22,
+              flex: 14,
             ),
             Expanded(
               child: Row(
@@ -200,7 +200,7 @@ class _CryptoExchangeHomePageState extends State<CryptoExchangeHomePage> {
                   )),
                 ],
               ),
-              flex: 2,
+              flex: 1,
             ),
           ],
         ),
