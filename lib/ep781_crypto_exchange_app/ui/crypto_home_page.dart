@@ -55,8 +55,14 @@ class _CryptoExchangeHomePageState extends State<CryptoExchangeHomePage> {
                       color: Colors.black,
                       fontSize: 24,
                     ),),
-                    Text("B"),
+                    Text("B",style: TextStyle(
+                      color: Colors.grey,
+                      fontSize: 24,
+                    ),),
                     Spacer(),
+                    CircleAvatar(
+                      radius: 8,
+                    )
                     Icon(Icons.notifications_none_outlined),
                   ],
                 ),
