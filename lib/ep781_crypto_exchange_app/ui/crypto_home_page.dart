@@ -109,7 +109,12 @@ class _CryptoExchangeHomePageState extends State<CryptoExchangeHomePage> {
                           ),
                           Spacer(),
                           TextButton(
-                            onPressed: () {},
+                            onPressed: () {
+                              setState(() {
+                                _chartIsYear = true;
+                              });
+
+                            },
                             child: Text(
                               "This Year",
                               style: GoogleFonts.chakraPetch(
@@ -120,7 +125,12 @@ class _CryptoExchangeHomePageState extends State<CryptoExchangeHomePage> {
                             ),
                           ),
                           TextButton(
-                            onPressed: () {},
+                            onPressed: () {
+                              setState(() {
+                                _chartIsYear = false;
+                              });
+
+                            },
                             child: Text(
                               "This Month",
                               style: GoogleFonts.chakraPetch(
