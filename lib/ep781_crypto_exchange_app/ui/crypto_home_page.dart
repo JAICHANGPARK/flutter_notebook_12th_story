@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class CryptoExchangeHomePage extends StatefulWidget {
   const CryptoExchangeHomePage({Key? key}) : super(key: key);
@@ -86,12 +87,19 @@ class _CryptoExchangeHomePageState extends State<CryptoExchangeHomePage> {
                   Expanded(child: Container(
                     color: _cryptoAppBlueColor,
                     child: Center(
-                      child: Text("Buy / Sell"),
+                      child: Text("Buy / Sell",style: GoogleFonts.chakraPetch(
+                          fontWeight: FontWeight.bold
+                      ),),
                     ),
                   )),
                   Expanded(
                       child: Container(
                     color: _cryptoAppGreenColor,
+                        child: Center(
+                          child: Text("Deposit", style: GoogleFonts.chakraPetch(
+                            fontWeight: FontWeight.bold
+                          ),),
+                        ),
                   )),
                 ],
               ),
