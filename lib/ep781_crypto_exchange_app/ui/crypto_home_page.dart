@@ -96,10 +96,12 @@ class _CryptoExchangeHomePageState extends State<CryptoExchangeHomePage> {
                 children: [
                   Expanded(
                     child: Padding(
-                      padding: const EdgeInsets.all(8.0),
+                      padding: const EdgeInsets.symmetric(horizontal: 16),
                       child: Row(
                         children: [
-                          Text("Balance Flow"),
+                          Text("Balance Flow", style: GoogleFonts.chakraPetch(
+                            fontSize: 20,
+                          ),),
                           Spacer(),
                           TextButton(
                             onPressed: () {},
