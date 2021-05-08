@@ -208,7 +208,7 @@ class _CryptoExchangeHomePageState extends State<CryptoExchangeHomePage> {
                                   Spacer(),
                                   Text("3,960.93"),
                                   SizedBox(width: 4),
-                                  Text("USD" ,GoogleFonts.chakraPetch(
+                                  Text("USD" ,style: GoogleFonts.chakraPetch(
                                     fontWeight: FontWeight.bold,
                                     fontSize: 12,
                                     color: Colors.grey,
