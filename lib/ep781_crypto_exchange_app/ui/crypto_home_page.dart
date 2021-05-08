@@ -161,7 +161,27 @@ class _CryptoExchangeHomePageState extends State<CryptoExchangeHomePage> {
                       padding: const EdgeInsets.fromLTRB(8, 0, 8, 8),
                       child: Card(
                         elevation: 0,
-                        child: Center(),
+                        child: Padding(
+                          padding: const EdgeInsets.all(16.0),
+                          child: Column(
+                            children: [
+                              Row(
+                                children: [
+                                  CircleAvatar(
+                                    radius: 12,
+                                    backgroundColor: Colors.orange,
+                                  ),
+                                  Text("Buy Bitcoin",style: GoogleFonts.chakraPetch(
+                                    fontWeight: FontWeight.bold,
+                                  ),),
+                                  Spacer(),
+                                  Text("0.4782"),
+                                  Text("BTC")
+                                ],
+                              )
+                            ],
+                          ),
+                        ),
                       ),
                     ),
                     flex: 4,
