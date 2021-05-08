@@ -1,3 +1,4 @@
+import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:intl/intl.dart';
@@ -153,7 +154,16 @@ class _CryptoExchangeHomePageState extends State<CryptoExchangeHomePage> {
                         padding: const EdgeInsets.fromLTRB(8, 0, 8, 8),
                         child: Card(
                           elevation: 0,
-                          child: Center(),
+                          child: BarChart(
+                              BarChartData(
+                                maxY: 120,
+                                minY: 0,
+                                barGroups: [
+
+                                ]
+
+                              )
+                          ),
                         ),
                       ),
                       flex: 10),
