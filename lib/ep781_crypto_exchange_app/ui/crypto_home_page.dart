@@ -171,7 +171,7 @@ class _CryptoExchangeHomePageState extends State<CryptoExchangeHomePage> {
                                     radius: 12,
                                     backgroundColor: Colors.orange,
                                   ),
-                                  SizedBox(width: 8,),
+                                  SizedBox(width: 4,),
                                   Text("Buy Bitcoin",style: GoogleFonts.chakraPetch(
                                     fontWeight: FontWeight.bold,
                                   ),),
@@ -179,7 +179,7 @@ class _CryptoExchangeHomePageState extends State<CryptoExchangeHomePage> {
                                   Text("0.4782",style: GoogleFonts.chakraPetch(
                                     fontWeight: FontWeight.bold,
                                     fontSize: 16,
-                                  ),),
+                                  ),),  SizedBox(width: 4,),
                                   Text("BTC",style: GoogleFonts.chakraPetch(
                                     fontWeight: FontWeight.bold,
                                     fontSize: 16,
