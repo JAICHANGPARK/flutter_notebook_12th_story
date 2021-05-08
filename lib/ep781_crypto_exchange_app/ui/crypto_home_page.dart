@@ -156,13 +156,19 @@ class _CryptoExchangeHomePageState extends State<CryptoExchangeHomePage> {
                           elevation: 0,
                           child: BarChart(
                               BarChartData(
+                                gridData: FlGridData(
+                                  horizontalInterval: 10,
+                                ),
+                                axisTitleData: FlAxisTitleData(
+                                  leftTitle:
+                                ),
                                 maxY: 120,
                                 minY: 0,
                                 barGroups: [
                                 BarChartGroupData(x: 0, barRods: [
                                   BarChartRodData(y: 75, borderRadius: BorderRadius.zero),
-                                  BarChartRodData(y: 84),
-                                  BarChartRodData(y: 79),
+                                  BarChartRodData(y: 84, borderRadius: BorderRadius.zero),
+                                  BarChartRodData(y: 79, borderRadius: BorderRadius.zero),
                                 ]),
                                 ],
 
