@@ -162,12 +162,18 @@ class _CryptoExchangeHomePageState extends State<CryptoExchangeHomePage> {
                                   gridData: FlGridData(
                                     horizontalInterval: 10,
                                   ),
+                                  titlesData: FlTitlesData(
+                                    leftTitles: SideTitles(
+                                      showTitles: false,
+                                    )
+                                  ),
                                   axisTitleData: FlAxisTitleData(
                                     leftTitle:AxisTitle(
+
                                       showTitle: true,
                                       margin: 0,
                                       reservedSize: 0,
-                                      
+
                                     )
                                   ),
                                   maxY: 120,
