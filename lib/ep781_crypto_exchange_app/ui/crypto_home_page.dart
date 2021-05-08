@@ -156,44 +156,36 @@ class _CryptoExchangeHomePageState extends State<CryptoExchangeHomePage> {
                           elevation: 0,
                           child: Padding(
                             padding: const EdgeInsets.all(8.0),
-                            child: BarChart(
-                                BarChartData(
-                                    alignment: BarChartAlignment.spaceEvenly,
-                                  gridData: FlGridData(
-                                    horizontalInterval: 10,
-                                  ),
-                                  titlesData: FlTitlesData(
-                                    leftTitles: SideTitles(
-                                      showTitles: false,
-                                    )
-                                  ),
-                                  axisTitleData: FlAxisTitleData(
-                                    leftTitle:AxisTitle(
-
-                                      showTitle: true,
-                                      margin: 0,
-                                      reservedSize: 0,
-
-                                    )
-                                  ),
-                                  maxY: 120,
-                                  minY: 50,
-                                  barGroups: [
-                                  BarChartGroupData(x: 0, barRods: [
-                                    BarChartRodData(y: 75, borderRadius: BorderRadius.zero,
-                                    colors: [
-                                      _cryptoAppBlueColor,
-                                    ]),
-                                    BarChartRodData(y: 84, borderRadius: BorderRadius.zero,
-                                        colors: [
-                                          _cryptoAppGreenColor,
-                                        ]),
-                                    BarChartRodData(y: 79, borderRadius: BorderRadius.zero),
+                            child: BarChart(BarChartData(
+                              alignment: BarChartAlignment.spaceEvenly,
+                              gridData: FlGridData(
+                                horizontalInterval: 10,
+                              ),
+                              titlesData: FlTitlesData(
+                                  leftTitles: SideTitles(
+                                showTitles: true,
+                                margin: 0,
+                              )),
+                              axisTitleData: FlAxisTitleData(
+                                  leftTitle: AxisTitle(
+                                showTitle: true,
+                                margin: 0,
+                                reservedSize: 0,
+                              )),
+                              maxY: 120,
+                              minY: 50,
+                              barGroups: [
+                                BarChartGroupData(x: 0, barRods: [
+                                  BarChartRodData(y: 75, borderRadius: BorderRadius.zero, colors: [
+                                    _cryptoAppBlueColor,
                                   ]),
-                                  ],
-
-                                )
-                            ),
+                                  BarChartRodData(y: 84, borderRadius: BorderRadius.zero, colors: [
+                                    _cryptoAppGreenColor,
+                                  ]),
+                                  BarChartRodData(y: 79, borderRadius: BorderRadius.zero),
+                                ]),
+                              ],
+                            )),
                           ),
                         ),
                       ),
@@ -246,22 +238,31 @@ class _CryptoExchangeHomePageState extends State<CryptoExchangeHomePage> {
                               ),
                               Row(
                                 children: [
-                                  Text("${DateTime.now()}",style: GoogleFonts.chakraPetch(
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 12,
-                                    color: Colors.grey,
-                                  ),),
+                                  Text(
+                                    "${DateTime.now()}",
+                                    style: GoogleFonts.chakraPetch(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 12,
+                                      color: Colors.grey,
+                                    ),
+                                  ),
                                   Spacer(),
-                                  Text("3,960.93",style: GoogleFonts.chakraPetch(
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 12,
-                                  ),),
+                                  Text(
+                                    "3,960.93",
+                                    style: GoogleFonts.chakraPetch(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 12,
+                                    ),
+                                  ),
                                   SizedBox(width: 4),
-                                  Text("USD" ,style: GoogleFonts.chakraPetch(
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 12,
-                                    color: Colors.grey,
-                                  ),)
+                                  Text(
+                                    "USD",
+                                    style: GoogleFonts.chakraPetch(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 12,
+                                      color: Colors.grey,
+                                    ),
+                                  )
                                 ],
                               )
                             ],
