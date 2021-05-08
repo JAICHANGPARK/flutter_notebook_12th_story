@@ -159,8 +159,10 @@ class _CryptoExchangeHomePageState extends State<CryptoExchangeHomePage> {
                                 maxY: 120,
                                 minY: 0,
                                 barGroups: [
-
-                                ]
+                                BarChartGroupData(x: 0, barRods: [
+                                  
+                                ]),
+                                ],
 
                               )
                           ),
