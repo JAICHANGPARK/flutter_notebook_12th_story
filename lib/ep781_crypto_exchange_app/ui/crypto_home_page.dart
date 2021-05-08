@@ -159,7 +159,7 @@ class _CryptoExchangeHomePageState extends State<CryptoExchangeHomePage> {
                             child: BarChart(BarChartData(
                               maxY: 120,
                               minY: 50,
-                              alignment: BarChartAlignment.spaceEvenly,
+                              alignment: BarChartAlignment.spaceBetween,
                               gridData: FlGridData(
                                   horizontalInterval: 10,
                                   getDrawingHorizontalLine: (v) {
@@ -188,68 +188,73 @@ class _CryptoExchangeHomePageState extends State<CryptoExchangeHomePage> {
                                 reservedSize: 0,
                               )),
                               barGroups: [
-                                BarChartGroupData(x: 0, barRods: [
-                                  BarChartRodData(y: 75, borderRadius: BorderRadius.zero, colors: [
+                                BarChartGroupData(x: 0, barsSpace: 1, barRods: [
+                                  BarChartRodData(y: 75, borderRadius: BorderRadius.zero, width: 7, colors: [
                                     _cryptoAppBlueColor,
                                   ]),
-                                  BarChartRodData(y: 84, borderRadius: BorderRadius.zero, colors: [
+                                  BarChartRodData(y: 84, width: 7, borderRadius: BorderRadius.zero, colors: [
                                     _cryptoAppGreenColor,
                                   ]),
-                                  BarChartRodData(y: 79, borderRadius: BorderRadius.zero),
+                                  BarChartRodData(y: 79, width: 7, borderRadius: BorderRadius.zero),
                                 ]),
-                                BarChartGroupData(x: 1, barRods: [
-                                  BarChartRodData(y: 72, borderRadius: BorderRadius.zero, colors: [
+                                BarChartGroupData(x: 1, barsSpace: 1, barRods: [
+                                  BarChartRodData(y: 72, width: 7, borderRadius: BorderRadius.zero, colors: [
                                     _cryptoAppBlueColor,
                                   ]),
-                                  BarChartRodData(y: 69, borderRadius: BorderRadius.zero, colors: [
+                                  BarChartRodData(y: 69, width: 7, borderRadius: BorderRadius.zero, colors: [
                                     _cryptoAppGreenColor,
                                   ]),
-                                  BarChartRodData(y: 87, borderRadius: BorderRadius.zero),
+                                  BarChartRodData(y: 87, width: 7, borderRadius: BorderRadius.zero),
                                 ]),
-                                BarChartGroupData(x: 2, barRods: [
-                                  BarChartRodData(y: 118, borderRadius: BorderRadius.zero, colors: [
+                                BarChartGroupData(x: 2, barsSpace: 1, barRods: [
+                                  BarChartRodData(y: 118, width: 7, borderRadius: BorderRadius.zero, colors: [
                                     _cryptoAppBlueColor,
                                   ]),
-                                  BarChartRodData(y: 95, borderRadius: BorderRadius.zero, colors: [
+                                  BarChartRodData(y: 95, width: 7, borderRadius: BorderRadius.zero, colors: [
                                     _cryptoAppGreenColor,
                                   ]),
-                                  BarChartRodData(y: 105, borderRadius: BorderRadius.zero),
+                                  BarChartRodData(y: 105, width: 7, borderRadius: BorderRadius.zero),
                                 ]),
-                                BarChartGroupData(x: 3, barRods: [
-                                  BarChartRodData(y: 118, borderRadius: BorderRadius.zero, colors: [
+                                BarChartGroupData(x: 3, barsSpace: 1, barRods: [
+                                  BarChartRodData(y: 118, width: 7, borderRadius: BorderRadius.zero, colors: [
                                     _cryptoAppBlueColor,
                                   ]),
-                                  BarChartRodData(y: 95, borderRadius: BorderRadius.zero, colors: [
+                                  BarChartRodData(y: 95, width: 7, borderRadius: BorderRadius.zero, colors: [
                                     _cryptoAppGreenColor,
                                   ]),
-                                  BarChartRodData(y: 105, borderRadius: BorderRadius.zero),
+                                  BarChartRodData(y: 105, width: 7, borderRadius: BorderRadius.zero),
                                 ]),
-                                BarChartGroupData(x: 4, barRods: [
-                                  BarChartRodData(y: 118, borderRadius: BorderRadius.zero, colors: [
+                                BarChartGroupData(x: 4, barsSpace: 1, barRods: [
+                                  BarChartRodData(y: 100, width: 7, borderRadius: BorderRadius.zero, colors: [
                                     _cryptoAppBlueColor,
                                   ]),
-                                  BarChartRodData(y: 95, borderRadius: BorderRadius.zero, colors: [
+                                  BarChartRodData(y: 110, width: 7, borderRadius: BorderRadius.zero, colors: [
                                     _cryptoAppGreenColor,
                                   ]),
-                                  BarChartRodData(y: 105, borderRadius: BorderRadius.zero),
+                                  BarChartRodData(y: 90, width: 7, borderRadius: BorderRadius.zero),
                                 ]),
-                                BarChartGroupData(x: 5, barRods: [
-                                  BarChartRodData(y: 118, borderRadius: BorderRadius.zero, colors: [
+                                BarChartGroupData(x: 5, barsSpace: 1, barRods: [
+                                  BarChartRodData(y: 110, width: 7, borderRadius: BorderRadius.zero, colors: [
                                     _cryptoAppBlueColor,
                                   ]),
-                                  BarChartRodData(y: 95, borderRadius: BorderRadius.zero, colors: [
+                                  BarChartRodData(y: 115, width: 7, borderRadius: BorderRadius.zero, colors: [
                                     _cryptoAppGreenColor,
                                   ]),
-                                  BarChartRodData(y: 105, borderRadius: BorderRadius.zero),
+                                  BarChartRodData(y: 100, width: 7, borderRadius: BorderRadius.zero),
                                 ]),
-                                BarChartGroupData(x: 6, barRods: [
-                                  BarChartRodData(y: 118, borderRadius: BorderRadius.zero, colors: [
-                                    _cryptoAppBlueColor,
-                                  ]),
-                                  BarChartRodData(y: 95, borderRadius: BorderRadius.zero, colors: [
+                                BarChartGroupData(x: 6, barsSpace: 1, barRods: [
+                                  BarChartRodData(
+                                    y: 101,
+                                    width: 7,
+                                    borderRadius: BorderRadius.zero,
+                                    colors: [
+                                      _cryptoAppBlueColor,
+                                    ],
+                                  ),
+                                  BarChartRodData(y: 100, width: 7, borderRadius: BorderRadius.zero, colors: [
                                     _cryptoAppGreenColor,
                                   ]),
-                                  BarChartRodData(y: 105, borderRadius: BorderRadius.zero),
+                                  BarChartRodData(y: 102, width: 7, borderRadius: BorderRadius.zero),
                                 ]),
                               ],
                             )),
