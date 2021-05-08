@@ -175,8 +175,12 @@ class _CryptoExchangeHomePageState extends State<CryptoExchangeHomePage> {
                                     fontWeight: FontWeight.bold,
                                   ),),
                                   Spacer(),
-                                  Text("0.4782"),
-                                  Text("BTC")
+                                  Text("0.4782",style: GoogleFonts.chakraPetch(
+                                    fontWeight: FontWeight.bold,
+                                  ),),
+                                  Text("BTC",style: GoogleFonts.chakraPetch(
+                                    fontWeight: FontWeight.bold,
+                                  ),)
                                 ],
                               )
                             ],
