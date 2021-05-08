@@ -161,16 +161,14 @@ class _CryptoExchangeHomePageState extends State<CryptoExchangeHomePage> {
                               minY: 50,
                               alignment: BarChartAlignment.spaceEvenly,
                               gridData: FlGridData(
-                                horizontalInterval: 10,
-                                getDrawingHorizontalLine: (v){
-                                  if(v % 10 == 0){
-                                    return FlLine(color: Colors.grey[100]);
-                                  }else{
-                                    return FlLine(color: Colors.white);
-                                  }
-                                }
-
-                              ),
+                                  horizontalInterval: 10,
+                                  getDrawingHorizontalLine: (v) {
+                                    if (v % 10 == 0) {
+                                      return FlLine(color: Colors.grey[100]);
+                                    } else {
+                                      return FlLine(color: Colors.white);
+                                    }
+                                  }),
                               borderData: FlBorderData(show: false),
                               titlesData: FlTitlesData(
                                   leftTitles: SideTitles(
@@ -189,7 +187,6 @@ class _CryptoExchangeHomePageState extends State<CryptoExchangeHomePage> {
                                 margin: 0,
                                 reservedSize: 0,
                               )),
-
                               barGroups: [
                                 BarChartGroupData(x: 0, barRods: [
                                   BarChartRodData(y: 75, borderRadius: BorderRadius.zero, colors: [
