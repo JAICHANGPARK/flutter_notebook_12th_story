@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:intl/intl.dart';
 
 class CryptoExchangeHomePage extends StatefulWidget {
   const CryptoExchangeHomePage({Key? key}) : super(key: key);
@@ -155,7 +156,7 @@ class _CryptoExchangeHomePageState extends State<CryptoExchangeHomePage> {
                           child: Center(),
                         ),
                       ),
-                      flex: 12),
+                      flex: 10),
                   Expanded(
                     child: Padding(
                       padding: const EdgeInsets.fromLTRB(8, 0, 8, 8),
@@ -186,13 +187,22 @@ class _CryptoExchangeHomePageState extends State<CryptoExchangeHomePage> {
                                     color: Colors.grey,
                                   ),)
                                 ],
+                              ),
+                              Row(
+                                children: [
+                                  Text("${DateTime.now()}"),
+                                  Spacer(),
+                                  Text("3,960.93"),
+                                  Text("USD")
+
+                                ],
                               )
                             ],
                           ),
                         ),
                       ),
                     ),
-                    flex: 4,
+                    flex: 3,
                   ),
                 ],
               ),
