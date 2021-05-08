@@ -171,22 +171,32 @@ class _CryptoExchangeHomePageState extends State<CryptoExchangeHomePage> {
                                   }),
                               borderData: FlBorderData(show: false),
                               titlesData: FlTitlesData(
-                                  leftTitles: SideTitles(
-                                      showTitles: true,
-                                      margin: 12,
-                                      getTitles: (value) {
-                                        if (value % 10 == 0) {
-                                          return "${value.toInt()}";
-                                        } else {
-                                          return "";
-                                        }
-                                      })),
+                                leftTitles: SideTitles(
+                                  showTitles: true,
+                                  margin: 12,
+                                  getTextStyles: (value) {
+                                    if (value % 10 == 0) {
+                                      return TextStyle(color: Colors.grey);
+                                    } else {
+                                      return TextStyle(color: Colors.white);
+                                    }
+                                  },
+                                  getTitles: (value) {
+                                    if (value % 10 == 0) {
+                                      return "${value.toInt()}";
+                                    } else {
+                                      return "";
+                                    }
+                                  },
+                                ),
+                              ),
                               axisTitleData: FlAxisTitleData(
                                   leftTitle: AxisTitle(
-                                showTitle: true,
-                                margin: 0,
-                                reservedSize: 0,
-                              )),
+                                      showTitle: true,
+                                      margin: 0,
+                                      reservedSize: 0,
+                                      textStyle:
+                                          GoogleFonts.chakraPetch(color: Colors.grey, fontStyle: FontStyle.normal))),
                               barGroups: [
                                 BarChartGroupData(x: 0, barsSpace: 1, barRods: [
                                   BarChartRodData(y: 75, borderRadius: BorderRadius.zero, width: 7, colors: [
