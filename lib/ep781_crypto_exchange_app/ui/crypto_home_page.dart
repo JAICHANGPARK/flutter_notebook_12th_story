@@ -154,25 +154,38 @@ class _CryptoExchangeHomePageState extends State<CryptoExchangeHomePage> {
                         padding: const EdgeInsets.fromLTRB(8, 0, 8, 8),
                         child: Card(
                           elevation: 0,
-                          child: BarChart(
-                              BarChartData(
-                                gridData: FlGridData(
-                                  horizontalInterval: 10,
-                                ),
-                                axisTitleData: FlAxisTitleData(
-                                  leftTitle:
-                                ),
-                                maxY: 120,
-                                minY: 0,
-                                barGroups: [
-                                BarChartGroupData(x: 0, barRods: [
-                                  BarChartRodData(y: 75, borderRadius: BorderRadius.zero),
-                                  BarChartRodData(y: 84, borderRadius: BorderRadius.zero),
-                                  BarChartRodData(y: 79, borderRadius: BorderRadius.zero),
-                                ]),
-                                ],
+                          child: Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: BarChart(
+                                BarChartData(
+                                    alignment: BarChartAlignment.spaceEvenly,
+                                  gridData: FlGridData(
+                                    horizontalInterval: 10,
+                                  ),
+                                  axisTitleData: FlAxisTitleData(
+                                    leftTitle:AxisTitle(
+                                      showTitle: true,
+                                      margin: 0
+                                    )
+                                  ),
+                                  maxY: 120,
+                                  minY: 50,
+                                  barGroups: [
+                                  BarChartGroupData(x: 0, barRods: [
+                                    BarChartRodData(y: 75, borderRadius: BorderRadius.zero,
+                                    colors: [
+                                      _cryptoAppBlueColor,
+                                    ]),
+                                    BarChartRodData(y: 84, borderRadius: BorderRadius.zero,
+                                        colors: [
+                                          _cryptoAppGreenColor,
+                                        ]),
+                                    BarChartRodData(y: 79, borderRadius: BorderRadius.zero),
+                                  ]),
+                                  ],
 
-                              )
+                                )
+                            ),
                           ),
                         ),
                       ),
