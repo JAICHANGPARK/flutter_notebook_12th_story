@@ -165,6 +165,12 @@ class _CryptoExchangeHomePageState extends State<CryptoExchangeHomePage> {
                                   leftTitles: SideTitles(
                                 showTitles: true,
                                 margin: 0,
+                                    getTitles: (value){
+                                      if(value % 10  ==0 ){
+                                        return "$value";
+                                      }
+
+                                    }
                               )),
                               axisTitleData: FlAxisTitleData(
                                   leftTitle: AxisTitle(
