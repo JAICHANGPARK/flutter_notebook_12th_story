@@ -155,7 +155,7 @@ class _CryptoExchangeHomePageState extends State<CryptoExchangeHomePage> {
                         child: Card(
                           elevation: 0,
                           child: Padding(
-                            padding: const EdgeInsets.only(top: 24, left: 24, right: 24,bottom: 24),
+                            padding: const EdgeInsets.only(top: 24, left: 24, right: 24, bottom: 24),
                             child: Column(
                               children: [
                                 Expanded(
@@ -174,57 +174,54 @@ class _CryptoExchangeHomePageState extends State<CryptoExchangeHomePage> {
                                         }),
                                     borderData: FlBorderData(show: false),
                                     titlesData: FlTitlesData(
-                                      leftTitles: SideTitles(
-                                        showTitles: true,
-                                        margin: 12,
-                                        getTextStyles: (value) {
-                                          if (value % 10 == 0) {
-                                            return GoogleFonts.chakraPetch(color: Colors.grey, fontSize: 12);
-                                          } else {
-                                            return TextStyle(color: Colors.white);
-                                          }
-                                        },
-                                        getTitles: (value) {
-                                          if (value % 10 == 0) {
-                                            return "${value.toInt()}";
-                                          } else {
-                                            return "";
-                                          }
-                                        },
-                                      ),
-                                      bottomTitles: SideTitles(
-                                        showTitles: true,
-                                        getTitles: (value){
-                                          print(value);
-                                          switch(value.toInt()){
-                                            case 0:
-                                              return "Jan";
-                                            case 1:
-                                              return "Feb";
-                                            case 2:
-                                              return "Mar";
-                                            case 3:
-                                              return "Apr";
-                                            case 4:
-                                              return "May";
-                                            case 5:
-                                              return "Jun";
-                                            case 6:
-                                              return "Jul";
-                                            default:
+                                        leftTitles: SideTitles(
+                                          showTitles: true,
+                                          margin: 12,
+                                          getTextStyles: (value) {
+                                            if (value % 10 == 0) {
+                                              return GoogleFonts.chakraPetch(color: Colors.grey, fontSize: 12);
+                                            } else {
+                                              return TextStyle(color: Colors.white);
+                                            }
+                                          },
+                                          getTitles: (value) {
+                                            if (value % 10 == 0) {
+                                              return "${value.toInt()}";
+                                            } else {
                                               return "";
-
-                                          }
-                                        }
-                                      )
-                                    ),
+                                            }
+                                          },
+                                        ),
+                                        bottomTitles: SideTitles(
+                                            showTitles: true,
+                                            getTitles: (value) {
+                                              print(value);
+                                              switch (value.toInt()) {
+                                                case 0:
+                                                  return "Jan";
+                                                case 1:
+                                                  return "Feb";
+                                                case 2:
+                                                  return "Mar";
+                                                case 3:
+                                                  return "Apr";
+                                                case 4:
+                                                  return "May";
+                                                case 5:
+                                                  return "Jun";
+                                                case 6:
+                                                  return "Jul";
+                                                default:
+                                                  return "";
+                                              }
+                                            })),
                                     axisTitleData: FlAxisTitleData(
                                         leftTitle: AxisTitle(
                                             showTitle: true,
                                             margin: 0,
                                             reservedSize: 0,
-                                            textStyle:
-                                                GoogleFonts.chakraPetch(color: Colors.grey, fontStyle: FontStyle.normal))),
+                                            textStyle: GoogleFonts.chakraPetch(
+                                                color: Colors.grey, fontStyle: FontStyle.normal))),
                                     barGroups: [
                                       BarChartGroupData(x: 0, barsSpace: 1, barRods: [
                                         BarChartRodData(y: 75, borderRadius: BorderRadius.zero, width: 7, colors: [
@@ -297,14 +294,53 @@ class _CryptoExchangeHomePageState extends State<CryptoExchangeHomePage> {
                                     ],
                                   )),
                                 ),
+                                SizedBox(height: 24,),
                                 Row(
                                   children: [
-                                    Container(height: 8,width: 8,
-                                    color: _cryptoAppBlueColor,),
-                                    SizedBox(height: 7,),
-                                    Text("RECEIVED", style: GoogleFonts.chakraPetch(
-                                      fontSize: 12,
-                                    ),)
+                                    Container(
+                                      height: 8,
+                                      width: 8,
+                                      color: _cryptoAppBlueColor,
+                                    ),
+                                    SizedBox(
+                                      width: 4,
+                                    ),
+                                    Text(
+                                      "RECEIVED",
+                                      style: GoogleFonts.chakraPetch(
+                                        fontSize: 12,
+                                        fontWeight: FontWeight.bold
+                                      ),
+                                    ),
+                                    Spacer(),
+                                    Container(
+                                      height: 8,
+                                      width: 8,
+                                      color: _cryptoAppGreenColor,
+                                    ),
+                                    SizedBox(
+                                      width: 4,
+                                    ),
+                                    Text(
+                                      "SEND",
+                                      style: GoogleFonts.chakraPetch(
+                                        fontSize: 12,
+                                      ),
+                                    ), Spacer(),
+                                    Container(
+                                      height: 8,
+                                      width: 8,
+                                      color: Colors.blue,
+                                    ),
+                                    SizedBox(
+                                      width: 4,
+                                    ),
+                                    Text(
+                                      "WITHDRAW",
+                                      style: GoogleFonts.chakraPetch(
+                                        fontSize: 12,
+                                      ),
+                                    )
                                   ],
                                 )
                               ],
