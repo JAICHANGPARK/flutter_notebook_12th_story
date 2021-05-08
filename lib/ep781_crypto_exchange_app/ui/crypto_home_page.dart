@@ -172,20 +172,34 @@ class _CryptoExchangeHomePageState extends State<CryptoExchangeHomePage> {
                                     radius: 12,
                                     backgroundColor: Colors.orange,
                                   ),
-                                  SizedBox(width: 4,),
-                                  Text("Buy Bitcoin",style: GoogleFonts.chakraPetch(
-                                    fontWeight: FontWeight.bold,
-                                  ),),
+                                  SizedBox(
+                                    width: 4,
+                                  ),
+                                  Text(
+                                    "Buy Bitcoin",
+                                    style: GoogleFonts.chakraPetch(
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
                                   Spacer(),
-                                  Text("0.4782",style: GoogleFonts.chakraPetch(
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 16,
-                                  ),),  SizedBox(width: 4,),
-                                  Text("BTC",style: GoogleFonts.chakraPetch(
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 16,
-                                    color: Colors.grey,
-                                  ),)
+                                  Text(
+                                    "0.4782",
+                                    style: GoogleFonts.chakraPetch(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 16,
+                                    ),
+                                  ),
+                                  SizedBox(
+                                    width: 4,
+                                  ),
+                                  Text(
+                                    "BTC",
+                                    style: GoogleFonts.chakraPetch(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 16,
+                                      color: Colors.grey,
+                                    ),
+                                  )
                                 ],
                               ),
                               Row(
@@ -193,8 +207,12 @@ class _CryptoExchangeHomePageState extends State<CryptoExchangeHomePage> {
                                   Text("${DateTime.now()}"),
                                   Spacer(),
                                   Text("3,960.93"),
-                                  Text("USD")
-
+                                  SizedBox(width: 4),
+                                  Text("USD" ,GoogleFonts.chakraPetch(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 12,
+                                    color: Colors.grey,
+                                  ),)
                                 ],
                               )
                             ],
