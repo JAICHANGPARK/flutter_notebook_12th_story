@@ -165,6 +165,7 @@ class _CryptoExchangeHomePageState extends State<CryptoExchangeHomePage> {
                         child: Padding(
                           padding: const EdgeInsets.all(16.0),
                           child: Column(
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                             children: [
                               Row(
                                 children: [
@@ -204,9 +205,16 @@ class _CryptoExchangeHomePageState extends State<CryptoExchangeHomePage> {
                               ),
                               Row(
                                 children: [
-                                  Text("${DateTime.now()}"),
+                                  Text("${DateTime.now()}",style: GoogleFonts.chakraPetch(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 12,
+                                    color: Colors.grey,
+                                  ),),
                                   Spacer(),
-                                  Text("3,960.93"),
+                                  Text("3,960.93",style: GoogleFonts.chakraPetch(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 12,
+                                  ),),
                                   SizedBox(width: 4),
                                   Text("USD" ,style: GoogleFonts.chakraPetch(
                                     fontWeight: FontWeight.bold,
