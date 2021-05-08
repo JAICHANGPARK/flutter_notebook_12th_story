@@ -155,11 +155,21 @@ class _CryptoExchangeHomePageState extends State<CryptoExchangeHomePage> {
                         child: Card(
                           elevation: 0,
                           child: Padding(
-                            padding: const EdgeInsets.all(8.0),
+                            padding: const EdgeInsets.only(top: 24, left: 24, right: 24),
                             child: BarChart(BarChartData(
+                              maxY: 120,
+                              minY: 50,
                               alignment: BarChartAlignment.spaceEvenly,
                               gridData: FlGridData(
                                 horizontalInterval: 10,
+                                getDrawingHorizontalLine: (v){
+                                  if(v % 10 == 0){
+                                    return FlLine(color: Colors.grey[100]);
+                                  }else{
+                                    return FlLine(color: Colors.white);
+                                  }
+                                }
+
                               ),
                               borderData: FlBorderData(show: false),
                               titlesData: FlTitlesData(
@@ -179,8 +189,7 @@ class _CryptoExchangeHomePageState extends State<CryptoExchangeHomePage> {
                                 margin: 0,
                                 reservedSize: 0,
                               )),
-                              maxY: 120,
-                              minY: 50,
+
                               barGroups: [
                                 BarChartGroupData(x: 0, barRods: [
                                   BarChartRodData(y: 75, borderRadius: BorderRadius.zero, colors: [
