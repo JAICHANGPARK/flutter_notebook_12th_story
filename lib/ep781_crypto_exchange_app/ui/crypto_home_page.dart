@@ -161,17 +161,20 @@ class _CryptoExchangeHomePageState extends State<CryptoExchangeHomePage> {
                               gridData: FlGridData(
                                 horizontalInterval: 10,
                               ),
+                              borderData: FlBorderData(
+                                show: false
+                              ),
                               titlesData: FlTitlesData(
                                   leftTitles: SideTitles(
-                                showTitles: true,
-                                margin: 0,
-                                    getTitles: (value){
-                                      if(value % 10  ==0 ){
-                                        return "$value";
-                                      }
-
-                                    }
-                              )),
+                                      showTitles: true,
+                                      margin: 12,
+                                      getTitles: (value) {
+                                        if (value % 10 == 0) {
+                                          return "${value.toInt()}";
+                                        } else {
+                                          return "";
+                                        }
+                                      })),
                               axisTitleData: FlAxisTitleData(
                                   leftTitle: AxisTitle(
                                 showTitle: true,
