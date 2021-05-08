@@ -176,7 +176,7 @@ class _CryptoExchangeHomePageState extends State<CryptoExchangeHomePage> {
                                   margin: 12,
                                   getTextStyles: (value) {
                                     if (value % 10 == 0) {
-                                      return TextStyle(color: Colors.grey);
+                                      return GoogleFonts.chakraPetch(color: Colors.grey, fontSize: 12);
                                     } else {
                                       return TextStyle(color: Colors.white);
                                     }
