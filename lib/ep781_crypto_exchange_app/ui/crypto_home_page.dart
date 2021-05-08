@@ -294,54 +294,53 @@ class _CryptoExchangeHomePageState extends State<CryptoExchangeHomePage> {
                                     ],
                                   )),
                                 ),
-                                SizedBox(height: 24,),
-                                Row(
-                                  children: [
-                                    Container(
-                                      height: 8,
-                                      width: 8,
-                                      color: _cryptoAppBlueColor,
-                                    ),
-                                    SizedBox(
-                                      width: 4,
-                                    ),
-                                    Text(
-                                      "RECEIVED",
-                                      style: GoogleFonts.chakraPetch(
-                                        fontSize: 12,
-                                        fontWeight: FontWeight.bold
+                                SizedBox(
+                                  height: 24,
+                                ),
+                                Padding(
+                                  padding: const EdgeInsets.only(left: 16),
+                                  child: Row(
+                                    children: [
+                                      Container(
+                                        height: 8,
+                                        width: 8,
+                                        color: _cryptoAppBlueColor,
                                       ),
-                                    ),
-                                    Spacer(),
-                                    Container(
-                                      height: 8,
-                                      width: 8,
-                                      color: _cryptoAppGreenColor,
-                                    ),
-                                    SizedBox(
-                                      width: 4,
-                                    ),
-                                    Text(
-                                      "SEND",
-                                      style: GoogleFonts.chakraPetch(
-                                        fontSize: 12,
+                                      SizedBox(
+                                        width: 4,
                                       ),
-                                    ), Spacer(),
-                                    Container(
-                                      height: 8,
-                                      width: 8,
-                                      color: Colors.blue,
-                                    ),
-                                    SizedBox(
-                                      width: 4,
-                                    ),
-                                    Text(
-                                      "WITHDRAW",
-                                      style: GoogleFonts.chakraPetch(
-                                        fontSize: 12,
+                                      Text(
+                                        "RECEIVED",
+                                        style: GoogleFonts.chakraPetch(fontSize: 12, fontWeight: FontWeight.bold),
                                       ),
-                                    )
-                                  ],
+                                      Spacer(),
+                                      Container(
+                                        height: 8,
+                                        width: 8,
+                                        color: _cryptoAppGreenColor,
+                                      ),
+                                      SizedBox(
+                                        width: 4,
+                                      ),
+                                      Text(
+                                        "SEND",
+                                        style: GoogleFonts.chakraPetch(fontSize: 12, fontWeight: FontWeight.bold),
+                                      ),
+                                      Spacer(),
+                                      Container(
+                                        height: 8,
+                                        width: 8,
+                                        color: Colors.blue,
+                                      ),
+                                      SizedBox(
+                                        width: 4,
+                                      ),
+                                      Text(
+                                        "WITHDRAW",
+                                        style: GoogleFonts.chakraPetch(fontSize: 12, fontWeight: FontWeight.bold),
+                                      )
+                                    ],
+                                  ),
                                 )
                               ],
                             ),
