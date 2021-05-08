@@ -161,9 +161,7 @@ class _CryptoExchangeHomePageState extends State<CryptoExchangeHomePage> {
                               gridData: FlGridData(
                                 horizontalInterval: 10,
                               ),
-                              borderData: FlBorderData(
-                                show: false
-                              ),
+                              borderData: FlBorderData(show: false),
                               titlesData: FlTitlesData(
                                   leftTitles: SideTitles(
                                       showTitles: true,
@@ -192,6 +190,24 @@ class _CryptoExchangeHomePageState extends State<CryptoExchangeHomePage> {
                                     _cryptoAppGreenColor,
                                   ]),
                                   BarChartRodData(y: 79, borderRadius: BorderRadius.zero),
+                                ]),
+                                BarChartGroupData(x: 1, barRods: [
+                                  BarChartRodData(y: 72, borderRadius: BorderRadius.zero, colors: [
+                                    _cryptoAppBlueColor,
+                                  ]),
+                                  BarChartRodData(y: 69, borderRadius: BorderRadius.zero, colors: [
+                                    _cryptoAppGreenColor,
+                                  ]),
+                                  BarChartRodData(y: 87, borderRadius: BorderRadius.zero),
+                                ]),
+                                BarChartGroupData(x: 2, barRods: [
+                                  BarChartRodData(y: 118, borderRadius: BorderRadius.zero, colors: [
+                                    _cryptoAppBlueColor,
+                                  ]),
+                                  BarChartRodData(y: 95, borderRadius: BorderRadius.zero, colors: [
+                                    _cryptoAppGreenColor,
+                                  ]),
+                                  BarChartRodData(y: 105, borderRadius: BorderRadius.zero),
                                 ]),
                               ],
                             )),
