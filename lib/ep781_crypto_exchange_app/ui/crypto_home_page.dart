@@ -165,7 +165,9 @@ class _CryptoExchangeHomePageState extends State<CryptoExchangeHomePage> {
                                   axisTitleData: FlAxisTitleData(
                                     leftTitle:AxisTitle(
                                       showTitle: true,
-                                      margin: 0
+                                      margin: 0,
+                                      reservedSize: 0,
+                                      
                                     )
                                   ),
                                   maxY: 120,
