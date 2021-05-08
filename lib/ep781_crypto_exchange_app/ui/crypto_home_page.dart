@@ -155,119 +155,160 @@ class _CryptoExchangeHomePageState extends State<CryptoExchangeHomePage> {
                         child: Card(
                           elevation: 0,
                           child: Padding(
-                            padding: const EdgeInsets.only(top: 24, left: 24, right: 24),
-                            child: BarChart(BarChartData(
-                              maxY: 120,
-                              minY: 50,
-                              alignment: BarChartAlignment.spaceBetween,
-                              gridData: FlGridData(
-                                  horizontalInterval: 10,
-                                  getDrawingHorizontalLine: (v) {
-                                    if (v % 10 == 0) {
-                                      return FlLine(color: Colors.grey[100]);
-                                    } else {
-                                      return FlLine(color: Colors.white);
-                                    }
-                                  }),
-                              borderData: FlBorderData(show: false),
-                              titlesData: FlTitlesData(
-                                leftTitles: SideTitles(
-                                  showTitles: true,
-                                  margin: 12,
-                                  getTextStyles: (value) {
-                                    if (value % 10 == 0) {
-                                      return GoogleFonts.chakraPetch(color: Colors.grey, fontSize: 12);
-                                    } else {
-                                      return TextStyle(color: Colors.white);
-                                    }
-                                  },
-                                  getTitles: (value) {
-                                    if (value % 10 == 0) {
-                                      return "${value.toInt()}";
-                                    } else {
-                                      return "";
-                                    }
-                                  },
-                                ),
-                              ),
-                              axisTitleData: FlAxisTitleData(
-                                  leftTitle: AxisTitle(
-                                      showTitle: true,
-                                      margin: 0,
-                                      reservedSize: 0,
-                                      textStyle:
-                                          GoogleFonts.chakraPetch(color: Colors.grey, fontStyle: FontStyle.normal))),
-                              barGroups: [
-                                BarChartGroupData(x: 0, barsSpace: 1, barRods: [
-                                  BarChartRodData(y: 75, borderRadius: BorderRadius.zero, width: 7, colors: [
-                                    _cryptoAppBlueColor,
-                                  ]),
-                                  BarChartRodData(y: 84, width: 7, borderRadius: BorderRadius.zero, colors: [
-                                    _cryptoAppGreenColor,
-                                  ]),
-                                  BarChartRodData(y: 79, width: 7, borderRadius: BorderRadius.zero),
-                                ]),
-                                BarChartGroupData(x: 1, barsSpace: 1, barRods: [
-                                  BarChartRodData(y: 72, width: 7, borderRadius: BorderRadius.zero, colors: [
-                                    _cryptoAppBlueColor,
-                                  ]),
-                                  BarChartRodData(y: 69, width: 7, borderRadius: BorderRadius.zero, colors: [
-                                    _cryptoAppGreenColor,
-                                  ]),
-                                  BarChartRodData(y: 87, width: 7, borderRadius: BorderRadius.zero),
-                                ]),
-                                BarChartGroupData(x: 2, barsSpace: 1, barRods: [
-                                  BarChartRodData(y: 118, width: 7, borderRadius: BorderRadius.zero, colors: [
-                                    _cryptoAppBlueColor,
-                                  ]),
-                                  BarChartRodData(y: 95, width: 7, borderRadius: BorderRadius.zero, colors: [
-                                    _cryptoAppGreenColor,
-                                  ]),
-                                  BarChartRodData(y: 105, width: 7, borderRadius: BorderRadius.zero),
-                                ]),
-                                BarChartGroupData(x: 3, barsSpace: 1, barRods: [
-                                  BarChartRodData(y: 118, width: 7, borderRadius: BorderRadius.zero, colors: [
-                                    _cryptoAppBlueColor,
-                                  ]),
-                                  BarChartRodData(y: 95, width: 7, borderRadius: BorderRadius.zero, colors: [
-                                    _cryptoAppGreenColor,
-                                  ]),
-                                  BarChartRodData(y: 105, width: 7, borderRadius: BorderRadius.zero),
-                                ]),
-                                BarChartGroupData(x: 4, barsSpace: 1, barRods: [
-                                  BarChartRodData(y: 100, width: 7, borderRadius: BorderRadius.zero, colors: [
-                                    _cryptoAppBlueColor,
-                                  ]),
-                                  BarChartRodData(y: 110, width: 7, borderRadius: BorderRadius.zero, colors: [
-                                    _cryptoAppGreenColor,
-                                  ]),
-                                  BarChartRodData(y: 90, width: 7, borderRadius: BorderRadius.zero),
-                                ]),
-                                BarChartGroupData(x: 5, barsSpace: 1, barRods: [
-                                  BarChartRodData(y: 110, width: 7, borderRadius: BorderRadius.zero, colors: [
-                                    _cryptoAppBlueColor,
-                                  ]),
-                                  BarChartRodData(y: 115, width: 7, borderRadius: BorderRadius.zero, colors: [
-                                    _cryptoAppGreenColor,
-                                  ]),
-                                  BarChartRodData(y: 100, width: 7, borderRadius: BorderRadius.zero),
-                                ]),
-                                BarChartGroupData(x: 6, barsSpace: 1, barRods: [
-                                  BarChartRodData(
-                                    y: 101,
-                                    width: 7,
-                                    borderRadius: BorderRadius.zero,
-                                    colors: [
-                                      _cryptoAppBlueColor,
+                            padding: const EdgeInsets.only(top: 24, left: 24, right: 24,bottom: 24),
+                            child: Column(
+                              children: [
+                                Expanded(
+                                  child: BarChart(BarChartData(
+                                    maxY: 120,
+                                    minY: 50,
+                                    alignment: BarChartAlignment.spaceBetween,
+                                    gridData: FlGridData(
+                                        horizontalInterval: 10,
+                                        getDrawingHorizontalLine: (v) {
+                                          if (v % 10 == 0) {
+                                            return FlLine(color: Colors.grey[100]);
+                                          } else {
+                                            return FlLine(color: Colors.white);
+                                          }
+                                        }),
+                                    borderData: FlBorderData(show: false),
+                                    titlesData: FlTitlesData(
+                                      leftTitles: SideTitles(
+                                        showTitles: true,
+                                        margin: 12,
+                                        getTextStyles: (value) {
+                                          if (value % 10 == 0) {
+                                            return GoogleFonts.chakraPetch(color: Colors.grey, fontSize: 12);
+                                          } else {
+                                            return TextStyle(color: Colors.white);
+                                          }
+                                        },
+                                        getTitles: (value) {
+                                          if (value % 10 == 0) {
+                                            return "${value.toInt()}";
+                                          } else {
+                                            return "";
+                                          }
+                                        },
+                                      ),
+                                      bottomTitles: SideTitles(
+                                        showTitles: true,
+                                        getTitles: (value){
+                                          print(value);
+                                          switch(value.toInt()){
+                                            case 0:
+                                              return "Jan";
+                                            case 1:
+                                              return "Feb";
+                                            case 2:
+                                              return "Mar";
+                                            case 3:
+                                              return "Apr";
+                                            case 4:
+                                              return "May";
+                                            case 5:
+                                              return "Jun";
+                                            case 6:
+                                              return "Jul";
+                                            default:
+                                              return "";
+
+                                          }
+                                        }
+                                      )
+                                    ),
+                                    axisTitleData: FlAxisTitleData(
+                                        leftTitle: AxisTitle(
+                                            showTitle: true,
+                                            margin: 0,
+                                            reservedSize: 0,
+                                            textStyle:
+                                                GoogleFonts.chakraPetch(color: Colors.grey, fontStyle: FontStyle.normal))),
+                                    barGroups: [
+                                      BarChartGroupData(x: 0, barsSpace: 1, barRods: [
+                                        BarChartRodData(y: 75, borderRadius: BorderRadius.zero, width: 7, colors: [
+                                          _cryptoAppBlueColor,
+                                        ]),
+                                        BarChartRodData(y: 84, width: 7, borderRadius: BorderRadius.zero, colors: [
+                                          _cryptoAppGreenColor,
+                                        ]),
+                                        BarChartRodData(y: 79, width: 7, borderRadius: BorderRadius.zero),
+                                      ]),
+                                      BarChartGroupData(x: 1, barsSpace: 1, barRods: [
+                                        BarChartRodData(y: 72, width: 7, borderRadius: BorderRadius.zero, colors: [
+                                          _cryptoAppBlueColor,
+                                        ]),
+                                        BarChartRodData(y: 69, width: 7, borderRadius: BorderRadius.zero, colors: [
+                                          _cryptoAppGreenColor,
+                                        ]),
+                                        BarChartRodData(y: 87, width: 7, borderRadius: BorderRadius.zero),
+                                      ]),
+                                      BarChartGroupData(x: 2, barsSpace: 1, barRods: [
+                                        BarChartRodData(y: 118, width: 7, borderRadius: BorderRadius.zero, colors: [
+                                          _cryptoAppBlueColor,
+                                        ]),
+                                        BarChartRodData(y: 95, width: 7, borderRadius: BorderRadius.zero, colors: [
+                                          _cryptoAppGreenColor,
+                                        ]),
+                                        BarChartRodData(y: 105, width: 7, borderRadius: BorderRadius.zero),
+                                      ]),
+                                      BarChartGroupData(x: 3, barsSpace: 1, barRods: [
+                                        BarChartRodData(y: 118, width: 7, borderRadius: BorderRadius.zero, colors: [
+                                          _cryptoAppBlueColor,
+                                        ]),
+                                        BarChartRodData(y: 95, width: 7, borderRadius: BorderRadius.zero, colors: [
+                                          _cryptoAppGreenColor,
+                                        ]),
+                                        BarChartRodData(y: 105, width: 7, borderRadius: BorderRadius.zero),
+                                      ]),
+                                      BarChartGroupData(x: 4, barsSpace: 1, barRods: [
+                                        BarChartRodData(y: 100, width: 7, borderRadius: BorderRadius.zero, colors: [
+                                          _cryptoAppBlueColor,
+                                        ]),
+                                        BarChartRodData(y: 110, width: 7, borderRadius: BorderRadius.zero, colors: [
+                                          _cryptoAppGreenColor,
+                                        ]),
+                                        BarChartRodData(y: 90, width: 7, borderRadius: BorderRadius.zero),
+                                      ]),
+                                      BarChartGroupData(x: 5, barsSpace: 1, barRods: [
+                                        BarChartRodData(y: 110, width: 7, borderRadius: BorderRadius.zero, colors: [
+                                          _cryptoAppBlueColor,
+                                        ]),
+                                        BarChartRodData(y: 115, width: 7, borderRadius: BorderRadius.zero, colors: [
+                                          _cryptoAppGreenColor,
+                                        ]),
+                                        BarChartRodData(y: 100, width: 7, borderRadius: BorderRadius.zero),
+                                      ]),
+                                      BarChartGroupData(x: 6, barsSpace: 1, barRods: [
+                                        BarChartRodData(
+                                          y: 101,
+                                          width: 7,
+                                          borderRadius: BorderRadius.zero,
+                                          colors: [
+                                            _cryptoAppBlueColor,
+                                          ],
+                                        ),
+                                        BarChartRodData(y: 100, width: 7, borderRadius: BorderRadius.zero, colors: [
+                                          _cryptoAppGreenColor,
+                                        ]),
+                                        BarChartRodData(y: 102, width: 7, borderRadius: BorderRadius.zero),
+                                      ]),
                                     ],
-                                  ),
-                                  BarChartRodData(y: 100, width: 7, borderRadius: BorderRadius.zero, colors: [
-                                    _cryptoAppGreenColor,
-                                  ]),
-                                  BarChartRodData(y: 102, width: 7, borderRadius: BorderRadius.zero),
-                                ]),
+                                  )),
+                                ),
+                                Row(
+                                  children: [
+                                    Container(height: 8,width: 8,
+                                    color: _cryptoAppBlueColor,),
+                                    SizedBox(height: 7,),
+                                    Text("RECEIVED", style: GoogleFonts.chakraPetch(
+                                      fontSize: 12,
+                                    ),)
+                                  ],
+                                )
                               ],
-                            )),
+                            ),
                           ),
                         ),
                       ),
