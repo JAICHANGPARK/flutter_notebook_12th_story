@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_12th_story/ep784_finance_app/ui/finance_chart_page.dart';
 
 class FinanceHomePage extends StatefulWidget {
   const FinanceHomePage({Key? key}) : super(key: key);
@@ -34,11 +35,7 @@ class _FinanceHomePageState extends State<FinanceHomePage> {
               children: [Text("Page 2")],
             ),
           ),
-          SingleChildScrollView(
-            child: Column(
-              children: [Text("Page 3")],
-            ),
-          ),
+          FinanceChartPage(),
           SingleChildScrollView(
             child: Column(
               children: [Text("Page 4")],
