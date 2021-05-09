@@ -30,9 +30,11 @@ class _FinanceHomePageState extends State<FinanceHomePage> {
               children: [Text("Page 1")],
             ),
           ),
-          SingleChildScrollView(
-            child: Column(
-              children: [Text("Page 2")],
+          SafeArea(
+            child: SingleChildScrollView(
+              child: Column(
+                children: [Text("Page 2")],
+              ),
             ),
           ),
           FinanceChartPage(),
