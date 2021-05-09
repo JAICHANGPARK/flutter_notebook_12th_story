@@ -21,7 +21,12 @@ class _FinanceChartPageState extends State<FinanceChartPage> {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Icon(Icons.arrow_back),
-                    Text("History"),
+                    Text(
+                      "History",
+                      style: TextStyle(
+                        fontSize: 16,
+                        fontWeight: FontWeight.bold,),
+                    ),
                     Icon(Icons.upload_rounded)
                   ],
                 ),
