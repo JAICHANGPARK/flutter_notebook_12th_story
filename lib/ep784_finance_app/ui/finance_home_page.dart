@@ -9,6 +9,7 @@ class FinanceHomePage extends StatefulWidget {
 }
 
 class _FinanceHomePageState extends State<FinanceHomePage> {
+  int _bottomTabIdx = 0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -20,12 +21,18 @@ class _FinanceHomePageState extends State<FinanceHomePage> {
         ),
       ),
       bottomNavigationBar: BottomNavigationBar(
+        currentIndex: _bottomTabIdx,
+        onTap: (idx){
+          setState(() {
+            _bottomTabIdx = idx;
+          });
+        },
         items: [
           BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
           BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
           BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
           BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
-          
+
         ],
       ),
     );
