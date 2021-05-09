@@ -12,7 +12,13 @@ class _FinanceHomePageState extends State<FinanceHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
 
+          ],
+        ),
+      ),
     );
   }
 }
