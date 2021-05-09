@@ -15,7 +15,7 @@ class _FinanceHomePageState extends State<FinanceHomePage> {
   void initState() {
     // TODO: implement initState
     super.initState();
-    _pageController = PageController();
+    _pageController = PageController(initialPage: _bottomTabIdx);
   }
 
   @override
@@ -26,17 +26,19 @@ class _FinanceHomePageState extends State<FinanceHomePage> {
         children: [
           SingleChildScrollView(
             child: Column(
-              children: [],
+              children: [
+                Text("Page 1")
+              ],
             ),
           ),
           SingleChildScrollView(
             child: Column(
-              children: [],
+              children: [Text("Page 2")],
             ),
           ),
           SingleChildScrollView(
             child: Column(
-              children: [],
+              children: [Text("Page 3")],
             ),
           ),
           SingleChildScrollView(
