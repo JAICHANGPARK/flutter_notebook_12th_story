@@ -26,9 +26,7 @@ class _FinanceHomePageState extends State<FinanceHomePage> {
         children: [
           SingleChildScrollView(
             child: Column(
-              children: [
-                Text("Page 1")
-              ],
+              children: [Text("Page 1")],
             ),
           ),
           SingleChildScrollView(
@@ -54,6 +52,7 @@ class _FinanceHomePageState extends State<FinanceHomePage> {
         onTap: (idx) {
           setState(() {
             _bottomTabIdx = idx;
+            _pageController.jumpToPage(_bottomTabIdx);
           });
         },
         type: BottomNavigationBarType.fixed,
