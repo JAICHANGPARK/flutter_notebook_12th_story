@@ -15,13 +15,16 @@ class _FinanceChartPageState extends State<FinanceChartPage> {
         child: SingleChildScrollView(
           child: Column(
             children: [
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Icon(Icons.arrow_back),
-                  Text("History"),
-                  Icon(Icons.upload_rounded)
-                ],
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Icon(Icons.arrow_back),
+                    Text("History"),
+                    Icon(Icons.upload_rounded)
+                  ],
+                ),
               )
             ],
           ),
