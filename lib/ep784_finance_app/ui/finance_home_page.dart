@@ -13,11 +13,14 @@ class _FinanceHomePageState extends State<FinanceHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SingleChildScrollView(
-        child: Column(
-          children: [
+      body: PageView(
 
-          ],
+        child: SingleChildScrollView(
+          child: Column(
+            children: [
+
+            ],
+          ),
         ),
       ),
       bottomNavigationBar: BottomNavigationBar(
@@ -31,11 +34,13 @@ class _FinanceHomePageState extends State<FinanceHomePage> {
         type: BottomNavigationBarType.fixed,
         showSelectedLabels: false,
         showUnselectedLabels: false,
+        unselectedItemColor: Colors.grey,
+
         items: [
           BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
           BottomNavigationBarItem(icon: Icon(Icons.account_balance_wallet), label: "Wallet"),
-          BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
-          BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
+          BottomNavigationBarItem(icon: Icon(Icons.insert_chart), label: "Home"),
+          BottomNavigationBarItem(icon: Icon(Icons.person), label: "Home"),
 
         ],
       ),
