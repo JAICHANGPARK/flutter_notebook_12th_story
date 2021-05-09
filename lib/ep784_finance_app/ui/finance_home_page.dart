@@ -21,6 +21,7 @@ class _FinanceHomePageState extends State<FinanceHomePage> {
         ),
       ),
       bottomNavigationBar: BottomNavigationBar(
+        elevation: 3,
         currentIndex: _bottomTabIdx,
         onTap: (idx){
           setState(() {
