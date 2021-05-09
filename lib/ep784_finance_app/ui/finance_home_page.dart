@@ -10,18 +10,27 @@ class FinanceHomePage extends StatefulWidget {
 
 class _FinanceHomePageState extends State<FinanceHomePage> {
   int _bottomTabIdx = 0;
+  late PageController _pageController;
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    _pageController = PageController();
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: PageView(
 
-        child: SingleChildScrollView(
-          child: Column(
-            children: [
+        children: [
+          SingleChildScrollView(
+            child: Column(
+              children: [
 
-            ],
+              ],
+            ),
           ),
-        ),
+        ],
       ),
       bottomNavigationBar: BottomNavigationBar(
         elevation: 3,
