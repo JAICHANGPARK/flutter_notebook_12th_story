@@ -25,9 +25,11 @@ class _FinanceHomePageState extends State<FinanceHomePage> {
       body: PageView(
         controller: _pageController,
         children: [
-          SingleChildScrollView(
-            child: Column(
-              children: [Text("Page 1")],
+          SafeArea(
+            child: SingleChildScrollView(
+              child: Column(
+                children: [Text("Page 1")],
+              ),
             ),
           ),
           SafeArea(
