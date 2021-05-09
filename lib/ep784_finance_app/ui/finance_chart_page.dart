@@ -10,6 +10,12 @@ class FinanceChartPage extends StatefulWidget {
 class _FinanceChartPageState extends State<FinanceChartPage> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      body: Column(
+        children: [
+          
+        ],
+      ),
+    );
   }
 }
