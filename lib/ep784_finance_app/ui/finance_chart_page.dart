@@ -11,10 +11,12 @@ class _FinanceChartPageState extends State<FinanceChartPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        children: [
-          
-        ],
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+
+          ],
+        ),
       ),
     );
   }
