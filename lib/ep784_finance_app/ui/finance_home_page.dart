@@ -95,7 +95,6 @@ class _FinanceHomePageState extends State<FinanceHomePage> {
                         ),
                         Container(
                           height: 92,
-                          color: Colors.grey,
                           child: Row(
                             children: [
                               Expanded(
