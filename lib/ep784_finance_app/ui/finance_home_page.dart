@@ -206,7 +206,15 @@ class _FinanceHomePageState extends State<FinanceHomePage> {
                                 width: 42,
                                 decoration: BoxDecoration(
                                   color: Colors.pink,
+                                  borderRadius: BorderRadius.circular(4)
                                 ),
+                              ),
+                              Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text("Dream"),
+                                  Text("Apr 20, 19:00 WIB")
+                                ],
                               )
                             ],
                           ),
