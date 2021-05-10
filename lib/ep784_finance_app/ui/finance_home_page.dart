@@ -67,6 +67,12 @@ class _FinanceHomePageState extends State<FinanceHomePage> {
                             color: Colors.blue,
                             borderRadius: BorderRadius.circular(8),
                           ),
+                          child: Center(
+                            child: Text(
+                              "Add Card",
+                              style: TextStyle(color: Colors.white),
+                            ),
+                          ),
                         )
                       ],
                     ),
