@@ -109,65 +109,69 @@ class _FinanceHomePageState extends State<FinanceHomePage> {
                                   SizedBox(
                                     height: 4,
                                   ),
-                                  Text("Shopping",style: TextStyle(
-                                    fontSize: 12
-                                  ),)
+                                  Text(
+                                    "Shopping",
+                                    style: TextStyle(fontSize: 12),
+                                  )
                                 ],
                               )),
                               SizedBox(width: 16),
                               Expanded(
                                   child: Column(
-                                    children: [
-                                      Container(
-                                        height: 64,
-                                        width: 64,
-                                        decoration:
+                                children: [
+                                  Container(
+                                    height: 64,
+                                    width: 64,
+                                    decoration:
                                         BoxDecoration(color: Colors.pink, borderRadius: BorderRadius.circular(8)),
-                                      ),
-                                      SizedBox(
-                                        height: 4,
-                                      ),
-                                      Text("Shopping",style: TextStyle(
-                                          fontSize: 12
-                                      ),)
-                                    ],
-                                  )),
+                                  ),
+                                  SizedBox(
+                                    height: 4,
+                                  ),
+                                  Text(
+                                    "Shopping",
+                                    style: TextStyle(fontSize: 12),
+                                  )
+                                ],
+                              )),
                               SizedBox(width: 16),
                               Expanded(
                                   child: Column(
-                                    children: [
-                                      Container(
-                                        height: 64,
-                                        width: 64,
-                                        decoration:
+                                children: [
+                                  Container(
+                                    height: 64,
+                                    width: 64,
+                                    decoration:
                                         BoxDecoration(color: Colors.pink, borderRadius: BorderRadius.circular(8)),
-                                      ),
-                                      SizedBox(
-                                        height: 4,
-                                      ),
-                                      Text("Shopping",style: TextStyle(
-                                          fontSize: 12
-                                      ),)
-                                    ],
-                                  )),
+                                  ),
+                                  SizedBox(
+                                    height: 4,
+                                  ),
+                                  Text(
+                                    "Shopping",
+                                    style: TextStyle(fontSize: 12),
+                                  )
+                                ],
+                              )),
                               SizedBox(width: 16),
                               Expanded(
                                   child: Column(
-                                    children: [
-                                      Container(
-                                        height: 64,
-                                        width: 64,
-                                        decoration:
+                                children: [
+                                  Container(
+                                    height: 64,
+                                    width: 64,
+                                    decoration:
                                         BoxDecoration(color: Colors.pink, borderRadius: BorderRadius.circular(8)),
-                                      ),
-                                      SizedBox(
-                                        height: 4,
-                                      ),
-                                      Text("Shopping",style: TextStyle(
-                                          fontSize: 12
-                                      ),)
-                                    ],
-                                  )),
+                                  ),
+                                  SizedBox(
+                                    height: 4,
+                                  ),
+                                  Text(
+                                    "Shopping",
+                                    style: TextStyle(fontSize: 12),
+                                  )
+                                ],
+                              )),
                             ],
                           ),
                         )
@@ -176,15 +180,35 @@ class _FinanceHomePageState extends State<FinanceHomePage> {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        Text("Lastest Transaction" ,style: TextStyle(fontWeight: FontWeight.bold),),
-                        IconButton(onPressed: (){}, icon: Icon(Icons.more_horiz), color: Colors.grey,)
+                        Text(
+                          "Lastest Transaction",
+                          style: TextStyle(fontWeight: FontWeight.bold),
+                        ),
+                        IconButton(
+                          onPressed: () {},
+                          icon: Icon(Icons.more_horiz),
+                          color: Colors.grey,
+                        )
                       ],
                     ),
                     Container(
                       height: 240,
                       decoration: BoxDecoration(
-                        color: Colors.pink
+                        color: Colors.pink,
                       ),
+                      child: ListView.builder(itemBuilder: (context, index) {
+                        return Row(
+                          children: [
+                            Container(
+                              height: 32,
+                              width: 32,
+                              decoration: BoxDecoration(
+                                color: Colors.pink,
+                              ),
+                            )
+                          ],
+                        );
+                      }),
                     )
                   ],
                 ),
