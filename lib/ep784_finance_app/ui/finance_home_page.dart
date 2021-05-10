@@ -109,20 +109,76 @@ class _FinanceHomePageState extends State<FinanceHomePage> {
                                   SizedBox(
                                     height: 4,
                                   ),
-                                  Text("Shopping")
+                                  Text("Shopping",style: TextStyle(
+                                    fontSize: 12
+                                  ),)
                                 ],
                               )),
                               SizedBox(width: 16),
-                              Expanded(child: Placeholder()),
+                              Expanded(
+                                  child: Column(
+                                    children: [
+                                      Container(
+                                        height: 64,
+                                        width: 64,
+                                        decoration:
+                                        BoxDecoration(color: Colors.pink, borderRadius: BorderRadius.circular(8)),
+                                      ),
+                                      SizedBox(
+                                        height: 4,
+                                      ),
+                                      Text("Shopping",style: TextStyle(
+                                          fontSize: 12
+                                      ),)
+                                    ],
+                                  )),
                               SizedBox(width: 16),
-                              Expanded(child: Placeholder()),
+                              Expanded(
+                                  child: Column(
+                                    children: [
+                                      Container(
+                                        height: 64,
+                                        width: 64,
+                                        decoration:
+                                        BoxDecoration(color: Colors.pink, borderRadius: BorderRadius.circular(8)),
+                                      ),
+                                      SizedBox(
+                                        height: 4,
+                                      ),
+                                      Text("Shopping",style: TextStyle(
+                                          fontSize: 12
+                                      ),)
+                                    ],
+                                  )),
                               SizedBox(width: 16),
-                              Expanded(child: Placeholder()),
+                              Expanded(
+                                  child: Column(
+                                    children: [
+                                      Container(
+                                        height: 64,
+                                        width: 64,
+                                        decoration:
+                                        BoxDecoration(color: Colors.pink, borderRadius: BorderRadius.circular(8)),
+                                      ),
+                                      SizedBox(
+                                        height: 4,
+                                      ),
+                                      Text("Shopping",style: TextStyle(
+                                          fontSize: 12
+                                      ),)
+                                    ],
+                                  )),
                             ],
                           ),
                         )
                       ],
-                    )
+                    ),
+                    Row(
+                      children: [
+                        Text("Lastest Transaction"),
+                        IconButton(onPressed: (){}, icon:`)
+                      ],
+                    ),
                   ],
                 ),
               ),
