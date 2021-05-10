@@ -174,9 +174,10 @@ class _FinanceHomePageState extends State<FinanceHomePage> {
                       ],
                     ),
                     Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Text("Lastest Transaction"),
-                        IconButton(onPressed: (){}, icon:`)
+                        IconButton(onPressed: (){}, icon: Icon(Icons.more_horiz), color: Colors.grey,)
                       ],
                     ),
                   ],
