@@ -76,11 +76,29 @@ class _FinanceHomePageState extends State<FinanceHomePage> {
                         )
                       ],
                     ),
+                    SizedBox(
+                      height: 24,
+                    ),
                     Container(
-                      height: 240,
-                      decoration: BoxDecoration(
-                        color: Colors.blue
-                      ),
+                      height: 200,
+                      decoration: BoxDecoration(color: Colors.blue, borderRadius: BorderRadius.circular(8)),
+                    ),
+                    Column(
+                      children: [
+                        Text("Most Transaction"),
+                        Container(
+                          height: 72,
+                          color: Colors.grey,
+                          child: Row(
+                            children: [
+                              Expanded(child: Placeholder()),
+                              Expanded(child: Placeholder()),
+                              Expanded(child: Placeholder()),
+                              Expanded(child: Placeholder()),
+                            ],
+                          ),
+                        )
+                      ],
                     )
                   ],
                 ),
