@@ -41,7 +41,22 @@ class _FinanceHomePageState extends State<FinanceHomePage> {
                         CircleAvatar()
                       ],
                     ),
-
+                    Row(
+                      children: [
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [Text("Account Balance"), Text("\$1.948.55")],
+                        ),
+                        Spacer(),
+                        Container(
+                          height: 64,
+                          width: 120,
+                          decoration: BoxDecoration(
+                            
+                          ),
+                        )
+                      ],
+                    ),
                   ],
                 ),
               ),
