@@ -41,6 +41,7 @@ class _FinanceHomePageState extends State<FinanceHomePage> {
                         CircleAvatar()
                       ],
                     ),
+                    SizedBox(height: 24,),
                     Row(
                       children: [
                         Column(
