@@ -76,14 +76,13 @@ class _FinanceHomePageState extends State<FinanceHomePage> {
                         )
                       ],
                     ),
-                    SizedBox(
-                      height: 24,
-                    ),
-                    Container(
-                      height: 200,
-                      decoration: BoxDecoration(color: Colors.blue, borderRadius: BorderRadius.circular(8)),
-                    ), SizedBox(
-                      height: 24,
+
+                    Padding(
+                      padding: const EdgeInsets.symmetric(vertical: 24),
+                      child: Container(
+                        height: 200,
+                        decoration: BoxDecoration(color: Colors.blue, borderRadius: BorderRadius.circular(8)),
+                      ),
                     ),
                     Column(
                       children: [
