@@ -86,26 +86,30 @@ class _FinanceHomePageState extends State<FinanceHomePage> {
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text("Most Transaction"),
+                        Text(
+                          "Most Transaction",
+                          style: TextStyle(fontWeight: FontWeight.bold),
+                        ),
                         SizedBox(
-                          height: 8,
+                          height: 14,
                         ),
                         Container(
                           height: 92,
                           color: Colors.grey,
                           child: Row(
                             children: [
-                              Expanded(child: Column(
+                              Expanded(
+                                  child: Column(
                                 children: [
                                   Container(
                                     height: 64,
                                     width: 64,
-                                    decoration: BoxDecoration(
-                                      color: Colors.pink,
-                                      borderRadius: BorderRadius.circular(8)
-                                    ),
+                                    decoration:
+                                        BoxDecoration(color: Colors.pink, borderRadius: BorderRadius.circular(8)),
                                   ),
-                                  SizedBox(height: 4,),
+                                  SizedBox(
+                                    height: 4,
+                                  ),
                                   Text("Shopping")
                                 ],
                               )),
