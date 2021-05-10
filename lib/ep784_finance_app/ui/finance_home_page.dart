@@ -209,6 +209,7 @@ class _FinanceHomePageState extends State<FinanceHomePage> {
                               ),
                               Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
+                                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                 children: [
                                   Text(
                                     "Dream",
@@ -221,6 +222,15 @@ class _FinanceHomePageState extends State<FinanceHomePage> {
                                     style: TextStyle(fontSize: 12, color: Colors.grey),
                                   )
                                 ],
+                              ),
+                              Spacer(),
+                              Text(
+                                "- \$948.55",
+                                style: TextStyle(
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.red,
+                                ),
                               )
                             ],
                           ),
