@@ -194,7 +194,7 @@ class _FinanceHomePageState extends State<FinanceHomePage> {
                     Container(
                       height: 240,
                       decoration: BoxDecoration(
-                        color: Colors.pink,
+
                       ),
                       child: ListView.builder(itemBuilder: (context, index) {
                         return Row(
