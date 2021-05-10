@@ -193,9 +193,7 @@ class _FinanceHomePageState extends State<FinanceHomePage> {
                     ),
                     Container(
                       height: 240,
-                      decoration: BoxDecoration(
-
-                      ),
+                      decoration: BoxDecoration(),
                       child: ListView.builder(itemBuilder: (context, index) {
                         return Padding(
                           padding: const EdgeInsets.only(bottom: 16),
@@ -204,16 +202,24 @@ class _FinanceHomePageState extends State<FinanceHomePage> {
                               Container(
                                 height: 42,
                                 width: 42,
-                                decoration: BoxDecoration(
-                                  color: Colors.pink,
-                                  borderRadius: BorderRadius.circular(4)
-                                ),
+                                decoration: BoxDecoration(color: Colors.pink, borderRadius: BorderRadius.circular(4)),
+                              ),
+                              SizedBox(
+                                width: 4,
                               ),
                               Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  Text("Dream"),
-                                  Text("Apr 20, 19:00 WIB")
+                                  Text(
+                                    "Dream",
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
+                                  Text(
+                                    "Apr 20, 19:00 WIB",
+                                    style: TextStyle(fontSize: 12, color: Colors.grey),
+                                  )
                                 ],
                               )
                             ],
