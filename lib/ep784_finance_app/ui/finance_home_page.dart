@@ -76,7 +76,6 @@ class _FinanceHomePageState extends State<FinanceHomePage> {
                         )
                       ],
                     ),
-
                     Padding(
                       padding: const EdgeInsets.symmetric(vertical: 24),
                       child: Container(
@@ -85,16 +84,31 @@ class _FinanceHomePageState extends State<FinanceHomePage> {
                       ),
                     ),
                     Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text("Most Transaction"),
+                        SizedBox(
+                          height: 8,
+                        ),
                         Container(
                           height: 84,
                           color: Colors.grey,
                           child: Row(
                             children: [
+                              Expanded(child: Column(
+                                children: [
+                                  Container(
+                                    decoration: BoxDecoration(
+                                      color: Colors.pink
+                                    ),
+                                  )
+                                ],
+                              )),
+                              SizedBox(width: 16),
                               Expanded(child: Placeholder()),
+                              SizedBox(width: 16),
                               Expanded(child: Placeholder()),
-                              Expanded(child: Placeholder()),
+                              SizedBox(width: 16),
                               Expanded(child: Placeholder()),
                             ],
                           ),
