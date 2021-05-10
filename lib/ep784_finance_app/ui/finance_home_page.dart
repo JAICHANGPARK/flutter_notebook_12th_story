@@ -27,22 +27,23 @@ class _FinanceHomePageState extends State<FinanceHomePage> {
         children: [
           SafeArea(
             child: SingleChildScrollView(
-              child: Column(
-                children: [
-                  Row(
-                    children: [
-                      Column(
-                        children: [
-                          Text("Hi Dream"),
-                          Text("Welcome Back")
-                        ],
-                      ),
-                      Spacer(),
-                      CircleAvatar()
-                    ],
-                  ),
+              child: Padding(
+                padding: const EdgeInsets.all(16.0),
+                child: Column(
+                  children: [
+                    Row(
+                      children: [
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [Text("Hi Dream"), Text("Welcome Back")],
+                        ),
+                        Spacer(),
+                        CircleAvatar()
+                      ],
+                    ),
 
-                ],
+                  ],
+                ),
               ),
             ),
           ),
