@@ -41,7 +41,9 @@ class _FinanceHomePageState extends State<FinanceHomePage> {
                         CircleAvatar()
                       ],
                     ),
-                    SizedBox(height: 24,),
+                    SizedBox(
+                      height: 24,
+                    ),
                     Row(
                       children: [
                         Column(
@@ -54,7 +56,7 @@ class _FinanceHomePageState extends State<FinanceHomePage> {
                           width: 84,
                           decoration: BoxDecoration(
                             color: Colors.blue,
-
+                            borderRadius: BorderRadius.circular(8),
                           ),
                         )
                       ],
