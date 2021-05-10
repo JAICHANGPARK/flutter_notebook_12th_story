@@ -48,7 +48,16 @@ class _FinanceHomePageState extends State<FinanceHomePage> {
                       children: [
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [Text("Account Balance"), Text("\$1.948.55")],
+                          children: [
+                            Text(
+                              "Account Balance",
+                              style: TextStyle(),
+                            ),
+                            Text(
+                              "\$1.948.55",
+                              style: TextStyle(fontWeight: FontWeight.bold),
+                            )
+                          ],
                         ),
                         Spacer(),
                         Container(
