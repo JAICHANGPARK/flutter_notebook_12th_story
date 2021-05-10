@@ -49,10 +49,11 @@ class _FinanceHomePageState extends State<FinanceHomePage> {
                         ),
                         Spacer(),
                         Container(
-                          height: 64,
-                          width: 120,
+                          height: 42,
+                          width: 84,
                           decoration: BoxDecoration(
-                            
+                            color: Colors.blue,
+
                           ),
                         )
                       ],
