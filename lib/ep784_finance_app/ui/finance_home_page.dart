@@ -28,7 +28,21 @@ class _FinanceHomePageState extends State<FinanceHomePage> {
           SafeArea(
             child: SingleChildScrollView(
               child: Column(
-                children: [Text("Page 1")],
+                children: [
+                  Row(
+                    children: [
+                      Column(
+                        children: [
+                          Text("Hi Dream"),
+                          Text("Welcome Back")
+                        ],
+                      ),
+                      Spacer(),
+                      CircleAvatar()
+                    ],
+                  ),
+
+                ],
               ),
             ),
           ),
