@@ -82,12 +82,14 @@ class _FinanceHomePageState extends State<FinanceHomePage> {
                     Container(
                       height: 200,
                       decoration: BoxDecoration(color: Colors.blue, borderRadius: BorderRadius.circular(8)),
+                    ), SizedBox(
+                      height: 24,
                     ),
                     Column(
                       children: [
                         Text("Most Transaction"),
                         Container(
-                          height: 72,
+                          height: 84,
                           color: Colors.grey,
                           child: Row(
                             children: [
