@@ -197,16 +197,19 @@ class _FinanceHomePageState extends State<FinanceHomePage> {
 
                       ),
                       child: ListView.builder(itemBuilder: (context, index) {
-                        return Row(
-                          children: [
-                            Container(
-                              height: 32,
-                              width: 32,
-                              decoration: BoxDecoration(
-                                color: Colors.pink,
-                              ),
-                            )
-                          ],
+                        return Padding(
+                          padding: const EdgeInsets.only(bottom: 16),
+                          child: Row(
+                            children: [
+                              Container(
+                                height: 42,
+                                width: 42,
+                                decoration: BoxDecoration(
+                                  color: Colors.pink,
+                                ),
+                              )
+                            ],
+                          ),
                         );
                       }),
                     )
