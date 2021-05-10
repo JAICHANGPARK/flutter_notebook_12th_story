@@ -194,7 +194,9 @@ class _FinanceHomePageState extends State<FinanceHomePage> {
                     Container(
                       height: 240,
                       decoration: BoxDecoration(),
-                      child: ListView.builder(itemBuilder: (context, index) {
+                      child: ListView.builder(
+                          itemCount: 4,
+                          itemBuilder: (context, index) {
                         return Padding(
                           padding: const EdgeInsets.only(bottom: 16),
                           child: Row(
