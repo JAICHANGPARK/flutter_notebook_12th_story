@@ -61,8 +61,8 @@ class _FinanceHomePageState extends State<FinanceHomePage> {
                         ),
                         Spacer(),
                         Container(
-                          height: 42,
-                          width: 84,
+                          height: 38,
+                          width: 94,
                           decoration: BoxDecoration(
                             color: Colors.blue,
                             borderRadius: BorderRadius.circular(8),
@@ -76,6 +76,12 @@ class _FinanceHomePageState extends State<FinanceHomePage> {
                         )
                       ],
                     ),
+                    Container(
+                      height: 240,
+                      decoration: BoxDecoration(
+                        color: Colors.blue
+                      ),
+                    )
                   ],
                 ),
               ),
