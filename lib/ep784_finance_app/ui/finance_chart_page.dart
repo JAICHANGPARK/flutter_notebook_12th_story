@@ -38,7 +38,7 @@ class _FinanceChartPageState extends State<FinanceChartPage> {
               Padding(
                 padding: const EdgeInsets.all(16.0),
                 child: Container(
-                  height: 120,
+                  height: 100,
                   decoration: BoxDecoration(
                     color: Colors.grey,
                   ),
@@ -67,10 +67,14 @@ class _FinanceChartPageState extends State<FinanceChartPage> {
                                       ),
                                     ),
                                   ),
-                                  Text("Income", style: TextStyle(
-                                    color: Colors.blue,
-                                    fontWeight: FontWeight.bold
-                                  ),)
+                                  Padding(
+                                    padding: const EdgeInsets.all(8.0),
+                                    child: Text("Income", style: TextStyle(
+                                      color: Colors.blue,
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 18
+                                    ),),
+                                  )
                                 ],
                               )
                             ],
