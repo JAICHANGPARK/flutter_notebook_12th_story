@@ -129,46 +129,46 @@ class _FinanceChartPageState extends State<FinanceChartPage> {
                   ),
                 ),
               ),
-              SizedBox(
-                height: 16,
-              ),
-              SizedBox(
-                height: MediaQuery.of(context).size.height / 2.3,
-                
-                child: Card(
-                  child: Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Column(
-                      children: [
-                        Expanded(
-                          child: Row(
-                            children: [
-                              Text(
-                                "Analytic",
-                                style: TextStyle(
-                                  fontWeight: FontWeight.bold,
+              Padding(
+                padding: const EdgeInsets.all(16),
+                child: SizedBox(
+                  height: MediaQuery.of(context).size.height / 2.3,
+                  child: Card(
+                    elevation: 8,
+                    child: Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Column(
+                        children: [
+                          Expanded(
+                            child: Row(
+                              children: [
+                                Text(
+                                  "Analytic",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
 
+                                  ),
                                 ),
-                              ),
-                              Spacer(),
-                              OutlinedButton(onPressed: (){}, child: Row(children: [
-                                Icon(Icons.arrow_downward),
-                                SizedBox(width: 8,),
-                                Text("weekly")
-                              ],),)
-                            ],
+                                Spacer(),
+                                OutlinedButton(onPressed: (){}, child: Row(children: [
+                                  Icon(Icons.arrow_downward),
+                                  SizedBox(width: 8,),
+                                  Text("weekly")
+                                ],),)
+                              ],
+                            ),
+                            flex: 2,
                           ),
-                          flex: 2,
-                        ),
-                        Expanded(
-                          child: Placeholder(),
-                          flex: 10,
-                        ),
-                        Expanded(
-                          child: Placeholder(),
-                          flex: 2,
-                        ),
-                      ],
+                          Expanded(
+                            child: Placeholder(),
+                            flex: 10,
+                          ),
+                          Expanded(
+                            child: Placeholder(),
+                            flex: 2,
+                          ),
+                        ],
+                      ),
                     ),
                   ),
                 ),
