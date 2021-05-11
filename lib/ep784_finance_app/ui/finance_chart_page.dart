@@ -151,10 +151,16 @@ class _FinanceChartPageState extends State<FinanceChartPage> {
                                   fontWeight: FontWeight.bold,
 
                                 ),
-                              )
+                              ),
+                              Spacer(),
+                              OutlinedButton(onPressed: (){}, child: Row(children: [
+                                Icon(Icons.arrow_downward),
+                                SizedBox(width: 8,),
+                                Text("weekly")
+                              ],),)
                             ],
                           ),
-                          flex: 1,
+                          flex: 2,
                         ),
                         Expanded(
                           child: Placeholder(),
