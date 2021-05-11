@@ -35,10 +35,37 @@ class _FinanceChartPageState extends State<FinanceChartPage> {
               SizedBox(
                 height: 16,
               ),
-              Container(
-                height: 120,
-                decoration: BoxDecoration(
-                  color: Colors.grey,
+              Padding(
+                padding: const EdgeInsets.all(16.0),
+                child: Container(
+                  height: 120,
+                  decoration: BoxDecoration(
+                    color: Colors.grey,
+                  ),
+                  child: Row(
+                    children: [
+                      Expanded(child: Card(
+                        child: Column(
+                          children: [
+                            Row(
+                              children: [
+                                Container(height: 32, width: 32,
+                                decoration: BoxDecoration(
+                                  color: Colors.blue[400],
+
+                                ),
+                                child: Center(
+                                  child: Icon(Icons.downloading,),
+                                ),
+                                )
+                              ],
+                            )
+                          ],
+                        ),
+                      )),
+                      Expanded(child: Card()),
+                    ],
+                  ),
                 ),
               ),
               SizedBox(
