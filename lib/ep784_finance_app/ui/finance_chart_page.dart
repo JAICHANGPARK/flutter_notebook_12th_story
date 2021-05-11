@@ -146,6 +146,7 @@ class _FinanceChartPageState extends State<FinanceChartPage> {
                                   "Analytic",
                                   style: TextStyle(
                                     fontWeight: FontWeight.bold,
+                                    fontSize: 18
 
                                   ),
                                 ),
