@@ -46,28 +46,35 @@ class _FinanceChartPageState extends State<FinanceChartPage> {
                     children: [
                       Expanded(
                           child: Card(
-                        child: Column(
-                          children: [
-                            Row(
-                              children: [
-                                Container(
-                                  height: 32,
-                                  width: 32,
-                                  decoration: BoxDecoration(
-                                    color: Colors.blue[200],
-                                    borderRadius: BorderRadius.circular(4)
-                                  ),
-                                  child: Center(
-                                    child: Icon(
-                                      Icons.downloading,
-                                      size: 16,
-                                      color: Colors.blue,
+                        child: Padding(
+                          padding: const EdgeInsets.all(16.0),
+                          child: Column(
+                            children: [
+                              Row(
+                                children: [
+                                  Container(
+                                    height: 32,
+                                    width: 32,
+                                    decoration: BoxDecoration(
+                                      color: Colors.blue[200],
+                                      borderRadius: BorderRadius.circular(4)
+                                    ),
+                                    child: Center(
+                                      child: Icon(
+                                        Icons.downloading,
+                                        size: 16,
+                                        color: Colors.blue,
+                                      ),
                                     ),
                                   ),
-                                )
-                              ],
-                            )
-                          ],
+                                  Text("Income", style: TextStyle(
+                                    color: Colors.blue,
+                                    fontWeight: FontWeight.bold
+                                  ),)
+                                ],
+                              )
+                            ],
+                          ),
                         ),
                       )),
                       Expanded(child: Card()),
