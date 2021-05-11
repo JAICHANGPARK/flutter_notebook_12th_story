@@ -25,10 +25,17 @@ class _FinanceChartPageState extends State<FinanceChartPage> {
                       "History",
                       style: TextStyle(
                         fontSize: 16,
-                        fontWeight: FontWeight.bold,),
+                        fontWeight: FontWeight.bold,
+                      ),
                     ),
                     Icon(Icons.upload_rounded)
                   ],
+                ),
+              ),
+              Container(
+                height: 64,
+                decoration: BoxDecoration(
+                  color: Colors.grey,
                 ),
               )
             ],
