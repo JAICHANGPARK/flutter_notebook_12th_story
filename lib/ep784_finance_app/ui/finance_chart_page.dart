@@ -38,7 +38,14 @@ class _FinanceChartPageState extends State<FinanceChartPage> {
                 decoration: BoxDecoration(
                   color: Colors.grey,
                 ),
-              )
+              ),
+              SizedBox(height: 16,),
+              Container(
+                height: MediaQuery.of(context).size.height / 2.3,
+                decoration: BoxDecoration(
+                  color: Colors.grey,
+                ),
+              ),
             ],
           ),
         ),
