@@ -143,6 +143,13 @@ class _FinanceChartPageState extends State<FinanceChartPage> {
                 decoration: BoxDecoration(
                   color: Colors.grey,
                 ),
+                child: Card(
+                  child: Column(
+                    children: [
+                      Expanded(child: Placeholder()),
+                    ],
+                  ),
+                ),
               ),
             ],
           ),
