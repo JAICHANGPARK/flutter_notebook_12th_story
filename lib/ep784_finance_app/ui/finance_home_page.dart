@@ -197,47 +197,48 @@ class _FinanceHomePageState extends State<FinanceHomePage> {
                       child: ListView.builder(
                           itemCount: 4,
                           itemBuilder: (context, index) {
-                        return Padding(
-                          padding: const EdgeInsets.only(bottom: 16),
-                          child: Row(
-                            children: [
-                              Container(
-                                height: 42,
-                                width: 42,
-                                decoration: BoxDecoration(color: Colors.pink, borderRadius: BorderRadius.circular(4)),
-                              ),
-                              SizedBox(
-                                width: 4,
-                              ),
-                              Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            return Padding(
+                              padding: const EdgeInsets.only(bottom: 16),
+                              child: Row(
                                 children: [
-                                  Text(
-                                    "Dream",
-                                    style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                    ),
+                                  Container(
+                                    height: 42,
+                                    width: 42,
+                                    decoration:
+                                        BoxDecoration(color: Colors.pink, borderRadius: BorderRadius.circular(4)),
                                   ),
+                                  SizedBox(
+                                    width: 4,
+                                  ),
+                                  Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                    children: [
+                                      Text(
+                                        "Dream",
+                                        style: TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                        ),
+                                      ),
+                                      Text(
+                                        "Apr 20, 19:00 WIB",
+                                        style: TextStyle(fontSize: 12, color: Colors.grey),
+                                      )
+                                    ],
+                                  ),
+                                  Spacer(),
                                   Text(
-                                    "Apr 20, 19:00 WIB",
-                                    style: TextStyle(fontSize: 12, color: Colors.grey),
+                                    "- \$948.55",
+                                    style: TextStyle(
+                                      fontSize: 16,
+                                      fontWeight: FontWeight.bold,
+                                      color: Colors.red,
+                                    ),
                                   )
                                 ],
                               ),
-                              Spacer(),
-                              Text(
-                                "- \$948.55",
-                                style: TextStyle(
-                                  fontSize: 16,
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.red,
-                                ),
-                              )
-                            ],
-                          ),
-                        );
-                      }),
+                            );
+                          }),
                     )
                   ],
                 ),
