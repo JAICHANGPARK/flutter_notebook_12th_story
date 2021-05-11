@@ -40,9 +40,6 @@ class _FinanceChartPageState extends State<FinanceChartPage> {
                 padding: const EdgeInsets.all(16.0),
                 child: Container(
                   height: 100,
-                  decoration: BoxDecoration(
-                    color: Colors.grey,
-                  ),
                   child: Row(
                     children: [
                       Expanded(
