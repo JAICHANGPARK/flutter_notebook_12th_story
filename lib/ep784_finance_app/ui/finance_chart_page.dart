@@ -147,6 +147,8 @@ class _FinanceChartPageState extends State<FinanceChartPage> {
                   child: Column(
                     children: [
                       Expanded(child: Placeholder()),
+                      Expanded(child: Placeholder()),
+                      Expanded(child: Placeholder()),
                     ],
                   ),
                 ),
