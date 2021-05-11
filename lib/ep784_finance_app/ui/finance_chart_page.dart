@@ -88,7 +88,49 @@ class _FinanceChartPageState extends State<FinanceChartPage> {
                           ),
                         ),
                       )),
-                      Expanded(child: Card()),
+                      Expanded(
+                          child: Card(
+                            child: Padding(
+                              padding: const EdgeInsets.all(16.0),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Row(
+                                    children: [
+                                      Container(
+                                        height: 28,
+                                        width: 28,
+                                        decoration: BoxDecoration(
+                                            color: Colors.blue[200],
+                                            borderRadius: BorderRadius.circular(4)
+                                        ),
+                                        child: Center(
+                                          child: Icon(
+                                            Icons.downloading,
+                                            size: 16,
+                                            color: Colors.blue,
+                                          ),
+                                        ),
+                                      ),
+                                      Padding(
+                                        padding: const EdgeInsets.all(8.0),
+                                        child: Text("Income", style: TextStyle(
+                                            color: Colors.blue,
+                                            fontWeight: FontWeight.bold,
+                                            fontSize: 18
+                                        ),),
+                                      )
+                                    ],
+                                  ),
+
+                                  Text("\$778.35",style: TextStyle(
+                                      fontSize: 20,
+                                      fontWeight: FontWeight.bold
+                                  ),)
+                                ],
+                              ),
+                            ),
+                          )),
                     ],
                   ),
                 ),
