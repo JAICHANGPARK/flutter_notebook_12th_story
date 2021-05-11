@@ -44,19 +44,26 @@ class _FinanceChartPageState extends State<FinanceChartPage> {
                   ),
                   child: Row(
                     children: [
-                      Expanded(child: Card(
+                      Expanded(
+                          child: Card(
                         child: Column(
                           children: [
                             Row(
                               children: [
-                                Container(height: 32, width: 32,
-                                decoration: BoxDecoration(
-                                  color: Colors.blue[400],
-
-                                ),
-                                child: Center(
-                                  child: Icon(Icons.downloading,),
-                                ),
+                                Container(
+                                  height: 32,
+                                  width: 32,
+                                  decoration: BoxDecoration(
+                                    color: Colors.blue[200],
+                                    borderRadius: BorderRadius.circular(4)
+                                  ),
+                                  child: Center(
+                                    child: Icon(
+                                      Icons.downloading,
+                                      size: 16,
+                                      color: Colors.blue,
+                                    ),
+                                  ),
                                 )
                               ],
                             )
