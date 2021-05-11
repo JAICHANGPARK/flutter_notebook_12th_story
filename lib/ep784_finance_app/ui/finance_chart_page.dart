@@ -174,69 +174,77 @@ class _FinanceChartPageState extends State<FinanceChartPage> {
                   ),
                 ),
               ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Text(
-                    "Lastest Transaction",
-                    style: TextStyle(fontWeight: FontWeight.bold),
-                  ),
-                  IconButton(
-                    onPressed: () {},
-                    icon: Icon(Icons.more_horiz),
-                    color: Colors.grey,
-                  )
-                ],
-              ),
-              Container(
-                height: 240,
-                decoration: BoxDecoration(),
-                child: ListView.builder(
-                    itemCount: 4,
-                    itemBuilder: (context, index) {
-                      return Padding(
-                        padding: const EdgeInsets.only(bottom: 16),
-                        child: Row(
-                          children: [
-                            Container(
-                              height: 42,
-                              width: 42,
-                              decoration:
-                              BoxDecoration(color: Colors.pink, borderRadius: BorderRadius.circular(4)),
-                            ),
-                            SizedBox(
-                              width: 4,
-                            ),
-                            Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                              children: [
-                                Text(
-                                  "Dream",
-                                  style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                  ),
-                                ),
-                                Text(
-                                  "Apr 20, 19:00 WIB",
-                                  style: TextStyle(fontSize: 12, color: Colors.grey),
-                                )
-                              ],
-                            ),
-                            Spacer(),
-                            Text(
-                              "- \$948.55",
-                              style: TextStyle(
-                                fontSize: 16,
-                                fontWeight: FontWeight.bold,
-                                color: Colors.red,
-                              ),
-                            )
-                          ],
+              Padding(
+                padding: const EdgeInsets.all(16.0),
+                child: Column(
+                  children: [
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text(
+                          "Lastest Transaction",
+                          style: TextStyle(fontWeight: FontWeight.bold),
                         ),
-                      );
-                    }),
+                        IconButton(
+                          onPressed: () {},
+                          icon: Icon(Icons.more_horiz),
+                          color: Colors.grey,
+                        )
+                      ],
+                    ),
+                    Container(
+                      height: 240,
+                      decoration: BoxDecoration(),
+                      child: ListView.builder(
+                          itemCount: 4,
+                          itemBuilder: (context, index) {
+                            return Padding(
+                              padding: const EdgeInsets.only(bottom: 16),
+                              child: Row(
+                                children: [
+                                  Container(
+                                    height: 42,
+                                    width: 42,
+                                    decoration:
+                                    BoxDecoration(color: Colors.pink, borderRadius: BorderRadius.circular(4)),
+                                  ),
+                                  SizedBox(
+                                    width: 4,
+                                  ),
+                                  Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                    children: [
+                                      Text(
+                                        "Dream",
+                                        style: TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                        ),
+                                      ),
+                                      Text(
+                                        "Apr 20, 19:00 WIB",
+                                        style: TextStyle(fontSize: 12, color: Colors.grey),
+                                      )
+                                    ],
+                                  ),
+                                  Spacer(),
+                                  Text(
+                                    "- \$948.55",
+                                    style: TextStyle(
+                                      fontSize: 16,
+                                      fontWeight: FontWeight.bold,
+                                      color: Colors.red,
+                                    ),
+                                  )
+                                ],
+                              ),
+                            );
+                          }),
+                    )
+                  ],
+                ),
               )
+
             ],
           ),
         ),
