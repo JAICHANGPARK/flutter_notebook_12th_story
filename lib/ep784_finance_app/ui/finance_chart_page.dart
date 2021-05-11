@@ -88,7 +88,7 @@ class _FinanceChartPageState extends State<FinanceChartPage> {
                           ),
                         ),
                       )),
-                      SizedBox(width: 16,),
+                      SizedBox(width: 8,),
                       Expanded(
                           child: Card(
                             child: Padding(
