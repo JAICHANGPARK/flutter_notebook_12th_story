@@ -32,8 +32,9 @@ class _FinanceChartPageState extends State<FinanceChartPage> {
                   ],
                 ),
               ),
+              SizedBox(height: 16,),
               Container(
-                height: 64,
+                height: 120,
                 decoration: BoxDecoration(
                   color: Colors.grey,
                 ),
