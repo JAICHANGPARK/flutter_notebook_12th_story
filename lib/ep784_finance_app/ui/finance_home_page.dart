@@ -24,6 +24,12 @@ class _FinanceHomePageState extends State<FinanceHomePage> {
     return Scaffold(
       body: PageView(
         controller: _pageController,
+        onPageChanged: (p){
+          setState(() {
+            _pageController.jumpToPage(p);
+            _bottomTabIdx = p;
+          });
+        },
         children: [
           SafeArea(
             child: SingleChildScrollView(
