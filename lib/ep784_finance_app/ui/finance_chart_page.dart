@@ -44,7 +44,7 @@ class _FinanceChartPageState extends State<FinanceChartPage> {
                     children: [
                       Expanded(
                           child: Card(
-                            elevation: 8,
+                        elevation: 8,
                         child: Padding(
                           padding: const EdgeInsets.all(16.0),
                           child: Column(
@@ -55,10 +55,8 @@ class _FinanceChartPageState extends State<FinanceChartPage> {
                                   Container(
                                     height: 28,
                                     width: 28,
-                                    decoration: BoxDecoration(
-                                      color: Colors.blue[200],
-                                      borderRadius: BorderRadius.circular(4)
-                                    ),
+                                    decoration:
+                                        BoxDecoration(color: Colors.blue[200], borderRadius: BorderRadius.circular(4)),
                                     child: Center(
                                       child: Icon(
                                         Icons.downloading,
@@ -69,68 +67,64 @@ class _FinanceChartPageState extends State<FinanceChartPage> {
                                   ),
                                   Padding(
                                     padding: const EdgeInsets.all(8.0),
-                                    child: Text("Income", style: TextStyle(
-                                      color: Colors.blue,
-                                      fontWeight: FontWeight.bold,
-                                      fontSize: 18
-                                    ),),
+                                    child: Text(
+                                      "Income",
+                                      style: TextStyle(color: Colors.blue, fontWeight: FontWeight.bold, fontSize: 18),
+                                    ),
                                   )
                                 ],
                               ),
-
-                              Text("\$778.35",style: TextStyle(
-                                fontSize: 20,
-                                fontWeight: FontWeight.bold
-                              ),)
+                              Text(
+                                "\$778.35",
+                                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                              )
                             ],
                           ),
                         ),
                       )),
-                      SizedBox(width: 8,),
+                      SizedBox(
+                        width: 8,
+                      ),
                       Expanded(
                           child: Card(
-                            elevation: 8,
-                            child: Padding(
-                              padding: const EdgeInsets.all(16.0),
-                              child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
+                        elevation: 8,
+                        child: Padding(
+                          padding: const EdgeInsets.all(16.0),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Row(
                                 children: [
-                                  Row(
-                                    children: [
-                                      Container(
-                                        height: 28,
-                                        width: 28,
-                                        decoration: BoxDecoration(
-                                            color: Colors.red[200],
-                                            borderRadius: BorderRadius.circular(4)
-                                        ),
-                                        child: Center(
-                                          child: Icon(
-                                            Icons.upload,
-                                            size: 16,
-                                            color: Colors.red,
-                                          ),
-                                        ),
+                                  Container(
+                                    height: 28,
+                                    width: 28,
+                                    decoration:
+                                        BoxDecoration(color: Colors.red[200], borderRadius: BorderRadius.circular(4)),
+                                    child: Center(
+                                      child: Icon(
+                                        Icons.upload,
+                                        size: 16,
+                                        color: Colors.red,
                                       ),
-                                      Padding(
-                                        padding: const EdgeInsets.all(8.0),
-                                        child: Text("Outcome", style: TextStyle(
-                                            color: Colors.red,
-                                            fontWeight: FontWeight.bold,
-                                            fontSize: 18
-                                        ),),
-                                      )
-                                    ],
+                                    ),
                                   ),
-
-                                  Text("\$858.35",style: TextStyle(
-                                      fontSize: 20,
-                                      fontWeight: FontWeight.bold
-                                  ),)
+                                  Padding(
+                                    padding: const EdgeInsets.all(8.0),
+                                    child: Text(
+                                      "Outcome",
+                                      style: TextStyle(color: Colors.red, fontWeight: FontWeight.bold, fontSize: 18),
+                                    ),
+                                  )
                                 ],
                               ),
-                            ),
-                          )),
+                              Text(
+                                "\$858.35",
+                                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                              )
+                            ],
+                          ),
+                        ),
+                      )),
                     ],
                   ),
                 ),
@@ -144,12 +138,34 @@ class _FinanceChartPageState extends State<FinanceChartPage> {
                   color: Colors.grey,
                 ),
                 child: Card(
-                  child: Column(
-                    children: [
-                      Expanded(child: Placeholder()),
-                      Expanded(child: Placeholder()),
-                      Expanded(child: Placeholder()),
-                    ],
+                  child: Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Column(
+                      children: [
+                        Expanded(
+                          child: Row(
+                            children: [
+                              Text(
+                                "Analytic",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+
+                                ),
+                              )
+                            ],
+                          ),
+                          flex: 1,
+                        ),
+                        Expanded(
+                          child: Placeholder(),
+                          flex: 10,
+                        ),
+                        Expanded(
+                          child: Placeholder(),
+                          flex: 2,
+                        ),
+                      ],
+                    ),
                   ),
                 ),
               ),
