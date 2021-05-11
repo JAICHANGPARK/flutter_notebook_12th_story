@@ -29,7 +29,7 @@ class _FinanceChartPageState extends State<FinanceChartPage> {
                         fontWeight: FontWeight.bold,
                       ),
                     ),
-                    Icon(Icons.upload_rounded)
+                    Icon(Icons.file_upload_outlined)
                   ],
                 ),
               ),
@@ -102,14 +102,14 @@ class _FinanceChartPageState extends State<FinanceChartPage> {
                                         height: 28,
                                         width: 28,
                                         decoration: BoxDecoration(
-                                            color: Colors.blue[200],
+                                            color: Colors.red[200],
                                             borderRadius: BorderRadius.circular(4)
                                         ),
                                         child: Center(
                                           child: Icon(
-                                            Icons.downloading,
+                                            Icons.upload_file_outlined,
                                             size: 16,
-                                            color: Colors.blue,
+                                            color: Colors.red,
                                           ),
                                         ),
                                       ),
