@@ -106,7 +106,7 @@ class _FinanceChartPageState extends State<FinanceChartPage> {
                                         ),
                                         child: Center(
                                           child: Icon(
-                                            Icons.upload_file_outlined,
+                                            Icons.upload,
                                             size: 16,
                                             color: Colors.red,
                                           ),
@@ -114,8 +114,8 @@ class _FinanceChartPageState extends State<FinanceChartPage> {
                                       ),
                                       Padding(
                                         padding: const EdgeInsets.all(8.0),
-                                        child: Text("Income", style: TextStyle(
-                                            color: Colors.blue,
+                                        child: Text("Outcome", style: TextStyle(
+                                            color: Colors.red,
                                             fontWeight: FontWeight.bold,
                                             fontSize: 18
                                         ),),
@@ -123,7 +123,7 @@ class _FinanceChartPageState extends State<FinanceChartPage> {
                                     ],
                                   ),
 
-                                  Text("\$778.35",style: TextStyle(
+                                  Text("\$858.35",style: TextStyle(
                                       fontSize: 20,
                                       fontWeight: FontWeight.bold
                                   ),)
