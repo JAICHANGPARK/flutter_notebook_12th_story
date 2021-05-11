@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class FinanceChartPage extends StatefulWidget {
@@ -54,8 +55,8 @@ class _FinanceChartPageState extends State<FinanceChartPage> {
                               Row(
                                 children: [
                                   Container(
-                                    height: 32,
-                                    width: 32,
+                                    height: 28,
+                                    width: 28,
                                     decoration: BoxDecoration(
                                       color: Colors.blue[200],
                                       borderRadius: BorderRadius.circular(4)
@@ -77,7 +78,12 @@ class _FinanceChartPageState extends State<FinanceChartPage> {
                                     ),),
                                   )
                                 ],
-                              )
+                              ),
+
+                              Text("\$778.35",style: TextStyle(
+                                fontSize: 20,
+                                fontWeight: FontWeight.bold
+                              ),)
                             ],
                           ),
                         ),
