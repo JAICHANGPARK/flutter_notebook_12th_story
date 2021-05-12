@@ -171,10 +171,11 @@ class _FinanceChartPageState extends State<FinanceChartPage> {
                                 BarChartData(
                                     minY: 0,
                                     maxY: 15,
-
-                                    
                                     borderData: FlBorderData(
                                       show: false,
+                                    ),
+                                    axisTitleData:FlAxisTitleData(
+                                      show: true,
                                     ),
                                     titlesData: FlTitlesData(
                                       show: true,
