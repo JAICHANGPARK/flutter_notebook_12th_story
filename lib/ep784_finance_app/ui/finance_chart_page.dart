@@ -181,6 +181,13 @@ class _FinanceChartPageState extends State<FinanceChartPage> {
                                       ),
                                       bottomTitles: SideTitles(
                                         showTitles: true,
+                                        getTitles: (value){
+                                          switch(value.toInt()){
+                                            case 1:
+                                              return "";
+                                              break;
+                                          }
+                                        }
                                       ),
                                     ),
                                     barGroups: [
