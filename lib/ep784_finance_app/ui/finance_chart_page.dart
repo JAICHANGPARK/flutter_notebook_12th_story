@@ -186,17 +186,17 @@ class _FinanceChartPageState extends State<FinanceChartPage> {
                                             case 1:
                                               return "Mo";
                                             case 2:
-                                              return "Mo";
+                                              return "Tu";
                                             case 3:
-                                              return "Mo";
+                                              return "We";
                                             case 4:
-                                              return "Mo";
+                                              return "Th";
                                             case 5:
-                                              return "Mo";
+                                              return "Fr";
                                             case 6:
-                                              return "Mo";
+                                              return "Sa";
                                             case 7:
-                                              return "Mo";
+                                              return "Su";
 
                                             default :
                                               return "";
