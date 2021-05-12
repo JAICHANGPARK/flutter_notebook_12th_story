@@ -197,7 +197,6 @@ class _FinanceChartPageState extends State<FinanceChartPage> {
                                                 return "Sa";
                                               case 7:
                                                 return "Su";
-
                                               default:
                                                 return "";
                                             }
