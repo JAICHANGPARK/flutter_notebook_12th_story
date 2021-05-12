@@ -176,6 +176,7 @@ class _FinanceChartPageState extends State<FinanceChartPage> {
                                     ),
                                     axisTitleData:FlAxisTitleData(
                                       show: true,
+                                      bottomTitle: AxisTitle(),
                                     ),
                                     titlesData: FlTitlesData(
                                       show: true,
