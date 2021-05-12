@@ -168,7 +168,14 @@ class _FinanceChartPageState extends State<FinanceChartPage> {
                             flex: 10,
                           ),
                           Expanded(
-                            child: Placeholder(),
+                            child: Row(
+                              children: [
+                                CircleAvatar(radius: 12,),
+                                Text("Income"),
+                                CircleAvatar(radius: 12,),
+                                Text("Income"),
+                              ],
+                            ),
                             flex: 2,
                           ),
                         ],
