@@ -184,8 +184,22 @@ class _FinanceChartPageState extends State<FinanceChartPage> {
                                         getTitles: (value){
                                           switch(value.toInt()){
                                             case 1:
+                                              return "Mo";
+                                            case 2:
+                                              return "Mo";
+                                            case 3:
+                                              return "Mo";
+                                            case 4:
+                                              return "Mo";
+                                            case 5:
+                                              return "Mo";
+                                            case 6:
+                                              return "Mo";
+                                            case 7:
+                                              return "Mo";
+
+                                            default :
                                               return "";
-                                              break;
                                           }
                                         }
                                       ),
