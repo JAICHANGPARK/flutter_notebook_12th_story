@@ -176,11 +176,11 @@ class _FinanceChartPageState extends State<FinanceChartPage> {
                                     ),
                                     titlesData: FlTitlesData(
                                       show: true,
-                                       leftTitles: SideTitles(
+                                      leftTitles: SideTitles(
                                         showTitles: false,
                                       ),
                                       bottomTitles: SideTitles(
-
+                                        showTitles: true,
                                       ),
                                     ),
                                     barGroups: [
