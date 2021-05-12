@@ -170,9 +170,10 @@ class _FinanceChartPageState extends State<FinanceChartPage> {
                           Expanded(
                             child: Row(
                               children: [
-                                CircleAvatar(radius: 12,),
+                                CircleAvatar(radius: 8,),
                                 Text("Income"),
-                                CircleAvatar(radius: 12,),
+                                SizedBox(width: 24,),
+                                CircleAvatar(radius: 8,),
                                 Text("Income"),
                               ],
                             ),
