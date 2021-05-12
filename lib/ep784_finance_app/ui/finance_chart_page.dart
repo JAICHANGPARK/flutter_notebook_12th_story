@@ -169,6 +169,7 @@ class _FinanceChartPageState extends State<FinanceChartPage> {
                           ),
                           Expanded(
                             child: Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
                               children: [
                                 CircleAvatar(radius: 8,),
                                 SizedBox(width: 8,),
