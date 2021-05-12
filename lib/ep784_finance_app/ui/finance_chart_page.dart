@@ -1,3 +1,4 @@
+import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -164,7 +165,9 @@ class _FinanceChartPageState extends State<FinanceChartPage> {
                             flex: 2,
                           ),
                           Expanded(
-                            child: Placeholder(),
+                            child: BarChart(
+                              BarChartData()
+                            ),
                             flex: 10,
                           ),
                           Expanded(
