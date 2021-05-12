@@ -179,6 +179,9 @@ class _FinanceChartPageState extends State<FinanceChartPage> {
                                        leftTitles: SideTitles(
                                         showTitles: false,
                                       ),
+                                      bottomTitles: SideTitles(
+
+                                      ),
                                     ),
                                     barGroups: [
                                       BarChartGroupData(x: 1, barRods: [
