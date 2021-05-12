@@ -172,7 +172,10 @@ class _FinanceChartPageState extends State<FinanceChartPage> {
                                     show: false,
                                   ),
                                   titlesData: FlTitlesData(
-                                    show: false,
+                                    show: true,
+                                    leftTitles: SideTitles(
+                                      showTitles: false,
+                                    ),
                                   ),
                                   barGroups: [
                                     BarChartGroupData(x: 1, barRods: [
@@ -198,8 +201,7 @@ class _FinanceChartPageState extends State<FinanceChartPage> {
                                       BarChartRodData(y: 4, width: 12),
                                     ]),
                                     BarChartGroupData(x: 7, barRods: [
-                                      BarChartRodData(y: 8, width: 12,
-                                          colors: [
+                                      BarChartRodData(y: 8, width: 12, colors: [
                                         Colors.red,
                                       ]),
                                     ]),
