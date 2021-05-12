@@ -167,6 +167,7 @@ class _FinanceChartPageState extends State<FinanceChartPage> {
                           Expanded(
                             child: BarChart(
                               BarChartData(
+                                maxY: 15,
                                 borderData: FlBorderData(
                                   show: false,
                                 ),
