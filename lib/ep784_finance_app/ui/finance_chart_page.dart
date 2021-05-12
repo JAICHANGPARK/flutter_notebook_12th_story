@@ -171,12 +171,23 @@ class _FinanceChartPageState extends State<FinanceChartPage> {
                             child: Row(
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
-                                CircleAvatar(radius: 8,),
-                                SizedBox(width: 8,),
+                                CircleAvatar(
+                                  radius: 8,
+                                ),
+                                SizedBox(
+                                  width: 8,
+                                ),
                                 Text("Income"),
-                                SizedBox(width: 24,),
-                                CircleAvatar(radius: 8,),
-                                SizedBox(width: 8,),
+                                SizedBox(
+                                  width: 24,
+                                ),
+                                CircleAvatar(
+                                  radius: 8,
+                                  backgroundColor: Colors.red,
+                                ),
+                                SizedBox(
+                                  width: 8,
+                                ),
                                 Text("Outcome"),
                               ],
                             ),
