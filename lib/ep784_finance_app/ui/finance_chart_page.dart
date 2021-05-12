@@ -188,6 +188,18 @@ class _FinanceChartPageState extends State<FinanceChartPage> {
                                       barRods: [
                                         BarChartRodData(y: 4),
                                       ]),
+                                  BarChartGroupData(x: 5,
+                                      barRods: [
+                                        BarChartRodData(y: 6),
+                                      ]),
+                                  BarChartGroupData(x: 6,
+                                      barRods: [
+                                        BarChartRodData(y: 4),
+                                      ]),
+                                  BarChartGroupData(x: 7,
+                                      barRods: [
+                                        BarChartRodData(y: 4),
+                                      ]),
                                 ]
                               ),
                             ),
