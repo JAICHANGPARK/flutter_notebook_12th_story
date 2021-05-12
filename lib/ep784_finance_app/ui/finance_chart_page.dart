@@ -167,41 +167,33 @@ class _FinanceChartPageState extends State<FinanceChartPage> {
                           Expanded(
                             child: BarChart(
                               BarChartData(
-                                maxY: 15,
-                                borderData: FlBorderData(
-                                  show: false,
-                                ),
-                                barGroups: [
-                                  BarChartGroupData(x: 1,
-                                      barRods: [
-                                        BarChartRodData(y: 5),
+                                  maxY: 15,
+                                  borderData: FlBorderData(
+                                    show: false,
+                                  ),
+                                  barGroups: [
+                                    BarChartGroupData(x: 1, barRods: [
+                                      BarChartRodData(y: 5, width: 18),
+                                    ]),
+                                    BarChartGroupData(x: 2, barRods: [
+                                      BarChartRodData(y: 7),
+                                    ]),
+                                    BarChartGroupData(x: 3, barRods: [
+                                      BarChartRodData(y: 10),
+                                    ]),
+                                    BarChartGroupData(x: 4, barRods: [
+                                      BarChartRodData(y: 4),
+                                    ]),
+                                    BarChartGroupData(x: 5, barRods: [
+                                      BarChartRodData(y: 6),
+                                    ]),
+                                    BarChartGroupData(x: 6, barRods: [
+                                      BarChartRodData(y: 4),
+                                    ]),
+                                    BarChartGroupData(x: 7, barRods: [
+                                      BarChartRodData(y: 4),
+                                    ]),
                                   ]),
-                                  BarChartGroupData(x: 2,
-                                      barRods: [
-                                        BarChartRodData(y: 7),
-                                      ]),
-                                  BarChartGroupData(x: 3,
-                                      barRods: [
-                                        BarChartRodData(y: 10),
-                                      ]),
-                                  BarChartGroupData(x: 4,
-                                      barRods: [
-                                        BarChartRodData(y: 4),
-                                      ]),
-                                  BarChartGroupData(x: 5,
-                                      barRods: [
-                                        BarChartRodData(y: 6),
-                                      ]),
-                                  BarChartGroupData(x: 6,
-                                      barRods: [
-                                        BarChartRodData(y: 4),
-                                      ]),
-                                  BarChartGroupData(x: 7,
-                                      barRods: [
-                                        BarChartRodData(y: 4),
-                                      ]),
-                                ]
-                              ),
                             ),
                             flex: 10,
                           ),
