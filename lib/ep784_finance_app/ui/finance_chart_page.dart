@@ -165,47 +165,50 @@ class _FinanceChartPageState extends State<FinanceChartPage> {
                             flex: 2,
                           ),
                           Expanded(
-                            child: BarChart(
-                              BarChartData(
-                                  maxY: 15,
-                                  borderData: FlBorderData(
-                                    show: false,
-                                  ),
-                                  titlesData: FlTitlesData(
-                                    show: true,
-                                     leftTitles: SideTitles(
-                                      showTitles: false,
+                            child: Padding(
+                              padding: const EdgeInsets.symmetric(horizontal: 16),
+                              child: BarChart(
+                                BarChartData(
+                                    maxY: 15,
+                                    borderData: FlBorderData(
+                                      show: false,
                                     ),
-                                  ),
-                                  barGroups: [
-                                    BarChartGroupData(x: 1, barRods: [
-                                      BarChartRodData(y: 5, width: 12),
-                                    ]),
-                                    BarChartGroupData(x: 2, barRods: [
-                                      BarChartRodData(y: 7, width: 12, colors: [
-                                        Colors.red,
+                                    titlesData: FlTitlesData(
+                                      show: true,
+                                       leftTitles: SideTitles(
+                                        showTitles: false,
+                                      ),
+                                    ),
+                                    barGroups: [
+                                      BarChartGroupData(x: 1, barRods: [
+                                        BarChartRodData(y: 5, width: 12),
+                                      ]),
+                                      BarChartGroupData(x: 2, barRods: [
+                                        BarChartRodData(y: 7, width: 12, colors: [
+                                          Colors.red,
+                                        ]),
+                                      ]),
+                                      BarChartGroupData(x: 3, barRods: [
+                                        BarChartRodData(y: 10, width: 12),
+                                      ]),
+                                      BarChartGroupData(x: 4, barRods: [
+                                        BarChartRodData(y: 4, width: 12, colors: [
+                                          Colors.red,
+                                        ]),
+                                      ]),
+                                      BarChartGroupData(x: 5, barRods: [
+                                        BarChartRodData(y: 6, width: 12),
+                                      ]),
+                                      BarChartGroupData(x: 6, barRods: [
+                                        BarChartRodData(y: 4, width: 12),
+                                      ]),
+                                      BarChartGroupData(x: 7, barRods: [
+                                        BarChartRodData(y: 8, width: 12, colors: [
+                                          Colors.red,
+                                        ]),
                                       ]),
                                     ]),
-                                    BarChartGroupData(x: 3, barRods: [
-                                      BarChartRodData(y: 10, width: 12),
-                                    ]),
-                                    BarChartGroupData(x: 4, barRods: [
-                                      BarChartRodData(y: 4, width: 12, colors: [
-                                        Colors.red,
-                                      ]),
-                                    ]),
-                                    BarChartGroupData(x: 5, barRods: [
-                                      BarChartRodData(y: 6, width: 12),
-                                    ]),
-                                    BarChartGroupData(x: 6, barRods: [
-                                      BarChartRodData(y: 4, width: 12),
-                                    ]),
-                                    BarChartGroupData(x: 7, barRods: [
-                                      BarChartRodData(y: 8, width: 12, colors: [
-                                        Colors.red,
-                                      ]),
-                                    ]),
-                                  ]),
+                              ),
                             ),
                             flex: 10,
                           ),
