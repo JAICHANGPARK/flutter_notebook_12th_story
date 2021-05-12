@@ -169,8 +169,10 @@ class _FinanceChartPageState extends State<FinanceChartPage> {
                               padding: const EdgeInsets.symmetric(horizontal: 16),
                               child: BarChart(
                                 BarChartData(
-                                    maxY: 15,
                                     minY: 0,
+                                    maxY: 15,
+
+                                    
                                     borderData: FlBorderData(
                                       show: false,
                                     ),
