@@ -130,7 +130,7 @@ class _FinanceChartPageState extends State<FinanceChartPage> {
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.fromLTRB(16, 0 ,16 , 0),
+                padding: const EdgeInsets.fromLTRB(16, 0, 16, 0),
                 child: SizedBox(
                   height: MediaQuery.of(context).size.height / 2.2,
                   child: Card(
@@ -144,18 +144,21 @@ class _FinanceChartPageState extends State<FinanceChartPage> {
                               children: [
                                 Text(
                                   "Analytic",
-                                  style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 18
-
-                                  ),
+                                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
                                 ),
                                 Spacer(),
-                                OutlinedButton(onPressed: (){}, child: Row(children: [
-                                  Icon(Icons.arrow_downward),
-                                  SizedBox(width: 8,),
-                                  Text("weekly")
-                                ],),)
+                                OutlinedButton(
+                                  onPressed: () {},
+                                  child: Row(
+                                    children: [
+                                      Icon(Icons.arrow_downward),
+                                      SizedBox(
+                                        width: 8,
+                                      ),
+                                      Text("weekly")
+                                    ],
+                                  ),
+                                )
                               ],
                             ),
                             flex: 2,
@@ -206,7 +209,7 @@ class _FinanceChartPageState extends State<FinanceChartPage> {
                                     height: 42,
                                     width: 42,
                                     decoration:
-                                    BoxDecoration(color: Colors.pink, borderRadius: BorderRadius.circular(4)),
+                                        BoxDecoration(color: Colors.pink, borderRadius: BorderRadius.circular(4)),
                                   ),
                                   SizedBox(
                                     width: 4,
@@ -244,7 +247,6 @@ class _FinanceChartPageState extends State<FinanceChartPage> {
                   ],
                 ),
               )
-
             ],
           ),
         ),
