@@ -167,6 +167,9 @@ class _FinanceChartPageState extends State<FinanceChartPage> {
                           Expanded(
                             child: BarChart(
                               BarChartData(
+                                borderData: FlBorderData(
+                                  show: false,
+                                ),
                                 barGroups: [
                                   BarChartGroupData(x: 0, 
                                       barRods: [
