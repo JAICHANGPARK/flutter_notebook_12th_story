@@ -172,8 +172,7 @@ class _FinanceChartPageState extends State<FinanceChartPage> {
                                     show: false,
                                   ),
                                   titlesData: FlTitlesData(
-                                    show: true,
-                                    
+                                    show: false,
                                   ),
                                   barGroups: [
                                     BarChartGroupData(x: 1, barRods: [
