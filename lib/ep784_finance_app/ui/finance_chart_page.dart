@@ -166,7 +166,11 @@ class _FinanceChartPageState extends State<FinanceChartPage> {
                           ),
                           Expanded(
                             child: BarChart(
-                              BarChartData()
+                              BarChartData(
+                                barGroups: [
+                                  
+                                ]
+                              ),
                             ),
                             flex: 10,
                           ),
