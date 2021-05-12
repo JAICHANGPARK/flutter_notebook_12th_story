@@ -180,29 +180,28 @@ class _FinanceChartPageState extends State<FinanceChartPage> {
                                         showTitles: false,
                                       ),
                                       bottomTitles: SideTitles(
-                                        showTitles: true,
-                                        getTitles: (value){
-                                          switch(value.toInt()){
-                                            case 1:
-                                              return "Mo";
-                                            case 2:
-                                              return "Tu";
-                                            case 3:
-                                              return "We";
-                                            case 4:
-                                              return "Th";
-                                            case 5:
-                                              return "Fr";
-                                            case 6:
-                                              return "Sa";
-                                            case 7:
-                                              return "Su";
+                                          showTitles: true,
+                                          getTitles: (value) {
+                                            switch (value.toInt()) {
+                                              case 1:
+                                                return "Mo";
+                                              case 2:
+                                                return "Tu";
+                                              case 3:
+                                                return "We";
+                                              case 4:
+                                                return "Th";
+                                              case 5:
+                                                return "Fr";
+                                              case 6:
+                                                return "Sa";
+                                              case 7:
+                                                return "Su";
 
-                                            default :
-                                              return "";
-                                          }
-                                        }
-                                      ),
+                                              default:
+                                                return "";
+                                            }
+                                          }),
                                     ),
                                     barGroups: [
                                       BarChartGroupData(x: 1, barRods: [
