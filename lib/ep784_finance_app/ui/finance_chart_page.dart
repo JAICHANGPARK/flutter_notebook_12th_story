@@ -168,7 +168,9 @@ class _FinanceChartPageState extends State<FinanceChartPage> {
                             child: BarChart(
                               BarChartData(
                                 barGroups: [
-                                  
+                                  BarChartGroupData(x: 0, barRods: [
+
+                                  ]),
                                 ]
                               ),
                             ),
