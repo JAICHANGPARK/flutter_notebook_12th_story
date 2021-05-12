@@ -171,10 +171,14 @@ class _FinanceChartPageState extends State<FinanceChartPage> {
                                   show: false,
                                 ),
                                 barGroups: [
-                                  BarChartGroupData(x: 0, 
+                                  BarChartGroupData(x: 1,
                                       barRods: [
                                         BarChartRodData(y: 8),
                                   ]),
+                                  BarChartGroupData(x: 2,
+                                      barRods: [
+                                        BarChartRodData(y: 10),
+                                      ]),
                                 ]
                               ),
                             ),
