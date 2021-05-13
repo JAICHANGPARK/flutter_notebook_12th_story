@@ -55,7 +55,18 @@ class _CryptocurrencyWalletHomePageState extends State<CryptocurrencyWalletHomeP
               flex: 1,
             ),
             Expanded(
-              child: Placeholder(),
+              child: Container(
+                child: Column(
+                  children: [
+                    Center()
+                  ],
+                ),
+                decoration: BoxDecoration(
+                  border: Border.all(color: Colors.grey[300]!),
+                  borderRadius: BorderRadius.circular(8)
+                ),
+              ),
+
               flex: 5,
             ),
             Expanded(
