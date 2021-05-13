@@ -56,24 +56,32 @@ class _CryptocurrencyWalletHomePageState extends State<CryptocurrencyWalletHomeP
             ),
             Expanded(
               child: Padding(
-                padding: const EdgeInsets.all(8.0),
+                padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                 child: Container(
                   child: Column(
-                    children: [
-                      Center()
-                    ],
+                    children: [Center()],
                   ),
                   decoration: BoxDecoration(
-                    border: Border.all(color: Colors.grey[300]!),
-                    borderRadius: BorderRadius.circular(8)
-                  ),
+                      border: Border.all(color: Colors.grey[400]!), borderRadius: BorderRadius.circular(8)),
                 ),
               ),
-
               flex: 5,
             ),
             Expanded(
-              child: Placeholder(),
+              child: Column(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 16),
+                    child: Row(
+                      children: [
+                        Text("Top movers"),
+                        Spacer(),
+                        TextButton(onPressed: () {}, child: Text("View all")),
+                      ],
+                    ),
+                  )
+                ],
+              ),
               flex: 4,
             ),
           ],
