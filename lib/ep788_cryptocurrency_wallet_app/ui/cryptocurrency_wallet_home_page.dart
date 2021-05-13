@@ -85,7 +85,7 @@ class _CryptocurrencyWalletHomePageState extends State<CryptocurrencyWalletHomeP
                   }))
                 ],
               ),
-              flex: 4,
+              flex: 3,
             ),
           ],
         ),
