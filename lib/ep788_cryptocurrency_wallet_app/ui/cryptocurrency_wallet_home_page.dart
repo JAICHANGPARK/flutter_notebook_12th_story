@@ -29,6 +29,9 @@ class _CryptocurrencyWalletHomePageState extends State<CryptocurrencyWalletHomeP
                         shape: BoxShape.circle,
                         border: Border.all(color: Colors.orange, width: 2),
                       ),
+                      child: CircleAvatar(
+                        backgroundColor: Colors.blue[50],
+                      ),
                     ),
                     SizedBox(width: 8),
                     Text(
