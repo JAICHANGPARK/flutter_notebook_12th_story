@@ -1,3 +1,4 @@
+import 'package:badges/badges.dart';
 import 'package:flutter/material.dart';
 
 class CryptocurrencyWalletHomePage extends StatefulWidget {
@@ -20,9 +21,18 @@ class _CryptocurrencyWalletHomePageState extends State<CryptocurrencyWalletHomeP
               child: Row(
                 children: [
                   Container(
+                    height: 42,
+                    width: 42,
                     decoration: BoxDecoration(
                       shape: BoxShape.circle,
+                      border: Border.all(color: Colors.orange, width: 2),
                     ),
+                  ),
+                  Text("Bryan"),
+                  Spacer(),
+                  IconButton(onPressed: (){}, icon: Icon(Icons.send)),
+                  Badge(
+                    child: ,
                   )
                 ],
               ),
