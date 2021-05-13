@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 
 class CryptocurrencyWalletHomePage extends StatefulWidget {
@@ -10,19 +9,39 @@ class CryptocurrencyWalletHomePage extends StatefulWidget {
 
 class _CryptocurrencyWalletHomePageState extends State<CryptocurrencyWalletHomePage> {
   int _bottomIndex = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        children: [
-          Expanded(child: Placeholder(), flex: 1,),
-          Expanded(child: Placeholder(), flex: 5,),
-          Expanded(child: Placeholder(), flex: 4,),
-        ],
+      body: SafeArea(
+        child: Column(
+          children: [
+            Expanded(
+              child: Row(
+                children: [
+                  Container(
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                    ),
+                  )
+                ],
+              ),
+              flex: 1,
+            ),
+            Expanded(
+              child: Placeholder(),
+              flex: 5,
+            ),
+            Expanded(
+              child: Placeholder(),
+              flex: 4,
+            ),
+          ],
+        ),
       ),
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
-        onTap: (idx){
+        onTap: (idx) {
           setState(() {
             _bottomIndex = idx;
           });
