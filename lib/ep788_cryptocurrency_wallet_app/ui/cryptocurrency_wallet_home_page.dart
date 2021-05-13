@@ -80,8 +80,12 @@ class _CryptocurrencyWalletHomePageState extends State<CryptocurrencyWalletHomeP
                       ],
                     ),
                   ),
-                  Expanded(child: ListView.builder(itemBuilder: (context, index) {
-                    return Container();
+                  Expanded(child: ListView.builder(
+                      scrollDirection: Axis.horizontal,
+                      itemBuilder: (context, index) {
+                    return Container(
+                      width: 160,
+                    );
                   }))
                 ],
               ),
