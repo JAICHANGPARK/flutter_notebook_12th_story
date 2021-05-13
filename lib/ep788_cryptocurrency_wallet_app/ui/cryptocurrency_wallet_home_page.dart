@@ -39,7 +39,12 @@ class _CryptocurrencyWalletHomePageState extends State<CryptocurrencyWalletHomeP
                     IconButton(onPressed: () {}, icon: Icon(Icons.send)),
                     Badge(
                       child: Icon(Icons.notifications),
-                      badgeContent: Text("3"),
+                      badgeContent: Text(
+                        "3",
+                        style: TextStyle(
+                          color: Colors.white,
+                        ),
+                      ),
                     )
                   ],
                 ),
