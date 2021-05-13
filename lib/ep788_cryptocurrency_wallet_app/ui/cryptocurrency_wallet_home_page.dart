@@ -15,7 +15,7 @@ class _CryptocurrencyWalletHomePageState extends State<CryptocurrencyWalletHomeP
     return Scaffold(
       body: Column(
         children: [
-          Expanded(child: Placeholder(), flex: 2,),
+          Expanded(child: Placeholder(), flex: 1,),
           Expanded(child: Placeholder(), flex: 5,),
           Expanded(child: Placeholder(), flex: 4,),
         ],
