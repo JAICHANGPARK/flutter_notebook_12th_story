@@ -25,17 +25,17 @@ class _CryptocurrencyWalletHomePageState extends State<CryptocurrencyWalletHomeP
               label: "Wallet"),
           BottomNavigationBarItem(
               icon: Icon(
-                Icons.account_balance_wallet,
+                Icons.pie_chart,
               ),
               label: "Portfolio"),
           BottomNavigationBarItem(
               icon: Icon(
-                Icons.account_balance_wallet,
+                Icons.list_alt,
               ),
               label: "News"),
           BottomNavigationBarItem(
               icon: Icon(
-                Icons.account_balance_wallet,
+                Icons.account_circle,
               ),
               label: "Settings"),
         ],
