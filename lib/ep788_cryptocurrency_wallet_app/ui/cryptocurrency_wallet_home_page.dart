@@ -13,7 +13,11 @@ class _CryptocurrencyWalletHomePageState extends State<CryptocurrencyWalletHomeP
   Widget build(BuildContext context) {
     return Scaffold(
       body: Column(
-        children: [],
+        children: [
+          Expanded(child: Placeholder(), flex: 2,),
+          Expanded(child: Placeholder(), flex: 5,),
+          Expanded(child: Placeholder(), flex: 4,),
+        ],
       ),
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
