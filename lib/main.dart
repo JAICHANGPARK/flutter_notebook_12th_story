@@ -1,4 +1,4 @@
 import 'package:flutter/material.dart';
-import 'ep784_finance_app/finance_app.dart';
+import 'ep788_cryptocurrency_wallet_app/cryptocurrency_wallet_app.dart';
 
-void main() => runApp(FinanceApp());
+void main() => runApp(CryptocurrencyWalletApp());
