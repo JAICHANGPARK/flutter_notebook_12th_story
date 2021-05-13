@@ -5,6 +5,22 @@ class CryptocurrencyWalletApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    return MaterialApp(
+      home: CryptocurrencyWalletHomePage(),
+    );
+  }
+}
+
+class CryptocurrencyWalletHomePage extends StatefulWidget {
+  const CryptocurrencyWalletHomePage({Key? key}) : super(key: key);
+
+  @override
+  _CryptocurrencyWalletHomePageState createState() => _CryptocurrencyWalletHomePageState();
+}
+
+class _CryptocurrencyWalletHomePageState extends State<CryptocurrencyWalletHomePage> {
+  @override
+  Widget build(BuildContext context) {
     return Scaffold(
       body: Column(
         children: [],
@@ -35,20 +51,6 @@ class CryptocurrencyWalletApp extends StatelessWidget {
         ],
       ),
     );
-  }
-}
-
-class CryptocurrencyWalletHomePage extends StatefulWidget {
-  const CryptocurrencyWalletHomePage({Key? key}) : super(key: key);
-
-  @override
-  _CryptocurrencyWalletHomePageState createState() => _CryptocurrencyWalletHomePageState();
-}
-
-class _CryptocurrencyWalletHomePageState extends State<CryptocurrencyWalletHomePage> {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold();
   }
 }
 
