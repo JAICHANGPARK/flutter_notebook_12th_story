@@ -9,9 +9,7 @@ class CryptocurrencyWalletHomePage extends StatefulWidget {
 }
 
 class _CryptocurrencyWalletHomePageState extends State<CryptocurrencyWalletHomePage> {
-
   int _bottomIndex = 0;
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
