@@ -18,23 +18,27 @@ class _CryptocurrencyWalletHomePageState extends State<CryptocurrencyWalletHomeP
         child: Column(
           children: [
             Expanded(
-              child: Row(
-                children: [
-                  Container(
-                    height: 42,
-                    width: 42,
-                    decoration: BoxDecoration(
-                      shape: BoxShape.circle,
-                      border: Border.all(color: Colors.orange, width: 2),
+              child: Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 16),
+                child: Row(
+                  children: [
+                    Container(
+                      height: 42,
+                      width: 42,
+                      decoration: BoxDecoration(
+                        shape: BoxShape.circle,
+                        border: Border.all(color: Colors.orange, width: 2),
+                      ),
                     ),
-                  ),
-                  Text("Bryan"),
-                  Spacer(),
-                  IconButton(onPressed: (){}, icon: Icon(Icons.send)),
-                  Badge(
-                    child: ,
-                  )
-                ],
+                    Text("Bryan"),
+                    Spacer(),
+                    IconButton(onPressed: (){}, icon: Icon(Icons.send)),
+                    Badge(
+                      child: Icon(Icons.notifications),
+                      badgeContent: Text("3"),
+                    )
+                  ],
+                ),
               ),
               flex: 1,
             ),
