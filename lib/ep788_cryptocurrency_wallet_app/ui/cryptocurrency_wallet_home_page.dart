@@ -9,6 +9,9 @@ class CryptocurrencyWalletHomePage extends StatefulWidget {
 }
 
 class _CryptocurrencyWalletHomePageState extends State<CryptocurrencyWalletHomePage> {
+
+  int _bottomIndex = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -21,6 +24,11 @@ class _CryptocurrencyWalletHomePageState extends State<CryptocurrencyWalletHomeP
       ),
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
+        onTap: (idx){
+          setState(() {
+            _bottomIndex = idx;
+          });
+        },
         items: [
           BottomNavigationBarItem(
               icon: Icon(
