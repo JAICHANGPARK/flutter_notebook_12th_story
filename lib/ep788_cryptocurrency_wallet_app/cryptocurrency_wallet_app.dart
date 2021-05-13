@@ -38,17 +38,18 @@ class CryptocurrencyWalletApp extends StatelessWidget {
   }
 }
 
-class  extends StatefulWidget {
-  const ({Key key}) : super(key: key);
+class CryptocurrencyWalletHomePage extends StatefulWidget {
+  const CryptocurrencyWalletHomePage({Key? key}) : super(key: key);
 
   @override
-  _State createState() => _State();
+  _CryptocurrencyWalletHomePageState createState() => _CryptocurrencyWalletHomePageState();
 }
 
-class _State extends State<> {
+class _CryptocurrencyWalletHomePageState extends State<CryptocurrencyWalletHomePage> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold();
   }
 }
+
 
