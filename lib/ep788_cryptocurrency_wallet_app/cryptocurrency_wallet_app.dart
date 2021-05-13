@@ -10,11 +10,28 @@ class CryptocurrencyWalletApp extends StatelessWidget {
         children: [],
       ),
       bottomNavigationBar: BottomNavigationBar(
+        type: BottomNavigationBarType.fixed,
         items: [
-          BottomNavigationBarItem(icon: Icon(Icons.account_balance_wallet,),label: "Wallet"),
-          BottomNavigationBarItem(icon: Icon(Icons.account_balance_wallet,),label: "Portfolio"),
-          BottomNavigationBarItem(icon: Icon(Icons.account_balance_wallet,),label: "News"),
-          BottomNavigationBarItem(icon: Icon(Icons.account_balance_wallet,),label: "Wallet"),
+          BottomNavigationBarItem(
+              icon: Icon(
+                Icons.account_balance_wallet,
+              ),
+              label: "Wallet"),
+          BottomNavigationBarItem(
+              icon: Icon(
+                Icons.account_balance_wallet,
+              ),
+              label: "Portfolio"),
+          BottomNavigationBarItem(
+              icon: Icon(
+                Icons.account_balance_wallet,
+              ),
+              label: "News"),
+          BottomNavigationBarItem(
+              icon: Icon(
+                Icons.account_balance_wallet,
+              ),
+              label: "Settings"),
         ],
       ),
     );
