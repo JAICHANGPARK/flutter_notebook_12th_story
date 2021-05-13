@@ -30,9 +30,12 @@ class _CryptocurrencyWalletHomePageState extends State<CryptocurrencyWalletHomeP
                         border: Border.all(color: Colors.orange, width: 2),
                       ),
                     ),
+                    SizedBox(
+                      width: 8,
+                    ),
                     Text("Bryan"),
                     Spacer(),
-                    IconButton(onPressed: (){}, icon: Icon(Icons.send)),
+                    IconButton(onPressed: () {}, icon: Icon(Icons.send)),
                     Badge(
                       child: Icon(Icons.notifications),
                       badgeContent: Text("3"),
