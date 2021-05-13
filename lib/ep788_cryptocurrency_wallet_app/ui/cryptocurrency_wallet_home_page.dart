@@ -79,7 +79,10 @@ class _CryptocurrencyWalletHomePageState extends State<CryptocurrencyWalletHomeP
                         TextButton(onPressed: () {}, child: Text("View all")),
                       ],
                     ),
-                  )
+                  ),
+                  Expanded(child: ListView.builder(itemBuilder: (context, index) {
+                    return Container();
+                  }))
                 ],
               ),
               flex: 4,
