@@ -75,7 +75,16 @@ class _CryptocurrencyWalletHomePageState extends State<CryptocurrencyWalletHomeP
                                   "\$1,481.05",
                                   style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
                                 ),
-                                Text("+2.15%")
+                                SizedBox(
+                                  width: 8,
+                                ),
+                                Text(
+                                  "+2.15%",
+                                  style: TextStyle(
+                                    color: Colors.greenAccent,
+                                    fontWeight: FontWeight.bold
+                                  ),
+                                )
                               ],
                             )
                           ],
