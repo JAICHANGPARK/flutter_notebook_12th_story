@@ -64,7 +64,7 @@ class _CryptocurrencyWalletHomePageState extends State<CryptocurrencyWalletHomeP
                     children: [
                       Padding(
                         padding: const EdgeInsets.all(16.0),
-                        child: Column(
+                        child: Column( crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text("Portfolio balance", ),
                             Row(
