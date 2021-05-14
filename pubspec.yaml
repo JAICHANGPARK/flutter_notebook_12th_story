@@ -25,7 +25,7 @@ dependencies:
   provider: any
   riverpod: ^0.14.0+3
 
-  fl_chart: ^0.36.0
+  fl_chart: ^0.36.1
   bezier_chart: ^1.0.17+1
 
   smooth_page_indicator: any
