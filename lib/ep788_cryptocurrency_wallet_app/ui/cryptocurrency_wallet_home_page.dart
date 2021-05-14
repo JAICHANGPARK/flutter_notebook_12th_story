@@ -13,6 +13,13 @@ class CryptocurrencyWalletHomePage extends StatefulWidget {
 
 class _CryptocurrencyWalletHomePageState extends State<CryptocurrencyWalletHomePage> {
   int _bottomIndex = 0;
+  TabController? _tabController;
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    _tabController = TabController(length: 6, vsync: this);
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -98,13 +105,16 @@ class _CryptocurrencyWalletHomePageState extends State<CryptocurrencyWalletHomeP
                                   lineWidth: 2.5,
                                   fillMode: FillMode.below,
                                   fillGradient: LinearGradient(
+                                    begin: Alignment.topCenter,
+                                    end: Alignment.bottomCenter,
                                     colors: [
                                       Colors.blue,
                                       Colors.blue[400]!,
                                       Colors.white,
                                     ]
                                   ),
-                                ))
+                                )),
+
                           ],
                         ),
                       ),
