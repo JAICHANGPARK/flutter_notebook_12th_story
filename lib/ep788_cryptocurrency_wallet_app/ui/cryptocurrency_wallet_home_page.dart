@@ -70,6 +70,7 @@ class _CryptocurrencyWalletHomePageState extends State<CryptocurrencyWalletHomeP
                               "Portfolio balance",
                             ),
                             Row(
+                              crossAxisAlignment: CrossAxisAlignment.end,
                               children: [
                                 Text(
                                   "\$1,481.05",
@@ -80,10 +81,7 @@ class _CryptocurrencyWalletHomePageState extends State<CryptocurrencyWalletHomeP
                                 ),
                                 Text(
                                   "+2.15%",
-                                  style: TextStyle(
-                                    color: Colors.greenAccent,
-                                    fontWeight: FontWeight.bold
-                                  ),
+                                  style: TextStyle(color: Colors.greenAccent, fontWeight: FontWeight.bold),
                                 )
                               ],
                             )
