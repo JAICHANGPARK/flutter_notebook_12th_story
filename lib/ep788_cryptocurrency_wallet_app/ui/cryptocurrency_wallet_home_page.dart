@@ -93,7 +93,11 @@ class _CryptocurrencyWalletHomePageState extends State<CryptocurrencyWalletHomeP
                             ),
                             SizedBox(
                                 height: 220,
-                                child: Sparkline(data: List.generate(20, (index) => Random().nextDouble() * 100.0 ),))
+                                child: Sparkline(
+                                  data: List.generate(50, (index) => Random().nextDouble() * 100.0),
+                                  lineWidth: 2.5,
+                                  fillGradient: ,
+                                ))
                           ],
                         ),
                       ),
