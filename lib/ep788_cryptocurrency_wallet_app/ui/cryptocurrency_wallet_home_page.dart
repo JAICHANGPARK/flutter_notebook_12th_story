@@ -69,6 +69,9 @@ class _CryptocurrencyWalletHomePageState extends State<CryptocurrencyWalletHomeP
                             Text(
                               "Portfolio balance",
                             ),
+                            SizedBox(
+                              height: 9,
+                            ),
                             Row(
                               crossAxisAlignment: CrossAxisAlignment.end,
                               children: [
@@ -84,7 +87,8 @@ class _CryptocurrencyWalletHomePageState extends State<CryptocurrencyWalletHomeP
                                   style: TextStyle(color: Colors.greenAccent, fontWeight: FontWeight.bold),
                                 )
                               ],
-                            )
+                            ),
+
                           ],
                         ),
                       ),
