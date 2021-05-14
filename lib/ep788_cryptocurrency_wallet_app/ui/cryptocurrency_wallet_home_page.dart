@@ -73,6 +73,7 @@ class _CryptocurrencyWalletHomePageState extends State<CryptocurrencyWalletHomeP
                 child: Container(
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Padding(
                         padding: const EdgeInsets.all(16.0),
@@ -114,6 +115,7 @@ class _CryptocurrencyWalletHomePageState extends State<CryptocurrencyWalletHomeP
                                     Colors.white,
                                   ]),
                                 )),
+                            SizedBox(height: 24,),
                             TabBar(
                               tabs: [
                                 Tab(
@@ -139,7 +141,7 @@ class _CryptocurrencyWalletHomePageState extends State<CryptocurrencyWalletHomeP
                               labelColor: Colors.white,
                               unselectedLabelColor: Colors.grey,
                               indicator: BubbleTabIndicator(
-                                indicatorHeight: 25.0,
+                                indicatorHeight: 24.0,
                                 indicatorColor: Colors.blueAccent,
                                 tabBarIndicatorSize: TabBarIndicatorSize.tab,
 
