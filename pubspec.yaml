@@ -32,6 +32,8 @@ dependencies:
   percent_indicator:  ^3.0.1
   xlive_switch: ^1.0.5
 
+  chart_sparkline: any
+
 #  Any have awesome tootle switch?
 
 dev_dependencies:
