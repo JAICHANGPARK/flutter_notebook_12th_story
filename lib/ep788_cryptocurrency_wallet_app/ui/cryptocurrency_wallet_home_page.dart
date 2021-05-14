@@ -102,6 +102,7 @@ class _CryptocurrencyWalletHomePageState extends State<CryptocurrencyWalletHomeP
                                 )
                               ],
                             ),
+                            SizedBox(height: 24,),
                             SizedBox(
                                 height: 200,
                                 child: Sparkline(
@@ -115,42 +116,46 @@ class _CryptocurrencyWalletHomePageState extends State<CryptocurrencyWalletHomeP
                                     Colors.white,
                                   ]),
                                 )),
-                            SizedBox(height: 24,),
-                            TabBar(
-                              tabs: [
-                                Tab(
-                                  text: "1H",
-                                ),
-                                Tab(
-                                  text: "1D",
-                                ),
-                                Tab(
-                                  text: "1W",
-                                ),
-                                Tab(
-                                  text: "1M",
-                                ),
-                                Tab(
-                                  text: "1Y",
-                                ),
-                                Tab(
-                                  text: "All",
-                                )
-                              ],
-                              indicatorSize: TabBarIndicatorSize.tab,
-                              labelColor: Colors.white,
-                              unselectedLabelColor: Colors.grey,
-                              indicator: BubbleTabIndicator(
-                                indicatorHeight: 24.0,
-                                indicatorColor: Colors.blueAccent,
-                                tabBarIndicatorSize: TabBarIndicatorSize.tab,
+                            SizedBox(height: 8,),
+                            SizedBox(
+                              height: 24,
+                              child: TabBar(
+                                indicatorWeight: 0,
+                                tabs: [
+                                  Tab(
+                                    text: "1H",
+                                  ),
+                                  Tab(
+                                    text: "1D",
+                                  ),
+                                  Tab(
+                                    text: "1W",
+                                  ),
+                                  Tab(
+                                    text: "1M",
+                                  ),
+                                  Tab(
+                                    text: "1Y",
+                                  ),
+                                  Tab(
+                                    text: "All",
+                                  )
+                                ],
+                                indicatorSize: TabBarIndicatorSize.tab,
+                                labelColor: Colors.white,
+                                unselectedLabelColor: Colors.grey,
+                                indicator: BubbleTabIndicator(
+                                  indicatorHeight: 24.0,
+                                  indicatorColor: Colors.blueAccent,
+                                  tabBarIndicatorSize: TabBarIndicatorSize.tab,
 
-                                // Other flags
-                                // indicatorRadius: 1,
-                                // insets: EdgeInsets.all(1),
-                                // padding: EdgeInsets.all(10)
+                                  // Other flags
+                                  // indicatorRadius: 1,
+                                  insets: EdgeInsets.all(1),
+                                  padding: EdgeInsets.all(10)
+                                ),
+                                controller: _tabController,
                               ),
-                              controller: _tabController,
                             ),
                           ],
                         ),
