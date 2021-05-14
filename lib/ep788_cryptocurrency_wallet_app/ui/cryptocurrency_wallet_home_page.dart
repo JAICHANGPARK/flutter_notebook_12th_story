@@ -106,7 +106,8 @@ class _CryptocurrencyWalletHomePageState extends State<CryptocurrencyWalletHomeP
                             SizedBox(
                                 height: 200,
                                 child: Sparkline(
-                                  data: List.generate(50, (index) => Random().nextDouble() * 100.0 + 10),
+                                  useCubicSmoothing: true,
+                                  data: List.generate(40, (index) => (Random().nextDouble() + 1 )* 30.0 ),
                                   lineWidth: 2.5,
                                   fillMode: FillMode.below,
                                   fillGradient:
@@ -120,6 +121,11 @@ class _CryptocurrencyWalletHomePageState extends State<CryptocurrencyWalletHomeP
                             SizedBox(
                               height: 24,
                               child: TabBar(
+                                onTap: (idx){
+                                  setState(() {
+
+                                  });
+                                },
                                 indicatorWeight: 0,
                                 tabs: [
                                   Tab(
