@@ -58,15 +58,21 @@ class _CryptocurrencyWalletHomePageState extends State<CryptocurrencyWalletHomeP
               child: Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                 child: Container(
+
                   child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text("Portfolio balance"),
-                      Row(
-                        children: [
-                          Text("\$1,481.05"),
-                          Text("+2.15%")
-                        ],
-                      )
+                      Padding(
+                        padding: const EdgeInsets.all(16.0),
+                        child: Column(
+                          children: [
+                            Text("Portfolio balance", ),
+                            Row(
+                              children: [Text("\$1,481.05"), Text("+2.15%")],
+                            )
+                          ],
+                        ),
+                      ),
 
                     ],
                   ),
@@ -89,13 +95,14 @@ class _CryptocurrencyWalletHomePageState extends State<CryptocurrencyWalletHomeP
                       ],
                     ),
                   ),
-                  Expanded(child: ListView.builder(
-                      scrollDirection: Axis.horizontal,
-                      itemBuilder: (context, index) {
-                    return Container(
-                      width: 160,
-                    );
-                  }))
+                  Expanded(
+                      child: ListView.builder(
+                          scrollDirection: Axis.horizontal,
+                          itemBuilder: (context, index) {
+                            return Container(
+                              width: 160,
+                            );
+                          }))
                 ],
               ),
               flex: 3,
