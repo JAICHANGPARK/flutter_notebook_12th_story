@@ -1,4 +1,7 @@
+import 'dart:math';
+
 import 'package:badges/badges.dart';
+import 'package:chart_sparkline/flutter_sparkline.dart';
 import 'package:flutter/material.dart';
 
 class CryptocurrencyWalletHomePage extends StatefulWidget {
@@ -88,7 +91,9 @@ class _CryptocurrencyWalletHomePageState extends State<CryptocurrencyWalletHomeP
                                 )
                               ],
                             ),
-
+                            SizedBox(
+                                height: 220,
+                                child: Sparkline(data: List.generate(20, (index) => Random().nextDouble() * 100.0 ),))
                           ],
                         ),
                       ),
