@@ -63,7 +63,8 @@ class _CryptocurrencyWalletHomePageState extends State<CryptocurrencyWalletHomeP
                       Text("Portfolio balance"),
                       Row(
                         children: [
-                          Text("")
+                          Text("\$1,481.05"),
+                          Text("+2.15%")
                         ],
                       )
 
