@@ -59,7 +59,15 @@ class _CryptocurrencyWalletHomePageState extends State<CryptocurrencyWalletHomeP
                 padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                 child: Container(
                   child: Column(
-                    children: [Center()],
+                    children: [
+                      Text("Portfolio balance"),
+                      Row(
+                        children: [
+                          Text("")
+                        ],
+                      )
+
+                    ],
                   ),
                   decoration: BoxDecoration(
                       border: Border.all(color: Colors.grey[400]!), borderRadius: BorderRadius.circular(8)),
