@@ -94,9 +94,16 @@ class _CryptocurrencyWalletHomePageState extends State<CryptocurrencyWalletHomeP
                             SizedBox(
                                 height: 220,
                                 child: Sparkline(
-                                  data: List.generate(50, (index) => Random().nextDouble() * 100.0),
+                                  data: List.generate(50, (index) => Random().nextDouble() * 100.0 + 10),
                                   lineWidth: 2.5,
-                                  fillGradient: ,
+                                  fillMode: FillMode.below,
+                                  fillGradient: LinearGradient(
+                                    colors: [
+                                      Colors.blue,
+                                      Colors.blue[400]!,
+                                      Colors.white,
+                                    ]
+                                  ),
                                 ))
                           ],
                         ),
