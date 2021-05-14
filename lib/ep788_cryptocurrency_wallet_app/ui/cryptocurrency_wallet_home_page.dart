@@ -1,6 +1,7 @@
 import 'dart:math';
 
 import 'package:badges/badges.dart';
+import 'package:bubble_tab_indicator/bubble_tab_indicator.dart';
 import 'package:chart_sparkline/flutter_sparkline.dart';
 import 'package:flutter/material.dart';
 
@@ -11,9 +12,11 @@ class CryptocurrencyWalletHomePage extends StatefulWidget {
   _CryptocurrencyWalletHomePageState createState() => _CryptocurrencyWalletHomePageState();
 }
 
-class _CryptocurrencyWalletHomePageState extends State<CryptocurrencyWalletHomePage> {
+class _CryptocurrencyWalletHomePageState extends State<CryptocurrencyWalletHomePage>
+    with SingleTickerProviderStateMixin {
   int _bottomIndex = 0;
   TabController? _tabController;
+
   @override
   void initState() {
     // TODO: implement initState
@@ -99,22 +102,54 @@ class _CryptocurrencyWalletHomePageState extends State<CryptocurrencyWalletHomeP
                               ],
                             ),
                             SizedBox(
-                                height: 220,
+                                height: 200,
                                 child: Sparkline(
                                   data: List.generate(50, (index) => Random().nextDouble() * 100.0 + 10),
                                   lineWidth: 2.5,
                                   fillMode: FillMode.below,
-                                  fillGradient: LinearGradient(
-                                    begin: Alignment.topCenter,
-                                    end: Alignment.bottomCenter,
-                                    colors: [
-                                      Colors.blue,
-                                      Colors.blue[400]!,
-                                      Colors.white,
-                                    ]
-                                  ),
+                                  fillGradient:
+                                      LinearGradient(begin: Alignment.topCenter, end: Alignment.bottomCenter, colors: [
+                                    Colors.blue,
+                                    Colors.blue[400]!,
+                                    Colors.white,
+                                  ]),
                                 )),
+                            TabBar(
+                              tabs: [
+                                Tab(
+                                  text: "1H",
+                                ),
+                                Tab(
+                                  text: "1D",
+                                ),
+                                Tab(
+                                  text: "1W",
+                                ),
+                                Tab(
+                                  text: "1M",
+                                ),
+                                Tab(
+                                  text: "1Y",
+                                ),
+                                Tab(
+                                  text: "All",
+                                )
+                              ],
+                              indicatorSize: TabBarIndicatorSize.tab,
+                              labelColor: Colors.white,
+                              unselectedLabelColor: Colors.grey,
+                              indicator: BubbleTabIndicator(
+                                indicatorHeight: 25.0,
+                                indicatorColor: Colors.blueAccent,
+                                tabBarIndicatorSize: TabBarIndicatorSize.tab,
 
+                                // Other flags
+                                // indicatorRadius: 1,
+                                // insets: EdgeInsets.all(1),
+                                // padding: EdgeInsets.all(10)
+                              ),
+                              controller: _tabController,
+                            ),
                           ],
                         ),
                       ),
