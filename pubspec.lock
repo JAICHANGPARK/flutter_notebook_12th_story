@@ -43,6 +43,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.2.0"
+  chart_sparkline:
+    dependency: "direct main"
+    description:
+      name: chart_sparkline
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "1.0.3"
   clock:
     dependency: transitive
     description:
@@ -105,7 +112,7 @@ packages:
       name: fl_chart
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.36.0"
+    version: "0.36.1"
   flutter:
     dependency: "direct main"
     description: flutter
