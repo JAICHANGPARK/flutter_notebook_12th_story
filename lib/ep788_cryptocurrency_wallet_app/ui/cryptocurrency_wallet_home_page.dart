@@ -203,7 +203,7 @@ class _CryptocurrencyWalletHomePageState extends State<CryptocurrencyWalletHomeP
                                         color: Colors.grey,
                                       ),
                                       borderRadius: BorderRadius.circular(8)),
-                                  
+                                  padding: EdgeInsets.all(16),
                                   child: Column(
                                     crossAxisAlignment: CrossAxisAlignment.start,
                                     children: [
