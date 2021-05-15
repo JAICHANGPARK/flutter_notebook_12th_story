@@ -27,6 +27,10 @@ class _CryptocurrencyWalletNewsPageState extends State<CryptocurrencyWalletNewsP
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      body: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [],
+      ),
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _bottomIndex,
         type: BottomNavigationBarType.fixed,
