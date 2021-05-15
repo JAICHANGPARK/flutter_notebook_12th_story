@@ -203,10 +203,13 @@ class _CryptocurrencyWalletHomePageState extends State<CryptocurrencyWalletHomeP
                                         color: Colors.grey,
                                       ),
                                       borderRadius: BorderRadius.circular(8)),
+                                  
                                   child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
                                     children: [
                                       CircleAvatar(),
-
+                                      Text("Dream Coin \$0.99"),
+                                      Text("+0.01%")
                                     ],
                                   ),
                                 ),
