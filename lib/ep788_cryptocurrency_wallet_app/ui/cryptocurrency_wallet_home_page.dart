@@ -173,7 +173,7 @@ class _CryptocurrencyWalletHomePageState extends State<CryptocurrencyWalletHomeP
                       border: Border.all(color: Colors.grey[400]!), borderRadius: BorderRadius.circular(8)),
                 ),
               ),
-              flex: 5,
+              flex: 6,
             ),
             Expanded(
               child: Column(
