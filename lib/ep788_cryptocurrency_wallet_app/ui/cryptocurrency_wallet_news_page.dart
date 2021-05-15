@@ -27,13 +27,51 @@ class _CryptocurrencyWalletNewsPageState extends State<CryptocurrencyWalletNewsP
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Expanded(child: Placeholder(), flex: 2,),
-          Expanded(child: Placeholder(), flex: 3,),
+      body: SafeArea(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Expanded(
+              child: Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 16),
+                child: Row(
+                  children: [
+                    Container(
+                      height: 42,
+                      width: 42,
+                      decoration: BoxDecoration(
+                        shape: BoxShape.circle,
+                        border: Border.all(color: Colors.orange, width: 2),
+                      ),
+                      child: CircleAvatar(
+                        backgroundColor: Colors.blue[50],
+                      ),
+                    ),
+                    SizedBox(width: 8),
+                    Text(
+                      "Bryan",
+                      style: TextStyle(fontWeight: FontWeight.bold),
+                    ),
+                    Spacer(),
+                    IconButton(onPressed: () {}, icon: Icon(Icons.send)),
+                    Badge(
+                      child: Icon(Icons.notifications),
+                      badgeContent: Text(
+                        "3",
+                        style: TextStyle(
+                          color: Colors.white,
+                        ),
+                      ),
+                    )
+                  ],
+                ),
+              ),
+              flex: 2,
+            ),
+            Expanded(child: Placeholder(), flex: 20),
 
-        ],
+          ],
+        ),
       ),
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _bottomIndex,
