@@ -5,6 +5,8 @@ import 'package:bubble_tab_indicator/bubble_tab_indicator.dart';
 import 'package:chart_sparkline/flutter_sparkline.dart';
 import 'package:flutter/material.dart';
 
+import 'cryptocurrency_wallet_news_page.dart';
+
 class CryptocurrencyWalletHomePage extends StatefulWidget {
   const CryptocurrencyWalletHomePage({Key? key}) : super(key: key);
 
@@ -14,7 +16,7 @@ class CryptocurrencyWalletHomePage extends StatefulWidget {
 
 class _CryptocurrencyWalletHomePageState extends State<CryptocurrencyWalletHomePage>
     with SingleTickerProviderStateMixin {
-  int _bottomIndex = 0;
+  int _bottomIndex = 2;
   TabController? _tabController;
 
   @override
@@ -238,6 +240,7 @@ class _CryptocurrencyWalletHomePageState extends State<CryptocurrencyWalletHomeP
         ),
       ),
       bottomNavigationBar: BottomNavigationBar(
+        currentIndex: _bottomIndex,
         type: BottomNavigationBarType.fixed,
         onTap: (idx) {
           setState(() {
