@@ -102,12 +102,14 @@ class _CryptocurrencyWalletHomePageState extends State<CryptocurrencyWalletHomeP
                                 )
                               ],
                             ),
-                            SizedBox(height: 24,),
+                            SizedBox(
+                              height: 24,
+                            ),
                             SizedBox(
                                 height: 200,
                                 child: Sparkline(
                                   useCubicSmoothing: true,
-                                  data: List.generate(40, (index) => (Random().nextDouble() + 1 )* 30.0 ),
+                                  data: List.generate(40, (index) => (Random().nextDouble() + 1) * 30.0),
                                   lineWidth: 2.5,
                                   fillMode: FillMode.below,
                                   fillGradient:
@@ -117,14 +119,14 @@ class _CryptocurrencyWalletHomePageState extends State<CryptocurrencyWalletHomeP
                                     Colors.white,
                                   ]),
                                 )),
-                            SizedBox(height: 8,),
+                            SizedBox(
+                              height: 8,
+                            ),
                             SizedBox(
                               height: 24,
                               child: TabBar(
-                                onTap: (idx){
-                                  setState(() {
-
-                                  });
+                                onTap: (idx) {
+                                  setState(() {});
                                 },
                                 indicatorWeight: 0,
                                 tabs: [
@@ -151,15 +153,14 @@ class _CryptocurrencyWalletHomePageState extends State<CryptocurrencyWalletHomeP
                                 labelColor: Colors.white,
                                 unselectedLabelColor: Colors.grey,
                                 indicator: BubbleTabIndicator(
-                                  indicatorHeight: 24.0,
-                                  indicatorColor: Colors.blueAccent,
-                                  tabBarIndicatorSize: TabBarIndicatorSize.tab,
+                                    indicatorHeight: 24.0,
+                                    indicatorColor: Colors.blueAccent,
+                                    tabBarIndicatorSize: TabBarIndicatorSize.tab,
 
-                                  // Other flags
-                                  // indicatorRadius: 1,
-                                  insets: EdgeInsets.all(1),
-                                  padding: EdgeInsets.all(10)
-                                ),
+                                    // Other flags
+                                    // indicatorRadius: 1,
+                                    insets: EdgeInsets.all(1),
+                                    padding: EdgeInsets.all(10)),
                                 controller: _tabController,
                               ),
                             ),
