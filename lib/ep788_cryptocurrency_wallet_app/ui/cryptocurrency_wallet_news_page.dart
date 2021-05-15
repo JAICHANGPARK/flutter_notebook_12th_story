@@ -14,7 +14,7 @@ class CryptocurrencyWalletNewsPage extends StatefulWidget {
 
 class _CryptocurrencyWalletNewsPageState extends State<CryptocurrencyWalletNewsPage>
     with SingleTickerProviderStateMixin {
-  int _bottomIndex = 0;
+  int _bottomIndex = 2;
   TabController? _tabController;
 
   @override
@@ -29,6 +29,7 @@ class _CryptocurrencyWalletNewsPageState extends State<CryptocurrencyWalletNewsP
     return Scaffold(
 
       bottomNavigationBar: BottomNavigationBar(
+        currentIndex: _bottomIndex,
         type: BottomNavigationBarType.fixed,
         onTap: (idx) {
           setState(() {
