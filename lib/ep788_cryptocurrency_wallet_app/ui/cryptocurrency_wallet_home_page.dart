@@ -190,32 +190,45 @@ class _CryptocurrencyWalletHomePageState extends State<CryptocurrencyWalletHomeP
                   ),
                   Expanded(
                       child: Padding(
-                        padding: const EdgeInsets.only(left: 16),
-                        child: ListView.builder(
-                            scrollDirection: Axis.horizontal,
-                            itemBuilder: (context, index) {
-                              return Padding(
-                                padding: const EdgeInsets.only(right: 8),
-                                child: Container(
-                                  width: 160,
-                                  decoration: BoxDecoration(
-                                      border: Border.all(
-                                        color: Colors.grey,
-                                      ),
-                                      borderRadius: BorderRadius.circular(8)),
-                                  padding: EdgeInsets.all(16),
-                                  child: Column(
-                                    crossAxisAlignment: CrossAxisAlignment.start,
-                                    children: [
-                                      CircleAvatar(),
-                                      Text("Dream Coin \$0.99"),
-                                      Text("+0.01%")
-                                    ],
+                    padding: const EdgeInsets.only(left: 16),
+                    child: ListView.builder(
+                        scrollDirection: Axis.horizontal,
+                        itemBuilder: (context, index) {
+                          return Padding(
+                            padding: const EdgeInsets.only(right: 8),
+                            child: Container(
+                              width: 160,
+                              decoration: BoxDecoration(
+                                  border: Border.all(
+                                    color: Colors.grey,
                                   ),
-                                ),
-                              );
-                            }),
-                      ))
+                                  borderRadius: BorderRadius.circular(8)),
+                              padding: EdgeInsets.all(16),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  CircleAvatar(),
+                                  Spacer(),
+                                  Text(
+                                    "Dream Coin \$0.99",
+                                    style: TextStyle(
+                                      fontSize: 14,
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
+                                  Text(
+                                    "+0.01%",
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      color: Colors.greenAccent,
+                                    ),
+                                  )
+                                ],
+                              ),
+                            ),
+                          );
+                        }),
+                  ))
                 ],
               ),
               flex: 3,
