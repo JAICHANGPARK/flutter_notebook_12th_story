@@ -216,6 +216,7 @@ class _CryptocurrencyWalletHomePageState extends State<CryptocurrencyWalletHomeP
                                       fontWeight: FontWeight.bold,
                                     ),
                                   ),
+                                  SizedBox(height: 8,),
                                   Text(
                                     "+0.01%",
                                     style: TextStyle(
