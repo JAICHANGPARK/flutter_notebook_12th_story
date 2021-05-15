@@ -29,7 +29,11 @@ class _CryptocurrencyWalletNewsPageState extends State<CryptocurrencyWalletNewsP
     return Scaffold(
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
-        children: [],
+        children: [
+          Expanded(child: Placeholder(), flex: 2,),
+          Expanded(child: Placeholder(), flex: 3,),
+
+        ],
       ),
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _bottomIndex,
