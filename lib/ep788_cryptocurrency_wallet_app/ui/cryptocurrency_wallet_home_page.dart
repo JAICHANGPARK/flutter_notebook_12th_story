@@ -218,7 +218,9 @@ class _CryptocurrencyWalletHomePageState extends State<CryptocurrencyWalletHomeP
                                       fontWeight: FontWeight.bold,
                                     ),
                                   ),
-                                  SizedBox(height: 8,),
+                                  SizedBox(
+                                    height: 8,
+                                  ),
                                   Text(
                                     "+0.01%",
                                     style: TextStyle(
@@ -246,7 +248,7 @@ class _CryptocurrencyWalletHomePageState extends State<CryptocurrencyWalletHomeP
           setState(() {
             _bottomIndex = idx;
           });
-          switch(idx){
+          switch (idx) {
             case 2:
               Navigator.of(context).push(MaterialPageRoute(builder: (context) => CryptocurrencyWalletNewsPage()));
           }
