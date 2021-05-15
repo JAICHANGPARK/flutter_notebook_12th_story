@@ -27,7 +27,6 @@ class _CryptocurrencyWalletNewsPageState extends State<CryptocurrencyWalletNewsP
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _bottomIndex,
         type: BottomNavigationBarType.fixed,
@@ -35,6 +34,11 @@ class _CryptocurrencyWalletNewsPageState extends State<CryptocurrencyWalletNewsP
           setState(() {
             _bottomIndex = idx;
           });
+          switch (idx) {
+            case 0:
+              Navigator.of(context).pop();
+              return;
+          }
         },
         items: [
           BottomNavigationBarItem(
