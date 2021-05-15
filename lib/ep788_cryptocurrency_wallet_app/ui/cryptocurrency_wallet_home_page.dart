@@ -16,7 +16,7 @@ class CryptocurrencyWalletHomePage extends StatefulWidget {
 
 class _CryptocurrencyWalletHomePageState extends State<CryptocurrencyWalletHomePage>
     with SingleTickerProviderStateMixin {
-  int _bottomIndex = 2;
+  int _bottomIndex = 0;
   TabController? _tabController;
 
   @override
