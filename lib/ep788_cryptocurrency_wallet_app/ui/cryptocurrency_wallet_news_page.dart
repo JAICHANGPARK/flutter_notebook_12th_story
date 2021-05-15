@@ -68,8 +68,16 @@ class _CryptocurrencyWalletNewsPageState extends State<CryptocurrencyWalletNewsP
               ),
               flex: 2,
             ),
-            Expanded(child: Placeholder(), flex: 20),
-
+            Expanded(
+                child: Column(
+                  children: [
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [Text("Last news"), Text("View all")],
+                    )
+                  ],
+                ),
+                flex: 20),
           ],
         ),
       ),
