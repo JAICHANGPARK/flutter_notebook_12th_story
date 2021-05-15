@@ -251,7 +251,9 @@ class _CryptocurrencyWalletHomePageState extends State<CryptocurrencyWalletHomeP
           switch (idx) {
             case 2:
               Navigator.of(context).push(MaterialPageRoute(builder: (context) => CryptocurrencyWalletNewsPage()));
+              _bottomIndex = 0;
           }
+
         },
         items: [
           BottomNavigationBarItem(
