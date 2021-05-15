@@ -189,13 +189,21 @@ class _CryptocurrencyWalletHomePageState extends State<CryptocurrencyWalletHomeP
                     ),
                   ),
                   Expanded(
-                      child: ListView.builder(
-                          scrollDirection: Axis.horizontal,
-                          itemBuilder: (context, index) {
-                            return Container(
-                              width: 160,
-                            );
-                          }))
+                      child: Padding(
+                        padding: const EdgeInsets.only(left: 16),
+                        child: ListView.builder(
+                            scrollDirection: Axis.horizontal,
+                            itemBuilder: (context, index) {
+                              return Container(
+                                width: 160,
+                                decoration: BoxDecoration(
+                                    border: Border.all(
+                                      color: Colors.grey,
+                                    ),
+                                    borderRadius: BorderRadius.circular(8)),
+                              );
+                            }),
+                      ))
                 ],
               ),
               flex: 3,
