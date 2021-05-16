@@ -27,6 +27,8 @@ class _HomeRentHomePageState extends State<HomeRentHomePage> {
                     Row(
                       children: [
                         Icon(Icons.add_location),
+                        Text("Bali,"),
+                        Text("Indonesia"),
                       ],
                     ),
 
