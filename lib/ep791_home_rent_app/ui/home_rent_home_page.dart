@@ -12,7 +12,14 @@ class _HomeRentHomePageState extends State<HomeRentHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      
+      body: Column(
+        children: [
+          Expanded(child: Placeholder()),
+          Expanded(child: Placeholder()),
+          Expanded(child: Placeholder()),
+          Expanded(child: Placeholder()),
+        ],
+      ),
     );
   }
 }
