@@ -14,10 +14,10 @@ class _HomeRentHomePageState extends State<HomeRentHomePage> {
     return Scaffold(
       body: Column(
         children: [
-          Expanded(child: Placeholder()),
-          Expanded(child: Placeholder()),
-          Expanded(child: Placeholder()),
-          Expanded(child: Placeholder()),
+          Expanded(child: Placeholder(),flex: 2,),
+          Expanded(child: Placeholder(), flex: 2,),
+          Expanded(child: Placeholder(), flex: 6,),
+          Expanded(child: Placeholder(), flex: 3,),
         ],
       ),
     );
