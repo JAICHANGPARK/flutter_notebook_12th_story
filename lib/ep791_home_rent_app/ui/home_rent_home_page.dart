@@ -11,6 +11,8 @@ class HomeRentHomePage extends StatefulWidget {
 class _HomeRentHomePageState extends State<HomeRentHomePage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      
+    );
   }
 }
