@@ -1,4 +1,4 @@
 import 'package:flutter/material.dart';
-import 'ep788_cryptocurrency_wallet_app/cryptocurrency_wallet_app.dart';
+import 'ep791_home_rent_app/home_rent_app.dart';
 
-void main() => runApp(CryptocurrencyWalletApp());
+void main() => runApp(HomeRentApp());
