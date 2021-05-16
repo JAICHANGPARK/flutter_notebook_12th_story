@@ -61,7 +61,12 @@ class _HomeRentHomePageState extends State<HomeRentHomePage> {
               flex: 2,
             ),
             Expanded(
-              child: Placeholder(),
+              child: PhysicalModel(
+                color: Colors.black.withAlpha(0.2),
+                child: Container(
+                  decoration: BoxDecoration(),
+                ),
+              ),
               flex: 10,
             ),
             Expanded(
