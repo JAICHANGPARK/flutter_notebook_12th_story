@@ -15,7 +15,24 @@ class _HomeRentHomePageState extends State<HomeRentHomePage> {
         child: Column(
           children: [
             Expanded(
-              child: Placeholder(),
+              child: Row(
+                children: [Column(
+                  children: [
+                    Row(
+                      children: [
+                        Text("Location"),
+                        Icon(Icons.keyboard_arrow_down),
+                      ],
+                    ),
+                    Row(
+                      children: [
+                        Icon(Icons.add_location),
+                      ],
+                    ),
+
+                  ],
+                )],
+              ),
               flex: 2,
             ),
             Expanded(
@@ -28,7 +45,7 @@ class _HomeRentHomePageState extends State<HomeRentHomePage> {
             ),
             Expanded(
               child: Container(
-                
+
               ),
               flex: 3,
             ),
