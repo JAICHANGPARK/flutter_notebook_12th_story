@@ -16,24 +16,34 @@ class _HomeRentHomePageState extends State<HomeRentHomePage> {
           children: [
             Expanded(
               child: Row(
-                children: [Column(
-                  children: [
-                    Row(
-                      children: [
-                        Text("Location"),
-                        Icon(Icons.keyboard_arrow_down),
-                      ],
+                children: [
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Row(
+                        children: [
+                          Text("Location"),
+                          Icon(Icons.keyboard_arrow_down),
+                        ],
+                      ),
+                      Row(
+                        children: [
+                          Icon(Icons.add_location),
+                          Text("Bali,"),
+                          Text("Indonesia"),
+                        ],
+                      ),
+                    ],
+                  ),
+                  Spacer(),
+                  Container(
+                    height: 42,
+                    width: 42,
+                    decoration: BoxDecoration(
+                      color: Colors.white
                     ),
-                    Row(
-                      children: [
-                        Icon(Icons.add_location),
-                        Text("Bali,"),
-                        Text("Indonesia"),
-                      ],
-                    ),
-
-                  ],
-                )],
+                  )
+                ],
               ),
               flex: 2,
             ),
@@ -46,9 +56,7 @@ class _HomeRentHomePageState extends State<HomeRentHomePage> {
               flex: 10,
             ),
             Expanded(
-              child: Container(
-
-              ),
+              child: Container(),
               flex: 3,
             ),
           ],
