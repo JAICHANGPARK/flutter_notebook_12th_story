@@ -53,18 +53,26 @@ class _HomeRentHomePageState extends State<HomeRentHomePage> {
               flex: 2,
             ),
             Expanded(
-              child: Container(
-                decoration: BoxDecoration(
-                  color: Colors.white
+              child: Padding(
+                padding: const EdgeInsets.all(16.0),
+                child: Container(
+                  decoration: BoxDecoration(color: Colors.white),
                 ),
               ),
               flex: 2,
             ),
             Expanded(
-              child: PhysicalModel(
-                color: Colors.black.withAlpha(0.2),
-                child: Container(
-                  decoration: BoxDecoration(),
+              child: Padding(
+                padding: const EdgeInsets.all(16.0),
+                child: PhysicalModel(
+                  color: Colors.black.withOpacity(0.2),
+                  elevation: 3,
+                  child: Container(
+                    decoration: BoxDecoration(
+                      color: Colors.grey,
+                      borderRadius: BorderRadius.circular(24),
+                    ),
+                  ),
                 ),
               ),
               flex: 10,
