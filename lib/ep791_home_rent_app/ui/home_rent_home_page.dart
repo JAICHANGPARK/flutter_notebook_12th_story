@@ -75,7 +75,7 @@ class _HomeRentHomePageState extends State<HomeRentHomePage> {
                   ),
                 ),
               ),
-              flex: 12,
+              flex: 15,
             ),
             Expanded(
               child: Padding(
@@ -83,11 +83,11 @@ class _HomeRentHomePageState extends State<HomeRentHomePage> {
                 child: Container(
                   decoration: BoxDecoration(
                     color: Colors.black,
-                    borderRadius: BorderRadius.circular(24)
+                    borderRadius: BorderRadius.circular(28)
                   ),
                 ),
               ),
-              flex: 3,
+              flex: 4,
             ),
           ],
         ),
