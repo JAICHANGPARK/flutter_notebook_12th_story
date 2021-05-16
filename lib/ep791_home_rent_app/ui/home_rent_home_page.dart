@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class HomeRentHomePage extends StatefulWidget {
   const HomeRentHomePage({Key? key}) : super(key: key);
 
@@ -12,13 +11,29 @@ class _HomeRentHomePageState extends State<HomeRentHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        children: [
-          Expanded(child: Placeholder(),flex: 2,),
-          Expanded(child: Placeholder(), flex: 2,),
-          Expanded(child: Placeholder(), flex: 6,),
-          Expanded(child: Placeholder(), flex: 3,),
-        ],
+      body: SafeArea(
+        child: Column(
+          children: [
+            Expanded(
+              child: Placeholder(),
+              flex: 2,
+            ),
+            Expanded(
+              child: Placeholder(),
+              flex: 2,
+            ),
+            Expanded(
+              child: Placeholder(),
+              flex: 10,
+            ),
+            Expanded(
+              child: Container(
+                
+              ),
+              flex: 3,
+            ),
+          ],
+        ),
       ),
     );
   }
