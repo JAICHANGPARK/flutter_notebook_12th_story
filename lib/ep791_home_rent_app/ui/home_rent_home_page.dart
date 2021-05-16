@@ -50,7 +50,7 @@ class _HomeRentHomePageState extends State<HomeRentHomePage> {
                   ],
                 ),
               ),
-              flex: 2,
+              flex: 3,
             ),
             Expanded(
               child: Padding(
@@ -59,7 +59,7 @@ class _HomeRentHomePageState extends State<HomeRentHomePage> {
                   decoration: BoxDecoration(color: Colors.white),
                 ),
               ),
-              flex: 2,
+              flex: 3,
             ),
             Expanded(
               child: Padding(
@@ -75,10 +75,18 @@ class _HomeRentHomePageState extends State<HomeRentHomePage> {
                   ),
                 ),
               ),
-              flex: 10,
+              flex: 12,
             ),
             Expanded(
-              child: Container(),
+              child: Padding(
+                padding: const EdgeInsets.all(16.0),
+                child: Container(
+                  decoration: BoxDecoration(
+                    color: Colors.black,
+                    borderRadius: BorderRadius.circular(24)
+                  ),
+                ),
+              ),
               flex: 3,
             ),
           ],
