@@ -12,6 +12,7 @@ class _HomeRentHomePageState extends State<HomeRentHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomInset: false,
       backgroundColor: Color(0xfffafcff),
       body: SafeArea(
         child: Column(
