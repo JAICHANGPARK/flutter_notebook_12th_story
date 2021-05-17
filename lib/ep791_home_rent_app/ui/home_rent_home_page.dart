@@ -56,7 +56,7 @@ class _HomeRentHomePageState extends State<HomeRentHomePage> {
               child: Padding(
                 padding: const EdgeInsets.all(16.0),
                 child: Container(
-                  decoration: BoxDecoration(color: Colors.white),
+                  decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(8)),
                   padding: EdgeInsets.symmetric(horizontal: 8),
                   child: Row(
                     children: [
@@ -66,7 +66,6 @@ class _HomeRentHomePageState extends State<HomeRentHomePage> {
                               border: InputBorder.none,
                               hintText: "Search House",
                               icon: Icon(Icons.search),
-
                             ),
                           ),
                           flex: 10),
