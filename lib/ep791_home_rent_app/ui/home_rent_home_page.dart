@@ -38,19 +38,24 @@ class _HomeRentHomePageState extends State<HomeRentHomePage> {
                               ),
                             ],
                           ),
-                          SizedBox(height: 8,),
+                          SizedBox(
+                            height: 8,
+                          ),
                           Row(
                             children: [
                               Icon(
                                 Icons.location_on,
-                                size: 14,
+                                size: 18,
                                 color: Colors.greenAccent,
                               ),
                               Text(
                                 "Bali,",
-                                style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                                style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
                               ),
-                              Text("Indonesia"),
+                              Text(
+                                " Indonesia",
+                                style: TextStyle(fontSize: 18),
+                              ),
                             ],
                           ),
                         ],
