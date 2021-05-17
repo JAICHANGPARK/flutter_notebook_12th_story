@@ -57,6 +57,12 @@ class _HomeRentHomePageState extends State<HomeRentHomePage> {
                 padding: const EdgeInsets.all(16.0),
                 child: Container(
                   decoration: BoxDecoration(color: Colors.white),
+                  child: Row(
+                    children: [
+                      Expanded(child: Placeholder()),
+                      Expanded(child: Placeholder()),
+                    ],
+                  ),
                 ),
               ),
               flex: 3,
