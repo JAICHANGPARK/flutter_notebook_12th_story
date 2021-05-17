@@ -65,6 +65,7 @@ class _HomeRentHomePageState extends State<HomeRentHomePage> {
                             decoration: InputDecoration(
                               border: InputBorder.none,
                               hintText: "Search House",
+                              icon: Icon(Icons.search),
 
                             ),
                           ),
