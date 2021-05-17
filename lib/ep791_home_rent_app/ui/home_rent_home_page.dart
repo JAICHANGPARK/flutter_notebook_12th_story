@@ -77,6 +77,9 @@ class _HomeRentHomePageState extends State<HomeRentHomePage> {
                             
                             borderRadius: BorderRadius.circular(16),
                           ),
+                          child: Center(
+                            child: Icon(Icons.tune, color: Colors.white,),
+                          ),
                         ),
                         flex: 2,
                       ),
