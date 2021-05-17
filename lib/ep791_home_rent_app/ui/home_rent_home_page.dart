@@ -59,8 +59,8 @@ class _HomeRentHomePageState extends State<HomeRentHomePage> {
                   decoration: BoxDecoration(color: Colors.white),
                   child: Row(
                     children: [
-                      Expanded(child: Placeholder()),
-                      Expanded(child: Placeholder()),
+                      Expanded(child: Placeholder(), flex: 10),
+                      Expanded(child: Placeholder() , flex:  2,),
                     ],
                   ),
                 ),
