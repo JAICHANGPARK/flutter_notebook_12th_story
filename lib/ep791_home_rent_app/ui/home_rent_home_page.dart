@@ -141,6 +141,17 @@ class _HomeRentHomePageState extends State<HomeRentHomePage> {
                 padding: const EdgeInsets.all(16.0),
                 child: Container(
                   decoration: BoxDecoration(color: Colors.black, borderRadius: BorderRadius.circular(28)),
+                  child: Row(
+                    children: [
+                      Container(
+                        height: 48,
+                        width: 48,
+                        decoration: BoxDecoration(
+                          color: Colors.white.withOpacity(0.2),
+                        ),
+                      )
+                    ],
+                  ),
                 ),
               ),
               flex: 4,
