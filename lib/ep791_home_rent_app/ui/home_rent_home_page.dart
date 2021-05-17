@@ -174,7 +174,7 @@ class _HomeRentHomePageState extends State<HomeRentHomePage> {
                               color: _bottomIdx == 1 ? Colors.white.withOpacity(0.2) : Colors.black,
                               borderRadius: BorderRadius.circular(16)
                           ),
-                          child: Icon(Icons.home_sharp, size: 32, color: Colors.white,),
+                          child: Icon(Icons.favorite_border, size: 32, color: Colors.white,),
                         ),
                       ),
                       InkWell(
@@ -190,7 +190,7 @@ class _HomeRentHomePageState extends State<HomeRentHomePage> {
                               color: _bottomIdx == 2 ? Colors.white.withOpacity(0.2) : Colors.black,
                               borderRadius: BorderRadius.circular(16)
                           ),
-                          child: Icon(Icons.home_sharp, size: 32, color: Colors.white,),
+                          child: Icon(Icons.shopping_cart_outlined, size: 32, color: Colors.white,),
                         ),
                       ),
                       InkWell(
@@ -206,7 +206,7 @@ class _HomeRentHomePageState extends State<HomeRentHomePage> {
                               color: _bottomIdx == 3 ? Colors.white.withOpacity(0.2) : Colors.black,
                               borderRadius: BorderRadius.circular(16)
                           ),
-                          child: Icon(Icons.home_sharp, size: 32, color: Colors.white,),
+                          child: Icon(Icons.perm_identity, size: 32, color: Colors.white,),
                         ),
                       ),
                     ],
