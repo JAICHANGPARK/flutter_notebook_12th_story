@@ -70,7 +70,14 @@ class _HomeRentHomePageState extends State<HomeRentHomePage> {
                           ),
                           flex: 10),
                       Expanded(
-                        child: Placeholder(),
+                        child: Container(
+                          margin: EdgeInsets.all(2),
+                          decoration: BoxDecoration(
+                            color: Colors.black,
+                            
+                            borderRadius: BorderRadius.circular(16),
+                          ),
+                        ),
                         flex: 2,
                       ),
                     ],
