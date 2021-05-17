@@ -10,6 +10,7 @@ class HomeRentHomePage extends StatefulWidget {
 
 class _HomeRentHomePageState extends State<HomeRentHomePage> {
   int _bottomIdx = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -126,12 +127,16 @@ class _HomeRentHomePageState extends State<HomeRentHomePage> {
                 padding: const EdgeInsets.all(16.0),
                 child: PhysicalModel(
                   color: Colors.black.withOpacity(0.2),
-                  elevation: 3,
+                  borderRadius: BorderRadius.circular(24),
+                  elevation: 8,
                   child: Container(
                     decoration: BoxDecoration(
-                      color: Colors.grey,
-                      borderRadius: BorderRadius.circular(24),
-                    ),
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(24),
+                        image: DecorationImage(
+                            image:
+                                NetworkImage("https://cdn.pixabay.com/photo/2014/11/21/17/17/house-540796_960_720.jpg"),
+                            fit: BoxFit.cover)),
                   ),
                 ),
               ),
@@ -146,25 +151,28 @@ class _HomeRentHomePageState extends State<HomeRentHomePage> {
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
                       InkWell(
-                        onTap: (){
+                        onTap: () {
                           setState(() {
-                            _bottomIdx  = 0;
+                            _bottomIdx = 0;
                           });
                         },
                         child: Container(
                           height: 42,
                           width: 42,
                           decoration: BoxDecoration(
-                            color: _bottomIdx == 0 ? Colors.white.withOpacity(0.2) : Colors.black,
-                            borderRadius: BorderRadius.circular(16)
+                              color: _bottomIdx == 0 ? Colors.white.withOpacity(0.2) : Colors.black,
+                              borderRadius: BorderRadius.circular(16)),
+                          child: Icon(
+                            Icons.home_sharp,
+                            size: 32,
+                            color: Colors.white,
                           ),
-                          child: Icon(Icons.home_sharp, size: 32, color: Colors.white,),
                         ),
                       ),
                       InkWell(
-                        onTap: (){
+                        onTap: () {
                           setState(() {
-                            _bottomIdx  = 1;
+                            _bottomIdx = 1;
                           });
                         },
                         child: Container(
@@ -172,15 +180,18 @@ class _HomeRentHomePageState extends State<HomeRentHomePage> {
                           width: 42,
                           decoration: BoxDecoration(
                               color: _bottomIdx == 1 ? Colors.white.withOpacity(0.2) : Colors.black,
-                              borderRadius: BorderRadius.circular(16)
+                              borderRadius: BorderRadius.circular(16)),
+                          child: Icon(
+                            Icons.favorite_border,
+                            size: 32,
+                            color: Colors.white,
                           ),
-                          child: Icon(Icons.favorite_border, size: 32, color: Colors.white,),
                         ),
                       ),
                       InkWell(
-                        onTap: (){
+                        onTap: () {
                           setState(() {
-                            _bottomIdx  = 2;
+                            _bottomIdx = 2;
                           });
                         },
                         child: Container(
@@ -188,15 +199,18 @@ class _HomeRentHomePageState extends State<HomeRentHomePage> {
                           width: 42,
                           decoration: BoxDecoration(
                               color: _bottomIdx == 2 ? Colors.white.withOpacity(0.2) : Colors.black,
-                              borderRadius: BorderRadius.circular(16)
+                              borderRadius: BorderRadius.circular(16)),
+                          child: Icon(
+                            Icons.shopping_cart_outlined,
+                            size: 32,
+                            color: Colors.white,
                           ),
-                          child: Icon(Icons.shopping_cart_outlined, size: 32, color: Colors.white,),
                         ),
                       ),
                       InkWell(
-                        onTap: (){
+                        onTap: () {
                           setState(() {
-                            _bottomIdx  = 3;
+                            _bottomIdx = 3;
                           });
                         },
                         child: Container(
@@ -204,9 +218,12 @@ class _HomeRentHomePageState extends State<HomeRentHomePage> {
                           width: 42,
                           decoration: BoxDecoration(
                               color: _bottomIdx == 3 ? Colors.white.withOpacity(0.2) : Colors.black,
-                              borderRadius: BorderRadius.circular(16)
+                              borderRadius: BorderRadius.circular(16)),
+                          child: Icon(
+                            Icons.perm_identity,
+                            size: 32,
+                            color: Colors.white,
                           ),
-                          child: Icon(Icons.perm_identity, size: 32, color: Colors.white,),
                         ),
                       ),
                     ],
