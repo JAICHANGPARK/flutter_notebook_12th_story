@@ -21,23 +21,29 @@ class _HomeRentHomePageState extends State<HomeRentHomePage> {
                 padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                 child: Row(
                   children: [
-                    Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Row(
-                          children: [
-                            Text("Location"),
-                            Icon(Icons.keyboard_arrow_down),
-                          ],
-                        ),
-                        Row(
-                          children: [
-                            Icon(Icons.location_on),
-                            Text("Bali,"),
-                            Text("Indonesia"),
-                          ],
-                        ),
-                      ],
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Row(
+                            children: [
+                              Text(
+                                "Location",
+                                style: TextStyle(color: Colors.grey),
+                              ),
+                              Icon(Icons.keyboard_arrow_down, color: Colors.greenAccent,),
+                            ],
+                          ),
+                          Row(
+                            children: [
+                              Icon(Icons.location_on),
+                              Text("Bali,"),
+                              Text("Indonesia"),
+                            ],
+                          ),
+                        ],
+                      ),
                     ),
                     Spacer(),
                     Container(
