@@ -9,6 +9,7 @@ class HomeRentHomePage extends StatefulWidget {
 }
 
 class _HomeRentHomePageState extends State<HomeRentHomePage> {
+  int _bottomIdx = 0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -142,16 +143,72 @@ class _HomeRentHomePageState extends State<HomeRentHomePage> {
                 child: Container(
                   decoration: BoxDecoration(color: Colors.black, borderRadius: BorderRadius.circular(28)),
                   child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
-                      Container(
-                        height: 42,
-                        width: 42,
-                        decoration: BoxDecoration(
-                          color: Colors.white.withOpacity(0.2),
-                          borderRadius: BorderRadius.circular(16)
+                      InkWell(
+                        onTap: (){
+                          setState(() {
+                            _bottomIdx  = 0;
+                          });
+                        },
+                        child: Container(
+                          height: 42,
+                          width: 42,
+                          decoration: BoxDecoration(
+                            color: _bottomIdx == 0 ? Colors.white.withOpacity(0.2) : Colors.black,
+                            borderRadius: BorderRadius.circular(16)
+                          ),
+                          child: Icon(Icons.home_sharp, size: 32, color: Colors.white,),
                         ),
-                        child: Icon(Icons.home_sharp, size: 32, color: Colors.white,),
-                      )
+                      ),
+                      InkWell(
+                        onTap: (){
+                          setState(() {
+                            _bottomIdx  = 1;
+                          });
+                        },
+                        child: Container(
+                          height: 42,
+                          width: 42,
+                          decoration: BoxDecoration(
+                              color: _bottomIdx == 1 ? Colors.white.withOpacity(0.2) : Colors.black,
+                              borderRadius: BorderRadius.circular(16)
+                          ),
+                          child: Icon(Icons.home_sharp, size: 32, color: Colors.white,),
+                        ),
+                      ),
+                      InkWell(
+                        onTap: (){
+                          setState(() {
+                            _bottomIdx  = 2;
+                          });
+                        },
+                        child: Container(
+                          height: 42,
+                          width: 42,
+                          decoration: BoxDecoration(
+                              color: _bottomIdx == 2 ? Colors.white.withOpacity(0.2) : Colors.black,
+                              borderRadius: BorderRadius.circular(16)
+                          ),
+                          child: Icon(Icons.home_sharp, size: 32, color: Colors.white,),
+                        ),
+                      ),
+                      InkWell(
+                        onTap: (){
+                          setState(() {
+                            _bottomIdx  = 3;
+                          });
+                        },
+                        child: Container(
+                          height: 42,
+                          width: 42,
+                          decoration: BoxDecoration(
+                              color: _bottomIdx == 3 ? Colors.white.withOpacity(0.2) : Colors.black,
+                              borderRadius: BorderRadius.circular(16)
+                          ),
+                          child: Icon(Icons.home_sharp, size: 32, color: Colors.white,),
+                        ),
+                      ),
                     ],
                   ),
                 ),
