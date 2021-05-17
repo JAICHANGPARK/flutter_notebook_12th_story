@@ -32,13 +32,24 @@ class _HomeRentHomePageState extends State<HomeRentHomePage> {
                                 "Location",
                                 style: TextStyle(color: Colors.grey),
                               ),
-                              Icon(Icons.keyboard_arrow_down, color: Colors.greenAccent,),
+                              Icon(
+                                Icons.keyboard_arrow_down,
+                                color: Colors.greenAccent,
+                              ),
                             ],
                           ),
+                          SizedBox(height: 8,),
                           Row(
                             children: [
-                              Icon(Icons.location_on),
-                              Text("Bali,"),
+                              Icon(
+                                Icons.location_on,
+                                size: 14,
+                                color: Colors.greenAccent,
+                              ),
+                              Text(
+                                "Bali,",
+                                style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                              ),
                               Text("Indonesia"),
                             ],
                           ),
