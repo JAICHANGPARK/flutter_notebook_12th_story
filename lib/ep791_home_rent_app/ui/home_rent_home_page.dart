@@ -57,12 +57,15 @@ class _HomeRentHomePageState extends State<HomeRentHomePage> {
                 padding: const EdgeInsets.all(16.0),
                 child: Container(
                   decoration: BoxDecoration(color: Colors.white),
+                  padding: EdgeInsets.symmetric(horizontal: 8),
                   child: Row(
                     children: [
                       Expanded(
                           child: TextField(
                             decoration: InputDecoration(
                               border: InputBorder.none,
+                              hintText: "Search House",
+
                             ),
                           ),
                           flex: 10),
