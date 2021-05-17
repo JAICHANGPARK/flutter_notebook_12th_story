@@ -1,3 +1,4 @@
+import 'package:badges/badges.dart';
 import 'package:flutter/material.dart';
 
 class HomeRentHomePage extends StatefulWidget {
@@ -46,6 +47,11 @@ class _HomeRentHomePageState extends State<HomeRentHomePage> {
                         color: Colors.white,
                         borderRadius: BorderRadius.circular(8),
                       ),
+                      child: Badge(
+                        child: Icon(Icons.notifications),
+                        badgeColor: Colors.teal,
+                        ignorePointer: true,
+                      ),
                     )
                   ],
                 ),
@@ -74,11 +80,13 @@ class _HomeRentHomePageState extends State<HomeRentHomePage> {
                           margin: EdgeInsets.all(2),
                           decoration: BoxDecoration(
                             color: Colors.black,
-                            
                             borderRadius: BorderRadius.circular(16),
                           ),
                           child: Center(
-                            child: Icon(Icons.tune, color: Colors.white,),
+                            child: Icon(
+                              Icons.tune,
+                              color: Colors.white,
+                            ),
                           ),
                         ),
                         flex: 2,
