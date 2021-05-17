@@ -144,11 +144,13 @@ class _HomeRentHomePageState extends State<HomeRentHomePage> {
                   child: Row(
                     children: [
                       Container(
-                        height: 48,
-                        width: 48,
+                        height: 42,
+                        width: 42,
                         decoration: BoxDecoration(
                           color: Colors.white.withOpacity(0.2),
+                          borderRadius: BorderRadius.circular(16)
                         ),
+                        child: Icon(Icons.home_sharp, size: 32, color: Colors.white,),
                       )
                     ],
                   ),
