@@ -170,10 +170,22 @@ class _HomeRentHomePageState extends State<HomeRentHomePage> {
                                     "Black Modern",
                                     style: TextStyle(
                                       color: Colors.white,
+                                      fontSize: 18,
+                                      fontWeight: FontWeight.bold
                                     ),
                                   ),
-                                  Text("House"),
-                                  Text("Broadway Street, New york")
+                                  Text(
+                                    "House",
+                                    style: TextStyle(
+                                      color: Colors.white,  fontSize: 18,
+                                        fontWeight: FontWeight.bold
+                                    ),
+                                  ),
+                                  SizedBox(height: 16,),
+                                  Text("Broadway Street, New york", style: TextStyle(
+                                      color: Colors.white,  fontSize: 12,
+                                      fontWeight: FontWeight.bold
+                                  ),)
                                 ],
                               )
                             ],
