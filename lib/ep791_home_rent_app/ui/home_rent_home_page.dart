@@ -143,7 +143,7 @@ class _HomeRentHomePageState extends State<HomeRentHomePage> {
                           child: Container(
                             decoration: BoxDecoration(color: Colors.black.withOpacity(0.7), 
                             borderRadius: BorderRadius.circular(24)),
-                            padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                            padding: EdgeInsets.symmetric(horizontal: 16, vertical: 10),
                             child: Row(
                               children: [
                                 Text("📍", style: TextStyle(
@@ -160,7 +160,16 @@ class _HomeRentHomePageState extends State<HomeRentHomePage> {
                           top: 16,
                         ),
                         Positioned(
-                          child: Container(),
+                          child: Row(
+                            children: [
+                              Column(children: [
+                                Text("Black Modern"),
+                                Text("House"),
+
+                                Text("Broadway Street, New york")
+                              ],)
+                            ],
+                          ),
                           right: 16,
                           bottom: 16,
                           left: 16,
