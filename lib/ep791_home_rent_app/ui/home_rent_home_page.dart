@@ -193,10 +193,11 @@ class _HomeRentHomePageState extends State<HomeRentHomePage> {
                                 width: 52,
                                 padding: EdgeInsets.all(4),
                                 decoration: BoxDecoration(
-                                  color: Colors.white.withOpacity(0.2),
+                                  color: Colors.white.withOpacity(0.3),
                                   shape: BoxShape.circle
                                 ),
                                 child: CircleAvatar(
+                                  backgroundColor: Colors.blueGrey,
                                   child: Icon(Icons.favorite_border),
                                 ),
                               )
