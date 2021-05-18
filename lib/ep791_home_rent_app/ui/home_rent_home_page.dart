@@ -139,7 +139,8 @@ class _HomeRentHomePageState extends State<HomeRentHomePage> {
                             fit: BoxFit.cover)),
                     child: Stack(
                       children: [
-                        Positioned(child: Container(), right: 16, top: 16,)
+                        Positioned(child: Container(), right: 16, top: 16,),
+                        Positioned(child: Container(), right: 16, bottom: 16, left: 16,),
                         
                       ],
                     ),
