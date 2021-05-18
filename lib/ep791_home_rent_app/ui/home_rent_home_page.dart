@@ -141,14 +141,15 @@ class _HomeRentHomePageState extends State<HomeRentHomePage> {
                       children: [
                         Positioned(
                           child: Container(
-                            decoration: BoxDecoration(color: Colors.black.withOpacity(0.7), 
-                            borderRadius: BorderRadius.circular(24)),
+                            decoration: BoxDecoration(
+                                color: Colors.black.withOpacity(0.7), borderRadius: BorderRadius.circular(24)),
                             padding: EdgeInsets.symmetric(horizontal: 16, vertical: 10),
                             child: Row(
                               children: [
-                                Text("📍", style: TextStyle(
-                                  fontSize: 18
-                                ),),
+                                Text(
+                                  "📍",
+                                  style: TextStyle(fontSize: 18),
+                                ),
                                 Text(
                                   "Maps",
                                   style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold, color: Colors.white),
@@ -162,12 +163,19 @@ class _HomeRentHomePageState extends State<HomeRentHomePage> {
                         Positioned(
                           child: Row(
                             children: [
-                              Column(children: [
-                                Text("Black Modern"),
-                                Text("House"),
-
-                                Text("Broadway Street, New york")
-                              ],)
+                              Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text(
+                                    "Black Modern",
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                    ),
+                                  ),
+                                  Text("House"),
+                                  Text("Broadway Street, New york")
+                                ],
+                              )
                             ],
                           ),
                           right: 16,
