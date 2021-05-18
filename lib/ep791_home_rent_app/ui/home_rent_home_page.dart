@@ -137,6 +137,11 @@ class _HomeRentHomePageState extends State<HomeRentHomePage> {
                             image:
                                 NetworkImage("https://cdn.pixabay.com/photo/2014/11/21/17/17/house-540796_960_720.jpg"),
                             fit: BoxFit.cover)),
+                    child: Stack(
+                      children: [
+                        
+                      ],
+                    ),
                   ),
                 ),
               ),
