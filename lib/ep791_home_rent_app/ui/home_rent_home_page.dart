@@ -170,14 +170,14 @@ class _HomeRentHomePageState extends State<HomeRentHomePage> {
                                     "Black Modern",
                                     style: TextStyle(
                                       color: Colors.white,
-                                      fontSize: 18,
+                                      fontSize: 24,
                                       fontWeight: FontWeight.bold
                                     ),
                                   ),
                                   Text(
                                     "House",
                                     style: TextStyle(
-                                      color: Colors.white,  fontSize: 18,
+                                      color: Colors.white,  fontSize: 24,
                                         fontWeight: FontWeight.bold
                                     ),
                                   ),
@@ -187,6 +187,13 @@ class _HomeRentHomePageState extends State<HomeRentHomePage> {
                                       fontWeight: FontWeight.bold
                                   ),)
                                 ],
+                              ),
+                              Container(
+                                height: 52,
+                                width: 52,
+                                child: CircleAvatar(
+                                  child: Icon(Icons.favorite_border),
+                                ),
                               )
                             ],
                           ),
