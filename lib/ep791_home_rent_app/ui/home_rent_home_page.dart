@@ -188,6 +188,7 @@ class _HomeRentHomePageState extends State<HomeRentHomePage> {
                                   ),)
                                 ],
                               ),
+                              Spacer(),
                               Container(
                                 height: 52,
                                 width: 52,
