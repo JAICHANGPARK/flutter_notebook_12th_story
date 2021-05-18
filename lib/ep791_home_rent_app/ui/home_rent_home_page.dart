@@ -142,6 +142,7 @@ class _HomeRentHomePageState extends State<HomeRentHomePage> {
                         Positioned(
                           child: Container(
                             decoration: BoxDecoration(color: Colors.black),
+                            padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                             child: Row(
                               children: [
                                 Text("📍", style: TextStyle(
