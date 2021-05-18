@@ -191,6 +191,11 @@ class _HomeRentHomePageState extends State<HomeRentHomePage> {
                               Container(
                                 height: 52,
                                 width: 52,
+                                padding: EdgeInsets.all(4),
+                                decoration: BoxDecoration(
+                                  color: Colors.white.withOpacity(0.2),
+                                  shape: BoxShape.circle
+                                ),
                                 child: CircleAvatar(
                                   child: Icon(Icons.favorite_border),
                                 ),
