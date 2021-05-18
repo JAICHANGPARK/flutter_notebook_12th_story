@@ -139,9 +139,28 @@ class _HomeRentHomePageState extends State<HomeRentHomePage> {
                             fit: BoxFit.cover)),
                     child: Stack(
                       children: [
-                        Positioned(child: Container(), right: 16, top: 16,),
-                        Positioned(child: Container(), right: 16, bottom: 16, left: 16,),
-                        
+                        Positioned(
+                          child: Container(
+                            decoration: BoxDecoration(color: Colors.black),
+                            child: Row(
+                              children: [
+                                Text("📍"),
+                                Text(
+                                  "Maps",
+                                  style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold, color: Colors.white),
+                                )
+                              ],
+                            ),
+                          ),
+                          right: 16,
+                          top: 16,
+                        ),
+                        Positioned(
+                          child: Container(),
+                          right: 16,
+                          bottom: 16,
+                          left: 16,
+                        ),
                       ],
                     ),
                   ),
