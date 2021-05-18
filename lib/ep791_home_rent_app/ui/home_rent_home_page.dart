@@ -144,10 +144,12 @@ class _HomeRentHomePageState extends State<HomeRentHomePage> {
                             decoration: BoxDecoration(color: Colors.black),
                             child: Row(
                               children: [
-                                Text("📍"),
+                                Text("📍", style: TextStyle(
+                                  fontSize: 18
+                                ),),
                                 Text(
                                   "Maps",
-                                  style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold, color: Colors.white),
+                                  style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold, color: Colors.white),
                                 )
                               ],
                             ),
