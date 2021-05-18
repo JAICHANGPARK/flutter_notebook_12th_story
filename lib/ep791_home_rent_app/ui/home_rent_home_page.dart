@@ -146,8 +146,9 @@ class _HomeRentHomePageState extends State<HomeRentHomePage> {
                       children: [
                         Positioned(
                           child: Container(
-                            borderRadius: BorderRadius.circular(24),
+
                             decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(24),
                               gradient:
                                   LinearGradient(begin: Alignment.bottomCenter, end: Alignment.topCenter, colors: [
                                 Colors.black.withOpacity(0.5),
