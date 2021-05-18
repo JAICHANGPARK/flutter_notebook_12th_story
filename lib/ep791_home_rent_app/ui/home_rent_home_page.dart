@@ -131,14 +131,36 @@ class _HomeRentHomePageState extends State<HomeRentHomePage> {
                   elevation: 8,
                   child: Container(
                     decoration: BoxDecoration(
-                        color: Colors.white,
-                        borderRadius: BorderRadius.circular(24),
-                        image: DecorationImage(
-                            image:
-                                NetworkImage("https://cdn.pixabay.com/photo/2014/11/21/17/17/house-540796_960_720.jpg"),
-                            fit: BoxFit.cover)),
+                      color: Colors.white,
+                      gradient: LinearGradient(begin: Alignment.bottomCenter, end: Alignment.topCenter, colors: [
+                        Colors.black.withOpacity(0.5),
+                        Colors.black.withOpacity(0.2),
+                      ]),
+                      borderRadius: BorderRadius.circular(24),
+                      image: DecorationImage(
+                          image:
+                              NetworkImage("https://cdn.pixabay.com/photo/2014/11/21/17/17/house-540796_960_720.jpg"),
+                          fit: BoxFit.cover),
+                    ),
                     child: Stack(
                       children: [
+                        Positioned(
+                          child: Container(
+                            decoration: BoxDecoration(
+                              gradient:
+                                  LinearGradient(begin: Alignment.bottomCenter, end: Alignment.topCenter, colors: [
+                                Colors.black.withOpacity(0.5),
+                                Colors.black.withOpacity(0.2),
+                                Colors.black.withOpacity(0.1),
+                                Colors.transparent,
+                              ]),
+                            ),
+                          ),
+                          bottom: 0,
+                          left: 0,
+                          right: 0,
+                          top: 0,
+                        ),
                         Positioned(
                           child: Container(
                             decoration: BoxDecoration(
@@ -168,24 +190,19 @@ class _HomeRentHomePageState extends State<HomeRentHomePage> {
                                 children: [
                                   Text(
                                     "Black Modern",
-                                    style: TextStyle(
-                                      color: Colors.white,
-                                      fontSize: 24,
-                                      fontWeight: FontWeight.bold
-                                    ),
+                                    style: TextStyle(color: Colors.white, fontSize: 24, fontWeight: FontWeight.bold),
                                   ),
                                   Text(
                                     "House",
-                                    style: TextStyle(
-                                      color: Colors.white,  fontSize: 24,
-                                        fontWeight: FontWeight.bold
-                                    ),
+                                    style: TextStyle(color: Colors.white, fontSize: 24, fontWeight: FontWeight.bold),
                                   ),
-                                  SizedBox(height: 16,),
-                                  Text("Broadway Street, New york", style: TextStyle(
-                                      color: Colors.white,  fontSize: 12,
-                                      fontWeight: FontWeight.bold
-                                  ),)
+                                  SizedBox(
+                                    height: 16,
+                                  ),
+                                  Text(
+                                    "Broadway Street, New york",
+                                    style: TextStyle(color: Colors.white, fontSize: 12, fontWeight: FontWeight.bold),
+                                  )
                                 ],
                               ),
                               Spacer(),
@@ -193,10 +210,7 @@ class _HomeRentHomePageState extends State<HomeRentHomePage> {
                                 height: 52,
                                 width: 52,
                                 padding: EdgeInsets.all(4),
-                                decoration: BoxDecoration(
-                                  color: Colors.white.withOpacity(0.3),
-                                  shape: BoxShape.circle
-                                ),
+                                decoration: BoxDecoration(color: Colors.white.withOpacity(0.3), shape: BoxShape.circle),
                                 child: CircleAvatar(
                                   backgroundColor: Colors.blueGrey,
                                   child: Icon(Icons.favorite_border),
