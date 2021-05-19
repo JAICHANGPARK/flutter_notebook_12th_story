@@ -132,7 +132,9 @@ class _HomeRentHomePageState extends State<HomeRentHomePage> {
                   child: Material(
                     child: InkWell(
                       onTap: () {
-                        Navigator.of(context).push(MaterialPageRoute(builder: (context) => HomeRentDetailPage()));
+                        Navigator.of(context).push(MaterialPageRoute(builder: (context) => HomeRentDetailPage(
+                          img: "https://cdn.pixabay.com/photo/2014/11/21/17/17/house-540796_960_720.jpg",
+                        )));
                       },
                       child: PhysicalModel(
                         color: Colors.black.withOpacity(0.2),
