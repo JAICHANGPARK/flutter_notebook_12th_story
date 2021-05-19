@@ -33,7 +33,11 @@ class _HomeRentDetailPageState extends State<HomeRentDetailPage> {
                       ),
                       child: Stack(
                         children: [
-                          Positioned(child: Row(
+                          Positioned(
+                              left: 16,
+                              top: 16,
+                              right: 16,
+                              child: Row(
                             children: [
                               Container(
                                 height: 48,
