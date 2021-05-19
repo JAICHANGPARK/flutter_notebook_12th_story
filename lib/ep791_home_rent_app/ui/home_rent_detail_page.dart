@@ -15,9 +15,11 @@ class _HomeRentDetailPageState extends State<HomeRentDetailPage> {
         child: Container(
           height: 84,
           child: Row(
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Text(
                     "Price",
