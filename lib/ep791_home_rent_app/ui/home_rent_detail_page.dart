@@ -14,7 +14,13 @@ class _HomeRentDetailPageState extends State<HomeRentDetailPage> {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            
+            Container(
+              height: MediaQuery.of(context).size.height /2,
+              decoration: BoxDecoration(
+                color: Colors.blueGrey,
+
+              ),
+            )
           ],
         ),
 
