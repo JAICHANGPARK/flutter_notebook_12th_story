@@ -26,7 +26,9 @@ class _HomeRentDetailPageState extends State<HomeRentDetailPage> {
                     "Price",
                     style: TextStyle(fontSize: 12, color: Colors.grey),
                   ),
-                  SizedBox(height: 8,),
+                  SizedBox(
+                    height: 8,
+                  ),
                   Text.rich(TextSpan(children: [
                     TextSpan(
                         text: "\$820",
@@ -41,6 +43,17 @@ class _HomeRentDetailPageState extends State<HomeRentDetailPage> {
                         )),
                   ]))
                 ],
+              ),
+              Container(height: 64,
+              width: 120,
+
+              decoration: BoxDecoration(
+                color: Colors.white,
+              ),
+              child: Text("Rent Now", style: TextStyle(
+                fontSize: 16,
+                fontWeight: FontWeight.bold
+              ),),
               )
             ],
           ),
