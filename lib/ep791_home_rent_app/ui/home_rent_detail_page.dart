@@ -31,6 +31,15 @@ class _HomeRentDetailPageState extends State<HomeRentDetailPage> {
                           fit: BoxFit.cover
                         )
                       ),
+                      child: Stack(
+                        children: [
+                          Positioned(child: Row(
+                            children: [
+                              Container()
+                            ],
+                          ))
+                        ],
+                      ),
                     ),
                   ),
                 )
