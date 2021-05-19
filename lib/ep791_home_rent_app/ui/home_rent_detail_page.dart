@@ -22,10 +22,14 @@ class _HomeRentDetailPageState extends State<HomeRentDetailPage> {
                   tag: "img",
                   child: Material(
                     child: Container(
-                      height: MediaQuery.of(context).size.height / 2,
+                      height: MediaQuery.of(context).size.height / 1.8,
                       decoration: BoxDecoration(
                         color: Colors.blueGrey,
                         borderRadius: BorderRadius.circular(16),
+                        image: DecorationImage(
+                          image: NetworkImage(widget.img),
+                          fit: BoxFit.cover
+                        )
                       ),
                     ),
                   ),
