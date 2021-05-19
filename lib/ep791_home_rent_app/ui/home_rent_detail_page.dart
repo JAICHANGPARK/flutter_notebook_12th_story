@@ -11,6 +11,16 @@ class _HomeRentDetailPageState extends State<HomeRentDetailPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      bottomNavigationBar: BottomAppBar(
+        child: Container(
+          child: Row(
+            children: [
+              
+            ],
+          ),
+
+        ),
+      ),
 
     );
   }
