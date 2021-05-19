@@ -44,16 +44,16 @@ class _HomeRentDetailPageState extends State<HomeRentDetailPage> {
                   ]))
                 ],
               ),
-              Container(height: 64,
-              width: 120,
-
-              decoration: BoxDecoration(
-                color: Colors.white,
-              ),
-              child: Text("Rent Now", style: TextStyle(
-                fontSize: 16,
-                fontWeight: FontWeight.bold
-              ),),
+              Container(
+                height: 64,
+                width: 120,
+                decoration: BoxDecoration(
+                  color: Colors.black,
+                ),
+                child: Text(
+                  "Rent Now",
+                  style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                ),
               )
             ],
           ),
