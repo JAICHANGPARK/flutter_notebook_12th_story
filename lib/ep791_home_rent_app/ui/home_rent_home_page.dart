@@ -125,105 +125,110 @@ class _HomeRentHomePageState extends State<HomeRentHomePage> {
             Expanded(
               child: Padding(
                 padding: const EdgeInsets.all(16.0),
-                child: PhysicalModel(
-                  color: Colors.black.withOpacity(0.2),
-                  borderRadius: BorderRadius.circular(24),
-                  elevation: 8,
-                  child: Container(
-                    decoration: BoxDecoration(
-                      color: Colors.white,
-                      gradient: LinearGradient(begin: Alignment.bottomCenter, end: Alignment.topCenter, colors: [
-                        Colors.black.withOpacity(0.5),
-                        Colors.black.withOpacity(0.2),
-                      ]),
-                      borderRadius: BorderRadius.circular(24),
-                      image: DecorationImage(
-                          image:
-                              NetworkImage("https://cdn.pixabay.com/photo/2014/11/21/17/17/house-540796_960_720.jpg"),
-                          fit: BoxFit.cover),
-                    ),
-                    child: Stack(
-                      children: [
-                        Positioned(
-                          child: Container(
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(24),
-                              gradient:
-                                  LinearGradient(begin: Alignment.bottomCenter, end: Alignment.topCenter, colors: [
-                                Colors.black.withOpacity(0.5),
-                                Colors.black.withOpacity(0.2),
-                                Colors.black.withOpacity(0.1),
-                                Colors.transparent,
-                              ]),
+                child: InkWell(
+                  onTap: (){
+                    Navigator.of(context).push(MaterialPageRoute(builder: (context)=> HomeRentDetailPage()));
+                  },
+                  child: PhysicalModel(
+                    color: Colors.black.withOpacity(0.2),
+                    borderRadius: BorderRadius.circular(24),
+                    elevation: 8,
+                    child: Container(
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        gradient: LinearGradient(begin: Alignment.bottomCenter, end: Alignment.topCenter, colors: [
+                          Colors.black.withOpacity(0.5),
+                          Colors.black.withOpacity(0.2),
+                        ]),
+                        borderRadius: BorderRadius.circular(24),
+                        image: DecorationImage(
+                            image:
+                                NetworkImage("https://cdn.pixabay.com/photo/2014/11/21/17/17/house-540796_960_720.jpg"),
+                            fit: BoxFit.cover),
+                      ),
+                      child: Stack(
+                        children: [
+                          Positioned(
+                            child: Container(
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(24),
+                                gradient:
+                                    LinearGradient(begin: Alignment.bottomCenter, end: Alignment.topCenter, colors: [
+                                  Colors.black.withOpacity(0.5),
+                                  Colors.black.withOpacity(0.2),
+                                  Colors.black.withOpacity(0.1),
+                                  Colors.transparent,
+                                ]),
+                              ),
                             ),
+                            bottom: 0,
+                            left: 0,
+                            right: 0,
+                            top: 0,
                           ),
-                          bottom: 0,
-                          left: 0,
-                          right: 0,
-                          top: 0,
-                        ),
-                        Positioned(
-                          child: Container(
-                            decoration: BoxDecoration(
-                                color: Colors.black.withOpacity(0.7), borderRadius: BorderRadius.circular(24)),
-                            padding: EdgeInsets.symmetric(horizontal: 16, vertical: 10),
-                            child: Row(
-                              children: [
-                                Text(
-                                  "📍",
-                                  style: TextStyle(fontSize: 18),
-                                ),
-                                Text(
-                                  "Maps",
-                                  style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold, color: Colors.white),
-                                )
-                              ],
-                            ),
-                          ),
-                          right: 16,
-                          top: 16,
-                        ),
-                        Positioned(
-                          child: Row(
-                            children: [
-                              Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
+                          Positioned(
+                            child: Container(
+                              decoration: BoxDecoration(
+                                  color: Colors.black.withOpacity(0.7), borderRadius: BorderRadius.circular(24)),
+                              padding: EdgeInsets.symmetric(horizontal: 16, vertical: 10),
+                              child: Row(
                                 children: [
                                   Text(
-                                    "Black Modern",
-                                    style: TextStyle(color: Colors.white, fontSize: 24, fontWeight: FontWeight.bold),
+                                    "📍",
+                                    style: TextStyle(fontSize: 18),
                                   ),
                                   Text(
-                                    "House",
-                                    style: TextStyle(color: Colors.white, fontSize: 24, fontWeight: FontWeight.bold),
-                                  ),
-                                  SizedBox(
-                                    height: 16,
-                                  ),
-                                  Text(
-                                    "Broadway Street, New york",
-                                    style: TextStyle(color: Colors.white, fontSize: 12, fontWeight: FontWeight.bold),
+                                    "Maps",
+                                    style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold, color: Colors.white),
                                   )
                                 ],
                               ),
-                              Spacer(),
-                              Container(
-                                height: 52,
-                                width: 52,
-                                padding: EdgeInsets.all(4),
-                                decoration: BoxDecoration(color: Colors.white.withOpacity(0.3), shape: BoxShape.circle),
-                                child: CircleAvatar(
-                                  backgroundColor: Colors.blueGrey,
-                                  child: Icon(Icons.favorite_border),
-                                ),
-                              )
-                            ],
+                            ),
+                            right: 16,
+                            top: 16,
                           ),
-                          right: 16,
-                          bottom: 16,
-                          left: 16,
-                        ),
-                      ],
+                          Positioned(
+                            child: Row(
+                              children: [
+                                Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text(
+                                      "Black Modern",
+                                      style: TextStyle(color: Colors.white, fontSize: 24, fontWeight: FontWeight.bold),
+                                    ),
+                                    Text(
+                                      "House",
+                                      style: TextStyle(color: Colors.white, fontSize: 24, fontWeight: FontWeight.bold),
+                                    ),
+                                    SizedBox(
+                                      height: 16,
+                                    ),
+                                    Text(
+                                      "Broadway Street, New york",
+                                      style: TextStyle(color: Colors.white, fontSize: 12, fontWeight: FontWeight.bold),
+                                    )
+                                  ],
+                                ),
+                                Spacer(),
+                                Container(
+                                  height: 52,
+                                  width: 52,
+                                  padding: EdgeInsets.all(4),
+                                  decoration: BoxDecoration(color: Colors.white.withOpacity(0.3), shape: BoxShape.circle),
+                                  child: CircleAvatar(
+                                    backgroundColor: Colors.blueGrey,
+                                    child: Icon(Icons.favorite_border),
+                                  ),
+                                )
+                              ],
+                            ),
+                            right: 16,
+                            bottom: 16,
+                            left: 16,
+                          ),
+                        ],
+                      ),
                     ),
                   ),
                 ),
