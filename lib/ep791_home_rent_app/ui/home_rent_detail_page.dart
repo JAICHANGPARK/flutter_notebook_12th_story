@@ -50,6 +50,7 @@ class _HomeRentDetailPageState extends State<HomeRentDetailPage> {
                 width: 120,
                 decoration: BoxDecoration(
                   color: Colors.black,
+                  borderRadius: BorderRadius.circular(16)
                 ),
                 child: Center(
                   child: Text(
