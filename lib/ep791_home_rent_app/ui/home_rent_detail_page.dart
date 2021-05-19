@@ -47,7 +47,20 @@ class _HomeRentDetailPageState extends State<HomeRentDetailPage> {
                                 BoxDecoration(color: Colors.white.withOpacity(0.3), shape: BoxShape.circle),
                                 child: CircleAvatar(
                                   backgroundColor: Colors.white,
+                                  foregroundColor: Colors.tealAccent,
                                   child: Icon(Icons.arrow_back_ios_new, size: 18,),
+                                ),
+                              ),
+                              Container(
+                                height: 48,
+                                width: 48,
+                                padding: EdgeInsets.all(4),
+                                decoration:
+                                BoxDecoration(color: Colors.white.withOpacity(0.3), shape: BoxShape.circle),
+                                child: CircleAvatar(
+                                  backgroundColor: Colors.white,
+                                  foregroundColor: Colors.tealAccent,
+                                  child: Icon(Icons.photo_library_outlined, size: 18,),
                                 ),
                               )
                             ],
