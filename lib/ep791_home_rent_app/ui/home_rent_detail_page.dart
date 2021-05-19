@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
 class HomeRentDetailPage extends StatefulWidget {
-  HomeRentDetailPage({Key? key}) : super(key: key);
+  final String img;
+  HomeRentDetailPage({Key? key, required this.img}) : super(key: key);
 
   @override
   _HomeRentDetailPageState createState() => _HomeRentDetailPageState();
