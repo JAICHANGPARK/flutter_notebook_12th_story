@@ -11,24 +11,34 @@ class _HomeRentDetailPageState extends State<HomeRentDetailPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SingleChildScrollView(
-        child: Column(
-          children: [
-            Container(
-              height: MediaQuery.of(context).size.height /2,
-              decoration: BoxDecoration(
-                color: Colors.blueGrey,
-
-              ),
-            )
-          ],
+      body: SafeArea(
+        child: SingleChildScrollView(
+          child: Padding(
+            padding: const EdgeInsets.all(12.0),
+            child: Column(
+              children: [
+                Hero(
+                  tag: "img",
+                  child: Material(
+                    child: Container(
+                      height: MediaQuery.of(context).size.height / 2,
+                      decoration: BoxDecoration(
+                        color: Colors.blueGrey,
+                        borderRadius: BorderRadius.circular(16),
+                      ),
+                    ),
+                  ),
+                )
+              ],
+            ),
+          ),
         ),
-
       ),
       bottomNavigationBar: buildBottomAppBarWidget(),
     );
   }
-  Widget buildBottomAppBarWidget(){
+
+  Widget buildBottomAppBarWidget() {
     return BottomAppBar(
       child: Container(
         height: 84,
@@ -66,10 +76,7 @@ class _HomeRentDetailPageState extends State<HomeRentDetailPage> {
             Container(
               height: 64,
               width: 120,
-              decoration: BoxDecoration(
-                  color: Colors.black,
-                  borderRadius: BorderRadius.circular(16)
-              ),
+              decoration: BoxDecoration(color: Colors.black, borderRadius: BorderRadius.circular(16)),
               child: Center(
                 child: Text(
                   "Rent Now",
