@@ -1,6 +1,8 @@
 import 'package:badges/badges.dart';
 import 'package:flutter/material.dart';
 
+import 'home_rent_detail_page.dart';
+
 class HomeRentHomePage extends StatefulWidget {
   const HomeRentHomePage({Key? key}) : super(key: key);
 
@@ -126,8 +128,8 @@ class _HomeRentHomePageState extends State<HomeRentHomePage> {
               child: Padding(
                 padding: const EdgeInsets.all(16.0),
                 child: InkWell(
-                  onTap: (){
-                    Navigator.of(context).push(MaterialPageRoute(builder: (context)=> HomeRentDetailPage()));
+                  onTap: () {
+                    Navigator.of(context).push(MaterialPageRoute(builder: (context) => HomeRentDetailPage()));
                   },
                   child: PhysicalModel(
                     color: Colors.black.withOpacity(0.2),
@@ -215,7 +217,8 @@ class _HomeRentHomePageState extends State<HomeRentHomePage> {
                                   height: 52,
                                   width: 52,
                                   padding: EdgeInsets.all(4),
-                                  decoration: BoxDecoration(color: Colors.white.withOpacity(0.3), shape: BoxShape.circle),
+                                  decoration:
+                                      BoxDecoration(color: Colors.white.withOpacity(0.3), shape: BoxShape.circle),
                                   child: CircleAvatar(
                                     backgroundColor: Colors.blueGrey,
                                     child: Icon(Icons.favorite_border),
