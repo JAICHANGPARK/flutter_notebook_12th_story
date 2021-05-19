@@ -35,7 +35,17 @@ class _HomeRentDetailPageState extends State<HomeRentDetailPage> {
                         children: [
                           Positioned(child: Row(
                             children: [
-                              Container()
+                              Container(
+                                height: 48,
+                                width: 48,
+                                padding: EdgeInsets.all(4),
+                                decoration:
+                                BoxDecoration(color: Colors.white.withOpacity(0.3), shape: BoxShape.circle),
+                                child: CircleAvatar(
+                                  backgroundColor: Colors.white,
+                                  child: Icon(Icons.arrow_back_ios_new, size: 18,),
+                                ),
+                              )
                             ],
                           ))
                         ],
