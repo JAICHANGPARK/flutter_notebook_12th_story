@@ -17,10 +17,12 @@ class _HomeRentDetailPageState extends State<HomeRentDetailPage> {
           child: Row(
             children: [
               Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text("Price",style: TextStyle(
-                    fontSize: 12, color: Colors.grey
-                  ),),
+                  Text(
+                    "Price",
+                    style: TextStyle(fontSize: 12, color: Colors.grey),
+                  ),
                   Text.rich(TextSpan(children: [
                     TextSpan(
                         text: "\$820",
