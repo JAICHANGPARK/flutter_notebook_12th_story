@@ -16,29 +16,30 @@ class _HomeRentDetailPageState extends State<HomeRentDetailPage> {
           height: 84,
           child: Row(
             children: [
-                Column(
-                  children: [
-                    Text("Price"),
-                    Text.rich(TextSpan(children:
-                    [
-                      TextSpan(
-                        text: "\$820"
-                      ),
-                      TextSpan(
-                          text: "/Month",
+              Column(
+                children: [
+                  Text("Price",style: TextStyle(
+                    fontSize: 12, color: Colors.grey
+                  ),),
+                  Text.rich(TextSpan(children: [
+                    TextSpan(
+                        text: "\$820",
+                        style: TextStyle(
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                        )),
+                    TextSpan(
+                        text: "/Month",
                         style: TextStyle(
                           fontSize: 12,
-                        )
-                      ),
-                    ]))
-                  ],
-                )
+                        )),
+                  ]))
+                ],
+              )
             ],
           ),
-
         ),
       ),
-
     );
   }
 }
