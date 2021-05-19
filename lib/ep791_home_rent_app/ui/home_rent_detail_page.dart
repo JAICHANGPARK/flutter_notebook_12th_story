@@ -11,6 +11,14 @@ class _HomeRentDetailPageState extends State<HomeRentDetailPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            
+          ],
+        ),
+
+      ),
       bottomNavigationBar: buildBottomAppBarWidget(),
     );
   }
