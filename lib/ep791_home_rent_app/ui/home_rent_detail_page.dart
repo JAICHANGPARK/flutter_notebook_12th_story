@@ -14,6 +14,7 @@ class _HomeRentDetailPageState extends State<HomeRentDetailPage> {
       bottomNavigationBar: BottomAppBar(
         child: Container(
           height: 84,
+          padding: EdgeInsets.all(16),
           child: Row(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
@@ -25,6 +26,7 @@ class _HomeRentDetailPageState extends State<HomeRentDetailPage> {
                     "Price",
                     style: TextStyle(fontSize: 12, color: Colors.grey),
                   ),
+                  SizedBox(height: 8,),
                   Text.rich(TextSpan(children: [
                     TextSpan(
                         text: "\$820",
