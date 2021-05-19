@@ -10,6 +10,8 @@ class HomeRentDetailPage extends StatefulWidget {
 class _HomeRentDetailPageState extends State<HomeRentDetailPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+
+    );
   }
 }
