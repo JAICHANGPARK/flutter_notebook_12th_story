@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 class HomeRentDetailPage extends StatefulWidget {
   final String img;
+
   HomeRentDetailPage({Key? key, required this.img}) : super(key: key);
 
   @override
@@ -24,13 +25,9 @@ class _HomeRentDetailPageState extends State<HomeRentDetailPage> {
                     child: Container(
                       height: MediaQuery.of(context).size.height / 1.9,
                       decoration: BoxDecoration(
-                        color: Colors.blueGrey,
-                        borderRadius: BorderRadius.circular(16),
-                        image: DecorationImage(
-                          image: NetworkImage(widget.img),
-                          fit: BoxFit.cover
-                        )
-                      ),
+                          color: Colors.blueGrey,
+                          borderRadius: BorderRadius.circular(16),
+                          image: DecorationImage(image: NetworkImage(widget.img), fit: BoxFit.cover)),
                       child: Stack(
                         children: [
                           Positioned(
@@ -38,33 +35,45 @@ class _HomeRentDetailPageState extends State<HomeRentDetailPage> {
                               top: 16,
                               right: 16,
                               child: Row(
-                            children: [
-                              Container(
-                                height: 48,
-                                width: 48,
-                                padding: EdgeInsets.all(4),
-                                decoration:
-                                BoxDecoration(color: Colors.white.withOpacity(0.3), shape: BoxShape.circle),
-                                child: CircleAvatar(
-                                  backgroundColor: Colors.white,
-                                  foregroundColor: Colors.tealAccent,
-                                  child: Icon(Icons.arrow_back_ios_new, size: 18,),
-                                ),
-                              ),
-                              Container(
-                                height: 48,
-                                width: 48,
-                                padding: EdgeInsets.all(4),
-                                decoration:
-                                BoxDecoration(color: Colors.white.withOpacity(0.3), shape: BoxShape.circle),
-                                child: CircleAvatar(
-                                  backgroundColor: Colors.white,
-                                  foregroundColor: Colors.tealAccent,
-                                  child: Icon(Icons.photo_library_outlined, size: 18,),
-                                ),
-                              )
-                            ],
-                          ))
+                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                children: [
+                                  InkWell(
+                                    onTap: () {
+                                      Navigator.of(context).pop();
+                                    },
+                                    child: Container(
+                                      height: 48,
+                                      width: 48,
+                                      padding: EdgeInsets.all(4),
+                                      decoration:
+                                          BoxDecoration(color: Colors.white.withOpacity(0.3), shape: BoxShape.circle),
+                                      child: CircleAvatar(
+                                        backgroundColor: Colors.white,
+                                        foregroundColor: Colors.tealAccent,
+                                        child: Icon(
+                                          Icons.arrow_back_ios_new,
+                                          size: 18,
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                  Container(
+                                    height: 48,
+                                    width: 48,
+                                    padding: EdgeInsets.all(4),
+                                    decoration:
+                                        BoxDecoration(color: Colors.white.withOpacity(0.3), shape: BoxShape.circle),
+                                    child: CircleAvatar(
+                                      backgroundColor: Colors.white,
+                                      foregroundColor: Colors.tealAccent,
+                                      child: Icon(
+                                        Icons.photo_library_outlined,
+                                        size: 18,
+                                      ),
+                                    ),
+                                  )
+                                ],
+                              ))
                         ],
                       ),
                     ),
