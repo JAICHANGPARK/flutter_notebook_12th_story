@@ -192,17 +192,21 @@ class _HomeRentDetailPageState extends State<HomeRentDetailPage> {
                       width: 48,
                       decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(8)),
                     ),
-                    Column(
-                      children: [
-                        Text(
-                          "Bedroom",
-                          style: TextStyle(fontSize: 12, color: Colors.grey),
-                        ),
-                        Text(
-                          "5 Rooms",
-                          style: TextStyle(fontWeight: FontWeight.bold),
-                        )
-                      ],
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            "Bedroom",
+                            style: TextStyle(fontSize: 10, color: Colors.grey),
+                          ),
+                          Text(
+                            "5 Rooms",
+                            style: TextStyle(fontWeight: FontWeight.bold),
+                          )
+                        ],
+                      ),
                     ),
                     Container(
                       height: 48,
