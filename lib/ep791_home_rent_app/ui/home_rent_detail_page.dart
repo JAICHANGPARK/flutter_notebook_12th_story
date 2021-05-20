@@ -191,6 +191,10 @@ class _HomeRentDetailPageState extends State<HomeRentDetailPage> {
                       height: 48,
                       width: 48,
                       decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(8)),
+                      child: Icon(
+                        Icons.bed,
+                        color: Colors.teal,
+                      ),
                     ),
                     Padding(
                       padding: const EdgeInsets.all(8.0),
@@ -212,8 +216,33 @@ class _HomeRentDetailPageState extends State<HomeRentDetailPage> {
                       height: 48,
                       width: 48,
                       decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(8)),
-                    )
+                      child: Icon(
+                        Icons.shower,
+                        color: Colors.teal,
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            "Bathroom",
+                            style: TextStyle(fontSize: 10, color: Colors.grey),
+                          ),
+                          Text(
+                            "2 Rooms",
+                            style: TextStyle(fontWeight: FontWeight.bold),
+                          )
+                        ],
+                      ),
+                    ),
                   ],
+                ),
+                Text(
+                  "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, "
+                  "quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                  style: TextStyle(fontSize: 12, color: Colors.grey),
                 )
               ],
             ),
