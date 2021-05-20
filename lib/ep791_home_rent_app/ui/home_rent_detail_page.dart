@@ -129,10 +129,13 @@ class _HomeRentDetailPageState extends State<HomeRentDetailPage> {
                                   color: Colors.white.withOpacity(0.3),
                                   borderRadius: BorderRadius.circular(8)
                                 ),
+                                padding: EdgeInsets.all(4),
                                 child: Container(
                                   decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(8),
                                     image: DecorationImage(
-                                      image: NetworkImage("")
+                                      image: NetworkImage("https://cdn.pixabay.com/photo/2016/11/18/17/20/living-room-1835923__340.jpg"),
+                                      fit: BoxFit.cover
                                     )
                                   ),
                                 ),
