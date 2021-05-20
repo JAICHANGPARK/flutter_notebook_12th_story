@@ -184,7 +184,19 @@ class _HomeRentDetailPageState extends State<HomeRentDetailPage> {
                     "Description",
                     style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
                   ),
+                ),
+                Row(
+                  children: [
+                    Container(
+                      height: 48,
+                      width: 48,
+                      decoration: BoxDecoration(
+                        color: Colors.white
+                      ),
+                    )
+                  ],
                 )
+
               ],
             ),
           ),
