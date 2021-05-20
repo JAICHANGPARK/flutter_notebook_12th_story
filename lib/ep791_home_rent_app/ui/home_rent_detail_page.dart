@@ -173,7 +173,7 @@ class _HomeRentDetailPageState extends State<HomeRentDetailPage> {
                                   decoration: BoxDecoration(
                                       borderRadius: BorderRadius.circular(8),
                                       image: DecorationImage(
-                                          image: NetworkImage("https://cdn.pixabay.com/photo/2016/11/18/17/20/living-room-1835923__340.jpg"),
+                                          image: NetworkImage("https://cdn.pixabay.com/photo/2015/10/20/18/57/furniture-998265__340.jpg"),
                                           fit: BoxFit.cover
                                       )
                                   ),
