@@ -193,7 +193,16 @@ class _HomeRentDetailPageState extends State<HomeRentDetailPage> {
                       decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(8)),
                     ),
                     Column(
-                      children: [Text("Bedroom"), Text("5 Rooms")],
+                      children: [
+                        Text(
+                          "Bedroom",
+                          style: TextStyle(fontSize: 12, color: Colors.grey),
+                        ),
+                        Text(
+                          "5 Rooms",
+                          style: TextStyle(fontWeight: FontWeight.bold),
+                        )
+                      ],
                     ),
                     Container(
                       height: 48,
