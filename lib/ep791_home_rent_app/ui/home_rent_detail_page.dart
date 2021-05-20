@@ -73,7 +73,30 @@ class _HomeRentDetailPageState extends State<HomeRentDetailPage> {
                                     ),
                                   )
                                 ],
-                              ))
+                              )),
+                          Positioned(child: Hero(
+                            tag: "title",
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  "Black Modern",
+                                  style: TextStyle(color: Colors.white, fontSize: 24, fontWeight: FontWeight.bold),
+                                ),
+                                Text(
+                                  "House",
+                                  style: TextStyle(color: Colors.white, fontSize: 24, fontWeight: FontWeight.bold),
+                                ),
+                                SizedBox(
+                                  height: 16,
+                                ),
+                                Text(
+                                  "Broadway Street, New york",
+                                  style: TextStyle(color: Colors.white, fontSize: 12, fontWeight: FontWeight.bold),
+                                )
+                              ],
+                            ),
+                          ),)
                         ],
                       ),
                     ),
