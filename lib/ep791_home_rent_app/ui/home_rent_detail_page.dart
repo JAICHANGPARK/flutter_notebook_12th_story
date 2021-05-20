@@ -18,6 +18,7 @@ class _HomeRentDetailPageState extends State<HomeRentDetailPage> {
           child: Padding(
             padding: const EdgeInsets.all(12.0),
             child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Hero(
                   tag: "img",
