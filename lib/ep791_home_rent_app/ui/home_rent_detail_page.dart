@@ -31,6 +31,24 @@ class _HomeRentDetailPageState extends State<HomeRentDetailPage> {
                       child: Stack(
                         children: [
                           Positioned(
+                            child: Container(
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(24),
+                                gradient:
+                                LinearGradient(begin: Alignment.bottomCenter, end: Alignment.topCenter, colors: [
+                                  Colors.black.withOpacity(0.5),
+                                  Colors.black.withOpacity(0.2),
+                                  Colors.black.withOpacity(0.1),
+                                  Colors.transparent,
+                                ]),
+                              ),
+                            ),
+                            bottom: 0,
+                            left: 0,
+                            right: 0,
+                            top: 0,
+                          ),
+                          Positioned(
                               left: 16,
                               top: 16,
                               right: 16,
