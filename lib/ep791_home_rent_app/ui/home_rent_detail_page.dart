@@ -74,8 +74,10 @@ class _HomeRentDetailPageState extends State<HomeRentDetailPage> {
                                   )
                                 ],
                               )),
-                          Positioned(child: Hero(
-                            tag: "title",
+                          Positioned(
+                            right: 16,
+                            bottom: 16,
+                            left: 16,
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
@@ -95,8 +97,7 @@ class _HomeRentDetailPageState extends State<HomeRentDetailPage> {
                                   style: TextStyle(color: Colors.white, fontSize: 12, fontWeight: FontWeight.bold),
                                 )
                               ],
-                            ),
-                          ),)
+                            ),)
                         ],
                       ),
                     ),
