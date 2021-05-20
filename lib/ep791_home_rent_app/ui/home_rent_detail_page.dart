@@ -126,7 +126,27 @@ class _HomeRentDetailPageState extends State<HomeRentDetailPage> {
                                 height: 58,
                                 width: 58,
                                 decoration: BoxDecoration(
-                                  color: Colors.white.withOpacity(0.3)
+                                  color: Colors.white.withOpacity(0.3),
+                                  borderRadius: BorderRadius.circular(8)
+                                ),
+                              ),
+                              Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: Container(
+                                  height: 58,
+                                  width: 58,
+                                  decoration: BoxDecoration(
+                                      color: Colors.white.withOpacity(0.3),
+                                      borderRadius: BorderRadius.circular(8)
+                                  ),
+                                ),
+                              ),
+                              Container(
+                                height: 58,
+                                width: 58,
+                                decoration: BoxDecoration(
+                                    color: Colors.white.withOpacity(0.3),
+                                    borderRadius: BorderRadius.circular(8)
                                 ),
                               )
                             ],
