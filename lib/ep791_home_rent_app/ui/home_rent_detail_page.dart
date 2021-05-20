@@ -35,7 +35,7 @@ class _HomeRentDetailPageState extends State<HomeRentDetailPage> {
                               decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(24),
                                 gradient:
-                                LinearGradient(begin: Alignment.bottomCenter, end: Alignment.topCenter, colors: [
+                                    LinearGradient(begin: Alignment.bottomCenter, end: Alignment.topCenter, colors: [
                                   Colors.black.withOpacity(0.5),
                                   Colors.black.withOpacity(0.2),
                                   Colors.black.withOpacity(0.1),
@@ -115,7 +115,22 @@ class _HomeRentDetailPageState extends State<HomeRentDetailPage> {
                                   style: TextStyle(color: Colors.white, fontSize: 12, fontWeight: FontWeight.bold),
                                 )
                               ],
-                            ),)
+                            ),
+                          ),
+                          Positioned(
+                            right: 16,
+                              bottom: 16,
+                              child: Column(
+                            children: [
+                              Container(
+                                height: 58,
+                                width: 58,
+                                decoration: BoxDecoration(
+                                  color: Colors.white.withOpacity(0.3)
+                                ),
+                              )
+                            ],
+                          ))
                         ],
                       ),
                     ),
