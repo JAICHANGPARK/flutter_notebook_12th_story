@@ -118,73 +118,68 @@ class _HomeRentDetailPageState extends State<HomeRentDetailPage> {
                             ),
                           ),
                           Positioned(
-                            right: 16,
+                              right: 16,
                               bottom: 16,
                               child: Column(
-                            children: [
-                              Container(
-                                height: 58,
-                                width: 58,
-                                decoration: BoxDecoration(
-                                  color: Colors.white.withOpacity(0.3),
-                                  borderRadius: BorderRadius.circular(8)
-                                ),
-                                padding: EdgeInsets.all(5),
-                                child: Container(
-                                  decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.circular(8),
-                                    image: DecorationImage(
-                                      image: NetworkImage("https://cdn.pixabay.com/photo/2016/11/18/17/20/living-room-1835923__340.jpg"),
-                                      fit: BoxFit.cover
-                                    )
-                                  ),
-                                ),
-                              ),
-                              Padding(
-                                padding: const EdgeInsets.all(8.0),
-                                child: Container(
-                                  height: 58,
-                                  width: 58,
-                                  decoration: BoxDecoration(
-                                      color: Colors.white.withOpacity(0.3),
-                                      borderRadius: BorderRadius.circular(8)
-                                  ),
-                                  padding: EdgeInsets.all(5),
-                                  child: Container(
+                                children: [
+                                  Container(
+                                    height: 58,
+                                    width: 58,
                                     decoration: BoxDecoration(
-                                        borderRadius: BorderRadius.circular(8),
-                                        image: DecorationImage(
-                                            image: NetworkImage("https://cdn.pixabay.com/photo/2017/01/12/17/30/warm-and-cozy-1975215__340.jpg"),
-                                            fit: BoxFit.cover
-                                        )
+                                        color: Colors.white.withOpacity(0.3), borderRadius: BorderRadius.circular(8)),
+                                    padding: EdgeInsets.all(5),
+                                    child: Container(
+                                      decoration: BoxDecoration(
+                                          borderRadius: BorderRadius.circular(8),
+                                          image: DecorationImage(
+                                              image: NetworkImage(
+                                                  "https://cdn.pixabay.com/photo/2016/11/18/17/20/living-room-1835923__340.jpg"),
+                                              fit: BoxFit.cover)),
                                     ),
                                   ),
-                                ),
-                              ),
-                              Container(
-                                height: 58,
-                                width: 58,
-                                decoration: BoxDecoration(
-                                    color: Colors.white.withOpacity(0.3),
-                                    borderRadius: BorderRadius.circular(8)
-                                ),
-                                padding: EdgeInsets.all(5),
-                                child: Container(
-                                  decoration: BoxDecoration(
-                                      borderRadius: BorderRadius.circular(8),
-                                      image: DecorationImage(
-                                          image: NetworkImage("https://cdn.pixabay.com/photo/2015/10/20/18/57/furniture-998265__340.jpg"),
-                                          fit: BoxFit.cover
-                                      )
+                                  Padding(
+                                    padding: const EdgeInsets.all(8.0),
+                                    child: Container(
+                                      height: 58,
+                                      width: 58,
+                                      decoration: BoxDecoration(
+                                          color: Colors.white.withOpacity(0.3), borderRadius: BorderRadius.circular(8)),
+                                      padding: EdgeInsets.all(5),
+                                      child: Container(
+                                        decoration: BoxDecoration(
+                                            borderRadius: BorderRadius.circular(8),
+                                            image: DecorationImage(
+                                                image: NetworkImage(
+                                                    "https://cdn.pixabay.com/photo/2017/01/12/17/30/warm-and-cozy-1975215__340.jpg"),
+                                                fit: BoxFit.cover)),
+                                      ),
+                                    ),
                                   ),
-                                ),
-                              ),
-                            ],
-                          ))
+                                  Container(
+                                    height: 58,
+                                    width: 58,
+                                    decoration: BoxDecoration(
+                                        color: Colors.white.withOpacity(0.3), borderRadius: BorderRadius.circular(8)),
+                                    padding: EdgeInsets.all(5),
+                                    child: Container(
+                                      decoration: BoxDecoration(
+                                          borderRadius: BorderRadius.circular(8),
+                                          image: DecorationImage(
+                                              image: NetworkImage(
+                                                  "https://cdn.pixabay.com/photo/2015/10/20/18/57/furniture-998265__340.jpg"),
+                                              fit: BoxFit.cover)),
+                                    ),
+                                  ),
+                                ],
+                              ))
                         ],
                       ),
                     ),
                   ),
+                ),
+                Text(
+                  "Description",
+                  style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
                 )
               ],
             ),
