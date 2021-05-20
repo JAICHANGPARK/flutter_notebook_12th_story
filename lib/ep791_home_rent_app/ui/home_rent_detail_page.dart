@@ -129,6 +129,13 @@ class _HomeRentDetailPageState extends State<HomeRentDetailPage> {
                                   color: Colors.white.withOpacity(0.3),
                                   borderRadius: BorderRadius.circular(8)
                                 ),
+                                child: Container(
+                                  decoration: BoxDecoration(
+                                    image: DecorationImage(
+                                      image: NetworkImage("")
+                                    )
+                                  ),
+                                ),
                               ),
                               Padding(
                                 padding: const EdgeInsets.all(8.0),
