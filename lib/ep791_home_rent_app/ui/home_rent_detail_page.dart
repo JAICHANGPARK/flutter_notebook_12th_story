@@ -178,9 +178,12 @@ class _HomeRentDetailPageState extends State<HomeRentDetailPage> {
                     ),
                   ),
                 ),
-                Text(
-                  "Description",
-                  style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 16),
+                  child: Text(
+                    "Description",
+                    style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                  ),
                 )
               ],
             ),
