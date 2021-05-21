@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class TravelStartPage extends StatefulWidget {
@@ -30,7 +31,21 @@ class _TravelStartPageState extends State<TravelStartPage> {
               left: 24,
               top: 48,
             ),
-            Positioned(child: Container(), left: 0, right: 0, bottom: 0,)
+            Positioned(
+              child: Container(
+                height: 240,
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.only(
+                    topRight: Radius.circular(24)
+                  )
+                ),
+                child: Column(),
+              ),
+              left: 0,
+              right: 0,
+              bottom: 0,
+            )
           ],
         ),
       ),
