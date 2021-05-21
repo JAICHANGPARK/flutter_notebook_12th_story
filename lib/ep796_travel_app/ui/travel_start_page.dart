@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:kenburns/kenburns.dart';
 
 class TravelStartPage extends StatefulWidget {
   const TravelStartPage({Key? key}) : super(key: key);
@@ -15,6 +16,8 @@ class _TravelStartPageState extends State<TravelStartPage> {
       body: SafeArea(
         child: Stack(
           children: [
+            Positioned(child: KenBurns(child: Image.network("https://cdn.pixabay.com/photo/2014/08/12/00/01/santorini-416135_960_720.jpg",
+            ),), left: 0, right: 0,top: 0, bottom: 0,),
             Positioned(
                 child: Container(
               decoration: BoxDecoration(
