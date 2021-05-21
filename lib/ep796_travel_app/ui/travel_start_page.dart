@@ -71,11 +71,14 @@ class _TravelStartPageState extends State<TravelStartPage> {
                             height: 42,
                             width: 160,
                             decoration: BoxDecoration(color: Colors.blue, borderRadius: BorderRadius.circular(24)),
-                            padding: EdgeInsets.symmetric(horizontal: 9),
+                            padding: EdgeInsets.symmetric(horizontal: 16),
                             child: Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
-                                Text("Start"),
+                                Text(
+                                  "Start",
+                                  style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold, color: Colors.white),
+                                ),
                                 Icon(
                                   Icons.arrow_forward,
                                   color: Colors.white,
