@@ -16,16 +16,19 @@ class _TravelStartPageState extends State<TravelStartPage> {
       body: SafeArea(
         child: Stack(
           children: [
-            Positioned(child: KenBurns(child: Image.network("https://cdn.pixabay.com/photo/2014/08/12/00/01/santorini-416135_960_720.jpg",
+            Positioned(child: KenBurns(
+              maxScale: 1.5,
+
+              child: Image.network("https://cdn.pixabay.com/photo/2014/08/12/00/01/santorini-416135_960_720.jpg",
             ),), left: 0, right: 0,top: 0, bottom: 0,),
-            Positioned(
-                child: Container(
-              decoration: BoxDecoration(
-                  image: DecorationImage(
-                      image:
-                          NetworkImage("https://cdn.pixabay.com/photo/2014/08/12/00/01/santorini-416135_960_720.jpg"),
-                      fit: BoxFit.cover)),
-            )),
+            // Positioned(
+            //     child: Container(
+            //   decoration: BoxDecoration(
+            //       image: DecorationImage(
+            //           image:
+            //               NetworkImage("https://cdn.pixabay.com/photo/2014/08/12/00/01/santorini-416135_960_720.jpg"),
+            //           fit: BoxFit.cover)),
+            // )),
             Positioned(
               child: Text(
                 "T R A V E L",
