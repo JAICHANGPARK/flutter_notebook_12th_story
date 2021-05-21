@@ -36,7 +36,7 @@ class _TravelStartPageState extends State<TravelStartPage> {
                 height: 200,
                 decoration:
                     BoxDecoration(color: Colors.white, borderRadius: BorderRadius.only(topRight: Radius.circular(24))),
-                padding: EdgeInsets.only(left: 24, right: 24, bottom: 16, top: 24),
+                padding: EdgeInsets.only(left: 24, right: 64, bottom: 16, top: 24),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -44,8 +44,12 @@ class _TravelStartPageState extends State<TravelStartPage> {
                       "Make some memories",
                       style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
                     ),
+                    SizedBox(height: 8,),
                     Text(
                       "🦜 Relax and make the booking process as easy aspossible!",
+                      style: TextStyle(
+                        fontSize: 16,
+                      ),
                     ),
                   ],
                 ),
