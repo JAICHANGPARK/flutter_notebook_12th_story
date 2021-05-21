@@ -179,6 +179,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "4.0.1"
+  kenburns:
+    dependency: "direct main"
+    description:
+      name: kenburns
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "1.0.5"
   line_icons:
     dependency: "direct main"
     description:
