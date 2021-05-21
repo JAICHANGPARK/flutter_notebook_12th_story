@@ -40,7 +40,14 @@ class _TravelStartPageState extends State<TravelStartPage> {
                     topRight: Radius.circular(24)
                   )
                 ),
-                child: Column(),
+                child: Column(
+                  children: [Text(
+                    "Make some memories",
+                  ),
+                  
+
+                  ],
+                ),
               ),
               left: 0,
               right: 0,
