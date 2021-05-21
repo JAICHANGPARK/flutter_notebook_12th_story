@@ -1,4 +1,4 @@
 import 'package:flutter/material.dart';
-import 'ep791_home_rent_app/home_rent_app.dart';
+import 'ep796_travel_app/travel_app.dart';
 
-void main() => runApp(HomeRentApp());
+void main() => runApp(TravelApp());
