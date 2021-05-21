@@ -58,11 +58,16 @@ class _TravelStartPageState extends State<TravelStartPage> {
                     Row(
                       children: [
                         Spacer(),
-                        Container(
-                          height: 42,
-                          width: 160,
-                          decoration: BoxDecoration(
-                            color: Colors.blue,
+                        PhysicalModel(
+                          color: Colors.white,
+                          elevation: 4,
+                          shadowColor:Colors.blue[200]! ,
+                          child: Container(
+                            height: 42,
+                            width: 160,
+                            decoration: BoxDecoration(
+                              color: Colors.blue,
+                            ),
                           ),
                         )
                       ],
