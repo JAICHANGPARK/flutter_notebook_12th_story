@@ -71,8 +71,9 @@ class _TravelStartPageState extends State<TravelStartPage> {
                             height: 42,
                             width: 160,
                             decoration: BoxDecoration(color: Colors.blue, borderRadius: BorderRadius.circular(24)),
-                            
+                            padding: EdgeInsets.symmetric(horizontal: 9),
                             child: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
                                 Text("Start"),
                                 Icon(
