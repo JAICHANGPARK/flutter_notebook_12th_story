@@ -14,7 +14,7 @@ class _TravelStartPageState extends State<TravelStartPage> {
     return Scaffold(
       body: Stack(
         children: [
-          
+
         ],
       ),
     );
