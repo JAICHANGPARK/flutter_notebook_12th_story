@@ -30,7 +30,7 @@ dependencies:
   bezier_chart: ^1.0.17+1
 
   smooth_page_indicator: any
-  percent_indicator:  ^3.0.1
+  percent_indicator: ^3.0.1
   xlive_switch: ^1.0.5
 
   chart_sparkline: any
