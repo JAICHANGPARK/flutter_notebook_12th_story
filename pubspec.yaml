@@ -36,6 +36,7 @@ dependencies:
   chart_sparkline: any
   bubble_tab_indicator: any
 
+  kenburns: ^1.0.5
 #  Any have awesome tootle switch?
 
 dev_dependencies:
