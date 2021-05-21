@@ -2,7 +2,6 @@ import 'dart:math';
 
 import 'package:badges/badges.dart';
 import 'package:bubble_tab_indicator/bubble_tab_indicator.dart';
-import 'package:chart_sparkline/flutter_sparkline.dart';
 import 'package:flutter/material.dart';
 
 class CryptocurrencyWalletNewsPage extends StatefulWidget {
