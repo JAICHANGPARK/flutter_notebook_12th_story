@@ -34,18 +34,14 @@ class _TravelStartPageState extends State<TravelStartPage> {
             Positioned(
               child: Container(
                 height: 240,
-                decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.only(
-                    topRight: Radius.circular(24)
-                  )
-                ),
+                decoration:
+                    BoxDecoration(color: Colors.white, borderRadius: BorderRadius.only(topRight: Radius.circular(24))),
                 child: Column(
-                  children: [Text(
-                    "Make some memories",
-                  ),
-                  
-
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      "Make some memories",
+                    ),
                   ],
                 ),
               ),
