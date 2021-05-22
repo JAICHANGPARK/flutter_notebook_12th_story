@@ -68,28 +68,33 @@ class _TravelStartPageState extends State<TravelStartPage> {
                     Row(
                       children: [
                         Spacer(),
-                        PhysicalModel(
-                          color: Colors.white,
-                          elevation: 4,
-                          shadowColor: Colors.blue[400]!,
-                          borderRadius: BorderRadius.circular(24),
-                          child: Container(
-                            height: 42,
-                            width: 160,
-                            decoration: BoxDecoration(color: Colors.blue, borderRadius: BorderRadius.circular(24)),
-                            padding: EdgeInsets.symmetric(horizontal: 16),
-                            child: Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                Text(
-                                  "Start",
-                                  style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold, color: Colors.white),
-                                ),
-                                Icon(
-                                  Icons.arrow_forward,
-                                  color: Colors.white,
-                                )
-                              ],
+                        GestureDetector(
+                          onTap: (){
+                            
+                          },
+                          child: PhysicalModel(
+                            color: Colors.white,
+                            elevation: 4,
+                            shadowColor: Colors.blue[400]!,
+                            borderRadius: BorderRadius.circular(24),
+                            child: Container(
+                              height: 42,
+                              width: 160,
+                              decoration: BoxDecoration(color: Colors.blue, borderRadius: BorderRadius.circular(24)),
+                              padding: EdgeInsets.symmetric(horizontal: 16),
+                              child: Row(
+                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                children: [
+                                  Text(
+                                    "Start",
+                                    style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold, color: Colors.white),
+                                  ),
+                                  Icon(
+                                    Icons.arrow_forward,
+                                    color: Colors.white,
+                                  )
+                                ],
+                              ),
                             ),
                           ),
                         ),
