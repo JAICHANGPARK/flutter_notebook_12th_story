@@ -54,9 +54,9 @@ class _TravelHomePageState extends State<TravelHomePage> {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Icon(Icons.search, size: 32,),
+                    Icon(Icons.shopping_bag_outlined, size: 32,),
                     SizedBox(height: 8,),
-                    Text("Discover")
+                    Text("Bookings")
                   ],),
               ),
               GestureDetector(
@@ -69,9 +69,11 @@ class _TravelHomePageState extends State<TravelHomePage> {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Icon(Icons.search, size: 32,),
+                    CircleAvatar(
+                      radius: 12,
+                    ),
                     SizedBox(height: 8,),
-                    Text("Discover")
+                    Text("Profile")
                   ],),
               )
             ],
