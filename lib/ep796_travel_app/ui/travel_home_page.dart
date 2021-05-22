@@ -10,6 +10,7 @@ class TravelHomePage extends StatefulWidget {
 }
 
 class _TravelHomePageState extends State<TravelHomePage> {
+  num _tabIndex = 0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -28,14 +29,21 @@ class _TravelHomePageState extends State<TravelHomePage> {
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              Column(
-                crossAxisAlignment: CrossAxisAlignment.center,
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                Icon(Icons.search, size: 32,),
-                SizedBox(height: 8,),
-                Text("Discover")
-              ],)
+              GestureDetector(
+                onTap: (){
+                  setState(() {
+                    _tabIndex = 0;
+                  });
+                },
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                  Icon(Icons.search, size: 32,),
+                  SizedBox(height: 8,),
+                  Text("Discover")
+                ],),
+              )
             ],
           ),
         ),
