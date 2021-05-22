@@ -43,6 +43,36 @@ class _TravelHomePageState extends State<TravelHomePage> {
                   SizedBox(height: 8,),
                   Text("Discover")
                 ],),
+              ),
+              GestureDetector(
+                onTap: (){
+                  setState(() {
+                    _tabIndex = 0;
+                  });
+                },
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Icon(Icons.search, size: 32,),
+                    SizedBox(height: 8,),
+                    Text("Discover")
+                  ],),
+              ),
+              GestureDetector(
+                onTap: (){
+                  setState(() {
+                    _tabIndex = 0;
+                  });
+                },
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Icon(Icons.search, size: 32,),
+                    SizedBox(height: 8,),
+                    Text("Discover")
+                  ],),
               )
             ],
           ),
