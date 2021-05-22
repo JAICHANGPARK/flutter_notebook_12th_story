@@ -34,7 +34,23 @@ class _TravelHomePageState extends State<TravelHomePage> {
                     )
                   ],
                 ),
-              )
+              ),
+              SizedBox(
+                height: 100,
+                child: Placeholder(),
+              ),
+              SizedBox(
+                height: 42,
+                child: Placeholder(),
+              ),
+              SizedBox(
+                height: 320,
+                child: Placeholder(),
+              ),
+              SizedBox(
+                height: 200,
+                child: Placeholder(),
+              ),
             ],
           ),
         ),
