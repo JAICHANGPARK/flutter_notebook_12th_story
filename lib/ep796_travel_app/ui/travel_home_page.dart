@@ -39,9 +39,11 @@ class _TravelHomePageState extends State<TravelHomePage> {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                  Icon(Icons.search, size: 32,),
+                  Icon(Icons.search, size: 32, color: _tabIndex == 0 ? Colors.blue : Colors.black,),
                   SizedBox(height: 8,),
-                  Text("Discover")
+                  Text("Discover",style: TextStyle(
+                    color: _tabIndex == 0 ? Colors.blue : Colors.black,
+                  ),)
                 ],),
               ),
               GestureDetector(
