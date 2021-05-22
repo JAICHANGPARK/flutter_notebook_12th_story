@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_12th_story/ep796_travel_app/ui/travel_home_page.dart';
 import 'package:kenburns/kenburns.dart';
 
 class TravelStartPage extends StatefulWidget {
@@ -70,7 +71,7 @@ class _TravelStartPageState extends State<TravelStartPage> {
                         Spacer(),
                         GestureDetector(
                           onTap: (){
-                            
+                            Navigator.of(context).push(MaterialPageRoute(builder: (context)=> TravelHomePage()));
                           },
                           child: PhysicalModel(
                             color: Colors.white,
