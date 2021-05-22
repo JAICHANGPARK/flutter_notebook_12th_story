@@ -14,7 +14,13 @@ class _TravelHomePageState extends State<TravelHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-
+    body: SafeArea(
+      child: Column(
+        children: [
+          
+        ],
+      ),
+    ),
     bottomNavigationBar: ClipRRect(
       borderRadius: BorderRadius.only(
         topRight: Radius.circular(24),
