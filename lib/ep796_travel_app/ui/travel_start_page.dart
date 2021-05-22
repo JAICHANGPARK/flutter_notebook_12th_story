@@ -71,7 +71,7 @@ class _TravelStartPageState extends State<TravelStartPage> {
                         Spacer(),
                         GestureDetector(
                           onTap: (){
-                            Navigator.of(context).push(MaterialPageRoute(builder: (context)=> TravelHomePage()));
+                            Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context)=> TravelHomePage()));
                           },
                           child: PhysicalModel(
                             color: Colors.white,
