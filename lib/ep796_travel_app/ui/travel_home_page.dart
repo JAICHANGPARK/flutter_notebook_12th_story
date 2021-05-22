@@ -23,7 +23,7 @@ class _TravelHomePageState extends State<TravelHomePage> {
       child: BottomAppBar(
         color: Colors.white,
         child: Container(
-          height: 72,
+          height: 82,
           child: Row(
             children: [
 
