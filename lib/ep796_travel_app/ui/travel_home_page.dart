@@ -47,7 +47,7 @@ class _TravelHomePageState extends State<TravelHomePage> {
               GestureDetector(
                 onTap: (){
                   setState(() {
-                    _tabIndex = 0;
+                    _tabIndex = 1;
                   });
                 },
                 child: Column(
@@ -62,7 +62,7 @@ class _TravelHomePageState extends State<TravelHomePage> {
               GestureDetector(
                 onTap: (){
                   setState(() {
-                    _tabIndex = 0;
+                    _tabIndex = 2;
                   });
                 },
                 child: Column(
