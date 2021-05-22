@@ -17,19 +17,22 @@ class _TravelHomePageState extends State<TravelHomePage> {
         child: SingleChildScrollView(
           child: Column(
             children: [
-              Row(
-                children: [
-                  Column(
-                    children: [Text("Hi Dreamwalker!"), Text("Let's plan a journey!")],
-                  ),
-                  Spacer(),
-                  FloatingActionButton(
-                    heroTag: "top_fab",
-                    onPressed: () {},
-                    mini: true,
-                    backgroundColor: Colors.white,
-                  )
-                ],
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Row(
+                  children: [
+                    Column(
+                      children: [Text("Hi Dreamwalker!"), Text("Let's plan a journey!")],
+                    ),
+                    Spacer(),
+                    FloatingActionButton(
+                      heroTag: "top_fab",
+                      onPressed: () {},
+                      mini: true,
+                      backgroundColor: Colors.white,
+                    )
+                  ],
+                ),
               )
             ],
           ),
