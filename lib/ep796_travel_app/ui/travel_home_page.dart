@@ -13,12 +13,21 @@ class _TravelHomePageState extends State<TravelHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-    bottomNavigationBar: BottomAppBar(
-      child: Container(
-        child: Row(
-          children: [
+    bottomNavigationBar: ClipRRect(
+      borderRadius: BorderRadius.only(
+        topRight: Radius.circular(24),
+        topLeft: Radius.circular(24),
+      ),
 
-          ],
+      child: BottomAppBar(
+        color: Colors.white,
+        child: Container(
+          height: 72,
+          child: Row(
+            children: [
+
+            ],
+          ),
         ),
       ),
     ),
