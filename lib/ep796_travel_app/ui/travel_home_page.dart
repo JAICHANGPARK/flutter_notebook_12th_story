@@ -22,6 +22,7 @@ class _TravelHomePageState extends State<TravelHomePage> {
                 child: Row(
                   children: [
                     Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [Text("Hi Dreamwalker!"), Text("Let's plan a journey!")],
                     ),
                     Spacer(),
