@@ -70,7 +70,7 @@ class _TravelHomePageState extends State<TravelHomePage> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     CircleAvatar(
-                      radius: 12,
+                      radius: 16,
                     ),
                     SizedBox(height: 8,),
                     Text("Profile")
