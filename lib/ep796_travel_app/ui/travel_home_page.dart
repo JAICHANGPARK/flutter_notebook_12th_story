@@ -58,7 +58,9 @@ class _TravelHomePageState extends State<TravelHomePage> {
                   children: [
                     Icon(Icons.shopping_bag_outlined, size: 32,),
                     SizedBox(height: 8,),
-                    Text("Bookings")
+                    Text("Bookings",style: TextStyle(
+                      color: _tabIndex == 1 ? Colors.blue : Colors.black,
+                    ),)
                   ],),
               ),
               GestureDetector(
@@ -75,7 +77,9 @@ class _TravelHomePageState extends State<TravelHomePage> {
                       radius: 16,
                     ),
                     SizedBox(height: 8,),
-                    Text("Profile")
+                    Text("Profile",style: TextStyle(
+                      color: _tabIndex == 2 ? Colors.blue : Colors.black,
+                    ),)
                   ],),
               )
             ],
