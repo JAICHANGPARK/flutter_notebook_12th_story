@@ -28,7 +28,10 @@ class _TravelHomePageState extends State<TravelHomePage> {
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              Column(children: [
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
                 Icon(Icons.search, size: 32,),
                 SizedBox(height: 8,),
                 Text("Discover")
