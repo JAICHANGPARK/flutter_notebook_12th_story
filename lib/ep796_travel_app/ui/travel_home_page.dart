@@ -56,7 +56,7 @@ class _TravelHomePageState extends State<TravelHomePage> {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Icon(Icons.shopping_bag_outlined, size: 32,),
+                    Icon(Icons.shopping_bag_outlined, size: 32,color: _tabIndex == 1 ? Colors.blue : Colors.black,),
                     SizedBox(height: 8,),
                     Text("Bookings",style: TextStyle(
                       color: _tabIndex == 1 ? Colors.blue : Colors.black,
