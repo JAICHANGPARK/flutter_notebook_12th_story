@@ -15,10 +15,12 @@ class _TravelHomePageState extends State<TravelHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
     body: SafeArea(
-      child: Column(
-        children: [
-          
-        ],
+      child: SingleChildScrollView(
+        child: Column(
+          children: [
+            
+          ],
+        ),
       ),
     ),
     bottomNavigationBar: ClipRRect(
