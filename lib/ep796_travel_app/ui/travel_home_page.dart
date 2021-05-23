@@ -184,9 +184,12 @@ class _TravelHomePageState extends State<TravelHomePage> {
                     padding: EdgeInsets.symmetric(horizontal: 16, vertical: 7),
                     child: TextField(
                       decoration: InputDecoration(
-                        icon: Icon(Icons.search),
-                        border: InputBorder.none,
-                      ),
+                          icon: Icon(
+                            Icons.search,
+                            color: Colors.blue,
+                          ),
+                          border: InputBorder.none,
+                          hintText: "Where do you want to go?"),
                     ),
                   ),
                 ),
