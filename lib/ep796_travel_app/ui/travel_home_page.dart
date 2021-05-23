@@ -242,14 +242,25 @@ class _TravelHomePageState extends State<TravelHomePage> {
                   ],
                 ),
               ),
-              SizedBox(height: 8,),
+              SizedBox(
+                height: 8,
+              ),
               SizedBox(
                 height: 200,
-                child: Column(
-                  children: [
-                    Text("Popular holidays"),
-
-                  ],
+                child: Padding(
+                  padding: const EdgeInsets.all(16.0),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        "Popular holidays",
+                        style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                      ),
+                      Container(
+                        height: 120,
+                      )
+                    ],
+                  ),
                 ),
               ),
             ],
