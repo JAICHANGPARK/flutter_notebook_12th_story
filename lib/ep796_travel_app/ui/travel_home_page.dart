@@ -167,13 +167,26 @@ class _TravelHomePageState extends State<TravelHomePage> {
                 ),
               ),
               SizedBox(
+                height: 16,
+              ),
+              SizedBox(
                 height: 68,
                 child: Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 16),
+                  padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                   child: Container(
                     decoration: BoxDecoration(
                       color: Colors.white,
-                      borderRadius: BorderRadius.circular(16)
+                      borderRadius: BorderRadius.circular(24),
+                      boxShadow: [
+                        BoxShadow(color: Colors.black.withOpacity(0.05), blurRadius: 8, spreadRadius: 16),
+                      ],
+                    ),
+                    padding: EdgeInsets.symmetric(horizontal: 16, vertical: 7),
+                    child: TextField(
+                      decoration: InputDecoration(
+                        icon: Icon(Icons.search),
+                        border: InputBorder.none,
+                      ),
                     ),
                   ),
                 ),
