@@ -18,7 +18,7 @@ class _TravelHomePageState extends State<TravelHomePage> {
           child: Column(
             children: [
               Padding(
-                padding: const EdgeInsets.all(8.0),
+                padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                 child: Row(
                   children: [
                     Column(
@@ -47,16 +47,20 @@ class _TravelHomePageState extends State<TravelHomePage> {
                 height: 100,
                 child: Row(
                   children: [
-                    Expanded(child: Container(
-                      decoration: BoxDecoration(
-                        color: Colors.white,
-                        boxShadow: [
-                          BoxShadow(
-                            color: Colors.black.withOpacity(0.3),
-                            blurRadius: 4,
-                            spreadRadius: 3
-                          )
-                        ]
+                    Expanded(child: Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                      child: Container(
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                          boxShadow: [
+                            BoxShadow(
+                              color: Colors.black.withOpacity(0.2),
+                              blurRadius: 4,
+                              spreadRadius: 3
+                            ),
+                          ],
+                          borderRadius: BorderRadius.circular(8)
+                        ),
                       ),
                     )),
                     Expanded(child: Placeholder()),
