@@ -37,6 +37,7 @@ class _TravelHomePageState extends State<TravelHomePage> {
                       onPressed: () {},
                       mini: true,
                       backgroundColor: Colors.white,
+                      foregroundColor: Colors.black,
                       child: Icon(Icons.notifications_none_outlined),
                     )
                   ],
