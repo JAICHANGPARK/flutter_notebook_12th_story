@@ -222,16 +222,21 @@ class _TravelHomePageState extends State<TravelHomePage> {
                       flex: 2,
                     ),
                     Expanded(
-                      child: ListView.builder(
-                          scrollDirection: Axis.horizontal,
-                          itemBuilder: (context, index) {
-                            return Container(
-                              width: 240,
-                              decoration: BoxDecoration(
-                                color: Colors.blue
-                              ),
-                            );
-                          }),
+                      child: Padding(
+                        padding: const EdgeInsets.only(left: 16),
+                        child: ListView.builder(
+                            scrollDirection: Axis.horizontal,
+                            itemBuilder: (context, index) {
+                              return Container(
+                                margin: EdgeInsets.only(right: 16),
+                                width: 200,
+                                decoration: BoxDecoration(
+                                  color: Colors.blue,
+                                  borderRadius: BorderRadius.circular(16),
+                                ),
+                              );
+                            }),
+                      ),
                       flex: 10,
                     ),
                   ],
