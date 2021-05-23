@@ -49,120 +49,120 @@ class _TravelHomePageState extends State<TravelHomePage> {
                   children: [
                     Expanded(
                         child: Padding(
-                          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-                          child: Container(
-                            decoration: BoxDecoration(
-                                color: Colors.white,
-                                boxShadow: [
-                                  BoxShadow(color: Colors.black.withOpacity(0.02), blurRadius: 8, spreadRadius: 16),
-                                ],
-                                borderRadius: BorderRadius.circular(8)),
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.center,
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: [
-                                Text(
-                                  "🌴",
-                                  style: TextStyle(fontSize: 16),
-                                ),
-                                SizedBox(
-                                  height: 8,
-                                ),
-                                Text(
-                                  "Holidays",
-                                  style: TextStyle(fontSize: 14),
-                                )
-                              ],
+                      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                      child: Container(
+                        decoration: BoxDecoration(
+                            color: Colors.white,
+                            boxShadow: [
+                              BoxShadow(color: Colors.black.withOpacity(0.02), blurRadius: 8, spreadRadius: 16),
+                            ],
+                            borderRadius: BorderRadius.circular(8)),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Text(
+                              "🌴",
+                              style: TextStyle(fontSize: 16),
                             ),
-                          ),
-                        )),
+                            SizedBox(
+                              height: 8,
+                            ),
+                            Text(
+                              "Holidays",
+                              style: TextStyle(fontSize: 14),
+                            )
+                          ],
+                        ),
+                      ),
+                    )),
                     Expanded(
                         child: Padding(
-                          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-                          child: Container(
-                            decoration: BoxDecoration(
-                                color: Colors.white,
-                                boxShadow: [
-                                  BoxShadow(color: Colors.black.withOpacity(0.02), blurRadius: 8, spreadRadius: 16),
-                                ],
-                                borderRadius: BorderRadius.circular(8)),
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.center,
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: [
-                                Text(
-                                  "🏟",
-                                  style: TextStyle(fontSize: 16),
-                                ),
-                                SizedBox(
-                                  height: 8,
-                                ),
-                                Text(
-                                  "Hotels",
-                                  style: TextStyle(fontSize: 14),
-                                )
-                              ],
+                      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                      child: Container(
+                        decoration: BoxDecoration(
+                            color: Colors.white,
+                            boxShadow: [
+                              BoxShadow(color: Colors.black.withOpacity(0.02), blurRadius: 8, spreadRadius: 16),
+                            ],
+                            borderRadius: BorderRadius.circular(8)),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Text(
+                              "🏟",
+                              style: TextStyle(fontSize: 16),
                             ),
-                          ),
-                        )),
+                            SizedBox(
+                              height: 8,
+                            ),
+                            Text(
+                              "Hotels",
+                              style: TextStyle(fontSize: 14),
+                            )
+                          ],
+                        ),
+                      ),
+                    )),
                     Expanded(
                         child: Padding(
-                          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-                          child: Container(
-                            decoration: BoxDecoration(
-                                color: Colors.white,
-                                boxShadow: [
-                                  BoxShadow(color: Colors.black.withOpacity(0.02), blurRadius: 8, spreadRadius: 16),
-                                ],
-                                borderRadius: BorderRadius.circular(8)),
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.center,
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: [
-                                Text(
-                                  "✈",
-                                  style: TextStyle(fontSize: 16),
-                                ),
-                                SizedBox(
-                                  height: 8,
-                                ),
-                                Text(
-                                  "Flights",
-                                  style: TextStyle(fontSize: 14),
-                                )
-                              ],
+                      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                      child: Container(
+                        decoration: BoxDecoration(
+                            color: Colors.white,
+                            boxShadow: [
+                              BoxShadow(color: Colors.black.withOpacity(0.02), blurRadius: 8, spreadRadius: 16),
+                            ],
+                            borderRadius: BorderRadius.circular(8)),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Text(
+                              "✈",
+                              style: TextStyle(fontSize: 16),
                             ),
-                          ),
-                        )),
+                            SizedBox(
+                              height: 8,
+                            ),
+                            Text(
+                              "Flights",
+                              style: TextStyle(fontSize: 14),
+                            )
+                          ],
+                        ),
+                      ),
+                    )),
                     Expanded(
                         child: Padding(
-                          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-                          child: Container(
-                            decoration: BoxDecoration(
-                                color: Colors.white,
-                                boxShadow: [
-                                  BoxShadow(color: Colors.black.withOpacity(0.02), blurRadius: 8, spreadRadius: 16),
-                                ],
-                                borderRadius: BorderRadius.circular(8)),
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.center,
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: [
-                                Text(
-                                  "🚗",
-                                  style: TextStyle(fontSize: 16),
-                                ),
-                                SizedBox(
-                                  height: 8,
-                                ),
-                                Text(
-                                  "Car rent",
-                                  style: TextStyle(fontSize: 14),
-                                )
-                              ],
+                      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                      child: Container(
+                        decoration: BoxDecoration(
+                            color: Colors.white,
+                            boxShadow: [
+                              BoxShadow(color: Colors.black.withOpacity(0.02), blurRadius: 8, spreadRadius: 16),
+                            ],
+                            borderRadius: BorderRadius.circular(8)),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Text(
+                              "🚗",
+                              style: TextStyle(fontSize: 16),
                             ),
-                          ),
-                        )),
+                            SizedBox(
+                              height: 8,
+                            ),
+                            Text(
+                              "Car rent",
+                              style: TextStyle(fontSize: 14),
+                            )
+                          ],
+                        ),
+                      ),
+                    )),
                   ],
                 ),
               ),
@@ -222,11 +222,16 @@ class _TravelHomePageState extends State<TravelHomePage> {
                       flex: 2,
                     ),
                     Expanded(
-                      child: ListView.builder(itemBuilder: (context, index) {
-                        return Container(
-                        
-                        )
-                      }),
+                      child: ListView.builder(
+                          scrollDirection: Axis.horizontal,
+                          itemBuilder: (context, index) {
+                            return Container(
+                              width: 240,
+                              decoration: BoxDecoration(
+                                color: Colors.blue
+                              ),
+                            );
+                          }),
                       flex: 10,
                     ),
                   ],
