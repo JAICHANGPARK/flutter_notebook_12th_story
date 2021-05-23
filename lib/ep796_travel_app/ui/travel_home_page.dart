@@ -68,8 +68,9 @@ class _TravelHomePageState extends State<TravelHomePage> {
                             Text("🌴",style: TextStyle(
                               fontSize: 16
                             ),),
+                            SizedBox(height: 8,),
                             Text("Holidays", style: TextStyle(
-                              fontSize: 16
+                              fontSize: 14
                             ),)
                           ],
                         ),
