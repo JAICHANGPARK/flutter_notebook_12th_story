@@ -44,7 +44,7 @@ class _TravelHomePageState extends State<TravelHomePage> {
                 ),
               ),
               SizedBox(
-                height: 100,
+                height: 92,
                 child: Row(
                   children: [
                     Expanded(child: Padding(
@@ -54,18 +54,63 @@ class _TravelHomePageState extends State<TravelHomePage> {
                           color: Colors.white,
                           boxShadow: [
                             BoxShadow(
-                              color: Colors.black.withOpacity(0.2),
+                              color: Colors.black.withOpacity(0.08),
                               blurRadius: 4,
-                              spreadRadius: 3
+                              spreadRadius: 8
                             ),
                           ],
                           borderRadius: BorderRadius.circular(8)
                         ),
                       ),
                     )),
-                    Expanded(child: Placeholder()),
-                    Expanded(child: Placeholder()),
-                    Expanded(child: Placeholder()),
+                    Expanded(child: Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                      child: Container(
+                        decoration: BoxDecoration(
+                            color: Colors.white,
+                            boxShadow: [
+                              BoxShadow(
+                                  color: Colors.black.withOpacity(0.2),
+                                  blurRadius: 4,
+                                  spreadRadius: 3
+                              ),
+                            ],
+                            borderRadius: BorderRadius.circular(8)
+                        ),
+                      ),
+                    )),
+                    Expanded(child: Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                      child: Container(
+                        decoration: BoxDecoration(
+                            color: Colors.white,
+                            boxShadow: [
+                              BoxShadow(
+                                  color: Colors.black.withOpacity(0.2),
+                                  blurRadius: 4,
+                                  spreadRadius: 3
+                              ),
+                            ],
+                            borderRadius: BorderRadius.circular(8)
+                        ),
+                      ),
+                    )),
+                    Expanded(child: Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                      child: Container(
+                        decoration: BoxDecoration(
+                            color: Colors.white,
+                            boxShadow: [
+                              BoxShadow(
+                                  color: Colors.black.withOpacity(0.2),
+                                  blurRadius: 4,
+                                  spreadRadius: 3
+                              ),
+                            ],
+                            borderRadius: BorderRadius.circular(8)
+                        ),
+                      ),
+                    )),
                   ],
                 ),
               ),
