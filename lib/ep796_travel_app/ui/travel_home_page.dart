@@ -202,18 +202,29 @@ class _TravelHomePageState extends State<TravelHomePage> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Expanded(child: Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 16),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          Text("Popular hotel"),
-                          TextButton(onPressed: () {  },
-                          child: Text("View all"), ),
-                        ],
+                    Expanded(
+                      child: Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 16),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Text(
+                              "Popular hotel",
+                              style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                            ),
+                            TextButton(
+                              onPressed: () {},
+                              child: Text("View all"),
+                            ),
+                          ],
+                        ),
                       ),
-                    ), flex: 2,),
-                    Expanded(child: Placeholder(), flex: 10,),
+                      flex: 2,
+                    ),
+                    Expanded(
+                      child: Placeholder(),
+                      flex: 10,
+                    ),
                   ],
                 ),
               ),
