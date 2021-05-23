@@ -202,8 +202,8 @@ class _TravelHomePageState extends State<TravelHomePage> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Expanded(child: Placeholder()),
-                    Expanded(child: Placeholder()),
+                    Expanded(child: Placeholder(), flex: 2,),
+                    Expanded(child: Placeholder(), flex: 10,),
                   ],
                 ),
               ),
