@@ -61,6 +61,18 @@ class _TravelHomePageState extends State<TravelHomePage> {
                           ],
                           borderRadius: BorderRadius.circular(8)
                         ),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Text("🌴",style: TextStyle(
+                              fontSize: 16
+                            ),),
+                            Text("Holidays", style: TextStyle(
+                              fontSize: 16
+                            ),)
+                          ],
+                        ),
                       ),
                     )),
                     Expanded(child: Padding(
