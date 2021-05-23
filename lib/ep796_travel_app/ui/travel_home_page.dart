@@ -47,118 +47,118 @@ class _TravelHomePageState extends State<TravelHomePage> {
                 height: 92,
                 child: Row(
                   children: [
-                    Expanded(child: Padding(
+                    Expanded(
+                        child: Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                       child: Container(
                         decoration: BoxDecoration(
-                          color: Colors.white,
-                          boxShadow: [
-                            BoxShadow(
-                              color: Colors.black.withOpacity(0.08),
-                              blurRadius: 4,
-                              spreadRadius: 8
+                            color: Colors.white,
+                            boxShadow: [
+                              BoxShadow(color: Colors.black.withOpacity(0.08), blurRadius: 4, spreadRadius: 8),
+                            ],
+                            borderRadius: BorderRadius.circular(8)),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Text(
+                              "🌴",
+                              style: TextStyle(fontSize: 16),
                             ),
-                          ],
-                          borderRadius: BorderRadius.circular(8)
-                        ),
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.center,
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Text("🌴",style: TextStyle(
-                              fontSize: 16
-                            ),),
-                            SizedBox(height: 8,),
-                            Text("Holidays", style: TextStyle(
-                              fontSize: 14
-                            ),)
+                            SizedBox(
+                              height: 8,
+                            ),
+                            Text(
+                              "Holidays",
+                              style: TextStyle(fontSize: 14),
+                            )
                           ],
                         ),
                       ),
                     )),
-                    Expanded(child: Padding(
+                    Expanded(
+                        child: Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                       child: Container(
                         decoration: BoxDecoration(
                             color: Colors.white,
                             boxShadow: [
-                              BoxShadow(
-                                  color: Colors.black.withOpacity(0.08),
-                                  blurRadius: 4,
-                                  spreadRadius: 8
-                              ),
+                              BoxShadow(color: Colors.black.withOpacity(0.08), blurRadius: 4, spreadRadius: 8),
                             ],
-                            borderRadius: BorderRadius.circular(8)
-                        ),
+                            borderRadius: BorderRadius.circular(8)),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.center,
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            Text("🌴",style: TextStyle(
-                                fontSize: 16
-                            ),),
-                            SizedBox(height: 8,),
-                            Text("Holidays", style: TextStyle(
-                                fontSize: 14
-                            ),)
+                            Text(
+                              "🏟",
+                              style: TextStyle(fontSize: 16),
+                            ),
+                            SizedBox(
+                              height: 8,
+                            ),
+                            Text(
+                              "Hotels",
+                              style: TextStyle(fontSize: 14),
+                            )
                           ],
                         ),
                       ),
                     )),
-                    Expanded(child: Padding(
+                    Expanded(
+                        child: Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                       child: Container(
                         decoration: BoxDecoration(
                             color: Colors.white,
                             boxShadow: [
-                              BoxShadow(
-                                  color: Colors.black.withOpacity(0.08),
-                                  blurRadius: 4,
-                                  spreadRadius: 8
-                              ),
+                              BoxShadow(color: Colors.black.withOpacity(0.08), blurRadius: 4, spreadRadius: 8),
                             ],
-                            borderRadius: BorderRadius.circular(8)
-                        ),
+                            borderRadius: BorderRadius.circular(8)),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.center,
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            Text("🌴",style: TextStyle(
-                                fontSize: 16
-                            ),),
-                            SizedBox(height: 8,),
-                            Text("Holidays", style: TextStyle(
-                                fontSize: 14
-                            ),)
+                            Text(
+                              "✈",
+                              style: TextStyle(fontSize: 16),
+                            ),
+                            SizedBox(
+                              height: 8,
+                            ),
+                            Text(
+                              "Flights",
+                              style: TextStyle(fontSize: 14),
+                            )
                           ],
                         ),
                       ),
                     )),
-                    Expanded(child: Padding(
+                    Expanded(
+                        child: Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                       child: Container(
                         decoration: BoxDecoration(
                             color: Colors.white,
                             boxShadow: [
-                              BoxShadow(
-                                  color: Colors.black.withOpacity(0.08),
-                                  blurRadius: 4,
-                                  spreadRadius: 8
-                              ),
+                              BoxShadow(color: Colors.black.withOpacity(0.08), blurRadius: 4, spreadRadius: 8),
                             ],
-                            borderRadius: BorderRadius.circular(8)
-                        ),
+                            borderRadius: BorderRadius.circular(8)),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.center,
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            Text("🌴",style: TextStyle(
-                                fontSize: 16
-                            ),),
-                            SizedBox(height: 8,),
-                            Text("Holidays", style: TextStyle(
-                                fontSize: 14
-                            ),)
+                            Text(
+                              "🚗",
+                              style: TextStyle(fontSize: 16),
+                            ),
+                            SizedBox(
+                              height: 8,
+                            ),
+                            Text(
+                              "Car rent",
+                              style: TextStyle(fontSize: 14),
+                            )
                           ],
                         ),
                       ),
@@ -167,8 +167,16 @@ class _TravelHomePageState extends State<TravelHomePage> {
                 ),
               ),
               SizedBox(
-                height: 42,
-                child: Placeholder(),
+                height: 68,
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 16),
+                  child: Container(
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(16)
+                    ),
+                  ),
+                ),
               ),
               SizedBox(
                 height: 320,
