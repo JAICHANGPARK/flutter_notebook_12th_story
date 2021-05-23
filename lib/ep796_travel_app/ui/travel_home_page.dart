@@ -47,7 +47,18 @@ class _TravelHomePageState extends State<TravelHomePage> {
                 height: 100,
                 child: Row(
                   children: [
-                    Expanded(child: Placeholder()),
+                    Expanded(child: Container(
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.black.withOpacity(0.3),
+                            blurRadius: 4,
+                            spreadRadius: 3
+                          )
+                        ]
+                      ),
+                    )),
                     Expanded(child: Placeholder()),
                     Expanded(child: Placeholder()),
                     Expanded(child: Placeholder()),
