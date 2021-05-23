@@ -23,7 +23,13 @@ class _TravelHomePageState extends State<TravelHomePage> {
                   children: [
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [Text("Hi Dreamwalker!"), Text("Let's plan a journey!")],
+                      children: [
+                        Text("Hi Dreamwalker!"),
+                        Text(
+                          "Let's plan a journey!",
+                          style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                        )
+                      ],
                     ),
                     Spacer(),
                     FloatingActionButton(
@@ -31,6 +37,7 @@ class _TravelHomePageState extends State<TravelHomePage> {
                       onPressed: () {},
                       mini: true,
                       backgroundColor: Colors.white,
+                      child: Icon(Icons.notifications_none_outlined),
                     )
                   ],
                 ),
