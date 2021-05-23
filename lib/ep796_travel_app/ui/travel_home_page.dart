@@ -54,7 +54,7 @@ class _TravelHomePageState extends State<TravelHomePage> {
                         decoration: BoxDecoration(
                             color: Colors.white,
                             boxShadow: [
-                              BoxShadow(color: Colors.black.withOpacity(0.08), blurRadius: 4, spreadRadius: 8),
+                              BoxShadow(color: Colors.black.withOpacity(0.02), blurRadius: 8, spreadRadius: 16),
                             ],
                             borderRadius: BorderRadius.circular(8)),
                         child: Column(
@@ -83,7 +83,7 @@ class _TravelHomePageState extends State<TravelHomePage> {
                         decoration: BoxDecoration(
                             color: Colors.white,
                             boxShadow: [
-                              BoxShadow(color: Colors.black.withOpacity(0.08), blurRadius: 4, spreadRadius: 8),
+                              BoxShadow(color: Colors.black.withOpacity(0.02), blurRadius: 8, spreadRadius: 16),
                             ],
                             borderRadius: BorderRadius.circular(8)),
                         child: Column(
@@ -112,7 +112,7 @@ class _TravelHomePageState extends State<TravelHomePage> {
                         decoration: BoxDecoration(
                             color: Colors.white,
                             boxShadow: [
-                              BoxShadow(color: Colors.black.withOpacity(0.08), blurRadius: 4, spreadRadius: 8),
+                              BoxShadow(color: Colors.black.withOpacity(0.02), blurRadius: 8, spreadRadius: 16),
                             ],
                             borderRadius: BorderRadius.circular(8)),
                         child: Column(
@@ -167,7 +167,7 @@ class _TravelHomePageState extends State<TravelHomePage> {
                 ),
               ),
               SizedBox(
-                height: 16,
+                height: 8,
               ),
               SizedBox(
                 height: 68,
@@ -194,10 +194,18 @@ class _TravelHomePageState extends State<TravelHomePage> {
                   ),
                 ),
               ),
-              SizedBox(height: 16,),
+              SizedBox(
+                height: 8,
+              ),
               SizedBox(
                 height: 320,
-                child: Placeholder(),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Expanded(child: Placeholder()),
+                    Expanded(child: Placeholder()),
+                  ],
+                ),
               ),
               SizedBox(
                 height: 200,
