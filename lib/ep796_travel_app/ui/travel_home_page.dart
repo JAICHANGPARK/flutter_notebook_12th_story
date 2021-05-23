@@ -242,9 +242,15 @@ class _TravelHomePageState extends State<TravelHomePage> {
                   ],
                 ),
               ),
+              SizedBox(height: 8,),
               SizedBox(
                 height: 200,
-                child: Placeholder(),
+                child: Column(
+                  children: [
+                    Text("Popular holidays"),
+
+                  ],
+                ),
               ),
             ],
           ),
