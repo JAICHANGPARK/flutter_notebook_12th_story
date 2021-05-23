@@ -83,12 +83,25 @@ class _TravelHomePageState extends State<TravelHomePage> {
                             color: Colors.white,
                             boxShadow: [
                               BoxShadow(
-                                  color: Colors.black.withOpacity(0.2),
+                                  color: Colors.black.withOpacity(0.08),
                                   blurRadius: 4,
-                                  spreadRadius: 3
+                                  spreadRadius: 8
                               ),
                             ],
                             borderRadius: BorderRadius.circular(8)
+                        ),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Text("🌴",style: TextStyle(
+                                fontSize: 16
+                            ),),
+                            SizedBox(height: 8,),
+                            Text("Holidays", style: TextStyle(
+                                fontSize: 14
+                            ),)
+                          ],
                         ),
                       ),
                     )),
@@ -99,12 +112,25 @@ class _TravelHomePageState extends State<TravelHomePage> {
                             color: Colors.white,
                             boxShadow: [
                               BoxShadow(
-                                  color: Colors.black.withOpacity(0.2),
+                                  color: Colors.black.withOpacity(0.08),
                                   blurRadius: 4,
-                                  spreadRadius: 3
+                                  spreadRadius: 8
                               ),
                             ],
                             borderRadius: BorderRadius.circular(8)
+                        ),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Text("🌴",style: TextStyle(
+                                fontSize: 16
+                            ),),
+                            SizedBox(height: 8,),
+                            Text("Holidays", style: TextStyle(
+                                fontSize: 14
+                            ),)
+                          ],
                         ),
                       ),
                     )),
@@ -115,12 +141,25 @@ class _TravelHomePageState extends State<TravelHomePage> {
                             color: Colors.white,
                             boxShadow: [
                               BoxShadow(
-                                  color: Colors.black.withOpacity(0.2),
+                                  color: Colors.black.withOpacity(0.08),
                                   blurRadius: 4,
-                                  spreadRadius: 3
+                                  spreadRadius: 8
                               ),
                             ],
                             borderRadius: BorderRadius.circular(8)
+                        ),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Text("🌴",style: TextStyle(
+                                fontSize: 16
+                            ),),
+                            SizedBox(height: 8,),
+                            Text("Holidays", style: TextStyle(
+                                fontSize: 14
+                            ),)
+                          ],
                         ),
                       ),
                     )),
