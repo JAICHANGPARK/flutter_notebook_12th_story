@@ -250,7 +250,10 @@ class _TravelHomePageState extends State<TravelHomePage> {
                                         ),
                                         child: Column(
                                           children: [
-                                            Text("La PPerla Vilas & La Suits"),
+                                            Text("La Perla Villas & La Suits",style: TextStyle(
+                                              fontSize: 16,
+                                              fontWeight: FontWeight.bold
+                                            ),),
                                             Row(
                                               children: [
                                                 Text("🇬🇷"),
