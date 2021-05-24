@@ -332,7 +332,7 @@ class _TravelHomePageState extends State<TravelHomePage> {
                               flex: 4,
                             ),
                             SizedBox(
-                              width: 8,
+                              width: 16,
                             ),
                             Expanded(
                               child: Column(
