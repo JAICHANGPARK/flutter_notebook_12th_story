@@ -257,7 +257,12 @@ class _TravelHomePageState extends State<TravelHomePage> {
                                               padding: const EdgeInsets.symmetric(vertical: 8),
                                               child: Row(
                                                 children: [
-                                                  Text("🇬🇷",style: TextStyle(fontSize: 12, ),),
+                                                  Text(
+                                                    "🇬🇷",
+                                                    style: TextStyle(
+                                                      fontSize: 12,
+                                                    ),
+                                                  ),
                                                   Text(
                                                     "Oia Caldera, Oia",
                                                     style: TextStyle(fontSize: 12, color: Colors.grey),
@@ -267,7 +272,12 @@ class _TravelHomePageState extends State<TravelHomePage> {
                                             ),
                                             Row(
                                               children: [
-                                                Text("⭐",style: TextStyle(fontSize: 12, ),),
+                                                Text(
+                                                  "⭐",
+                                                  style: TextStyle(
+                                                    fontSize: 12,
+                                                  ),
+                                                ),
                                                 Text(
                                                   "4.8/5 (502)",
                                                   style: TextStyle(fontSize: 12, color: Colors.grey),
@@ -302,8 +312,30 @@ class _TravelHomePageState extends State<TravelHomePage> {
                         "Popular holidays",
                         style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
                       ),
+                      SizedBox(
+                        height: 8,
+                      ),
                       Container(
                         height: 120,
+                        child: Row(
+                          children: [
+                            Expanded(
+                              child: Container(
+                                decoration: BoxDecoration(
+                                    color: Colors.blue,
+                                    image: DecorationImage(
+                                        image: NetworkImage(
+                                            "https://cdn.pixabay.com/photo/2016/08/10/12/44/zakynthos-1583127__340.jpg"),
+                                        fit: BoxFit.cover)),
+                              ),
+                              flex: 4,
+                            ),
+                            Expanded(
+                              child: Placeholder(),
+                              flex: 6,
+                            ),
+                          ],
+                        ),
                       )
                     ],
                   ),
