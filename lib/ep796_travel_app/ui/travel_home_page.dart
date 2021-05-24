@@ -231,25 +231,24 @@ class _TravelHomePageState extends State<TravelHomePage> {
                                 margin: EdgeInsets.only(right: 16),
                                 width: 200,
                                 decoration: BoxDecoration(
-                                  color: Colors.blue,
-                                  borderRadius: BorderRadius.circular(16),
-                                  image: DecorationImage(
-                                    image: NetworkImage(
-                                      "https://cdn.pixabay.com/photo/2016/08/15/08/22/greece-1594689__340.jpg"
-                                    ),
-                                    fit: BoxFit.cover
-                                  )
-                                ),
+                                    color: Colors.blue,
+                                    borderRadius: BorderRadius.circular(16),
+                                    image: DecorationImage(
+                                        image: NetworkImage(
+                                            "https://cdn.pixabay.com/photo/2016/08/15/08/22/greece-1594689__340.jpg"),
+                                        fit: BoxFit.cover)),
                                 child: Column(
                                   children: [
                                     Container(
+                                      decoration: BoxDecoration(
+                                        color: Colors.white,
+                                      ),
                                       child: Column(
                                         children: [
                                           Text("La PPerla Vilas & La Suits"),
                                           Row(
                                             children: [
                                               Text("🇬🇷"),
-
                                             ],
                                           )
                                         ],
@@ -258,7 +257,6 @@ class _TravelHomePageState extends State<TravelHomePage> {
                                   ],
                                 ),
                               );
-
                             }),
                       ),
                       flex: 10,
