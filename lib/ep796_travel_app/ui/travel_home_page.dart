@@ -226,6 +226,7 @@ class _TravelHomePageState extends State<TravelHomePage> {
                         padding: const EdgeInsets.only(left: 16),
                         child: ListView.builder(
                             scrollDirection: Axis.horizontal,
+                            itemCount: 8,
                             itemBuilder: (context, index) {
                               return Container(
                                 margin: EdgeInsets.only(right: 16),
