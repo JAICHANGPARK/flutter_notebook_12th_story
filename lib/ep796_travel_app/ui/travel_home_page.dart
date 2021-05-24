@@ -229,7 +229,7 @@ class _TravelHomePageState extends State<TravelHomePage> {
                             itemBuilder: (context, index) {
                               return Container(
                                 margin: EdgeInsets.only(right: 16),
-                                width: 200,
+                                width: 180,
                                 decoration: BoxDecoration(
                                     color: Colors.blue,
                                     borderRadius: BorderRadius.circular(16),
@@ -256,7 +256,7 @@ class _TravelHomePageState extends State<TravelHomePage> {
                                               padding: const EdgeInsets.symmetric(vertical: 8),
                                               child: Row(
                                                 children: [
-                                                  Text("🇬🇷"),
+                                                  Text("🇬🇷",style: TextStyle(fontSize: 12, ),),
                                                   Text(
                                                     "Oia Caldera, Oia",
                                                     style: TextStyle(fontSize: 12, color: Colors.grey),
