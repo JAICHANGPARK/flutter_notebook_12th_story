@@ -254,11 +254,14 @@ class _TravelHomePageState extends State<TravelHomePage> {
                                               fontSize: 16,
                                               fontWeight: FontWeight.bold
                                             ),),
-                                            Row(
-                                              children: [
-                                                Text("🇬🇷"),
-                                                Text("Oia Caldera, Oia",)
-                                              ],
+                                            Padding(
+                                              padding: const EdgeInsets.symmetric(vertical: 8),
+                                              child: Row(
+                                                children: [
+                                                  Text("🇬🇷"),
+                                                  Text("Oia Caldera, Oia",)
+                                                ],
+                                              ),
                                             ),
                                             Row(
                                               children: [
