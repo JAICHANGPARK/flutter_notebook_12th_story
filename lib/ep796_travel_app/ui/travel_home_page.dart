@@ -240,7 +240,25 @@ class _TravelHomePageState extends State<TravelHomePage> {
                                     fit: BoxFit.cover
                                   )
                                 ),
+                                child: Column(
+                                  children: [
+                                    Container(
+                                      child: Column(
+                                        children: [
+                                          Text("La PPerla Vilas & La Suits"),
+                                          Row(
+                                            children: [
+                                              Text("🇬🇷"),
+
+                                            ],
+                                          )
+                                        ],
+                                      ),
+                                    )
+                                  ],
+                                ),
                               );
+
                             }),
                       ),
                       flex: 10,
