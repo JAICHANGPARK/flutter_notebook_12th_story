@@ -323,6 +323,7 @@ class _TravelHomePageState extends State<TravelHomePage> {
                               child: Container(
                                 decoration: BoxDecoration(
                                     color: Colors.blue,
+                                    borderRadius: BorderRadius.circular(8),
                                     image: DecorationImage(
                                         image: NetworkImage(
                                             "https://cdn.pixabay.com/photo/2016/08/10/12/44/zakynthos-1583127__340.jpg"),
