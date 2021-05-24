@@ -233,6 +233,12 @@ class _TravelHomePageState extends State<TravelHomePage> {
                                 decoration: BoxDecoration(
                                   color: Colors.blue,
                                   borderRadius: BorderRadius.circular(16),
+                                  image: DecorationImage(
+                                    image: NetworkImage(
+                                      "https://cdn.pixabay.com/photo/2016/08/15/08/22/greece-1594689__340.jpg"
+                                    ),
+                                    fit: BoxFit.cover
+                                  )
                                 ),
                               );
                             }),
