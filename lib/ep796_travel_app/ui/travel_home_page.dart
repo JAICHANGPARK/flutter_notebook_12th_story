@@ -251,7 +251,7 @@ class _TravelHomePageState extends State<TravelHomePage> {
                                         child: Column(
                                           children: [
                                             Text("La Perla Villas & La Suits",style: TextStyle(
-                                              fontSize: 16,
+                                              fontSize: 18,
                                               fontWeight: FontWeight.bold
                                             ),),
                                             Padding(
