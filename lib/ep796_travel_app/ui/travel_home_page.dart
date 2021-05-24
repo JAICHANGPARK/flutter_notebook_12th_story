@@ -331,12 +331,17 @@ class _TravelHomePageState extends State<TravelHomePage> {
                               ),
                               flex: 4,
                             ),
-                            SizedBox(width: 8,),
+                            SizedBox(
+                              width: 8,
+                            ),
                             Expanded(
                               child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  Text("Your Best Greek"),
+                                  Text(
+                                    "Your Best Greek",
+                                    style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                                  ),
                                   Text("HOlidays"),
                                 ],
                               ),
