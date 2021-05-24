@@ -239,19 +239,23 @@ class _TravelHomePageState extends State<TravelHomePage> {
                                         fit: BoxFit.cover)),
                                 child: Column(
                                   children: [
-                                    Container(
-                                      decoration: BoxDecoration(
-                                        color: Colors.white,
-                                      ),
-                                      child: Column(
-                                        children: [
-                                          Text("La PPerla Vilas & La Suits"),
-                                          Row(
-                                            children: [
-                                              Text("🇬🇷"),
-                                            ],
-                                          )
-                                        ],
+                                    Spacer(),
+                                    Padding(
+                                      padding: const EdgeInsets.all(8.0),
+                                      child: Container(
+                                        decoration: BoxDecoration(
+                                          color: Colors.white,
+                                        ),
+                                        child: Column(
+                                          children: [
+                                            Text("La PPerla Vilas & La Suits"),
+                                            Row(
+                                              children: [
+                                                Text("🇬🇷"),
+                                              ],
+                                            )
+                                          ],
+                                        ),
                                       ),
                                     )
                                   ],
