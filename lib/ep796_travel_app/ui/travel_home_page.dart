@@ -243,30 +243,33 @@ class _TravelHomePageState extends State<TravelHomePage> {
                                     Padding(
                                       padding: const EdgeInsets.all(8.0),
                                       child: Container(
-                                        padding: EdgeInsets.all(4),
-                                        decoration: BoxDecoration(
-                                          color: Colors.white,
-                                          borderRadius: BorderRadius.circular(8)
-                                        ),
+                                        padding: EdgeInsets.all(6),
+                                        decoration:
+                                            BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(8)),
                                         child: Column(
                                           children: [
-                                            Text("La Perla Villas & La Suits",style: TextStyle(
-                                              fontSize: 18,
-                                              fontWeight: FontWeight.bold
-                                            ),),
+                                            Text(
+                                              "La Perla Villas & La Suits",
+                                              style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                                            ),
                                             Padding(
                                               padding: const EdgeInsets.symmetric(vertical: 8),
                                               child: Row(
                                                 children: [
                                                   Text("🇬🇷"),
-                                                  Text("Oia Caldera, Oia",)
+                                                  Text(
+                                                    "Oia Caldera, Oia",
+                                                  )
                                                 ],
                                               ),
                                             ),
                                             Row(
                                               children: [
                                                 Text("⭐"),
-                                                Text("4.8/5 (502)",)
+                                                Text(
+                                                  "4.8/5 (502)",
+                                                  style: TextStyle(fontSize: 12, color: Colors.grey),
+                                                )
                                               ],
                                             )
                                           ],
