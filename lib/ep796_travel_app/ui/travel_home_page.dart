@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_12th_story/ep796_travel_app/ui/travel_detail_page.dart';
 
 class TravelHomePage extends StatefulWidget {
   const TravelHomePage({Key? key}) : super(key: key);
@@ -228,67 +229,73 @@ class _TravelHomePageState extends State<TravelHomePage> {
                             scrollDirection: Axis.horizontal,
                             itemCount: 8,
                             itemBuilder: (context, index) {
-                              return Container(
-                                margin: EdgeInsets.only(right: 16),
-                                width: 180,
-                                decoration: BoxDecoration(
-                                    color: Colors.blue,
-                                    borderRadius: BorderRadius.circular(16),
-                                    image: DecorationImage(
-                                        image: NetworkImage(
-                                            "https://cdn.pixabay.com/photo/2016/08/15/08/22/greece-1594689__340.jpg"),
-                                        fit: BoxFit.cover)),
-                                child: Column(
-                                  children: [
-                                    Spacer(),
-                                    Padding(
-                                      padding: const EdgeInsets.all(8.0),
-                                      child: Container(
-                                        padding: EdgeInsets.all(6),
-                                        decoration:
-                                            BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(8)),
-                                        child: Column(
-                                          children: [
-                                            Text(
-                                              "La Perla Villas & La Suits",
-                                              style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
-                                            ),
-                                            Padding(
-                                              padding: const EdgeInsets.symmetric(vertical: 8),
-                                              child: Row(
+                              return GestureDetector(
+                                onTap: () {
+                                  Navigator.of(context)
+                                      .push(MaterialPageRoute(builder: (context) => TravelDetailPage()));
+                                },
+                                child: Container(
+                                  margin: EdgeInsets.only(right: 16),
+                                  width: 180,
+                                  decoration: BoxDecoration(
+                                      color: Colors.blue,
+                                      borderRadius: BorderRadius.circular(16),
+                                      image: DecorationImage(
+                                          image: NetworkImage(
+                                              "https://cdn.pixabay.com/photo/2016/08/15/08/22/greece-1594689__340.jpg"),
+                                          fit: BoxFit.cover)),
+                                  child: Column(
+                                    children: [
+                                      Spacer(),
+                                      Padding(
+                                        padding: const EdgeInsets.all(8.0),
+                                        child: Container(
+                                          padding: EdgeInsets.all(6),
+                                          decoration: BoxDecoration(
+                                              color: Colors.white, borderRadius: BorderRadius.circular(8)),
+                                          child: Column(
+                                            children: [
+                                              Text(
+                                                "La Perla Villas & La Suits",
+                                                style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                                              ),
+                                              Padding(
+                                                padding: const EdgeInsets.symmetric(vertical: 8),
+                                                child: Row(
+                                                  children: [
+                                                    Text(
+                                                      "🇬🇷",
+                                                      style: TextStyle(
+                                                        fontSize: 12,
+                                                      ),
+                                                    ),
+                                                    Text(
+                                                      "Oia Caldera, Oia",
+                                                      style: TextStyle(fontSize: 12, color: Colors.grey),
+                                                    )
+                                                  ],
+                                                ),
+                                              ),
+                                              Row(
                                                 children: [
                                                   Text(
-                                                    "🇬🇷",
+                                                    "⭐",
                                                     style: TextStyle(
                                                       fontSize: 12,
                                                     ),
                                                   ),
                                                   Text(
-                                                    "Oia Caldera, Oia",
+                                                    "4.8/5 (502)",
                                                     style: TextStyle(fontSize: 12, color: Colors.grey),
                                                   )
                                                 ],
-                                              ),
-                                            ),
-                                            Row(
-                                              children: [
-                                                Text(
-                                                  "⭐",
-                                                  style: TextStyle(
-                                                    fontSize: 12,
-                                                  ),
-                                                ),
-                                                Text(
-                                                  "4.8/5 (502)",
-                                                  style: TextStyle(fontSize: 12, color: Colors.grey),
-                                                )
-                                              ],
-                                            )
-                                          ],
+                                              )
+                                            ],
+                                          ),
                                         ),
-                                      ),
-                                    )
-                                  ],
+                                      )
+                                    ],
+                                  ),
                                 ),
                               );
                             }),
@@ -342,8 +349,10 @@ class _TravelHomePageState extends State<TravelHomePage> {
                                     "Your Best Greek",
                                     style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
                                   ),
-                                  Text("Holidays",
-                                    style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),),
+                                  Text(
+                                    "Holidays",
+                                    style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                                  ),
                                 ],
                               ),
                               flex: 6,
