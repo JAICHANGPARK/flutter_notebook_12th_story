@@ -243,6 +243,7 @@ class _TravelHomePageState extends State<TravelHomePage> {
                                     Padding(
                                       padding: const EdgeInsets.all(8.0),
                                       child: Container(
+                                        padding: EdgeInsets.all(4),
                                         decoration: BoxDecoration(
                                           color: Colors.white,
                                           borderRadius: BorderRadius.circular(8)
