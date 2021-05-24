@@ -342,7 +342,7 @@ class _TravelHomePageState extends State<TravelHomePage> {
                                     "Your Best Greek",
                                     style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
                                   ),
-                                  Text("HOlidays",
+                                  Text("Holidays",
                                     style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),),
                                 ],
                               ),
