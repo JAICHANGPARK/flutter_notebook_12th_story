@@ -245,7 +245,7 @@ class _TravelHomePageState extends State<TravelHomePage> {
                                       child: Container(
                                         decoration: BoxDecoration(
                                           color: Colors.white,
-                                          borderRadius: BorderRadius.circular(16)
+                                          borderRadius: BorderRadius.circular(8)
                                         ),
                                         child: Column(
                                           children: [
@@ -253,6 +253,13 @@ class _TravelHomePageState extends State<TravelHomePage> {
                                             Row(
                                               children: [
                                                 Text("🇬🇷"),
+                                                Text("Oia Caldera, Oia",)
+                                              ],
+                                            ),
+                                            Row(
+                                              children: [
+                                                Text("⭐"),
+                                                Text("4.8/5 (502)",)
                                               ],
                                             )
                                           ],
