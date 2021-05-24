@@ -245,6 +245,7 @@ class _TravelHomePageState extends State<TravelHomePage> {
                                       child: Container(
                                         decoration: BoxDecoration(
                                           color: Colors.white,
+                                          borderRadius: BorderRadius.circular(16)
                                         ),
                                         child: Column(
                                           children: [
