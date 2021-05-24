@@ -259,13 +259,14 @@ class _TravelHomePageState extends State<TravelHomePage> {
                                                   Text("🇬🇷"),
                                                   Text(
                                                     "Oia Caldera, Oia",
+                                                    style: TextStyle(fontSize: 12, color: Colors.grey),
                                                   )
                                                 ],
                                               ),
                                             ),
                                             Row(
                                               children: [
-                                                Text("⭐"),
+                                                Text("⭐",style: TextStyle(fontSize: 12, ),),
                                                 Text(
                                                   "4.8/5 (502)",
                                                   style: TextStyle(fontSize: 12, color: Colors.grey),
