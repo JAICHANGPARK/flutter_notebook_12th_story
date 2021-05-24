@@ -12,12 +12,15 @@ class _TravelDetailPageState extends State<TravelDetailPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        children: [
-          Expanded(child: Placeholder()),
-          Expanded(child: Placeholder()),
-          Expanded(child: Placeholder()),
-        ],
+      body: SafeArea(
+
+        child: Column(
+          children: [
+            Expanded(child: Placeholder(), flex: 15,),
+            Expanded(child: Placeholder(), flex: 6,),
+            Expanded(child: Placeholder(), flex: 3,),
+          ],
+        ),
       ),
       bottomNavigationBar: BottomAppBar(
         child: Container(
