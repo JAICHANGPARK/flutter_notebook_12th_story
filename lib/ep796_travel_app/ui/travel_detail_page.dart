@@ -33,7 +33,9 @@ class _TravelDetailPageState extends State<TravelDetailPage> {
         child: Container(
           height: 72,
           child: Row(
-            children: [],
+            children: [
+              
+            ],
           ),
         ),
       ),
