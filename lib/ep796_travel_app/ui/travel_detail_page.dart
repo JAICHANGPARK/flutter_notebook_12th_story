@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class TravelDetailPage extends StatefulWidget {
   const TravelDetailPage({Key? key}) : super(key: key);
 
@@ -13,12 +12,20 @@ class _TravelDetailPageState extends State<TravelDetailPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-
         child: Column(
           children: [
-            Expanded(child: Placeholder(), flex: 15,),
-            Expanded(child: Placeholder(), flex: 6,),
-            Expanded(child: Placeholder(), flex: 3,),
+            Expanded(
+              child: Placeholder(),
+              flex: 15,
+            ),
+            Expanded(
+              child: Placeholder(),
+              flex: 6,
+            ),
+            Expanded(
+              child: Placeholder(),
+              flex: 3,
+            ),
           ],
         ),
       ),
@@ -26,11 +33,8 @@ class _TravelDetailPageState extends State<TravelDetailPage> {
         child: Container(
           height: 72,
           child: Row(
-            children: [
-
-            ],
+            children: [],
           ),
-
         ),
       ),
     );
