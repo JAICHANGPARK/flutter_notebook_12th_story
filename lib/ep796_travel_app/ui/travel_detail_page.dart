@@ -20,17 +20,21 @@ class _TravelDetailPageState extends State<TravelDetailPage> {
         child: Column(
           children: [
             Expanded(
-              child: Container(
-                decoration: BoxDecoration(
-                    image: DecorationImage(image: NetworkImage("${widget.imgString}"), fit: BoxFit.cover)),
-                child: Stack(
-                  children: [
-                    Positioned(
-                      child: Container(),
-                      left: 16,
-                      top: 16,
-                    ),
-                  ],
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Container(
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(16),
+                      image: DecorationImage(image: NetworkImage("${widget.imgString}"), fit: BoxFit.cover)),
+                  child: Stack(
+                    children: [
+                      Positioned(
+                        child: Container(),
+                        left: 16,
+                        top: 16,
+                      ),
+                    ],
+                  ),
                 ),
               ),
               flex: 15,
