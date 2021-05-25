@@ -111,6 +111,7 @@ class _TravelDetailPageState extends State<TravelDetailPage> {
             Expanded(
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
+                crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   Column(
 
