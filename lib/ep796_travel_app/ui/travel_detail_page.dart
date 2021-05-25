@@ -58,9 +58,35 @@ class _TravelDetailPageState extends State<TravelDetailPage> {
               child: Column(
                 children: [
                   Text("${widget.title}"),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 8),
+                    child: Row(
+                      children: [
+                        Text(
+                          "🇬🇷",
+                          style: TextStyle(
+                            fontSize: 12,
+                          ),
+                        ),
+                        Text(
+                          "${widget.locationText}",
+                          style: TextStyle(fontSize: 12, color: Colors.grey),
+                        )
+                      ],
+                    ),
+                  ),
                   Row(
                     children: [
-                      
+                      Text(
+                        "⭐",
+                        style: TextStyle(
+                          fontSize: 12,
+                        ),
+                      ),
+                      Text(
+                        "4.8/5 (502)",
+                        style: TextStyle(fontSize: 12, color: Colors.grey),
+                      )
                     ],
                   )
                 ],
