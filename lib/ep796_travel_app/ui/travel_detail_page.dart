@@ -109,7 +109,17 @@ class _TravelDetailPageState extends State<TravelDetailPage> {
               flex: 7,
             ),
             Expanded(
-              child: Placeholder(),
+              child: Row(
+                children: [
+                  Column(
+                    children: [
+                      CircleAvatar(
+                        backgroundColor: Colors.white,
+                      )
+                    ],
+                  )
+                ],
+              ),
               flex: 3,
             ),
           ],
