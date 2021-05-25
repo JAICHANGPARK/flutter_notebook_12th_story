@@ -235,6 +235,9 @@ class _TravelHomePageState extends State<TravelHomePage> {
                                       builder: (context) => TravelDetailPage(
                                             imgString:
                                                 "https://cdn.pixabay.com/photo/2016/08/15/08/22/greece-1594689__340.jpg",
+                                        title: "La Perla Villas & La Suits",
+                                        locationText: "Oia Caldera, Oia",
+                                        reviewText: "4.8/5 (502)",
                                           )));
                                 },
                                 child: Container(
