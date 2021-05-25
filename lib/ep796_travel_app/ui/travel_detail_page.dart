@@ -55,45 +55,48 @@ class _TravelDetailPageState extends State<TravelDetailPage> {
               flex: 15,
             ),
             Expanded(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
-                    "${widget.title}",
-                    style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.symmetric(vertical: 8),
-                    child: Row(
+              child: Padding(
+                padding: EdgeInsets.all(16),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      "${widget.title}",
+                      style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.symmetric(vertical: 8),
+                      child: Row(
+                        children: [
+                          Text(
+                            "🇬🇷",
+                            style: TextStyle(
+                              fontSize: 12,
+                            ),
+                          ),
+                          Text(
+                            "${widget.locationText}",
+                            style: TextStyle(fontSize: 12, color: Colors.grey),
+                          )
+                        ],
+                      ),
+                    ),
+                    Row(
                       children: [
                         Text(
-                          "🇬🇷",
+                          "⭐",
                           style: TextStyle(
                             fontSize: 12,
                           ),
                         ),
                         Text(
-                          "${widget.locationText}",
+                          "${widget.reviewText}",
                           style: TextStyle(fontSize: 12, color: Colors.grey),
                         )
                       ],
-                    ),
-                  ),
-                  Row(
-                    children: [
-                      Text(
-                        "⭐",
-                        style: TextStyle(
-                          fontSize: 12,
-                        ),
-                      ),
-                      Text(
-                        "${widget.reviewText}",
-                        style: TextStyle(fontSize: 12, color: Colors.grey),
-                      )
-                    ],
-                  )
-                ],
+                    )
+                  ],
+                ),
               ),
               flex: 6,
             ),
