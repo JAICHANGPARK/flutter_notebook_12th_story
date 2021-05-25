@@ -176,7 +176,17 @@ class _TravelDetailPageState extends State<TravelDetailPage> {
         child: Container(
           height: 72,
           child: Row(
-            children: [],
+            children: [
+              Column(
+                children: [
+                  Text("\$120.00",style: TextStyle(
+                    fontSize: 24,
+                    
+                  ),),
+                  Text("13.05 - 21.05")
+                ],
+              )
+            ],
           ),
         ),
       ),
