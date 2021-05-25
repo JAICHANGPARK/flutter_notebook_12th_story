@@ -59,6 +59,7 @@ class _TravelDetailPageState extends State<TravelDetailPage> {
                 padding: EdgeInsets.only(left: 16, right: 16, top: 12),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
                     Text(
                       "${widget.title}",
