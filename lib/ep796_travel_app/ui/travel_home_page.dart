@@ -231,10 +231,11 @@ class _TravelHomePageState extends State<TravelHomePage> {
                             itemBuilder: (context, index) {
                               return GestureDetector(
                                 onTap: () {
-                                  Navigator.of(context)
-                                      .push(MaterialPageRoute(builder: (context) => TravelDetailPage(
-
-                                  )));
+                                  Navigator.of(context).push(MaterialPageRoute(
+                                      builder: (context) => TravelDetailPage(
+                                            imgString:
+                                                "https://cdn.pixabay.com/photo/2016/08/15/08/22/greece-1594689__340.jpg",
+                                          )));
                                 },
                                 child: Container(
                                   margin: EdgeInsets.only(right: 16),
