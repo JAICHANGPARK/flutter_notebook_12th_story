@@ -227,8 +227,13 @@ class _TravelDetailPageState extends State<TravelDetailPage> {
               ),
               Container(
                 height: 48,
-                width: 240,
                 decoration: BoxDecoration(color: Colors.blue),
+                child: Center(
+                  child: Text(
+                    "Book Now",
+                    style: TextStyle(fontSize: 16, color: Colors.white, fontWeight: FontWeight.bold),
+                  ),
+                ),
               )
             ],
           ),
