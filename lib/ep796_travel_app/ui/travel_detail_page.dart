@@ -21,7 +21,7 @@ class _TravelDetailPageState extends State<TravelDetailPage> {
           children: [
             Expanded(
               child: Padding(
-                padding: const EdgeInsets.all(8.0),
+                padding: const EdgeInsets.all(16.0),
                 child: Container(
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(16),
