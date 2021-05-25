@@ -228,9 +228,7 @@ class _TravelDetailPageState extends State<TravelDetailPage> {
               Container(
                 height: 48,
                 width: 240,
-                decoration: BoxDecoration(
-                  
-                ),
+                decoration: BoxDecoration(color: Colors.blue),
               )
             ],
           ),
