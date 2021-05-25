@@ -115,7 +115,40 @@ class _TravelDetailPageState extends State<TravelDetailPage> {
                     children: [
                       CircleAvatar(
                         backgroundColor: Colors.white,
-                      )
+                      ),
+                      Text("Sofety")
+                    ],
+                  ),
+                  Column(
+                    children: [
+                      CircleAvatar(
+                        backgroundColor: Colors.white,
+                      ),
+                      Text("Sofety")
+                    ],
+                  ),
+                  Column(
+                    children: [
+                      CircleAvatar(
+                        backgroundColor: Colors.white,
+                      ),
+                      Text("Sofety")
+                    ],
+                  ),
+                  Column(
+                    children: [
+                      CircleAvatar(
+                        backgroundColor: Colors.white,
+                      ),
+                      Text("Sofety")
+                    ],
+                  ),
+                  Column(
+                    children: [
+                      CircleAvatar(
+                        backgroundColor: Colors.white,
+                      ),
+                      Text("Sofety")
                     ],
                   )
                 ],
