@@ -21,16 +21,18 @@ class _TravelDetailPageState extends State<TravelDetailPage> {
           children: [
             Expanded(
               child: Container(
-                decoration: BoxDecoration(image: DecorationImage(image: NetworkImage("${widget.imgString}"))),
+                decoration: BoxDecoration(
+                    image: DecorationImage(image: NetworkImage("${widget.imgString}"), fit: BoxFit.cover)),
                 child: Stack(
                   children: [
-                    Positioned(child: Container(),
-                    left: 16,
-                    top: 16,),
+                    Positioned(
+                      child: Container(),
+                      left: 16,
+                      top: 16,
+                    ),
                   ],
                 ),
               ),
-
               flex: 15,
             ),
             Expanded(
