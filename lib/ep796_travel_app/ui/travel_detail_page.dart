@@ -56,7 +56,7 @@ class _TravelDetailPageState extends State<TravelDetailPage> {
             ),
             Expanded(
               child: Padding(
-                padding: EdgeInsets.all(16),
+                padding: EdgeInsets.only(left: 16, right: 16, top: 12),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -105,7 +105,7 @@ class _TravelDetailPageState extends State<TravelDetailPage> {
                   ],
                 ),
               ),
-              flex: 6,
+              flex: 7,
             ),
             Expanded(
               child: Placeholder(),
