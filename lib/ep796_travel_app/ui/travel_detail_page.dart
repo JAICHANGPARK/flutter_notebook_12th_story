@@ -221,9 +221,16 @@ class _TravelDetailPageState extends State<TravelDetailPage> {
                   ),
                   Text(
                     "13.05 - 21.05",
-                    style: TextStyle(fontSize: 14, color: Colors.white),
+                    style: TextStyle(fontSize: 14, color: Colors.grey),
                   )
                 ],
+              ),
+              Container(
+                height: 48,
+                width: 240,
+                decoration: BoxDecoration(
+                  
+                ),
               )
             ],
           ),
