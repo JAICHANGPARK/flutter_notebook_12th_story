@@ -231,7 +231,7 @@ class _TravelDetailPageState extends State<TravelDetailPage> {
                 ],
               ),
               Padding(
-                padding: EdgeInsets.symmetric(vertical: 7),
+                padding: EdgeInsets.symmetric(vertical: 16),
                 child: Container(
                   height: 48,
                   decoration: BoxDecoration(color: Colors.blue,
