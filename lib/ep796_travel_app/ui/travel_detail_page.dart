@@ -118,8 +118,8 @@ class _TravelDetailPageState extends State<TravelDetailPage> {
                     children: [
                       CircleAvatar(
                         backgroundColor: Colors.white,
-                      ),
-                      Text("Sofety", style: TextStyle(
+                      ),SizedBox(height: 8,),
+                      Text("Safety", style: TextStyle(
                         fontSize: 12,
                       ),)
                     ],
@@ -129,7 +129,8 @@ class _TravelDetailPageState extends State<TravelDetailPage> {
                       CircleAvatar(
                         backgroundColor: Colors.white,
                       ),
-                      Text("Sofety", style: TextStyle(
+                      SizedBox(height: 8,),
+                      Text("WiFi", style: TextStyle(
                         fontSize: 12,
                       ),)
                     ],
@@ -138,8 +139,8 @@ class _TravelDetailPageState extends State<TravelDetailPage> {
                     children: [
                       CircleAvatar(
                         backgroundColor: Colors.white,
-                      ),
-                      Text("Sofety", style: TextStyle(
+                      ),SizedBox(height: 8,),
+                      Text("Lunch", style: TextStyle(
                         fontSize: 12,
                       ),)
                     ],
@@ -148,8 +149,8 @@ class _TravelDetailPageState extends State<TravelDetailPage> {
                     children: [
                       CircleAvatar(
                         backgroundColor: Colors.white,
-                      ),
-                      Text("Sofety", style: TextStyle(
+                      ),SizedBox(height: 8,),
+                      Text("Pets", style: TextStyle(
                         fontSize: 12,
                       ),)
                     ],
@@ -158,8 +159,8 @@ class _TravelDetailPageState extends State<TravelDetailPage> {
                     children: [
                       CircleAvatar(
                         backgroundColor: Colors.white,
-                      ),
-                      Text("Sofety", style: TextStyle(
+                      ),SizedBox(height: 8,),
+                      Text("Spa", style: TextStyle(
                         fontSize: 12,
                       ),)
                     ],
