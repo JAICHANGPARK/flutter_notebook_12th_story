@@ -2,8 +2,11 @@ import 'package:flutter/material.dart';
 
 class TravelDetailPage extends StatefulWidget {
   final String imgString;
-  final 
-  const TravelDetailPage({Key? key}) : super(key: key);
+  final String title;
+  final String locationText;
+  final String reviewText;
+  
+  TravelDetailPage(this.imgString, this.title, this.locationText, this.reviewText);
 
   @override
   _TravelDetailPageState createState() => _TravelDetailPageState();
