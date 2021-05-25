@@ -55,7 +55,16 @@ class _TravelDetailPageState extends State<TravelDetailPage> {
               flex: 15,
             ),
             Expanded(
-              child: Placeholder(),
+              child: Column(
+                children: [
+                  Text("${widget.title}"),
+                  Row(
+                    children: [
+                      
+                    ],
+                  )
+                ],
+              ),
               flex: 6,
             ),
             Expanded(
