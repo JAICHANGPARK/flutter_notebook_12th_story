@@ -32,7 +32,10 @@ class _TravelDetailPageState extends State<TravelDetailPage> {
                         child: Container(
                           height: 32,
                           width: 32,
-                          decoration: BoxDecoration(color: Colors.white),
+                          decoration: BoxDecoration(color: Colors.white, shape: BoxShape.circle),
+                          child: Center(
+                            child: Icon(Icons.arrow_back_ios, size: 12,),
+                          ),
                         ),
                         left: 16,
                         top: 16,
