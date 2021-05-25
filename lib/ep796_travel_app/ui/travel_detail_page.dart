@@ -76,7 +76,7 @@ class _TravelDetailPageState extends State<TravelDetailPage> {
                           ),
                           Text(
                             "${widget.locationText}",
-                            style: TextStyle(fontSize: 12, color: Colors.grey),
+                            style: TextStyle(fontSize: 12, color: Colors.grey, fontWeight: FontWeight.bold),
                           )
                         ],
                       ),
