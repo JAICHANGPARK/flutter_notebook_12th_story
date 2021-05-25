@@ -6,7 +6,7 @@ class TravelDetailPage extends StatefulWidget {
   final String locationText;
   final String reviewText;
 
-  TravelDetailPage(this.imgString, this.title, this.locationText, this.reviewText);
+  TravelDetailPage({this.imgString, this.title, this.locationText, this.reviewText});
 
   @override
   _TravelDetailPageState createState() => _TravelDetailPageState();
