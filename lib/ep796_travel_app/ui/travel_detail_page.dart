@@ -110,8 +110,10 @@ class _TravelDetailPageState extends State<TravelDetailPage> {
             ),
             Expanded(
               child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
                   Column(
+
                     children: [
                       CircleAvatar(
                         backgroundColor: Colors.white,
