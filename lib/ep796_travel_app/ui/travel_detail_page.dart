@@ -90,9 +90,10 @@ class _TravelDetailPageState extends State<TravelDetailPage> {
                             fontSize: 12,
                           ),
                         ),
+                        SizedBox(width: 8,),
                         Text(
                           "${widget.reviewText}",
-                          style: TextStyle(fontSize: 12, color: Colors.grey),
+                          style: TextStyle(fontSize: 14, color: Colors.grey, fontWeight: FontWeight.bold),
                         )
                       ],
                     )
