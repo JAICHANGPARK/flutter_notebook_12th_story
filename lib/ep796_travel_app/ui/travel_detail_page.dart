@@ -15,7 +15,13 @@ class _TravelDetailPageState extends State<TravelDetailPage> {
         child: Column(
           children: [
             Expanded(
-              child: Placeholder(),
+              child: Container(
+                decoration: BoxDecoration(
+                  image: DecorationImage(
+                    image: NetworkImage("")
+                  )
+                ),
+              ),
               flex: 15,
             ),
             Expanded(
@@ -34,7 +40,7 @@ class _TravelDetailPageState extends State<TravelDetailPage> {
           height: 72,
           child: Row(
             children: [
-              
+
             ],
           ),
         ),
