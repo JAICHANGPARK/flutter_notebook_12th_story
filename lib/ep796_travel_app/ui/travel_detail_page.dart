@@ -119,7 +119,9 @@ class _TravelDetailPageState extends State<TravelDetailPage> {
                       CircleAvatar(
                         backgroundColor: Colors.white,
                       ),
-                      Text("Sofety")
+                      Text("Sofety", style: TextStyle(
+                        fontSize: 12,
+                      ),)
                     ],
                   ),
                   Column(
@@ -127,7 +129,9 @@ class _TravelDetailPageState extends State<TravelDetailPage> {
                       CircleAvatar(
                         backgroundColor: Colors.white,
                       ),
-                      Text("Sofety")
+                      Text("Sofety", style: TextStyle(
+                        fontSize: 12,
+                      ),)
                     ],
                   ),
                   Column(
@@ -135,7 +139,9 @@ class _TravelDetailPageState extends State<TravelDetailPage> {
                       CircleAvatar(
                         backgroundColor: Colors.white,
                       ),
-                      Text("Sofety")
+                      Text("Sofety", style: TextStyle(
+                        fontSize: 12,
+                      ),)
                     ],
                   ),
                   Column(
@@ -143,7 +149,9 @@ class _TravelDetailPageState extends State<TravelDetailPage> {
                       CircleAvatar(
                         backgroundColor: Colors.white,
                       ),
-                      Text("Sofety")
+                      Text("Sofety", style: TextStyle(
+                        fontSize: 12,
+                      ),)
                     ],
                   ),
                   Column(
@@ -151,7 +159,9 @@ class _TravelDetailPageState extends State<TravelDetailPage> {
                       CircleAvatar(
                         backgroundColor: Colors.white,
                       ),
-                      Text("Sofety")
+                      Text("Sofety", style: TextStyle(
+                        fontSize: 12,
+                      ),)
                     ],
                   )
                 ],
