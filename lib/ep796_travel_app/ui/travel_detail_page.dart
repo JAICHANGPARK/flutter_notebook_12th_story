@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
 class TravelDetailPage extends StatefulWidget {
-  final String imgString;
-  final String title;
-  final String locationText;
-  final String reviewText;
+  final String? imgString;
+  final String? title;
+  final String? locationText;
+  final String? reviewText;
 
   TravelDetailPage({this.imgString, this.title, this.locationText, this.reviewText});
 
