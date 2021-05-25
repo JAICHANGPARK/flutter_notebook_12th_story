@@ -75,7 +75,9 @@ class _TravelDetailPageState extends State<TravelDetailPage> {
                               fontSize: 12,
                             ),
                           ),
-                          SizedBox(width: 8,),
+                          SizedBox(
+                            width: 8,
+                          ),
                           Text(
                             "${widget.locationText}",
                             style: TextStyle(fontSize: 14, color: Colors.grey, fontWeight: FontWeight.bold),
@@ -91,18 +93,22 @@ class _TravelDetailPageState extends State<TravelDetailPage> {
                             fontSize: 12,
                           ),
                         ),
-                        SizedBox(width: 8,),
+                        SizedBox(
+                          width: 8,
+                        ),
                         Text(
                           "${widget.reviewText}",
                           style: TextStyle(fontSize: 14, color: Colors.grey, fontWeight: FontWeight.bold),
                         )
                       ],
                     ),
-                    Text("Lorem ipsum dolor sit amet, consectetur adipisicing elit, "
-                        "sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-                        " Ut enim ad minim veniam,"
-                        " quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
-                    overflow: TextOverflow.fade,)
+                    Text(
+                      "Lorem ipsum dolor sit amet, consectetur adipisicing elit, "
+                      "sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                      " Ut enim ad minim veniam,"
+                      " quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
+                      overflow: TextOverflow.fade,
+                    )
                   ],
                 ),
               ),
@@ -114,14 +120,19 @@ class _TravelDetailPageState extends State<TravelDetailPage> {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   Column(
-
                     children: [
                       CircleAvatar(
                         backgroundColor: Colors.white,
-                      ),SizedBox(height: 8,),
-                      Text("Safety", style: TextStyle(
-                        fontSize: 12,
-                      ),)
+                      ),
+                      SizedBox(
+                        height: 8,
+                      ),
+                      Text(
+                        "Safety",
+                        style: TextStyle(
+                          fontSize: 12,
+                        ),
+                      )
                     ],
                   ),
                   Column(
@@ -129,40 +140,63 @@ class _TravelDetailPageState extends State<TravelDetailPage> {
                       CircleAvatar(
                         backgroundColor: Colors.white,
                       ),
-                      SizedBox(height: 8,),
-                      Text("WiFi", style: TextStyle(
-                        fontSize: 12,
-                      ),)
+                      SizedBox(
+                        height: 8,
+                      ),
+                      Text(
+                        "WiFi",
+                        style: TextStyle(
+                          fontSize: 12,
+                        ),
+                      )
                     ],
                   ),
                   Column(
                     children: [
                       CircleAvatar(
                         backgroundColor: Colors.white,
-                      ),SizedBox(height: 8,),
-                      Text("Lunch", style: TextStyle(
-                        fontSize: 12,
-                      ),)
+                      ),
+                      SizedBox(
+                        height: 8,
+                      ),
+                      Text(
+                        "Lunch",
+                        style: TextStyle(
+                          fontSize: 12,
+                        ),
+                      )
                     ],
                   ),
                   Column(
                     children: [
                       CircleAvatar(
                         backgroundColor: Colors.white,
-                      ),SizedBox(height: 8,),
-                      Text("Pets", style: TextStyle(
-                        fontSize: 12,
-                      ),)
+                      ),
+                      SizedBox(
+                        height: 8,
+                      ),
+                      Text(
+                        "Pets",
+                        style: TextStyle(
+                          fontSize: 12,
+                        ),
+                      )
                     ],
                   ),
                   Column(
                     children: [
                       CircleAvatar(
                         backgroundColor: Colors.white,
-                      ),SizedBox(height: 8,),
-                      Text("Spa", style: TextStyle(
-                        fontSize: 12,
-                      ),)
+                      ),
+                      SizedBox(
+                        height: 8,
+                      ),
+                      Text(
+                        "Spa",
+                        style: TextStyle(
+                          fontSize: 12,
+                        ),
+                      )
                     ],
                   )
                 ],
@@ -179,11 +213,16 @@ class _TravelDetailPageState extends State<TravelDetailPage> {
             children: [
               Column(
                 children: [
-                  Text("\$120.00",style: TextStyle(
-                    fontSize: 24,
-                    
-                  ),),
-                  Text("13.05 - 21.05")
+                  Text(
+                    "\$120.00",
+                    style: TextStyle(
+                      fontSize: 24,
+                    ),
+                  ),
+                  Text(
+                    "13.05 - 21.05",
+                    style: TextStyle(fontSize: 14, color: Colors.white),
+                  )
                 ],
               )
             ],
