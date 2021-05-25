@@ -230,16 +230,19 @@ class _TravelDetailPageState extends State<TravelDetailPage> {
                   )
                 ],
               ),
-              Container(
-                height: 48,
-                decoration: BoxDecoration(color: Colors.blue,
-                borderRadius: BorderRadius.circular(24)),
-                margin: EdgeInsets.symmetric(vertical: 7),
-                padding: EdgeInsets.symmetric(horizontal: 48),
-                child: Center(
-                  child: Text(
-                    "Book Now",
-                    style: TextStyle(fontSize: 16, color: Colors.white, fontWeight: FontWeight.bold),
+              Padding(
+                padding: EdgeInsets.symmetric(vertical: 7),
+                child: Container(
+                  height: 48,
+                  decoration: BoxDecoration(color: Colors.blue,
+                  borderRadius: BorderRadius.circular(24)),
+
+                  padding: EdgeInsets.symmetric(horizontal: 48),
+                  child: Center(
+                    child: Text(
+                      "Book Now",
+                      style: TextStyle(fontSize: 16, color: Colors.white, fontWeight: FontWeight.bold),
+                    ),
                   ),
                 ),
               )
