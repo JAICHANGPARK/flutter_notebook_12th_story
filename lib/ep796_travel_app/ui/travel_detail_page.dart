@@ -56,6 +56,7 @@ class _TravelDetailPageState extends State<TravelDetailPage> {
             ),
             Expanded(
               child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text("${widget.title}"),
                   Padding(
