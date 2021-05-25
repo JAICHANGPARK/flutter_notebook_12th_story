@@ -232,7 +232,9 @@ class _TravelHomePageState extends State<TravelHomePage> {
                               return GestureDetector(
                                 onTap: () {
                                   Navigator.of(context)
-                                      .push(MaterialPageRoute(builder: (context) => TravelDetailPage()));
+                                      .push(MaterialPageRoute(builder: (context) => TravelDetailPage(
+
+                                  )));
                                 },
                                 child: Container(
                                   margin: EdgeInsets.only(right: 16),
