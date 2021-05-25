@@ -210,8 +210,10 @@ class _TravelDetailPageState extends State<TravelDetailPage> {
         child: Container(
           height: 72,
           child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Column(
+                crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   Text(
                     "\$120.00",
@@ -227,7 +229,9 @@ class _TravelDetailPageState extends State<TravelDetailPage> {
               ),
               Container(
                 height: 48,
-                decoration: BoxDecoration(color: Colors.blue),
+                decoration: BoxDecoration(color: Colors.blue,
+                borderRadius: BorderRadius.circular(24)),
+                padding: EdgeInsets.symmetric(horizontal: 32),
                 child: Center(
                   child: Text(
                     "Book Now",
