@@ -24,12 +24,16 @@ class _TravelDetailPageState extends State<TravelDetailPage> {
                 padding: const EdgeInsets.all(16.0),
                 child: Container(
                   decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(16),
+                      borderRadius: BorderRadius.circular(16),
                       image: DecorationImage(image: NetworkImage("${widget.imgString}"), fit: BoxFit.cover)),
                   child: Stack(
                     children: [
                       Positioned(
-                        child: Container(),
+                        child: Container(
+                          height: 32,
+                          width: 32,
+                          decoration: BoxDecoration(color: Colors.white),
+                        ),
                         left: 16,
                         top: 16,
                       ),
