@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class TravelDetailPage extends StatefulWidget {
+  final String imgString;
+  final 
   const TravelDetailPage({Key? key}) : super(key: key);
 
   @override
