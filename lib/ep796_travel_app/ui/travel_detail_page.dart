@@ -5,7 +5,7 @@ class TravelDetailPage extends StatefulWidget {
   final String title;
   final String locationText;
   final String reviewText;
-  
+
   TravelDetailPage(this.imgString, this.title, this.locationText, this.reviewText);
 
   @override
@@ -21,12 +21,14 @@ class _TravelDetailPageState extends State<TravelDetailPage> {
           children: [
             Expanded(
               child: Container(
-                decoration: BoxDecoration(
-                  image: DecorationImage(
-                    image: NetworkImage("")
-                  )
+                decoration: BoxDecoration(image: DecorationImage(image: NetworkImage("${widget.imgString}"))),
+                child: Stack(
+                  children: [
+                    Positioned(child: Container()),
+                  ],
                 ),
               ),
+
               flex: 15,
             ),
             Expanded(
@@ -44,9 +46,7 @@ class _TravelDetailPageState extends State<TravelDetailPage> {
         child: Container(
           height: 72,
           child: Row(
-            children: [
-
-            ],
+            children: [],
           ),
         ),
       ),
