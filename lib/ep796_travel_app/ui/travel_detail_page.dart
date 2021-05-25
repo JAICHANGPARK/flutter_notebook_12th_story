@@ -209,11 +209,14 @@ class _TravelDetailPageState extends State<TravelDetailPage> {
       bottomNavigationBar: BottomAppBar(
         child: Container(
           height: 72,
+          padding: EdgeInsets.symmetric(horizontal: 16),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Column(
                 crossAxisAlignment: CrossAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Text(
                     "\$120.00",
