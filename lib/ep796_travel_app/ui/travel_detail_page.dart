@@ -84,7 +84,7 @@ class _TravelDetailPageState extends State<TravelDetailPage> {
                         ),
                       ),
                       Text(
-                        "4.8/5 (502)",
+                        "${widget.reviewText}",
                         style: TextStyle(fontSize: 12, color: Colors.grey),
                       )
                     ],
