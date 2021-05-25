@@ -96,7 +96,12 @@ class _TravelDetailPageState extends State<TravelDetailPage> {
                           style: TextStyle(fontSize: 14, color: Colors.grey, fontWeight: FontWeight.bold),
                         )
                       ],
-                    )
+                    ),
+                    Text("Lorem ipsum dolor sit amet, consectetur adipisicing elit, "
+                        "sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                        " Ut enim ad minim veniam,"
+                        " quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
+                    overflow: TextOverflow.ellipsis,)
                   ],
                 ),
               ),
