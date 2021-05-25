@@ -77,7 +77,7 @@ class _TravelDetailPageState extends State<TravelDetailPage> {
                           SizedBox(width: 8,),
                           Text(
                             "${widget.locationText}",
-                            style: TextStyle(fontSize: 12, color: Colors.grey, fontWeight: FontWeight.bold),
+                            style: TextStyle(fontSize: 14, color: Colors.grey, fontWeight: FontWeight.bold),
                           )
                         ],
                       ),
