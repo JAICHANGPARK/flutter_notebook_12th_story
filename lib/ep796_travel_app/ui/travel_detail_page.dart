@@ -234,7 +234,8 @@ class _TravelDetailPageState extends State<TravelDetailPage> {
                 height: 48,
                 decoration: BoxDecoration(color: Colors.blue,
                 borderRadius: BorderRadius.circular(24)),
-                padding: EdgeInsets.symmetric(horizontal: 32),
+                margin: EdgeInsets.symmetric(vertical: 7),
+                padding: EdgeInsets.symmetric(horizontal: 48),
                 child: Center(
                   child: Text(
                     "Book Now",
